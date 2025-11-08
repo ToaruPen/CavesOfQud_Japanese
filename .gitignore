@@ -1,0 +1,18 @@
+# Local copies of game data (generated via scripts/extract_base.ps1)
+references/Base/
+
+# Logs / build outputs
+*.log
+*.tmp
+*.user
+*.suo
+
+# Visual Studio / Rider / VSCode metadata
+.vs/
+.idea/
+.vscode/
+
+# Unity / FontAsset artifacts (generated locally)
+Mods/QudJP/Fonts/*.asset
+Mods/QudJP/Fonts/*.mat
+Mods/QudJP/Fonts/*.otf

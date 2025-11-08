@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects Load="Merge">
+  <!-- 書籍本文は CDATA に入れ、段落は空行ではなく \n\n で管理 -->
+  <object Name="Book_HymnOfTheGyre">
+    <property Name="Text">
+      <![CDATA[
+      〈旋渦の賛歌〉
+
+      第一節:
+      風は塵を集め、塵は渦となり、渦は世界を歌に変える。
+      ]]>
+    </property>
+  </object>
+</objects>

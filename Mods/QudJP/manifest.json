@@ -1,0 +1,15 @@
+{
+  "Id": "QudJP",
+  "Title": "Caves of Qud 日本語化",
+  "Description": "Harmony ベースのフォント差し替えと翻訳データで、Caves of Qud を日本語で遊べるようにします。",
+  "Author": "ToaruPen & Contributors",
+  "Version": "0.1.0",
+  "PreviewImage": "preview.png",
+  "Tags": [
+    "Localization",
+    "UI",
+    "Japanese"
+  ],
+  "Website": "https://github.com/ToaruPen/CavesOfQud_Japanese",
+  "Dependencies": []
+}

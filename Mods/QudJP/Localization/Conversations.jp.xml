@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Load="Merge">
+  <!--
+    Conversations.xml から必要なノードのみをコピーして翻訳する。
+    例: <object Name="ArgyveGreeting">...</object>
+  -->
+  <object Name="ArgyveGreeting">
+    <property Name="Text">
+      <![CDATA[
+      「ああ、旅人よ。調査に協力してくれるなら大歓迎だ。」
+      ]]>
+    </property>
+  </object>
+</objects>

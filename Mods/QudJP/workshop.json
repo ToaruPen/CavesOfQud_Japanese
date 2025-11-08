@@ -1,0 +1,10 @@
+{
+  "Title": "Caves of Qud 日本語化 Mod",
+  "Description": "Caves of Qud の会話・UI・自動生成テキストを日本語化し、CJK フォントを同梱する Mod です。\n\n- Harmony によるフォント適用\n- Conversations/Books/Corpus の翻訳\n- 自動生成テキストの日本語化\n\n詳しくは README をご覧ください。",
+  "PreviewImage": "preview.png",
+  "Visibility": "Hidden",
+  "Tags": [
+    "Localization",
+    "UI"
+  ]
+}
