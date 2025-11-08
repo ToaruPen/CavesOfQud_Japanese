@@ -19,3 +19,6 @@ Mods/QudJP/Fonts/*.otf
 Mods/QudJP/Assemblies/*.dll
 Mods/QudJP/Assemblies/*.pdb
 Mods/QudJP/Assemblies/obj/
+
+# LLM payloads / temporary work products
+work/
