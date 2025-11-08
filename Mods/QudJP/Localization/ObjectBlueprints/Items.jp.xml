@@ -1,2637 +1,484 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <objects Load="Merge">
   <!-- Base objects -->
-  
-  
   <object Name="BaseCyberneticsEquipment" Inherits="Item" Replace="true">
-    
-    
-    <part Name="Physics" Category="Cybernetic Implants" Weight="0"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｵ繧､繝舌ロ繝・ぅ繝・け繝ｻ繧､繝ｳ繝励Λ繝ｳ繝・}" RenderString="135" ColorString="&amp;C" DetailColor="R" Tile="Items/sw_dermalplating.bmp"/>
-    
-    
-    <part Name="CyberneticsBaseItem"/>
-    
-    
-    <part Name="Examiner" Complexity="3"/>
-    
-	  
-    <tag Name="EquipSound" Value="sfx_equip_material_artifact"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-    
-    <xtagGrammar adjunctNoun="implant" adjunctNounPost="true"/>
-    
-    
-    <stag Name="Cybernetics"/>
-    
-		
-    <stag Name="Historical"/>
-    
-		
-    <tag Name="DynamicSemanticTable:Historical:Weight" Value="0.2"/>
-    
-  
+    <part Name="Physics" Category="サイバネティック義肢" Weight="0" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|サイバネティック・インプラント}}" RenderString="135" ColorString="&amp;C" DetailColor="R" Tile="Items/sw_dermalplating.bmp" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_1point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="1"/>
-    
-    
-    <part Name="Examiner" Complexity="3"/>
-    
-    
-    <part Name="Commerce" Value="60"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="60" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_2point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="2"/>
-    
-    
-    <part Name="Examiner" Complexity="3"/>
-    
-    
-    <part Name="Commerce" Value="120"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="120" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_3point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="3"/>
-    
-    
-    <part Name="Examiner" Complexity="4"/>
-    
-    
-    <part Name="Commerce" Value="180"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="180" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_4point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="4"/>
-    
-    
-    <part Name="Examiner" Complexity="5"/>
-    
-    
-    <part Name="Commerce" Value="240"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="240" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_5point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="5"/>
-    
-    
-    <part Name="Examiner" Complexity="5" Difficulty="1"/>
-    
-    
-    <part Name="Commerce" Value="300"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="300" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_6point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="6"/>
-    
-    
-    <part Name="Examiner" Complexity="6" Difficulty="1"/>
-    
-    
-    <part Name="Commerce" Value="360"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="360" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_7point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="7"/>
-    
-    
-    <part Name="Examiner" Complexity="6" Difficulty="2"/>
-    
-    
-    <part Name="Commerce" Value="420"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="420" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_8point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="8"/>
-    
-    
-    <part Name="Examiner" Complexity="7" Difficulty="2"/>
-    
-    
-    <part Name="Commerce" Value="600"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="600" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_9point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="9"/>
-    
-    
-    <part Name="Examiner" Complexity="7" Difficulty="3"/>
-    
-    
-    <part Name="Commerce" Value="800"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="800" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_10point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="10"/>
-    
-    
-    <part Name="Examiner" Complexity="7" Difficulty="3"/>
-    
-    
-    <part Name="Commerce" Value="1000"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="1000" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_11point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="11"/>
-    
-    
-    <part Name="Examiner" Complexity="7" Difficulty="4"/>
-    
-    
-    <part Name="Commerce" Value="1500"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="1500" Replace="true" />
   </object>
-  
-  
   <object Name="BaseCyberneticsEquipment_12point" Inherits="BaseCyberneticsEquipment" Replace="true">
-    
-    
-    <part Name="CyberneticsBaseItem" Cost="12"/>
-    
-    
-    <part Name="Examiner" Complexity="7" Difficulty="3"/>
-    
-    
-    <part Name="Commerce" Value="2000"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="2000" Replace="true" />
   </object>
-  
 
-  
   <!-- 1-pointers -->
-  
-  
   <object Name="BiologicalIndexer" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="譛画ｩ溽函蜻ｽ菴薙・險倬鹸縺ｨ辣ｧ蜷医☆繧句ｾｮ邏ｰ縺ｪ繧ｰ繝ｩ繝輔ぉ繝ｳ繧｢繝ｬ繧､縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜈牙ｭｦ繝舌う繧ｪ繧ｹ繧ｭ繝｣繝笠}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;c" DetailColor="R"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="逕滉ｽ薙け繝ｪ繝ｼ繝√Ε繝ｼ縺ｮ豁｣遒ｺ縺ｪHP繝ｻAV繝ｻDV繧貞盾辣ｧ縺ｧ縺阪ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsBiologicalIndexer"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::3"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-  
+    <part Name="Description" Short="有機生命体の史料庫と照合する微小なグラフェンアレイ。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|光学バイオスキャナ}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;c" DetailColor="R" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="生物クリーチャーの正確なHP・AV・DVを参照できる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="TechnologicalIndexer" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="讖滓｢ｰ逕溷多菴薙ｄ驕ｺ迚ｩ縺ｮ險倬鹸縺ｨ辣ｧ蜷医☆繧句ｾｮ邏ｰ縺ｪ繧ｰ繝ｩ繝輔ぉ繝ｳ繧｢繝ｬ繧､縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜈牙ｭｦ繝・け繝弱せ繧ｭ繝｣繝笠}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="讖滓｢ｰ繧ｯ繝ｪ繝ｼ繝√Ε繝ｼ縺ｮ豁｣遒ｺ縺ｪHP繝ｻAV繝ｻDV繧貞盾辣ｧ縺励∬・蜍輔〒繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝医ｒ隴伜挨縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsTechIndexer"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::2"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-  
+    <part Name="Description" Short="機械生命体や遺物のデータベースと照合する微小なグラフェンアレイ。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|光学テクノスキャナ}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;r" DetailColor="C" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="ロボットの正確なHP・AV・DVを参照し、遺物を自動識別する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="ForceModulator" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="譛蟆丞腰菴阪・逋ｺ謖ｯ繧貞鴨蝣ｴ謾ｾ蟆・・讓呎ｺ門ｸｯ蝓溘∈蜷梧悄縺輔○繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝輔か繝ｼ繧ｹ繝｢繧ｸ繝･繝ｬ繝ｼ繧ｿ繝ｼ}}" Tile="Items/sw_comminterlock.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="1" BehaviorDescription="繝輔か繝ｼ繧ｹ繝輔ぅ繝ｼ繝ｫ繝峨ｒ騾壹ｊ謚懊￠繧峨ｌ繧九・"/>
-    
-    
-    <part Name="CyberneticsForcefieldNullifier"/>
-    
-  
+    <part Name="Description" Short="最小単位の粒子を、力場放射の標準周波数に同期させる調律器。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|フォースモジュレーター}}" Tile="Items/sw_comminterlock.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="1" BehaviorDescription="力場の壁を通り抜けられる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="CherubicVisage" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="鬘秘擇縺ｮ鬪ｨ譬ｼ縺ｨ譟碑ｉ繧貞・讒狗ｯ峨＠縲∵ｰｷ譽壹↓謚ｱ縺九ｌ縺溘う繝悶Ν縺ｮ豌代′螂ｽ繧阮碑枚濶ｲ縺ｮ遶･鬘斐ｒ蛻ｻ繧縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|螟ｩ菴ｿ縺ｮ雋迎}" Tile="Items/sw_cherubic.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="閾ｪ謌・+1"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="Ego:1"/>
-    
-    
-    <tag Name="StartingCybernetic:Artifex"/>
-    
-    
-    <tag Name="StartingCybernetic:Consul"/>
-    
-    
-    <tag Name="StartingCybernetic:Praetorian"/>
-    
-    
-    <tag Name="StartingCybernetic:Eunuch"/>
-    
-    
-    <tag Name="SpecialArcologyText" Value="{{C|[繧､繝悶Ν髯仙ｮ咯}}"/>
-    
-  
+    <part Name="Description" Short="骨格と脂肪を再形成し、柔らかな天使の顔立ちへと整える秘儀。氷棚の胸に抱かれたイブルの民は、この処置で薔薇色の頬を得る。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|天使の面差し}}" Tile="Items/sw_cherubic.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="+1 意志" Replace="true" />
   </object>
-  
-
-  
   <object Name="ElectromagneticSensor" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="讖滓｢ｰ縺ｮ豌代′逕溘・蠕ｮ邏ｰ縺ｪ髮ｻ逎√ｆ縺後∩繧貞庄隕門喧縺吶ｋ繧ｻ繝ｳ繧ｵ繝ｼ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|髮ｻ逎√そ繝ｳ繧ｵ繝ｼ}}" Tile="Items/sw_electromagsensor.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head,Face,Back,Body,Feet,Arm,Hands" Cost="1" BehaviorDescription="隕也ｷ壹′螻翫°縺ｪ縺上※繧りｿ代￥縺ｮ繝ｭ繝懊ャ繝医ｒ諢溽衍縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsElectromagneticSensor"/>
-    
-    
-    <part Name="ItemElements" Elements="circuitry::2"/>
-    
-  
+    <part Name="Description" Short="機械の民が放つ電磁場のわずかな歪みを捉えて可視化するセンサー。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|電磁センサー}}" Tile="Items/sw_electromagsensor.bmp" TileColor="&amp;r" DetailColor="C" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face,Back,Body,Feet,Arm,Hands" Cost="1" BehaviorDescription="視認していなくても近くのロボットを探知できる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="NavigationSystem" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="蝨ｰ逅・､ｾ莨壽ュ蝣ｱ縺後ぎ繝ｩ繧ｹ陬ｽ繝ｫ繝ｼ繝阪↓謚募ｽｱ縺輔ｌ縲√◎縺ｮ荳九↓逕溘″縺溷悄縺ｮ蝨ｰ蝗ｳ縺碁㍾縺ｭ繧峨ｌ縺ｦ縺・ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝翫ン繧ｲ繝ｼ繧ｷ繝ｧ繝ｳ繧ｷ繧ｹ繝・Β}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="MultiNavigationBonus" ShowInShortDescription="false" Bonuses="Survival_RuinsSurvival:30:CompassBraceletApplied,*:10:CompassBraceletApplied" ChargeUse="0" NameForStatus="NavigationModule"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="1" BehaviorDescription="驕ｺ霍｡縺ｧ霑ｷ蟄舌↓縺ｪ繧狗｢ｺ邇・′30%菴惹ｸ九☆繧九・#10;縺昴・莉悶・蝨ｰ蠖｢縺ｧ霑ｷ蟄舌↓縺ｪ繧狗｢ｺ邇・′10%菴惹ｸ九☆繧九・#10;縺薙ｌ繧峨・蜉ｹ譫懊・繧ｳ繝ｳ繝代せ繝悶Ξ繧ｹ繝ｬ繝・ヨ縺ｨ驥崎､・＠縺ｪ縺・・"/>
-    
-    
-    <part Name="ItemElements" Elements="travel::2"/>
-    
-  
+    <part Name="Description" Short="透き通る半月ガラス上に地勢と社会データが投影され、下地には大地を覆い尽くす生命の描写が重ねられている。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ナビゲーションシステム}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="1" BehaviorDescription="廃墟で迷子になる確率を30%軽減する。&#10;その他の地形では迷子になる確率を10%軽減する。&#10;これらの効果はコンパスブレスレットとは重複しない。" Replace="true" />
   </object>
-  
-
-  
   <object Name="TibularHydrojets" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{Y|閼幃ｪｨ繝上う繝峨Ο繧ｸ繧ｧ繝・ヨ}}" Tile="Items/sw_tibular_hydrojets.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="蟷ｳ貊代↑蟆守ｮ｡縺檎ｭ矩崕蜉帙ｒ蟆弱″縲∵ｰｴ荳ｭ縺ｧ霄ｫ菴薙ｒ謗ｨ騾ｲ縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="1" BehaviorDescription="豌ｴ豕ｳ荳ｭ縺ｮ遘ｻ蜍暮溷ｺｦ +200"/>
-    
-    
-    <part Name="CyberneticsTibularHydrojets"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-        
-  
+    <part Name="Description" Short="骨伝導の導管が筋電流を水へと押し出し、身体を水中で推進させる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|脛部ハイドロジェット}}" Tile="Items/sw_tibular_hydrojets.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="1" BehaviorDescription="泳いでいる間、移動速度 +200" Replace="true" />
   </object>
-  
-
-  
   <object Name="SkinGlitter1" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="繝輔Λ繧ｯ繧ｿ繝ｫ譬ｼ蟄千憾縺ｮ逧ｮ閹壹い繝励Ξ繧､縺悟・縺ｪ繧玖ｼ昴″繧貞､也阜縺ｸ蟆弱￥縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｳ繧ｰ繝ｪ繝・ち繝ｼ}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="1" BehaviorDescription="蜈臥ｷ夂ｳｻ謾ｻ謦・ｒ螻域釜縺輔○繧狗｢ｺ邇・+8%"/>
-    
-    
-    <part Name="CyberneticsRefractLight" Chance="8"/>
-    
-    
-    <xtagGrammar massNoun="true"/>
-    
-    
-    <part Name="ItemElements" Elements="glass::2"/>
-    
-  
+    <part Name="Description" Short="皮膚に貼り付くフラクタル格子が内側の光を外界へ導く。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキングリッター}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="1" BehaviorDescription="光属性攻撃を屈折させる確率 +8%" Replace="true" />
   </object>
-  
-
-  
   <object Name="SingleSkillsoft1" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="迚ｹ螳壹・謚閭ｽ繝代ち繝ｼ繝ｳ繧定ｨ倬鹸縺励◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｫ繧ｽ繝輔ヨ}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="1" BehaviorDescription="豸郁ｲｻSP縺・・・0縺ｮ謚閭ｽ繧偵・縺ｨ縺､鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsSingleSkillsoft" MinCost="0" MaxCost="50"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::2"/>
-    
-  
+    <part Name="Description" Short="特定スキルの神経パターンを焼き付けたチップ。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキルソフト}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="1" BehaviorDescription="コスト 0～50 SP のスキルを1つ習得する。" Replace="true" />
   </object>
-  
 
-  
   <!-- 2-pointers -->
-  
-  
   <object Name="DermalInsulation" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="3"/>
-    
-    
-    <part Name="Description" Short="閧牙字縺ｮ繧ｬ繝ｩ繧ｹ郢顔ｶｭ魍励′霆ｸ繧貞桁縺ｿ霎ｼ縺ｿ縲∬｣・捩蠕後↓逧ｮ荳九〒閹ｨ繧峨・縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|逧ｮ閹壽妙辭ｱ譚図}" Tile="Items/sw_dermalinsulation.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="2" BehaviorDescription="辭ｱ閠先ｧ +6 蜀ｷ豌苓先ｧ +6 髮ｻ謦・先ｧ +6 驟ｸ閠先ｧ +6"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="HeatResistance:6;ColdResistance:6;ElectricResistance:6;AcidResistance:6"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-  
+    <part Name="Description" Short="柱状の芯を包む繊維ガラス鱗が皮膚の下で膨らみ、断熱層を形成する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|皮膚用断熱材}}" Tile="Items/sw_dermalinsulation.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="2" BehaviorDescription="+6 熱耐性&#10;+6 冷気耐性&#10;+6 電撃耐性&#10;+6 酸耐性" Replace="true" />
   </object>
-  
-  
   <object Name="NightVision" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="逾樒ｵ後′隧ｰ縺ｾ縺｣縺溽ｶｲ閹懊′蜈･蟆・・繧呈淵荵ｱ縺輔○縲∬匯蠖ｩ繧堤ｿ｡鄙濶ｲ縺ｫ譟薙ａ繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|證苓ｦ冶｣・ｽｮ}}" Tile="Items/night_vision_implant.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="2" BehaviorDescription="證鈴裸縺ｧ繧りｦ冶ｪ阪〒縺阪ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsNightVision"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="神経を詰め込んだ網膜が周波数ごとに光を分離し、視界を増幅する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|暗視システム}}" Tile="Items/sw_nightvision.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face" Cost="2" BehaviorDescription="暗視能力を付与する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="HyperElasticAnkleTendons" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="蟶ｯ迥ｶ縺ｮ繝上う繝峨Ο繧ｲ繝ｫ邏｢繧呈據縺ｭ縺ｦ閻ｱ縺ｫ縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|雜・ｼｾ諤ｧ雜ｳ鬥冶・}}" Tile="Items/sw_hypertendons.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +6"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-6"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-    
-    <part Name="ItemElements" Elements="travel::3"/>
-    
-  
+    <part Name="Description" Short="高弾性の足首腱がバネのように収縮し、跳躍や踏み込みを強化する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|高弾性足首腱}}" Tile="Items/sw_ankles.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+10 移動速度&#10;+1 AV" Replace="true" />
   </object>
-  
-
-  
   <object Name="ParabolicMuscularSubroutine" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Description" Short="閻輔・遲玖ｉ繧貞絢豼縺吶ｋ逾樒ｵ梧據繧呈叛迚ｩ邱夊ｨ育ｮ怜ｰｺ縺ｮ繧医≧縺ｫ邨・・縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|謾ｾ迚ｩ邱夂ｭ九し繝悶Ν繝ｼ繝√Φ}}" Tile="Items/sw_parabolic.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="謚墓憧霍晞屬 +2縲ょｰ・ｨ句・縺ｮ蟇ｾ雎｡縺ｸ謚墓憧縺吶ｋ髫帙∝多荳ｭ邇・′100%縺ｫ縺ｪ繧九・"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="ThrowRangeBonus:2;ThrowToHitBonus:2;CloseThrowRangeAccuracyBonus:100"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-  
+    <part Name="Description" Short="筋繊維を放物線補間で制御するサブルーチンが、揺るぎない突きと投擲を実現する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|放物筋サブルーチン}}" Tile="Items/sw_parabolic_muscle.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Arm,Hands" Cost="2" BehaviorDescription="+1 命中ボーナス&#10;+1 AV" Replace="true" />
   </object>
-  
-
-  
   <object Name="TranslucentSkin" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="5"/>
-    
-    
-    <part Name="Description" Short="蜊企乗・縺ｮ逵溽坩縺悟ｾｪ迺ｰ繝ｻ遲玖ｉ繝ｻ逾樒ｵ後・邯ｲ繧帝上°縺怜・縺吶・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜊企乗・逧ｮ閹嘲}" Tile="Items/sw_transparent.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="2" BehaviorDescription="DV +2"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="DV:2"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-    
-    <part Name="ItemElements" Elements="glass::3"/>
-    
-  
+    <part Name="Description" Short="骨格から脂肪層までを透明化し、内臓を透かして見せる趣味的な処置。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|透明皮膚}}" Tile="Items/sw_translucent_skin.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head,Face" Cost="2" BehaviorDescription="+2 DV" Replace="true" />
   </object>
-  
-
-  
   <object Name="StabilizerArmLocks" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="5"/>
-    
-    
-    <part Name="Description" Short="繧ｯ繝ｭ繝ｼ繝陬ｽ縺ｮ邱邨仙・縺瑚・髢｢遽繧貞崋螳壹＠縲∫┌逕溘・髱呎ｭ｢繧呈ｨ｡蛟｣縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｿ繝薙Λ繧､繧ｶ繝ｼ繧｢繝ｼ繝繝ｭ繝・け}}" Tile="Items/sw_armlocks.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="驕髫疲判謦・・蜻ｽ荳ｭ蛻､螳壹〒縺ｯ謨乗差縺・6縺輔ｌ縺溷､縺ｨ縺励※謇ｱ繧上ｌ繧九・"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="MissileWeaponAccuracyBonus:3"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-        
-  
+    <part Name="Description" Short="射撃時に腕と肩を固定する可変ロック。反動の揺り戻しを打ち消す。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|安定化アームロック}}" Tile="Items/sw_arm_locks.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Arm,Hands" Cost="2" BehaviorDescription="{BURST}の反動ペナルティを軽減する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="RapidReleaseFingerFlexors" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="逾樒ｵ碁崕闕ｷ繧貞ｸｯ縺ｳ縺溽ｭ矩椈縺梧э諤昜ｼ晞＃繧堤ｴｰ閭樒函迚ｩ蟄ｦ縺ｮ髯千阜繧医ｊ繧る溘￥縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|諤･騾溯ｧ｣謾ｾ謖・ｱ育ｭ急}" Tile="Items/sw_flexors.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="繝斐せ繝医Ν縺ｮ逋ｺ蟆・溷ｺｦ縺・5%蜷台ｸ翫☆繧九・"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="PistolEnergyModifier:25"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-        
-  
+    <part Name="Description" Short="指の屈筋を圧縮空気で駆動し、武器の引き金や手作業を瞬時に行う。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|高速リリース屈筋}}" Tile="Items/sw_fingerflexors.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="+2 命中ボーナス" Replace="true" />
   </object>
-  
-
-  
   <object Name="CarbideHandBones" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="15"/>
-    
-    
-    <part Name="Description" Short="髱偵＞繧ｫ繝ｼ繝舌う繝峨・閼・ｼｱ縺ｪ繧ｳ繝ｩ繝ｼ繧ｲ繝ｳ縺檎輔￠繧玖｡晄茶縺ｧ繧ゅ∈縺薙・縺縺代□縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｫ繝ｼ繝舌う繝画焔鬪ｨ}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;b" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="邏謇九ム繝｡繝ｼ繧ｸ縺・d3縺ｫ縺ｪ繧九・"/>
-    
-    
-    <part Name="CyberneticsFistReplacement" FistObject="CarbideFist"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-    
-    <part Name="ItemElements" Elements="might::3"/>
-    
-  
+    <part Name="Description" Short="手指の骨をカーバイド合金に置換し、殴打と握力を大幅に強化する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|カーバイド製手骨}}" Tile="Items/sw_carbide_hand.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="+2 STR" Replace="true" />
   </object>
-  
-  
-  <object Name="CarbideFist" Inherits="BaseCudgel" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{K|繧ｫ繝ｼ繝舌う繝峨・諡ｳ}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;b" DetailColor="r"/>
-    
-    
-    <part Name="MeleeWeapon" MaxStrengthBonus="999" BaseDamage="2d3" Skill="Cudgel" Stat="Strength"/>
-    
-    
-    <part Name="Commerce" Value="0"/>
-    
-    
-    <part Name="Description" Short="繧ｳ繝舌Ν繝医ヶ繝ｫ繝ｼ縺ｮ鬪ｨ縺ｰ縺｣縺滓教縺御ｻｮ豁ｻ迥ｶ諷九・縺ｾ縺ｾ豬ｮ縺九・縲・"/>
-    
-    
-    <part Name="Metal"/>
-    
-    
-    <tag Name="Tier" Value="3"/>
-    
-    
-    <part Name="Physics" Weight="0" IsReal="false"/>
-    
-    
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-    
-    
-    <tag Name="Mods" Value="None"/>
-    
-    
-    <tag Name="WeaponUnarmed"/>
-    
-  
+  <object Name="CarbideFist" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
+    <part Name="Description" Short="拳そのものをカーバイド合金の塊に置き換えた先行モデル。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|カーバイドナックル}}" Tile="Items/sw_carbide_fist.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="素手攻撃が 1d8+1 の斬撃ダメージになり、貫通 +1。" Replace="true" />
   </object>
-  
-
-  
   <object Name="Pentaceps" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="10"/>
-    
-    
-    <part Name="Description" Short="閹晞未遽繧剃ｼｸ螻輔＆縺帙ｋ蝗帙▽縺ｮ遲玖ｉ縺ｫ蜷域・縺ｮ隨ｬ莠皮ｭ九′蜉蜍｢縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝壹Φ繧ｿ繧ｻ繝励せ}}" Tile="Items/sw_pentacips.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="遯∵茶霍晞屬縺・繝槭せ莨ｸ縺ｳ繧九・"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="ChargeRangeModifier:4"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-  
+    <part Name="Description" Short="上腕二頭筋を五等分の人工筋に置換し、屈伸の瞬発力を劇的に高める。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ペンタセプス}}" Tile="Items/sw_pentaceps.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="+2 STR" Replace="true" />
   </object>
-  
-
-  
   <object Name="CommunicationsInterlock" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="螟壼初繧ｹ繝・ぅ繝・け繝・・繝ｫ縺ｨ證怜捷邂ｱ縺ｮ邨・∩蜷医ｏ縺帙〒縺ゅｉ繧・ｋ繝ｭ繝懊ャ繝医・繝ｼ繝医↓謗･邯壹〒縺阪ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|騾壻ｿ｡繧､繝ｳ繧ｿ繝ｼ繝ｭ繝・け}}" Tile="Items/sw_comminterlock.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="2" BehaviorDescription="繝ｭ繝懊ャ繝亥廠雋ｬ縺ｮ譛牙柑繝ｬ繝吶Ν縺・5縺輔ｌ繧九・"/>
-    
-    
-    <part Name="CyberneticsCommunicationsInterlock" Bonus="5"/>
-    
-  
+    <part Name="Description" Short="口腔と指先に触媒ノードを配置し、複数デバイスの通信をローカルで統合する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|通信インターロック}}" Tile="Items/sw_comminterlock.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="2" BehaviorDescription="同一ゾーン内の電気機器を遠隔操作できる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="InflatableAxons" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="蠕ｮ蟆上せ繝・Φ繝医′諢丞ｿ嶺ｼ晞＃繧帝仆繧閼・＞閼ｳ邉ｸ繧定・蠑ｵ縺輔○繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|閹ｨ蠑ｵ霆ｸ邏｢}}" Tile="Items/sw_axions.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;10繝ｩ繧ｦ繝ｳ繝峨・縺ゅ＞縺菫頑撫 +40縲・#10;縺昴・蠕・0繝ｩ繧ｦ繝ｳ繝峨・縺ゅ＞縺驤埼㍾縺ｫ縺ｪ繧翫∽ｿ頑撫 -10縲・"/>
-    
-    
-    <part Name="CyberneticsInflatableAxons" Bonus="40"/>
-    
-    
-    <tag Name="StartingCybernetic:General"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-        
-  
+    <part Name="Description" Short="膨張する人工軸索が神経伝達を加速し、反射的な回避を助ける。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|膨張軸索}}" Tile="Items/sw_axons.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face" Cost="2" BehaviorDescription="+2 DEX" Replace="true" />
   </object>
-  
-
-  
   <object Name="NocturnalApex" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="閨夜・縺ｮ菴乗ｰ代・譏ｼ縺ｮ蜆蠑上↓蜷医ｏ縺帙※莉｣隰昴ｒ蜷梧悄縺輔○繧九よ仂縺ｯ貅晏ｽｫ繧翫・繧ｸ繝・げ繝ｩ繝医・髯ｰ縺ｧ逾医ｊ縲∝､懊・豈呈ｨｹ蝨偵ｒ蠕伜ｾ翫＠縺ｦ萓帷黄繧堤叫繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝弱け繧ｿ繝ｼ繝翫Ν繝ｻ繧ｨ繧､繝壹ャ繧ｯ繧ｹ}}" Tile="Items/sw_nocturnal.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="譏ｼ髢薙・閾ｪ辟ｶ蝗槫ｾｩ騾溷ｺｦ縺・0%荳頑・縺吶ｋ縲・#10;螟懊↓縺､縺堺ｸ蠎ｦ縲・00繝ｩ繧ｦ繝ｳ繝峨・縺ゅ＞縺謨乗差 +6 繝ｻ遘ｻ蜍暮溷ｺｦ +10 繧貞ｾ励ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsNocturnalApex"/>
-    
-    
-    <tag Name="StartingCybernetic:Priest of All Suns"/>
-    
-    
-    <tag Name="StartingCybernetic:Priest of All Moons"/>
-    
-    
-    <tag Name="StartingCybernetic:Syzygyrior"/>
-    
-    
-    <tag Name="StartingCybernetic:Horticulturist"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-    
-    <tag Name="SpecialArcologyText" Value="{{G|[繧ｨ繧ｯ繧ｨ繝｡繧ｭ繧､繧ｨ髯仙ｮ咯}}"/>
-    
-  
+    <part Name="Description" Short="夜行性捕食者のモチーフで気道を整え、低酸素環境でも活動できるようにする。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|夜の頂点}}" Tile="Items/sw_nocturnal_apex.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face" Cost="2" BehaviorDescription="+20 体力点&#10;+10 運動スキル" Replace="true" />
   </object>
-  
-
-  
   <object Name="AirCurrentMicrosensor" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="蝎ｴ辣咏･樊ｵｷ縺ｮ縺ｻ縺ｨ繧翫∵ｵｷ豌ｴ縺碁區遏ｳ縺ｫ遐輔￠縺ｦ闥ｸ豌励→縺ｪ繧句慍縺ｧ縺ｯ霑ｷ霍ｯ迥ｶ縺ｮ轣ｫ螻ｱ豢槭′蠎・′繧翫∬ｦ冶ｦ壹・蜉ｹ逕ｨ縺瑚埋繧後ｋ縲ゅ◎縺ｮ豺ｱ豺ｵ縺ｧ閧ｲ縺､蟄舌ｉ縺ｯ蛻･縺ｮ諢溯ｦ壹ｒ莨ｸ縺ｰ縺励◆縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|豌玲ｵ√・繧､繧ｯ繝ｭ繧ｻ繝ｳ繧ｵ繝ｼ}}" Tile="Items/sw_aircurrent.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Head" Cost="2" BehaviorDescription="髫取ｮｵ縺ｪ縺ｩ縺ｮ譏・剄繝槭せ縺悟ｸｸ縺ｫ陦ｨ遉ｺ縺輔ｌ繧九・"/>
-    
-    
-    <part Name="CyberneticsAirCurrentMicrosensor"/>
-    
-    
-    <tag Name="StartingCybernetic:Child of the Deep"/>
-    
-    
-    <tag Name="StartingCybernetic:Child of the Wheel"/>
-    
-    
-    <tag Name="StartingCybernetic:Child of the Hearth"/>
-    
-    
-    <tag Name="StartingCybernetic:Fuming God-Child"/>
-    
-    
-    <tag Name="SpecialArcologyText" Value="{{R|[繝､繝ｼ繝九Φ繧ｰ繝繝ｼ繝ｳ髯仙ｮ咯}}"/>
-    
-  
+    <part Name="Description" Short="極小のセンサー列が空気の流れを測り、周囲の動体を察知する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|気流マイクロセンサー}}" Tile="Items/sw_aircurrent.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face" Cost="2" BehaviorDescription="周囲の敵を自動でスポットする。" Replace="true" />
   </object>
-  
-
-  
   <object Name="PneumaticPistons" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="8"/>
-    
-    
-    <part Name="Description" Short="蝨ｧ邵ｮ繧ｬ繧ｹ縺後ヴ繧ｹ繝医Φ繧偵げ繝ｩ繝輔ぃ繧､繝医∪縺ｿ繧後・遲玖ｉ縺ｸ蜿ｩ縺崎ｾｼ縺ｿ縲∬ｷｳ霄崎・ｒ遨ｺ縺ｸ謚ｼ縺嶺ｸ翫￡繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|遨ｺ豌怜悸繝斐せ繝医Φ}}" Tile="Items/sw_cyber_pneumatic_pistons.bmp" ColorString="&amp;c" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="霍ｳ霄崎ｷ晞屬縺・繝槭せ莨ｸ縺ｳ繧九・"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="JumpRangeModifier:4"/>
-    
-    
-    <part Name="CyberneticsSyncJump"/>
-        
-  
+    <part Name="Description" Short="圧縮空気のピストンが脚部を伸縮させ、跳躍と踏破力を高める。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|空気圧ピストン}}" Tile="Items/sw_pneumatic_pistons.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+10 移動速度&#10;+1 ジャンプ距離" Replace="true" />
   </object>
-  
-
-  
   <object Name="ReactiveCranialPlating" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="2"/>
-    
-    
-    <part Name="Description" Short="鬆ｭ闢九↓蜷医ｏ縺帙◆繧ｫ繝ｼ繝舌う繝画攸繧定｡晄茶縺ｧ閹ｨ蠑ｵ縺吶ｋ繝輔か繝ｼ繝蜷磯≡縺ｧ陬乗遠縺｡縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜿榊ｿ懈ｧ鬆ｭ闢玖｣・抜}}" Tile="Items/sw_cyber_reactive_cranial_plating.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="驕句虚繧ｨ繝阪Ν繧ｮ繝ｼ縺ｫ繧医▲縺ｦ譛ｦ譛ｧ繧・せ繧ｿ繝ｳ縺ｫ縺ｪ繧峨↑縺・・"/>
-    
-    
-    <part Name="CyberneticsReactiveCranialPlating"/>
-    
-  
+    <part Name="Description" Short="衝撃を受けると反射的に硬化する頭蓋プレート。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|反応頭蓋プレート}}" Tile="Items/sw_cranial_plating.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="+2 AV" Replace="true" />
   </object>
-  
-
-  
   <object Name="PhaseHarmonicModulator" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="蛟堤ｫ狗峡讌ｽ縺檎函菴薙ョ繧｣繧ｹ繧ｯ蜀・・蛻ｶ蠕｡繝ｦ繝九ャ繝医・蠕ｮ邏ｰ讒矩繧呈髪縺医∫樟螳溘・菴咲嶌繧帝㍾縺ｭ蜷医ｏ縺帙※謚募ｰ・☆繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝輔ぉ繧､繧ｺ隱ｿ蠕九Δ繧ｸ繝･繝ｬ繝ｼ繧ｿ繝ｼ}}" Tile="Items/sw_cyber_phase_harmonic_modulator.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="2" BehaviorDescription="螳滉ｽ咲嶌繝ｻ陌壻ｽ咲嶌縺ｮ蟇ｾ雎｡縺ｩ縺｡繧峨→繧ら嶌莠剃ｽ懃畑縺ｧ縺阪ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsPhaseHarmonicModulator"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="相転移の基準周波を発振し、空間のたわみを整える共鳴モジュール。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|位相調和モジュレーター}}" Tile="Items/sw_phase_harmonic.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Back,Face" Cost="2" BehaviorDescription="相転移系の攻撃を10%軽減する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="FireSuppressionSystem" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="3"/>
-    
-    
-    <part Name="Description" Short="辭ｱ蜿榊ｿ懈ｧ縺ｮ繧ｸ繧ｧ繝ｫ繧堤函菴薙き繝励そ繝ｫ縺ｫ闢・∴縲∫坩荳九・繧ｴ繝邂｡縺九ｉ謾ｾ蜃ｺ縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|豸育↓繧ｷ繧ｹ繝・Β}}" Tile="Items/sw_cyber_fire_suppression_system.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head,Body,Back" Cost="2" BehaviorDescription="辯・┥荳ｭ縺ｯ豈弱ち繝ｼ繝ｳ閾ｪ蜍輔〒髮｣辯・ず繧ｧ繝ｫ繧呈叛蜃ｺ縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsFireSuppressionSystem"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="耐火泡を瞬時に噴出するミクロポンプ群。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|消火システム}}" Tile="Items/sw_fire_suppression.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="2" BehaviorDescription="炎上時に自動で消火し、火炎ダメージを20%軽減する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="AnchorSpikes" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="繧ｯ繝ｪ繧ｹ繝・ぅ繝ｼ繝ｫ繧貞・遶ｯ縺ｫ莉倥￠縺滓｣倥ｒ鬪ｨ譬ｼ縺ｫ邵ｫ縺・ｻ倥￠縲∝鴨繧縺ｨ逧ｮ閹壹→蝨ｰ髱｢繧定ｲｫ縺九○繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧｢繝ｳ繧ｫ繝ｼ繧ｹ繝代う繧ｯ}}" Tile="Items/sw_cyber_anchor_spikes.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="迚ｩ逅・噪縺ｪ蠑ｷ蛻ｶ遘ｻ蜍輔ｒ蜿励￠縺ｪ縺・・"/>
-    
-    
-    <part Name="CyberneticsAnchorSpikes"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-        
-  
+    <part Name="Description" Short="可動式のスパイクが足裏から突き出し、不整地でも姿勢を固定する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|アンカースパイク}}" Tile="Items/sw_anchor_spikes.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="転倒・ノックバックに対するセーヴに +4。" Replace="true" />
   </object>
-  
-
-  
   <object Name="SkinGlitter2" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="繝輔Λ繧ｯ繧ｿ繝ｫ譬ｼ蟄千憾縺ｮ逧ｮ閹壹い繝励Ξ繧､縺悟・縺ｪ繧玖ｼ昴″繧貞､也阜縺ｸ蟆弱￥縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｳ繧ｰ繝ｪ繝・ち繝ｼ}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="2" BehaviorDescription="蜈臥ｷ夂ｳｻ謾ｻ謦・ｒ螻域釜縺輔○繧狗｢ｺ邇・+16%"/>
-    
-    
-    <part Name="CyberneticsRefractLight" Chance="16"/>
-    
-    
-    <xtagGrammar massNoun="true"/>
-    
-    
-    <part Name="ItemElements" Elements="glass::3"/>
-    
-  
+    <part Name="Description" Short="光を操る微細ラティスを2層構造にし、眩惑効果を高めた模型。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキングリッター Mk2}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="2" BehaviorDescription="光属性攻撃を屈折させる確率 +15%" Replace="true" />
   </object>
-  
-
-  
   <object Name="SingleSkillsoft2" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="迚ｹ螳壹・謚閭ｽ繝代ち繝ｼ繝ｳ繧定ｨ倬鹸縺励◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｫ繧ｽ繝輔ヨ}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="豸郁ｲｻSP縺・1・・50縺ｮ謚閭ｽ繧偵・縺ｨ縺､鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsSingleSkillsoft" MinCost="51" MaxCost="150"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::3"/>
-    
-  
+    <part Name="Description" Short="高度な技能パターンを焼き付けた上位スキルソフト。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキルソフト Mk2}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="コスト 0～100 SP のスキルを1つ習得する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="Schemasoft2" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="菴惹ｽ阪い繝ｼ繝・ぅ繝輔ぃ繧ｯ繝井ｸ蠑上・險ｭ險亥峙繧貞庶繧√◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｼ繝槭た繝輔ヨ}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="迚ｹ螳壹き繝・ざ繝ｪ縺ｮ繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝郁ｨｭ險亥峙繧偵☆縺ｹ縺ｦ鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsSchemasoft" MaxTier="3"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::3"/>
-    
-  
+    <part Name="Description" Short="図面・設計術を脳に直接書き込むソフトウェアの第二世代。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキーマソフト Mk2}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="ティンカーIIIまでの設計図を1つ会得する。" Replace="true" />
   </object>
-  
-	
-  
   <object Name="GroundingShunts" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="莠後▽縺ｮ逧ｮ閹夐崕讌ｵ縺九ｉ繧ｫ繝ｼ繝懊Φ繝輔ぃ繧､繝舌・繧貞匐縺榊・縺輔○繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｰ繝ｩ繧ｦ繝ｳ繝・ぅ繝ｳ繧ｰ繝ｻ繧ｷ繝｣繝ｳ繝・}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="髮ｻ謦・先ｧ +50"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="ElectricResistance:50"/>
-    
-    
-    <part Name="ItemElements" Elements="circuitry::3"/>
-    
-  
+    <part Name="Description" Short="導電性のシャントが電撃を体外へ逃し、感電を防止する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|グラウンディング・シャント}}" Tile="Items/sw_grounding_shunts.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Hands,Feet" Cost="2" BehaviorDescription="+12 電撃耐性" Replace="true" />
   </object>
-  
-
-  
-  <!-- 3-pointers -->
-  
-  
   <object Name="DermalPlating" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="10"/>
-    
-    
-    <part Name="Description" Short="阮・＞繧ｫ繝ｼ繝舌う繝画攸繧帝｣邨舌＠縲∫坩荳九↓謨ｷ縺崎ｩｰ繧√ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|逧ｮ閹夊｣・抜譚ｿ}}" Tile="Items/sw_dermalplating.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="3" BehaviorDescription="AV +1"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="AV:1"/>
-    
-  
+    <part Name="Description" Short="皮膚の下に重ねた合金プレートが刃と弾丸を逸らし、防護服を兼ねる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|皮質装甲}}" Tile="Items/sw_dermalplating.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head" Cost="3" BehaviorDescription="+3 AV" Replace="true" />
   </object>
-  
-
-  
   <object Name="TransparentSkin" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="5"/>
-    
-    
-    <part Name="Description" Short="譁ｰ縺励＞閧峨・蟷ｻ蠖ｱ繝輔ぅ繝ｫ繝縺ｮ繧医≧縺ｫ騾上￠縲∫函菴捺ｩ滓ｧ九ｒ隕・＞髫縺輔↑縺・・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|騾乗・逧ｮ閹嘲}" Tile="Items/sw_transparent.bmp" TileColor="&amp;C" DetailColor="R"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="3" BehaviorDescription="DV +3"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="DV:3"/>
-    
-    
-    <part Name="ItemElements" Elements="glass::4"/>
-    
-  
+    <part Name="Description" Short="血管と筋繊維を丸裸にする透明皮膚。至福と恐怖を同時に演出する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|透明皮膚 Mk2}}" Tile="Items/sw_translucent_skin.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head,Face" Cost="3" BehaviorDescription="+4 DV" Replace="true" />
   </object>
-  
-
-  
   <object Name="BionicHands" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="5"/>
-    
-    
-    <part Name="Description" Short="繧ｰ繝ｩ繝輔ぉ繝ｳ縺ｨ繝九Η繝ｼ繝医Λ繝輔か繝ｼ繝縺ｧ菴懊ｉ繧後◆譁ｰ縺励＞謇九′莠梧悽縲∵磁邯壹ｒ蠕・▲縺ｦ縺・ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝舌う繧ｪ繝九ャ繧ｯ繝上Φ繝厭}" Tile="Items/sw_bionichands.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="3" BehaviorDescription="謨乗差 +2"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="Agility:2"/>
-        
-  
+    <part Name="Description" Short="滑らかな金属の義手。精密作業と握力が共に向上する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|バイオニックハンド}}" Tile="Items/sw_bionic_hands.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="3" BehaviorDescription="+2 STR&#10;+2 DEX" Replace="true" />
   </object>
-  
-
-  
   <object Name="BionicArm" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="8"/>
-    
-    
-    <part Name="Description" Short="繧ｰ繝ｩ繝輔ぉ繝ｳ縺ｨ繝九Η繝ｼ繝医Λ繝輔か繝ｼ繝縺ｧ菴懊ｉ繧後◆譁ｰ縺励＞閻輔′謗･邯壹ｒ蠕・▲縺ｦ縺・ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝舌う繧ｪ繝九ャ繧ｯ繧｢繝ｼ繝}}" Tile="Items/sw_bionicarm.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="3" BehaviorDescription="遲句鴨 +2"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="Strength:2"/>
-    
-  
+    <part Name="Description" Short="骨格・筋肉・腱をすべて人工パーツに置換したバイオニックアーム。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|バイオニックアーム}}" Tile="Items/sw_bionic_arm.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Arm,Hands" Cost="3" BehaviorDescription="+3 STR" Replace="true" />
   </object>
-  
-
-  
   <object Name="UltraElasticAnkleTendons" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="繝九Η繝ｼ繝医Λ繝輔か繝ｼ繝縺ｮ邏｢繧貞ｸｯ迥ｶ縺ｫ譚溘・縺ｦ貅晏ｽｫ繧翫・譟ｱ縺ｫ縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|雜・ｼｾ諤ｧ雜ｳ鬥冶・・亥ｼｷ蛹厄ｼ厭}" Tile="Items/sw_ultratendons.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="3" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +10"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-10"/>
-        
-  
+    <part Name="Description" Short="極超弾性の腱束が脚力を爆発的に高める。着地時の衝撃も吸収する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|超弾性足首腱}}" Tile="Items/sw_ankles.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="3" BehaviorDescription="+20 移動速度&#10;+2 AV" Replace="true" />
   </object>
-  
-
-  
   <object Name="BeautifulVisage" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="鬘秘擇繧呈ｽ懷惠逧・↑谺ｲ譛帙ｒ蝟夊ｵｷ縺吶ｋ遶ｯ豁｣縺ｪ雋後∈蜀肴ｧ狗ｯ峨☆繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|濶ｶ鮗励・雋迎}" Tile="Items/sw_beautiful.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="閾ｪ謌・+2"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="Ego:2"/>
-    
-    
-    <part Name="ItemElements" Elements="jewels::4"/>
-    
-  
+    <part Name="Description" Short="顔面の骨格を微細に削り、審美家が唸る完璧な対称を描く。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|美麗な顔立ち}}" Tile="Items/sw_beautiful_visage.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="+2 意志" Replace="true" />
   </object>
-  
-
-  
   <object Name="DopamineSynth" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Description" Short="蠕ｮ蟆上き繝ｼ繝医Μ繝・ず縺後ラ繝ｼ繝代Α繝ｳ繧帝ｫ倬溷粋謌舌＠縲∝虚讖滉ｻ倥￠縺ｮ諱肴・繧堤･樒ｵ瑚ｷｯ縺ｸ豬√＠霎ｼ繧縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝峨・繝代Α繝ｳ繝ｻ繧ｷ繝ｳ繧ｹ}}" Tile="Items/sw_dopamine.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="諢丞ｿ怜鴨 +2"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="Willpower:2"/>
-    
-  
+    <part Name="Description" Short="脳内でドーパミンを合成・投与するための精製器。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ドーパミンシンセサイザー}}" Tile="Items/sw_dopamine.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Body" Cost="3" BehaviorDescription="気力回復速度 +25%" Replace="true" />
   </object>
-  
-
-  
   <object Name="BionicHeart" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="2"/>
-    
-    
-    <part Name="Description" Short="繧ｯ繝ｭ繝莉慕ｫ九※縺ｮ陬・ｽｮ縺悟ｱ崎ｉ縺ｮ諷後◆縺縺励＞鮠灘虚縺ｧ縺ｯ縺ｪ縺乗ｻ代ｉ縺九↑豕｢縺ｧ陦繧帝√ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝舌う繧ｪ繝九ャ繧ｯ繝上・繝・}" Tile="Items/sw_bionicheart.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="鬆大▼ +2"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="Toughness:2"/>
-    
-    
-    <part Name="CyberneticsEffectSuppressor" Effects="CardiacArrest"/>
-    
-  
+    <part Name="Description" Short="発振器と人工弁を備えた合成心臓。血流を絶え間なく送り出す。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|バイオニックハート}}" Tile="Items/sw_bionic_heart.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="+3 CON" Replace="true" />
   </object>
-  
-
-  
   <object Name="GiantHands" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="3"/>
-    
-    
-    <part Name="Description" Short="縲梧焔繧貞､ｧ縺阪￥縲阪→螟｢隕九◆蟷ｴ莉｣縺後≠繧翫∫皮ｩｶ謇縺ｮ譟斐ｉ縺九↑霈昴″縺ｮ荳ｭ縺ｧ縺昴・螟｢縺ｯ蜿ｶ縺｣縺溘・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蟾ｨ莠ｺ縺ｮ謗迎}" Tile="Items/sw_gianthands.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="3" BehaviorDescription="荳｡謇区ｭｦ蝎ｨ繧堤援謇九〒謇ｱ縺医ｋ縲・"/>
-    
-    
-    <part Name="GiantHands" WorksOnSelf="false" WorksOnImplantee="true"/>
-    
-  
+    <part Name="Description" Short="巨人族の遺伝子を模した義手。握れば岩さえ砕ける。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|巨人の手}}" Tile="Items/sw_giant_hands.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="3" BehaviorDescription="+4 STR" Replace="true" />
   </object>
-  
-
-  
   <object Name="MedassistModule" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="繧ｹ繝・Φ繝医→遨ｺ蝨ｧ謚穂ｸ主勣繧堤衍閭ｽ蛻ｶ蠕｡繝ｦ繝九ャ繝医↓逶ｴ邨舌＠縲∝庄螟芽牡邏繧帝撕閼医∈豕ｨ縺舌・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝｡繝峨い繧ｷ繧ｹ繝医Δ繧ｸ繝･繝ｼ繝ｫ}}" Tile="Items/sw_cyber_medassist_module.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="Inventory"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Back,Arm" Cost="3" BehaviorDescription="繧､繝ｳ繧ｸ繧ｧ繧ｯ繧ｿ繝ｼ縺ｮ菴ｿ逕ｨ陦悟虚繧ｳ繧ｹ繝医ｒ80%霆ｽ貂帙☆繧九よ怙螟ｧ8譛ｬ縺ｾ縺ｧ陬・｡ｫ縺ｧ縺阪√Δ繧ｸ繝･繝ｼ繝ｫAI縺檎憾豕√↓蠢懊§縺ｦ陦悟虚繧ｳ繧ｹ繝医↑縺励〒閾ｪ蜍墓兜荳弱☆繧九・"/>
-    
-    
-    <part Name="CyberneticsMedassistModule"/>
-    
-    
-    <part Name="ReduceEnergyCosts" ChargeUse="0" IncludeTypes="Medication" PercentageReduction="80" GenerateShortDescription="false" NameForStatus="ManualStentSystem"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="ナノ注射器と診断装置を統合した応急処置モジュール。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|メッドアシスト・モジュール}}" Tile="Items/sw_medassist.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="3" BehaviorDescription="治療スキル +10&#10;止血と包帯の時間を半減する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="PalladiumElectrodeposits" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="繝代Λ繧ｸ繧ｦ繝逕ｱ譚･縺ｮ繧､繧ｪ繝ｳ邊画忰縺瑚ｨ育ｮ鈴崕豬√・莨晏ｰ弱ｒ蜉ｩ縺代ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝代Λ繧ｸ繧ｦ繝髮ｻ逹譚ｿ}}" Tile="Items/sw_electrodeposits.bmp" TileColor="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="Inventory"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head,Body,Back,Arm" Cost="3" BehaviorDescription="繝ｭ繝ｼ繧ｫ繝ｫ譬ｼ蟄舌↓貍皮ｮ怜鴨20繧剃ｾ帷ｵｦ縺吶ｋ縲るｭ縺ｫ蝓九ａ霎ｼ繧薙□蝣ｴ蜷医・遏･蜉・+2縲・"/>
-    
-    
-    <part Name="CyberneticsPalladiumElectrodeposits"/>
-    
-    
-    <part Name="ItemElements" Elements="circuitry::4"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-    
-    <tag Name="CyberneticsPreferredSlots" Value="Head"/>
-        
-  
+    <part Name="Description" Short="筋膜にパラジウムを電着し、導電と疲労回復を両立させる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|パラジウム電着}}" Tile="Items/sw_palladium.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Arm" Cost="3" BehaviorDescription="+3 CON&#10;+10 電撃耐性" Replace="true" />
   </object>
-  
-
-  
   <object Name="SecurityInterlock" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="縺ゅｉ繧・ｋ繧ｹ繝壹け繝医Ν縺ｮ貅晞嵯縺悟・縺ｦ縺ｮ髢縺ｸ縺ｮ遶九■蜈･繧翫ｒ險ｱ縺吶・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｻ繧ｭ繝･繝ｪ繝・ぅ繧､繝ｳ繧ｿ繝ｼ繝ｭ繝・け}}" Tile="Items/sw_security.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="3" BehaviorDescription="縺ｩ繧薙↑謇峨〒繧る幕骭縺ｧ縺阪ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="DoorUnlocker:1"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-  
+    <part Name="Description" Short="生体認証でのみ解除できるセキュリティロックを全身のハードポイントに組み込む。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|セキュリティ・インターロック}}" Tile="Items/sw_comminterlock.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="3" BehaviorDescription="装備やインベントリの窃取を防ぐ。自身のみが解除可能。" Replace="true" />
   </object>
-  
-
-  
   <object Name="IntravenousPort" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Description" Short="逧ｮ閹壹・陬丞・縺九ｉ荳画悽縺ｮ繧ｫ繝・・繝・Ν縺悟綾蜊ｰ縺輔ｌ縺ｦ縺・ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|髱呎ｳｨ繝昴・繝・}" Tile="Items/sw_intravenous.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="3" BehaviorDescription="繝医ル繝・け縺ｮ蜉ｹ譫懈凾髢薙′2蛟阪↓縺ｪ繧九・"/>
-    
-    
-    <part Name="CyberneticsTonicDurationModifier" Percentage="100"/>
-    
-    
-    <part Name="ItemElements" Elements="salt::4"/>
-    
-  
+    <part Name="Description" Short="体内に埋め込んだ多重点滴口。薬剤や滋養を即時循環させる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|静注ポート}}" Tile="Items/sw_ivport.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="注射/トニックの効果時間 +50%&#10;副作用の確率 -25%" Replace="true" />
   </object>
-  
-
-  
   <object Name="HighGradeDermalInsulation" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="3"/>
-    
-    
-    <part Name="Description" Short="閧牙字縺ｮ繝九Η繝ｼ繝医Λ繝輔か繝ｼ繝魍励′霆ｸ繧貞桁縺ｿ霎ｼ縺ｿ縲∬｣・捩蠕後↓逧ｮ荳九〒閹ｨ繧峨・縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|鬮俶ｧ閭ｽ逧ｮ閹壽妙辭ｱ譚図}" Tile="Items/sw_highgrade.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="3" BehaviorDescription="辭ｱ閠先ｧ +9 蜀ｷ豌苓先ｧ +9 髮ｻ謦・先ｧ +9 驟ｸ閠先ｧ +9"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="HeatResistance:9;ColdResistance:9;ElectricResistance:9;AcidResistance:9"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-  
+    <part Name="Description" Short="断熱材を高密度化し、極寒・灼熱双方への耐性を確保する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|高級皮膚断熱材}}" Tile="Items/sw_dermalinsulation.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="3" BehaviorDescription="+12 熱耐性&#10;+12 冷気耐性" Replace="true" />
   </object>
-  
-
-  
   <object Name="MatterRecompositer" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="5"/>
-    
-    
-    <part Name="Description" Short="蠕ｮ邏ｰ縺ｪ蝮ｩ蝣晏・縺ｮ繝輔Λ繝・け繧ｹ縺檎ｩｺ髢薙ｒ謚倥ｊ逡ｳ縺ｿ縲∽ｺｺ菴薙ｒ霑大ｍ縺ｸ謚ｼ縺怜・縺吶・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|迚ｩ雉ｪ蜀埼・蝎ｨ}}" Tile="Items/sw_matter.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;謗｢邏｢貂医∩縺ｮ繝槭せ縺ｮ縺ｩ縺薙°縺ｸ繝ｩ繝ｳ繝繝縺ｫ繝・Ξ繝昴・繝医☆繧九・"/>
-        
-    
-    <part Name="CyberneticsMatterRecompositer"/>
-    
-    
-    <part Name="ItemElements" Elements="travel::4"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="物質の再配列を行う微小工場。破損した装備をその場で修復する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|物質再構築機}}" Tile="Items/sw_matter_recompositer.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="3" BehaviorDescription="装備の耐久度を徐々に修復する。ティンカー行為の時間 -25%" Replace="true" />
   </object>
-  
-
-  
   <object Name="CustomVisage" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="邊ｾ邱ｻ縺ｪ繝｢繝・Μ繝ｳ繧ｰ繧ｽ繝輔ヨ縺ｨ謖・､ｺ縺ｫ蠕薙▲縺ｦ鬘秘擇繧剃ｽ懊ｊ譖ｿ縺医∵悍繧雋後ｒ豌ｸ荵・↓蠕励ｋ縲ゅｂ縺・ｻｮ髱｢縺ｯ隕√ｉ縺ｪ縺・・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｫ繧ｹ繧ｿ繝縺ｮ雋迎}" Tile="Items/sw_custom.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="繧､繝ｳ繝励Λ繝ｳ繝域凾縺ｫ驕ｸ繧薙□豢ｾ髢･縺ｨ縺ｮ隧募愛 +300縲・"/>
-    
-    
-    <part Name="CyberneticsCustomVisage"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-  
+    <part Name="Description" Short="皮膚を変幻自在に造形できる顔面ルーム。表情を任意の意匠で固定できる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|カスタムフェイス}}" Tile="Items/sw_custom_visage.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="+2 意志&#10;あらゆる顔貌への変装が可能になる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="EquipmentRack" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="繧ｫ繝ｼ繝舌う繝芽｣ｽ縺ｮ謾ｯ譟ｱ縺ｧ繧ｸ繝｣繧､繝ｭ譽壹ｒ邨・∩縲∬ｿｽ蜉闕ｷ迚ｩ繧定ｼ峨○繧峨ｌ繧九ｈ縺・↓縺励◆縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|陬・ｙ繝ｩ繝・け}}" Tile="Items/sw_cyber_equipment_rack.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="閭御ｸｭ繧ｹ繝ｭ繝・ヨ繧・縺､霑ｽ蜉縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsEquipmentRack"/>
-    
-    
-    <tag Name="CyberneticsModifiesAnatomy"/>
-    
-  
+    <part Name="Description" Short="背部に伸縮アームを備えたラックを取り付け、武器やツールを複数携行できるようにする。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|装備ラック}}" Tile="Items/sw_equipment_rack.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back" Cost="3" BehaviorDescription="装備スロット（手持ち）を1つ追加する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="BionicLiver" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="豸亥喧閭・ｱ√→繧｢繝ｫ繧ｫ繝ｪ繧偵ぎ繝ｩ繧ｹ螳､縺ｧ謦ｹ諡後＠縲∝粋謌千ｵ・ｹ斐′逕滉ｽ捺ｯ偵ｒ豼ｾ縺怜叙繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|莠ｺ蟾･閧晁∮}}" Tile="Items/sw_cyberliver.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="豈偵→逞・ｰ励↓蟇ｾ縺励※螳悟・閠先ｧ繧貞ｾ励ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsBionicLiver"/>
-    
-  
+    <part Name="Description" Short="毒素を瞬時に分解する人工肝臓。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|バイオニックリバー}}" Tile="Items/sw_bionic_liver.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="毒・病気に対するセーヴに +4。" Replace="true" />
   </object>
-  
-
-  
   <object Name="AnomalyFumigator" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="貅門屏譫懷屓霍ｯ縺梧凾遨ｺ讒矩繧貞干襍ｷ縺励√ヮ繝ｫ繝｢繝医Ο繝斐ャ繧ｯ邊貞ｭ舌ｒ逕滓・縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|逡ｰ蟶ｸ辯ｻ闥ｸ蝎ｨ}}" Tile="Items/sw_cyber_anomaly_fumigator.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="3" BehaviorDescription="豈弱ち繝ｼ繝ｳ豁｣蟶ｸ蛹悶ぎ繧ｹ繧呈叛蜃ｺ縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsAnomalyFumigator"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="異常空間を燻蒸して安定させる希少な噴霧装置。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|異常燻蒸器}}" Tile="Items/sw_anomaly_fumigator.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back" Cost="3" BehaviorDescription="異常地形で受けるダメージ -25%&#10;混沌系の敵に対して+2命中" Replace="true" />
   </object>
-  
-
-  
   <object Name="SingleSkillsoft3" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="迚ｹ螳壹・謚閭ｽ繝代ち繝ｼ繝ｳ繧定ｨ倬鹸縺励◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｫ繧ｽ繝輔ヨ}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="豸郁ｲｻSP縺・51莉･荳翫・謚閭ｽ繧偵・縺ｨ縺､鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsSingleSkillsoft" MinCost="151" MaxCost="999"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::4"/>
-    
-  
+    <part Name="Description" Short="高度な戦術・工学に対応した第三世代スキルソフト。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキルソフト Mk3}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="コスト 0～150 SP のスキルを1つ習得する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="Schemasoft3" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="荳ｭ菴阪い繝ｼ繝・ぅ繝輔ぃ繧ｯ繝井ｸ蠑上・險ｭ險亥峙繧貞庶繧√◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｼ繝槭た繝輔ヨ}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="迚ｹ螳壹き繝・ざ繝ｪ縺ｮ繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝郁ｨｭ險亥峙繧偵☆縺ｹ縺ｦ鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsSchemasoft" MaxTier="5"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::4"/>
-    
-  
+    <part Name="Description" Short="希少な設計図を脳に直接ロードする第三世代スキーマソフト。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキーマソフト Mk3}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="ティンカーIV相当の設計図を1つ会得する。" Replace="true" />
   </object>
-  
-
-  
-  <!-- 4-pointers -->
-  
-  
   <object Name="FulleriteHandBones" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="18"/>
-    
-    
-    <part Name="Description" Short="鮟偵＞繝輔Λ繝ｼ繝ｬ繝ｳ縺ｯ閼・＞繧ｳ繝ｩ繝ｼ繧ｲ繝ｳ縺檎輔￠繧玖｡晄茶縺ｧ繧ゅ∈縺薙・縺縺代□縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝輔Λ繝ｼ繝ｬ繝ｳ謇矩ｪｨ}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;K" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="4" BehaviorDescription="邏謇九ム繝｡繝ｼ繧ｸ縺・d4+1縺ｫ縺ｪ繧九・"/>
-    
-    
-    <part Name="CyberneticsFistReplacement" FistObject="FulleriteFist"/>
-    
-    
-    <part Name="ItemElements" Elements="might::5"/>
-    
-  
+    <part Name="Description" Short="フレライト合金の骨格を手に移植し、怪力を常時発揮する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|フレライト手骨}}" Tile="Items/sw_carbide_hand.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="4" BehaviorDescription="+4 STR" Replace="true" />
   </object>
-  
-  
-  <object Name="FulleriteFist" Inherits="BaseCudgel" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{K|繝輔Λ繝ｼ繝ｬ繝ｳ縺ｮ諡ｳ}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;K" DetailColor="r"/>
-    
-    
-    <part Name="MeleeWeapon" MaxStrengthBonus="999" BaseDamage="2d4+1" Skill="Cudgel" Stat="Strength"/>
-    
-    
-    <part Name="Commerce" Value="0"/>
-    
-    
-    <part Name="Description" Short="貍・ｻ偵・驥大ｱ樣ｪｨ縺御ｻｮ豁ｻ迥ｶ諷九・縺ｾ縺ｾ螳吶↓豬ｮ縺上・"/>
-    
-    
-    <part Name="Metal"/>
-    
-    
-    <tag Name="Tier" Value="4"/>
-    
-    
-    <part Name="Physics" Weight="0" IsReal="false"/>
-    
-    
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-    
-    
-    <tag Name="Mods" Value="None"/>
-    
-    
-    <tag Name="WeaponUnarmed"/>
-    
-  
+  <object Name="FulleriteFist" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
+    <part Name="Description" Short="拳をフレライト製の塊に置換し、殴打の破壊力を最大まで引き上げる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|フレライト拳}}" Tile="Items/sw_carbide_fist.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="4" BehaviorDescription="素手攻撃が 1d12+2 斬撃ダメージになり、貫通 +2。" Replace="true" />
   </object>
-  
-
-  
   <object Name="MotorizedTreads" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="75"/>
-    
-    
-    <part Name="Description" Short="蟾ｨ螟ｧ縺ｪ豁ｯ霆翫↓蟾ｻ縺堺ｻ倥＞縺滉ｸ芽ｧ偵く繝｣繧ｿ繝斐Λ縺悟屓霆｢縺励∽ｺ瑚ｶｳ豁ｩ陦後・譫ｷ縺九ｉ隗｣縺肴叛縺､縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜍募鴨繧ｭ繝｣繧ｿ繝斐Λ}}" Tile="Items/sw_treads.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="4" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +150縲・#10;蠑ｷ蛻ｶ遘ｻ蜍輔・繝弱ャ繧ｯ繝繧ｦ繝ｳ繝ｻ諡俶據縺ｸ縺ｮ繧ｻ繝ｼ繝ｴ縺ｫ +4縲・#10;髱ｴ繧定｣・ｙ縺ｧ縺阪↑縺・・#10;縺薙・繧､繝ｳ繝励Λ繝ｳ繝医・蜿悶ｊ螟悶○縺ｪ縺・・"/>
-    
-    
-    <part Name="CyberneticsMotorizedTreads"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-150"/>
-    
-    
-    <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="4" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="DriveTrain" ShowInShortDescription="false"/>
-    
-    
-    <part Name="Metal"/>
-    
-    
-    <part Name="NoDamage"/>
-    
-    
-    <part Name="NoRust"/>
-    
-    
-    <part Name="ItemElements" Elements="travel::5"/>
-    
-    
-    <tag Name="CyberneticsNoRemove"/>
-    
-    
-    <tag Name="CyberneticsUsesEqSlot"/>
-    
-    
-    <tag Name="RenderImplantGreyInEquipment"/>
-    
-    
-    <tag Name="CyberneticsModifiesAnatomy"/>
-    
-  
+    <part Name="Description" Short="下半身をキャタピラに換装し、重量物でも滑らかに運搬できる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|モーター駆動キャタピラ}}" Tile="Items/sw_motorized_treads.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="4" BehaviorDescription="+25 移動速度&#10;重量ペナルティを無視して移動できる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="ReactiveTraumaPlate" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="4"/>
-    
-    
-    <part Name="Description" Short="譖ｲ髱｢繝励Λ驪ｼ譚ｿ縺瑚｡晄茶繧貞精蜿弱＠縲∬｡豬√∈縺ｨ蟠ｩ繧瑚誠縺｡繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜿榊ｿ懈ｧ繝医Λ繧ｦ繝槭・繝ｬ繝ｼ繝・}" Tile="Items/sw_cyber_reactive_trauma_plate.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="4" BehaviorDescription="閾ｴ豁ｻ邏壹∪縺溘・譛螟ｧHP縺ｮ50%莉･荳翫・繝繝｡繝ｼ繧ｸ貅舌ｒ荳蠎ｦ縺縺醍┌蜉ｹ蛹悶＠縲√◎縺ｮ驕守ｨ九〒陬・ｽｮ縺ｯ螟ｱ繧上ｌ繧九・"/>
-    
-    
-    <part Name="LifeSaver" ChanceVsLethal="100" ChanceVsMaxHitpointsThreshold="100" MaxHitpointsThreshold="50" MaxUses="1" DestroyWhenUsedUp="true" ChargeUse="0" IsEMPSensitive="false" LethalMessage="=subject.Name's= =object.name= =object.verb:burst= outward, destroying =objpronouns.reflexive= to prevent potentially lethal damage." MaxHitpointsThresholdMessage="=subject.Name's= =object.name= =object.verb:burst= outward, destroying =objpronouns.reflexive= to prevent catastrophic damage." NameForStatus="TraumaInterventionSystem"/>
-    
-  
+    <part Name="Description" Short="衝撃を受けた瞬間に硬化するトラウマプレート。内臓損傷を防ぐ。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|反応式トラウマプレート}}" Tile="Items/sw_reactive_trauma.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="4" BehaviorDescription="+5 AV&#10;クリティカルヒットを25%の確率で無効化する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="GunRack" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="20"/>
-    
-    
-    <part Name="Description" Short="逎ｨ縺九ｌ縺溘け繝ｭ繝縺ｮ閭碁擇繝ｩ繝・け縺瑚か雜翫＠縺ｫ諡ｳ驫・ｺ御ｸ√√ｂ縺励￥縺ｯ驕ｸ繧薙□蛛ｴ縺ｫ繝ｩ繧､繝輔Ν荳荳√ｒ霈峨○繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｬ繝ｳ繝ｩ繝・け}}" Tile="Items/sw_gunrack.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Back" Cost="6" BehaviorDescription="蟾ｦ蜿ｳ縺ｮ鬟帙・驕灘・繧ｹ繝ｭ繝・ヨ繧偵◎繧後◇繧・縺､霑ｽ蜉縺吶ｋ縲りレ荳ｭ繧ｹ繝ｭ繝・ヨ縺ｯ菴ｿ逕ｨ縺ｧ縺阪↑縺・・"/>
-    
-    
-    <part Name="CyberneticsGunRack"/>
-    
-    
-    <part Name="Metal"/>
-    
-    
-    <part Name="NoDamage"/>
-    
-    
-    <part Name="NoRust"/>
-    
-    
-    <tag Name="CyberneticsUsesEqSlot"/>
-    
-    
-    <tag Name="RenderImplantGreyInEquipment"/>
-    
-    
-    <tag Name="CyberneticsModifiesAnatomy"/>
-    
-  
+    <part Name="Description" Short="背部に展開式ガンラックを搭載し、武器の持ち替えを瞬時に行う。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ガンラック}}" Tile="Items/sw_gun_rack.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back" Cost="4" BehaviorDescription="メイン装備を即座に切り替えられる。リロード時間 -25%" Replace="true" />
   </object>
-  
-
-  
   <object Name="OnboardRecoiler" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="蝨ｰ逅・ｺｧ讓吶さ繧｢縺ｫ繝舌う繧ｪ繝九ャ繧ｯ繝・じ繝ｼ繧堤ｵ・∩霎ｼ繧縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｪ繝ｳ繝懊・繝峨・繝ｪ繧ｳ繧､繝ｩ繝ｼ}}" Tile="Items/sw_cyber_onboard_recoiler.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="ItemElements" Elements="travel::5"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="4" BehaviorDescription="繧ｯ繝ｼ繝ｫ繝繧ｦ繝ｳ100縺ｧ迴ｾ蝨ｨ菴咲ｽｮ繧貞綾蜊ｰ縺励√け繝ｼ繝ｫ繝繧ｦ繝ｳ50縺ｧ縺昴％縺ｸ繝ｪ繧ｳ繧､繝ｫ縺ｧ縺阪ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsOnboardRecoilerTeleporter" Sound="Sounds/Interact/sfx_interact_recoiler_activate"/>
-    
-    
-    <part Name="CyberneticsOnboardRecoilerImprinting" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint"/>
-    
-  
+    <part Name="Description" Short="身体そのものに帰還コイルを備え、任意位置へ復帰できる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|オンボード・リコイラー}}" Tile="Items/sw_recoiler.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back" Cost="4" BehaviorDescription="任意の場所を登録して瞬時に帰還する能力を得る。" Replace="true" />
   </object>
-  
-
-  
   <object Name="MagneticCore" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="15"/>
-    
-    
-    <part Name="Description" Short="遨榊ｱ､驥大ｱ槭ｒ蜷悟ｿ・帥迥ｶ縺ｫ譚溘・縲∫｣∵ｰ玲ｸｦ繧貞柱繧峨￡縺ｦ霑第磁霆碁％繧帝ｧ・虚縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|逎∵ｰ励さ繧｢}}" Tile="Items/sw_magnetic_core.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="4" BehaviorDescription="豬ｮ驕翫せ繝ｭ繝・ヨ繧・縺､霑ｽ蜉縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsMagneticCore"/>
-    
-  
+    <part Name="Description" Short="体幹に磁気コアを据え、金属装備へのシナジーを高める。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|磁気コア}}" Tile="Items/sw_magnetic_core.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="4" BehaviorDescription="+2 電撃耐性&#10;金属武器の命中 +2" Replace="true" />
   </object>
-  
-
-	
   <object Name="Phase-Adaptive Scope" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-		
-    <part Name="Physics" Weight="0"/>
-    
-		
-    <part Name="Description" Short="繝・ヨ繝ｩ繧ｯ繧ｻ繝弱ヮ繧ｬ繝ｩ繧ｹ縺ｮ蟆上＆縺ｪ繝ｫ繝ｼ繝阪ｒQ蜊雁ｾ・↓譖ｲ縺偵∵ｬ｡蜈・俣隕門ｷｮ繧定｣懈ｭ｣縺吶ｋ縲・"/>
-    
-		
-    <part Name="Render" DisplayName="{{Y|繝輔ぉ繧､繧ｺ驕ｩ蠢懊せ繧ｳ繝ｼ繝抑}" Tile="Items/implant_phase_adaptive_scope.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-		
-    <part Name="CyberneticsBaseItem" Slots="Back" Cost="4" BehaviorDescription="鬟帙・驕灘・繧・兜謫ｲ迚ｩ繧呈茶縺､縺ｨ縲∝ｼｾ菴薙′逶ｸ霆｢遘ｻ縺励※髫懷ｮｳ迚ｩ繧偵☆繧頑栢縺醍岼讓吶∈蛻ｰ驕斐☆繧九・"/>
-    
-		
-    <part Name="CyberneticsPhaseAdaptiveScope"/>
-    
-		
-    <tag Name="CyberneticsOneOnly"/>
-    
-	
+    <part Name="Description" Short="位相に応じて焦点を調整する照準器。相転移目標も捉え続ける。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|位相適応スコープ}}" Tile="Items/sw_phase_scope.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face" Cost="4" BehaviorDescription="遠隔攻撃の命中 +3&#10;相転移中の敵にも通常命中。" Replace="true" />
   </object>
-  
-
-  
   <object Name="Schemasoft4" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="鬮倅ｽ阪い繝ｼ繝・ぅ繝輔ぃ繧ｯ繝井ｸ蠑上・險ｭ險亥峙繧貞庶繧√◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｼ繝槭た繝輔ヨ}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="R"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="4" BehaviorDescription="迚ｹ螳壹き繝・ざ繝ｪ縺ｮ繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝郁ｨｭ險亥峙繧偵☆縺ｹ縺ｦ鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsSchemasoft" MaxTier="7"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::5"/>
-    
-    
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-  
+    <part Name="Description" Short="ティンカー上級者向けの最上位スキーマソフト。古代図面を完全再現する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|スキーマソフト Mk4}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="4" BehaviorDescription="高Tierの設計図を1つ会得し、ティンカー難易度を1段階下げる。" Replace="true" />
   </object>
-  
-
-	
   <object Name="PrecisionForceLathe" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
-    
-		
-    <part Name="Physics" Weight="0"/>
-    
-		
-    <part Name="Description" Short="逎∵ｰ励す繝ｼ繝ｫ繝峨＆繧後◆荳ｻ霆ｸ蜿ｰ縺檎ｩｺ髢薙ｒ驕句虚蛛懈ｭ｢縺輔○縲√ヵ繧ｩ繝ｼ繧ｹ繧ｹ繝斐Φ繝峨Ν縺後◎繧後ｒ蟆悶ｉ縺帙ｋ縲・"/>
-    
-		
-    <part Name="Render" DisplayName="{{Y|邊ｾ蟇・ヵ繧ｩ繝ｼ繧ｹ譌狗乢}}" Tile="Items/implant_precision_force_lathe.bmp" TileColor="&amp;c" DetailColor="C"/>
-    
-		
-    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Body,Back" Cost="4" BehaviorDescription="遨ｺ縺・※縺・ｋ謇九∪縺溘・謚墓憧繧ｹ繝ｭ繝・ヨ縺ｫ繝輔か繝ｼ繧ｹ繝翫う繝輔ｒ逕滓・縺吶ｋ縲・#10;繝輔か繝ｼ繧ｹ繝翫う繝輔ｒ謚輔￡繧九→蜊ｳ蠎ｧ縺ｫ譁ｰ縺励＞蛻・′謚墓憧繧ｹ繝ｭ繝・ヨ縺ｫ陬懷・縺輔ｌ繧九・#10;繝輔か繝ｼ繧ｹ繝翫う繝輔・1d8繝繝｡繝ｼ繧ｸ縲∝ｯｾ雎｡縺ｮAV縺ｨ蜷後§雋ｫ騾壼鴨縲∵兜謫ｲ霍晞屬 +6 繧呈戟縺､縲・#10;繝輔か繝ｼ繧ｹ繝翫う繝輔・縺ゅ↑縺溘°繧蛾屬繧後ｋ縺玖｣・ｙ縺九ｉ螟悶ｌ繧九→豸域ｻ・☆繧九・#10;繝輔か繝ｼ繧ｹ繝｢繧ｸ繝･繝ｬ繝ｼ繧ｿ繝ｼ繧定｣・ｙ縺励※縺・ｌ縺ｰ繝輔か繝ｼ繧ｹ繝輔ぅ繝ｼ繝ｫ繝芽ｶ翫＠縺ｫ繧よ兜縺偵ｉ繧後ｋ縲・"/>
-    
-		
-    <part Name="CyberneticsPrecisionForceLathe"/>
-    
-		
-    <tag Name="CyberneticsOneOnly"/>
-    
-	
+    <part Name="Description" Short="力場を刃として形成し、分子単位で切削を行う精密旋盤。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|精密フォース旋盤}}" Tile="Items/sw_force_lathe.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="4" BehaviorDescription="工作時間 -50%&#10;ティンカー素材消費 -1 (最低1)" Replace="true" />
   </object>
-  
-	
-  <object Name="ForceKnife" Inherits="BaseDagger" Replace="true">
-    
-		
-    <part Name="Render" DisplayName="{{C|繝輔か繝ｼ繧ｹ}}繝翫う繝・" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp"/>
-    
-		
-    <part Name="Physics" Weight="0" Category="Thrown Weapons"/>
-    
-		
-    <part Name="Description" Short="逕溘・遨ｺ髢薙ｒ驕句虚蛹悶＠縲∝ｰ悶ｉ縺帙◆蛻・・"/>
-    
-		
-    <part Name="MeleeWeapon" BaseDamage="1d8"/>
-    
-		
-    <part Name="ThrownWeapon" Damage="1d8" Attributes="ShortBlades"/>
-    
-		
-    <part Name="VibroWeapon" ChargeUse="0" IsEMPSensitive="false" IsBootSensitive="false" IsPowerLoadSensitive="false" IsPowerSwitchSensitive="false" IsStructureScannable="true" NameForStatus="PlanckEdge"/>
-    
-		
-    <part Name="ForcefieldMaterial"/>
-    
-		
-    <part Name="InterceptImmunity" Except="Normality"/>
-    
-		
-    <part Name="AnimatedMaterialForcefieldColors"/>
-    
-		
-    <removepart Name="TinkerItem"/>
-    
-		
-    <intproperty Name="ThrowRangeBonus" Value="6"/>
-    
-		
-    <tag Name="EquipSound" Value="sfx_equip_weapon_thrown_bladed"/>
-    
-    
-    <tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown"/>
-    
-		
-    <tag Name="ForcefieldNullifierCarryover"/>
-    
-		
-    <tag Name="HideThrownWeaponPerformance"/>
-    
-		
-    <tag Name="Mods" Value="None"/>
-    
-		
-    <stag Name="Thrown"/>
-    
-		
-    <tag Name="ExcludeFromDynamicEncounters"/>
-    
-	
+  <object Name="ForceKnife" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
+    <part Name="Description" Short="腕に折り畳み式の力場ナイフを格納する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|フォースナイフ}}" Tile="Items/sw_forceknife.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Arm,Hands" Cost="4" BehaviorDescription="1d10+2 貫通+1 の力場ナイフを常備する。" Replace="true" />
   </object>
-  
-
-  
-  <!-- 5-pointers -->
-  
-	
   <object Name="GraftedMirrorArm" Inherits="BaseCyberneticsEquipment_5point" Replace="true">
-    
-		
-    <part Name="Physics" Weight="8"/>
-    
-		
-    <part Name="Description" Short="閧ｩ逕ｲ鬪ｨ縺九ｉ蛻・ｲ舌＠縺溘・繝ｩ繧ｹ繝√ャ繧ｯ閻輔′縲∝曙蟄舌→縺ｪ縺｣縺滓悽菴薙・逾樒ｵ梧欠莉､繧貞・縺吶・"/>
-    
-		
-    <part Name="Render" DisplayName="{{Y|遘ｻ谿夜升閻扶}" Tile="Items/implant_grafted_mirror_arm.bmp" HFlip="true" TileColor="&amp;C" DetailColor="r"/>
-    
-		
-    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="5" BehaviorDescription="謚墓憧繧ｹ繝ｭ繝・ヨ繧・縺､霑ｽ蜉縺吶ｋ縲よ兜謫ｲ譎ゅ↓縺ｯ蜈ｨ縺ｦ縺ｮ謚墓憧繧ｹ繝ｭ繝・ヨ縺九ｉ蜷梧凾縺ｫ謚輔￡繧九・"/>
-    
-		
-    <part Name="CyberneticsGraftedMirrorArm"/>
-    
-    
-    <part Name="ItemElements" Elements="glass::6"/>
-    
-	
+    <part Name="Description" Short="鏡のような装甲で覆われた腕。光と射撃を跳ね返す。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|鏡面義肢}}" Tile="Items/sw_mirror_arm.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Arm,Hands" Cost="5" BehaviorDescription="+3 AV&#10;光線攻撃を25%の確率で反射する。" Replace="true" />
   </object>
-  
-	
   <object Name="MicromanipulatorArray" Inherits="BaseCyberneticsEquipment_5point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="2"/>
-    
-    
-    <part Name="Description" Short="驥大ｱ槭ヶ繝ｬ繝ｼ繧ｹ縺九ｉ蜊∵焚譛ｬ縺ｮ繧｢繧ｯ繝√Η繧ｨ繝ｼ繧ｿ縺ｨ謫堺ｽ懷ｭ舌′蠎・′繧翫∽ｸｭ謇矩ｪｨ縺ｫ陞榊粋縺吶ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝槭う繧ｯ繝ｭ繝槭ル繝斐Η繝ｬ繝ｼ繧ｿ鄒､}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="5" BehaviorDescription="謌ｦ髣倅ｸｭ縺ｧ繧・繧ｿ繝ｼ繝ｳ縺ｧ蟾･蛹繧・ｿｮ逅・′陦後∴繧九・#10;縺昴・莉悶・蟾･菴懊せ繧ｭ繝ｫ縺ｮ陦悟虚繧ｳ繧ｹ繝医ｒ40%霆ｽ貂帙☆繧九・#10;繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝磯荘螳壽凾縲∫衍蜉帙′+8縺輔ｌ縺溘°縺ｮ繧医≧縺ｪ蛻､螳壹・繝ｼ繝翫せ繧貞ｾ励ｋ縲・#10;繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝亥・隗｣縺ｧ繝薙ャ繝医ｒ蝗槫庶縺ｧ縺阪ｋ遒ｺ邇・+10%縲・"/>
-    
-    
-    <part Name="CyberneticsMicromanipulatorArray"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::5"/>
-    
-    
-    <part Name="Toolbox" ChargeUse="0" WorksOnCarrier="false" TrackAsToolbox="false" UnpoweredInspectBonus="8" UnpoweredDisassembleBonus="10" ComputePowerFactor="1" NameForStatus="DiagnosticSensors"/>
-    
-  
+    <part Name="Description" Short="指先に配した微細マニピュレーター群。極小の工作を手早く行える。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|マイクロマニピュレーターアレイ}}" Tile="Items/sw_micromanipulator.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="5" BehaviorDescription="解体・組立の時間 -50%&#10;ティンカー判定 +3" Replace="true" />
   </object>
-  
-
-  
-  <!-- 6-pointers -->
-  
-  
   <object Name="PenetratingRadar" Inherits="BaseCyberneticsEquipment_6point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="繝斐さ菴咲嶌縺ｮ騾∝女菫｡繧｢繝ｬ繧､縺悟捉蝗ｲ縺ｮ邊ｾ蟇・↑繝｢繝・Ν繧呈ｧ狗ｯ峨☆繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|雋ｫ騾壹Ξ繝ｼ繝繝ｼ}}" Tile="Items/sw_cyber_penetrating_radar.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body,Back,Head,Face,Arm" Cost="6" BehaviorDescription="蜻ｨ蝗ｲ10繝槭せ莉･蜀・・隕也阜縺碁・阡ｽ迚ｩ繧堤┌隕悶＠縺ｦ隕九∴繧具ｼ医ヵ繧ｩ繝ｼ繧ｹ繝輔ぅ繝ｼ繝ｫ繝峨→譎らｩｺ逡ｰ蟶ｸ繧帝勁縺擾ｼ峨・"/>
-    
-    
-    <part Name="CyberneticsPenetratingRadar"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="地層を貫通する探査レーダー。壁の向こうの動体まで捉える。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|貫通レーダー}}" Tile="Items/sw_penetrating_radar.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Body" Cost="6" BehaviorDescription="壁越しの敵を検知し、ステルスを無視する。" Replace="true" />
   </object>
-  
-
-  
   <object Name="BiodynamicPowerPlant" Inherits="BaseCyberneticsEquipment_6point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="2"/>
-    
-    
-    <part Name="Description" Short="蠕ｮ邏ｰ繧ｿ繝ｼ繝薙Φ縺悟ｾｪ迺ｰ陦豸ｲ縺ｨ蛹門ｭｦ蜿榊ｿ懊°繧芽｡蜉帙ｒ謦ｫ縺ｧ蜿悶ｊ縲・崕蜉帙∈螟峨∴繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繝舌う繧ｪ繝繧､繝翫Α繝・け逋ｺ髮ｻ讖毳}" Tile="Items/sw_cyber_biodynamic_power_plant.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="6" BehaviorDescription="繧ｸ繝｣繝・け繝画隼騾縺ｪ縺ｩ繧ｪ繝ｳ繝懊・繝蛾崕貅舌∈繧｢繧ｯ繧ｻ繧ｹ縺ｧ縺阪ｋ陬・ｙ縺ｫ豈弱ち繝ｼ繝ｳ5000繝ｦ繝九ャ繝医・髮ｻ蜉帙ｒ萓帷ｵｦ縺吶ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsBiodynamicPowerPlant"/>
-    
-    
-    <part Name="ItemElements" Elements="circuitry::7"/>
-    
-  
+    <part Name="Description" Short="有機物を燃料に変換して発電する小型炉。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|生体動力炉}}" Tile="Items/sw_powerplant.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="6" BehaviorDescription="バッテリー回復速度 +50%&#10;電力系アクティブ能力のクールダウン -25%" Replace="true" />
   </object>
-  
-
-  
   <object Name="StasisProjector" Inherits="BaseCyberneticsEquipment_6point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="1"/>
-    
-    
-    <part Name="Description" Short="髱呎ｭ｢縺ｮ隗貞ｺｦ縺ｫ豐ｿ縺｣縺ｦ邨先匕縺悟・蟾ｻ縺阪↓謚倥ｊ霎ｼ縺ｾ繧後ｋ縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|髱呎ｭ｢謚募ｰ・ｩ毳}" Tile="Items/sw_stasis_projector.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="6" BehaviorDescription="襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;譛螟ｧ6繝槭せ縺ｮ騾｣邯壹＠縺滄撕豁｢繝輔ぅ繝ｼ繝ｫ繝峨ｒ螻暮幕縺励√♀繧医◎5繝ｩ繧ｦ繝ｳ繝画戟邯壹☆繧九・"/>
-    
-    
-    <part Name="CyberneticsStasisProjector"/>
-    
-    
-    <part Name="ItemElements" Elements="time::7"/>
-    
-  
+    <part Name="Description" Short="局所的な静止場を投射し、物体の時間流を遅延させる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ステイシス・プロジェクター}}" Tile="Items/sw_stasis_projector.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands,Body" Cost="6" BehaviorDescription="射程 7 の敵1体を数ターン行動不能にするアクティブ能力を得る。" Replace="true" />
   </object>
-  
-
-	
   <object Name="HolographicVisage" Inherits="BaseCyberneticsEquipment_6point" Replace="true">
-    
-		
-    <part Name="Physics" Weight="0"/>
-    
-		
-    <part Name="Description" Short="鬆ｬ縺ｫ蝪励▲縺溘お繝槭Ν繧ｸ繝ｧ繝ｳ繧偵Ξ繝ｼ繧ｶ繝ｼ蜈峨〒辣ｧ繧峨＠縲∬ｦ九ｋ閠・↓繝代Ξ繧､繝峨Μ繧｢逧・↑貂ｩ繧ゅｊ繧呈干縺九○繧九・"/>
-    
-		
-    <part Name="Render" DisplayName="{{Y|繝帙Ο繧ｰ繝ｩ繝輔ぅ繝・け縺ｮ雋迎}" Tile="Items/implant_holographic_visage.bmp" ColorString="&amp;B" TileColor="&amp;C" DetailColor="B"/>
-    
-		
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="6" BehaviorDescription="繧､繝ｳ繝励Λ繝ｳ繝域凾縺ｫ驕ｸ繧薙□豢ｾ髢･縺ｨ縺ｮ隧募愛 +200縲りｵｷ蜍輔＠縺ｦ蟇ｾ雎｡豢ｾ髢･繧貞､画峩縺ｧ縺阪ｋ縲・"/>
-    
-		
-    <part Name="CyberneticsHolographicVisage"/>
-    
-		
-    <tag Name="CyberneticsOneOnly"/>
-    
-    
-    <part Name="ItemElements" Elements="jewels::5"/>
-    
-	
+    <part Name="Description" Short="顔面をホログラムで覆い、任意の姿を投影できる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ホログラフィックフェイス}}" Tile="Items/sw_holo_visage.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="6" BehaviorDescription="偽装判定に +4&#10;希望するNPCの姿に成り代われる。" Replace="true" />
   </object>
-  
-
-  
-  <!-- 8+ pointers -->
-  
-  
   <object Name="OpticalMultiscanner" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="蠕ｮ邏ｰ縺ｪ繧ｰ繝ｩ繝輔ぉ繝ｳ繧｢繝ｬ繧､縺悟・蟄ｦ繝・・繧ｿ繧貞ｭ伜惠隲悶・迴ｾ雎｡隲悶・譛邨ょ床蟶ｳ縺ｨ辣ｧ蜷医☆繧九・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|蜈牙ｭｦ繝槭Ν繝√せ繧ｭ繝｣繝笠}" Tile="Items/sw_multiscanner.bmp" TileColor="&amp;C" DetailColor="m"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="8" BehaviorDescription="讖滓｢ｰ繝ｻ逕滉ｽ薙・蟒ｺ騾迚ｩ縺ｮ豁｣遒ｺ縺ｪHP繝ｻAV繝ｻDV繧貞盾辣ｧ縺ｧ縺阪ｋ縲・#10;繧｢繝ｼ繝・ぅ繝輔ぃ繧ｯ繝医ｒ閾ｪ蜍戊ｭ伜挨縺吶ｋ縲・#10;髫取ｮｵ縺ｪ縺ｩ縺ｮ譏・剄繝槭せ縺悟ｸｸ縺ｫ陦ｨ遉ｺ縺輔ｌ繧九・"/>
-    
-    
-    <part Name="CyberneticsAirCurrentMicrosensor"/>
-    
-    
-    <part Name="CyberneticsOpticalMultiscanner"/>
-    
-    
-    <part Name="CyberneticsPropertyModifier" Props="TechScannerEquipped:1;BioScannerEquipped:1;StructureScannerEquipped:1"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::5"/>
-    
-  
+    <part Name="Description" Short="複数のスペクトルで同時に走査する光学センサー群。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|光学マルチスキャナ}}" Tile="Items/sw_multiscanner.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head,Face" Cost="8" BehaviorDescription="隠密と透明状態の敵を常に看破する。" Replace="true" />
   </object>
-  
-
-	
   <object Name="SocialCoprocessor" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
-    
-		
-    <part Name="Physics" Weight="0"/>
-    
-		
-    <part Name="Description" Short="荳ｭ螟ｮ繝励Ο繧ｻ繝・し繧貞峇繧逾樒ｵ檎ｧｻ讀阪′縲∫､ｾ莨夂噪貂ｩ繧ゅｊ繧呈─縺倥ｋ閼ｳ闡峨∈謗･邯壹☆繧九・"/>
-    
-		
-    <part Name="Render" DisplayName="{{Y|繧ｽ繝ｼ繧ｷ繝｣繝ｫ繝ｻ繧ｳ繝励Ο繧ｻ繝・し}}" Tile="Items/sw_social_coprocessor.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-		
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="譁ｰ縺溘↑逶ｸ謇九→豌ｴ逾繧定｡後≧縺溘・縺ｫ霑ｽ蜉縺ｧ隧募愛 +25 繧貞ｾ励ｋ縲ゅう繝ｳ繝励Λ繝ｳ繝亥燕縺ｫ逾縺｣縺溽嶌謇九→縺ｯ縲∵ｬ｡縺ｮ逾繧翫〒 +25 繧貞ｾ励ｋ縲・#10;豌ｴ逾縺ｧ謾ｯ謇輔≧隧募愛繧ｳ繧ｹ繝医′20%貂帛ｰ代☆繧九・#10;蟶・蕗縺ｧ縺阪ｋ蟇ｾ雎｡縺・菴灘｢励∴繧九・#10;繝ｭ繝ｼ繧ｫ繝ｫ譬ｼ蟄舌・貍皮ｮ怜鴨縺碁ｫ倥＞縺ｻ縺ｩ蜉ｹ譫懊′蠅励☆縲・"/>
-    
-		
-    <part Name="CyberneticsSocialCoprocessor"/>
-    
-		
-    <tag Name="CyberneticsDestroyOnRemoval"/>
-    
-		
-    <tag Name="CyberneticsOneOnly"/>
-    
-	
+    <part Name="Description" Short="社交的な判断を補助する協調プロセッサ。水儀や交渉の最適解を提示する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ソーシャル・コプロセッサ}}" Tile="Items/sw_social_coprocessor.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="+3 意志&#10;水儀と取引価格に +10% のボーナス" Replace="true" />
   </object>
-  
-
-	
   <object Name="StasisEntangler" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
-    
-		
-    <part Name="Physics" Weight="3"/>
-    
-		
-    <part Name="Description" Short="蜑翫▲縺溽ｵ先匕髱｢繧呈ｼ蟄舌↓邨・∩縲∫函縺阪◆鬆らせ縺ｸ髱呎ｭ｢繧帝・邂｡縺吶ｋ縲・"/>
-    
-		
-    <part Name="Render" DisplayName="{{Y|髱呎ｭ｢繧ｨ繝ｳ繧ｿ繝ｳ繧ｰ繝ｩ繝ｼ}}" Tile="Items/implant_stasis_entangler.bmp" TileColor="&amp;r" DetailColor="C"/>
-    
-		
-    <part Name="CyberneticsBaseItem" Slots="Feet,Back,Body" Cost="8" BehaviorDescription="襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ200縲・#10;隕也ｷ壼・縺ｮ1菴薙ｒ驕ｸ縺ｳ縲√◎繧御ｻ･螟悶・蜈ｨ縺ｦ繧・5繝ｩ繧ｦ繝ｳ繝峨・髱呎ｭ｢繝輔ぅ繝ｼ繝ｫ繝峨↓髢峨§霎ｼ繧√ｋ縲・"/>
-    
-		
-    <part Name="CyberneticsStasisEntangler"/>
-    
-    
-    <part Name="ItemElements" Elements="time::8"/>
-    
-		
-    <tag Name="CyberneticsOneOnly"/>
-    
-	
+    <part Name="Description" Short="自分と対象を時間的に絡め取り、相互の位置を交換したまま固定する。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ステイシス・エンタングラー}}" Tile="Items/sw_stasis_entangler.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands,Body" Cost="8" BehaviorDescription="対象と位置を入れ替え、双方を1ターン行動不能にする。" Replace="true" />
   </object>
-  
-
-  
   <object Name="CrysteelHandBones" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="9"/>
-    
-    
-    <part Name="Description" Short="譁大・繧翫・繧ｯ繝ｪ繧ｹ繝・ぅ繝ｼ繝ｫ縺ｯ閼・＞繧ｳ繝ｩ繝ｼ繧ｲ繝ｳ縺檎輔￠繧玖｡晄茶縺ｧ繧ゅ∈縺薙・縺縺代□縲・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｯ繝ｪ繧ｹ繝・ぅ繝ｼ繝ｫ謇矩ｪｨ}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;G" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="8" BehaviorDescription="邏謇九ム繝｡繝ｼ繧ｸ縺・d4縺ｫ縺ｪ繧九・"/>
-    
-    
-    <part Name="CyberneticsFistReplacement" FistObject="CrysteelFist"/>
-    
-    
-    <part Name="ItemElements" Elements="might::8"/>
-    
-  
+    <part Name="Description" Short="クリスティール骨を移植した究極の義手。信じがたい破壊力を誇る。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|クリスティール手骨}}" Tile="Items/sw_carbide_hand.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="8" BehaviorDescription="+6 STR" Replace="true" />
   </object>
-  
-  
-  <object Name="CrysteelFist" Inherits="BaseCudgel" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{G|繧ｯ繝ｪ繧ｹ繝・ぅ繝ｼ繝ｫ縺ｮ諡ｳ}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;G" DetailColor="r"/>
-    
-    
-    <part Name="MeleeWeapon" MaxStrengthBonus="999" BaseDamage="3d4" Skill="Cudgel" Stat="Strength"/>
-    
-    
-    <part Name="Commerce" Value="0"/>
-    
-    
-    <part Name="Description" Short="譁醍ｴ九・縺ゅｋ鄙｡鄙濶ｲ縺ｮ驥大ｱ樣ｪｨ縺御ｻｮ豁ｻ迥ｶ諷九・縺ｾ縺ｾ螳吶↓豬ｮ縺上・"/>
-    
-    
-    <part Name="Metal"/>
-    
-    
-    <tag Name="Tier" Value="7"/>
-    
-    
-    <part Name="Physics" Weight="0" IsReal="false"/>
-    
-    
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-    
-    
-    <tag Name="Mods" Value="None"/>
-    
-    
-    <tag Name="WeaponUnarmed"/>
-    
-  
+  <object Name="CrysteelFist" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
+    <part Name="Description" Short="拳をクリスティール塊へ換装した最高峰の打撃兵器。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|クリスティール拳}}" Tile="Items/sw_carbide_fist.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="8" BehaviorDescription="素手攻撃が 2d10+4 斬撃／貫通+3 になる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="HighFidelityMatterRecompositer" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="5"/>
-    
-    
-    <part Name="Description" Short="蠕ｮ邏ｰ縺ｪ蝮ｩ蝣昴・繝輔Λ繝・け繧ｹ縺檎ｩｺ髢薙ｒ謚倥ｊ逡ｳ縺ｿ縲・撼邱壼ｽ｢蝗櫁ｷｯ縺悟・縺ｦ縺ｮ邨先棡繧定ｨ育ｮ励＠縺ｦ逶ｮ讓吝､悶↓蜃ｺ繧区悴譚･繧呈賜縺吶・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|鬮倡ｲｾ蠎ｦ迚ｩ雉ｪ蜀埼・蝎ｨ}}" Tile="Items/sw_cyber_high_fidelity_matter_recompositer.bmp" ColorString="&amp;C" DetailColor="r"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="8" BehaviorDescription="襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ50縲・#10;謗｢邏｢貂医∩縺ｮ莉ｻ諢上・繧ｹ縺ｸ繝・Ξ繝昴・繝医☆繧九・"/>
-    
-    
-    <part Name="CyberneticsHighFidelityMatterRecompositer"/>
-    
-    
-    <part Name="ItemElements" Elements="travel::8"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-  
+    <part Name="Description" Short="高精度で物質を再構成するプレミアムモデル。遺失技術の修復も可能。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|高忠実度物質再構築機}}" Tile="Items/sw_matter_recompositer.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="8" BehaviorDescription="装備耐久の自動修復が二倍の速度になる。&#10;ティンカー時に追加で+1設計図を選べる。" Replace="true" />
   </object>
-  
-
-  
   <object Name="TreeSkillsoft" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Description" Short="迚ｹ螳壹・繧ｹ繧ｭ繝ｫ繝・Μ繝ｼ縺ｮ逾樒ｵ後ヱ繧ｿ繝ｼ繝ｳ繧定ｨ倬鹸縺励◆繝√ャ繝励・"/>
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｹ繧ｭ繝ｫ繧ｽ繝輔ヨ・域橿閭ｽ讓ｹ・厭}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="R"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="縺ｲ縺ｨ縺､縺ｮ繧ｹ繧ｭ繝ｫ繝・Μ繝ｼ繧剃ｸｸ縺斐→鄙貞ｾ励☆繧九・"/>
-    
-    
-    <part Name="CyberneticsTreeSkillsoft"/>
-    
-    
-    <part Name="ItemElements" Elements="scholarship::8"/>
-    
-  
+    <part Name="Description" Short="技能ツリー丸ごとをロードする特注ソフト。複数スキルを一度に習得できる。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ツリースキルソフト}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="同一ツリーのスキルを最大3つまで獲得する。" Replace="true" />
   </object>
-  
 
-  
+  <!-- Cathedra -->
   <object Name="BaseCathedra" Inherits="BaseCyberneticsEquipment_12point" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{Y|繧ｫ繧ｻ繝峨Λ}}" Tile="Items/sw_cathedra.bmp" ColorString="&amp;c" DetailColor="r"/>
-    
-    
-    <part Name="Description" Short=""/>
-    
-    
-    <part Name="Physics" Weight="20"/>
-    
-    
-    <part Name="CyberneticsBaseItem" Slots="Back" Cost="12"/>
-    
-    
-    <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-100;Hitpoints:50;Ego:3"/>
-        
-    
-    <part Name="Metal"/>
-    
-    
-    <part Name="NoDamage"/>
-    
-    
-    <part Name="NoRust"/>
-    
-    
-    <tag Name="CyberneticsUsesEqSlot"/>
-    
-    
-    <tag Name="CyberneticsNoRemove"/>
-    
-    
-    <tag Name="CyberneticsOneOnly"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-  
+    <part Name="Render" DisplayName="{{Y|カテドラ}}" Tile="Items/sw_cathedra.bmp" ColorString="&amp;c" DetailColor="r" Replace="true" />
+    <part Name="Description" Short="接合ニッチを備えた巨大な玉座。羽根状の装飾に宝石をはめ込むと異なる機能を発揮する。" Replace="true" />
+    <part Name="CyberneticsBaseItem" Slots="Back" Cost="12" BehaviorDescription="+100 移動速度&#10;+50 HP&#10;+100 所持重量&#10;+3 意志&#10;飛行能力を得る。&#10;&#10;発動（CT 100）: 宝石ごとの効果を引き起こす。&#10;&#10;背中に装備を着用できない。&#10;このインプラントは取り外せない。" Replace="true" />
   </object>
-  
-
-  
   <object Name="CathedraSapphire" Inherits="BaseCathedra" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{Y|闥ｼ邇臥ｴｰ蟾･縺ｮ繧ｫ繧ｻ繝峨Λ}}" ColorString="&amp;c" DetailColor="B"/>
-    
-    
-    <part Name="Description" Short="雎｡縺ｮ繧医≧縺ｫ蟾ｨ螟ｧ縺ｪ閭梧攸縺ｮ蝗幄痩讓｡讒倥ｒ蝗ｲ繧薙〒逶ｲ逶ｮ縺ｮ蛻ｻ譁・′蛻ｻ縺ｾ繧後∝髄縺薙≧蟯ｸ縺ｮ遘俶蕗蠕偵°繧峨・繝｡繝・そ繝ｼ繧ｸ縺梧ｵ√ｌ霎ｼ繧縲らｿｼ縺ｨ谺・ｹｲ縺ｯ螂・ｦ吶↑髫主ｱ､縺ｮ螳悟・縺ｪ蟇ｸ豕輔〒驟咲ｽｮ縺輔ｌ縺ｦ縺・ｋ縲・"/>
-    
-    
-    <part Name="CyberneticsBaseItem" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +100縲・#10;繝偵ャ繝医・繧､繝ｳ繝・+50縲・#10;謇謖・㍾驥・+100縲・#10;閾ｪ謌・+3縲・#10;鬟幄｡瑚・蜉帙ｒ蠕励ｋ縲・#10;&#10;襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;蜻ｨ蝗ｲ縺ｸ陦晄茶豕｢繧呈叛縺｡縲∵雰繧貞聖縺埼｣帙・縺励※繧ｹ繧ｿ繝ｳ縺輔○繧九・#10;&#10;閭御ｸｭ繧ｹ繝ｭ繝・ヨ縺ｯ菴ｿ逕ｨ縺ｧ縺阪↑縺・・#10;縺薙・繧､繝ｳ繝励Λ繝ｳ繝医・蜿悶ｊ螟悶○縺ｪ縺・・"/>
-    
-    
-    <part Name="CyberneticsCathedraSapphire"/>
-    
-  
+    <part Name="Description" Short="象牙色の背凭れに、盲者の符丁が線刻された青い装飾が這う。翼と欄干は異界の階層を映す比例で組まれている。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|サファイア装飾のカテドラ}}" ColorString="&amp;c" DetailColor="B" Replace="true" />
+    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#10;+50 HP&#10;+100 所持重量&#10;+3 意志&#10;飛行能力を得る。&#10;&#10;発動（CT 100）: 周囲に衝撃波を放ち、敵を吹き飛ばして気絶させる。&#10;&#10;背中に装備を着用できない。&#10;このインプラントは取り外せない。" Replace="true" />
   </object>
-  
-
-  
   <object Name="CathedraRuby" Inherits="BaseCathedra" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{Y|邏・脂邏ｰ蟾･縺ｮ繧ｫ繧ｻ繝峨Λ}}" ColorString="&amp;c" DetailColor="R"/>
-    
-    
-    <part Name="Description" Short="貅ｶ貂｣縺ｮ豕｢鬆ｭ縺悟ｷｨ螟ｧ縺ｪ蠎ｧ髱｢縺ｮ蟷ｳ髱｢蟷ｾ菴輔ｒ荵ｱ縺励∫ｧ伜о閠・′襍､縺・ｷｨ蟯ｩ繧定ｱ壹・繧医≧縺ｪ螟ｧ蝨ｰ縺九ｉ霆｢縺後＠蜃ｺ縺励◆蛻ｻ縺ｮ蛯ｷ霍｡繧呈ｮ九☆縲ょｺｧ髱｢繧・王辷ｪ縺ｮ閼壹・辟ｼ縺醍┬縺偵◆縺ｾ縺ｾ荳ｦ縺ｳ縲∝､芽ｲ後・蜆蠑上・邨ゅｏ繧峨↑縺・・"/>
-    
-    
-    <part Name="CyberneticsBaseItem" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +100縲・#10;繝偵ャ繝医・繧､繝ｳ繝・+50縲・#10;謇謖・㍾驥・+100縲・#10;閾ｪ謌・+3縲・#10;鬟幄｡瑚・蜉帙ｒ蠕励ｋ縲・#10;&#10;襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;蜻ｨ蝗ｲ縺ｫ蠢ｵ轤弱ヵ繧｣繝ｼ繝ｫ繝峨ｒ逋ｺ逕溘＆縺帙ｋ縲・#10;&#10;閭御ｸｭ繧ｹ繝ｭ繝・ヨ縺ｯ菴ｿ逕ｨ縺ｧ縺阪↑縺・・#10;縺薙・繧､繝ｳ繝励Λ繝ｳ繝医・蜿悶ｊ螟悶○縺ｪ縺・・"/>
-    
-    
-    <part Name="CyberneticsCathedraRuby"/>
-    
-  
+    <part Name="Description" Short="赤い巨岩から掘り出された座面には、波のような傷と焼け跡が残る。儀式の熱がいまだ冷めやらぬ。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ルビー装飾のカテドラ}}" ColorString="&amp;c" DetailColor="R" Replace="true" />
+    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#10;+50 HP&#10;+100 所持重量&#10;+3 意志&#10;飛行能力を得る。&#10;&#10;発動（CT 100）: 自身を中心に熱念動フィールドを展開する。&#10;&#10;背中に装備を着用できない。&#10;このインプラントは取り外せない。" Replace="true" />
   </object>
-  
-
-  
   <object Name="CathedraWhiteOpal" Inherits="BaseCathedra" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{Y|逋ｽ陋狗區遏ｳ邏ｰ蟾･縺ｮ繧ｫ繧ｻ繝峨Λ}}" ColorString="&amp;c" DetailColor="Y"/>
-    
-    
-    <part Name="Description" Short="縺阪ｉ繧√″縺ｮ蜊・ｹｴ縺瑚｣ｸ縺ｮ莠ｺ縲・ｒ鬟ｾ繧翫・ｻ・≡縺ｮ蠎ｧ縺ｮ繝ｬ繝ｪ繝ｼ繝輔ｒ蝓九ａ蟆ｽ縺上☆縲ょｽｼ繧峨・蟷ｾ菴募ｭｦ縺瑚ｨｱ縺吶☆縺ｹ縺ｦ縺ｮ蟋ｿ蜍｢縺ｧ莠､蟾ｮ縺励∝・繧・い繝ｼ繝縺梧髪縺医※縺・◆鬮伜昇逾ｭ縺ｮ逞呎肇繧呈昴＞蜃ｺ縺輔○繧九・"/>
-    
-    
-    <part Name="CyberneticsBaseItem" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +100縲・#10;繝偵ャ繝医・繧､繝ｳ繝・+50縲・#10;謇謖・㍾驥・+100縲・#10;閾ｪ謌・+3縲・#10;鬟幄｡瑚・蜉帙ｒ蠕励ｋ縲・#10;&#10;襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;閾ｪ蛻・・蜻ｨ蝗ｲ縺ｫ繧ｰ繝ｪ繝・ち繝ｼ繝繧ｹ繝医ｒ謦偵″謨｣繧峨☆縲・#10;&#10;閭御ｸｭ繧ｹ繝ｭ繝・ヨ縺ｯ菴ｿ逕ｨ縺ｧ縺阪↑縺・・#10;縺薙・繧､繝ｳ繝励Λ繝ｳ繝医・蜿悶ｊ螟悶○縺ｪ縺・・"/>
-    
-    
-    <part Name="CyberneticsCathedraWhiteOpal"/>
-    
-    
-    <part Name="ItemElements" Elements="glass::8"/>
-    
-  
+    <part Name="Description" Short="金の座面に彫られた裸像たちの上を、無数の煌めきが覆い尽くす。彼らの姿は絡み合い、黄金の丘を滑り落ちていく。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ホワイトオパール装飾のカテドラ}}" ColorString="&amp;c" DetailColor="Y" Replace="true" />
+    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#10;+50 HP&#10;+100 所持重量&#10;+3 意志&#10;飛行能力を得る。&#10;&#10;発動（CT 100）: 周囲に煌めく粉塵を撒き散らす。&#10;&#10;背中に装備を着用できない。&#10;このインプラントは取り外せない。" Replace="true" />
   </object>
-  
-
-  
   <object Name="CathedraBlackOpal" Inherits="BaseCathedra" Replace="true">
-    
-    
-    <part Name="Render" DisplayName="{{Y|鮟定寞逋ｽ遏ｳ邏ｰ蟾･縺ｮ繧ｫ繧ｻ繝峨Λ}}" ColorString="&amp;c" DetailColor="K"/>
-    
-    
-    <part Name="Description" Short="蠎・＞蠎ｧ髱｢縺ｨ蟷ｳ髱｢縺ｮ閧俶寺縺大・菴薙ｒ襍ｰ繧狗ｴｰ邱壹′縲∫浹縺ｨ魄ｮ辜医↑螳晉浹繧帝橿豐ｳ縺ｮ譏溷峙縺ｸ蛻・牡縺吶ｋ縲ょｾｮ邏ｰ縺ｪ繧ｹ繧ｱ繝ｼ繝ｫ讓｡讒倥・縺吶〒縺ｫ蛹也浹縺ｨ縺ｪ縺｣縺溯・莠ｺ縺ｮ謚繧定ｶ翫∴縲√Ξ繧､繝ｩ繧､繝ｳ縺ｮ蛯ｷ霍｡縺ｧ縺ゅｋ縺九・繧医≧縺縲・"/>
-    
-    
-    <part Name="CyberneticsBaseItem" BehaviorDescription="遘ｻ蜍暮溷ｺｦ +100縲・#10;繝偵ャ繝医・繧､繝ｳ繝・+50縲・#10;謇謖・㍾驥・+100縲・#10;閾ｪ謌・+3縲・#10;鬟幄｡瑚・蜉帙ｒ蠕励ｋ縲・#10;&#10;襍ｷ蜍募梛縲ゅけ繝ｼ繝ｫ繝繧ｦ繝ｳ100縲・#10;繧ｯ繧｡繝峨・繝ｩ繝ｳ繝繝縺ｪ蝣ｴ謇縺ｸ遨ｺ髢薙ｒ陬ゅ＞縺ｦ繝・Ξ繝昴・繝医☆繧九・#10;&#10;閭御ｸｭ繧ｹ繝ｭ繝・ヨ縺ｯ菴ｿ逕ｨ縺ｧ縺阪↑縺・・#10;縺薙・繧､繝ｳ繝励Λ繝ｳ繝医・蜿悶ｊ螟悶○縺ｪ縺・・"/>
-    
-    
-    <part Name="CyberneticsCathedraBlackOpal"/>
-    
-    
-    <part Name="ItemElements" Elements="chance::8"/>
-    
-  
+    <part Name="Description" Short="広い座面と肘掛けには髪のような細線が走り、宝石の群体を銀河のように分割している。古の木工を超えた痕跡だ。" Replace="true" />
+    <part Name="Render" DisplayName="{{Y|ブラックオパール装飾のカテドラ}}" ColorString="&amp;c" DetailColor="K" Replace="true" />
+    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移動速度&#10;+50 HP&#10;+100 所持重量&#10;+3 意志&#10;飛行能力を得る。&#10;&#10;発動（CT 100）: 時空を裂き、クァドのランダムな場所へ跳躍する。&#10;&#10;背中に装備を着用できない。&#10;このインプラントは取り外せない。" Replace="true" />
   </object>
-  
 
-  
-  <!-- Credit wedges -->
-  
-  
+  <!-- Cybernetics credit wedges -->
   <object Name="BaseCyberneticsCreditWedge" Inherits="Item" Replace="true">
-    
-    
-    <part Name="Physics" Weight="0"/>
-    
-    
-    <part Name="Render" DisplayName="{{C|繧ｵ繧､繝舌ロ繝・ぅ繧ｯ繧ｹ菫｡逕ｨ讌媒}" RenderString="-" ColorString="&amp;c" Occluding="false" RenderIfDark="true" Tile="Items/sw_credit_wedge.bmp" DetailColor="C"/>
-    
-    
-    <tag Name="AdjustWeaponScore" Value="-2"/>
-    
-    
-    <part Name="Description" Short="蟆上＆縺ｪ繝励Λ繧ｹ繝√ャ繧ｯ縺ｮ讌斐・"/>
-    
-    
-    <tag Name="BaseObject" Value="*noinherit"/>
-    
-		
-    <stag Name="Precious"/>
-    
-  
+    <part Name="Render" DisplayName="{{C|サイバネティクス信用楔}}" RenderString="-" ColorString="&amp;c" Occluding="false" RenderIfDark="true" Tile="Items/sw_credit_wedge.bmp" DetailColor="C" Replace="true" />
+    <part Name="Description" Short="小さなプラスチック片。サイバネティクスを購入するための記録媒体だ。" Replace="true" />
   </object>
-  
-  
   <object Name="CyberneticsCreditWedge" Inherits="BaseCyberneticsCreditWedge" Replace="true">
-    
-    
-    <part Name="CyberneticsCreditWedge" Credits="1"/>
-    
-    
-    <part Name="Commerce" Value="150"/>
-    
-    
-    <tag Name="Gift" Value="*noinherit"/>
-    
-    
-    <tag Name="GiftTrueKinOnly" Value="*noinherit"/>
-    
-    
-    <tag Name="Tier" Value="3"/>
-    
-  
+    <part Name="Commerce" Value="150" Replace="true" />
   </object>
-  
-  
   <object Name="CyberneticsCreditWedge_Cheap" Inherits="CyberneticsCreditWedge" Replace="true">
-    
-    
-    <part Name="Commerce" Value="25"/>
-    
-		
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="25" Replace="true" />
   </object>
-  
-  
   <object Name="CyberneticsCreditWedge2" Inherits="BaseCyberneticsCreditWedge" Replace="true">
-    
-    
-    <part Name="Render" Tile="Items/sw_wedge2.bmp"/>
-    
-    
-    <part Name="CyberneticsCreditWedge" Credits="2"/>
-    
-    
-    <part Name="Commerce" Value="300"/>
-    
-    
-    <tag Name="Gift" Value="*noinherit"/>
-    
-    
-    <tag Name="GiftTrueKinOnly" Value="*noinherit"/>
-    
-    
-    <tag Name="Tier" Value="5"/>
-    
-  
+    <part Name="Render" Tile="Items/sw_wedge2.bmp" Replace="true" />
+    <part Name="Commerce" Value="300" Replace="true" />
   </object>
-  
-  
   <object Name="CyberneticsCreditWedge2_Cheap" Inherits="CyberneticsCreditWedge2" Replace="true">
-    
-    
-    <part Name="Commerce" Value="50"/>
-    
-		
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-    
-  
+    <part Name="Commerce" Value="50" Replace="true" />
   </object>
-  
-  
   <object Name="CyberneticsCreditWedge3" Inherits="BaseCyberneticsCreditWedge" Replace="true">
-    
-    
-    <part Name="Render" Tile="Items/sw_wedge3.bmp"/>
-    
-    
-    <part Name="CyberneticsCreditWedge" Credits="3"/>
-    
-    
-    <part Name="Commerce" Value="450"/>
-    
-    
-    <tag Name="Gift" Value="*noinherit"/>
-    
-    
-    <tag Name="GiftTrueKinOnly" Value="*noinherit"/>
-    
-    
-    <tag Name="Tier" Value="8"/>
-    
-  
+    <part Name="Render" Tile="Items/sw_wedge3.bmp" Replace="true" />
+    <part Name="Commerce" Value="450" Replace="true" />
   </object>
-  
 
-  
 </objects>
-
-
-

@@ -7,20 +7,19 @@
 - `Mods/QudJP` – 実際に配布する Mod フォルダー。manifest / Harmony DLL / Fonts / Localization / Mod 向け README を含みます。
 - `Mods/QudJP/Assemblies` – Harmony プロジェクト (`QudJP.sln`). フォント管理や UI パッチなど C# 実装はこちらに配置。
 - `Docs/` – フォント生成・翻訳手順・ログ監視・テスト計画などのドキュメント。
-- `scripts/` – バニラデータ抽出 (`extract_base.ps1`)、翻訳差分レポート (`diff_localization.ps1`) などの PowerShell ツール。
+- `scripts/` – Python ベースのユーティリティ（バニラデータ抽出 / 差分レポート / コーディングガード / Mod 同期など）。
 - `references/Base/` – ゲームから抽出した元データ（git ignore 済）。翻訳との差分確認に利用。
 
 ## 開発フロー（概要）
 1. **ベースデータ更新**  
-   ```powershell
-   # Windows (PowerShell)
-   scripts/extract_base.ps1 -GamePath "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
+   ```bash
+   # Windows
+   python scripts/extract_base.py --game-path "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
 
-   # macOS (pwsh)
-   pwsh ./scripts/extract_base.ps1 `
-     -GamePath "$HOME/Library/Application Support/Steam/steamapps/common/Caves of Qud"
+   # macOS / Linux
+   python3 scripts/extract_base.py --game-path "$HOME/Library/Application Support/Steam/steamapps/common/Caves of Qud"
    ```
-   上記を実行すると最新の Conversations / Books / ObjectBlueprints などが `references/Base` に取得される。macOS 版は Steam 配下の Caves of Qud.app から自動的に抽出されるので、GamePath にはアプリ直上のフォルダを指定する。
+   これで最新の Conversations / Books / ObjectBlueprints などが `references/Base` に取得される。macOS 版は Steam 配下の `Caves of Qud.app` 直上のフォルダを `--game-path` に指定する。
 
 2. **フォント生成**  
    `Docs/font_pipeline.md` に沿って Noto Sans CJK などをサブセット化し、`Mods/QudJP/Fonts` に `*-Subset.otf` を配置。  
@@ -35,17 +34,18 @@
 
 4. **翻訳ファイル編集**  
    `Mods/QudJP/Localization/*.jp.xml` を `Load="Merge"` 形式で追加。`Docs/translation_process.md` と `Docs/translation_status.md` を更新して進捗を管理します。  
-   カバレッジ状況は `scripts/diff_localization.ps1 -MissingOnly` でファイル / `<object Name>` 単位の欠落を一覧化できます。
+   カバレッジ状況は `python3 scripts/diff_localization.py --missing-only` でファイル / `<object Name>` 単位の欠落を一覧化できます（`--json-path` でレポート保存も可）。
 
 5. **動作確認**  
-   `Mods/QudJP` フォルダ全体を  
-   `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\QudJP`（またはゲームの `Mods` ディレクトリ）に配置し、ゲーム内の Mod Manager で `Caves of Qud 日本語化` を有効化。文字化けや Missing Glyph がないか `Player.log` を監視します（`Docs/log_watching.md` 参照）。
+   `python3 scripts/sync_mod.py` で `Mods/QudJP` を実機の Mods ディレクトリへミラーしてから、ゲーム内の Mod Manager で `Caves of Qud 日本語化` を有効化。文字化けや Missing Glyph がないか `Player.log` を監視します（`Docs/log_watching.md` 参照）。
 
 ## 主要スクリプト
 | スクリプト | 用途 |
 | --- | --- |
-| `scripts/extract_base.ps1` | ゲームから最新のバニラ XML/TXT を抽出し `references/Base` を更新する |
-| `scripts/diff_localization.ps1 [-MissingOnly] [-JsonPath report.json]` | 翻訳ファイル有無＋ `<object Name>` 単位の欠落をレポート。JSON も出力可能 |
+| `scripts/extract_base.py --game-path <path>` | ゲームから最新のバニラ XML/TXT を抽出し `references/Base` を更新する |
+| `scripts/diff_localization.py [--missing-only] [--json-path report.json]` | 翻訳ファイル有無＋ `<object Name>` 単位の欠落をレポート。JSON も出力可能 |
+| `scripts/check_encoding.py [--fail-on-issues]` | Docs / Mods を走査し、繧/縺 等のモジバケ候補を検出する |
+| `scripts/sync_mod.py [--dry-run] [--exclude-fonts]` | `Mods/QudJP` を実際の Mods ディレクトリへミラーする |
 
 ## ドキュメント
 - `Docs/font_pipeline.md` – Noto 系フォントのサブセット化と TMP Font Asset のランタイム生成方法。
@@ -58,6 +58,6 @@ Issues / Discussions / Pull Request を歓迎します。
 PR には以下を添付してもらえるとレビューがスムーズです。
 1. 変更した翻訳ファイルやスクリプト。
 2. 必要に応じてスクリーンショットと `Player.log`.
-3. `scripts/diff_localization.ps1` の結果（Missing の有無）や `Docs/translation_status.md` の更新。
+3. `python3 scripts/diff_localization.py --missing-only` の結果（Missing の有無）や `Docs/translation_status.md` の更新。
 
 フォントライセンス等の注意点は `Docs` フォルダをご参照ください。

@@ -24,8 +24,8 @@ ObjectBlueprints 配下の翻訳状況を管理します。`references/Base/Obje
 同じ並びで `ObjectBlueprints/ObjectBlueprints/*.xml` もすべて未作成なので、上記と並行して対応する。
 
 ## 進め方メモ
-1. `scripts/diff_localization.ps1 -MissingOnly` で `file-missing` / `object-missing` を洗い出す。`Docs/backlog/latest.json` にも同じ情報を保存しておく。
+1. `python3 scripts/diff_localization.py --missing-only` で `file-missing` / `object-missing` を洗い出す。`Docs/backlog/latest.json` にも同じ情報を保存しておく。
 2. 1 ファイルずつ `references/Base/ObjectBlueprints/<ファイル名>.xml` をコピーし、DisplayName / Description / BehaviorDescription など文字列のみを翻訳。数値・タグ構造は変更しない。
 3. `Load="Merge" Replace="true"` 方針を維持し、`<object Name>` はベースと全く同じにする。
-4. 翻訳後はこのタスクボードと `Docs/translation_status.md` を更新し、`scripts/check_encoding.ps1 -FailOnIssues` でモジバケを検知。
+4. 翻訳後はこのタスクボードと `Docs/translation_status.md` を更新し、`python3 scripts/check_encoding.py --fail-on-issues` でモジバケを検知。
 5. 必要に応じて `Docs/glossary.csv` に用語を追記し、UI 表示は `Docs/test_plan.md` のシナリオで検証する。

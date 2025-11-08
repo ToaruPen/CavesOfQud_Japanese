@@ -10,4 +10,4 @@
 - [ ] 追加した会話ノードが `Docs/log_watching.md` の手順で Missing Node を出さないか確認。
 
 ## メモ
-- 差分確認時は `scripts/diff_localization.ps1 -MissingOnly -JsonPath Docs/backlog/conversations.json` を利用する（必要に応じて再生成）。
+- 差分確認時は `python3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/conversations.json` を利用する（必要に応じて再生成）。

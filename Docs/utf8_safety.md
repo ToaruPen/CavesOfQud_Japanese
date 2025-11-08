@@ -23,7 +23,7 @@
 - VS Code / Neovim などのエディタも `.editorconfig` の設定に従い、保存時は UTF-8 / LF / 末尾改行ありを守ります。
 
 ## 3. コミット前チェック
-1. 作業の締めに `scripts/check_encoding.ps1 -FailOnIssues` を実行します。
+1. 作業の締めに `python3 scripts/check_encoding.py --fail-on-issues` を実行します。
 2. もし `繧` / `縺` といった典型的なモジバケ文字が検出されたら、UTF-8 で表示できるエディタで該当ファイルを開き、实际に壊れていないか確認してから修正します。
 
 ## 4. よくある落とし穴

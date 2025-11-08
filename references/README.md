@@ -1,6 +1,6 @@
 # references ディレクトリについて
 
-`scripts/extract_base.ps1` を実行するとゲーム本体の `CoQ_Data/StreamingAssets/Base` から必要なファイルがここにコピーされます。  
+`python3 scripts/extract_base.py --game-path <Caves of Qud のインストール先>` を実行するとゲーム本体の `StreamingAssets/Base` から必要なファイルがここにコピーされます。  
 これらは **配布対象ではなく** 差分確認と翻訳テンプレ作成のための参照用です。
 
 - `Base/` : Conversations / Books / Commands / Corpus などの最新版。
