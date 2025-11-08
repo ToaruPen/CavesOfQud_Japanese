@@ -1,42 +1,55 @@
-# フォント資産パイプライン
+# フォント生成パイプライン
 
-## 目的
-日本語（CJK）フォントをサブセット化し、Unity(TextMeshPro) 互換のフォントアセットを生成して Mod に同梱する。
+ゲーム内の全 UI で日本語を破綻なく表示するために、CJK フォントをサブセット化し、TextMeshPro／uGUI 両対応のフォントを動的に生成する手順をまとめる。
+
+## ゴール
+- SIL OFL ライセンスの日本語フォントを最小限のグリフでサブセット化し、Mod 配布サイズを抑える。
+- `Mods/QudJP/Fonts` にサブセット化した OTF を配置し、Harmony から `TMP_FontAsset.CreateFontAsset` でランタイム生成する。
+- Harmony パッチで `TextMeshProUGUI` / `TextMeshPro` / `TMP_InputField` / `UnityEngine.UI.Text` にフォントとレイアウト設定を適用する。
 
 ## 推奨フォント
-- Noto Sans CJK JP
-- 源ノ角ゴシック (Source Han Sans JP)
+- [Noto Sans CJK JP](https://github.com/notofonts/noto-cjk)（Google / Adobe, SIL OFL 1.1）
+- Source Han Sans JP（上記と同系フォント）
 
-上記はいずれも SIL OFL 1.1 なので再配布可。ただし README / manifest / workshop ページにライセンス表記を記載すること。
+どちらも再配布可能だが、README / manifest / Workshop ページ等にライセンス表記を忘れないこと。
 
-## サブセット化
-1. `pip install fonttools brotli`
-2. 対応文字セットを `Docs/glyphset.txt` に列挙（基本漢字 + カタカナ + ひらがな + 記号 + ルーン等必要に応じて追加）。
-3. コマンド例:
-   ```bash
-   pyftsubset "NotoSansCJKjp-Regular.otf" ^
-     --unicodes-file=Docs/glyphset.txt ^
-     --layout-features='*' ^
-     --output-file Mods/QudJP/Fonts/NotoSansCJKjp-Subset.otf ^
-     --flavor=otf --with-zopfli
+## 文字セット定義
+`Docs/glyphset.txt` に必要な Unicode Range を列挙する。漢字 / ひらがな / カタカナ / 記号 / ルーンなど、ゲーム上で追加で必要になったブロックはここへ追記する。
+
+## フォントのサブセット化
+1. 依存インストール  
+   ```powershell
+   py -m pip install --user fonttools brotli
    ```
-4. 可能であればウェイト別（Regular/Bold）を用意。サイズ上限は 50MB 未満を目標。
+2. フォント（例: `NotoSansCJKjp-Regular.otf`）を `Mods/QudJP/Fonts` に配置する。
+3. サブセット化コマンド（Regular/Bold をそれぞれ実行）  
+   ```powershell
+   py -m fontTools.subset Mods/QudJP/Fonts/NotoSansCJKjp-Regular.otf `
+     --unicodes-file=Docs/glyphset.txt `
+     --layout-features=* `
+     --output-file=Mods/QudJP/Fonts/NotoSansCJKjp-Regular-Subset.otf
 
-## TMP Font Asset 作成
-1. Unity エディタ (ゲーム本体と同じ Unity バージョン) で空のプロジェクトを作る。
-2. TextMeshPro を導入し、Font Asset Creator で以下の設定を推奨:
-   - Atlas Resolution: 4096x4096
-   - Render Mode: SDF16
-   - Padding: 5
-   - Character Set: Custom（glyphset.txt を入力）
-3. 生成した `.asset` と `.mat` を `Mods/QudJP/Fonts` にコピーし、ファイル名と GUID を記録 (後で Harmony からロード)。
+   py -m fontTools.subset Mods/QudJP/Fonts/NotoSansCJKjp-Bold.otf `
+     --unicodes-file=Docs/glyphset.txt `
+     --layout-features=* `
+     --output-file=Mods/QudJP/Fonts/NotoSansCJKjp-Bold-Subset.otf
+   ```
+4. 生成された OTF が 1 本あたり 12MB 前後。Mod 配布には `*-Subset.otf` のみを含める。
 
-## Harmony 実装の勘所
-- 起動時に Font Asset を `Resources.Load` ではなく `AssetBundle.LoadFromFile` で読む方法もあるが、Mod ディレクトリから `UnityModManagerNet.UnityModManager.FindMod` 等で直接参照する簡易実装から始める。
-- `TextMeshProUGUI` / `TextMeshPro` / `TMP_InputField` / `TextMeshProFallbackSettings` を網羅的に差し替え、`lineSpacing`, `wordWrappingRatios`, `enableKerning` を適宜調整。
-- 漢字の禁則処理は Unity 標準では弱いので、最低限 `textWrappingMode = Truncated` の箇所を `PreferredWidth` 評価に置き換える。
+## TMP Font Asset の扱い
+- Unity エディタで `.asset` を事前生成するのではなく、`FontManager` が `TMP_FontAsset.CreateFontAsset(path, …)` を呼び出してサブセット OTF から SDF をランタイム生成する。
+- Atlas 設定（4096x4096, GlyphRenderMode=SDFAA, Padding=6）や `fontWeightTable` の差し替えは `FontManager` 側で自動化済み。
+- 既存のフォントを残したままでも、`TMP_Settings.defaultFontAsset` と `fallbackFontAssets` に Noto を登録することで Missing Glyph を防げる。
+- UnityEditor が必要になるケースは「マテリアル調整やベイク結果を確認したいとき」のみ。
 
-## QA チェック
-- メインメニュー、ログ、ツールチップ、インベントリ、ジャーナル、会話ウィンドウで折り返しと行間を確認。
-- `Player.log` で Missing Glyph ログが無いかチェック。
-- Atlas に含まれない漢字が見つかったら glyphset に追加して再生成する。
+## Harmony 実装メモ
+- `FontManager.TryLoadFonts` が Mod 起動時に Regular/Bold を読み込み、`TMP_Settings` と `UnityEngine.UI.Text` (legacy) 向けフォントを初期化する。
+- `TextMeshProPatches` で `TMP_Text.Awake/OnEnable` と `TMP_InputField.OnEnable` をフックし、フォント / 行間 / 禁則パラメータを一括適用。
+- `UnityUITextPatch` で `UnityEngine.UI.Text.OnEnable` をフックし、レガシー UI の `Font` も差し替える。
+- 既存フォントを強制的に上書きしたくない場合は `LiberationSans` など既知のバニラフォントだけを置換対象にしている。
+
+## QA チェックリスト
+- メインメニュー、ステータスパネル、ログ、ツールチップ、会話ウィンドウで折り返し／行間が崩れていないか確認。
+- `Player.log` に `Missing glyph in font asset` が出ていないか監視。出た場合は `Docs/glyphset.txt` にコードポイントを追記し、再サブセット化する。
+- Bold / Italic / Outline などスタイル付きテキストが期待通りに描画されるか確認。
+- 長文入力フィールド（検索やノート）で `TMP_InputField` のカーソル／折り返しが崩れないか確認。

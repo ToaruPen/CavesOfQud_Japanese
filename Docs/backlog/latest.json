@@ -1,0 +1,254 @@
+[
+    {
+        "BaseFile":  "Corpus\\Corpus\\Machinery-of-the-Universe-excerpt.txt",
+        "Localized":  "Corpus\\Corpus\\Machinery-of-the-Universe-excerpt.jp.txt",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "Corpus\\Corpus\\Meteorology-Weather-Explained-excerpt.txt",
+        "Localized":  "Corpus\\Corpus\\Meteorology-Weather-Explained-excerpt.jp.txt",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "Corpus\\Corpus\\Thought-Forms-excerpt.txt",
+        "Localized":  "Corpus\\Corpus\\Thought-Forms-excerpt.jp.txt",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "Corpus\\Machinery-of-the-Universe-excerpt.txt",
+        "Localized":  "Corpus\\Machinery-of-the-Universe-excerpt.jp.txt",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "Corpus\\Meteorology-Weather-Explained-excerpt.txt",
+        "Localized":  "Corpus\\Meteorology-Weather-Explained-excerpt.jp.txt",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "Corpus\\Thought-Forms-excerpt.txt",
+        "Localized":  "Corpus\\Thought-Forms-excerpt.jp.txt",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Creatures.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Creatures.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Data.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Data.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Foods.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Foods.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Furniture.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Furniture.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\HiddenObjects.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\HiddenObjects.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Items.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Items.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\PhysicalPhenomena.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\PhysicalPhenomena.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\RootObjects.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\RootObjects.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Staging.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Staging.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\TutorialStaging.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\TutorialStaging.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Walls.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Walls.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\Widgets.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\Widgets.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\WorldTerrain.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\WorldTerrain.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ObjectBlueprints\\ZoneTerrain.xml",
+        "Localized":  "ObjectBlueprints\\ObjectBlueprints\\ZoneTerrain.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Creatures.xml",
+        "Localized":  "ObjectBlueprints\\Creatures.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Data.xml",
+        "Localized":  "ObjectBlueprints\\Data.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Foods.xml",
+        "Localized":  "ObjectBlueprints\\Foods.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Furniture.xml",
+        "Localized":  "ObjectBlueprints\\Furniture.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\HiddenObjects.xml",
+        "Localized":  "ObjectBlueprints\\HiddenObjects.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Items.xml",
+        "Localized":  "ObjectBlueprints\\Items.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\PhysicalPhenomena.xml",
+        "Localized":  "ObjectBlueprints\\PhysicalPhenomena.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\RootObjects.xml",
+        "Localized":  "ObjectBlueprints\\RootObjects.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Staging.xml",
+        "Localized":  "ObjectBlueprints\\Staging.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\TutorialStaging.xml",
+        "Localized":  "ObjectBlueprints\\TutorialStaging.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Walls.xml",
+        "Localized":  "ObjectBlueprints\\Walls.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\Widgets.xml",
+        "Localized":  "ObjectBlueprints\\Widgets.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\WorldTerrain.xml",
+        "Localized":  "ObjectBlueprints\\WorldTerrain.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "ObjectBlueprints\\ZoneTerrain.xml",
+        "Localized":  "ObjectBlueprints\\ZoneTerrain.jp.xml",
+        "ObjectName":  null,
+        "Status":  "file-missing"
+    },
+    {
+        "BaseFile":  "Books.xml",
+        "Localized":  "Books.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "Commands.xml",
+        "Localized":  "Commands.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "Conversations.xml",
+        "Localized":  "Conversations.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "EmbarkModules.xml",
+        "Localized":  "EmbarkModules.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "Genotypes.xml",
+        "Localized":  "Genotypes.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "Mutations.xml",
+        "Localized":  "Mutations.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "Options.xml",
+        "Localized":  "Options.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    },
+    {
+        "BaseFile":  "Subtypes.xml",
+        "Localized":  "Subtypes.jp.xml",
+        "ObjectName":  null,
+        "Status":  "ok"
+    }
+]
