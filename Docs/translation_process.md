@@ -7,8 +7,8 @@
 
 ## 1. ベースデータの取得
 1. Caves of Qud を最新バージョンに更新。
-2. `scripts/extract_base.ps1 -GamePath "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"`  
-   を実行し、`references/Base` に Conversations / Books / ObjectBlueprints などの最新コピーを取得。
+2. Windows の場合は `scripts/extract_base.ps1 -GamePath "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"`、macOS の場合は  
+   `pwsh ./scripts/extract_base.ps1 -GamePath "$HOME/Library/Application Support/Steam/steamapps/common/Caves of Qud"` を実行し、`references/Base` に Conversations / Books / ObjectBlueprints などの最新コピーを取得。  
 3. ゲームのアップデートやリリース前チェック時にも再取得して差分を確認する。
 
 ## 2. ローカライズ テンプレート作成

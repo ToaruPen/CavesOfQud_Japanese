@@ -5,11 +5,17 @@
 ## 1. セッションの起動
 1. PowerShell を開いたらまず `scripts/ensure_utf8.ps1` を実行し、入出力エンコーディングとコードページを UTF-8 に固定します。  
    ```powershell
+   # Windows PowerShell
    powershell.exe -ExecutionPolicy Bypass -File scripts/ensure_utf8.ps1
+
+   # macOS / Linux (PowerShell 7+)
+   pwsh -ExecutionPolicy Bypass -File scripts/ensure_utf8.ps1
    ```
 2. 毎回手動で実行したくない場合は `scripts/install_utf8_profile.ps1` を 1 度だけ実行します。これにより PowerShell プロファイルに自動起動ブロックが追加され、以降はコンソールを開くだけで UTF-8 化されます。  
    ```powershell
    powershell.exe -ExecutionPolicy Bypass -File scripts/install_utf8_profile.ps1
+   # または
+   pwsh -ExecutionPolicy Bypass -File scripts/install_utf8_profile.ps1
    ```
 
 ## 2. ファイル操作

@@ -12,8 +12,15 @@
 
 ## 開発フロー（概要）
 1. **ベースデータ更新**  
-   `scripts/extract_base.ps1 -GamePath "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"`  
-   で最新の Conversations / Books / ObjectBlueprints などを `references/Base` に取得。
+   ```powershell
+   # Windows (PowerShell)
+   scripts/extract_base.ps1 -GamePath "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
+
+   # macOS (pwsh)
+   pwsh ./scripts/extract_base.ps1 `
+     -GamePath "$HOME/Library/Application Support/Steam/steamapps/common/Caves of Qud"
+   ```
+   上記を実行すると最新の Conversations / Books / ObjectBlueprints などが `references/Base` に取得される。macOS 版は Steam 配下の Caves of Qud.app から自動的に抽出されるので、GamePath にはアプリ直上のフォルダを指定する。
 
 2. **フォント生成**  
    `Docs/font_pipeline.md` に沿って Noto Sans CJK などをサブセット化し、`Mods/QudJP/Fonts` に `*-Subset.otf` を配置。  
