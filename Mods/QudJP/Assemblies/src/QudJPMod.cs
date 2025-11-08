@@ -1,25 +1,38 @@
 using HarmonyLib;
-using System.Reflection;
+using System.Runtime.CompilerServices;
+using UnityEngine;
 
 namespace QudJP
 {
     /// <summary>
-    /// エントリポイントとなる Harmony 初期化クラス。
-    /// ゲームの Mod ローダーから呼び出される方法は後で紐付ける。
+    /// Harmony の初期化と共通サービスのブートストラップを担当。
+    /// モジュールイニシャライザでゲーム起動時に自動実行する。
     /// </summary>
     public static class QudJPMod
     {
+        private static bool _initialized;
         private static Harmony? _harmony;
 
-        public static void Initialize()
+        [ModuleInitializer]
+        public static void ModuleInitialize()
         {
-            if (_harmony != null)
+            EnsureInitialized();
+        }
+
+        public static void EnsureInitialized()
+        {
+            if (_initialized)
             {
                 return;
             }
 
+            _initialized = true;
+
             _harmony = new Harmony("jp.toarupen.qudjp");
-            _harmony.PatchAll(Assembly.GetExecutingAssembly());
+            _harmony.PatchAll();
+
+            FontManager.Instance.TryLoadFonts();
+            Debug.Log("[QudJP] Harmony パッチとフォント初期化を実行しました。");
         }
     }
 }
