@@ -24,7 +24,9 @@
 5. `python3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/latest.json` を適宜実行し、未訳リストを自動更新する。
 
 ## 4. Mod 実体への反映
-- 作業ブランチ内の `Mods/QudJP` を真実のソースとし、ゲームが参照する Mod 実体（`%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\QudJP`）へは必要なタイミングでのみ同期する。
+- 作業ブランチ内の `Mods/QudJP` を真実のソースとし、ゲームが参照する Mod 実体へは必要なタイミングでのみ同期する。  
+  - Windows: `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\QudJP`  
+  - macOS (Steam 版): `~/Library/Application Support/Steam/steamapps/common/Caves of Qud/CoQ.app/Contents/Resources/Data/StreamingAssets/Mods/QudJP`
 - `python3 scripts/sync_mod.py` を実行し、翻訳をゲームに適用したい時だけミラーリングを行う。`--dry-run` でドライラン、`--exclude-fonts` で Fonts フォルダを除外できる。
 - 同期後にテストする場合はゲームを再起動し、`Player.log` を確認する。
 
@@ -42,3 +44,13 @@
 2. `Docs/test_plan.md` のシナリオを実施し、UI 崩れや Missing Glyph が無いかを `Docs/log_watching.md` の手順で検証。
 3. `Mods/QudJP` フォルダを整理（不要ファイル削除）し、`README` / `CHANGELOG` / Workshop テキストを更新。
 4. 配布時は `Mods/QudJP` フォルダのみをまとめ、`references` や `Docs` は含めない。
+
+## 8. ログファイルの保管場所
+- Windows  
+  - `build_log.txt` : `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\build_log.txt`  
+  - `Player.log` : `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Player.log`
+- macOS (Steam 版)  
+  - `build_log.txt` : `~/Library/Application Support/Freehold Games/CavesOfQud/build_log.txt`  
+  - `Player.log` : `~/Library/Logs/Freehold Games/CavesOfQud/Player.log`
+
+詳細な監視手順は `Docs/log_watching.md` を参照。

@@ -150,4 +150,11 @@ If an unfamiliar token appears, leave it intact and translate only after the pip
 4. `python3 scripts/objectblueprint_insert.py --payload work/items_missing.json --translations work/items_translated.json`
 5. Run `python3 scripts/diff_localization.py --missing-only` to confirm coverage and update the docs.
 
+### バッチ作業時の注意
+
+- **小さめバッチで進める**：Extractor → LLM → Inserter の 1 サイクルごとに `git diff` や該当セクションの tail を確認し、意図した `<object>` のみが追加されているかをチェックする。カラータグ (`{{…|…}}`) や `=subject.t=` などのマクロ破損を早期に発見するため。
+- **差分レポートを定期確認**：ある程度進めたら `python3 scripts/diff_localization.py --missing-only` を再実行し、残件が本当に未訳／翻訳不要のどちらなのか洗い直す。必要なら `Docs/backlog/latest.json` を更新してチームで共有する。
+- **用語・スタイルを同期**：大量翻訳中に新語が出たら `Docs/glossary.csv` に記載し、既存の訳語とブレないようにする。
+- **エンコーディングチェック**：大きなバッチを挿入した後は `python3 scripts/check_encoding.py --fail-on-issues` を実行し、文字化けやタグ崩れが無いかを確認する。
+
 This document lives alongside `Docs/tasks/objectblueprints.md` and inherits all glossary / style guidance listed there. Update both whenever the pipeline evolves.

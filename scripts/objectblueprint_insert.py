@@ -98,7 +98,6 @@ def build_object_snippet(object_entry: dict, translations: Dict[str, str]) -> Li
                     raise SystemExit(f"Missing translation for id '{attr_id}' (object '{name}').")
                 value = translations[attr_id]
             part_pairs.append((attr_name, value))
-        part_pairs.append(("Replace", "true"))
         object_lines.append(f"    <part {format_attributes(part_pairs)} />")
 
     object_lines.append("  </object>")

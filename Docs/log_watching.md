@@ -3,8 +3,12 @@
 Mod 開発中は `build_log.txt`（読み込み時）と `Player.log`（実行時）を常に監視し、XML マージエラーや Harmony 例外を即座に把握します。
 
 ## ログの場所
-- `build_log.txt` : `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\build_log.txt`
-- `Player.log` : `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Player.log`
+- Windows  
+  - `build_log.txt` : `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\build_log.txt`  
+  - `Player.log` : `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Player.log`
+- macOS (Steam 版)  
+  - `build_log.txt` : `~/Library/Application Support/Freehold Games/CavesOfQud/build_log.txt`  
+  - `Player.log` : `~/Library/Logs/Freehold Games/CavesOfQud/Player.log`
 
 ## PowerShell 監視コマンド
 ```powershell

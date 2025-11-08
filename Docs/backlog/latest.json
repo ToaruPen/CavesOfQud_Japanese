@@ -1538,12 +1538,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Club",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -1557,12 +1551,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Wrench",
     "Status": "object-missing"
   },
   {
@@ -1604,12 +1592,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Pestle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -1640,12 +1622,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Staff",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -1676,12 +1652,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Walking Stick",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -1695,12 +1665,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Mace2",
     "Status": "object-missing"
   },
   {
@@ -1748,7 +1712,37 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Warhammer2",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "SwingSound",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "BlockedSound",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "EquipSound",
     "Status": "object-missing"
   },
   {
@@ -1790,7 +1784,25 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel War Hammer",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "EquipSound",
     "Status": "object-missing"
   },
   {
@@ -1827,84 +1839,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel War Hammerth",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Hammer",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SwingSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BlockedSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Shillelagh",
     "Status": "object-missing"
   },
   {
@@ -1952,12 +1886,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Billowing Conch of the Aji",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -1988,12 +1916,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Grandfather Horn",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2018,12 +1940,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Amber-Tipped Staff",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2031,12 +1947,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel3",
     "Status": "object-missing"
   },
   {
@@ -2066,7 +1976,25 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel3th",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "EquipSound",
     "Status": "object-missing"
   },
   {
@@ -2096,12 +2024,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel4",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2121,42 +2043,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel4th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel5",
     "Status": "object-missing"
   },
   {
@@ -2198,12 +2084,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel5th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2235,12 +2115,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel6",
     "Status": "object-missing"
   },
   {
@@ -2288,12 +2162,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel6th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2331,12 +2199,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel7",
     "Status": "object-missing"
   },
   {
@@ -2390,12 +2252,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel7th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2444,12 +2300,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel8",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2498,12 +2348,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cudgel8th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2547,12 +2391,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Historical",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Maghammer",
     "Status": "object-missing"
   },
   {
@@ -2588,12 +2426,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LatchesOn",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -2618,12 +2450,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rhinox-Skull Maul",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2637,12 +2463,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Stun Rod",
     "Status": "object-missing"
   },
   {
@@ -2709,12 +2529,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Prayer Rod",
     "Status": "object-missing"
   },
   {
@@ -2798,12 +2612,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Syphon Baton",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2823,12 +2631,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AIPassiveEnergyCellReload",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SapChargeOnHit",
     "Status": "object-missing"
   },
   {
@@ -2936,12 +2738,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -2984,12 +2780,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Desert Kris",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3003,12 +2793,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger2",
     "Status": "object-missing"
   },
   {
@@ -3050,12 +2834,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Kukri",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3069,12 +2847,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Dagger",
     "Status": "object-missing"
   },
   {
@@ -3116,12 +2888,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Utility Knife",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3140,12 +2906,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Potter's Knife",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3159,12 +2919,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Butcher Knife",
     "Status": "object-missing"
   },
   {
@@ -3189,12 +2943,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger3",
     "Status": "object-missing"
   },
   {
@@ -3254,12 +3002,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Obsidian Kris",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3273,12 +3015,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger4",
     "Status": "object-missing"
   },
   {
@@ -3320,12 +3056,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ArmDagger4",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3345,12 +3075,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "SwingSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger5",
     "Status": "object-missing"
   },
   {
@@ -3399,12 +3123,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger6",
     "Status": "object-missing"
   },
   {
@@ -3459,12 +3177,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger7",
     "Status": "object-missing"
   },
   {
@@ -3525,12 +3237,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dagger8",
     "Status": "object-missing"
   },
   {
@@ -3602,12 +3308,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Vibro Dagger",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3639,12 +3339,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AIPassiveEnergyCellReload",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -3704,12 +3398,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gaslight Dagger",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3747,12 +3435,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -3812,12 +3494,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gaslight Sword",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3849,12 +3525,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -3908,12 +3578,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gaslight Chisel",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -3951,12 +3615,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -4058,12 +3716,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4088,12 +3740,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Hand Axe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4113,12 +3759,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Iron Vinereaper",
     "Status": "object-missing"
   },
   {
@@ -4154,12 +3794,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe2",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4178,12 +3812,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Battle Axe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4197,138 +3825,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Battle Axeth",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SwingSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Hand Axe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Opal-Pommeled Steel Axe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Vinereaper",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe3",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe3th",
     "Status": "object-missing"
   },
   {
@@ -4358,7 +3854,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe4",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -4382,7 +3890,37 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe4th",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -4412,7 +3950,43 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe5",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "SwingSound",
     "Status": "object-missing"
   },
   {
@@ -4448,12 +4022,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe5th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4479,12 +4047,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe6",
     "Status": "object-missing"
   },
   {
@@ -4526,12 +4088,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe6th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4563,12 +4119,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe7",
     "Status": "object-missing"
   },
   {
@@ -4616,12 +4166,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe7th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4659,12 +4203,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe8",
     "Status": "object-missing"
   },
   {
@@ -4718,12 +4256,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Battle Axe8th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4767,12 +4299,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Historical",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Stun Whip",
     "Status": "object-missing"
   },
   {
@@ -4838,19 +4364,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Leather Whip",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LatchesOn",
     "Status": "object-missing"
   },
   {
@@ -4916,12 +4430,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -4941,12 +4449,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Two-Handed Sword",
     "Status": "object-missing"
   },
   {
@@ -4982,12 +4484,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword2",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5001,66 +4497,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword2th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Long Sword",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Long Swordth",
     "Status": "object-missing"
   },
   {
@@ -5090,12 +4526,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword3",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5109,66 +4539,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword3th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword4",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MeleeWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword4th",
     "Status": "object-missing"
   },
   {
@@ -5198,7 +4568,85 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword5",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "EquipSound",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "MeleeWeapon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "EquipSound",
     "Status": "object-missing"
   },
   {
@@ -5240,12 +4688,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword5th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5277,12 +4719,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword6",
     "Status": "object-missing"
   },
   {
@@ -5330,12 +4766,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword6th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5373,12 +4803,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword7",
     "Status": "object-missing"
   },
   {
@@ -5432,12 +4856,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword7th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5481,12 +4899,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Sharpened Polyp",
     "Status": "object-missing"
   },
   {
@@ -5517,12 +4929,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Ceremonial Khopesh",
     "Status": "object-missing"
   },
   {
@@ -5594,12 +5000,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword8",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5654,12 +5054,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Long Sword8th",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MeleeWeapon",
     "Status": "object-missing"
   },
@@ -5709,12 +5103,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Historical",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Vibro Blade",
     "Status": "object-missing"
   },
   {
@@ -5739,12 +5127,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AIPassiveEnergyCellReload",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -5816,12 +5198,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Shayna",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Hitpoints",
     "Status": "object-missing"
   },
@@ -5852,12 +5228,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Ari",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Hitpoints",
     "Status": "object-missing"
   },
@@ -5883,12 +5253,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipmentFrameColors",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Yal",
     "Status": "object-missing"
   },
   {
@@ -6032,12 +5396,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Difucila",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AddMod",
     "Status": "object-missing"
   },
@@ -6075,12 +5433,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ExcludeFromDynamicEncounters",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Fist of the Ape God",
     "Status": "object-missing"
   },
   {
@@ -6135,12 +5487,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipmentFrameColors",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "La Jeunesse",
     "Status": "object-missing"
   },
   {
@@ -7748,12 +7094,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
@@ -7863,12 +7203,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -11547,12 +10881,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MagazineAmmoLoader",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -19430,12 +18758,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Metal",
     "Status": "object-missing"
   },
@@ -19467,12 +18789,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -19881,12 +19197,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "PsychicMeridian",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -21045,12 +20355,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Night-Sight Interpolators",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -23120,12 +22424,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
     "Status": "object-missing"
   },
@@ -23259,12 +22557,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -23775,12 +23067,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -24662,18 +23948,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Springy",
     "Status": "object-missing"
   },
@@ -24717,12 +23991,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -24794,12 +24062,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AnimatedMaterialGeneric",
     "Status": "object-missing"
   },
@@ -24831,12 +24093,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -25208,19 +24464,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipIntProperties",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -25718,12 +24962,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Hitpoints",
     "Status": "object-missing"
   },
@@ -25988,12 +25226,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Hitpoints",
     "Status": "object-missing"
   },
@@ -26031,12 +25263,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "SkybearShroud",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -26217,12 +25443,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "n-Pointed Asterisk",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -26480,12 +25700,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TauShard",
     "Status": "object-missing"
   },
@@ -26523,12 +25737,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -26937,12 +26145,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Hitpoints",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -27458,12 +26660,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
     "Status": "object-missing"
   },
@@ -27818,12 +27014,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EquipStatBoost",
     "Status": "object-missing"
   },
@@ -27903,12 +27093,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -28107,12 +27291,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "DosageChange",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -29432,12 +28610,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
     "Status": "object-missing"
   },
@@ -29696,12 +28868,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
     "Status": "object-missing"
   },
@@ -29877,12 +29043,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "BaseTierFloating5",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -30068,12 +29228,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
     "Status": "object-missing"
   },
@@ -30230,12 +29384,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
     "Status": "object-missing"
   },
@@ -30387,12 +29535,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "BaseTierFloating8",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -33530,12 +32672,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ReadAchievement",
     "Status": "object-missing"
   },
@@ -33543,12 +32679,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Mods",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -33776,12 +32906,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "FocalCookbook",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Cookbook",
     "Status": "object-missing"
   },
@@ -33962,18 +33086,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "StandaloneMarkovBook",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "StandaloneMarkovBook",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "JewelEncrustedMarkovBook",
     "Status": "object-missing"
   },
@@ -33986,43 +33098,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BloodstainedSheaf",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ExcludeFromDynamicEncounters",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Corpus",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TornGraphPaper",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34041,18 +33117,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "NoSparkingQuest",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Sonnet",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34082,19 +33146,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Sheaf1",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34107,12 +33159,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Scroll Bound by Kelp",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34136,19 +33182,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Across1",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34160,19 +33194,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Across3",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34184,19 +33206,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Canticles3",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34208,19 +33218,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "OnHumanMimicry",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34232,19 +33230,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "FromEntropytoHierarchy2",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34262,19 +33248,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Crime and Punishment",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34298,19 +33272,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "BloodandFear",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34322,19 +33284,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "FaunsoftheMeadow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34346,19 +33296,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "InMaqqomYd",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34376,19 +33314,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "CouncilAtGammaRock",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34400,19 +33326,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "GolemOperatingManual",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -34460,12 +33374,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "RevealSecretOnRead",
     "Status": "object-missing"
   },
@@ -34479,12 +33387,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "HistoryofJoppaVol2",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Book",
     "Status": "object-missing"
   },
   {
@@ -35186,12 +34088,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Energy Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -35253,12 +34149,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Energy",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Chem Cell",
     "Status": "object-missing"
   },
   {
@@ -35330,12 +34220,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Fidget Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EnergyCell",
     "Status": "object-missing"
   },
@@ -35396,12 +34280,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Solar Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EnergyCell",
     "Status": "object-missing"
   },
@@ -35456,12 +34334,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Nuclear Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EnergyCell",
     "Status": "object-missing"
   },
@@ -35504,12 +34376,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Antimatter Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EnergyCell",
     "Status": "object-missing"
   },
@@ -35541,12 +34407,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerCategory",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Liquid Fueled Energy Cell",
     "Status": "object-missing"
   },
   {
@@ -35612,12 +34472,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Lead-Acid Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidFueledEnergyCell",
     "Status": "object-missing"
   },
@@ -35661,12 +34515,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerCategory",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Combustion Cell",
     "Status": "object-missing"
   },
   {
@@ -35750,12 +34598,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Thermoelectric Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidFueledEnergyCell",
     "Status": "object-missing"
   },
@@ -35810,12 +34652,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Biodynamic Cell",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidFueledEnergyCell",
     "Status": "object-missing"
   },
@@ -35864,25 +34700,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerCategory",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -35894,31 +34712,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Torch",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Stacker",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -35954,18 +34754,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Glowsphere",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "GlowsphereProperties",
     "Status": "object-missing"
   },
@@ -35984,12 +34772,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Bandage",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -35997,12 +34779,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Springy",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Medication",
     "Status": "object-missing"
   },
   {
@@ -36038,19 +34814,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Medication",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Medication",
     "Status": "object-missing"
   },
   {
@@ -36128,12 +34892,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Empty Booster",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -36141,12 +34899,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Empty_Tonic_Applicator",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tonic",
     "Status": "object-missing"
   },
   {
@@ -36206,12 +34958,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Witchwood Bark",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Food",
     "Status": "object-missing"
   },
@@ -36230,19 +34976,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Medical",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
     "Status": "object-missing"
   },
   {
@@ -36255,12 +34989,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
     "Status": "object-missing"
   },
   {
@@ -36290,12 +35018,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "NoBreak",
     "Status": "object-missing"
   },
@@ -36320,19 +35042,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ScrapX",
     "Status": "object-missing"
   },
   {
@@ -36350,7 +35060,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap Crystal",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36362,7 +35072,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap Electronics",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36374,7 +35084,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap Energy",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36386,7 +35096,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 00",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36398,7 +35108,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 1",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36410,7 +35120,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 2",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36422,7 +35132,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 3",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36434,7 +35144,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 4",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36446,7 +35156,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 5",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36458,139 +35168,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 6",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 7",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap 8",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap Crystal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap Electronics",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap Energy",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 00",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 1",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 2",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 3",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 4",
     "Status": "object-missing"
   },
   {
@@ -36608,7 +35192,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 5",
+    "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
@@ -36620,55 +35204,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 6",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 7",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Med Scrap 8",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tonic",
     "Status": "object-missing"
   },
   {
@@ -36710,31 +35252,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LoveTonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LoveTonicApplicator",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -36782,19 +35306,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BlazeTonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Blaze_Tonic_Applicator",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -36837,12 +35349,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ChooseToPreserve",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "HulkHoneyTonic",
     "Status": "object-missing"
   },
   {
@@ -36860,12 +35366,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
@@ -36909,12 +35409,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SalveTonic",
     "Status": "object-missing"
   },
   {
@@ -36932,12 +35426,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
@@ -36975,12 +35463,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "DynamicObjectsTable:Tonics_NonRare",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SkulkTonic",
     "Status": "object-missing"
   },
   {
@@ -36998,12 +35480,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
     "Status": "object-missing"
   },
@@ -37046,12 +35522,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SphynxSaltTonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "SphynxSalt_Tonic_Applicator",
     "Status": "object-missing"
   },
@@ -37059,12 +35529,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AITonicUse",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -37101,12 +35565,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ShadeOilTonic",
     "Status": "object-missing"
   },
   {
@@ -37125,12 +35583,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "SpecialCookingIngredient",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -37184,12 +35636,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "UbernostrumTonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Ubernostrum_Tonic_Applicator",
     "Status": "object-missing"
   },
@@ -37197,12 +35643,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AIHealingTonicUse",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -37244,12 +35684,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RubbergumTonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Rubbergum_Tonic_Applicator",
     "Status": "object-missing"
   },
@@ -37257,12 +35691,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AITonicUse",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -37310,19 +35738,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "NectarTonic",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Nectar_Tonic_Applicator",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
     "Status": "object-missing"
   },
   {
@@ -37364,12 +35780,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tool",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -37400,18 +35810,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tool",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BaseArtifact",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -37431,12 +35829,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "BaseObject",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Basic Toolkit",
     "Status": "object-missing"
   },
   {
@@ -37467,12 +35859,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Advanced Toolkit",
     "Status": "object-missing"
   },
   {
@@ -37515,12 +35901,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Pickaxe",
     "Status": "object-missing"
   },
   {
@@ -37587,12 +35967,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Nanopneumatic Jackhammer",
     "Status": "object-missing"
   },
   {
@@ -37676,18 +36050,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tool",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Hoversled",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
     "Status": "object-missing"
   },
@@ -37719,12 +36081,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Floating",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Portable Wall",
     "Status": "object-missing"
   },
   {
@@ -37772,12 +36128,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spiral Borer",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "SpiralBorerCurio",
     "Status": "object-missing"
   },
@@ -37809,12 +36159,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tattoo Gun",
     "Status": "object-missing"
   },
   {
@@ -37874,12 +36218,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tool",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tattoo Gun Barathrum",
     "Status": "object-missing"
   },
@@ -37899,18 +36237,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ExcludeFromDynamicEncounters",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TemplarPhylactery",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TemplarPhylactery",
     "Status": "object-missing"
   },
   {
@@ -37976,12 +36302,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Neuro Animator",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AnimateObject",
     "Status": "object-missing"
   },
@@ -38030,12 +36350,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Droid Scrambler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -38079,18 +36393,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tool",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BaseRecoiler",
     "Status": "object-missing"
   },
   {
@@ -38192,7 +36494,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Joppa Recoiler",
+    "ObjectName": "Teleporter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "TinkerItem",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -38216,7 +36530,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Grit Gate Recoiler",
+    "ObjectName": "Teleporter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "TinkerItem",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -38240,7 +36566,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Golgotha Recoiler",
+    "ObjectName": "Teleporter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "TinkerItem",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -38264,12 +36602,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Kyakukya Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Teleporter",
     "Status": "object-missing"
   },
@@ -38288,12 +36620,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Six Day Stilt Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Teleporter",
     "Status": "object-missing"
   },
@@ -38307,84 +36633,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Bethesda Susa Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Teleporter",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Ezra Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Teleporter",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Yd Freehold Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Teleporter",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TinkerItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Ruin Recoiler",
     "Status": "object-missing"
   },
   {
@@ -38420,12 +36668,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Programmable Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -38462,12 +36704,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Reprogrammable Recoiler",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -38499,12 +36735,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Role",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spraybottle",
     "Status": "object-missing"
   },
   {
@@ -38517,12 +36747,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Applicator",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spraybottle",
     "Status": "object-missing"
   },
   {
@@ -38570,12 +36794,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Fixit Spray",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -38607,18 +36825,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tool",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Desalination Pellet",
     "Status": "object-missing"
   },
   {
@@ -38667,12 +36873,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "DynamicObjectsTable:Trinkets",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metamorphic Polygel",
     "Status": "object-missing"
   },
   {
@@ -38738,12 +36938,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spray-a-Brain",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -38799,12 +36993,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Scholarly",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "High-Powered Magnet",
     "Status": "object-missing"
   },
   {
@@ -38894,12 +37082,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Jewel-Encrusted Item",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "RandomJewelEncrustedItem",
     "Status": "object-missing"
   },
@@ -38931,12 +37113,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Bronze Ingot",
     "Status": "object-missing"
   },
   {
@@ -38985,12 +37161,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Grave Goods",
     "Status": "object-missing"
   },
   {
@@ -39062,7 +37232,25 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Copper Nugget",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "WireExtruderOutput",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39092,18 +37280,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Silver Nugget",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "WireExtruderOutput",
     "Status": "object-missing"
   },
@@ -39117,36 +37293,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gold Nugget",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "WireExtruderOutput",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gemstone",
     "Status": "object-missing"
   },
   {
@@ -39176,7 +37322,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Agate",
+    "ObjectName": "RockTumblerOutput",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39200,7 +37358,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Topaz",
+    "ObjectName": "RockTumblerOutput",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39224,7 +37394,19 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Jasper",
+    "ObjectName": "RockTumblerOutput",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39248,12 +37430,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Amethyst",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "RockTumblerOutput",
     "Status": "object-missing"
   },
@@ -39267,84 +37443,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Sapphire",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RockTumblerOutput",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Emerald",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RockTumblerOutput",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rough Peridot",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RockTumblerOutput",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Gemstone",
     "Status": "object-missing"
   },
   {
@@ -39356,7 +37454,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Agate",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39374,7 +37478,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Topaz",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39392,7 +37502,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Jasper",
+    "ObjectName": "Gift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39410,12 +37526,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Amethyst",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Gift",
     "Status": "object-missing"
   },
@@ -39423,66 +37533,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Sapphire",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Emerald",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Polished Peridot",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Gift",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Figurine",
     "Status": "object-missing"
   },
   {
@@ -39524,7 +37574,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Copper Figurine",
+    "ObjectName": "RandomFigurine",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39542,7 +37598,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Rhinox figure",
+    "ObjectName": "RandomFigurine",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39560,7 +37622,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Silver Figurine",
+    "ObjectName": "RandomFigurine",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39578,7 +37646,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Gold Figurine",
+    "ObjectName": "RandomFigurine",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39596,7 +37670,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Agate Figurine",
+    "ObjectName": "RandomFigurine",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Tier",
     "Status": "object-missing"
   },
   {
@@ -39614,12 +37694,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Topaz Figurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "RandomFigurine",
     "Status": "object-missing"
   },
@@ -39627,102 +37701,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Jasper Figurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RandomFigurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Amethyst Figurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RandomFigurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Sapphire Figurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RandomFigurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Emerald Figurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RandomFigurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Peridot Figurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RandomFigurine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
     "Status": "object-missing"
   },
   {
@@ -39758,12 +37736,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "SmallMetalTrinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Metal",
     "Status": "object-missing"
   },
@@ -39771,12 +37743,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "BaseObject",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BoxOfCrayons",
     "Status": "object-missing"
   },
   {
@@ -39824,18 +37790,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Salt Mill",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -39860,19 +37814,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ItemElements",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spiral Iron",
     "Status": "object-missing"
   },
   {
@@ -39891,18 +37833,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Tier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Bubble Level",
     "Status": "object-missing"
   },
   {
@@ -39933,18 +37863,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "PopulationLiquidFiller",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "FoldingChair",
     "Status": "object-missing"
   },
   {
@@ -39992,18 +37910,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "PlasticTree",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -40035,18 +37941,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "DynamicObjectsTable:Trinkets",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Small Sphere of Negative Weight",
     "Status": "object-missing"
   },
   {
@@ -40100,25 +37994,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Trinket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Timecube",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TimeCube",
     "Status": "object-missing"
   },
   {
@@ -40208,12 +38084,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Waterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
@@ -40244,7 +38114,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "HalfFullWaterskin",
+    "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
   {
@@ -40256,43 +38126,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "FullWaterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EmptyWaterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RandomWaterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Randomskin",
     "Status": "object-missing"
   },
   {
@@ -40310,31 +38150,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "HoneyWaterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "HoneyWaterskinSmallAmount",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ApostleHoneyWaterskin",
     "Status": "object-missing"
   },
   {
@@ -40352,19 +38174,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "WineWaterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "PilgrimWineWaterskin",
     "Status": "object-missing"
   },
   {
@@ -40382,31 +38192,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Slimeskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "CiderWaterskin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Oilskin",
     "Status": "object-missing"
   },
   {
@@ -40419,12 +38211,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Springy",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Camel Bladder",
     "Status": "object-missing"
   },
   {
@@ -40448,12 +38234,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Springy",
     "Status": "object-missing"
   },
@@ -40461,12 +38241,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Contemporary",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Canteen",
     "Status": "object-missing"
   },
   {
@@ -40484,12 +38258,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Empty Canteen",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
@@ -40497,12 +38265,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ExcludeFromDynamicEncounters",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Phial",
     "Status": "object-missing"
   },
   {
@@ -40580,12 +38342,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Random Rare Phial",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
@@ -40622,12 +38378,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Ink Phial",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
@@ -40635,12 +38385,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "NoSparkingQuest",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Convalessence Phial",
     "Status": "object-missing"
   },
   {
@@ -41102,12 +38846,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "RulesDescription",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
@@ -41331,12 +39069,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LightSource",
     "Status": "object-missing"
   },
   {
@@ -42170,12 +39902,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Scratched Data Disk",
     "Status": "object-missing"
   },
@@ -42212,12 +39938,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Stamped Data Disk",
     "Status": "object-missing"
   },
@@ -42243,12 +39963,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "NoSparkingQuest",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
     "Status": "object-missing"
   },
   {
@@ -42308,12 +40022,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Dormant Waydroid",
     "Status": "object-missing"
   },
@@ -42327,12 +40035,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "NoSparkingQuest",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Scrap",
     "Status": "object-missing"
   },
   {
