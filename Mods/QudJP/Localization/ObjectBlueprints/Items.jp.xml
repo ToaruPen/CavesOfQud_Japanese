@@ -481,4 +481,1044 @@
     <part Name="Commerce" Value="450" Replace="true" />
   </object>
 
+  <!-- Books -->
+  <object Name="Book" Inherits="Item" Replace="true">
+    <part Name="Physics" Category="書籍" Replace="true" />
+    <part Name="Description" Short="山羊革ヴェラムのぱりっとした紙葉が丁寧に綴じられた写本だ。" Replace="true" />
+  </object>
+  <object Name="FocalCookbook" Inherits="BaseFocalCookbook" Replace="true">
+    <part Name="Render" DisplayName="料理本" Replace="true" />
+  </object>
+  <object Name="StandaloneMarkovBook" Inherits="MarkovBook" Replace="true">
+    <part Name="Render" DisplayName="本" Replace="true" />
+  </object>
+  <object Name="BloodstainedSheaf" Inherits="Book" Replace="true">
+    <part Name="Render" DisplayName="{{W|血染めの山羊革羊皮紙の束}}" Tile="Items/sw_unfurled_scroll2.bmp" ColorString="&amp;r" TileColor="&amp;w" DetailColor="r" RenderString="=" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="削ぎ取って伸ばした山羊革の紙葉を樹液で綴じ、仔ヤギの血で書き殴ってある。" Replace="true" />
+  </object>
+  <object Name="Corpus" Inherits="Book" Replace="true">
+    <part Name="Render" DisplayName="{{W|コルプス・コリース}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" DetailColor="k" Replace="true" />
+  </object>
+  <object Name="TornGraphPaper" Inherits="Book" Replace="true">
+    <part Name="Render" DisplayName="{{W|破れた方眼紙の紙片}}" ColorString="&amp;y" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" DetailColor="c" Replace="true" />
+    <part Name="Description" Short="シアンの座標線で区切られたルーズリーフだ。バインダーから引き裂かれた形跡がある。" Replace="true" />
+  </object>
+  <object Name="Sonnet" Inherits="Book" Replace="true">
+    <part Name="Render" DisplayName="{{Y|くしゃくしゃの紙片}}" ColorString="&amp;w" DetailColor="W" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" Replace="true" />
+    <part Name="Description" Short="塩柱のパルプで漉いた紙に震えるインクの走り書きが覆っている。幾度も握り潰されては伸ばされた跡がある。" Replace="true" />
+  </object>
+
+  <!-- Energy cells -->
+  <object Name="Energy Cell" Inherits="Trinket" Replace="true">
+    <part Name="Render" DisplayName="[エナジーセル]" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" DetailColor="C" Replace="true" />
+  </object>
+  <object Name="Chem Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{c|ケムセル}}" ColorString="&amp;c" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" Replace="true" />
+    <part Name="Description" Short="小さな樽の中で液体塩がイオンを陰極へ送り込み、火花へと変換する。" Replace="true" />
+  </object>
+  <object Name="Fidget Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{w|フィジェット}} {{c|セル}}" ColorString="&amp;w" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_fidget.bmp" Replace="true" />
+    <part Name="Description" Short="錫合金の立方体を任意の回転軸で回すたびに微かな負荷が生まれる。リストストラップとジャイロ枠が装着者の運動エネルギーを吸い上げて蓄電する。" Replace="true" />
+  </object>
+  <object Name="Solar Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{W|ソーラー}} {{c|セル}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_solar.bmp" Replace="true" />
+    <part Name="Description" Short="光起電の立方体が高塩の太陽の暖を浴び、迅い電汁として保存する。" Replace="true" />
+  </object>
+  <object Name="Nuclear Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{m|ニュークリア}} {{c|セル}}" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_nuclear.bmp" Replace="true" />
+    <part Name="Description" Short="数百万年前の地殻石が電池箱の中で崩壊し、叩き出されたガンマ粒子を接合ダイオードに導いて爆発的な出力に備蓄する。" Replace="true" />
+  </object>
+  <object Name="Antimatter Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{K|反物質}} {{c|セル}}" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_antimatter.bmp" Replace="true" />
+    <part Name="Description" Short="ウル鋼の匣が陽電子を浮遊させる磁場を閉じこめる。電流を組むと対粒子が互いを消滅させ、宇宙破断の衝撃が導路を走って接続機器へ注ぎ込まれる。" Replace="true" />
+  </object>
+  <object Name="Liquid Fueled Energy Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="[液体燃料エナジーセル]" RenderString="'" RenderLayer="5" DetailColor="C" Tile="Items/sw_cell_liquid.bmp" Replace="true" />
+  </object>
+  <object Name="Lead-Acid Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{G|鉛酸}} {{c|セル}}" ColorString="&amp;G" TileColor="&amp;c" DetailColor="G" RenderString="'" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="断熱された電池の樽の内側で、電位差装置が酸のエネルギーを割り出し電荷へ変換する。" Replace="true" />
+  </object>
+  <object Name="Combustion Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{K|燃焼}} {{c|セル}}" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_liquid.bmp" Replace="true" />
+    <part Name="Description" Short="断熱された電池の樽の内側で、電位差装置が油のエネルギーを割り出し電荷へ変換する。" Replace="true" />
+  </object>
+  <object Name="Thermoelectric Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{R|熱電}} {{c|セル}}" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" RenderString="'" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="断熱された電池の樽の内側で、電位差装置が溶岩のエネルギーを割り出し電荷へ変換する。" Replace="true" />
+  </object>
+  <object Name="Biodynamic Cell" Inherits="Energy Cell" Replace="true">
+    <part Name="Render" DisplayName="{{r|バイオダイナミック}} {{c|セル}}" ColorString="&amp;r" TileColor="&amp;c" DetailColor="r" RenderString="'" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="断熱された電池の樽の内側で、電位差装置が血のエネルギーを割り出し電荷へ変換する。" Replace="true" />
+  </object>
+
+  <!-- Light sources -->
+  <object Name="LightSource" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="[光源]" RenderString="*" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Torch" Inherits="LightSource" Replace="true">
+    <part Name="Render" Tile="Items/sw_torch.png" TileColor="&amp;w" DetailColor="R" DisplayName="たいまつ" RenderString="*" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="塩柱の茎に油染みの布を巻き付けた簡素な照明器具。" Replace="true" />
+  </object>
+  <object Name="Glowsphere" Inherits="LightSource" Replace="true">
+    <part Name="Render" DisplayName="{{Y|光輝球}}" RenderString="*" RenderLayer="5" Tile="Items/sw_glowsphere.bmp" ColorString="&amp;Y" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="手のひらに収まる燐光オパールが、千年前のオーロラを吸い込んだ光で輝く。" Replace="true" />
+  </object>
+  <object Name="Bandage" Inherits="Item" Replace="true">
+    <part Name="Render" Tile="Items/sw_bandage.bmp" DetailColor="R" DisplayName="包帯" ColorString="&amp;y" RenderString="012" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="木の棒に巻き取ったミミズ絹のガーゼで、血を手早く止められる。" Replace="true" />
+  </object>
+  <object Name="Medication" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="[医療用オートインジェクター]" ColorString="&amp;Y" DetailColor="m" RenderString="012" RenderLayer="5" Tile="Items/sw_injector.bmp" Replace="true" />
+  </object>
+  <object Name="Empty Booster" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="{{K|空の}} インジェクター" Replace="true" />
+    <part Name="Description" Short="ガラス管と極細針で薬液を血流へ直接打ち込む。これは空だ。" Replace="true" />
+  </object>
+  <object Name="Witchwood Bark" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="{{W|魔樹の樹皮}}" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_jerky1.bmp" RenderString="'" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="木目の狭間に地衣が貼りつき、香辛料の匂いと共に微かな光沢を放つ。" Replace="true" />
+  </object>
+
+  <!-- Scrap -->
+  <object Name="Scrap" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="[スクラップ]" ColorString="&amp;K" RenderString="232" RenderLayer="4" Tile="Assets_Content_Textures_Items_sw_gadget.bmp" Replace="true" />
+    <part Name="Description" Short="朽ちた機械の化石から剥がれ落ちた一片。" Replace="true" />
+  </object>
+  <object Name="Scrap Metal" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit11.bmp" DetailColor="C" ColorString="&amp;B" DisplayName="歪んだ金属板" Replace="true" />
+  </object>
+  <object Name="ScrapX" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;M" DisplayName="[究極スクラップ]" Replace="true" />
+  </object>
+  <object Name="Scrap Crystal" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit11.bmp" DetailColor="C" ColorString="&amp;G" DisplayName="罅割れたレンズ" Replace="true" />
+  </object>
+  <object Name="Scrap Electronics" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit11.bmp" DetailColor="C" ColorString="&amp;C" DisplayName="砕けたマイクロチップ" Replace="true" />
+  </object>
+  <object Name="Scrap Energy" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit11.bmp" DetailColor="C" ColorString="&amp;R" DisplayName="焦げたコンデンサ" Replace="true" />
+  </object>
+  <object Name="Scrap 00" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit9.bmp" DetailColor="C" ColorString="&amp;y" DisplayName="腐食した基板" Replace="true" />
+  </object>
+  <object Name="Scrap 1" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit1.bmp" DetailColor="C" ColorString="&amp;r" DisplayName="失敗したエネルギーリレー" Replace="true" />
+  </object>
+  <object Name="Scrap 2" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit2.bmp" DetailColor="C" ColorString="&amp;g" DisplayName="焼けた演算コア" Replace="true" />
+  </object>
+  <object Name="Scrap 3" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit3.bmp" DetailColor="C" ColorString="&amp;b" DisplayName="罅割れた機体ハウジング" Replace="true" />
+  </object>
+  <object Name="Scrap 4" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit4.bmp" DetailColor="C" ColorString="&amp;c" DisplayName="破損したマイコン配列" Replace="true" />
+  </object>
+  <object Name="Scrap 5" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit5.bmp" DetailColor="C" ColorString="&amp;K" DisplayName="単分子物質アセンブリ片" Replace="true" />
+  </object>
+  <object Name="Scrap 6" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit6.bmp" DetailColor="C" ColorString="&amp;W" DisplayName="調律外れの反物質マイクロ反応炉" Replace="true" />
+  </object>
+  <object Name="Scrap 7" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit7.bmp" DetailColor="C" ColorString="&amp;Y" DisplayName="不調の AI 管制ユニット" Replace="true" />
+  </object>
+  <object Name="Scrap 8" Inherits="Scrap" Replace="true">
+    <part Name="Render" Tile="items/bit8.bmp" DetailColor="C" ColorString="&amp;M" DisplayName="変相コア" Replace="true" />
+  </object>
+  <object Name="Med Scrap Metal" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;B" DisplayName="刃こぼれした手術用メス" Replace="true" />
+  </object>
+  <object Name="Med Scrap Crystal" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;G" DisplayName="砕けた拡大鏡" Replace="true" />
+  </object>
+  <object Name="Med Scrap Electronics" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;C" DisplayName="歪んだステント" Replace="true" />
+  </object>
+  <object Name="Med Scrap Energy" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;R" DisplayName="焦げたインプラントコア" Replace="true" />
+  </object>
+  <object Name="Med Scrap 00" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;y" DisplayName="ねじれたメタマッスル" Replace="true" />
+  </object>
+  <object Name="Med Scrap 1" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;r" DisplayName="磨耗した人工弁" Replace="true" />
+  </object>
+  <object Name="Med Scrap 2" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;g" DisplayName="破壊されたサイバネ制御装置" Replace="true" />
+  </object>
+  <object Name="Med Scrap 3" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;b" DisplayName="罅割れたクリスボーン" Replace="true" />
+  </object>
+  <object Name="Med Scrap 4" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;c" DisplayName="粉末状のナノ殻" Replace="true" />
+  </object>
+  <object Name="Med Scrap 5" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;K" DisplayName="枯渇したステムジェネレーター" Replace="true" />
+  </object>
+  <object Name="Med Scrap 6" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;W" DisplayName="調律外れの皮質再生器" Replace="true" />
+  </object>
+  <object Name="Med Scrap 7" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;Y" DisplayName="欠陥セルラーデテロメレーター" Replace="true" />
+  </object>
+  <object Name="Med Scrap 8" Inherits="Scrap" Replace="true">
+    <part Name="Render" ColorString="&amp;M" DisplayName="粗悪な代用頭部" Replace="true" />
+  </object>
+
+  <!-- Tonics -->
+  <object Name="Tonic" Inherits="Item" Replace="true">
+    <part Name="Description" Short="ガラス管と極細針がトニックを血流へ直接注入する。" Replace="true" />
+  </object>
+  <object Name="LoveTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{love|ラブ}} インジェクター" Replace="true" />
+  </object>
+  <object Name="BlazeTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{blaze|ブレイズ}} インジェクター" Replace="true" />
+  </object>
+  <object Name="HulkHoneyTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{G|ハルク}} {{w|ハニー}} インジェクター" Replace="true" />
+  </object>
+  <object Name="SalveTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{Y|サルヴ}} インジェクター" Replace="true" />
+  </object>
+  <object Name="SkulkTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{skulk|スカルク}} インジェクター" Replace="true" />
+  </object>
+  <object Name="SphynxSaltTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{sphynx|スフィンクス}}{{Y|ソルト}} インジェクター" Replace="true" />
+  </object>
+  <object Name="ShadeOilTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{shade|シェイドオイル}} インジェクター" Replace="true" />
+  </object>
+  <object Name="UbernostrumTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{ubernostrum|ウベルノストラム}} インジェクター" Replace="true" />
+  </object>
+  <object Name="RubbergumTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{rubbergum|ラバーガム}} インジェクター" Replace="true" />
+  </object>
+  <object Name="NectarTonic" Inherits="Tonic" Replace="true">
+    <part Name="Render" DisplayName="{{eater|先喰者の}}{{nectar|ネクター}} インジェクター" Replace="true" />
+  </object>
+
+  <!-- Tools & artifacts -->
+  <object Name="Tool" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="{{c|[ツール]}}" RenderString="004" RenderLayer="5" Tile="Tiles/sw_box.bmp" Replace="true" />
+  </object>
+  <object Name="BaseArtifact" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="[アーティファクト]" RenderString="004" ColorString="&amp;B" Replace="true" />
+  </object>
+  <object Name="Basic Toolkit" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{c|基本工具セット}}" Tile="Items/sw_toolbox.bmp" ColorString="&amp;c" DetailColor="C" Replace="true" />
+    <part Name="Description" Short="錫の箱でティンカ道具がカンカン鳴っている。ピンセット、小槌、プライヤー、逆プライヤー、ガラス玉、レンチが三丁。" Replace="true" />
+  </object>
+  <object Name="Advanced Toolkit" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{C|高級工具セット}}" Tile="Items/sw_toolbox_large.bmp" ColorString="&amp;c" DetailColor="C" Replace="true" />
+    <part Name="Description" Short="カーバイドケースの中で電圧計、ポリージャック、はんだナイフ、イオンシールド、回路基板、真空管三本が鳴り合う。" Replace="true" />
+  </object>
+  <object Name="Pickaxe" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{c|ツルハシ}}" Tile="Assets_Content_Textures_Items_sw_pickaxe.bmp" DetailColor="w" Replace="true" />
+    <part Name="Description" Short="片側が尖りもう片側が平たい研ぎ出し金属の刃だ。欠けた刃溝に砂が詰まり、岩が秘めた虹彩の光を帯びる。" Replace="true" />
+  </object>
+  <object Name="Nanopneumatic Jackhammer" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="ナノ空圧ジャックハンマー" ColorString="&amp;C" DetailColor="K" Tile="Items/sw_jackhammer.bmp" Replace="true" />
+    <part Name="Description" Short="空圧チューブがラチェットをくぐって巨大なドリルヘッドへ繋がっている。鋸歯状の空気室が振動を吸収して圧力を連鎖させ、背部ストラップが操作者を危険な揺さぶりから守る。" Replace="true" />
+  </object>
+  <object Name="Hoversled" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="ホバースレッド" RenderString="004" RenderLayer="5" Tile="Items/sw_hoversled.bmp" ColorString="&amp;c" DetailColor="Y" Replace="true" />
+    <part Name="Description" Short="トボガンが地面の上で反発し、エーテルの波でそっと揺れている。漂う砂塵のコロナが縁を囲う。" Replace="true" />
+  </object>
+  <object Name="Portable Wall" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="携帯式ウォール" RenderString="004" ColorString="&amp;C" TileColor="&amp;b" DetailColor="C" Tile="Items/portable-wall.png" Replace="true" />
+    <part Name="Description" Short="手のひらサイズの箱の外面一つひとつに微細なグリフが刻まれている。その意味を巡って諸派が唸った末、いまや多くの語り部がこう訳す――「自然にも建築家にも見放された時のために」。真鍮の引き輪ひとつで、その約束が解き放たれる。" Replace="true" />
+  </object>
+  <object Name="Spiral Borer" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="スパイラルボーラー" Tile="Items/sw_spiral_borer.bmp" RenderString="004" ColorString="&amp;C" DetailColor="w" Replace="true" />
+    <part Name="Description" Short="コアメタルを詰めた背負い鞄が肩を重く引き、側面には地中へ向かうドリルのピクトグラムがステンシルで描かれている。" Replace="true" />
+  </object>
+  <object Name="Tattoo Gun" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|タトゥー}}ガン" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c" Replace="true" />
+    <part Name="Description" Short="ニードルと回転モーターでインクを皮膚の下へジェット噴射する。" Replace="true" />
+  </object>
+  <object Name="TemplarPhylactery" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="テンプラーのファイラクテリー" RenderString="004" Tile="Items/sw_phylactery.bmp" ColorString="&amp;w" DetailColor="c" Replace="true" />
+    <part Name="Description" Short="木彫りの宝石箱を開くと感光板とライトビーマーが収まっている。縁のクリスタルには菱形トーラーから選んだ詩句が刻まれている。" Replace="true" />
+  </object>
+  <object Name="Neuro Animator" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{nanoneuro|ナノニューロ}} {{Y|アニメーター}}" ColorString="&amp;r" DetailColor="G" Tile="Items/sw_animator.bmp" Replace="true" />
+    <part Name="Description" Short="完全自律で気候制御されたバナナ園を夢見たヘゲモニック・フルーツ開発部は、無機物へ神経系を編み込むニューロアニメーターを考案した。当初は完全な感性付与で差別化していたが、数か月後には Spray-a-Brain のような廉価品に市場を奪われた。" Replace="true" />
+  </object>
+  <object Name="Droid Scrambler" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{Y|ドロイドスクランブラー}}" ColorString="&amp;C" DetailColor="W" RenderString="004" RenderLayer="5" Tile="Items/sw_scrambler.bmp" Replace="true" />
+    <part Name="Description" Short="送信ディスクが断続的なノイズを発して短距離帯の周波数を攪乱する。" Replace="true" />
+  </object>
+
+  <!-- Recoilers -->
+  <object Name="BaseRecoiler" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{Y|リコイラー}}" ColorString="&amp;y" DetailColor="g" RenderString="004" RenderLayer="5" Tile="Items/sw_recoiler.bmp" Replace="true" />
+    <part Name="Description" Short="六角溝を刻んだカセットに磁荷を帯びさせ、時空テザーを巻き取る（そして特徴的な熱いチューインガム臭を放つ）。天面の凹ボタンを押すと可能性が弾け、反転が始まる。" Replace="true" />
+  </object>
+  <object Name="Joppa Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="ジョッパ・リコイラー" Replace="true" />
+  </object>
+  <object Name="Grit Gate Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{c|グリットゲート}}・リコイラー" DetailColor="C" Replace="true" />
+  </object>
+  <object Name="Golgotha Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{g|ゴルゴサ}}・リコイラー" Replace="true" />
+  </object>
+  <object Name="Kyakukya Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{R|キャクキャ}}・リコイラー" Replace="true" />
+  </object>
+  <object Name="Six Day Stilt Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{Y|六日間の脚}}リコイラー" Replace="true" />
+  </object>
+  <object Name="Bethesda Susa Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{C|ベセスダ・スーサ}}・リコイラー" Replace="true" />
+  </object>
+  <object Name="Ezra Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{W|エズラ}}・リコイラー" Replace="true" />
+  </object>
+  <object Name="Yd Freehold Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="{{W|イド連邦}}・リコイラー" Replace="true" />
+  </object>
+  <object Name="Ruin Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="ランダム地点リコイラー" DetailColor="r" Replace="true" />
+  </object>
+  <object Name="Programmable Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="プログラム可能リコイラー" DetailColor="w" Replace="true" />
+  </object>
+  <object Name="Reprogrammable Recoiler" Inherits="BaseRecoiler" Replace="true">
+    <part Name="Render" DisplayName="リプログラム可能リコイラー" DetailColor="W" Replace="true" />
+  </object>
+
+  <!-- Sprays & reagents -->
+  <object Name="Spraybottle" Inherits="Tool" Replace="true">
+    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="スプレーボトル" ColorString="&amp;C" DetailColor="c" RenderString="012" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="あるティンカーがサイフォン管と加圧ノズルを組み合わせ、注ぎたくない液体を噴霧する道具を作った。" Replace="true" />
+  </object>
+  <object Name="Fixit Spray" Inherits="Spraybottle" Replace="true">
+    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="Fix-It 発泡スプレー" ColorString="&amp;y" RenderString="012" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="発泡性のコーキング材を詰め込んだエアゾール缶。" Replace="true" />
+  </object>
+  <object Name="Desalination Pellet" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="脱塩ペレット" ColorString="&amp;Y" RenderString="&quot;" RenderLayer="5" Tile="Items/sw_pellet.bmp" Replace="true" />
+    <part Name="Description" Short="白いチョーク帽が液体から塩分を吸い上げる。表面には「H」の文字が刻まれている。" Replace="true" />
+  </object>
+  <object Name="Metamorphic Polygel" Inherits="Spraybottle" Replace="true">
+    <part Name="Render" DisplayName="{{metamorphic|変位ポリゲル}}" Tile="items/sw_spray.bmp" ColorString="&amp;y" DetailColor="M" RenderString="012" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="ピンク色のスライムがガラス瓶の内壁をこね回し、向こう側にある物の形を写し取ろうとしている。" Replace="true" />
+  </object>
+  <object Name="Spray-a-Brain" Inherits="Spraybottle" Replace="true">
+    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="スプレイ{{r|-}}ア{{r|-}}ブレイン" ColorString="&amp;G" TileColor="&amp;G" DetailColor="r" RenderString="012" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="「SPRAY-A-BRAIN: 壁が喋る日が来たなら…」" Replace="true" />
+  </object>
+  <object Name="High-Powered Magnet" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="高出力マグネット" Tile="items/sw_magnet.bmp" TileColor="&amp;c" DetailColor="W" RenderString="012" ColorString="&amp;w" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="鉄の欠片が瘤だらけの表面に斑を成している。" Replace="true" />
+  </object>
+
+  <!-- Currency & valuables -->
+  <object Name="Jewel-Encrusted Item" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="装飾品" Replace="true" />
+  </object>
+  <object Name="Bronze Ingot" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{w|青銅インゴット}}" Tile="Items/sw_ingot.bmp" RenderString="248" ColorString="&amp;w" DetailColor="w" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="液化した銅とスズの二色スープを鋳型に流し込んだ、重く先細りの延べ棒。" Replace="true" />
+  </object>
+  <object Name="Grave Goods" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="副葬品" Tile="Items/sw_grave_goods_1.bmp" DetailColor="y" RenderString="*" ColorString="&amp;y" TileColor="&amp;Y" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="明光界や薄き地へ旅立つ儀式のため、いくつもの装身具が埋葬された。硬貨、人形、ロケット、パイプ。" Replace="true" />
+  </object>
+  <object Name="Copper Nugget" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{w|銅のナゲット}}" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="真鍮色の金属塊が母岩から転げ落ちてきた。" Replace="true" />
+  </object>
+  <object Name="Silver Nugget" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{silvery|銀のナゲット}}" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="星明かりのような色合いで輝く金属の塊。" Replace="true" />
+  </object>
+  <object Name="Gold Nugget" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="{{W|金のナゲット}}" ColorString="&amp;W" Replace="true" />
+    <part Name="Description" Short="煌めく太陽滓の色で輝く金属の塊。" Replace="true" />
+  </object>
+  <object Name="Gemstone" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="原石の宝石" Tile="items/sw_rough_gemstone.bmp" DetailColor="Y" ColorString="&amp;W" Replace="true" />
+  </object>
+  <object Name="Rough Agate" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{K|瑪瑙}}宝石" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="小石の輪郭に無数の星雲の影が押しつぶされている。" Replace="true" />
+  </object>
+  <object Name="Rough Topaz" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{W|黄玉}}宝石" ColorString="&amp;W" Replace="true" />
+    <part Name="Description" Short="小さなプリズムに千もの日差しが屈折している。" Replace="true" />
+  </object>
+  <object Name="Rough Jasper" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{R|碧玉}}宝石" ColorString="&amp;R" Replace="true" />
+    <part Name="Description" Short="地底の黒いふいごが赤い艶に刻み込まれている。" Replace="true" />
+  </object>
+  <object Name="Rough Amethyst" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{M|紫水晶}}宝石" ColorString="&amp;M" Replace="true" />
+    <part Name="Description" Short="幾百万年ものあいだ堆積物の襞に抱かれ、殻を破ったときには灼ける蝶のようだった。" Replace="true" />
+  </object>
+  <object Name="Rough Sapphire" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{B|青玉}}宝石" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="千のフラクタル世界の空を映す海が幾何学の体積に折り畳まれている。" Replace="true" />
+  </object>
+  <object Name="Rough Emerald" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{G|翠玉}}宝石" ColorString="&amp;G" Replace="true" />
+    <part Name="Description" Short="石に混じる不純物が青々しいものを育み、生命の模様を小さなスケールで反復している。" Replace="true" />
+  </object>
+  <object Name="Rough Peridot" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="原石の{{peridot|ペリドット}}宝石" DetailColor="W" ColorString="&amp;G" Replace="true" />
+    <part Name="Description" Short="虚空を翔けて黒い岩に衝突し、輝きながら自由を得てこの世界に転がり出た。" Replace="true" />
+  </object>
+  <object Name="Polished Gemstone" Inherits="Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた宝石" Tile="items/sw_gem.bmp" Replace="true" />
+  </object>
+  <object Name="Polished Agate" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{K|瑪瑙}}宝石" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="小石の輪郭に無数の星雲の影が押しつぶされている。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+  <object Name="Polished Topaz" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{W|黄玉}}宝石" ColorString="&amp;W" Replace="true" />
+    <part Name="Description" Short="小さなプリズムに千もの日差しが屈折している。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+  <object Name="Polished Jasper" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{R|碧玉}}宝石" ColorString="&amp;R" Replace="true" />
+    <part Name="Description" Short="地底の黒いふいごが赤い楕円に刻まれている。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+  <object Name="Polished Amethyst" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{M|紫水晶}}宝石" ColorString="&amp;M" Replace="true" />
+    <part Name="Description" Short="幾百万年もの眠りから孵ったばかりの光蝶。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+  <object Name="Polished Sapphire" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{B|青玉}}宝石" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="千のフラクタル世界を映す海が幾何学に宿る。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+  <object Name="Polished Emerald" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{G|翠玉}}宝石" ColorString="&amp;G" Replace="true" />
+    <part Name="Description" Short="不純物が青葉を母し、生命の模様を繰り返す。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+  <object Name="Polished Peridot" Inherits="Polished Gemstone" Replace="true">
+    <part Name="Render" DisplayName="磨かれた{{peridot|ペリドット}}宝石" DetailColor="W" ColorString="&amp;G" Replace="true" />
+    <part Name="Description" Short="虚空を翔けてこの世界に落ちた閃光。すべての角が磨かれて輝く。" Replace="true" />
+  </object>
+
+  <!-- Figurines -->
+  <object Name="Random Figurine" Inherits="Tool" Replace="true">
+    <part Name="Render" DisplayName="[フィギュリン]" Tile="Items/figurine.png" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="*material* で作られた細やかな彫像で、*creature.an* を表現している。" Replace="true" />
+  </object>
+  <object Name="Random Copper Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{w|銅製}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Rhinox figure" Inherits="Random Copper Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{w|銅製}} {{|*creature*}} のフィギュリン" Replace="true" />
+  </object>
+  <object Name="Random Silver Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{silvery|銀製}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;Y" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Gold Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{W|金製}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Agate Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{K|瑪瑙}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;K" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Topaz Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{W|黄玉}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Jasper Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{R|碧玉}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;R" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Amethyst Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{M|紫水晶}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;M" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Sapphire Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{B|青玉}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;B" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Emerald Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{G|翠玉}} {{|*creature*}} のフィギュリン" DetailColor="y" RenderString="*" ColorString="&amp;G" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="Random Peridot Figurine" Inherits="Random Figurine" Replace="true">
+    <part Name="Render" DisplayName="{{peridot|ペリドット}} {{|*creature*}} のフィギュリン" DetailColor="W" RenderString="*" ColorString="&amp;G" RenderLayer="5" Replace="true" />
+  </object>
+
+  <!-- Trinkets -->
+  <object Name="Trinket" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="{{c|装飾小物}}" RenderString="004" RenderLayer="5" Tile="Items/sw_gadget.bmp" Replace="true" />
+  </object>
+  <object Name="SmallMetalTrinket" Inherits="Trinket" Replace="true">
+    <part Name="Render" DisplayName="[トースター]" RenderString="004" RenderLayer="5" Replace="true" />
+  </object>
+  <object Name="BoxOfCrayons" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="{{w|{{R-W-G-B-M-C-Y sequence|crayons}}の箱}}" Tile="Items/sw_crayons.bmp" RenderString="*" ColorString="&amp;w" DetailColor="R" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="オードラムの巣で採れた蝋を染料と混ぜ、スタイラスの形に成形したもの。箱の中では世界の虹彩をひとそろいにし、それを拡張する道具を差し出している。" Replace="true" />
+  </object>
+  <object Name="Salt Mill" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="塩挽き器" Tile="Items/salt_mill.bmp" RenderString="*" ColorString="&amp;Y" TileColor="&amp;r" DetailColor="Y" Replace="true" />
+    <part Name="Description" Short="彫りと染めが施されたオリーブ材の内部で、鋼の歯が料理塩の粒を挽きそろえる。" Replace="true" />
+  </object>
+  <object Name="Spiral Iron" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="ジャイア・アイロン" Tile="Items/spiral_wand.bmp" RenderString="*" ColorString="&amp;W" TileColor="&amp;K" DetailColor="W" Replace="true" />
+    <part Name="Description" Short="熱い金属クランプが燃える毛を螺旋の曲線へと強制する。" Replace="true" />
+  </object>
+  <object Name="Bubble Level" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="水準器" Tile="Items/bubble_level.bmp" RenderString="*" ColorString="&amp;B" TileColor="&amp;y" DetailColor="B" Replace="true" />
+    <part Name="Description" Short="環状の水晶板が物差しを二分し、その中心に油膜の気泡を浮かべる。" Replace="true" />
+  </object>
+  <object Name="FoldingChair" Inherits="Item" Replace="true">
+    <part Name="Render" ColorString="&amp;c" DisplayName="{{c|金属製折り畳み椅子}}" DetailColor="C" Tile="Items/sw_folding_chair.bmp" Replace="true" />
+    <part Name="Description" Short="用途の知れたパイプが溶接部で広がり、腰掛け用の板を支えている。" Replace="true" />
+  </object>
+  <object Name="PlasticTree" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="プラスチックの樹" RenderString="157" ColorString="&amp;G" Occluding="true" Tile="Items/sw_plastic_tree.bmp" DetailColor="w" Replace="true" />
+    <part Name="Description" Short="葉に見立てたフロンドが蝋質の質感で広がる。近くで見れば硬く脂ぎっているが、一歩離れれば輪郭が柔らかく滲み、木の役割を果たし始める。" Replace="true" />
+  </object>
+  <object Name="Small Sphere of Negative Weight" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="負重量の小球" Tile="Items/sw_sphere_negative_weight.bmp" ColorString="&amp;K" DetailColor="y" RenderString="009" RenderLayer="5" Replace="true" />
+    <part Name="Description" Short="黒い黄鉄鉱めいた金属球が重力の負圧に屈し、上方へ落ちようとする。" Replace="true" />
+  </object>
+  <object Name="Timecube" Inherits="Item" Replace="true">
+    <part Name="Render" DisplayName="{{K|タイムキューブ}}" RenderString="004" RenderLayer="5" Tile="Items/sw_curio.bmp" ColorString="&amp;K" DetailColor="Y" Replace="true" />
+    <part Name="Description" Short="角が四つしかない立方体。朝・昼・夕・夜の象形文字が面に刻まれ、1日の新たな仕切りを主張している。壊れた時計を戯画化した彫刻が随所にある。" Replace="true" />
+  </object>
+
+  <!-- Liquid containers -->
+  <object Name="Waterskin" Inherits="WaterContainer">
+    <part Name="Render" DisplayName="水袋" Replace="true" />
+    <part Name="Description" Short="ヤギの膀胱を底で縛り、腸の紐で吊した水袋だ。" Replace="true" />
+  </object>
+  <object Name="HalfFullWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="水袋（半量）" Replace="true" />
+  </object>
+  <object Name="FullWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="水袋（満タン）" Replace="true" />
+  </object>
+  <object Name="EmptyWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="水袋（空）" Replace="true" />
+  </object>
+  <object Name="RandomWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="水袋（不定量）" Replace="true" />
+  </object>
+  <object Name="Randomskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="水袋（未知の液体）" Replace="true" />
+  </object>
+  <object Name="HoneyWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="ハチミツ入り水袋" Replace="true" />
+  </object>
+  <object Name="HoneyWaterskinSmallAmount" Inherits="Waterskin">
+    <part Name="Render" DisplayName="ハチミツ入り水袋（少量）" Replace="true" />
+  </object>
+  <object Name="ApostleHoneyWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="使徒のハチミツ袋" Replace="true" />
+  </object>
+  <object Name="WineWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="ワイン入り水袋" Replace="true" />
+  </object>
+  <object Name="PilgrimWineWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="巡礼者のワイン袋" Replace="true" />
+  </object>
+  <object Name="Slimeskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="粘液入り水袋" Replace="true" />
+  </object>
+  <object Name="CiderWaterskin" Inherits="Waterskin">
+    <part Name="Render" DisplayName="サイダー入り水袋" Replace="true" />
+  </object>
+  <object Name="Oilskin" Inherits="WaterContainer">
+    <part Name="Render" DisplayName="油袋" ColorString="&amp;K" TileColor="&amp;K" Replace="true" />
+    <part Name="Description" Short="ヤギの膀胱を底で縛り、腸の紐で吊した油袋だ。" Replace="true" />
+  </object>
+  <object Name="Camel Bladder" Inherits="WaterContainer">
+    <part Name="Render" DisplayName="ラクダの水袋" Tile="Items/sw_camel_bladder.bmp" ColorString="&amp;w" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="巨大なラクダの膀胱を底で縛り、腸の紐で吊したもの。" Replace="true" />
+    <part Name="RulesDescription" Text="装備中は、このアイテムに入っている液体が所持重量に加算されない。" Replace="true" />
+  </object>
+  <object Name="Canteen" Inherits="WaterContainer">
+    <part Name="Render" DisplayName="水筒" ColorString="&amp;g" TileColor="&amp;g" DetailColor="w" Tile="Items/sw_canteen.png" Replace="true" />
+    <part Name="Description" Short="アルミの水差しをオリーブ色の布で包み、水持ちを良くしてある。" Replace="true" />
+  </object>
+  <object Name="Empty Canteen" Inherits="Canteen">
+    <part Name="Render" DisplayName="水筒（空）" ColorString="&amp;g" TileColor="&amp;g" DetailColor="w" Tile="Items/sw_canteen.png" Replace="true" />
+  </object>
+  <object Name="Phial" Inherits="WaterContainer">
+    <part Name="Render" DisplayName="小瓶" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/sw_vial.bmp" Replace="true" />
+    <part Name="Description" Short="貴重な液体を保管する短いガラスの管で、傾けるたびにきらめく。" Replace="true" />
+  </object>
+  <object Name="Random Rare Phial" Inherits="Phial">
+    <part Name="Render" DisplayName="希少液の小瓶" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/sw_vial.bmp" Replace="true" />
+  </object>
+  <object Name="Ink Phial" Inherits="Phial">
+    <part Name="Render" DisplayName="インクの小瓶" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/sw_vial.bmp" Replace="true" />
+  </object>
+  <object Name="Convalessence Phial" Inherits="Phial">
+    <part Name="Render" DisplayName="コンヴァレセンスの小瓶" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/sw_vial.bmp" Replace="true" />
+  </object>
+
+  <!-- Melee weapons: Cudgels -->
+  <object Name="Club" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="こん棒" Tile="Items/sw_cudgel_10.bmp" Replace="true" />
+    <part Name="Description" Short="木を削って膨らませた鈍い打撃頭だ。" Replace="true" />
+  </object>
+  <object Name="Wrench" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="レンチ" Tile="Items/wrench.bmp" ColorString="&amp;c" TileColor="&amp;y" DetailColor="c" Replace="true" />
+    <part Name="Description" Short="腕ほどの長さの老いた金属にねじ棒を貫き、てこの力を増してある。" Replace="true" />
+  </object>
+  <object Name="Pestle" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="乳棒" Tile="Items/pestle.bmp" ColorString="&amp;y" DetailColor="Y" Replace="true" />
+    <part Name="Description" Short="石の瘤頭に四体液の粉が薄く積もっている。" Replace="true" />
+  </object>
+  <object Name="Staff" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="杖" Tile="Items/sw_cudgel_11.bmp" DetailColor="r" Replace="true" />
+    <part Name="Description" Short="四方挽きにしたウィッチウッドの歪んだ胴を千の刻み傷が走る。" Replace="true" />
+  </object>
+  <object Name="Walking Stick" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="ステッキ" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" Replace="true" />
+    <part Name="Description" Short="塩沼から刈ったブラインストークを高塩の陽で乾かし、頂を渦巻く柄に削った。" Replace="true" />
+  </object>
+  <object Name="Mace2" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{w|青銅のメイス}}" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="刻み傷だらけの木柄に鐘青銅の塊をねじ込み、打撃頭に据えてある。" Replace="true" />
+  </object>
+  <object Name="Warhammer2" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="鉄のメイス" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;y" Replace="true" />
+    <part Name="Description" Short="鉄の筋がほどけて六枚のフランジ頭を形作っている。" Replace="true" />
+  </object>
+  <object Name="Steel War Hammer" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の戦鎚}}" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="柄を濡らした掌の油が光り、磨き上げた鋼塊が片端に重みを掛ける。" Replace="true" />
+  </object>
+  <object Name="Steel War Hammerth" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="両手用{{Y|鋼鉄の戦鎚}}" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="背の高い柄を手脂が艶めかせ、磨いた鋼の塊が片側にどっしりとぶら下がる。" Replace="true" />
+  </object>
+  <object Name="Steel Hammer" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{Y|鋼鉄のメイス}}" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="戦いで穿たれた棒から、磨かれた鋼の球根がふくらみ出ている。" Replace="true" />
+  </object>
+  <object Name="Shillelagh" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="シレイリー" Tile="Items/sw_cudgel_10.bmp" Replace="true" />
+    <part Name="Description" Short="モグライ各地で北方の巨木を伐り、異郷の術者が棒に削り、樹皮の片端を樫の瘤に編み上げる。" Replace="true" />
+  </object>
+  <object Name="Billowing Conch of the Aji" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="轟く{{r|アジ族}}の法螺貝" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="拳大の巻貝が柔らかな螺旋にとぐろを巻き、煤で黒く燻され、硫黄の臭気を放つ。" Replace="true" />
+  </object>
+  <object Name="Grandfather Horn" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="祖父角の角笛" Tile="creatures/sw_goathorn.bmp" Replace="true" />
+    <part Name="Description" Short="老いたマンゴートの白く垂れた角で、風に刻まれ緋の房で飾られている。" Replace="true" />
+  </object>
+  <object Name="Amber-Tipped Staff" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="琥珀頭の杖" Tile="Items/sw_cudgel_12.bmp" DetailColor="W" Replace="true" />
+    <part Name="Description" Short="節くれ立つアカシアの杖に原初の琥珀の小球が埋め込まれている。" Replace="true" />
+  </object>
+  <object Name="Cudgel3" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{b|カーバイドのハンマー}}" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="柄が硬い多角形の蒼金属へと広がり、その面に刻み傷と刻線が数えられる。" Replace="true" />
+  </object>
+  <object Name="Cudgel3th" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="両手用{{b|カーバイド}}ハンマー" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="長い柄が剛直で対称な蒼い多角頭へと広がり、双頭の面に刻み傷が並ぶ。" Replace="true" />
+  </object>
+  <object Name="Cudgel4" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{B|積層カーバイド}}ハンマー" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="柄の先を明るい蒼金属の頭が塞ぎ、面と喉に走る暗い縞が柔らかいカーバイドを打ち延ばした跡を示す。" Replace="true" />
+  </object>
+  <object Name="Cudgel4th" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="両手用{{B|積層カーバイド}}ハンマー" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="長柄の先に輝く蒼金属の双頭が載り、両面と喉に走る暗い縞が柔らかいカーバイドを打ち潰した跡を記す。" Replace="true" />
+  </object>
+  <object Name="Cudgel5" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{K|フラーレン}}の大槌" Tile="Items/sw_cudgel_4.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="隕石めいた重い暗色金属の塊を鋼の柄に溶接してある。" Replace="true" />
+  </object>
+  <object Name="Cudgel5th" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="両手用{{K|フラーレン}}の大槌" Tile="Items/sw_cudgel_5.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="隕石めいた双面の暗色金属塊を鋼の長柄に溶接してある。" Replace="true" />
+  </object>
+  <object Name="Cudgel6" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}製のメイス}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Cudgel6th" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}製のウォーハンマー}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Cudgel7" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}製のメイス}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Cudgel7th" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}製のウォーハンマー}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Cudgel8" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{zetachrome|ジータクロームのハンマー}}" Tile="Items/sw_cudgel_8.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+  <object Name="Cudgel8th" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{zetachrome|ジータクロームのウォーハンマー}}" Tile="Items/sw_cudgel_9.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+  <object Name="Maghammer" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{c-C-Y-W alternation|マグハンマー}}" Tile="Items/sw_cudgel_13.bmp" ColorString="&amp;C" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="アクアマリンの磁石環が両手棍の打撃部を幾重にも締め付け、柄尻のスロットに差したバッテリーが磁力に電荷を供給する。" Replace="true" />
+    <part Name="LatchesOn" ChargeUse="10" IsEMPSensitive="true" IsPowerLoadSensitive="true" IsMagnetic="true" InitialSaveTarget="20" InitialSaveStat="Strength" InitialSaveDifficultyStat="Strength" MoveSaveTarget="20" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="20" BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="8-12" AutoAttackOnMove="false" AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="false" BehaviorDescription="8～12ターンのあいだ金属の対象に吸い付く。" Replace="true" />
+  </object>
+  <object Name="Rhinox-Skull Maul" Inherits="BaseCudgel">
+    <part Name="Render" DisplayName="{{g|ライノックスの頭蓋}}の大槌" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y" Replace="true" />
+    <part Name="Description" Short="三つの角孔をもつ分厚くダイヤのように硬い頭骨が巨大な打撃頭となり、輝く鋼の長柄が顎を貫いて内部で溶接されている。" Replace="true" />
+  </object>
+  <object Name="Stun Rod" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{c|スタン}}ロッド" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="長いスレート棒が襟元で広がり、コンデンサーと衝撃の球根を抱えている。" Replace="true" />
+  </object>
+  <object Name="Prayer Rod" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{c|祈祷}}ロッド" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="W" Replace="true" />
+    <part Name="Description" Short="長いスレート棒が襟元で広がり、祈りの文言を記憶に焼き付ける帯電の球根を抱える。" Replace="true" />
+  </object>
+  <object Name="Syphon Baton" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{syphon|サイフォン}}バトン" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Replace="true" />
+    <part Name="Description" Short="輪磁石が筒状のメイス頭を形作り、打撃した対象から電子の汁を吸い上げて柄のソケットに挿したバッテリーへ送る。" Replace="true" />
+    <part Name="SapChargeOnHit" Amount="10d100" Single="true" BehaviorDescription="命中時、標的とその装備から電荷を吸い上げ、ソケットに差したエネルギーセルへ移す。" Replace="true" />
+  </object>
+
+  <!-- Melee weapons: Daggers -->
+  <object Name="Dagger" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{w|青銅の短剣}}" Tile="Items/sw_shortblade_1.bmp" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="鐘青銅を尖らせ、柄を革で巻き付けてある。" Replace="true" />
+  </object>
+  <object Name="Desert Kris" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="砂漠のクリス" Tile="Items/sw_shortblade_9.bmp" Replace="true" />
+    <part Name="Description" Short="塩岩の柄頭から鉄が虫のように身をくねらせて伸び出す。" Replace="true" />
+  </object>
+  <object Name="Dagger2" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="鉄の短剣" Tile="Items/sw_shortblade_1.bmp" Replace="true" />
+    <part Name="Description" Short="鉄の縁界にあいた隕石孔のように、小さな穴が刃じゅうに散っている。" Replace="true" />
+  </object>
+  <object Name="Steel Kukri" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{Y|鋼鉄のククリ}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="輝く金属が毛羽だった革の柄から溢れ、殺し手の逆反りを走る。" Replace="true" />
+  </object>
+  <object Name="Steel Dagger" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の短剣}}" Tile="Items/sw_shortblade_1.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="刃は眩しく磨き上げられている。" Replace="true" />
+  </object>
+  <object Name="Steel Utility Knife" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の多目的ナイフ}}" Tile="Items/sw_shortblade_12.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="使い減った刃と指紋で曇ったボディが折り畳まれる。" Replace="true" />
+  </object>
+  <object Name="Steel Potter's Knife" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の陶工ナイフ}}" Tile="Items/sw_shortblade_12.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="濡れた粘土が刃をまとい、柄には泥がこびり付いている。" Replace="true" />
+  </object>
+  <object Name="Steel Butcher Knife" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の解体ナイフ}}" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="幅広く輝く刃が内臓の塗料で彩られている。" Replace="true" />
+  </object>
+  <object Name="Dagger3" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{b|カーバイドの短剣}}" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="塩と傷痕が蒼い刃の縁に彗星の尾を描く。" Replace="true" />
+  </object>
+  <object Name="Obsidian Kris" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{K|黒曜石のクリス}}" Tile="Items/sw_shortblade_9.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="噴気の神の海から掬った火山ガラスを、氷尖塔で削って形にした。" Replace="true" />
+  </object>
+  <object Name="Dagger4" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{B|積層カーバイドの短剣}}" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="青く輝く金属が突き刺しの穂先へ向かって細っていく。" Replace="true" />
+  </object>
+  <object Name="ArmDagger4" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{B|積層カーバイドのリストブレード}}" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="明るい刃の柄に革のリボンを通して手首へ結び付けた。" Replace="true" />
+  </object>
+  <object Name="Dagger5" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{K|フラーレンの短剣}}" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="濃く陰った重い金属の剃刀刃が稲妻のように折れ曲がり、面は無光で星も映さない。" Replace="true" />
+  </object>
+  <object Name="Dagger6" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}の短剣}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Dagger7" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}短剣}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Dagger8" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="{{zetachrome|ジータクロームの短剣}}" Tile="Items/sw_shortblade_6.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+  <object Name="Vibro Dagger" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{c|ヴィブロ短剣}}" Tile="Items/sw_shortblade_8.bmp" ColorString="&amp;c" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="イオン化プラスティファーの艶消し刃が指掛けハンドルに収まり、チャージすると広幅の動きでぶれ、物質の障害を揺さぶり退ける。" Replace="true" />
+    <part Name="RulesDescription" Text="チャージ中、この武器の貫通値は防御側のAVと等しくなる。" Replace="true" />
+  </object>
+  <object Name="Gaslight Dagger" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{gaslight|ガスライト・クリス}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g" Replace="true" />
+    <part Name="Description" Short="木製グリップの孔から皺の寄った淡光の束が吸い込まれ、振るえば鋼を溶かす温度で唸りながら物質を削り飛ばす。" Replace="true" />
+  </object>
+  <object Name="Gaslight Sword" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{gaslight|ガスライト・フリッサ}}" Tile="Items/sw_longblade_9.bmp" ColorString="&amp;W" DetailColor="g" Replace="true" />
+    <part Name="Description" Short="木製グリップの孔から長く絞った淡光の束が吸い込まれ、振るえば鋼を溶かす温度で唸りながら物質を削り飛ばす。" Replace="true" />
+  </object>
+  <object Name="Gaslight Chisel" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{gaslight|ガスライト・ノミ}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="木製グリップの孔からずんぐりした淡光の束が吸い込まれ、振るえば鋼を溶かす温度で唸りながら物質を削り飛ばす。" Replace="true" />
+  </object>
+
+  <!-- Melee weapons: Axes -->
+  <object Name="Battle Axe" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{w|青銅の戦斧}}" Tile="Items/sw_axe_1.bmp" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="湿った革が木の柄を鐘青銅の刃先まで包んでいる。" Replace="true" />
+  </object>
+  <object Name="Hand Axe" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="手斧" Tile="Items/sw_axe_9.bmp" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="斧刃の縁にブラインストークの棘毛が衣のようにまとわりつく。" Replace="true" />
+  </object>
+  <object Name="Iron Vinereaper" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="鉄の蔓刈り斧" Tile="Items/sw_axe_10.bmp" Replace="true" />
+    <part Name="Description" Short="鍛鉄を半月に成形し、ウォーターヴァインの粗い皮を刈り裂く。" Replace="true" />
+  </object>
+  <object Name="Battle Axe2" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="鉄の戦斧" Tile="Items/sw_axe_1.bmp" Replace="true" />
+    <part Name="Description" Short="年季の入った斧の鉤から鉤へ、髪のように細い錆が筋を描く。" Replace="true" />
+  </object>
+  <object Name="Steel Battle Axe" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の戦斧}}" Tile="Items/sw_axe_1.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="磨き上げた鋼が平らな翼で煌めき、革のストラップには手脂が染みている。" Replace="true" />
+  </object>
+  <object Name="Steel Battle Axeth" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="両手用{{Y|鋼鉄の戦斧}}" Tile="Items/sw_axe_2.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="磨き上げた鋼が双翼で眩しく光り、長い革巻きの柄には手脂が染み渡る。" Replace="true" />
+  </object>
+  <object Name="Steel Hand Axe" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の手斧}}" Tile="Items/sw_axe_9.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="眩しい鋼の角柱を刃に研ぎ澄ませた。" Replace="true" />
+  </object>
+  <object Name="Opal-Pommeled Steel Axe" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="オパール柄頭の{{Y|鋼鉄の戦斧}}" Tile="Items/sw_axe_1.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="磨き上げた鋼が平らな翼で煌めき、革のストラップには手脂が染みている。柄頭には輝くオパールが嵌められている。" Replace="true" />
+  </object>
+  <object Name="Steel Vinereaper" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の蔓刈り斧}}" Tile="Items/sw_axe_10.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="明るい鋼を半月に打ち延ばし、ウォーターヴァインの荒い皮を刈り取る。" Replace="true" />
+  </object>
+  <object Name="Battle Axe3" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{b|カーバイドの戦斧}}" Tile="Items/sw_axe_3.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="蒼い刃の艶が刃髭で影に溶け、背のスパイクが刃の質量を釣り合わせる。" Replace="true" />
+  </object>
+  <object Name="Battle Axe3th" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="両手用{{b|カーバイドの戦斧}}" Tile="Items/sw_axe_4.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="幅広い蒼い刃の艶が双頭の髭で影に沈み、細いひびが柄に絡みつく。" Replace="true" />
+  </object>
+  <object Name="Battle Axe4" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{B|積層カーバイドの戦斧}}" Tile="Items/sw_axe_3.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="明るい蒼金属が優美な半円を描き、鋼の柄に結び付けられている。" Replace="true" />
+  </object>
+  <object Name="Battle Axe4th" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="両手用{{B|積層カーバイドの戦斧}}" Tile="Items/sw_axe_4.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="明るい蒼金属が二つの優美な半円を描き、長い鋼の柄に結び付けられている。" Replace="true" />
+  </object>
+  <object Name="Battle Axe5" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{K|フラーレンの戦斧}}" Tile="Items/sw_axe_3.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="暗色の鋭い楔を鋼の柄に溶接してある。" Replace="true" />
+  </object>
+  <object Name="Battle Axe5th" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="両手用{{K|フラーレン}}戦斧" Tile="Items/sw_axe_2.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="幅広い暗色の鋭い楔を巨大な鋼の柄に溶接してある。" Replace="true" />
+  </object>
+  <object Name="Battle Axe6" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}の戦斧}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Battle Axe6th" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}のハルバード}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Battle Axe7" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}戦斧}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Battle Axe7th" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}ハルバード}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Battle Axe8" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{zetachrome|ジータクロームの戦斧}}" Tile="Items/sw_axe_7.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+  <object Name="Battle Axe8th" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="{{zetachrome|ジータクロームのハルバード}}" Tile="Items/sw_axe_8.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+
+  <!-- Melee weapons: Whips & Chains -->
+  <object Name="Stun Whip" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{c|スタンウィップ}}" Tile="Items/sw_whip_1.bmp" ColorString="&amp;c" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="帯状の金属紐が衝撃の潜勢をはらんで震え、プラステファーの柄尻にはバッテリーケースが差し込まれている。" Replace="true" />
+  </object>
+  <object Name="Leather Whip" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{w|革の鞭}}" Tile="items/sw_whip_1.bmp" ColorString="&amp;w" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="革をリングノットで編み上げて長い鞭身へとうねらせ、クラッカーの先端には血の染みが付いている。" Replace="true" />
+  </object>
+
+  <!-- Melee weapons: Long Blades -->
+  <object Name="Long Sword" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{w|青銅の長剣}}" Tile="items/sw_longblade_1.bmp" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="鐘青銅の刃一面に刻み傷が格子状に走り、革巻きの柄には手脂が染みて湿っている。" Replace="true" />
+  </object>
+  <object Name="Two-Handed Sword" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{w|青銅の両手剣}}" Tile="items/sw_longblade_2.bmp" ColorString="&amp;w" Replace="true" />
+    <part Name="Description" Short="鐘青銅の広い刃の隅々に刻み傷が碁盤目を描き、両手用の革グリップには手脂が沁み込んでいる。" Replace="true" />
+  </object>
+  <object Name="Long Sword2" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="鉄の長剣" Tile="items/sw_longblade_1.bmp" Replace="true" />
+    <part Name="Description" Short="細かな孔が刃の長さに散り、鉄の縁界に開いたクレーターのようだ。" Replace="true" />
+  </object>
+  <object Name="Long Sword2th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="両手用鉄の長剣" Tile="items/sw_longblade_2.bmp" Replace="true" />
+    <part Name="Description" Short="小さな孔が広い刃一面に散り、鉄の縁界に穿たれたクレーターのようだ。" Replace="true" />
+  </object>
+  <object Name="Steel Long Sword" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{Y|鋼鉄の長剣}}" Tile="items/sw_longblade_1.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="長い刃先は眩しく磨き上げられている。" Replace="true" />
+  </object>
+  <object Name="Steel Long Swordth" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="両手用{{Y|鋼鉄の長剣}}" Tile="items/sw_longblade_2.bmp" ColorString="&amp;Y" Replace="true" />
+    <part Name="Description" Short="長い刃先は眩しく磨き上げられ、幅広の柄には幾筋もの手脂が染みついている。" Replace="true" />
+  </object>
+  <object Name="Long Sword3" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{b|カーバイドの長剣}}" Tile="items/sw_longblade_14.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="蒼い刃の縁に塩と傷痕が彗星の尾を描く。" Replace="true" />
+  </object>
+  <object Name="Long Sword3th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="両手用{{b|カーバイドの長剣}}" Tile="items/sw_longblade_4.bmp" ColorString="&amp;b" Replace="true" />
+    <part Name="Description" Short="蒼い刃の広い縁に塩と傷痕が彗星の尾を描く。" Replace="true" />
+  </object>
+  <object Name="Long Sword4" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{B|積層カーバイドの長剣}}" Tile="items/sw_longblade_14.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="明るい金属が幽鬼めいた光沢に磨き上げられ、鍛接で炭素を折り重ねた跡が陰る青い筋として刃を走る。" Replace="true" />
+  </object>
+  <object Name="Long Sword4th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="両手用{{B|積層カーバイドの長剣}}" Tile="items/sw_longblade_4.bmp" ColorString="&amp;B" Replace="true" />
+    <part Name="Description" Short="明るく幅広い金属が幽鬼のような光沢を帯び、巨大な刃に鍛接の青い筋が幾重にも浮かぶ。" Replace="true" />
+  </object>
+  <object Name="Long Sword5" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{K|フラーレンの長剣}}" Tile="items/sw_longblade_14.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="星の光も映さない無艶の合金が鋭い縁を先端から鋼の柄へと長く伸ばしている。" Replace="true" />
+  </object>
+  <object Name="Long Sword5th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="両手用{{K|フラーレンの長剣}}" Tile="items/sw_longblade_4.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="星無き鈍色の合金が幅広く鋭い縁を成し、先端から溶接した鋼の柄へとすっと延びる。" Replace="true" />
+  </object>
+  <object Name="Long Sword6" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}の長剣}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Long Sword6th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{K|{{crysteel|クリスティール}}の大剣}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;g" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。鋳型を摘み上げる翡翠の鉗子が蒸散し、緑の煌めき――バナジウム――が金属に混ざって色を与える。" Replace="true" />
+  </object>
+  <object Name="Long Sword7" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}長剣}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Long Sword7th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{K|無垢の{{crysteel|クリスティール}}大剣}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;G" DetailColor="K" Replace="true" />
+    <part Name="Description" Short="高炉が惑星の潮汐エネルギーを吸い上げ、炭素を太陽温度まで熱して六角の鋳型に流し込む。翡翠の鉗子が蒸散して緑の煌めきを与え、塵で斑になった鋳塊は選り分けて岩喰いに与え、完璧な六角柱だけが残された。" Replace="true" />
+  </object>
+  <object Name="Sharpened Polyp" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="研ぎ澄まされた{{r|ポリプ}}" Tile="Items/sw_sharpened_polyp.bmp" ColorString="&amp;r" DetailColor="W" Replace="true" />
+    <part Name="Description" Short="骨格サンゴを礁から引きはがし、咀嚼して切っ先へと仕立てた。" Replace="true" />
+  </object>
+  <object Name="Ceremonial Khopesh" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="儀礼用ヴィブロコペシュ" Tile="items/sw_kopesh.bmp" ColorString="&amp;K" Replace="true" />
+    <part Name="Description" Short="アズルムの帯が柄を貫いて幻影鋼の外弧を誘導し、刃縁は死んだ詩節の文様へと滲む。" Replace="true" />
+  </object>
+  <object Name="Long Sword8" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{zetachrome|ジータクロームの長剣}}" Tile="items/sw_longblade_7.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+  <object Name="Long Sword8th" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="両手用{{zetachrome|ジータクロームの長剣}}" Tile="items/sw_longblade_8.bmp" ColorString="&amp;m" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="クォーク・グルーオンのプラズマが虚空峰で急冷して消えたが、球塊の一部は六次元の時空の折れ目に囚われた。そこを数十億年も滑り続けたそれらを誰かが見つけ、抽出して冷やす機械を築き、恒星炉で再び熱した。" Replace="true" />
+  </object>
+  <object Name="Vibro Blade" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="{{c|ヴィブロブレード}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" DetailColor="y" Replace="true" />
+    <part Name="Description" Short="イオン化プラスティファー製の長い艶消し刃が指掛けハンドルに載り、チャージすると広幅の動きでぶれ、物質の障害を揺さぶり退ける。" Replace="true" />
+    <part Name="RulesDescription" Text="チャージ中、この武器の貫通値は防御側のAVと等しくなる。" Replace="true" />
+  </object>
+
+  <!-- Unique melee weapons -->
+  <object Name="Shayna" Inherits="BaseHindrenAxe">
+    <part Name="Description" Short="かつてはただのカーバイド斧だったが、いまや華やかな芸術品だ。蔓草のように巻いた導線が柄を這い、花が咲くべき刃の平にはモジュールとバッテリーハウジングが据えられている。" Replace="true" />
+  </object>
+  <object Name="Ari" Inherits="BaseHindrenAxe">
+    <part Name="Description" Short="斧の三角頭のまわりには、高塩の太陽に揺らめく陽炎のような熱が漂う。ヒンドレンのような農耕民には不似合いな戦の武器だが、追い詰められた獲物が長い時間軸でどう応じるかを示している。" Replace="true" />
+  </object>
+  <object Name="Yal" Inherits="BaseHindrenAxe">
+    <part Name="Description" Short="半分は戦斧、半分は蔓刈り具――先祖伝来の道具ヤルは、ヒンドレンの耕作者と苛烈な冬との闘いを想起させる。湾曲した刃からは鋭い寒気が放たれている。" Replace="true" />
+  </object>
+  <object Name="Difucila" Inherits="Dagger4">
+    <part Name="Description" Short="油を引いた幅広の刃に、美しい葉のリボンがエッチングされている。松の柄にはその名「ディフチラ」と刻まれている。" Replace="true" />
+  </object>
+  <object Name="Fist of the Ape God" Inherits="BaseCudgel">
+    <part Name="Description" Short="アマランス色の命の血を月光で干し上げ、死せる森のサードの巨大な握り拳を彩っている。その光景は時間の右に吹くリボンをほどき、これがあらゆる未来で遺物であり、使い手こそ =pronouns.possessive= の化石伴侶であり秘密の共有者なのだと告げる。" Replace="true" />
+  </object>
+  <object Name="La Jeunesse" Inherits="BaseLongBlade">
+    <part Name="Description" Short="柄は折れては作り直され、鉄や宝石や革を時のプリズム散乱の向こう側から寄せ集めて、絶えず新しい姿へと生まれ変わっている。刃には、何度でも殺す形に押し固められてきた技術の傷が刻まれている。" Replace="true" />
+  </object>
+
+  <!-- Rifles -->
+
+  <object Name="BaseLeadSlugProjectile" Inherits="TemporaryProjectile" Replace="true">
+    <part Name="Render" DisplayName="鉛スラッグ" Tile="items/sw_bullet.bmp" Replace="true" />
+  </object>
+
+  <object Name="Lead Slug" Inherits="Projectile" Replace="true">
+    <part Name="Render" ColorString="&amp;w" DetailColor="y" DisplayName="鉛スラッグ" Tile="items/sw_bullet.bmp" Replace="true" />
+    <part Name="Description" Short="鉛を鋳造して円柱状に固め、先端を削いで尖らせた弾塊だ。" Replace="true" />
+  </object>
+
+  <object Name="Desert Rifle" Inherits="BaseMagazineRifle" Replace="true">
+    <part Name="Render" DisplayName="イサッカリ・ライフル" Tile="Items/sw_rifle.bmp" Replace="true" />
+    <part Name="Description" Short="幾百もの塩嵐に叩かれて銃身の鋼には小さな凹みが散り、銃床はイサッカリ砂丘部族の様式で繊維質のブラインストークから匙削りで仕上げられている。" Replace="true" />
+  </object>
+
+  <object Name="Carbine" Inherits="BaseMagazineRifle" Replace="true">
+    <part Name="Render" DisplayName="カービン" Tile="items/sw_carbine.bmp" Replace="true" />
+    <part Name="Description" Short="炭素鋼の切り詰めた銃口がぎらりと輝き、へこみだらけの銃床が肩に直角に食い込む。" Replace="true" />
+  </object>
+
+  <object Name="Sniper Rifle" Inherits="BaseMagazineRifle" Replace="true">
+    <part Name="Render" ColorString="&amp;y" DetailColor="K" DisplayName="スナイパーライフル" Tile="items/sw_sniper_rifle.bmp" Replace="true" />
+    <part Name="Description" Short="熟練のライフリングが炭素鋼の銃身に螺旋の精度を刻み、スコープのレンズには押し付けられた汚れがにじむ。" Replace="true" />
+  </object>
+
+  <object Name="Musket" Inherits="BaseMagazineRifle" Replace="true">
+    <part Name="Render" DisplayName="マスケット" Tile="Items/sw_musket.bmp" Replace="true" />
+    <part Name="Description" Short="拾い集めた鋼で作った滑腔銃身は、火薬の汚れの痘痕で黒くすすけている。" Replace="true" />
+  </object>
+
+  <object Name="Laser Rifle" Inherits="BaseRifle" Replace="true">
+    <part Name="Render" ColorString="&amp;C" DisplayName="{{C|レーザー}}ライフル" Tile="items/sw_techrifle_1.bmp" Replace="true" />
+    <part Name="Description" Short="伸縮する円筒が鏡面の焦点を挟み込み、その下では海を渡ったナットウッドから削り出した精霊じみた銃床が育っている。" Replace="true" />
+  </object>
+
+  <object Name="Chain Laser" Inherits="BaseRifle" Replace="true">
+    <part Name="Render" ColorString="&amp;C" DetailColor="C" DisplayName="チェーン{{C|レーザー}}" Tile="Items/sw_chain_laser.bmp" TileColor="&amp;c" Replace="true" />
+    <part Name="Description" Short="三本の炭素鋼の銃身が輝く儀礼めいた三角弧を組み、その内側で鏡点を締め上げる。" Replace="true" />
+  </object>
+
+  <object Name="Eigenrifle" Inherits="BaseRifle" Replace="true">
+    <part Name="Render" ColorString="&amp;b" DetailColor="B" DisplayName="アイゲンライフル" Tile="items/sw_techrifle_2.bmp" Replace="true" />
+    <part Name="Description" Short="ネオン蒼の銃身に直交するよう、正方形のプレートで囲んだ大型レンズのスコープが据えられている。銃を傾ければレンズ越しの景色は歪むが、描かれるベクトルだけは乱れない。" Replace="true" />
+  </object>
+
+  <object Name="Freeze Ray" Inherits="BaseRifle" Replace="true">
+    <part Name="Render" ColorString="&amp;C" DetailColor="y" DisplayName="{{freezing|凍結}}レイ" Tile="items/sw_raygun.bmp" Replace="true" />
+    <part Name="Description" Short="気化した冷却材がシフォンの管をたなびき、広い平面の銃身クロムに露を結ぶ。氷片で欠けた銃口から冷気が空気へこぼれ落ちる。" Replace="true" />
+  </object>
+
 </objects>
