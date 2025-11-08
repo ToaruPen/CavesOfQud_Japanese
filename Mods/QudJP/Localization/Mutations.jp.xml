@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mutations Load="Merge"><category Name="Morphotypes" DisplayName="{{W|モーフタイプ}}" Foreground="r" Detail="R" ExcludeFromPool="true" Replace="true">
+<mutations><category Name="Morphotypes" DisplayName="{{W|モーフタイプ}}" Foreground="r" Detail="R" ExcludeFromPool="true">
     <mutation Name="Chimera" Cost="1" MaxSelected="1" Class="Chimera" Exclusions="Esper,*Mental,*MentalDefects" Tile="Mutations/chimera.bmp" DisplayName="キメラ" />
     <mutation Name="Esper" Cost="1" MaxSelected="1" Class="Esper" Exclusions="Chimera,*Physical,*PhysicalDefects" Tile="Mutations/esper.bmp" DisplayName="エスパー" />
     <mutation Name="Unstable Genome" Cost="3" MaxSelected="99" Class="UnstableGenome" Exclusions="" Tile="Mutations/unstable_genome.bmp" DisplayName="不安定ゲノム" />
   </category>
 
-  <category Name="Physical" DisplayName="{{G|肉体突然変異}}" Foreground="w" Detail="W" Property="PhysicalMutationShift" ForceProperty="PhysicalMutationForceShift" Replace="true">
+  <category Name="Physical" DisplayName="{{G|肉体突然変異}}" Foreground="w" Detail="W" Property="PhysicalMutationShift" ForceProperty="PhysicalMutationForceShift">
     <mutation Name="Adrenal Control" Cost="4" MaxSelected="1" Class="AdrenalControl2" Exclusions="" Tile="Mutations/adrenal_control.bmp" DisplayName="アドレナリン制御" />
     <mutation Name="Beak" Cost="1" MaxSelected="1" Class="Beak" Exclusions="" Tile="Mutations/beak.bmp" DisplayName="くちばし" />
     <mutation Name="Burrowing Claws" Cost="3" MaxSelected="1" Class="BurrowingClaws" Exclusions="" Tile="Mutations/burrowing_claws.bmp" DisplayName="掘削爪" />
@@ -40,7 +40,7 @@
     <mutation Name="Wings" Cost="4" MaxSelected="1" Class="Wings" Exclusions="" Tile="Mutations/wings.bmp" DisplayName="翼" />
   </category>
 
-  <category Name="PhysicalDefects" DisplayName="{{R|肉体的欠陥}}" Foreground="w" Detail="W" Defect="true" Replace="true">
+  <category Name="PhysicalDefects" DisplayName="{{R|肉体的欠陥}}" Foreground="w" Detail="W" Defect="true">
     <mutation Name="Albino" Cost="-2" MaxSelected="1" Class="Albino" Exclusions="Photosynthetic Skin" Tile="Mutations/albino.bmp" DisplayName="アルビノ" />
     <mutation Name="Amphibious" Cost="-3" MaxSelected="1" Class="Amphibious" Exclusions="" Tile="Mutations/amphibious.bmp" DisplayName="両生" />
     <mutation Name="Brittle Bones" Cost="-4" MaxSelected="1" Class="BrittleBones" Exclusions="" Tile="Mutations/brittle_bones.bmp" DisplayName="脆弱骨格" />
@@ -55,7 +55,7 @@
     <mutation Name="Tonic Allergy" Cost="-4" MaxSelected="1" Class="TonicAllergy" Exclusions="" Tile="Mutations/tonic_allergy.bmp" DisplayName="トニックアレルギー" />
   </category>
 
-  <category Name="Mental" DisplayName="{{G|精神突然変異}}" Foreground="b" Detail="M" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift" Replace="true">
+  <category Name="Mental" DisplayName="{{G|精神突然変異}}" Foreground="b" Detail="M" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift">
     <mutation Name="Beguiling" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BiomeEpithet="賛歌" Tile="Mutations/beguiling.bmp" DisplayName="魅了" />
     <mutation Name="Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BiomeAdjective="繁茂する" Tile="Mutations/burgeoning.bmp" DisplayName="繁茂" />
     <mutation Name="Clairvoyance" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BiomeEpithet="汎視塔" Tile="Mutations/clairvoyance.bmp" DisplayName="千里眼">
@@ -105,7 +105,7 @@
     <mutation Name="Temporal Fugue" Cost="5" MaxSelected="1" Class="TemporalFugue" Exclusions="" BiomeEpithet="時空結節" Tile="Mutations/temporal_fugue.bmp" DisplayName="時間遁走" />
   </category>
 
-  <category Name="MentalDefects" DisplayName="{{R|精神的欠陥}}" Foreground="b" Detail="M" Defect="true" Replace="true">
+  <category Name="MentalDefects" DisplayName="{{R|精神的欠陥}}" Foreground="b" Detail="M" Defect="true">
     <mutation Name="Amnesia" Cost="-2" MaxSelected="1" Class="Amnesia" Exclusions="" BiomeAdjective="過去なき" Tile="Mutations/amnesia.bmp" DisplayName="健忘" />
     <mutation Name="Blinking Tic" Cost="-3" MaxSelected="1" Class="BlinkingTic" Exclusions="" BiomeAdjective="瞬移" Tile="Mutations/blinking_tic.bmp" DisplayName="瞬間移動癖" />
     <mutation Name="Dystechnia" Cost="-2" MaxSelected="1" Class="Dystechnia" Exclusions="Psychometry" BiomeAdjective="退行" Tile="Mutations/dystechnia.bmp" DisplayName="機械音痴" />

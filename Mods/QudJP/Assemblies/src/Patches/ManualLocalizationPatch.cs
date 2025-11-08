@@ -14,6 +14,7 @@ namespace QudJP
     [HarmonyPatch(typeof(XRL.Help.XRLManual))]
     internal static class ManualLocalizationPatch
     {
+        private static readonly string ManualResourceRelativePath = Path.Combine("Docs", "manual", "ManualPatch.jp.manual");
         private static readonly Lazy<IReadOnlyDictionary<string, string>> LocalizedTopics = new(LoadLocalizedTopics);
         private static readonly Func<object, IDictionary?> TopicsAccessor = BuildTopicsAccessor();
         private static readonly Dictionary<Type, List<MemberInfo>> TopicBodyMemberCache = new();
@@ -226,7 +227,7 @@ namespace QudJP
         {
             try
             {
-                var manualPath = Path.Combine(ModPathResolver.ResolveModPath(), "Docs", "ManualPatch.jp.xml");
+                var manualPath = Path.Combine(ModPathResolver.ResolveModPath(), ManualResourceRelativePath);
                 if (!File.Exists(manualPath))
                 {
                     Debug.LogWarning($"[QudJP] Manual localization file not found: {manualPath}");

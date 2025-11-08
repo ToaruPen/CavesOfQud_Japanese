@@ -8,6 +8,7 @@
 ## 1. ベースデータの取得
 1. Caves of Qud を最新バージョンに更新。
 2. `python3 scripts/extract_base.py --game-path "<Caves of Qud のインストール先>"` を実行し、`references/Base` に Conversations / Books / ObjectBlueprints などの最新コピーを取得。  
+- Genotypes / Subtypes / Mutations / EmbarkModules など XmlDataHelper が処理する XML では要素側に `Load="Replace"` を指定して丸ごと置き換える。これらは `Replace="true"` を解釈しないため、旧テンプレを流用すると Player.log に `Unused attribute "Replace"` が出る。
 3. ゲームのアップデートやリリース前チェック時にも再取得して差分を確認する。
 
 ## 2. ローカライズ テンプレート作成

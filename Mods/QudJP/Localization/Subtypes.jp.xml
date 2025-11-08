@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<subtypes Load="Merge">
-  <class ID="Castes" ChargenTitle="カーストを選択" SingularTitle="カースト" StatBoxDisplay="true" Replace="true">
+<subtypes>
+  <class ID="Castes" ChargenTitle="カーストを選択" SingularTitle="カースト" StatBoxDisplay="true">
 
     <category Name="Ekuemekiyye" DisplayName="{{G|毒霧の聖都エクエメキイの樹園}}">
 
@@ -175,7 +175,7 @@
 
   </class>
 
-  <class ID="Callings" ChargenTitle="天職を選択" SingularTitle="天職" Replace="true">
+  <class ID="Callings" ChargenTitle="天職を選択" SingularTitle="天職">
 
     <subtype Name="Apostle" DisplayName="使徒" Gear="StartingGear_Apostle" Tile="creatures/caste_13.bmp" DetailColor="m">
       <stat Name="Ego" Bonus="2"/>
