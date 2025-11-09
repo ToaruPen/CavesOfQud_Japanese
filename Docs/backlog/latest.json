@@ -14,126 +14,6 @@
   {
     "BaseFile": "Conversations.xml",
     "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualBegin",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitual",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualSellSecret",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualSellSecret",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualBuySecret",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualTinkeringRecipe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualLearnSkill",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualFungusColonize",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualHermitOath",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualBuyItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualBuyItem",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualSkillPoint",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualGainMutation",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualRandomMutation",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualCookingRecipe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualCookingRecipe",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "WaterRitualJoinParty",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "Tag",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "Trade",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "AddSlynthCandidate",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
     "ObjectName": "QuestHandler",
     "Status": "object-missing"
   },
@@ -404,19 +284,7 @@
   {
     "BaseFile": "Conversations.xml",
     "Localized": "Conversations.jp.xml",
-    "ObjectName": "AddSlynthCandidate",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
     "ObjectName": "KithAndKinRumor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "AddSlynthCandidate",
     "Status": "object-missing"
   },
   {
@@ -471,12 +339,6 @@
     "BaseFile": "Conversations.xml",
     "Localized": "Conversations.jp.xml",
     "ObjectName": "IfThenElseAchievement",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "Conversations.xml",
-    "Localized": "Conversations.jp.xml",
-    "ObjectName": "AddSlynthCandidate",
     "Status": "object-missing"
   },
   {
@@ -5414,12 +5276,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MakersMark",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "NoSparkingQuest",
     "Status": "object-missing"
   },
@@ -5576,12 +5432,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BaseLeadSlugProjectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -5613,12 +5463,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ProjectileVFXConfiguration",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Lead Slug",
     "Status": "object-missing"
   },
   {
@@ -5666,19 +5510,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Desert Rifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -5732,19 +5564,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Carbine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -5804,12 +5624,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MasterworkCarbine",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ModScoped",
     "Status": "object-missing"
   },
@@ -5817,12 +5631,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ModMasterwork",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MakersMark",
     "Status": "object-missing"
   },
   {
@@ -5846,12 +5654,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MasterworkChainPistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ModScoped",
     "Status": "object-missing"
   },
@@ -5859,12 +5661,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ModMasterwork",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MakersMark",
     "Status": "object-missing"
   },
   {
@@ -5894,19 +5690,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Sniper Rifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -5960,19 +5744,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Musket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6032,19 +5804,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Laser Rifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6116,19 +5876,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileLaserRifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
     "Status": "object-missing"
   },
   {
@@ -6158,19 +5906,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Chain Laser",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6242,19 +5978,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Eigenrifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6320,12 +6044,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileEigenrifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -6338,19 +6056,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Freeze Ray",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6422,12 +6128,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileFreezeRay",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -6452,19 +6152,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Hypertractor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6536,12 +6224,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileHookRay",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -6554,31 +6236,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ImpactSound",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Light Rail",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6650,19 +6314,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileLightrail",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
     "Status": "object-missing"
   },
   {
@@ -6680,19 +6332,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spaser Rifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6764,12 +6404,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileSpaserRifle",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -6788,12 +6422,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Phase Cannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
     "Status": "object-missing"
   },
@@ -6801,12 +6429,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "IntegratedWeaponHostShots",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6872,12 +6494,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectilePhaseCannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -6885,12 +6501,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "OmniphaseProjectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
     "Status": "object-missing"
   },
   {
@@ -6908,19 +6518,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Short Bow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -6956,19 +6554,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Compound Bow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7004,19 +6590,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Dart Gun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7052,19 +6626,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Electrobow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7142,12 +6704,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileElectrobow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -7166,19 +6722,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Turbow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7191,12 +6735,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissilePerformance",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7328,12 +6866,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Wooden Arrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AmmoArrow",
     "Status": "object-missing"
   },
@@ -7352,19 +6884,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileWoodenArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Steel Arrow",
     "Status": "object-missing"
   },
   {
@@ -7388,12 +6908,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileSteelArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -7412,12 +6926,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Boomrose Arrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AmmoArrow",
     "Status": "object-missing"
   },
@@ -7431,12 +6939,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ImpactSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileExplosiveArrow",
     "Status": "object-missing"
   },
   {
@@ -7478,7 +6980,43 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Carbide Arrow",
+    "ObjectName": "AmmoArrow",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "MissileStatusColor",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Metal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "TurretStockWeight",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "Projectile",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "ProjectileVFX",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": "ProjectileVFXConfiguration",
     "Status": "object-missing"
   },
   {
@@ -7508,12 +7046,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileCarbideArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -7527,12 +7059,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ProjectileVFXConfiguration",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Folded Carbide Arrow",
     "Status": "object-missing"
   },
   {
@@ -7550,24 +7076,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Metal",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TurretStockWeight",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileFoldedCarbideArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -7581,54 +7089,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ProjectileVFXConfiguration",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Fullerite Arrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "AmmoArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MissileStatusColor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileFulleriteArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileVFX",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileVFXConfiguration",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Crysteel Arrow",
     "Status": "object-missing"
   },
   {
@@ -7652,12 +7112,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileCrysteelArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -7671,12 +7125,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ProjectileVFXConfiguration",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Flawless Crysteel Arrow",
     "Status": "object-missing"
   },
   {
@@ -7706,12 +7154,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileFlawlessCrysteelArrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -7730,12 +7172,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Zetachrome Arrow",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AmmoArrow",
     "Status": "object-missing"
   },
@@ -7749,12 +7185,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Zetachrome",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileZetachromeArrow",
     "Status": "object-missing"
   },
   {
@@ -7802,12 +7232,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Chaingun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
     "Status": "object-missing"
   },
@@ -7815,12 +7239,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7874,19 +7292,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Grenade Launcher",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7928,19 +7334,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Missile Launcher",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -7977,12 +7371,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ReloadSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "HE Missile",
     "Status": "object-missing"
   },
   {
@@ -8042,12 +7430,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileHEMissile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -8072,19 +7454,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Flamethrower",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8162,12 +7532,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileFlamethrower",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -8186,19 +7550,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Defoliant Gas Pump",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8270,12 +7622,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileDefoliantGasStream",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -8300,19 +7646,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Fungicide Gas Pump",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8384,12 +7718,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileFungicideGasStream",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -8414,19 +7742,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Mortar Tube",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8457,12 +7773,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileFireSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileMortar",
     "Status": "object-missing"
   },
   {
@@ -8480,19 +7790,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Normality Gas Pump",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8570,12 +7868,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileNormalityGasStream",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -8606,19 +7898,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Arc Cannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8678,37 +7958,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileArcCannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Linear Cannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8774,19 +8030,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileLinearCannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Blast Cannon",
     "Status": "object-missing"
   },
   {
@@ -8804,19 +8048,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EnergyCellSocket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipCharge",
     "Status": "object-missing"
   },
   {
@@ -8870,12 +8102,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileBlastCannon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -8888,19 +8114,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Swarm Rack",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -8972,12 +8186,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileSwarmRocket",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -9002,19 +8210,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Borderlands Revolver",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9080,19 +8276,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Semi-Automatic Pistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9146,19 +8330,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Grappling Gun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9236,31 +8408,13 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileGrapplingGun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Chain Pistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9326,19 +8480,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Laser Pistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9416,19 +8558,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileLaserPistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
     "Status": "object-missing"
   },
   {
@@ -9488,19 +8618,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Eigenpistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9572,12 +8690,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileEigenpistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -9585,12 +8697,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ImpactSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Arc Winder",
     "Status": "object-missing"
   },
   {
@@ -9668,12 +8774,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileElectroPistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -9692,19 +8792,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Nullray Pistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9758,12 +8846,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileNullray",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -9794,19 +8876,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Hand Rail",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9878,19 +8948,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileHandrail",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
     "Status": "object-missing"
   },
   {
@@ -9908,19 +8966,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Di-Thermo Beam",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -9939,12 +8985,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Examiner",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "DiThermoBeam",
     "Status": "object-missing"
   },
   {
@@ -10016,12 +9056,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileDiThermoBeamHeat",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -10046,12 +9080,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "ProjectileDiThermoBeamCold",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -10071,30 +9099,12 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ImpactSound",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Blood-Gradient Hand Vacuum",
     "Status": "object-missing"
   },
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BioAmmoLoader",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -10107,18 +9117,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LeakWhenBroken",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidProducer",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidFueledPowerPlant",
     "Status": "object-missing"
   },
   {
@@ -10190,25 +9188,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Spaser Pistol",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -10316,19 +9296,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Space Inverter",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -10412,12 +9380,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "High-Voltage Arc Winder",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "ElectricalDischargeLoader",
     "Status": "object-missing"
   },
@@ -10454,12 +9416,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Psychal Fleshgun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
     "Status": "object-missing"
   },
@@ -10472,25 +9428,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidAmmoLoader",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidProducer",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cursed",
     "Status": "object-missing"
   },
   {
@@ -10574,19 +9512,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Longreach Grappling Gun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -10640,12 +9566,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "BaseShotgunProjectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
     "Status": "object-missing"
   },
@@ -10665,12 +9585,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "BaseObject",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Shotgun Shell",
     "Status": "object-missing"
   },
   {
@@ -10712,19 +9626,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Pump Shotgun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -10790,19 +9692,7 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Combat Shotgun",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -10875,12 +9765,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "MissileWeapon",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "MagazineAmmoLoader",
     "Status": "object-missing"
   },
   {
@@ -15464,12 +14348,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Light",
     "Status": "object-missing"
   },
@@ -16383,12 +15261,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidProducer",
     "Status": "object-missing"
   },
   {
@@ -17354,12 +16226,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidProducer",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AddsRep",
     "Status": "object-missing"
   },
@@ -17517,12 +16383,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "PartsGas",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidFueledPowerPlant",
     "Status": "object-missing"
   },
   {
@@ -18291,12 +17151,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cursed",
     "Status": "object-missing"
   },
   {
@@ -19689,12 +18543,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Armor",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cursed",
     "Status": "object-missing"
   },
   {
@@ -21440,12 +20288,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidFueledPowerPlant",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LeakWhenBroken",
     "Status": "object-missing"
   },
@@ -22562,12 +21404,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidFueledPowerPlant",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "LiquidVolume",
     "Status": "object-missing"
   },
@@ -23349,12 +22185,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "SaveModifier",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidFueledPowerPlant",
     "Status": "object-missing"
   },
   {
@@ -24146,12 +22976,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EnergyAmmoLoader",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "EnergyCellSocket",
     "Status": "object-missing"
   },
@@ -24231,12 +23055,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "Projectile",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "TreatAsSolid",
     "Status": "object-missing"
   },
   {
@@ -25196,12 +24014,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cursed",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "AlwaysEquipAsArmor",
     "Status": "object-missing"
   },
@@ -25503,12 +24315,6 @@
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "CyclopeanPrism",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "Cursed",
     "Status": "object-missing"
   },
   {
@@ -34232,12 +33038,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "EquipCharge",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "IntegralRecharger",
     "Status": "object-missing"
   },
@@ -39134,12 +37934,6 @@
   {
     "BaseFile": "ObjectBlueprints/Items.xml",
     "Localized": "ObjectBlueprints/Items.jp.xml",
-    "ObjectName": "LiquidProducer",
-    "Status": "object-missing"
-  },
-  {
-    "BaseFile": "ObjectBlueprints/Items.xml",
-    "Localized": "ObjectBlueprints/Items.jp.xml",
     "ObjectName": "PaxInfection",
     "Status": "object-missing"
   },
@@ -40431,7 +39225,7 @@
     "BaseFile": "ObjectBlueprints/TutorialStaging.xml",
     "Localized": "ObjectBlueprints/TutorialStaging.jp.xml",
     "ObjectName": null,
-    "Status": "file-missing"
+    "Status": "ok"
   },
   {
     "BaseFile": "ObjectBlueprints/Walls.xml",

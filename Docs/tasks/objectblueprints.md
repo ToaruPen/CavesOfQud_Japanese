@@ -15,7 +15,7 @@ ObjectBlueprints 配下の翻訳状況を管理します。`references/Base/Obje
 - [ ] `ObjectBlueprints/HiddenObjects.jp.xml`
 - [ ] `ObjectBlueprints/PhysicalPhenomena.jp.xml`
 - [ ] `ObjectBlueprints/Staging.jp.xml`
-- [ ] `ObjectBlueprints/TutorialStaging.jp.xml`
+- [x] `ObjectBlueprints/TutorialStaging.jp.xml`
 - [ ] `ObjectBlueprints/Walls.jp.xml`
 - [ ] `ObjectBlueprints/Widgets.jp.xml`
 - [ ] `ObjectBlueprints/WorldTerrain.jp.xml`

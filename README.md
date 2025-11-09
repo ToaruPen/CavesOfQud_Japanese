@@ -34,6 +34,7 @@
 
 4. **翻訳ファイル編集**  
    `Mods/QudJP/Localization/*.jp.xml` を `Load="Merge"` 形式で追加。`Docs/translation_process.md` と `Docs/translation_status.md` を更新して進捗を管理します。  
+   編集対象ファイルと担当カテゴリの一覧は `Docs/localization_targets.md` を参照してください。  
    カバレッジ状況は `python3 scripts/diff_localization.py --missing-only` でファイル / `<object Name>` 単位の欠落を一覧化できます（`--json-path` でレポート保存も可）。
 
 5. **動作確認**  

@@ -1,5 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <conversations Load="Merge">
+  <conversation ID="BaseConversation">
+    <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980" Replace="true">
+      <text>お前の渇きは私の渇き、私の水はお前のものだ。</text>
+      <text IfHavePart="SociallyRepugnant" Priority="1">
+        唾を交換するか？~
+        さっさと始めよう。~
+        {{emote|*舌なめずりをする。*}}~
+        渇きは私のもの、水はお前のもの。~
+        渇き。水。飲むんだ。~
+        ちゅうちゅうタイムだ。~
+        ????~
+        私の水は渇き、お前の水はお前のもの。
+      </text>
+      <part Name="WaterRitualBegin" />
+    </choice>
+
+    <node ID="WaterRitual" Replace="true">
+      <text>生きて飲め、=subject.waterRitualLiquid=-=player.siblingTerm=。</text>
+      <part Name="WaterRitual" />
+      <choice ID="ShareGossipChoice">
+        <text>興味をそそる噂話がある。</text>
+        <part Name="WaterRitualSellSecret" Gossip="true" />
+      </choice>
+      <choice ID="ShareSecretListenerChoice">
+        <text>分かち合いたい秘密がある。</text>
+        <part Name="WaterRitualSellSecret" />
+      </choice>
+      <choice ID="ShareSecretSpeakerChoice">
+        <text>秘密を打ち明けてくれ、=subject.waterRitualLiquid=-=pronouns.siblingTerm=。</text>
+        <part Name="WaterRitualBuySecret" />
+      </choice>
+      <choice ID="TinkeringRecipeChoice">
+        <text>=recipe= の作り方を教えてくれるか？</text>
+        <part Name="WaterRitualTinkeringRecipe" />
+      </choice>
+      <choice ID="LearnSkillChoice">
+        <text>お前の流儀を教えてくれるか？</text>
+        <part Name="WaterRitualLearnSkill" />
+      </choice>
+      <choice ID="FungusColonizeChoice">
+        <text>私は菌類の友だ。私を植民させてくれ。</text>
+        <part Name="WaterRitualFungusColonize" />
+      </choice>
+      <choice ID="HermitOathChoice">
+        <text>=hermit=、もう二度と邪魔しないと誓う。</text>
+        <part Name="WaterRitualHermitOath" />
+      </choice>
+      <choice ID="BuyValuedItemChoice">
+        <text>その =object.nameSingle= を譲ってくれないか？</text>
+        <part Name="WaterRitualBuyItem" Source="Valued" />
+      </choice>
+      <choice ID="BuyFactionItemChoice">
+        <text>その =object.nameSingle= を譲ってくれないか？</text>
+        <part Name="WaterRitualBuyItem" Source="Faction" />
+      </choice>
+      <choice ID="SkillPointChoice">
+        <text>もう一度、子どものように考える術を教えてくれ。</text>
+        <part Name="WaterRitualSkillPoint" />
+      </choice>
+      <choice ID="GainMutationChoice">
+        <text>お前の流儀を教えてくれるか？</text>
+        <part Name="WaterRitualGainMutation" />
+      </choice>
+      <choice ID="RandomMentalMutationChoice">
+        <text>集合意識の秘訣を教えてくれ。</text>
+        <part Name="WaterRitualRandomMutation" Category="Mental">
+          =subject.T= があなたの手を取り、あなたは目を閉じる。暗い茂みの中で =player.reflexive= を見いだし、絡み合う幽根をまたぎながら =subject.T= に導かれて進む。やがて林間の空き地につまずき込み、そこにはほかの者たちがいる。=subject.t= がそうしたように、あなたも彼らの手を取る。
+
+          瞬きか永劫かの後、あなたは =mutation.name= を知ったまま目を覚ます。
+        </part>
+      </choice>
+      <choice ID="CookingRecipeChoice">
+        <text>お前たちの好物の料理を教えてくれないか？</text>
+        <part Name="WaterRitualCookingRecipe" />
+      </choice>
+      <choice ID="ChefRecipeChoice">
+        <text>お前の得意料理のひとつを教えてくれ。</text>
+        <part Name="WaterRitualCookingRecipe" Chef="true" />
+      </choice>
+      <choice ID="JoinPartyChoice">
+        <text>=subject.waterRitualLiquid=-=pronouns.siblingTerm=、共に来てくれないか。</text>
+        <part Name="WaterRitualJoinParty" />
+      </choice>
+      <choice ID="EndChoice" Target="Start" Ordinal="1000">
+        <text>生きて飲め、=subject.waterRitualLiquid=-=pronouns.siblingTerm=。</text>
+        <part Name="Tag">{{g|[水儀式を終える]}}</part>
+      </choice>
+    </node>
+
+    <choice ID="Trade" Ordinal="990" Replace="true">
+      <text>取引しよう。</text>
+      <part Name="Trade" />
+    </choice>
+  </conversation>
+
+  <conversation ID="BaseSlynthMayor">
+    <node ID="SlynthRequestAccept" Replace="true">
+      <text>
+        よろしい、彼らを迎え入れよう。知らせてくれて感謝する。
+      </text>
+      <choice Target="End">
+        <part Name="AddSlynthCandidate" />
+        <text>感謝する、友よ。</text>
+      </choice>
+      <choice Target="Start">別のことを聞きたい。</choice>
+    </node>
+
+    <node ID="SlynthRequestReject" Replace="true">
+      <text>
+        すまないが、今はこの町に彼らの席がない。ほかの避難先を探してやってくれ。
+      </text>
+      <choice Target="Start">分かった。</choice>
+    </node>
+
+    <node ID="SlynthRequest" Replace="true">
+      <text>
+        彼らをここへ導くつもりなのだな？
+      </text>
+      <choice Target="SlynthRequestAccept" IfReputationAtLeast="Loved">そうだ。</choice>
+      <choice Target="SlynthRequestReject" IfNotReputationAtLeast="Loved">受け入れてくれるなら、そうしたい。</choice>
+    </node>
+
+    <node ID="SlynthAbout" Replace="true">
+      <text>
+        スリンセについて知りたいのだな？
+      </text>
+      <choice Target="Start">彼らはまだ行き先を決めていない。</choice>
+    </node>
+
+    <node ID="SlynthArrived" Replace="true">
+      <text>
+        スリンセは無事に到着した。まだ落ち着かぬ者もいるが、少しずつ新しい暮らしに根を下ろしている。
+      </text>
+      <choice Target="Start">感謝する。</choice>
+    </node>
+
+    <node ID="SlynthSettled" Replace="true">
+      <text>
+        彼らはもうこの場所の一員だ。馴染めなかった者は道を求めて旅立ったが、多くはここで暮らしを築いている。
+      </text>
+      <choice Target="Start">重ねて礼を言う。</choice>
+    </node>
+
+    <choice Target="SlynthRequest" Priority="10" IfAllowEscape="true" IfNotHaveState="SlynthSettlementFaction" IfHaveQuest="Landing Pads" IfNotSlynthCandidate="Mayor" IfSpeakerHaveTagOrProperty="Mayor" Replace="true">
+      <text>旅の途上で、新たな住まいを探すスリンセに出会った。ここで受け入れてもらえないか？</text>
+    </choice>
+    <choice Target="SlynthAbout" Priority="10" IfAllowEscape="true" IfNotHaveState="SlynthSettlementFaction" IfSlynthCandidate="Mayor" Replace="true">
+      <text>スリンセの件だ。</text>
+    </choice>
+    <choice Target="SlynthArrived" Priority="10" IfAllowEscape="true" IfSlynthChosen="Mayor" IfHaveState="LandingPadsSlynthArrived" IfNotHaveState="LandingPadsSlynthSettled" Replace="true">
+      <text>スリンセが到着したようだ。様子はどうだ？</text>
+    </choice>
+    <choice Target="SlynthSettled" Priority="10" IfAllowEscape="true" IfSlynthChosen="Mayor" IfHaveState="LandingPadsSlynthSettled" Replace="true">
+      <text>一週間が過ぎた。彼らはもう落ち着いただろうか？</text>
+    </choice>
+  </conversation>
+
   <conversation ID="Argyve">
     <start ID="MumblingWelcome" IfNotHaveQuest="Fetch Argyve a Knickknack" Replace="true">
       <text>

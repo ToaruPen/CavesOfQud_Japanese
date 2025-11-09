@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <embarkmodules>
+  <module Class="XRL.CharacterBuilds.Qud.QudSpecificCharacterInitModule">
+    <!-- ベースファイルと同じく、キャラクタービルド開始時にヒューマノイドを初期化する -->
+  </module>
+
   <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
     <window ID="Chargen/Modes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
       <title>:ゲームモードを選択:</title>
@@ -405,5 +409,12 @@
         <grid Position="20" Tile="Terrain/sw_joppa.bmp" Foreground="w" Detail="y" Background="k"></grid>
       </location>
     </locations>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudSpecificBootHandlersModule">
+    <!-- Qud 固有のブートハンドラー。ベース実装と同じ構成を維持する -->
+  </module>
+
+  <module Class="XRL.CharacterBuilds.Qud.QudGameBootModule">
+    <!-- ゲームエンジンのブートシーケンスを司るモジュール（原文準拠） -->
   </module>
 </embarkmodules>
