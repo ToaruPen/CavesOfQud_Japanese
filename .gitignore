@@ -22,3 +22,4 @@ Mods/QudJP/Assemblies/obj/
 
 # LLM payloads / temporary work products
 work/
+build/
