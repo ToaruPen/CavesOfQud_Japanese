@@ -18,11 +18,12 @@
 
 ## 3. 翻訳フロー
 1. 共通用語は `Docs/glossary.csv` に追記し、表記ゆれを防ぐ。派閥・地名など短縮形が必要な語は `Short` 列も必ず埋め、UI 表記やログと揃える。
-2. ファイル単位（会話 / 書籍 / UI など）で「翻訳 → ゲーム内確認 → ログチェック」を 1 サイクルとする。
-3. CAT ツールを使う場合は UTF-8 / LF を維持したまま XML / TXT に戻す。
-4. 進捗は `Docs/translation_status.md`（カテゴリ単位）と `Docs/tasks/*.md`（カテゴリ別タスクボード）に反映する。  
+2. 機械名や装備名など英語複合語をカタカナ化する場合は中黒（・）で語を区切り、`Chrome Pyramid` → `クローム・ピラミッド` などの表記に統一する。
+3. ファイル単位（会話 / 書籍 / UI など）で「翻訳 → ゲーム内確認 → ログチェック」を 1 サイクルとする。
+4. CAT ツールを使う場合は UTF-8 / LF を維持したまま XML / TXT に戻す。
+5. 進捗は `Docs/translation_status.md`（カテゴリ単位）と `Docs/tasks/*.md`（カテゴリ別タスクボード）に反映する。  
    - 細粒度タスクは各タスクボードにチェックボックス付きで追記し、完了後は `Docs/tasks/archive/` へ移す。
-5. `python3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/latest.json` を適宜実行し、未訳リストを自動更新する。
+6. `python3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/latest.json` を適宜実行し、未訳リストを自動更新する。
 
 ## 4. Mod 実体への反映
 - 作業ブランチ内の `Mods/QudJP` を真実のソースとし、ゲームが参照する Mod 実体へは必要なタイミングでのみ同期する。  

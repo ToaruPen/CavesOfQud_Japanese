@@ -70,20 +70,26 @@ namespace QudJP
             }
         }
 
-        public void ApplyToText(TMP_Text? text)
+        public void ApplyToText(TMP_Text? text, bool forceReplace = false)
         {
             if (!_loaded || text == null || PrimaryFont == null)
             {
                 return;
             }
 
-            if (ShouldReplaceFont(text.font))
+            if (forceReplace)
             {
                 text.font = PrimaryFont;
                 text.fontSharedMaterial = PrimaryFont.material;
             }
             else
             {
+                if (text.font == null)
+                {
+                    text.font = PrimaryFont;
+                    text.fontSharedMaterial = PrimaryFont.material;
+                }
+
                 EnsureFallbackChain(text.font);
             }
 
@@ -262,6 +268,17 @@ namespace QudJP
             }
 
             TMP_Settings.fallbackFontAssets = fallback;
+
+            if (TMP_Settings.defaultFontAsset == null || TMP_Settings.defaultFontAsset == PrimaryFont)
+            {
+                TMP_Settings.defaultFontAsset = PrimaryFont;
+            }
+            else
+            {
+                EnsureFallbackChain(TMP_Settings.defaultFontAsset);
+            }
+
+            EnsureFallbackOnAllFontAssets();
         }
 
         private void EnsureFallbackChain(TMP_FontAsset? font)
@@ -283,27 +300,18 @@ namespace QudJP
             }
         }
 
-        private bool ShouldReplaceFont(TMP_FontAsset? font)
+        private void EnsureFallbackOnAllFontAssets()
         {
-            if (font == null)
+            if (PrimaryFont == null)
             {
-                return true;
+                return;
             }
 
-            if (font == PrimaryFont || font == BoldFont)
+            var assets = Resources.FindObjectsOfTypeAll<TMP_FontAsset>();
+            foreach (var asset in assets)
             {
-                return false;
+                EnsureFallbackChain(asset);
             }
-
-            foreach (var hint in VanillaFontHints)
-            {
-                if (font.name.IndexOf(hint, StringComparison.OrdinalIgnoreCase) >= 0)
-                {
-                    return true;
-                }
-            }
-
-            return false;
         }
 
         private static bool ShouldReplaceLegacyFont(Font? font)

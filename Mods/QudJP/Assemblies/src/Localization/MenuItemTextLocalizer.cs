@@ -33,7 +33,7 @@ namespace QudJP.Localization
                         return match.Value;
                     }
 
-                    var localized = Translator.Instance.Apply(body, context);
+                    var localized = SafeStringTranslator.SafeTranslate(body, context);
                     if (string.IsNullOrEmpty(localized) ||
                         string.Equals(localized, body, StringComparison.Ordinal))
                     {
@@ -48,7 +48,7 @@ namespace QudJP.Localization
                 return replaced;
             }
 
-            var fallback = Translator.Instance.Apply(text, context) ?? string.Empty;
+            var fallback = SafeStringTranslator.SafeTranslate(text, context);
             return string.IsNullOrEmpty(fallback) ? (text ?? string.Empty) : fallback;
         }
 

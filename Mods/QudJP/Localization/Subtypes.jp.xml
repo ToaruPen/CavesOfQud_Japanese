@@ -284,7 +284,7 @@
       <extrainfo>ランダムなアーティファクトとスクラップを複数所持して開始</extrainfo>
     </subtype>
 
-    <subtype Name="Warden" DisplayName="ウォーデン" Gear="StartingGear_Warden" Tile="creatures/caste_22.bmp" DetailColor="w">
+    <subtype Name="Warden" DisplayName="監視官" Gear="StartingGear_Warden" Tile="creatures/caste_22.bmp" DetailColor="w">
       <stat Name="Strength" Bonus="2"/>
       <skills>
         <skill Name="LongBlades"/>

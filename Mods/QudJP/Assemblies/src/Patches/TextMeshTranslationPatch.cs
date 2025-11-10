@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using HarmonyLib;
 using QudJP.Localization;
@@ -16,6 +17,7 @@ namespace QudJP.Patches
     internal static class TextMeshTranslationPatch
     {
         private static int EmptySetTextLogs;
+        private static readonly HashSet<string> EmptySetTextStackLogged = new(StringComparer.OrdinalIgnoreCase);
 
         // Some TMP objects get their text cleared and rely on UITextSkin fallback text.
         private static readonly HashSet<string> FallbackTargets = new(StringComparer.OrdinalIgnoreCase)
@@ -60,6 +62,11 @@ namespace QudJP.Patches
                     var host = __instance != null ? __instance.gameObject?.name : "<null>";
                     var type = __instance?.GetType().FullName ?? "<unknown>";
                     UnityEngine.Debug.LogWarning($"[QudJP] TMP_Text.SetText empty (instance={host}, type={type})");
+                    if (ShouldLogEmptyStack(host) && EmptySetTextStackLogged.Add(host ?? string.Empty))
+                    {
+                        var stack = new StackTrace(2, fNeedFileInfo: false);
+                        UnityEngine.Debug.Log($"[QudJP] TMP_Text.SetText empty stack host='{host}' type='{type}': {stack}");
+                    }
                 }
                 return;
             }
@@ -107,6 +114,38 @@ namespace QudJP.Patches
                     // 安全性のため char[] ルートの翻訳は無効化（部分コピーで文字化けを誘発するため）。
                     return;
             }
+        }
+
+        private static bool ShouldLogEmptyStack(string? host)
+        {
+            if (string.IsNullOrEmpty(host))
+            {
+                return false;
+            }
+
+            if (host.StartsWith("Target:", StringComparison.Ordinal))
+            {
+                return true;
+            }
+
+            switch (host)
+            {
+                case "Row":
+                case "Header":
+                case "ItemWeightText":
+                case "CategoryWeightText":
+                case "Resistance Attributes Details":
+                case "Secondary Attributes Details":
+                case "Primary Attributes Details":
+                    return true;
+            }
+
+            if (host.IndexOf("Attributes Details", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         private static void TryRestoreFallbackText(TMP_Text instance, ref string text)

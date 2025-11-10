@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <objects Load="Merge">
   <object Name="BaseCyberneticsEquipment" Inherits="Item" Replace="true">
     <part Name="Physics" Category="Cybernetic Implants" Weight="0" />
@@ -33,7 +33,7 @@
   <object Name="ForceModulator" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="最小単位の粒子を、力場放射の標準周波数に同期させる調律器。" />
-    <part Name="Render" DisplayName="{{Y|フォースモジュレーター}}" Tile="Items/sw_comminterlock.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|フォース・モジュレーター}}" Tile="Items/sw_comminterlock.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="1" BehaviorDescription="力場の壁を通り抜けられる。" />
     <part Name="CyberneticsForcefieldNullifier" />
   </object>
@@ -60,7 +60,7 @@
   <object Name="NavigationSystem" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="透き通る半月ガラス上に地勢と社会データが投影され、下地には大地を覆い尽くす生命の描写が重ねられている。" />
-    <part Name="Render" DisplayName="{{Y|ナビゲーションシステム}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|ナビゲーション・システム}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="MultiNavigationBonus" ShowInShortDescription="false" Bonuses="Survival_RuinsSurvival:30:CompassBraceletApplied,*:10:CompassBraceletApplied" ChargeUse="0" NameForStatus="NavigationModule" />
     <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="1" BehaviorDescription="廃墟で迷子になる確率を30%軽減する。&#10;その他の地形では迷子になる確率を10%軽減する。&#10;これらの効果はコンパスブレスレットとは重複しない。" />
     <part Name="ItemElements" Elements="travel::2" />
@@ -76,7 +76,7 @@
   <object Name="SkinGlitter1" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="皮膚に貼り付くフラクタル格子が内側の光を外界へ導く。" />
-    <part Name="Render" DisplayName="{{Y|スキングリッター}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|スキン・グリッター}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="1" BehaviorDescription="光属性攻撃を屈折させる確率 +8%" />
     <part Name="CyberneticsRefractLight" Chance="8" />
     <xtagGrammar massNoun="true" />
@@ -159,7 +159,7 @@
     <part Name="ItemElements" Elements="might::3" />
   </object>
   <object Name="CarbideFist" Inherits="BaseCudgel" Replace="true">
-    <part Name="Render" DisplayName="{{Y|カーバイドナックル}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;b" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|カーバイドナ・ックル}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;b" DetailColor="r" />
     <part Name="MeleeWeapon" MaxStrengthBonus="999" BaseDamage="2d3" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="0" />
     <part Name="Description" Short="拳そのものをカーバイド合金の塊に置き換えた先行モデル。" />
@@ -253,7 +253,7 @@
   <object Name="AnchorSpikes" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
     <part Name="Physics" Weight="1" />
     <part Name="Description" Short="可動式のスパイクが足裏から突き出し、不整地でも姿勢を固定する。" />
-    <part Name="Render" DisplayName="{{Y|アンカースパイク}}" Tile="Items/sw_cyber_anchor_spikes.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|アンカー・スパイク}}" Tile="Items/sw_cyber_anchor_spikes.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="転倒・ノックバックに対するセーヴに +4。" />
     <part Name="CyberneticsAnchorSpikes" />
     <tag Name="CyberneticsOneOnly" />
@@ -287,7 +287,7 @@
   <object Name="GroundingShunts" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
     <part Name="Physics" Weight="1" />
     <part Name="Description" Short="導電性のシャントが電撃を体外へ逃し、感電を防止する。" />
-    <part Name="Render" DisplayName="{{Y|グラウンディング・シャント}}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|グラウンディン・グシャント}}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+12 電撃耐性" />
     <part Name="CyberneticsStatModifier" Stats="ElectricResistance:50" />
     <part Name="ItemElements" Elements="circuitry::3" />
@@ -310,14 +310,14 @@
   <object Name="BionicHands" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="5" />
     <part Name="Description" Short="滑らかな金属の義手。精密作業と握力が共に向上する。" />
-    <part Name="Render" DisplayName="{{Y|バイオニックハンド}}" Tile="Items/sw_bionichands.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|バイオニッ・クハンド}}" Tile="Items/sw_bionichands.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Hands" Cost="3" BehaviorDescription="+2 STR&#10;+2 DEX" />
     <part Name="CyberneticsStatModifier" Stats="Agility:2" />
   </object>
   <object Name="BionicArm" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="8" />
     <part Name="Description" Short="骨格・筋肉・腱をすべて人工パーツに置換したバイオニックアーム。" />
-    <part Name="Render" DisplayName="{{Y|バイオニックアーム}}" Tile="Items/sw_bionicarm.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|バイオニック・アーム}}" Tile="Items/sw_bionicarm.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Arm" Cost="3" BehaviorDescription="+3 STR" />
     <part Name="CyberneticsStatModifier" Stats="Strength:2" />
   </object>
@@ -338,14 +338,14 @@
   </object>
   <object Name="DopamineSynth" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Description" Short="脳内でドーパミンを合成・投与するための精製器。" />
-    <part Name="Render" DisplayName="{{Y|ドーパミンシンセサイザー}}" Tile="Items/sw_dopamine.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|ドーパミンシン・セサイザー}}" Tile="Items/sw_dopamine.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="気力回復速度 +25%" />
     <part Name="CyberneticsStatModifier" Stats="Willpower:2" />
   </object>
   <object Name="BionicHeart" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="2" />
     <part Name="Description" Short="発振器と人工弁を備えた合成心臓。血流を絶え間なく送り出す。" />
-    <part Name="Render" DisplayName="{{Y|バイオニックハート}}" Tile="Items/sw_bionicheart.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|バイオニッ・クハート}}" Tile="Items/sw_bionicheart.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="+3 CON" />
     <part Name="CyberneticsStatModifier" Stats="Toughness:2" />
     <part Name="CyberneticsEffectSuppressor" Effects="CardiacArrest" />
@@ -413,7 +413,7 @@
   <object Name="CustomVisage" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="皮膚を変幻自在に造形できる顔面ルーム。表情を任意の意匠で固定できる。" />
-    <part Name="Render" DisplayName="{{Y|カスタムフェイス}}" Tile="Items/sw_custom.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|カスタム・フェイス}}" Tile="Items/sw_custom.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="+2 意志&#10;あらゆる顔貌への変装が可能になる。" />
     <part Name="CyberneticsCustomVisage" />
     <tag Name="CyberneticsDestroyOnRemoval" />
@@ -429,7 +429,7 @@
   <object Name="BionicLiver" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="毒素を瞬時に分解する人工肝臓。" />
-    <part Name="Render" DisplayName="{{Y|バイオニックリバー}}" Tile="Items/sw_cyberliver.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|バイオニッ・クリバー}}" Tile="Items/sw_cyberliver.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="毒・病気に対するセーヴに +4。" />
     <part Name="CyberneticsBionicLiver" />
   </object>
@@ -482,7 +482,7 @@
     <part Name="Physics" Weight="75" />
     <part Name="Description" Short="下半身をキャタピラに換装し、重量物でも滑らかに運搬できる。" />
     <part Name="Render" DisplayName="{{Y|モーター駆動キャタピラ}}" Tile="Items/sw_treads.bmp" ColorString="&amp;C" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="4" BehaviorDescription="+25 移動速度&#10;重量ペナルティを無視して移動できる。" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="4" BehaviorDescription="+25 移動速度&#10;重量ペナルティを無視して移動できる。&#10;移動／ノックダウン／拘束に対するセーヴ +4。" />
     <part Name="CyberneticsMotorizedTreads" />
     <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-150" />
     <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="4" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="DriveTrain" ShowInShortDescription="false" />
@@ -499,13 +499,13 @@
     <part Name="Physics" Weight="4" />
     <part Name="Description" Short="衝撃を受けた瞬間に硬化するトラウマプレート。内臓損傷を防ぐ。" />
     <part Name="Render" DisplayName="{{Y|反応式トラウマプレート}}" Tile="Items/sw_cyber_reactive_trauma_plate.bmp" ColorString="&amp;C" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="4" BehaviorDescription="+5 AV&#10;クリティカルヒットを25%の確率で無効化する。" />
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="4" BehaviorDescription="+5 AV&#10;クリティカルヒットを25%の確率で無効化する。&#10;さらに、致死ダメージまたは最大HPの50%以上のダメージを一度だけ無効化し、このインプラントは自壊する。" />
     <part Name="LifeSaver" ChanceVsLethal="100" ChanceVsMaxHitpointsThreshold="100" MaxHitpointsThreshold="50" MaxUses="1" DestroyWhenUsedUp="true" ChargeUse="0" IsEMPSensitive="false" LethalMessage="=subject.Name's= =object.name= =object.verb:burst= outward, destroying =objpronouns.reflexive= to prevent potentially lethal damage." MaxHitpointsThresholdMessage="=subject.Name's= =object.name= =object.verb:burst= outward, destroying =objpronouns.reflexive= to prevent catastrophic damage." NameForStatus="TraumaInterventionSystem" />
   </object>
   <object Name="GunRack" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
     <part Name="Physics" Weight="20" />
     <part Name="Description" Short="背部に展開式ガンラックを搭載し、武器の持ち替えを瞬時に行う。" />
-    <part Name="Render" DisplayName="{{Y|ガンラック}}" Tile="Items/sw_gunrack.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|ガン・ラック}}" Tile="Items/sw_gunrack.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Back" Cost="6" BehaviorDescription="メイン装備を即座に切り替えられる。リロード時間 -25%" />
     <part Name="CyberneticsGunRack" />
     <part Name="Metal" />
@@ -557,7 +557,7 @@
     <tag Name="CyberneticsOneOnly" />
   </object>
   <object Name="ForceKnife" Inherits="BaseDagger" Replace="true">
-    <part Name="Render" DisplayName="{{Y|フォースナイフ}}" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp" />
+    <part Name="Render" DisplayName="{{Y|フォース・ナイフ}}" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp" />
     <part Name="Physics" Weight="0" Category="Thrown Weapons" />
     <part Name="Description" Short="腕に折り畳み式の力場ナイフを格納する。" />
     <part Name="MeleeWeapon" BaseDamage="1d8" />
@@ -587,7 +587,7 @@
   <object Name="MicromanipulatorArray" Inherits="BaseCyberneticsEquipment_5point" Replace="true">
     <part Name="Physics" Weight="2" />
     <part Name="Description" Short="指先に配した微細マニピュレーター群。極小の工作を手早く行える。" />
-    <part Name="Render" DisplayName="{{Y|マイクロマニピュレーターアレイ}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|マイクロマニピュレータ・ーアレイ}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Hands" Cost="5" BehaviorDescription="解体・組立の時間 -50%&#10;ティンカー判定 +3" />
     <part Name="CyberneticsMicromanipulatorArray" />
     <part Name="ItemElements" Elements="scholarship::5" />
@@ -620,7 +620,7 @@
   <object Name="HolographicVisage" Inherits="BaseCyberneticsEquipment_6point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="顔面をホログラムで覆い、任意の姿を投影できる。" />
-    <part Name="Render" DisplayName="{{Y|ホログラフィックフェイス}}" Tile="Items/implant_holographic_visage.bmp" ColorString="&amp;B" TileColor="&amp;C" DetailColor="B" />
+    <part Name="Render" DisplayName="{{Y|ホログラフィック・フェイス}}" Tile="Items/implant_holographic_visage.bmp" ColorString="&amp;B" TileColor="&amp;C" DetailColor="B" />
     <part Name="CyberneticsBaseItem" Slots="Face" Cost="6" BehaviorDescription="偽装判定に +4&#10;希望するNPCの姿に成り代われる。" />
     <part Name="CyberneticsHolographicVisage" />
     <tag Name="CyberneticsOneOnly" />
@@ -639,7 +639,7 @@
   <object Name="SocialCoprocessor" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="社交的な判断を補助する協調プロセッサ。水儀や交渉の最適解を提示する。" />
-    <part Name="Render" DisplayName="{{Y|ソーシャル・コプロセッサ}}" Tile="Items/sw_social_coprocessor.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|ソーシャ・ルコプロセッサ}}" Tile="Items/sw_social_coprocessor.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="+3 意志&#10;水儀と取引価格に +10% のボーナス" />
     <part Name="CyberneticsSocialCoprocessor" />
     <tag Name="CyberneticsDestroyOnRemoval" />
@@ -813,7 +813,7 @@
     <stag Name="Energy" />
   </object>
   <object Name="Chem Cell" Inherits="Energy Cell" Replace="true">
-    <part Name="Render" DisplayName="{{c|ケムセル}}" ColorString="&amp;c" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" />
+    <part Name="Render" DisplayName="{{c|ケム・セル}}" ColorString="&amp;c" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" />
     <part Name="EnergyCell" Charge="10000" MaxCharge="10000" />
     <part Name="Description" Short="小さな樽の中で液体塩がイオンを陰極へ送り込み、火花へと変換する。" />
     <part Name="Metal" />
@@ -1202,7 +1202,7 @@
   <object Name="LoveTonic" Inherits="Tonic" Replace="true">
     <part Name="Render" DisplayName="{{love|ラブ}} インジェクター" />
     <part Name="LoveTonicApplicator" />
-    <part Name="RulesDescription" Text="You feel unusually amorous for about half a day, during which time you'll fall in love with the first thing you look at. If you inject someone else, they'll fall in love with you and follow you around for 3000-3600 rounds. There's a 1% failure rate for every level higher they are than you." />
+    <part Name="RulesDescription" Text="持続：約半日。最初に視線を向けた対象に恋をする。自分以外に注射した場合、その対象はあなたに恋し、3000-3600ラウンドのあいだ同行する。対象があなたよりレベル1高いごとに失敗率が1%上昇する。" />
     <tag Name="Tier" Value="2" />
     <tag Name="TechTier" Value="4" />
     <part Name="TinkerItem" Bits="01" Ingredient="Lover's Blossom" />
@@ -1214,7 +1214,7 @@
   <object Name="BlazeTonic" Inherits="Tonic" Replace="true">
     <part Name="Render" DisplayName="{{blaze|ブレイズ}} インジェクター" />
     <part Name="Blaze_Tonic_Applicator" />
-    <part Name="RulesDescription" Text="Duration: 41-50 rounds +100 heat resistance You cannot be frozen. Heat damage you deal is increased by 25%. -50 cold resistance +10 Quickness Your temperature cannot be increased by external heat sources. You must move around to avoid combusting and losing the effects of this tonic." AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +100 heat resistance You cannot be frozen Heat damage you deal is increased by 25%. -50 cold resistance +20 Quickness Your temperature cannot be increased by external heat sources. You must move around to avoid combusting and losing the effects of this tonic." />
+    <part Name="RulesDescription" Text="持続：41-50ラウンド　熱耐性 +100／冷気耐性 -50／クイックネス +10（真系：+20）。凍結しない。あなたが与える熱ダメージ +25%。外部の熱源で体温は上昇しない。発火して効果を失わないよう、移動し続けなければならない。" AltForGenotype="True Kin" GenotypeAlt="持続：41-50ラウンド　熱耐性 +100／冷気耐性 -50／クイックネス +20。凍結しない。あなたが与える熱ダメージ +25%。外部の熱源で体温は上昇しない。発火して効果を失わないよう、移動し続けなければならない。" />
     /&gt;
     <part Name="TinkerItem" Bits="01" Ingredient="Fire Ant Gaster Paste" />
     <tag Name="Tier" Value="2" />
@@ -1225,10 +1225,10 @@
     <tag Name="ChooseToPreserve" />
   </object>
   <object Name="HulkHoneyTonic" Inherits="Tonic" Replace="true">
-    <part Name="Render" DisplayName="{{G|ハルク}} {{w|ハニー}} インジェクター" />
+    <part Name="Render" DisplayName="{{G|ハルク・ハニー}} インジェクター" />
     <part Name="HulkHoney_Tonic_Applicator" />
     <part Name="AITonicUse" />
-    <part Name="RulesDescription" Text="Duration: 41-50 rounds +6 Strength +2 temporary hit points per level -25 move speed You cannot feel pain. You are immune to fear. You suffer 1% of your maximum hit points in damage each round (this damage cannot reduce you to below one hit point)" AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +9 Strength +3 temporary hit points per level -25 move speed You cannot feel pain. You are immune to fear. You suffer 1% of your maximum hit points in damage each round (this damage cannot reduce you to below one hit point)" />
+    <part Name="RulesDescription" Text="持続：41-50ラウンド　筋力 +6（真系：+9）／レベルごとに一時HP +2（真系：+3）／移動速度 -25。痛みを感じない。恐怖に免疫。毎ラウンド最大HPの1%のダメージを受ける（このダメージでHPは1未満にならない）。" AltForGenotype="True Kin" GenotypeAlt="持続：41-50ラウンド　筋力 +9／レベルごとに一時HP +3／移動速度 -25。痛みを感じない。恐怖に免疫。毎ラウンド最大HPの1%のダメージを受ける（このダメージでHPは1未満にならない）。" />
     <part Name="TinkerItem" Bits="01" Ingredient="Albino Ape Heart,Ogre Ape Heart" />
     <part Name="PreservableItem" Result="Congealed Hulk Honey" Number="5" />
     <tag Name="Gift" Value="*noinherit" />
@@ -1242,7 +1242,7 @@
     <part Name="Render" DisplayName="{{Y|サルヴ}} インジェクター" />
     <part Name="Salve_Tonic_Applicator" />
     <part Name="AIHealingTonicUse" />
-    <part Name="RulesDescription" Text="Duration: 5 rounds You recover 0.6 hit points per level (minimum 3) each round." AltForGenotype="True Kin" GenotypeAlt="Duration: 5 rounds You recover 0.9 hit points per level (minimum 5) each round." />
+    <part Name="RulesDescription" Text="持続：5ラウンド　毎ラウンド、レベル×0.6HP（最低3）回復。" AltForGenotype="True Kin" GenotypeAlt="持続：5ラウンド　毎ラウンド、レベル×0.9HP（最低5）回復。" />
     <part Name="TinkerItem" Bits="01" Ingredient="Dreadroot Tuber" />
     <part Name="PreservableItem" Result="Congealed Salve" Number="5" />
     <tag Name="Gift" Value="*noinherit" />
@@ -1268,7 +1268,7 @@
     <part Name="Render" DisplayName="{{sphynx|スフィンクス}}{{Y|ソルト}} インジェクター" />
     <part Name="SphynxSalt_Tonic_Applicator" />
     <part Name="AITonicUse" />
-    <part Name="RulesDescription" Text="Duration: 18-22 rounds You are immune to confusing attacks. Your activated mental mutations cool down twice as quickly." AltForGenotype="True Kin" GenotypeAlt="Duration: 18-22 rounds You are immune to confusing attacks. You peer into your near future (you may revert to the point in time at which you first used this drug at the end of its duration)." />
+    <part Name="RulesDescription" Text="突然変異体： 持続：18-22ラウンド　混乱攻撃に完全耐性。活性化中の精神突然変異のクールダウンが2倍の速さで解消。" AltForGenotype="True Kin" GenotypeAlt="真系： 持続：18-22ラウンド　混乱攻撃に完全耐性。近未来を見通す（効果終了時、使用開始時点へ巻き戻せる）。" />
     <part Name="TinkerItem" Bits="05" Ingredient="Crystal of Eve" />
     <tag Name="Gift" Value="*noinherit" />
     <tag Name="Tier" Value="5" />
@@ -1281,7 +1281,7 @@
     <part Name="ShadeOil_Tonic_Applicator" />
     <part Name="AITonicUse" />
     <tag Name="SpecialCookingIngredient" />
-    <part Name="RulesDescription" Text="Duration: 41-50 rounds +8 DV There is a 25% chance per round that you phase out of the spatial dimension for 1-3 rounds." AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +8 DV You gain the ability to phase out of the spatial dimension for 7-9 rounds." />
+    <part Name="RulesDescription" Text="突然変異体： 持続：41-50ラウンド　DV +8。毎ラウンド25%の確率で1-3ラウンドのあいだ空間相からフェイズアウトする。" AltForGenotype="True Kin" GenotypeAlt="真系： 持続：41-50ラウンド　DV +8。任意に7-9ラウンドのフェイズアウト能力を得る。" />
     <part Name="TinkerItem" Bits="01" Ingredient="Voider Gland" />
     <part Name="PreservableItem" Result="Congealed Shade Oil" Number="5" />
     <tag Name="Gift" Value="*noinherit" />
@@ -1295,7 +1295,7 @@
     <part Name="Render" DisplayName="{{ubernostrum|ウベルノストラム}} インジェクター" />
     <part Name="Ubernostrum_Tonic_Applicator" />
     <part Name="AIHealingTonicUse" />
-    <part Name="RulesDescription" Text="Duration: 10 rounds You recover 0.6 hit points per level (minimum 3) each round. At the end of the tenth round, you are purged of all short-term, biological debuffs and you regrow up to one severed appendage." AltForGenotype="True Kin" GenotypeAlt="Duration: 10 rounds You recover 0.9 hit points per level (minimum 5) each round. At the end of the tenth round, you are purged of all short-term, biological debuffs and you regrow up to one severed appendage." />
+    <part Name="RulesDescription" Text="持続：10ラウンド　毎ラウンド、レベル×0.6HP（最低3）回復。10ラウンド目の終了時、短期の生物学的デバフをすべて解除し、切断された付属肢を最大1本再生する。" AltForGenotype="True Kin" GenotypeAlt="持続：10ラウンド　毎ラウンド、レベル×0.9HP（最低5）回復。10ラウンド目の終了時、短期の生物学的デバフをすべて解除し、切断された付属肢を最大1本再生する。" />
     <part Name="TinkerItem" Bits="05" Ingredient="Lover's Blossom" />
     <part Name="PreservableItem" Result="Soul Curd" Number="5" />
     <tag Name="Gift" Value="*noinherit" />
@@ -1308,7 +1308,7 @@
     <part Name="Render" DisplayName="{{rubbergum|ラバーガム}} インジェクター" />
     <part Name="Rubbergum_Tonic_Applicator" />
     <part Name="AITonicUse" />
-    <part Name="RulesDescription" Text="Duration: 41-50 rounds +100 electric resistance +25 cold resistance -1 AV +5 to saves vs. being restrained. -5 to saves vs. bleeding. You only suffer half damage from bludgeoning attacks. You only suffer half damage from falling. You cannot be grabbed." AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +100 electric resistance +50 cold resistance -1 AV +5 to saves vs. being restrained. -5 to saves vs. bleeding. You only suffer 25% damage from bludgeoning attacks. You only suffer 25% damage from falling. You cannot be grabbed. These effects stack if multiple rubbergums are ingested." />
+    <part Name="RulesDescription" Text="突然変異体： 持続：41-50ラウンド　電撃耐性 +100／冷気耐性 +25／AV -1。拘束に対するセーヴ +5／出血に対するセーヴ -5。殴打と落下ダメージが半減。掴まれない。" AltForGenotype="True Kin" GenotypeAlt="真系： 持続：41-50ラウンド　電撃耐性 +100／冷気耐性 +50／AV -1。拘束セーヴ +5／出血セーヴ -5。殴打と落下ダメージ 25%。掴まれない（重ねがけで効果は加算）。" />
     <part Name="TinkerItem" Bits="01" Ingredient="Rubber Tree Seed" />
     <part Name="PreservableItem" Result="Congealed Rubbergum" Number="5" />
     <tag Name="Gift" Value="*noinherit" />
@@ -1320,7 +1320,7 @@
   <object Name="NectarTonic" Inherits="Tonic" Replace="true">
     <part Name="Render" DisplayName="{{eater|先喰者の}}{{nectar|ネクター}} インジェクター" />
     <part Name="Nectar_Tonic_Applicator" />
-    <part Name="RulesDescription" Text="You gain either a permanent +1 bonus to a random attribute or one mutation point." AltForGenotype="True Kin" GenotypeAlt="You gain one attribute point." />
+    <part Name="RulesDescription" Text="突然変異体： 恒久的にランダムな能力値 +1 または 突然変異ポイント +1 を得る。" AltForGenotype="True Kin" GenotypeAlt="真系： 能力値ポイント +1 を得る。" />
     <part Name="TinkerItem" Bits="06" Ingredient="Arsplice Seed" />
     <part Name="PreservableItem" Result="Drop of Nectar" Number="1" />
     <tag Name="Gift" Value="*noinherit" />
@@ -1431,7 +1431,7 @@
     <tag Name="DynamicObjectsTable:Trinkets" />
   </object>
   <object Name="Spiral Borer" Inherits="Tool" Replace="true">
-    <part Name="Render" DisplayName="スパイラルボーラー" Tile="Items/sw_spiral_borer.bmp" RenderString="004" ColorString="&amp;C" DetailColor="w" />
+    <part Name="Render" DisplayName="スパイラル・ボーラー" Tile="Items/sw_spiral_borer.bmp" RenderString="004" ColorString="&amp;C" DetailColor="w" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="コアメタルを詰めた背負い鞄が肩を重く引き、側面には地中へ向かうドリルのピクトグラムがステンシルで描かれている。" />
     <part Name="Physics" Weight="40" Category="Tools" />
@@ -1443,7 +1443,7 @@
     <part Name="TinkerItem" Bits="0034" CanDisassemble="true" CanBuild="true" />
   </object>
   <object Name="Tattoo Gun" Inherits="Tool" Replace="true">
-    <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|タトゥーガン}}" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c" />
+    <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|タトゥー・ガン}}" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="ニードルと回転モーターでインクを皮膚の下へジェット噴射する。" />
     <part Name="Physics" Weight="1" Category="Tools" />
@@ -1490,7 +1490,7 @@
     <part Name="ItemElements" Elements="circuitry::1" />
   </object>
   <object Name="Droid Scrambler" Inherits="Trinket" Replace="true">
-    <part Name="Render" DisplayName="{{Y|ドロイドスクランブラー}}" ColorString="&amp;C" DetailColor="W" RenderString="004" RenderLayer="5" Tile="Items/sw_scrambler.bmp" />
+    <part Name="Render" DisplayName="{{Y|ドロイド・スクランブラー}}" ColorString="&amp;C" DetailColor="W" RenderString="004" RenderLayer="5" Tile="Items/sw_scrambler.bmp" />
     <part Name="Physics" Category="Tools" />
     <part Name="Commerce" Value="25" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Alternate="UnknownTool" Complexity="1" Understanding="0" />
@@ -1530,7 +1530,7 @@
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Grit Gate Recoiler" Inherits="BaseRecoiler" Replace="true">
-    <part Name="Render" DisplayName="{{c|グリット・ゲート}}・リコイラー" DetailColor="C" />
+    <part Name="Render" DisplayName="{{c|グリッ・トゲー・ト}}リコイラー" DetailColor="C" />
     <part Name="Teleporter" DestinationZone="JoppaWorld.22.14.1.0.13" DestinationX="37" DestinationY="23" />
     <part Name="TinkerItem" CanBuild="false" />
     <part Name="Commerce" Value="35" />
@@ -1558,7 +1558,7 @@
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Bethesda Susa Recoiler" Inherits="BaseRecoiler" Replace="true">
-    <part Name="Render" DisplayName="{{C|ベセスダ・スーサ}}・リコイラー" />
+    <part Name="Render" DisplayName="{{C|ベセスダス・ーサ}}・リコイラー" />
     <part Name="Teleporter" DestinationZone="JoppaWorld.25.3.1.1.10" DestinationX="38" DestinationY="19" />
     <part Name="TinkerItem" CanBuild="false" />
     <part Name="Commerce" Value="55" />
@@ -1572,7 +1572,7 @@
     <tag Name="Tier" Value="5" />
   </object>
   <object Name="Yd Freehold Recoiler" Inherits="BaseRecoiler" Replace="true">
-    <part Name="Render" DisplayName="{{W|イド}}・リコイラー" />
+    <part Name="Render" DisplayName="{{W|イ・ド}}リコ・イラー" />
     <part Name="Teleporter" DestinationZone="JoppaWorld.67.17.1.1.10" DestinationX="37" DestinationY="23" />
     <part Name="TinkerItem" CanBuild="false" />
     <part Name="Commerce" Value="100" />
@@ -1609,7 +1609,7 @@
   </object>
   <object Name="Spraybottle" Inherits="Item" Replace="true">
     <part Name="Examiner" Complexity="2" Alternate="UnknownBottle" />
-    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="スプレーボトル" ColorString="&amp;C" DetailColor="c" RenderString="012" RenderLayer="5" />
+    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="スプレ・ーボトル" ColorString="&amp;C" DetailColor="c" RenderString="012" RenderLayer="5" />
     <part Name="Physics" Category="Applicators" />
     <part Name="Description" Short="あるティンカーがサイフォン管と加圧ノズルを組み合わせ、注ぎたくない液体を噴霧する道具を作った。" />
     <part Name="Commerce" Value="20" />
@@ -2199,7 +2199,7 @@
     <part Name="Render" DisplayName="コンヴァレセンスの小瓶" ColorString="&amp;y" TileColor="&amp;y" DetailColor="k" Tile="Items/sw_vial.bmp" />
   </object>
   <object Name="Club" Inherits="BaseCudgel" Replace="true">
-    <part Name="Render" DisplayName="こん棒" Tile="Items/sw_cudgel_10.bmp" />
+    <part Name="Render" DisplayName="棍棒" Tile="Items/sw_cudgel_10.bmp" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="2" />
     <part Name="Description" Short="木を削って膨らませた鈍い打撃頭だ。" />
@@ -2242,7 +2242,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Walking Stick" Inherits="BaseCudgel" Replace="true">
-    <part Name="Render" DisplayName="ステッキ" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" />
+    <part Name="Render" DisplayName="ステ・ッキ" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" />
     <part Name="Physics" Weight="4" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="12" />
@@ -2522,7 +2522,7 @@
     <part Name="Physics" Weight="25" UsesTwoSlots="true" />
   </object>
   <object Name="Stun Rod" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{c|スタン}}ロッド" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|スタン}}・ロッド" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="50" />
@@ -2558,7 +2558,7 @@
     <tag Name="NoSparkingQuest" />
   </object>
   <object Name="Syphon Baton" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{syphon|サイフォン}}バトン" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="{{syphon|サイフォ・ン}}バトン" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="150" />
     <part Name="Description" Short="輪磁石が筒状のメイス頭を形作り、打撃した対象から電子の汁を吸い上げて柄のソケットに挿したバッテリーへ送る。" />
@@ -2816,7 +2816,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact" />
   </object>
   <object Name="Gaslight Chisel" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{gaslight|ガスライト・ノミ}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K" />
+    <part Name="Render" DisplayName="{{gaslight|ガスライ・トノミ}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades" />
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4" />
     <part Name="Commerce" Value="120" />
@@ -3055,7 +3055,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Stun Whip" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{c|スタンウィップ}}" Tile="Items/sw_whip_1.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|スタンウ・ィップ}}" Tile="Items/sw_whip_1.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" BaseDamage="1" Skill="Chain" />
     <part Name="Commerce" Value="50" />
@@ -3310,7 +3310,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Vibro Blade" Inherits="BaseLongBlade" Replace="true">
-    <part Name="Render" DisplayName="{{c|ヴィブロブレード}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|ヴィブロ・ブレード}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d10" Skill="LongBlades" />
     <part Name="Commerce" Value="300" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
@@ -3389,7 +3389,7 @@
     <tag Name="EquipmentFrameColors" Value="Yryr" />
   </object>
   <object Name="La Jeunesse" Inherits="BaseLongBlade" Replace="true">
-    <part Name="Render" DisplayName="{{r|ラ・}}{{r-R-R-W-W-w-w sequence|ジュネス}}" Tile="Items/sw_longblade_11.bmp" ColorString="&amp;r" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{r|ラ}}{{r-R-R-W-W-w-w sequence|・ジュネス}}" Tile="Items/sw_longblade_11.bmp" ColorString="&amp;r" DetailColor="Y" />
     <stat Name="Hitpoints" Value="300" />
     <part Name="Physics" Weight="20" UsesTwoSlots="true" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="2d8" Skill="LongBlades" />
@@ -3424,7 +3424,7 @@
     <tag Name="TurretStockExclusive" />
   </object>
   <object Name="Desert Rifle" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" DisplayName="イサッカリ・ライフル" Tile="Items/sw_rifle.bmp" />
+    <part Name="Render" DisplayName="イサッカリラ・イフル" Tile="Items/sw_rifle.bmp" />
     <part Name="Physics" Weight="15" UsesTwoSlots="true" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="7" />
@@ -3453,7 +3453,7 @@
     <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_automaticGun_reload" />
   </object>
   <object Name="Sniper Rifle" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" Tile="items/sw_sniper_rifle.bmp" DisplayName="スナイパーライフル" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Render" Tile="items/sw_sniper_rifle.bmp" DisplayName="スナイパー・ライフル" ColorString="&amp;y" DetailColor="K" />
     <part Name="Physics" UsesTwoSlots="true" Weight="12" />
     <part Name="Commerce" Value="250" />
     <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
@@ -3482,7 +3482,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Laser Rifle" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザー}}ライフル" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp" />
+    <part Name="Render" DisplayName="{{C|レーザー}}・ライフル" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp" />
     <part Name="Physics" Weight="9" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
     <part Name="Commerce" Value="750" />
@@ -3501,7 +3501,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Chain Laser" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="チェーン{{C|レーザー}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp" />
+    <part Name="Render" DisplayName="チェーン{{C|・レーザー}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp" />
     <part Name="Physics" Weight="40" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;B" ShotsPerAction="3" AmmoPerAction="3" ShotsPerAnimation="1" WeaponAccuracy="5" />
     <part Name="Commerce" Value="1000" />
@@ -3578,7 +3578,7 @@
     <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_scopedMasterworkCarbine_fire" />
   </object>
   <object Name="ProjectileLaserRifle" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザービーム}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{C|レーザー・ビーム}}" ColorString="&amp;C" />
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d12" Attributes="Light Laser" ColorString="&amp;C" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
@@ -3587,13 +3587,13 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="ProjectileEigenrifle" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{B|ドットベクトル}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|ドッ・トベクトル}}" ColorString="&amp;B" />
     <part Name="Projectile" BasePenetration="7" BaseDamage="1d12" Attributes="Disintegrate" ColorString="&amp;B" PenetrateCreatures="true" PassByVerb="hum" />
     <xtagProjectileVFX Effect="MissileWeaponsEffects/eigen_laser" StartColor="b" EndColor="B" Tessellation="50" Width="8" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="ProjectileFreezeRay" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|エネルギービーム}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{C|エネルギー・ビーム}}" ColorString="&amp;B" />
     <part Name="Projectile" BaseDamage="1d4" Attributes="Cold NonPenetrating" ColorString="&amp;B" PassByVerb="crackle" />
     <part Name="TemperatureOnHit" Amount="-190" Max="false" OnWielderHit="true" />
     <part Name="TemperatureOnEntering" Amount="-190" Max="false" OnWielderHit="true" />
@@ -3619,14 +3619,14 @@
     <tag Name="Role" Value="Uncommon" />
   </object>
   <object Name="ProjectileHookRay" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{R|エネルギービーム}}" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|エネルギー・ビーム}}" ColorString="&amp;R" />
     <part Name="Projectile" BaseDamage="0" Quiet="true" Attributes="NonPenetrating" ColorString="&amp;R" PassByVerb="hum" />
     <part Name="HookOnMissileHit" />
     <part Name="TreatAsSolid" RealityDistortionBased="true" Hits="false" Message="=subject.T=は常態の圧で=verb:collapse=。" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_hypertractor_hit" />
   </object>
   <object Name="Light Rail" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="{{W|ライト}}レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp" />
+    <part Name="Render" DisplayName="{{W|ライト}}・レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp" />
     <part Name="Description" Short="丹念に彫り込んだ木製ケーシングが六条の並列導体と滑走する光子アーマチュアを包み込み、銃床の木目は焦げついて黒く炭化している。" />
     <part Name="Physics" Weight="16" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
@@ -3645,14 +3645,14 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileLightrail" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|ロングフォトン}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|ロング・フォトン}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="9" BaseDamage="1d12" Attributes="Light Laser" ColorString="&amp;W" PassByVerb="hum" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Spaser Rifle" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="{{spaser|スパーザー}}ライフル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="items/sw_techrifle_4.bmp" />
+    <part Name="Render" DisplayName="{{spaser|スパーザー}}・ライフル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="items/sw_techrifle_4.bmp" />
     <part Name="Description" Short="色相の蒸気をまとったクリスティールが金と水の機構を繭のように包み、光を波長から波短へと締め上げる。砲身の稜線ではプラズモン滓が過熱したスラッジ生命のように泡立つ。" />
     <part Name="Physics" Weight="16" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
@@ -3677,7 +3677,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Phase Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="フェーズキャノン" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" Tile="Items/sw_techrifle_5.bmp" />
+    <part Name="Render" DisplayName="フェーズ・キャノン" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" Tile="Items/sw_techrifle_5.bmp" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;M" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
     <intproperty Name="IntegratedWeaponHostShots" Value="20" />
@@ -3696,7 +3696,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectilePhaseCannon" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{M|エナジーボルト}}" ColorString="&amp;M" />
+    <part Name="Render" DisplayName="{{M|エナジー・ボルト}}" ColorString="&amp;M" />
     <part Name="Projectile" BasePenetration="12" BaseDamage="4d12" Attributes="Disintegrate" ColorString="&amp;M" PassByVerb="streak" />
     <part Name="OmniphaseProjectile" />
     <part Name="TreatAsSolid" RealityDistortionBased="true" RequiresPhaseMatch="false" Message="=subject.T=は常態の圧で=verb:collapse=。" />
@@ -3719,7 +3719,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Grenade Launcher" Inherits="BaseMagazineHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="グレネードランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_1.bmp" />
+    <part Name="Render" DisplayName="グレネード・ランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_1.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="15" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="ë" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" />
     <part Name="Commerce" Value="490" />
@@ -3733,7 +3733,7 @@
     <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_grenadeLauncher_reload" />
   </object>
   <object Name="Missile Launcher" Inherits="BaseMagazineHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="ミサイルランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_2.bmp" />
+    <part Name="Render" DisplayName="ミサイル・ランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_2.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="25" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="m" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="10" />
     <part Name="Commerce" Value="490" />
@@ -3893,7 +3893,7 @@
     <stag Name="Normality" />
   </object>
   <object Name="Arc Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{c|アークキャノン}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Tile="Items/sw_techcannon_3.bmp" />
+    <part Name="Render" DisplayName="{{c|アー・クキャノン}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Tile="Items/sw_techcannon_3.bmp" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="e" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
     <part Name="Commerce" Value="300" />
@@ -3914,7 +3914,7 @@
     <part Name="Projectile" BasePenetration="11" BaseDamage="1d6" Attributes="Electric" ColorString="&amp;W" PassByVerb="leap" />
   </object>
   <object Name="Linear Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="リニアキャノン" ColorString="&amp;y" DetailColor="c" Tile="Items/sw_techcannon_6.bmp" />
+    <part Name="Render" DisplayName="リニアキ・ャノン" ColorString="&amp;y" DetailColor="c" Tile="Items/sw_techcannon_6.bmp" />
     <part Name="Description" Short="バロックで凧のような金属塊が軸に沿って配置され、旋盤のごとく内側から次元を削ぎ落としていく。彩色したフラーレンの巨大な銃床とグリップがその重みを支える。" />
     <part Name="Physics" Weight="40" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;y" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
@@ -3937,7 +3937,7 @@
     <part Name="Projectile" BasePenetration="0" BaseDamage="2d12" Attributes="Vorpal" ColorString="&amp;B" PassByVerb="dart" />
   </object>
   <object Name="Blast Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{R|ブラスト}}キャノン" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp" />
+    <part Name="Render" DisplayName="{{R|ブラスト}}・キャノン" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="70" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12" />
     <part Name="Commerce" Value="2000" />
@@ -3962,7 +3962,7 @@
     <xtagGrammar massNoun="true" />
   </object>
   <object Name="Swarm Rack" Inherits="BaseMagazineHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{m|スウォームラック}}" ColorString="&amp;m" DetailColor="c" Tile="Items/sw_techcannon_5.bmp" />
+    <part Name="Render" DisplayName="{{m|スウォー・ムラック}}" ColorString="&amp;m" DetailColor="c" Tile="Items/sw_techcannon_5.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="300" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="10" AmmoPerAction="10" ShotsPerAnimation="10" WeaponAccuracy="25" />
     <part Name="Commerce" Value="3200" />
@@ -3988,7 +3988,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.5;;bodyColor::#b1c9c3;;stripeColor::#d74200" />
   </object>
   <object Name="Short Bow" Inherits="BaseBow" Replace="true">
-    <part Name="Render" DisplayName="ショートボウ" DetailColor="W" />
+    <part Name="Render" DisplayName="ショート・ボウ" DetailColor="W" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="Commerce" Value="15" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="11" />
@@ -4001,7 +4001,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Compound Bow" Inherits="BaseBow" Replace="true">
-    <part Name="Render" DisplayName="コンパウンドボウ" ColorString="&amp;y" DetailColor="w" Tile="Items/sw_bow_2.bmp" />
+    <part Name="Render" DisplayName="コンパウンド・ボウ" ColorString="&amp;y" DetailColor="w" Tile="Items/sw_bow_2.bmp" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" ProjectilePenetrationStat="Strength" />
@@ -4014,7 +4014,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Dart Gun" Inherits="BaseBow" Replace="true">
-    <part Name="Render" Tile="items/sw_dart_gun.bmp" ColorString="&amp;g" TileColor="&amp;w" DetailColor="g" DisplayName="ダートガン" />
+    <part Name="Render" Tile="items/sw_dart_gun.bmp" ColorString="&amp;g" TileColor="&amp;w" DetailColor="g" DisplayName="ダート・ガン" />
     <part Name="MissileWeapon" Skill="Pistol" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" />
     <part Name="MagazineAmmoLoader" ProjectileObject="" AmmoPart="AmmoDart" MaxAmmo="1" />
     <part Name="Commerce" Value="150" />
@@ -4047,7 +4047,7 @@
     <tag Name="TinkerCategory" Value="rifles" />
   </object>
   <object Name="ProjectileElectrobow" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|エネルギーボルト}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|エネルギー・ボルト}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="6" BaseDamage="1d6" ColorString="&amp;W" PassByVerb="streak" />
     <part Name="NoDamage" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_bow_hit" />
@@ -4084,21 +4084,21 @@
     <part Name="Projectile" StrengthPenetration="2" BaseDamage="1d4" ColorString="&amp;w" />
   </object>
   <object Name="Steel Arrow" Inherits="BaseArrow" Replace="true">
-    <part Name="Render" DisplayName="{{Y|スチール}}アロー" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|鋼鉄の矢}}" ColorString="&amp;Y" />
     <part Name="AmmoArrow" ProjectileObject="ProjectileSteelArrow" />
-    <part Name="Description" Short="鳥の羽根で羽根飾りをした細いシャフトに、鋼の穂先を冠している。" />
+    <part Name="Description" Short="鳥の羽根で羽根飾りをした細いシャフトに、鋼鉄の穂先を冠している。" />
     <part Name="MissileStatusColor" Color="Y" />
     <part Name="Commerce" Value="0.02" />
     <tag Name="TurretStockWeight" Value="9" />
   </object>
   <object Name="ProjectileSteelArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{Y|スチール}}アロー" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|鋼鉄の矢}}" ColorString="&amp;Y" />
     <part Name="Projectile" StrengthPenetration="3" BaseDamage="1d3+1" ColorString="&amp;Y" />
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow" />
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#FFFFFF;;trailColor::#808080" />
   </object>
   <object Name="Boomrose Arrow" Inherits="BaseArrow" Replace="true">
-    <part Name="Render" DisplayName="{{R|ブームローズ}}アロー" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|ブームローズ}}・アロー" ColorString="&amp;R" />
     <part Name="AmmoArrow" ProjectileObject="ProjectileExplosiveArrow" />
     <part Name="Description" Short="膨れた矢じりに赤と橙が渦巻き、点火まであと一ノッチ。" />
     <part Name="MissileStatusColor" Color="R" />
@@ -4106,7 +4106,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_explosiveArrow_hit" />
   </object>
   <object Name="ProjectileExplosiveArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{R|ブームローズ}}アロー" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|ブームローズ}}・アロー" ColorString="&amp;R" />
     <part Name="Projectile" StrengthPenetration="1" BaseDamage="1d2" ColorString="&amp;R" />
     <part Name="HEGrenade" Force="1200" Damage="1d6" />
     <tag Name="ProjectileHitSound" Value="Sounds/Missile/Hits/sfx_missile_explosiveArrow_hit" />
@@ -4115,7 +4115,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#d74200;;trailColor::#808080" />
   </object>
   <object Name="Carbide Arrow" Inherits="BaseArrow" Replace="true">
-    <part Name="Render" DisplayName="{{b|カーバイド}}アロー" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="{{b|カーバイド}}・アロー" ColorString="&amp;b" />
     <part Name="AmmoArrow" ProjectileObject="ProjectileCarbideArrow" />
     <part Name="Description" Short="鳥の羽根で羽根飾りをした細いシャフトに、カーバイドの穂先を冠している。" />
     <part Name="MissileStatusColor" Color="b" />
@@ -4124,7 +4124,7 @@
     <tag Name="TurretStockWeight" Value="3" />
   </object>
   <object Name="ProjectileCarbideArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{b|カーバイド}}アロー" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="{{b|カーバイド}}・アロー" ColorString="&amp;b" />
     <part Name="Projectile" StrengthPenetration="4" BaseDamage="1d4+1" ColorString="&amp;b" />
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow" />
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#0048bd;;trailColor::#808080" />
@@ -4152,7 +4152,7 @@
     <part Name="Commerce" Value="0.4" />
   </object>
   <object Name="ProjectileFulleriteArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{K|フラーレン}}アロー" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="{{K|フラーレン}}・アロー" ColorString="&amp;K" />
     <part Name="Projectile" StrengthPenetration="6" BaseDamage="1d4+3" ColorString="&amp;K" />
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow" />
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#155352;;trailColor::#808080" />
@@ -4201,7 +4201,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#b154cf;;trailColor::#808080" />
   </object>
   <object Name="Grappling Gun" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="グラップリングガン" ColorString="&amp;y" TileColor="&amp;c" DetailColor="y" Tile="items/sw_grappling_gun.bmp" />
+    <part Name="Render" DisplayName="グラップリング・ガン" ColorString="&amp;y" TileColor="&amp;c" DetailColor="y" Tile="items/sw_grappling_gun.bmp" />
     <part Name="Description" Short="テンションスプリングが撃針を押し出してガス銃身を爆ぜさせ、ケーブル付きのグラップネルを射出する。続いてウィンチがそれを巻き戻す。" />
     <part Name="Physics" Weight="5" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="GG" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" MaxRange="8" />
@@ -4225,7 +4225,7 @@
     <part Name="Projectile" BasePenetration="8" BaseDamage="1d2" Attributes="Piercing" ColorString="&amp;y" PassByVerb="hurtle" />
   </object>
   <object Name="Laser Pistol" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザー}}ピストル" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w" />
+    <part Name="Render" DisplayName="{{C|レーザー}}・ピストル" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
     <part Name="Commerce" Value="400" />
     <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectileLaserPistol" />
@@ -4245,7 +4245,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileLaserPistol" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザービーム}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{C|レーザー・ビーム}}" ColorString="&amp;C" />
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;C" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
@@ -4273,13 +4273,13 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileEigenpistol" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{B|ドットベクトル}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|ドッ・トベクトル}}" ColorString="&amp;B" />
     <part Name="Projectile" BasePenetration="7" BaseDamage="1d10" Attributes="Disintegrate" ColorString="&amp;B" PenetrateCreatures="true" PassByVerb="hum" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
     <xtagProjectileVFX Effect="MissileWeaponsEffects/eigen_laser" StartColor="b" EndColor="B" Tessellation="30" Width="5" />
   </object>
   <object Name="Arc Winder" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="アークワインダー" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="アーク・ワインダー" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W" />
     <part Name="Description" Short="螺旋クランクがクロムのケースに収まった回路を閉じ、二つの接触端から電荷を吐き出す。黄色く輝く先端を煙がくるりと舞う。" />
     <part Name="Physics" Weight="4" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
@@ -4297,7 +4297,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="ProjectileElectroPistol" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|イオンパケット}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|イオ・ンパケット}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="0" BaseDamage="0" Attributes="Electric" ColorString="&amp;W" PassByVerb="fly" />
     <part Name="DischargeOnHit" DamageRange="0" Voltage="0" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
@@ -4327,7 +4327,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#0f3b3a;;beamColor1::#0f3b3a;;beamColor2::#0f3b3a" />
   </object>
   <object Name="Hand Rail" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{W|ハンド}}レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp" />
+    <part Name="Render" DisplayName="{{W|ハンド}}・レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp" />
     <part Name="Description" Short="丹念に彫り込んだ木製ケーシングが六条の並列導体と滑走する光子アーマチュアを包み、銃床の木目は焦げついて黒く炭化している。" />
     <part Name="Physics" Weight="8" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
@@ -4346,14 +4346,14 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileHandrail" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|ロングフォトン}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|ロング・フォトン}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="9" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;W" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Di-Thermo Beam" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{R|ディサーモ}}ビーム" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C" />
+    <part Name="Render" DisplayName="{{R|ディサーモ}}・ビーム" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C" />
     <part Name="Description" Short="冷却管と不凍管が対称構造で砲身に固定されている。親指でレバーを弾けば機構が回転し、その向きを入れ替えられる。" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="f" AnimationDelay="15" ShotsPerAction="2" AmmoPerAction="1" ShotsPerAnimation="2" WeaponAccuracy="4" />
     <part Name="Physics" Weight="6" />
@@ -4376,21 +4376,21 @@
     <stag Name="Heat" />
   </object>
   <object Name="ProjectileDiThermoBeamHeat" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{R|ヒートビーム}}" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|ヒート・ビーム}}" ColorString="&amp;R" />
     <part Name="Projectile" BaseDamage="1d12+2" Attributes="Fire NonPenetrating" RenderChar="f" ColorString="&amp;R" PassByVerb="streak" />
     <part Name="TemperatureOnHit" Amount="50-75" Max="false" OnWielderHit="true" />
     <part Name="TemperatureOnEntering" Amount="100-150" Max="false" OnWielderHit="true" />
     <tag Name="ImpactSound" Value="Sounds/Damage/sfx_damage_elemental_heat" />
   </object>
   <object Name="ProjectileDiThermoBeamCold" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|コールドビーム}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{C|コールド・ビーム}}" ColorString="&amp;C" />
     <part Name="Projectile" BaseDamage="1d8+2" Attributes="Cold NonPenetrating" RenderChar="FR" ColorString="&amp;C" PassByVerb="streak" />
     <part Name="TemperatureOnHit" Amount="1d8-22" Max="false" OnWielderHit="true" />
     <part Name="TemperatureOnEntering" Amount="1d16-44" Max="false" OnWielderHit="true" />
     <tag Name="ImpactSound" Value="Sounds/Damage/sfx_damage_elemental_cold" />
   </object>
   <object Name="Borderlands Revolver" Inherits="BaseMagazinePistol" Replace="true">
-    <part Name="Render" DisplayName="クロムリボルバー" Tile="items/sw_revolver.bmp" ColorString="&amp;y" />
+    <part Name="Render" DisplayName="クロム・リボルバー" Tile="items/sw_revolver.bmp" ColorString="&amp;y" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12" RangeIncrement="6" />
     <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileBorderlandsRevolverShell" AmmoPart="AmmoSlug" MaxAmmo="6" />
@@ -4406,7 +4406,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Semi-Automatic Pistol" Inherits="BaseMagazinePistol" Replace="true">
-    <part Name="Render" DisplayName="セミオートマチックピストル" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Render" DisplayName="セミオートマチック・ピストル" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K" />
     <part Name="Physics" Weight="3" />
     <part Name="Commerce" Value="100" />
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12" RangeIncrement="6" />
@@ -4420,7 +4420,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Chain Pistol" Inherits="BaseMagazinePistol" Replace="true">
-    <part Name="Render" DisplayName="チェーンピストル" Tile="Items/sw_chain_pistol.bmp" />
+    <part Name="Render" DisplayName="チェーン・ピストル" Tile="Items/sw_chain_pistol.bmp" />
     <part Name="Physics" Weight="7" />
     <part Name="Commerce" Value="150" />
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="4" AmmoPerAction="4" ShotsPerAnimation="1" WeaponAccuracy="16" RangeIncrement="6" />
@@ -4436,7 +4436,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Blood-Gradient Hand Vacuum" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="ブラッドグラデーション・ハンドバキューム" Tile="Items/sw_hand_vacuum.bmp" ColorString="&amp;r" TileColor="&amp;K" DetailColor="r" />
+    <part Name="Render" DisplayName="ブラッドグラデーション・ハンド・バキューム" Tile="Items/sw_hand_vacuum.bmp" ColorString="&amp;r" TileColor="&amp;K" DetailColor="r" />
     <part Name="Physics" Weight="6" />
     <part Name="Commerce" Value="666" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;r" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" />
@@ -4457,7 +4457,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Spaser Pistol" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{spaser|スパーザー}}ピストル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp" />
+    <part Name="Render" DisplayName="{{spaser|スパーザ・ー}}ピストル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp" />
     <part Name="Description" Short="色相の蒸気をまとったクリスティールが金と水の機構を包み込み、光を波長から波短へと締め上げる。砲身の稜線ではプラズモン滓が過熱したスラッジ生命のように泡立つ。" />
     <part Name="Physics" Weight="8" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="8" />
@@ -4477,7 +4477,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Space Inverter" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="スペースインバーター" ColorString="&amp;m" Tile="Items/sw_techpistol_8.bmp" TileColor="&amp;y" DetailColor="M" />
+    <part Name="Render" DisplayName="スペース・インバーター" ColorString="&amp;m" Tile="Items/sw_techpistol_8.bmp" TileColor="&amp;y" DetailColor="M" />
     <part Name="Description" Short="銃口の背後で、ガラスに封じられた不安定な時空の後光が星幽のテザーを取り巻く。トリガー機構がテザーを切り、異常空間を表の世界へと吸い出す。" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;m*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
     <part Name="Physics" Weight="4" />
@@ -4498,7 +4498,7 @@
     <stag Name="Travel" />
   </object>
   <object Name="High-Voltage Arc Winder" Inherits="Arc Winder" Replace="true">
-    <part Name="Render" DisplayName="{{W|ハイボルテージ}}アークワインダー" ColorString="&amp;Y" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{W|ハイボルテージ}}ア・ーク・ワインダー" ColorString="&amp;Y" DetailColor="Y" />
     <part Name="Description" Short="螺旋クランクがクロムケースに収まった回路を閉じ、莫大な電荷を二つの接触端から吐き出す。白熱の輝きのまわりを煙が螺旋に舞う。" />
     <part Name="Commerce" Value="1250" />
     <part Name="ElectricalDischargeLoader" ChargeUse="425" />
@@ -4509,7 +4509,7 @@
     <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_highVoltageArcWinder_fire" />
   </object>
   <object Name="Psychal Fleshgun" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{psychalflesh|サイカル・フレッシュガン}}" ColorString="&amp;m" TileColor="&amp;r" Tile="Items/sw_fleshgun.bmp" DetailColor="m" />
+    <part Name="Render" DisplayName="{{psychalflesh|サイカルフ・レッシュガン}}" ColorString="&amp;m" TileColor="&amp;r" Tile="Items/sw_fleshgun.bmp" DetailColor="m" />
     <part Name="Description" Short="生の肉を握り拳ほどの塊に伸ばして拳銃の形を模し、圧力が脈打つ静脈を皮下に押しつける。リブ状の金属管から血の髄が拍子刻みで吐き出され、ときおり拍に合わぬ瞬間には見えざるエネルギーがサイキック・レイに沿って器官の泥に流れ込み、ぬるぬるとした煩わしさを生む。" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;mì" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" AnimationDelay="16" WeaponAccuracy="3" />
     <part Name="AIStopShootingImmuneTargets" />
@@ -4532,7 +4532,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Longreach Grappling Gun" Inherits="Grappling Gun" Replace="true">
-    <part Name="Render" DisplayName="ロングリーチ・グラップリングガン" ColorString="&amp;Y" TileColor="&amp;c" DetailColor="Y" Tile="items/sw_grappling_gun.bmp" />
+    <part Name="Render" DisplayName="ロングリーチ・グラップリング・ガン" ColorString="&amp;Y" TileColor="&amp;c" DetailColor="Y" Tile="items/sw_grappling_gun.bmp" />
     <part Name="Description" Short="テンションスプリングが撃針を押し出してガス銃身を爆ぜさせ、長いケーブルのグラップネルを正確な距離まで射出する。続いてウィンチがそれを巻き戻す。" />
     <part Name="Physics" Weight="4" />
     <part Name="MissileWeapon" AmmoChar="GG" MaxRange="120" />
@@ -4553,7 +4553,7 @@
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
   <object Name="Shotgun Shell" Inherits="Projectile" Replace="true">
-    <part Name="Render" DisplayName="ショットガンシェル" ColorString="&amp;W" DetailColor="w" Tile="items/sw_shotgun_shell.bmp" />
+    <part Name="Render" DisplayName="ショットガ・ンシェル" ColorString="&amp;W" DetailColor="w" Tile="items/sw_shotgun_shell.bmp" />
     <part Name="AmmoShotgunShell" ProjectileObject="ProjectileShotgunShell" />
     <part Name="Physics" Category="Ammo" />
     <part Name="Description" Short="一掴みのペレットを厚手のワックス紙とプラスチックの薬莢に封じてある。" />
@@ -4562,7 +4562,7 @@
     <tag Name="DynamicObjectsTable:Ammo" />
   </object>
   <object Name="Pump Shotgun" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" DisplayName="ポンプショットガン" Tile="items/sw_shotgun_2.bmp" ColorString="&amp;K" DetailColor="w" />
+    <part Name="Render" DisplayName="ポンプ・ショットガン" Tile="items/sw_shotgun_2.bmp" ColorString="&amp;K" DetailColor="w" />
     <part Name="Physics" Weight="12" UsesTwoSlots="true" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="1" ShotsPerAnimation="8" WeaponAccuracy="45" RangeIncrement="6" />
@@ -4578,7 +4578,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Combat Shotgun" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" DisplayName="コンバットショットガン" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;K" TileColor="&amp;w" DetailColor="K" />
+    <part Name="Render" DisplayName="コンバット・ショットガン" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;K" TileColor="&amp;w" DetailColor="K" />
     <part Name="Physics" UsesTwoSlots="true" Weight="16" />
     <part Name="Commerce" Value="100" />
     <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="1" ShotsPerAnimation="8" WeaponAccuracy="35" RangeIncrement="6" />
@@ -4785,7 +4785,7 @@
     <tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
     <part Name="TinkerItem" Bits="00126" CanDisassemble="true" CanBuild="true" />
     <stag Name="Thrown" />
-    <xtagThrowVFX Speed="1000" Rotation="2880" TrailStartColor="#77bfcf00" TrailEndColor="#77bfcf60" TrailStartWidth="16" TrailLife="0.1" Slant="True" Arc="?2" Curve="?2" />
+    <xtagThrowVFX Speed="1000" Rotation="2880" TrailStartColor="#77bfcf00" TrailEndColor="#77bfcf60" TrailStartWidth="16" TrailLife="0.1" Slant="True" Arc="2" Curve="2" />
   </object>
   <object Name="ThrowingAxe" Inherits="Item" Replace="true">
     <part Name="Render" DisplayName="投げ斧" RenderString="\" ColorString="&amp;w" Tile="Items/sw_throwing_axe.bmp" DetailColor="y" Occluding="false" />
@@ -5892,7 +5892,7 @@
   </object>
   <object Name="Wool Kilt" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="0" DV="1" WornOn="Body" />
-    <part Name="Render" DisplayName="{{tartan|ウールキルト}}" Tile="Items/sw_kilt.bmp" RenderString="]" ColorString="&amp;g" DetailColor="R" />
+    <part Name="Render" DisplayName="{{tartan|ウール・キルト}}" Tile="Items/sw_kilt.bmp" RenderString="]" ColorString="&amp;g" DetailColor="R" />
     <part Name="Commerce" Value="1" />
     <part Name="Description" Short="ウールの綱を斜めのタータン柄に織り込み、濃い赤や緑、鉄灰、セーブルで艶を放つ。" />
     <part Name="Physics" Weight="3" Organic="true" />
@@ -6015,7 +6015,7 @@
   </object>
   <object Name="Ring Mail" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="3" DV="-2" WornOn="Body" />
-    <part Name="Render" DisplayName="リングメイル" RenderString="]" Tile="Items/sw_armor2.bmp" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Render" DisplayName="リング・メイル" RenderString="]" Tile="Items/sw_armor2.bmp" ColorString="&amp;y" DetailColor="Y" />
     <part Name="Commerce" Value="20" />
     <part Name="Description" Short="革のシャツに鋼の輪を縫い付けて肩まで覆っている。" />
     <part Name="Physics" Weight="15" Organic="true" />
@@ -6026,7 +6026,7 @@
   </object>
   <object Name="Chain Mail" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="3" DV="-1" WornOn="Body" />
-    <part Name="Render" DisplayName="チェインメイル" RenderString="]" Tile="Items/sw_chainmail.bmp" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Render" DisplayName="チェイン・メイル" RenderString="]" Tile="Items/sw_chainmail.bmp" ColorString="&amp;y" DetailColor="Y" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="ごみの海の鋼の心臓から掘り出した輪を連ね、きらめく網に仕立てた。" />
     <part Name="Physics" Weight="35" />
@@ -6058,7 +6058,7 @@
   </object>
   <object Name="Elastyne Skin Suit" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="1" DV="3" WornOn="Body" />
-    <part Name="Render" DisplayName="{{K|エラスティン}}・スキンスーツ" RenderString="]" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_skinsuit.bmp" />
+    <part Name="Render" DisplayName="{{K|エラスティン}}・スキン・スーツ" RenderString="]" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_skinsuit.bmp" />
     <part Name="Commerce" Value="70" />
     <part Name="Description" Short="伸縮する紡績布を忍び歩き用のボディスーツに裁った。" />
     <part Name="Physics" Weight="5" Conductivity="0" />
@@ -6078,7 +6078,7 @@
   </object>
   <object Name="Carbide Plate Armor" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="5" DV="-5" WornOn="Body" />
-    <part Name="Render" DisplayName="{{b|カーバイド}}プレートアーマー" ColorString="&amp;b" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="B" />
+    <part Name="Render" DisplayName="{{b|カーバイド}}・プレート・アーマー" ColorString="&amp;b" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="B" />
     <part Name="Commerce" Value="190" />
     <part Name="Description" Short="鈍い藍色の折り畳み金属を胸肩の曲面に合わせて打ち出し、詰め物入りの山羊革下着に縫い付けた。" />
     <part Name="Physics" Weight="45" />
@@ -6106,7 +6106,7 @@
   </object>
   <object Name="Rubber Suit" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="2" DV="1" Elec="30" WornOn="Body" />
-    <part Name="Render" DisplayName="{{w|ラバースーツ}}" ColorString="&amp;w" DetailColor="W" Tile="Items/sw_flexisuit.bmp" />
+    <part Name="Render" DisplayName="{{w|ラバース・ーツ}}" ColorString="&amp;w" DetailColor="W" Tile="Items/sw_flexisuit.bmp" />
     <part Name="Commerce" Value="90" />
     <part Name="Description" Short="硫化樹液の滑りやすく伸びるスーツが眩い光を跳ね返し、産後すぐの羊膜嚢のような光沢を放つ。" />
     <part Name="Physics" Weight="8" Conductivity="0" Organic="true" />
@@ -6138,7 +6138,7 @@
   </object>
   <object Name="Recycling Suit" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="3" DV="0" WornOn="Body" />
-    <part Name="Render" DisplayName="{{B|リサイクルスーツ}}" ColorString="&amp;B" RenderString="]" DetailColor="b" Tile="Items/sw_recycling_suit.bmp" />
+    <part Name="Render" DisplayName="{{B|リサイクルス・ーツ}}" ColorString="&amp;B" RenderString="]" DetailColor="b" Tile="Items/sw_recycling_suit.bmp" />
     <part Name="Commerce" Value="95" />
     <part Name="Examiner" Complexity="4" />
     <part Name="LiquidVolume" MaxVolume="8" StartVolume="1-8" InitialLiquid="water-1000" />
@@ -6165,7 +6165,7 @@
   </object>
   <object Name="Fullerite Plate Mail" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="6" DV="-6" WornOn="Body" />
-    <part Name="Render" DisplayName="{{K|フラーレン}}プレートメイル" ColorString="&amp;K" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="y" />
+    <part Name="Render" DisplayName="{{K|フラーレン}}プ・レート・メイル" ColorString="&amp;K" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="y" />
     <part Name="Commerce" Value="345" />
     <part Name="Description" Short="隕石黒の超高密度金属を過熱して叩き、肩と胸の形に合わせた。" />
     <part Name="Physics" Weight="160" />
@@ -6174,7 +6174,7 @@
   </object>
   <object Name="Fullerite Flake Armor" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="4" DV="-3" Heat="12" Cold="12" Elec="3" Acid="3" WornOn="Body" />
-    <part Name="Render" DisplayName="{{K|フラーレン}}フレークアーマー" Tile="Items/sw_flake_armor.bmp" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" RenderString="]" />
+    <part Name="Render" DisplayName="{{K|フラーレン}}フ・レークア・ーマー" Tile="Items/sw_flake_armor.bmp" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" RenderString="]" />
     <part Name="Commerce" Value="320" />
     <part Name="Description" Short="重い金属塊から削り取った薄片を熱で融着し、獣革らしきものに貼り付けた。" />
     <part Name="Physics" Weight="90" />
@@ -6194,7 +6194,7 @@
   </object>
   <object Name="Nanoweave Vest" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="4" DV="2" WornOn="Body" />
-    <part Name="Render" DisplayName="ナノウィーブベスト" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_flexisuit.bmp" />
+    <part Name="Render" DisplayName="ナノウィーブ・ベスト" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_flexisuit.bmp" />
     <part Name="Commerce" Value="795" />
     <part Name="Description" Short="多層の繊維は色鮮やかで、他の布にはない優しい手触りを持つ。分子の緯糸を収縮する経糸に通し、フラクタル織機で織り上げた。" />
     <part Name="Physics" Weight="10" />
@@ -6202,7 +6202,7 @@
     <tag Name="Tier" Value="6" />
   </object>
   <object Name="Thermo Cask" Inherits="BaseArmor" Replace="true">
-    <part Name="Render" DisplayName="{{thermo|サーモ}}カスク" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]" />
+    <part Name="Render" DisplayName="{{thermo|サーモ}}カ・スク" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]" />
     <part Name="Description" Short="テトラガラスの冷媒管と不凍液管が樽型鎧のコンプレッサーを這い、凝縮器と蒸発器のコイルが断熱の灌木の上にそびえる古木のように肩から広がる。" />
     <part Name="Armor" AV="4" DV="-4" Heat="25" Cold="25" WornOn="Body" />
     <part Name="Physics" Weight="40" />
@@ -6222,7 +6222,7 @@
   </object>
   <object Name="Gas Tumbler" Inherits="Armor" Replace="true">
     <part Name="Armor" AV="0" DV="0" WornOn="Back" />
-    <part Name="Render" DisplayName="ガスタンブラー" RenderString="]" Tile="items/sw_gas_tumbler.bmp" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" />
+    <part Name="Render" DisplayName="ガス・タンブラー" RenderString="]" Tile="items/sw_gas_tumbler.bmp" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" />
     <part Name="Description" Short="染色したクリスティールのカニスターを背面ラックに取り付け、バルブがフラックス加圧器から飛び出し、ホースの枝分かれで複数の入力流を受けられる。" />
     <part Name="Commerce" Value="1000" />
     <part Name="Physics" Weight="20" />
@@ -6266,7 +6266,7 @@
     <stag Name="Cold" />
   </object>
   <object Name="Enigma Cone" Inherits="BaseArmor" Replace="true">
-    <part Name="Render" DisplayName="{{B|エニグマ}}コーン" ColorString="&amp;B" DetailColor="W" RenderString="]" Tile="Items/sw_enigma_cone_mail.bmp" />
+    <part Name="Render" DisplayName="{{B|エニグマ}}・コーン" ColorString="&amp;B" DetailColor="W" RenderString="]" Tile="Items/sw_enigma_cone_mail.bmp" />
     <part Name="Description" Short="石灰質の殻を削ってフープドレスに仕立て、渦巻きは目に心地よい幾何を刻んでは不意に不協和な眩暈へと反転する。" />
     <part Name="Armor" AV="4" DV="-4" />
     <part Name="Physics" Weight="28" Organic="true" />
@@ -6308,7 +6308,7 @@
   </object>
   <object Name="Albino Monkey Braid" Inherits="Armor" Replace="true">
     <part Name="Armor" AV="0" DV="1" WornOn="Back" />
-    <part Name="Render" DisplayName="{{Y|アルビノ}}モンキーブレイド" RenderString="]" ColorString="&amp;Y" Tile="Items/sw_braid.bmp" DetailColor="y" />
+    <part Name="Render" DisplayName="{{Y|アルビノ}}・モンキー・ブレイド" RenderString="]" ColorString="&amp;Y" Tile="Items/sw_braid.bmp" DetailColor="y" />
     <part Name="Commerce" Value="12" />
     <part Name="Description" Short="聖なるキツネザルの背から刈った毛を預言者の辮髪に編み上げた。" />
     <part Name="Physics" Weight="1" Organic="true" />
@@ -6375,7 +6375,7 @@
   </object>
   <object Name="Nylon Bodypack" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" WornOn="Back" AV="0" CarryBonus="20" />
-    <part Name="Render" DisplayName="ナイロンボディパック" ColorString="&amp;w" Tile="Items/sw_backpack.bmp" DetailColor="W" />
+    <part Name="Render" DisplayName="ナイロン・ボディパック" ColorString="&amp;w" Tile="Items/sw_backpack.bmp" DetailColor="W" />
     <part Name="Commerce" Value="75" />
     <part Name="Physics" Weight="10" />
     <part Name="Springy" Factor="0.8" />
@@ -6432,7 +6432,7 @@
   </object>
   <object Name="Molly Netting" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" WornOn="Back" AV="0" DV="1" CarryBonus="16" />
-    <part Name="Render" DisplayName="モーリーネッティング" ColorString="&amp;g" Tile="Items/sw_molly_netting.bmp" DetailColor="y" />
+    <part Name="Render" DisplayName="モーリー・ネッティング" ColorString="&amp;g" Tile="Items/sw_molly_netting.bmp" DetailColor="y" />
     <part Name="Commerce" Value="75" />
     <part Name="Physics" Weight="2" />
     <part Name="Springy" Factor="0.7" />
@@ -6442,7 +6442,7 @@
   </object>
   <object Name="Ironweave Cloak" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" AV="1" DV="0" WornOn="Back" />
-    <part Name="Render" DisplayName="アイアンウィーブクローク" RenderString="]" Tile="items/sw_cloak.bmp" ColorString="&amp;y" DetailColor="y" />
+    <part Name="Render" DisplayName="アイアンウィーブ・クローク" RenderString="]" Tile="items/sw_cloak.bmp" ColorString="&amp;y" DetailColor="y" />
     <part Name="Commerce" Value="200" />
     <part Name="Description" Short="銀色の流れる布は布の軽さで動き、静止や圧迫で硬化する。縫い目には薄い錆が顔を出し始めた。" />
     <part Name="Physics" Weight="6" />
@@ -6460,7 +6460,7 @@
   </object>
   <object Name="Gyrocopter Backpack" Inherits="Armor" Replace="true">
     <part Name="Armor" AV="0" DV="0" WornOn="Back" />
-    <part Name="Render" DisplayName="{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|ジャイロコプター}}バックパック" RenderString="]" Tile="items/sw_gyrocopter_backpack.bmp" ColorString="&amp;B" TileColor="&amp;B" DetailColor="C" />
+    <part Name="Render" DisplayName="{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|ジャイロコプター}}・バックパック" RenderString="]" Tile="items/sw_gyrocopter_backpack.bmp" ColorString="&amp;B" TileColor="&amp;B" DetailColor="C" />
     <part Name="Commerce" Value="800" />
     <part Name="Physics" Weight="10" />
     <part Name="Description" Short="関節つきのブレードが展開して気流スクリューを形作り、下に据えたエアスラスターが吹き上げる。起動すると装備者は飛行する。" />
@@ -6592,7 +6592,7 @@
   </object>
   <object Name="Palladium Mesh Tabard" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" AV="1" DV="1" MA="1" />
-    <part Name="Render" DisplayName="{{palladium mesh|パラジウムメッシュ}}タバード" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="{{palladium mesh|パラジウムメ・ッシュ}}・タバード" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W" />
     <part Name="Commerce" Value="925" />
     <part Name="Description" Short="電極がウーフラックス織りの格子で輝き、流行で広げた袖が金とシアンの紋章回路を晒す。" />
     <part Name="Physics" Weight="9" />
@@ -6611,7 +6611,7 @@
     <tag Name="Tier" Value="7" />
   </object>
   <object Name="Gigantic Chassis Plate" Inherits="BaseCloak" Replace="true">
-    <part Name="Render" DisplayName="{{c|シャーシプレート}}" ColorString="&amp;c" RenderString="]" DetailColor="C" Tile="Items/sw_chassis_plate.bmp" />
+    <part Name="Render" DisplayName="{{c|シャーシプ・レート}}" ColorString="&amp;c" RenderString="]" DetailColor="C" Tile="Items/sw_chassis_plate.bmp" />
     <part Name="Description" Short="焼いて圧延した巨大なクロムの板を掘削車から外し、星帆のようにその怪物的な使い手を影で包む。" />
     <part Name="Armor" AV="6" DV="-2" Cold="20" Heat="20" />
     <part Name="Physics" Weight="300" />
@@ -6946,7 +6946,7 @@
   </object>
 
 <object Name="Zetachrome Apex" Inherits="BaseHelmet" Replace="true">
-    <part Name="Render" DisplayName="{{zetachrome|ゼータクローム}}・アペックス" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_helm_hightier2.bmp" RenderString="]" />
+    <part Name="Render" DisplayName="{{zetachrome|ゼータクローム}}アペ・ックス" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_helm_hightier2.bmp" RenderString="]" />
     <part Name="Description" Short="クォーク＝グルーオン・プラズマは宇宙初期の虚無峰で急冷されて消えたが、六次元時空の皺に捕らわれた滴だけは残った。それらは何十億年も滑空し、やがてそれを発見した者たちが抽出と冷却の機械を築き、恒星炉で再加熱した。" />
     <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Head" />
     <part Name="Commerce" Value="1500" />
@@ -6976,7 +6976,7 @@
 
 <object Name="Psychodyne Helmet" Inherits="BaseHelmet" Replace="true">
     <part Name="Armor" AV="2" DV="1" />
-    <part Name="Render" DisplayName="サイコダイン・ヘルメット" Tile="Items/sw_psychodyne_helmet.bmp" RenderString="]" ColorString="&amp;b" DetailColor="B" />
+    <part Name="Render" DisplayName="サイコダインヘ・ルメット" Tile="Items/sw_psychodyne_helmet.bmp" RenderString="]" ColorString="&amp;b" DetailColor="B" />
     <part Name="Commerce" Value="2140" />
     <part Name="Description" Short="テトラキセノンガラスが外殻に当たる光をブルーシフトさせ、内側では電磁石が星貝の組織を励起して完璧な精神音響を作り出す。" />
     <part Name="Physics" Weight="12" />
@@ -7124,7 +7124,7 @@
 
 <object Name="Gas Mask" Inherits="BaseMask" Replace="true">
     <part Name="Armor" AV="0" DV="0" WornOn="Face" />
-    <part Name="Render" DisplayName="ガスマスク" RenderString="]" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_gas_mask.bmp" />
+    <part Name="Render" DisplayName="ガス・マスク" RenderString="]" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_gas_mask.bmp" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="耐久性のあるプラスチック製マスクに簡易フィルターを組み込み、毒性のガスから身を守る。" />
     <part Name="Physics" Weight="6" Conductivity="0" />
@@ -7326,7 +7326,7 @@
   </object>
 
 <object Name="Compass Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="コンパス・ブレスレット" Tile="Items/sw_cuff.bmp" ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" />
+    <part Name="Render" DisplayName="コンパスブ・レスレット" Tile="Items/sw_cuff.bmp" ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" />
     <part Name="Description" Short="磁化した針を閉じ込めたガラスレンズを革製のリストバンドに収めている。" />
     <part Name="Physics" Weight="1" Organic="true" />
     <part Name="Commerce" Value="25" />
@@ -7341,7 +7341,7 @@
   </object>
 
 <object Name="Wrist Fan" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="リストファン" RenderString="]" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="リストフ・ァン" RenderString="]" ColorString="&amp;c" DetailColor="y" />
     <part Name="Commerce" Value="20" />
     <part Name="Description" Short="小型の翼型ブレードが円形の盤面で回転し、穏やかな風を送り出す。" />
     <part Name="PartsGas" Radius="1" Chance="25" ChargeUse="1" UsesChargePerTurn="true" WorksOnWearer="true" WorksOnHolder="true" IsPowerLoadSensitive="true" NameForStatus="RotaryMotor" />
@@ -7379,7 +7379,7 @@
   </object>
 
 <object Name="Bio-Scanning Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{bio|バイオスキャン}}・ブレスレット" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g" />
+    <part Name="Render" DisplayName="{{bio|バイオスキャン}}ブ・レスレット" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="近くの動物が放つ熱と音のシグネチャから拾った生命信号の電位を、絶えず小さな変化図として描き換えている。" />
     <part Name="Physics" Weight="1" />
@@ -7410,7 +7410,7 @@
   </object>
 
 <object Name="Hologram Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{hologram|ホログラム}}・ブレスレット" RenderString="]" ColorString="&amp;B" DetailColor="b" />
+    <part Name="Render" DisplayName="{{hologram|ホログラム}}ブ・レスレット" RenderString="]" ColorString="&amp;B" DetailColor="b" />
     <part Name="Commerce" Value="125" />
     <part Name="Description" Short="バングルの留め金にまばゆいコバルトのボタンが付いている。&#10;「=name= 本人だと思うか？ ああ、本物さ。」" />
     <part Name="Physics" Weight="1" />
@@ -7476,7 +7476,7 @@
 
 <object Name="Homoelectric Wrist Warmer" Inherits="BaseBracelet" Replace="true">
     <part Name="Armor" Cold="8" />
-    <part Name="Render" DisplayName="ホメオエレクトリック・リストウォーマー" Tile="Items/sw_cuff.bmp" ColorString="&amp;y" DetailColor="R" RenderString="]" />
+    <part Name="Render" DisplayName="ホメオエレクトリッ・クリスト・ウォーマー" Tile="Items/sw_cuff.bmp" ColorString="&amp;y" DetailColor="R" RenderString="]" />
     <part Name="Commerce" Value="50" />
     <part Name="Description" Short="編み込んだスリーブが接触静電気で自らを温める。" />
     <part Name="Physics" Weight="1" Organic="true" />
@@ -7486,7 +7486,7 @@
   </object>
 
 <object Name="Slip Ring" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="スリップリング" RenderString="]" Tile="Items/sw_slip_ring.bmp" ColorString="&amp;g" DetailColor="y" />
+    <part Name="Render" DisplayName="スリップ・リング" RenderString="]" Tile="Items/sw_slip_ring.bmp" ColorString="&amp;g" DetailColor="y" />
     <part Name="Commerce" Value="100" />
     <part Name="Description" Short="金属製の環体全体に六角配列の孔が空き、ぬらりとした潤滑質がその表面を覆っている。潤滑剤を補充するための押し込み式キャップが付いている。" />
     <part Name="Physics" Weight="1" />
@@ -7501,7 +7501,7 @@
   </object>
 
 <object Name="Displacer Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{displacer|ディスプレーサー}}・ブレスレット" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B" />
+    <part Name="Render" DisplayName="{{displacer|ディスプレーサ・ー}}ブレスレット" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B" />
     <part Name="Commerce" Value="90" />
     <part Name="Description" Short="光沢ある金属トーラスの内側には、揺らぎのヒエログリフが刻まれている。" />
     <part Name="Physics" Weight="1" />
@@ -7553,7 +7553,7 @@
   </object>
 
 <object Name="Transkinetic Cuffs" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{transkinetic|トランスキネティック}}・カフ" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R" />
+    <part Name="Render" DisplayName="{{transkinetic|トランスキネティ・ック}}カフ" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R" />
     <part Name="Description" Short="金属の手首部でダイヤルが規則正しくカチリと鳴り、プラスティファーの袖を走る管路に水銀の銀が流れ込む。" />
     <part Name="Physics" Weight="6" />
     <part Name="Commerce" Value="2100" />
@@ -7795,7 +7795,7 @@
 
 <object Name="Leyline Puppeteers" Inherits="BaseGlove" Replace="true">
     <part Name="Armor" AV="2" DV="2" />
-    <part Name="Render" DisplayName="{{psymeridian|レイライン・パペティア}}" RenderLayer="5" Tile="Items/sw_puppeteers.bmp" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m" />
+    <part Name="Render" DisplayName="{{psymeridian|レイライ・ンパペティア}}" RenderLayer="5" Tile="Items/sw_puppeteers.bmp" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m" />
     <part Name="Physics" FlameTemperature="1000" VaporTemperature="8000" Weight="10" />
     <part Name="Commerce" Value="1750" />
     <part Name="Description" Short="静電乾燥した掌に溝を刻み、レイライン幾何の不可能な文様を描く。交差する放射で指が折り曲がり、潜在力を紡ぎ出す。" />
@@ -7957,7 +7957,7 @@
 
 <object Name="Grease Boots" Inherits="BaseBoot" Replace="true">
     <part Name="Armor" AV="2" DV="-3" WornOn="Feet" />
-    <part Name="Render" DisplayName="グリースド・スチールブーツ" RenderString="]" ColorString="&amp;Y" DetailColor="K" Tile="Items/sw_metal_boots.bmp" />
+    <part Name="Render" DisplayName="グリースド・スチー・ルブーツ" RenderString="]" ColorString="&amp;Y" DetailColor="K" Tile="Items/sw_metal_boots.bmp" />
     <part Name="Commerce" Value="100" />
     <part Name="Description" Short="こじ開け痕の残る鋼の帯をひだ状の猪革ブーツへ鋲留めし、底にはEatersの墓所の油圧プレスから拭い取った滑走蝋を塗り込めてある。" />
     <part Name="Physics" Weight="12" />
@@ -8003,7 +8003,7 @@
 
 <object Name="Step Sowers" Inherits="BaseBoot" Replace="true">
     <part Name="Armor" AV="1" DV="-1" WornOn="Feet" />
-    <part Name="Render" DisplayName="ステップ・ソウ{{g|ァ}}ー" RenderString="]" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_cobblers.bmp" />
+    <part Name="Render" DisplayName="ステッ・プソウ{{g|ァ}}ー" RenderString="]" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_cobblers.bmp" />
     <part Name="Description" Short="足首を革ストラップと金箔のバックルで締め、砕いた植物片が靴底を汚す。" />
     <part Name="Physics" Weight="5" />
     <part Name="Commerce" Value="250" />
@@ -8266,7 +8266,7 @@
   </object>
 
 <object Name="ProjectilePointDefenseLaser" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{B|レーザービーム}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|レーザー・ビーム}}" ColorString="&amp;B" />
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;B" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を呑み込む！" />
     <tag Name="Light" />
@@ -8276,7 +8276,7 @@
 
 <object Name="Chiral Rings" Inherits="BaseFloat" Replace="true">
     <part Name="Armor" AV="1" DV="2" />
-    <part Name="Render" DisplayName="{{chiral|カイラル}}リング" RenderString="*" RenderLayer="5" Tile="Items/sw_chiral_rings.bmp" ColorString="&amp;m" TileColor="&amp;y" DetailColor="m" />
+    <part Name="Render" DisplayName="{{chiral|カイラル}}・リング" RenderString="*" RenderLayer="5" Tile="Items/sw_chiral_rings.bmp" ColorString="&amp;m" TileColor="&amp;y" DetailColor="m" />
     <part Name="Physics" FlameTemperature="1000" VaporTemperature="8000" Weight="10" />
     <part Name="Commerce" Value="1250" />
     <part Name="Description" Short="極低温のクリスティールを平たく延ばした巨大な輪が、装着者を天体と相関させて天の赤道・赤緯・子午線の役割を果たす。縁はナノン旋盤で削られ、軌道を漂う残骸を切り裂く。" />
@@ -8780,7 +8780,7 @@
     <part Name="Description" Short="接線状の針先を刻んだ肋状のケーブルが肢を締めつけ、期待を超えて生体物質を加速させる。" />
     <part Name="Armor" AV="0" DV="1" WornOn="Arm" />
     <part Name="Physics" Weight="1" />
-    <part Name="IntPropertyChanger" AffectedProperty="EnhancedSprint" Amount="1" ChargeUse="0" NameForStatus="?????" BehaviorDescription="装備者はスプリント中でも追加のペナルティなしであらゆる行動を行える。" />
+    <part Name="IntPropertyChanger" AffectedProperty="EnhancedSprint" Amount="1" ChargeUse="0" NameForStatus="" BehaviorDescription="装備者はスプリント中でも追加のペナルティなしであらゆる行動を行える。" />
     <part Name="BootSequence" ChargeUse="0" BootTime="100" ReadoutInName="true" ReadoutInDescription="true" />
     <stat Name="Hitpoints" Value="1000" />
     <part Name="Commerce" Value="1500" />
@@ -9785,7 +9785,7 @@
 
 <object Name="BaseTierBack7" Inherits="BaseTierBack" Replace="true">
     <part Name="Render" Tile="items/sw_cloak.bmp" ColorString="&amp;w" DetailColor="W" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <part Name="Armor" AV="0" DV="3" WornOn="Back" />
     <part Name="Physics" Weight="4" />
     <tag Name="Tier" Value="7" />
@@ -9793,7 +9793,7 @@
 
 <object Name="BaseTierArm7" Inherits="BaseTierArm" Replace="true">
     <part Name="Render" Tile="Items/sw_bracelet_simple.bmp" DetailColor="b" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Armor" AV="1" DV="3" WornOn="Arm" />
     <part Name="Physics" Weight="1" />
     <tag Name="Tier" Value="7" />
@@ -9801,14 +9801,14 @@
 
 <object Name="BaseTierFloating7" Inherits="BaseTierFloating" Replace="true">
     <part Name="Render" DetailColor="C" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="LightSource" Lit="true" Radius="8" />
     <tag Name="Tier" Value="7" />
   </object>
 
 <object Name="BaseTierFace8" Inherits="BaseTierFace" Replace="true">
     <part Name="Render" Tile="Items/sw_veil.bmp" ColorString="&amp;Y" DetailColor="r" />
-    <part Name="Description" Short="?????*????*????" />
+    <part Name="Description" Short="**" />
     <part Name="Armor" AV="0" DV="4" WornOn="Face" />
     <part Name="Physics" Weight="2" />
     <tag Name="Tier" Value="8" />
@@ -9816,7 +9816,7 @@
 
 <object Name="BaseTierBack8" Inherits="BaseTierBack" Replace="true">
     <part Name="Render" Tile="items/sw_cloak.bmp" ColorString="&amp;w" DetailColor="W" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <part Name="Armor" AV="0" DV="4" WornOn="Back" />
     <part Name="Physics" Weight="4" />
     <tag Name="Tier" Value="8" />
@@ -9824,7 +9824,7 @@
 
 <object Name="BaseTierArm8" Inherits="BaseTierBack" Replace="true">
     <part Name="Render" Tile="Items/sw_bracelet_simple.bmp" DetailColor="b" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Armor" AV="1" DV="3" WornOn="Arm" />
     <part Name="Physics" Weight="1" />
     <tag Name="Tier" Value="8" />
@@ -9832,14 +9832,14 @@
 
 <object Name="BaseTierFloating8" Inherits="BaseTierFloating" Replace="true">
     <part Name="Render" DetailColor="C" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="LightSource" Lit="true" Radius="8" />
     <tag Name="Tier" Value="8" />
   </object>
 
 <object Name="Albino Ape Pelt" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="{{Y|????}}" Tile="Items/sw_ape_pelt.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="*" RenderLayer="5" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{Y|}}" Tile="Items/sw_ape_pelt.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="*" RenderLayer="5" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="10" Category="Trade Goods" />
     <part Name="Commerce" Value="100" />
     <tag Name="Tier" Value="2" />
@@ -9848,8 +9848,8 @@
   </object>
 
 <object Name="Ogre Ape Pelt" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="{{W|???}}" ColorString="&amp;W" Tile="Items/sw_ape_pelt.bmp" DetailColor="w" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;W" Tile="Items/sw_ape_pelt.bmp" DetailColor="w" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="10" Category="Trade Goods" />
     <part Name="Commerce" Value="300" />
     <tag Name="Tier" Value="6" />
@@ -9858,9 +9858,9 @@
   </object>
 
 <object Name="EyelessCrabShell" Inherits="BaseShield" Replace="true">
-    <part Name="Render" DisplayName="{{Y|?????}}" Tile="Items/sw_crab_shield.bmp" ColorString="&amp;Y" DetailColor="y" />
+    <part Name="Render" DisplayName="{{Y|}}" Tile="Items/sw_crab_shield.bmp" ColorString="&amp;Y" DetailColor="y" />
     <part Name="Shield" AV="4" DV="-3" WornOn="Hand" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Commerce" Value="50" />
     <part Name="Physics" Weight="19" Organic="true" />
     <removepart Name="Metal" />
@@ -9868,10 +9868,10 @@
   </object>
 
 <object Name="SalthopperMandible" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{G|????}}" Tile="Items/sw_longblade_13.bmp" ColorString="&amp;Y" DetailColor="y" />
+    <part Name="Render" DisplayName="{{G|}}" Tile="Items/sw_longblade_13.bmp" ColorString="&amp;Y" DetailColor="y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="1d10" Skill="LongBlades" />
     <part Name="Commerce" Value="35" />
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <removepart Name="Metal" />
     <tag Name="Tier" Value="3" />
     <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_saltHopperMandible_swing" />
@@ -9879,10 +9879,10 @@
   </object>
 
 <object Name="Corpse" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="[??]" Tile="items/sw_splat1.bmp" TileColor="&amp;r" DetailColor="w" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Render" DisplayName="[]" Tile="items/sw_splat1.bmp" TileColor="&amp;r" DetailColor="w" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Food" Satiation="Meal" Gross="true" IllOnEat="true" />
     <part Name="Physics" Category="Corpses" Weight="5" Organic="true" />
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <part Name="Springy" Factor="0.5" />
     <tag Name="Meat" />
     <tag Name="BaseObject" Value="*noinherit" />
@@ -9899,86 +9899,86 @@
   </object>
 
 <object Name="Animal Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="40" />
-    <part Name="Food" Message="?????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Small Animal Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="10" />
-    <part Name="Food" Message="?????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Humanoid Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="80" />
-    <part Name="Food" Message="?????" />
+    <part Name="Food" Message="" />
     <tag Name="DynamicObjectsTable:HumanoidCorpses" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Arthropod Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="30" />
-    <part Name="Food" Message="????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Crab Corpse" Inherits="Arthropod Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Winged Arthropod Corpse" Inherits="Arthropod Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="15" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Scaled Reptile Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="30" />
-    <part Name="Food" Message="?????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Fish Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="5" />
-    <part Name="Food" Message="????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Frog Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="30" />
-    <part Name="Food" Message="?????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Worm Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="20" />
-    <part Name="Food" Message="????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Snail Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="100" />
-    <part Name="Food" Message="????" />
+    <part Name="Food" Message="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Robot Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="[??]" Tile="items/sw_limb_robot.bmp" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Render" DisplayName="[]" Tile="items/sw_limb_robot.bmp" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
     <removepart Name="Food" />
     <removebuilder Name="RandomTile" />
     <part Name="Physics" Category="Corpses" Weight="25" Organic="false" />
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <tag Name="Meat" Value="*delete" />
     <builder Name="RandomTile" Tiles="Items/sw_splat1.bmp,Items/sw_splat2.bmp,Items/sw_splat3.bmp,Items/sw_splat4.bmp" />
     <tag Name="Corpse" />
@@ -9995,7 +9995,7 @@
   </object>
 
 <object Name="GenericLimb" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="[??]" Tile="items/sw_limb_organic.bmp" TileColor="&amp;r" DetailColor="w" ColorString="&amp;w" />
+    <part Name="Render" DisplayName="[]" Tile="items/sw_limb_organic.bmp" TileColor="&amp;r" DetailColor="w" ColorString="&amp;w" />
     <part Name="PreparedCookingIngredient" type="HP" charges="1" />
     <tag Name="AggregatedIngredient" Value="Limb" />
     <tag Name="Meat" />
@@ -10006,11 +10006,11 @@
 <object Name="GenericFace" Inherits="GenericLimb" Replace="true">
     <tag Name="AggregatedIngredient" Value="Face" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <part Name="EatenAccomplishment" Text="???? =this.an= ?????" Hagiograph="????=name= ????? =this.an= ???" HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="=month= =day=?=landmark.nearest= ???? =name= ????&lt;spice.elements.entity$elements[random].practices.!random&gt; ??? =this.refname= ???" />
+    <part Name="EatenAccomplishment" Text=" =this.an= " Hagiograph="=name=  =this.an= " HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="=month= =day==landmark.nearest=  =name= &lt;spice.elements.entity$elements[random].practices.!random&gt;  =this.refname= " />
   </object>
 
 <object Name="PlantLimb" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="[??]" Tile="items/sw_limb_organic.bmp" TileColor="&amp;g" DetailColor="G" ColorString="&amp;g" />
+    <part Name="Render" DisplayName="[]" Tile="items/sw_limb_organic.bmp" TileColor="&amp;g" DetailColor="G" ColorString="&amp;g" />
     <part Name="PreparedCookingIngredient" type="HP" charges="1" />
     <part Name="Springy" Factor="0.8" />
     <tag Name="AggregatedIngredient" Value="Limb" />
@@ -10025,11 +10025,11 @@
 <object Name="PlantFace" Inherits="PlantLimb" Replace="true">
     <tag Name="AggregatedIngredient" Value="Face" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <part Name="EatenAccomplishment" Text="???? =this.an= ?????" Hagiograph="????=name= ????? =this.an= ???" HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="=month= =day=?=landmark.nearest= ???? =name= ????&lt;spice.elements.entity$elements[random].practices.!random&gt; ??? =this.refname= ???" />
+    <part Name="EatenAccomplishment" Text=" =this.an= " Hagiograph="=name=  =this.an= " HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="=month= =day==landmark.nearest=  =name= &lt;spice.elements.entity$elements[random].practices.!random&gt;  =this.refname= " />
   </object>
 
 <object Name="FungusLimb" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="[??]" Tile="items/sw_limb_organic.bmp" TileColor="&amp;m" DetailColor="C" ColorString="&amp;m" />
+    <part Name="Render" DisplayName="[]" Tile="items/sw_limb_organic.bmp" TileColor="&amp;m" DetailColor="C" ColorString="&amp;m" />
     <part Name="PreparedCookingIngredient" type="HP" charges="1" />
     <part Name="Springy" Factor="0.8" />
     <tag Name="AggregatedIngredient" Value="Limb" />
@@ -10043,13 +10043,13 @@
 <object Name="FungusFace" Inherits="FungusLimb" Replace="true">
     <tag Name="AggregatedIngredient" Value="Face" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <part Name="EatenAccomplishment" Text="???? =this.an= ?????" Hagiograph="????=name= ????? =this.an= ???" HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="=month= =day=?=landmark.nearest= ???? =name= ????&lt;spice.elements.entity$elements[random].practices.!random&gt; ??? =this.refname= ???" />
+    <part Name="EatenAccomplishment" Text=" =this.an= " Hagiograph="=name=  =this.an= " HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="=month= =day==landmark.nearest=  =name= &lt;spice.elements.entity$elements[random].practices.!random&gt;  =this.refname= " />
   </object>
 
 <object Name="RobotLimb" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="[??]" Tile="items/sw_limb_robot.bmp" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Render" DisplayName="[]" Tile="items/sw_limb_robot.bmp" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Physics" Category="Scrap" Weight="5" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <removepart Name="Corpse" />
     <tag Name="EquipSound" Value="sfx_equip_material_generic_metal" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -10058,9 +10058,9 @@
   </object>
 
 <object Name="Human Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="?????" ColorString="&amp;y" />
-    <part Name="Description" Short="????" />
-    <part Name="Food" Message="?????" />
+    <part Name="Render" DisplayName="" ColorString="&amp;y" />
+    <part Name="Description" Short="" />
+    <part Name="Food" Message="" />
     <part Name="Physics" Weight="200" />
     <part Name="Commerce" Value="10" />
     <tag Name="NoSparkingQuest" />
@@ -10069,9 +10069,9 @@
   </object>
 
 <object Name="Charred Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="?????" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" />
-    <part Name="Food" Message="????" />
-    <part Name="Description" Short="?????" />
+    <part Name="Render" DisplayName="" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" />
+    <part Name="Food" Message="" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <tag Name="NoSparkingQuest" />
@@ -10080,9 +10080,9 @@
   </object>
 
 <object Name="Mangled Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="????" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
-    <part Name="Food" Message="????" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
+    <part Name="Food" Message="" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <tag Name="NoSparkingQuest" />
@@ -10091,9 +10091,9 @@
   </object>
 
 <object Name="Ancient Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="????" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" />
-    <part Name="Food" Message="????" />
-    <part Name="Description" Short="??? ritual ????" />
+    <part Name="Render" DisplayName="" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" />
+    <part Name="Food" Message="" />
+    <part Name="Description" Short=" ritual " />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <intproperty Name="Bleeds" Value="0" />
@@ -10103,9 +10103,9 @@
   </object>
 
 <object Name="Fresh Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="?????" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
-    <part Name="Food" Message="????" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
+    <part Name="Food" Message="" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <tag Name="NoSparkingQuest" />
@@ -10114,9 +10114,9 @@
   </object>
 
 <object Name="Moldering Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="?????" ColorString="&amp;w" TileColor="&amp;w" DetailColor="B" />
-    <part Name="Food" Message="?????" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="" ColorString="&amp;w" TileColor="&amp;w" DetailColor="B" />
+    <part Name="Food" Message="" />
+    <part Name="Description" Short="" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <intproperty Name="Bleeds" Value="0" />
@@ -10126,18 +10126,18 @@
   </object>
 
 <object Name="TarBones" Inherits="Bones" Replace="true">
-    <part Name="Render" RenderLayer="5" DisplayName="{{K|????}}" DetailColor="Y" TileColor="&amp;K" ColorString="&amp;Y" Tile="items/sw_splat1.bmp" />
-    <part Name="Description" Short="????" />
-    <part Name="Food" Message="????" />
+    <part Name="Render" RenderLayer="5" DisplayName="{{K|}}" DetailColor="Y" TileColor="&amp;K" ColorString="&amp;Y" Tile="items/sw_splat1.bmp" />
+    <part Name="Description" Short="" />
+    <part Name="Food" Message="" />
     <property Name="StartInLiquid" Value="true" />
     <tag Name="NoSparkingQuest" />
     <removepart Name="RandomColors" />
   </object>
 
 <object Name="Ashes" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="?" RenderString="," ColorString="&amp;y" IgnoreColorForStack="true" IgnoreTileForStack="true" />
+    <part Name="Render" DisplayName="" RenderString="," ColorString="&amp;y" IgnoreColorForStack="true" IgnoreTileForStack="true" />
     <part Name="Physics" Organic="true" Category="Corpses" FlameTemperature="99999" VaporTemperature="1500" />
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <tag Name="DynamicObjectsTable:Corpses" />
     <tag Name="Gender" Value="plural" />
     <part Name="RandomTileOnMove" Tiles="Items/sw_ash_1.bmp,Items/sw_ash_2.bmp,Items/sw_ash_3.bmp,Items/sw_ash_4.bmp" />
@@ -10150,8 +10150,8 @@
   </object>
 
 <object Name="Bones" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="{{Y|?}}" ColorString="&amp;y" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{Y|}}" ColorString="&amp;y" />
+    <part Name="Description" Short="" />
     <tag Name="DynamicObjectsTable:Corpses" />
     <tag Name="Gender" Value="plural" />
     <builder Name="RandomTile" Tiles="Items/sw_bones_1.bmp,Items/sw_bones_2.bmp,Items/sw_bones_3.bmp,Items/sw_bones_4.bmp,Items/sw_bones_5.bmp,Items/sw_bones_6.bmp,Items/sw_bones_7.bmp,Items/sw_bones_8.bmp" />
@@ -10161,40 +10161,40 @@
   </object>
 
 <object Name="ExileCorpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" RenderLayer="6" DisplayName="{{Y|?????}}" ColorString="&amp;O" DetailColor="o" TileColor="&amp;O" />
+    <part Name="Render" RenderLayer="6" DisplayName="{{Y|}}" ColorString="&amp;O" DetailColor="o" TileColor="&amp;O" />
     <tag Name="NoSparkingQuest" />
     <part Name="ExileCorpseLoot" />
-    <part Name="Food" Message="????" />
+    <part Name="Food" Message="" />
     <inventoryobject Blueprint="Godshroom Cap" Number="2" />
     <inventoryobject Blueprint="Scroll Bound by Kelp" Number="1" />
     <inventoryobject Blueprint="CyberneticsCreditWedge3" Number="1" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
     <tag Name="Gender" Value="plural" />
     <tag Name="NoClear" />
   </object>
 
 <object Name="JoppaCorpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" RenderLayer="6" DisplayName="{{Y|?????}}" ColorString="&amp;r" TileColor="&amp;r" DetailColor="Y" />
+    <part Name="Render" RenderLayer="6" DisplayName="{{Y|}}" ColorString="&amp;r" TileColor="&amp;r" DetailColor="Y" />
     <tag Name="NoSparkingQuest" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
     <tag Name="Gender" Value="plural" />
   </object>
 
 <object Name="CaverCorpse" Inherits="Bones" Replace="true">
-    <part Name="Render" RenderLayer="6" DisplayName="{{Y|????}}" Tile="items/sw_bones_4.bmp" ColorString="&amp;M" TileColor="&amp;M" />
+    <part Name="Render" RenderLayer="6" DisplayName="{{Y|}}" Tile="items/sw_bones_4.bmp" ColorString="&amp;M" TileColor="&amp;M" />
     <part Name="CaverCorpseLoot" />
-    <part Name="Food" Message="????" />
+    <part Name="Food" Message="" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
 
 <object Name="SkrefCorpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" RenderLayer="6" DisplayName="????" ColorString="&amp;r" TileColor="&amp;r" />
+    <part Name="Render" RenderLayer="6" DisplayName="" ColorString="&amp;r" TileColor="&amp;r" />
     <part Name="SkrefCorpseLoot" />
-    <part Name="Food" Message="?????" />
-    <part Name="Description" Short="????" />
+    <part Name="Food" Message="" />
+    <part Name="Description" Short="" />
     <part Name="Interesting" />
     <tag Name="NoSparkingQuest" />
     <tag Name="Gender" Value="plural" />
@@ -10202,14 +10202,14 @@
   </object>
 
 <object Name="HeirloomsCatalog" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|?????}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_unfurled_scroll1.bmp" TileColor="&amp;C" DetailColor="y" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_unfurled_scroll1.bmp" TileColor="&amp;C" DetailColor="y" />
     <part Name="Book" ID="@HeirloomsBook" />
     <part Name="Commerce" Value="150" />
   </object>
 
 <object Name="Sheaf1" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_unfurled_scroll1.bmp" TileColor="&amp;w" DetailColor="g" />
-    <part Name="Description" Short="?????" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_unfurled_scroll1.bmp" TileColor="&amp;w" DetailColor="g" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="Sheaf1" />
     <part Name="Commerce" Value="1" />
     <xtagGrammar Proper="false" adjunctNoun="" />
@@ -10217,8 +10217,8 @@
   </object>
 
 <object Name="Scroll Bound by Kelp" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" TileColor="&amp;w" DetailColor="G" />
-    <part Name="Description" Short="????? strand ????" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" TileColor="&amp;w" DetailColor="G" />
+    <part Name="Description" Short=" strand " />
     <part Name="Book" ID="Diary" />
     <part Name="Commerce" Value="500" />
     <xtagGrammar Proper="false" adjunctNoun="" />
@@ -10227,81 +10227,81 @@
   </object>
 
 <object Name="Lives1" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? ?I?}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W| I}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="Lives1" />
     <part Name="Commerce" Value="200" />
   </object>
 
 <object Name="Across1" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? I?????}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W| I}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="Across1" />
     <part Name="Commerce" Value="200" />
   </object>
 
 <object Name="Across2" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? II?????}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W| II}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="Across2" />
     <part Name="Commerce" Value="200" />
   </object>
 
 <object Name="Across3" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? III?????}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W| III}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;W" DetailColor="g" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="Across3" />
     <part Name="Commerce" Value="200" />
   </object>
 
 <object Name="DarkCalculus" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;K" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;K" DetailColor="C" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;K" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;K" DetailColor="C" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="DarkCalculus" />
     <part Name="Commerce" Value="300" />
   </object>
 
 <object Name="Canticles3" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????? ?XVII?XXIV?}}" ColorString="&amp;c" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;c" DetailColor="W" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{W| XVIIXXIV}}" ColorString="&amp;c" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="Canticles3" />
     <part Name="Commerce" Value="50" />
   </object>
 
 <object Name="MimicandMadpole" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|?????}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;w" DetailColor="r" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;w" DetailColor="r" />
     <part Name="Book" ID="MimicandMadpole" />
     <part Name="Commerce" Value="50" />
   </object>
 
 <object Name="OnHumanMimicry" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|?????}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;w" DetailColor="g" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;w" DetailColor="g" />
     <part Name="Book" ID="Animals" />
     <part Name="Commerce" Value="50" />
   </object>
 
 <object Name="FromEntropytoHierarchy" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;m" DetailColor="C" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;m" DetailColor="C" />
     <part Name="Book" ID="EntropytoHierarchy" />
     <part Name="Commerce" Value="300" />
   </object>
 
 <object Name="FromEntropytoHierarchy2" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????2??}}" ColorString="&amp;m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;m" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{W|2}}" ColorString="&amp;m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;m" DetailColor="Y" />
     <part Name="Book" ID="EntropytoHierarchy2" />
     <part Name="Commerce" Value="350" />
     <tag Name="Role" Value="Uncommon" />
   </object>
 
 <object Name="DisquisitionOnTheMaladyOfTheMimic" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;m" DetailColor="R" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;m" DetailColor="R" />
     <part Name="Book" ID="DisquisitionOnTheMaladyOfTheMimic" />
     <part Name="Commerce" Value="300" />
   </object>
 
 <object Name="Crime and Punishment" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;w" DetailColor="R" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;w" DetailColor="R" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="CrimeandPunishment" />
     <part Name="SetBooleanStateOnRead" State="SawCrimePunishment" />
     <part Name="SetBooleanStateOnLook" State="SawCrimePunishment" />
@@ -10309,75 +10309,75 @@
   </object>
 
 <object Name="AphorismsAboutBirds" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll1.bmp" TileColor="&amp;w" DetailColor="B" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll1.bmp" TileColor="&amp;w" DetailColor="B" />
     <part Name="Book" ID="AphorismsAboutBirds" />
     <part Name="Commerce" Value="75" />
   </object>
 
 <object Name="BloodandFear" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;r" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;R" DetailColor="W" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;r" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;R" DetailColor="W" />
     <part Name="Book" ID="BloodandFear" />
     <part Name="Commerce" Value="150" />
   </object>
 
 <object Name="ArtlessBeauty" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|?????}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;g" DetailColor="R" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;g" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" TileColor="&amp;g" DetailColor="R" />
     <part Name="Book" ID="TheArtlessBeauty" />
     <part Name="Commerce" Value="150" />
   </object>
 
 <object Name="FaunsoftheMeadow" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;W" DetailColor="Y" />
-    <part Name="Description" Short="?????" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;W" DetailColor="Y" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="FaunsoftheMeadow" />
     <part Name="Commerce" Value="75" />
   </object>
 
 <object Name="MurmursPrayer" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|?????}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;W" DetailColor="Y" />
-    <part Name="Description" Short="?????" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;W" DetailColor="Y" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="MurmursPrayer" />
     <part Name="Commerce" Value="100" />
   </object>
 
 <object Name="InMaqqomYd" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???}}" ColorString="&amp;r" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="Description" Short="?????" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;r" RenderString="=" RenderLayer="5" Tile="Items/sw_book_4.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="InMaqqomYd" />
     <part Name="RevealObservationOnRead" ObservationId="MaqqomYd" />
     <part Name="Commerce" Value="200" />
   </object>
 
 <object Name="EtaandtheEarthling1" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? ?I?}}" ColorString="&amp;b" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;b" DetailColor="G" />
+    <part Name="Render" DisplayName="{{W| I}}" ColorString="&amp;b" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;b" DetailColor="G" />
     <part Name="Book" ID="EtaandtheEarthling1" />
     <part Name="Commerce" Value="300" />
   </object>
 
 <object Name="CouncilAtGammaRock" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;B" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" TileColor="&amp;B" DetailColor="y" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;B" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" TileColor="&amp;B" DetailColor="y" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="CouncilAtGammaRock" />
     <part Name="Commerce" Value="250" />
   </object>
 
 <object Name="ModuloMoonStair" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|?????}}" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" />
     <part Name="Book" ID="ModuloMoonStair" />
     <part Name="Commerce" Value="300" />
   </object>
 
 <object Name="GolemOperatingManual" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;c" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;c" DetailColor="m" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;c" RenderString="=" RenderLayer="5" Tile="Items/sw_book_3.bmp" TileColor="&amp;c" DetailColor="m" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="GolemOperatingManual" />
     <part Name="Commerce" Value="1" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="MerchantAdvertisement" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|*??*}}" ColorString="&amp;y" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" DetailColor="Y" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{W|**}}" ColorString="&amp;y" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" DetailColor="Y" />
+    <part Name="Description" Short="" />
     <part Name="Commerce" Value="50" />
     <part Name="MerchantRevealer" />
     <builder Name="RandomTile" Tiles="Items/sw_scroll1.bmp,Items/sw_scroll2.bmp" />
@@ -10387,8 +10387,8 @@
   </object>
 
 <object Name="HistoryofJoppaVol1" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? ?1?}}" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_unfurled_scroll1.bmp" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{W| 1}}" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_unfurled_scroll1.bmp" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="HistoryofJoppaVol1" />
     <part Name="Commerce" Value="0" />
     <part Name="RevealSecretOnRead" Secrets="JoppaSecret1" />
@@ -10396,8 +10396,8 @@
   </object>
 
 <object Name="HistoryofJoppaVol2" Inherits="Book" Replace="true">
-    <part Name="Render" DisplayName="{{W|???? ?2?}}" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_unfurled_scroll2.bmp" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{W| 2}}" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_unfurled_scroll2.bmp" />
+    <part Name="Description" Short="" />
     <part Name="Book" ID="HistoryofJoppaVol2" />
     <part Name="RevealSecretOnRead" Secrets="JoppaSecret2" />
     <part Name="Commerce" Value="0" />
@@ -10405,12 +10405,12 @@
   </object>
 
 <object Name="DataDisk" Inherits="Item" Replace="true">
-    <part Name="Render" Tile="items/sw_data_disc.bmp" DetailColor="W" DisplayName="?????" ColorString="&amp;c" RenderString="007" RenderLayer="4" />
+    <part Name="Render" Tile="items/sw_data_disc.bmp" DetailColor="W" DisplayName="" ColorString="&amp;c" RenderString="007" RenderLayer="4" />
     <part Name="Physics" Weight="1" Category="Data Disks" />
     <part Name="Commerce" Value="100" />
     <part Name="DataDisk" />
     <part Name="NotNameable" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="EquipSound" Value="sfx_equip_material_generic_tool" />
     <tag Name="DisplayFullNameAsReward" />
     <stag Name="DataDisk" />
@@ -10418,7 +10418,7 @@
 
 <object Name="WaterContainer" Inherits="Item" Replace="true">
     <part Name="LiquidVolume" MaxVolume="64" Volume="0" />
-    <part Name="Render" DisplayName="[???]" ColorString="&amp;b" RenderString="168" RenderLayer="5" Tile="Items/sw_waterskin.bmp" TileColor="&amp;w" DetailColor="y" />
+    <part Name="Render" DisplayName="[]" ColorString="&amp;b" RenderString="168" RenderLayer="5" Tile="Items/sw_waterskin.bmp" TileColor="&amp;w" DetailColor="y" />
     <part Name="Physics" Category="Water Containers" SpecificHeat="4.1813" />
     <part Name="LeakWhenBroken" />
     <part Name="Commerce" Value="5" />
@@ -10434,21 +10434,21 @@
 <object Name="SoupPhial" Inherits="Phial" Replace="true">
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="proteangunk-1000" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="BrainBrinePhial" Inherits="Phial" Replace="true">
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="brainbrine-1000" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="SunSlagPhial" Inherits="Phial" Replace="true">
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="sunslag-1000" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
@@ -10461,8 +10461,8 @@
     <part Name="Commerce" Value="8" />
     <stat Name="Hitpoints" Value="100" />
     <stat Name="AV" Value="6" />
-    <part Name="Render" DisplayName="?????" ColorString="&amp;c" DetailColor="C" RenderString="232" RenderLayer="5" Tile="Assets_Content_Textures_Items_sw_jug5.bmp" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="" ColorString="&amp;c" DetailColor="C" RenderString="232" RenderLayer="5" Tile="Assets_Content_Textures_Items_sw_jug5.bmp" />
+    <part Name="Description" Short="" />
     <part Name="TinkerItem" Bits="B" />
     <part Name="Metal" />
     <tag Name="WaterContainer" Value="1" />
@@ -10477,8 +10477,8 @@
     <part Name="LeakWhenBroken" />
     <part Name="Commerce" Value="0.5" />
     <stat Name="Hitpoints" Value="2" />
-    <part Name="Render" DisplayName="?????" ColorString="&amp;w" DetailColor="W" RenderString="229" RenderLayer="5" Tile="Items/sw_gourd.bmp" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="" ColorString="&amp;w" DetailColor="W" RenderString="229" RenderLayer="5" Tile="Items/sw_gourd.bmp" />
+    <part Name="Description" Short="" />
     <part Name="Springy" Factor="0.3" />
     <tag Name="WaterContainer" Value="1" />
     <tag Name="Mods" Value="CommonMods" />
@@ -10486,8 +10486,8 @@
   </object>
 
 <object Name="Entropy Cyst" Inherits="Phial" Replace="true">
-    <part Name="Render" DisplayName="????" Tile="Items/sw_entropic_cyst.bmp" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="" Tile="Items/sw_entropic_cyst.bmp" />
+    <part Name="Description" Short="" />
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="warmstatic-1000" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
     <stat Name="Hitpoints" Value="1000" />
@@ -10495,11 +10495,11 @@
   </object>
 
 <object Name="Magnetic Bottle" Inherits="WaterContainer" Replace="true">
-    <part Name="Render" DisplayName="???" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false" />
+    <part Name="Render" DisplayName="" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false" />
     <part Name="Physics" Weight="3" Category="Artifacts" />
     <part Name="Commerce" Value="200" />
-    <part Name="Description" Short="????" />
-    <part Name="RulesDescription" Text="????" />
+    <part Name="Description" Short="" />
+    <part Name="RulesDescription" Text="" />
     <part Name="LiquidVolume" StartVolume="0-1" InitialLiquid="neutronflux-1000" MaxVolume="1" ManualSeal="true" LiquidVisibleWhenSealed="true" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIPassiveEnergyCellReload" />
@@ -10515,8 +10515,8 @@
   </object>
 
 <object Name="FactionDeed" Inherits="Deed" Replace="true">
-    <part Name="Render" DisplayName="{{K|?????}}?????" ColorString="&amp;K" TileColor="&amp;Y" DetailColor="k" Tile="items/sw_unfurled_scroll1.bmp" RenderString="=" RenderLayer="5" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{K|}}" ColorString="&amp;K" TileColor="&amp;Y" DetailColor="k" Tile="items/sw_unfurled_scroll1.bmp" RenderString="=" RenderLayer="5" />
+    <part Name="Description" Short="" />
     <part Name="FactionDeed" />
     <part Name="Commerce" Value="250" />
     <tag Name="AdjustWeaponScore" Value="-2" />
@@ -10525,7 +10525,7 @@
 
 <object Name="FungalInfection" Inherits="Item" Replace="true">
     <part Name="Armor" WornOn="*" DV="0" AV="0" />
-    <part Name="Render" DisplayName="??" RenderString="*" RenderLayer="5" />
+    <part Name="Render" DisplayName="" RenderString="*" RenderLayer="5" />
     <part Name="Physics" Weight="5" Category="Fungal Infection" />
     <part Name="Commerce" Value="0" />
     <part Name="NoDamage" />
@@ -10546,48 +10546,48 @@
 <object Name="LuminousInfection" Inherits="FungalInfection" Replace="true">
     <part Name="Physics" Weight="3" />
     <part Name="Armor" WornOn="*" DV="0" AV="0" Cold="10" />
-    <part Name="Render" DisplayName="{{C|?????}}" Tile="Items/sw_glowcrust.bmp" ColorString="&amp;C" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{C|}}" Tile="Items/sw_glowcrust.bmp" ColorString="&amp;C" DetailColor="Y" />
     <part Name="LightSource" Lit="true" Radius="3" />
     <part Name="LuminousInfection" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <part Name="ItemElements" Elements="ice::5" />
   </object>
 
 <object Name="PuffInfection" Inherits="FungalInfection" Replace="true">
     <part Name="Physics" Weight="2" />
-    <part Name="Render" DisplayName="{{G|?????}}" Tile="Items/sw_ficklegill.bmp" ColorString="&amp;G" DetailColor="y" />
+    <part Name="Render" DisplayName="{{G|}}" Tile="Items/sw_ficklegill.bmp" ColorString="&amp;G" DetailColor="y" />
     <part Name="PuffInfection" ColorString="1" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
   </object>
 
 <object Name="MumblesInfection" Inherits="FungalInfection" Replace="true">
     <part Name="Physics" Weight="2" />
-    <part Name="Render" DisplayName="{{R|??}}{{M|??}}{{R|?}}" Tile="Items/sw_mumblemouth.bmp" ColorString="&amp;R" DetailColor="M" />
+    <part Name="Render" DisplayName="{{R|}}{{M|}}{{R|}}" Tile="Items/sw_mumblemouth.bmp" ColorString="&amp;R" DetailColor="M" />
     <part Name="MumblesInfection" Chance="5" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
     <part Name="ItemElements" Elements="chance::4" />
   </object>
 
 <object Name="WaxInfection" Inherits="FungalInfection" Replace="true">
     <part Name="Armor" WornOn="*" Elec="10" DV="0" Heat="-5" AV="0" />
     <part Name="Physics" Weight="6" />
-    <part Name="Render" DisplayName="{{Y|?????}}" Tile="Items/sw_waxflab.bmp" ColorString="&amp;Y" DetailColor="y" />
-    <part Name="Description" Short="????" />
+    <part Name="Render" DisplayName="{{Y|}}" Tile="Items/sw_waxflab.bmp" ColorString="&amp;Y" DetailColor="y" />
+    <part Name="Description" Short="" />
     <part Name="LiquidVolume" MaxVolume="4" StartVolume="0" InitialLiquid="wax-1000" />
     <part Name="LiquidProducer" Liquid="wax" WorksOnWearer="true" WorksOnSelf="false" VariableRate="50-100" ChanceSkipSameCell="50" PureOnFloor="true" />
   </object>
 
 <object Name="PaxInfection" Inherits="FungalInfection" Replace="true">
-    <part Name="Render" DisplayName="{{O|????}}" Tile="Items/sw_klanq_infection.bmp" ColorString="&amp;O" DetailColor="C" />
+    <part Name="Render" DisplayName="{{O|}}" Tile="Items/sw_klanq_infection.bmp" ColorString="&amp;O" DetailColor="C" />
     <part Name="Armor" WornOn="*" DV="0" AV="0" Intelligence="1" />
     <part Name="FungalInfection" Curable="false" />
     <part Name="PaxInfection" />
-    <part Name="Description" Short="?????" />
+    <part Name="Description" Short="" />
   </object>
 
 <object Name="Security Card" Inherits="Item" Replace="true">
     <part Name="Render" RenderString="-" Tile="Items/sw_security_card.bmp" Occluding="false" RenderIfDark="true" />
-    <part Name="Description" Short="???" />
+    <part Name="Description" Short="" />
     <tag Name="DynamicObjectsTable:SecurityCards" />
     <tag Name="AdjustWeaponScore" Value="-2" />
     <tag Name="BaseObject" Value="*noinherit" />
@@ -10595,78 +10595,78 @@
   </object>
 
 <object Name="Red Security Card" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{r|????}}" ColorString="&amp;r" />
+    <part Name="Render" DisplayName="{{r|}}" ColorString="&amp;r" />
     <part Name="Commerce" Value="100" />
   </object>
 
 <object Name="Yellow Security Card" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|}}" ColorString="&amp;W" />
     <part Name="Commerce" Value="200" />
   </object>
 
 <object Name="Green Security Card" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{G|???}}" ColorString="&amp;G" />
+    <part Name="Render" DisplayName="{{G|}}" ColorString="&amp;G" />
     <part Name="Commerce" Value="300" />
   </object>
 
 <object Name="Blue Security Card" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{B|?????}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|}}" ColorString="&amp;B" />
     <part Name="Commerce" Value="400" />
   </object>
 
 <object Name="Purple Security Card" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{M|?????}}" ColorString="&amp;M" />
+    <part Name="Render" DisplayName="{{M|}}" ColorString="&amp;M" />
     <part Name="Commerce" Value="500" />
   </object>
 
 <object Name="Copper Trollking Key" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{w|????}}" RenderString="-" ColorString="&amp;w" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
+    <part Name="Render" DisplayName="{{w|}}" RenderString="-" ColorString="&amp;w" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
     <part Name="Commerce" Value="50" />
     <stat Name="AV" Value="25" />
     <stat Name="Hitpoints" Value="300" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
   </object>
 
 <object Name="Silver Trollking Key" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{silvery|???}}" RenderString="-" ColorString="&amp;Y" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
+    <part Name="Render" DisplayName="{{silvery|}}" RenderString="-" ColorString="&amp;Y" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
     <part Name="Commerce" Value="100" />
     <stat Name="AV" Value="25" />
     <stat Name="Hitpoints" Value="300" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
   </object>
 
 <object Name="Gold Trollking Key" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{W|????}}" RenderString="-" ColorString="&amp;W" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
+    <part Name="Render" DisplayName="{{W|}}" RenderString="-" ColorString="&amp;W" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
     <part Name="Commerce" Value="200" />
     <stat Name="AV" Value="25" />
     <stat Name="Hitpoints" Value="300" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
   </object>
 
 <object Name="BarathrumKey" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{c|????}}" ColorString="&amp;C" Tile="Items/sw_key.bmp" />
+    <part Name="Render" DisplayName="{{c|}}" ColorString="&amp;C" Tile="Items/sw_key.bmp" />
     <part Name="Commerce" Value="50" />
     <stat Name="AV" Value="25" />
     <stat Name="Hitpoints" Value="300" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="GritGateGridKey" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{c|????}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{c|}}" ColorString="&amp;C" />
     <part Name="Commerce" Value="50" />
-    <part Name="Description" Short="????" />
+    <part Name="Description" Short="" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="CrystalKey" Inherits="Security Card" Replace="true">
-    <part Name="Render" DisplayName="{{m|????}}" ColorString="&amp;m" DetailColor="y" Tile="Items/sw_key.bmp" />
-    <part Name="Description" Short="???" />
+    <part Name="Render" DisplayName="{{m|}}" ColorString="&amp;m" DetailColor="y" Tile="Items/sw_key.bmp" />
+    <part Name="Description" Short="" />
     <part Name="Commerce" Value="50" />
     <stat Name="AV" Value="25" />
     <stat Name="Hitpoints" Value="300" />
@@ -10993,3 +10993,4 @@
   </object>
 
 </objects>
+

@@ -2025,7 +2025,7 @@
       <text IfLastChoice="Barathrumites">
         バラサラム派と言った？ なるほど、そう発音するのか。
 
-        グリット・ゲート、ええと……そこに Q ガールが住んでいるんだよね？ 彼女の著した『擬態の疾患についての論考』は私の愛読書だ。そんな場所なら、きっと同胞にも良い影響がある。皆に話しておこう。
+        グリット・ゲート、ええと……そこに Qガールが住んでいるんだよね？ 彼女の著した『擬態の疾患についての論考』は私の愛読書だ。そんな場所なら、きっと同胞にも良い影響がある。皆に話しておこう。
       </text>
       <text IfLastChoice="Kyakukya">
         キャクキャ？ 音節がそんなに多いとは思わなかった。
@@ -2669,7 +2669,7 @@
       <text>
         我らに刃向かう支配者どもに死を。
       </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">Eatersの墓所からブライトシェオルへ入らねばならない。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">イーターの墓所からブライトシェオルへ入らねばならない。</choice>
       <choice GotoID="Greetings">この作業場のことだが……</choice>
       <choice GotoID="End">生きて飲め。</choice>
     </start>
@@ -2690,7 +2690,7 @@
       <choice ID="BajaBlast" GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知っているか？</choice>
       <choice ID="BananasFoster" GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチと、自称の伯爵については？</choice>
       <choice ID="VanillaShake" GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りを感じたか、ダルディ？</choice>
-      <choice ID="MushroomRisotto" GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice ID="MushroomRisotto" GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice ID="ThePorridge" GotoID="Porridge">かまどから漂うその匂いは……言葉にできない。</choice>
       <choice ID="Platespinning" GotoID="FoodNetwork">何を作っている？</choice>
       <choice GotoID="Kitchen">実験室？ どう見ても台所だろう。</choice>
@@ -2890,7 +2890,7 @@
 
         それでも、準備はできていなかった。この侵害の感覚は電気焼灼のように焼けつく。
       </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">Eatersの墓所からブライトシェオルへ入らねばならない。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">イーターの墓所からブライトシェオルへ入らねばならない。</choice>
       <choice GotoID="Greetings">話をしないか、アロイシウス。</choice>
       <choice GotoID="End">生きて飲め。</choice>
     </start>
@@ -2911,7 +2911,7 @@
       <choice ID="Aloysusa" GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知っているか？</choice>
       <choice ID="Aloyporch" GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチと、自称の伯爵については？</choice>
       <choice ID="Aloyrumbling" GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りを感じたか、アロイシウス？</choice>
-      <choice ID="Aloyklanq" GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice ID="Aloyklanq" GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice ID="Kids" GotoID="Children">子どもがいるのか？</choice>
       <choice ID="Introvert" GotoID="Quiet">会話は好まないのか？</choice>
       <choice ID="Eresius" GotoID="Ereshkigal">エレシュキガルとは誰だ？</choice>
@@ -2965,7 +2965,7 @@
 
     <node ID="Klanq">
       <text>
-        パックス・クランクには会った。吹きかけられもした。
+        パクス・クランクには会った。吹きかけられもした。
 
         率直に言えば、私は食用で不活性な菌類のほうが好みだ。
       </text>
@@ -3042,7 +3042,7 @@
       <text>
         =name=、戻ったね！ 墓の中で君を失うのではと恐れたが、見違えるほど元気そうだ。もっと信を置くべきだったかな、いや少なくとも心配は減らすべきだった。
 
-        ところで、バラサラムの作業場を訪ねたかい？ クランクと Q Girl がそこで君を待っているよ。
+        ところで、バラサラムの作業場を訪ねたかい？ クランクと Qガールがそこで君を待っているよ。
       </text>
       <choice GotoID="IHave" SetBooleanState="HortensaReplied,true">行ったよ。</choice>
       <choice GotoID="IHavent" SetBooleanState="HortensaReplied,true">まだだ。</choice>
@@ -3062,7 +3062,7 @@
       <text>
         君の姿を見るだけで胸が満ちるよ、仔よ。無事でいてくれてありがとう。
       </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">Eatersの墓所からブライトシェオルへ入らねばならない。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">イーターの墓所からブライトシェオルへ入らねばならない。</choice>
       <choice GotoID="Greetings">命をたっぷりと飲みな、ホーテンサ。話をしよう。</choice>
       <choice GotoID="End">あなたもね。生きて飲め。</choice>
     </start>
@@ -3083,7 +3083,7 @@
       <choice GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知っているか？</choice>
       <choice GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチと、自称の伯爵については？</choice>
       <choice GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りを感じたか、ホーテンサ？</choice>
-      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice GotoID="HowLong">ずいぶん髪が白い！ どれくらいグリット・ゲートで暮らしている？</choice>
       <choice GotoID="OtherBarathrumites">ほかのバラサラム派のことを教えてくれないか？</choice>
       <choice GotoID="LiquidTinker">あなたは液体ティンカーなの？</choice>
@@ -3098,7 +3098,7 @@
       </text>
       <choice GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチと、自称の伯爵については？</choice>
       <choice GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りを感じたか、ホーテンサ？</choice>
-      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice GotoID="HowLong">どれくらいグリット・ゲートで暮らしている？</choice>
       <choice GotoID="OtherBarathrumites">ほかのバラサラム派のことを教えてくれないか？</choice>
       <choice GotoID="LiquidTinker">あなたは液体ティンカーなの？</choice>
@@ -3111,7 +3111,7 @@
       </text>
       <choice GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知っているか？</choice>
       <choice GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りを感じたか、ホーテンサ？</choice>
-      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice GotoID="HowLong">どれくらいグリット・ゲートで暮らしている？</choice>
       <choice GotoID="OtherBarathrumites">ほかのバラサラム派のことを教えてくれないか？</choice>
       <choice GotoID="LiquidTinker">あなたは液体ティンカーなの？</choice>
@@ -3124,7 +3124,7 @@
       </text>
       <choice GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知っているか？</choice>
       <choice GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチと、自称の伯爵については？</choice>
-      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice GotoID="HowLong">どれくらいグリット・ゲートで暮らしている？</choice>
       <choice GotoID="OtherBarathrumites">ほかのバラサラム派のことを教えてくれないか？</choice>
       <choice GotoID="LiquidTinker">あなたは液体ティンカーなの？</choice>
@@ -3177,8 +3177,8 @@
       <choice GotoID="Barathrum">バラサラム。</choice>
       <choice GotoID="Otho">オトー。</choice>
       <choice GotoID="Jacobo">ヤコボ。</choice>
-      <choice GotoID="Sparafucile">スパラフチーレ。</choice>
-      <choice GotoID="Q Girl">Q Girl。</choice>
+      <choice GotoID="Sparafucile">スパラフチレ。</choice>
+      <choice GotoID="Q Girl">Qガール。</choice>
       <choice GotoID="Mafeo">マフェオ。</choice>
       <choice GotoID="Iseppa">イセッパ。</choice>
       <choice GotoID="Neek">ニーク。</choice>
@@ -3196,8 +3196,8 @@
       </text>
       <choice GotoID="Barathrum">バラサラム。</choice>
       <choice GotoID="Otho">オトー。</choice>
-      <choice GotoID="Sparafucile">スパラフチーレ。</choice>
-      <choice GotoID="Q Girl">Q Girl。</choice>
+      <choice GotoID="Sparafucile">スパラフチレ。</choice>
+      <choice GotoID="Q Girl">Qガール。</choice>
       <choice GotoID="Mafeo">マフェオ。</choice>
       <choice GotoID="Iseppa">イセッパ。</choice>
       <choice GotoID="Neek">ニーク。</choice>
@@ -3215,8 +3215,8 @@
       </text>
       <choice GotoID="Barathrum">バラサラム。</choice>
       <choice GotoID="Jacobo">ヤコボ。</choice>
-      <choice GotoID="Sparafucile">スパラフチーレ。</choice>
-      <choice GotoID="Q Girl">Q Girl。</choice>
+      <choice GotoID="Sparafucile">スパラフチレ。</choice>
+      <choice GotoID="Q Girl">Qガール。</choice>
       <choice GotoID="Mafeo">マフェオ。</choice>
       <choice GotoID="Iseppa">イセッパ。</choice>
       <choice GotoID="Neek">ニーク。</choice>
@@ -3302,7 +3302,7 @@
       <text>
         聞きたい？ ぼくが最初に父さんと友だちに組み立てられたとき、ぼくはシェム2だった。「ぼくを作って」計画の二番目の反復版。
 
-        廊下を駆け回って、ニークが読んでくれる物語を聞いて、スパラフチーレの作業台によじ登ってネジを取り替えてもらううちに、ぼくは「なれる自分」じゃないと気づいた。だから、自分でシェム1に格下げしたんだ。
+        廊下を駆け回って、ニークが読んでくれる物語を聞いて、スパラフチレの作業台によじ登ってネジを取り替えてもらううちに、ぼくは「なれる自分」じゃないと気づいた。だから、自分でシェム1に格下げしたんだ。
 
         それが三回あった。
       </text>
@@ -3360,7 +3360,7 @@
 
     <node ID="GuestKlanq">
       <text>
-        Q Girl とパックス・クランクの想像力が結びつく瞬間を見たいという、燃えるような好奇心を否定できない。君だってそうだろう。虚無から存在の充足へと創造がふくらむ様子を眺められたなら、私の年代記に喜びの記述を加えられるのだけど……
+        Qガールとパクス・クランクの想像力が結びつく瞬間を見たいという、燃えるような好奇心を否定できない。君だってそうだろう。虚無から存在の充足へと創造がふくらむ様子を眺められたなら、私の年代記に喜びの記述を加えられるのだけど……
         
         でも蜜壺に指を突っこみすぎるな、と幼いころの師がよく言っていた。
       </text>
@@ -3373,7 +3373,7 @@
         
         何か必要なものはあるか、=name=?
       </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">Eatersの墓所を通ってブライトシールへ入らなければならない。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">イーターの墓所を通ってブライトシールへ入らなければならない。</choice>
       <choice GotoID="Greetings">光があなたを透りますように、ヤコボ。話そう。</choice>
       <choice GotoID="End">いや、いい。生きて飲め。</choice>
     </start>
@@ -3448,7 +3448,7 @@
       <text>
         顕れた美、クロムの浅瀬は畏敬そのもの。私の信仰では、カサフェセンスは永劫の虚空であらゆる金属を産み落とした存在だ。クロムの鐘楼にも、あらゆる機械にも、そして私たち自身の血にも、その方の欠片が宿っている。
         
-        私にとっては金属にとどまらない。秩序だったものすべてにその本質は染みわたる――詩、数学の証明、整った作業机……つまり Q Girl の机ではない、ということだ。
+        私にとっては金属にとどまらない。秩序だったものすべてにその本質は染みわたる――詩、数学の証明、整った作業机……つまり Qガールの机ではない、ということだ。
       </text>
       <choice UseID="JacoboRumblingChoice" />
       <choice GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ヤコボ、ベセスダ・スーサに入る助言はないか？</choice>
@@ -4687,7 +4687,7 @@
       <choice GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知ってる？</choice>
       <choice GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチ伯については？</choice>
       <choice GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りって何だった？</choice>
-      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクのこと知ってる？</choice>
+      <choice GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクのこと知ってる？</choice>
       <choice GotoID="GoingOn" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">最近のあれこれをどう思ってる？</choice>
       <choice GotoID="Do">ここで何をしてるんだ、ニーク？</choice>
       <choice GotoID="Hair">その髪、すごく……長方形だね。</choice>
@@ -4720,14 +4720,14 @@
     </node>
     <node ID="Rumbling">
       <text>
-        君も感じたでしょ！ 石。全部。動いた。わあああ！ みんなで踊ったみたいだった。マフェオもスパラフチーレもクロムっ子も岩も、残りのみんなも。
+        君も感じたでしょ！ 石。全部。動いた。わあああ！ みんなで踊ったみたいだった。マフェオもスパラフチレもクロムっ子も岩も、残りのみんなも。
       </text>
       <choice GotoID="Start">……</choice>
       <choice GotoID="End">生きて飲め、友よ。</choice>
     </node>
     <node ID="Klanq">
       <text>
-        パックス・クランクってなあに？
+        パクス・クランクってなあに？
       </text>
       <choice GotoID="Start">……そっか。</choice>
       <choice GotoID="End">生きて飲め、友よ。</choice>
@@ -4735,7 +4735,7 @@
 
     <node ID="GoingOn">
       <text>
-        クランク。クランク。クランク。クランク。パックス・クランク。
+        クランク。クランク。クランク。クランク。パクス・クランク。
         
         下に行かせてって頼みたいけど、あそこには“マッシュルーム（mush room）”が足りないの。いや、あるからこそ足りないっていうか。つまりね、「ニークには聞こえなくていいんだよ」って感じ。
       </text>
@@ -4779,7 +4779,7 @@
     </node>
     <node ID="GritGate2">
       <text>
-        Q Girl に駆け寄って全部のガジェットをつついて、頭もトントンする。そのままオソの執務室をそっと通り抜けて、シェム -1 を抱きしめて図書室に連れていって読み聞かせする。ときどきバラサラムとホルテンザもいて、笑ってくれる。それからお腹がすくから台所へ転がっていって、花瓶から蜂蜜をすすってダルディににらまれる。「ジディングだよ」って言って、パイプをよじ登ってアロイシアスに「生きて飲め、生きて飲め、生きて飲め」ってささやく。クロムっ子の頭を撫でて、エレシュキガルには「どんどんどんどん、好きだよ」って言う。それから倉庫に忍び込んでクロムっ子全員の頭を撫でて、消化椅子で昼寝をして、ひらめいたら部屋に戻ってノートに書きつけるの。
+        Qガールに駆け寄って全部のガジェットをつついて、頭もトントンする。そのままオソの執務室をそっと通り抜けて、シェム -1 を抱きしめて図書室に連れていって読み聞かせする。ときどきバラサラムとホルテンザもいて、笑ってくれる。それからお腹がすくから台所へ転がっていって、花瓶から蜂蜜をすすってダルディににらまれる。「ジディングだよ」って言って、パイプをよじ登ってアロイシアスに「生きて飲め、生きて飲め、生きて飲め」ってささやく。クロムっ子の頭を撫でて、エレシュキガルには「どんどんどんどん、好きだよ」って言う。それから倉庫に忍び込んでクロムっ子全員の頭を撫でて、消化椅子で昼寝をして、ひらめいたら部屋に戻ってノートに書きつけるの。
       </text>
       <choice GotoID="Start">……</choice>
       <choice GotoID="End">生きて飲め、ニーク。</choice>
@@ -4803,7 +4803,7 @@
 
         無事でよかった。何か必要なものはあるかい？
       </text>
-      <choice GotoID="TombQuest"  IfHaveActiveQuest="Tomb of the Eaters">Eatersの墓所からブライトシェオルへ入らねばならない。</choice>
+      <choice GotoID="TombQuest"  IfHaveActiveQuest="Tomb of the Eaters">イーターの墓所からブライトシェオルへ入らねばならない。</choice>
       <choice GotoID="GuestKlanq" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">この状況、どう見てる？</choice>
       <choice GotoID="End">今はない。生きて飲め。</choice>
     </start>
@@ -4831,7 +4831,7 @@
       <choice ID="MafeoBethesda" GotoID="Bethesda" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知っているか？</choice>
       <choice ID="MafeoOmonporch" GotoID="Omonporch" IfHaveActiveQuest="The Earl of Omonporch">オモンポーチと自称の伯爵については？</choice>
       <choice ID="MafeoRumbling" GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">あの地鳴りを感じたか、マフェオ？</choice>
-      <choice ID="MafeoKlanq" GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パックス・クランクに会ったことは？</choice>
+      <choice ID="MafeoKlanq" GotoID="Klanq" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
       <choice ID="MafeoWhat" GotoID="WhatWares">何を売っている？</choice>
       <choice ID="MafeoWhere" GotoID="GritGate">ここはどんな場所だ？</choice>
       <choice ID="MafeoWho" GotoID="AboutTheQuillbear">君はどんな種族なんだ？</choice>
@@ -4990,7 +4990,7 @@
     </start>
     <node ID="Joppa" Inherits="Start">
       <text>
-        -ここか？ オアシスの集落だ。世界の棚の下。モグラ・イーの大塩砂漠を、風が塩の息を百万と積んでは吐き出す。東には腐臭ただようクードの密林がある。
+        -ここか？ オアシスの集落だ。世界の棚の下。モグラヤイの大塩砂漠を、風が塩の息を百万と積んでは吐き出す。東には腐臭ただようクードの密林がある。
 
         その二つの裂け目で水蔓が育つ。私たちはそれを育てているのだよ、=player.formalAddressTerm=。
       </text>
@@ -6017,7 +6017,7 @@
       <text>
         ジョッパは私の家だ、そうさ。
 
-        兄弟たちとソルトバックのキャラバンでモグラ・イーを歩いていたが、イルーダド長老に会ってすぐにここへ腰を落ち着けると決めた。=player.formalAddressTerm= =player.apparentSpecies= も、長老と話せばわかるはずだよ。
+        兄弟たちとソルトバックのキャラバンでモグラヤイを歩いていたが、イルーダド長老に会ってすぐにここへ腰を落ち着けると決めた。=player.formalAddressTerm= =player.apparentSpecies= も、長老と話せばわかるはずだよ。
       </text>
     </node>
     <node ID="AboutTheDromad">
@@ -6081,14 +6081,14 @@
       <choice GotoID="Grit Gate" IfHaveActiveQuest="A Canticle for Barathrum">まもなくグリット・ゲートへ旅立つ。</choice>
       <choice GotoID="Stilt" IfHaveActiveQuest="O Glorious Shekhinah!">北のスティルトへ巡礼する。</choice>
       <choice GotoID="Who">あなたは誰だ？</choice>
-      <choice GotoID="Warden">ウォーデンとは？</choice>
+      <choice GotoID="Warden">監視官とは？</choice>
       <choice GotoID="End">生きて飲め。</choice>
     </node>
     <node ID="Who" Inherits="Start">
-      <text>イラメって呼ばれてる、ジョッパのウォーデンだ。厄介ごとは斬る。厄介になるんじゃねえ。</text>
+      <text>イラメって呼ばれてる、ジョッパの監視官だ。厄介ごとは斬る。厄介になるんじゃねえ。</text>
     </node>
     <node ID="Warden" Inherits="Start">
-      <text>クードの集落にはだいたいウォーデンがいる。平和を脅かす芽は踏み潰すのが役目だ。</text>
+      <text>クードの集落にはだいたい監視官がいる。平和を脅かす芽は踏み潰すのが役目だ。</text>
     </node>
     <node ID="Rustwells" Inherits="Start">
       <text>東の方か？ うげ。俺なら行かん。クドズに行け。錆で肩当てが溶け落ちるぞ。</text>
@@ -7206,9 +7206,9 @@
   <conversation ID="Otho">
     <node ID="Signal" Replace="true">
       <text>
-        その信号は、どこからとも知れぬ場所から繰り返し送信されているものだ。=V0tinkeraddendum= 我らがティンカーの一人、&amp;mQ Girl&amp;y が長波検出器を仕掛けている最中に見つけた。残念ながら暗号化されており、ここには解読手段がない。だが、この件でお前が助けになれるかもしれない。
+        その信号は、どこからとも知れぬ場所から繰り返し送信されているものだ。=V0tinkeraddendum= 我らがティンカーの一人、&amp;mQガール&amp;y が長波検出器を仕掛けている最中に見つけた。残念ながら暗号化されており、ここには解読手段がない。だが、この件でお前が助けになれるかもしれない。
 
-        我々はずっと以前から、大広間 &amp;CBethesda Susa&amp;y の底に、完全に機能する &amp;Wbaetyl&amp;y があると知っている。メカニマス教はその周囲を聖別して神殿を建てた。Q Girl は信号を解読する方法を考案したと主張しているが、ベテルの計算資源が必要だ。もしメカニマスの施設に潜入できるなら、ベテルに接続して信号を解読できるだろう。
+        我々はずっと以前から、大広間 &amp;CBethesda Susa&amp;y の底に、完全に機能する &amp;Wbaetyl&amp;y があると知っている。メカニマス教はその周囲を聖別して神殿を建てた。Qガールは信号を解読する方法を考案したと主張しているが、ベテルの計算資源が必要だ。もしメカニマスの施設に潜入できるなら、ベテルに接続して信号を解読できるだろう。
       </text>
       <choice GotoID="Baetyl?">ベテルってなんだ？</choice>
     </node>
@@ -7227,7 +7227,7 @@
 
     <node ID="Bethesda1" Replace="true">
       <text>
-        よろしい、=factionaddress:Barathrumites=。作業場の &amp;mQ Girl&amp;y に話しかけろ。彼女がベテル向けの手順をこのディスクの複製に書き込んでくれる。
+        よろしい、=factionaddress:Barathrumites=。作業場の &amp;mQガール&amp;y に話しかけろ。彼女がベテル向けの手順をこのディスクの複製に書き込んでくれる。
 
         もう一つ注意がある。ベテルは喰らう者たちの古い凍結居住区の下にある。時の流れは凍結霧を閉じ込める機構を蝕み、いまや冷気は室から漏れ出して洞窟全体を冷やしている。=player.reflexive= を守るため、暖かい衣服を用意しておけ。
 
@@ -7255,7 +7255,7 @@
 
     <node ID="Overripe" Replace="true">
       <text>
-        バラサラムは重大な企てにお前の力を必要としている。北方はるか &amp;COmonporch&amp;y へ向かえ。そこではスピンドルが大地から天へ伸びている。不幸にも、フィタ連合の厄介な商人がそこへ移り住み、自らをオモンポーチ伯と称している。スピンドルの管理権を借り受けられるよう取り決めを結んでこい。叶わぬなら、その「伯」を排除せよ。
+        バラサラムは重大な企てにお前の力を必要としている。北方はるかオモンポーチへ向かえ。そこではスピンドルが大地から天へ伸びている。不幸にも、フィタ連合の厄介な商人がそこへ移り住み、自らをオモンポーチ伯と称している。スピンドルの管理権を借り受けられるよう取り決めを結んでこい。叶わぬなら、その「伯」を排除せよ。
 
         オモンポーチへ向かう途上では気を付けろ、=factionaddress:Barathrumites=。クド東方の辺境には聖堂騎士団が潜む。
       </text>
@@ -7355,7 +7355,7 @@
       <choice ID="ClimberChoice" IfHaveQuest="Pax Klanq, I Presume?" IfNotFinishedQuestStep="Pax Klanq, I Presume?~Get Q Girl's Blueprints for the Climber" GotoID="Climber">
         バラサラムに頼まれて、クライマーの設計図をパクス・クランクへ届けに来た。
       </choice>
-      <choice ID="RumblingChoice" GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">さっきの地鳴り、感じた？ Q ガール。</choice>
+      <choice ID="RumblingChoice" GotoID="Rumbling" IfHaveActiveQuest="Grave Thoughts">さっきの地鳴り、感じた？ Qガール。</choice>
       <choice ID="QuetzalChoice" GotoID="Quetzal">「ケツァール」ってどういう意味？</choice>
       <choice ID="HairChoice" IfNotHaveState="HasMonochrome" Achievement="ACH_COMPLIMENT_QGIRL" GotoID="Hair">君の髪、赤土と藍のクェーサーみたいだ。</choice>
       <choice ID="GogglesChoice" IfWearingBlueprint="Goggles" GotoID="Goggles">このゴーグル、どう？</choice>
@@ -7434,14 +7434,14 @@
       <text>
         うん、勇敢な友だち。今すぐ焼き込むね。
       </text>
-      <choice GotoID="End" IfHaveQuest="Decoding the Signal" CompleteQuestStep="Decoding the Signal~Get Q Girl's Instructions onto the Data Disk" TakeItem="Argyve's Data Disk" GiveItem="Argyve's Data Disk Encoded">ありがとう、Q ガール。</choice>
+      <choice GotoID="End" IfHaveQuest="Decoding the Signal" CompleteQuestStep="Decoding the Signal~Get Q Girl's Instructions onto the Data Disk" TakeItem="Argyve's Data Disk" GiveItem="Argyve's Data Disk Encoded">ありがとう、Qガール。</choice>
     </node>
 
     <node ID="Climber" Replace="true">
       <text>
         はい、これ、勇敢な友だち。幸運を！
       </text>
-      <choice GotoID="End" IfHaveQuest="Pax Klanq, I Presume?" CompleteQuestStep="Pax Klanq, I Presume?~Get Q Girl's Blueprints for the Climber" GiveItem="ClimberBlueprints">ありがとう、Q ガール。</choice>
+      <choice GotoID="End" IfHaveQuest="Pax Klanq, I Presume?" CompleteQuestStep="Pax Klanq, I Presume?~Get Q Girl's Blueprints for the Climber" GiveItem="ClimberBlueprints">ありがとう、Qガール。</choice>
     </node>
   </conversation>
 
@@ -7530,14 +7530,14 @@
 
     <node ID="Golem">
       <text>
-        オモンポーチの上の峰では、聖堂騎士団が戦鏡越しにこちらを監視し、攻撃の準備を進めている。ネフィリムも月階のゆりかごで身を起こし、地獄めいた目的のためにうごめいている。要するに――準備時間の欠如と武装不足のせいで、パクス・クランクは Q ガールのクライマー設計をもはや現実的とは見ていない。ここはクランクの言葉を信じるしかない……。
+        オモンポーチの上の峰では、聖堂騎士団が戦鏡越しにこちらを監視し、攻撃の準備を進めている。ネフィリムも月階のゆりかごで身を起こし、地獄めいた目的のためにうごめいている。要するに――準備時間の欠如と武装不足のせいで、パクス・クランクは Qガールのクライマー設計をもはや現実的とは見ていない。ここはクランクの言葉を信じるしかない……。
       </text>
       <choice GotoID="Golem2">*さらに耳を傾ける*</choice>
     </node>
 
     <node ID="Golem2">
       <text>
-        気落ちはするが、まだ別の希望がある。クランクが新たな設計を提案した。あらゆる角度から見て奇抜な代物だ。だが当初の不安は乗り越えた。Q ガールも私も、この企画の補助に回っている。
+        気落ちはするが、まだ別の希望がある。クランクが新たな設計を提案した。あらゆる角度から見て奇抜な代物だ。だが当初の不安は乗り越えた。Qガールも私も、この企画の補助に回っている。
       </text>
       <choice GotoID="Golem3">*さらに耳を傾ける*</choice>
     </node>
@@ -7599,7 +7599,7 @@
       <text>
         ああ、動力の問題は難題だ。我々の標準電源でも動くかもしれんが、上昇中に電磁攻撃を受ければ無力化される。聖堂騎士団なら容易く行うだろう。
 
-        選択肢は二つ。クランクと Q ガールが考案したニュートロニック電池なら、電磁スペクトルの弱点を回避できる。ただし中性子束3ドラムが必要だ。もう一つは遠隔給電だが、スピンドル全長を渡るには驚異的な供給源が要る。緊縛樹チャヴァーを頼れ。報告によれば、月階を再び巡行し始めたらしい。そちらの道を選ぶなら、エイン・ロージの幹を探せ。
+        選択肢は二つ。クランクと Qガールが考案したニュートロニック電池なら、電磁スペクトルの弱点を回避できる。ただし中性子束3ドラムが必要だ。もう一つは遠隔給電だが、スピンドル全長を渡るには驚異的な供給源が要る。緊縛樹チャヴァーを頼れ。報告によれば、月階を再び巡行し始めたらしい。そちらの道を選ぶなら、エイン・ロージの幹を探せ。
       </text>
     </node>
 
@@ -7676,7 +7676,7 @@
       <choice GotoID="Signal" IfFinishedQuest="Pax Klanq, I Presume?">もう一度、信号について教えてほしい。</choice>
       <choice GotoID="PaxComplete" IfHaveActiveQuest="Pax Klanq, I Presume?" IfFinishedQuestStep="Pax Klanq, I Presume?~Convince Pax Klanq to Construct the Climber">パクス・クランクにクライマー建造を約束させた。</choice>
       <choice GotoID="TombIntro" IfFinishedQuest="Pax Klanq, I Presume?" IfNotHaveQuest="Tomb of the Eaters">パクス・クランクが引き受けた。次は？</choice>
-      <choice GotoID="TombExplain1" IfHaveActiveQuest="Tomb of the Eaters">Eatersの墓所について、もう一度聞かせてくれ。</choice>
+      <choice GotoID="TombExplain1" IfHaveActiveQuest="Tomb of the Eaters">イーターの墓所について、もう一度聞かせてくれ。</choice>
       <choice GotoID="Golem" IfFinishedQuest="Tomb of the Eaters" IfNotHaveQuest="The Golem">磁場は止まった。スピンドルは自由だ。次はどうする？</choice>
       <choice GotoID="Golem4" IfHaveActiveQuest="The Golem">巨大な存在をこしらえる計画を、もう一度教えてくれ。</choice>
       <choice GotoID="GolemQuestDone" IfFinishedQuest="The Golem" IfNotHaveState="BarathrumGolemDone">あの存在は完成した。次の段階は？</choice>
@@ -7719,20 +7719,20 @@
       <text>
         クライマー設計は電磁石で惑星磁場と結合し、トルクを生み出す仕組みだ。だがスピンドル自身が干渉磁場を生み出しており、おそらく不法な上昇を防ぐ仕掛けなのだろう。
 
-        我々の目的はスピンドルの制御装置にアクセスして、その磁場を無効化すること。だが手段は謎だ。デジトゥムの断片的な記録をエレシュキガルが縫い合わせたところ、ブライトシェオルと呼ばれる場所から磁場を停止できるらしいとわかった。シン・ワールドに位置し、Eatersの墓所にあるレシェフの墓を通ってのみ到達できる。
+        我々の目的はスピンドルの制御装置にアクセスして、その磁場を無効化すること。だが手段は謎だ。デジトゥムの断片的な記録をエレシュキガルが縫い合わせたところ、ブライトシェオルと呼ばれる場所から磁場を停止できるらしいとわかった。シン・ワールドに位置し、イーターの墓所にあるレシェフの墓を通ってのみ到達できる。
       </text>
       <choice GotoID="TombBody2">……</choice>
     </node>
 
     <node ID="TombBody2">
       <text>
-        奇妙で不確かだが、ティンカーなら知っているだろう？ 粗い設計図でも、何もないよりは良い。オモンポーチへ戻り、Eatersの墓所に入るのだ。内部では、盗掘者たちが刻んだ迷走の道筋を辿り、レシェフの埋葬室へ昇れ。
+        奇妙で不確かだが、ティンカーなら知っているだろう？ 粗い設計図でも、何もないよりは良い。オモンポーチへ戻り、イーターの墓所に入るのだ。内部では、盗掘者たちが刻んだ迷走の道筋を辿り、レシェフの埋葬室へ昇れ。
 
         墓所への入り方については、レシェフが千年前に門を封じた。ただし封印には不備がある。古の死の印は時に失われたが、それを取り戻して身体に刻めば、是もなく死門が開く――かつて無数の喰らう者たちがそうであったように。
 
         死の印を取り戻せ、=name=。墓所へ入り、ブライトシェオルへ渡り、再びダイヤルと鼓を操作するのだ。
       </text>
-      <choice GotoID="TombBody3">言われた通り、Eatersの墓所へ入ろう。</choice>
+      <choice GotoID="TombBody3">言われた通り、イーターの墓所へ入ろう。</choice>
       <choice GotoID="End">大きな頼みだ……考えさせてくれ。</choice>
     </node>
 
@@ -7750,14 +7750,14 @@
       <text>
         クライマー設計は電磁石で惑星磁場と結合し、トルクを得る。だがスピンドル自身が干渉磁場を発生させており、おそらく不法な上昇を妨げている。
 
-        我々の狙いはスピンドルの制御装置に接続し、この磁場を無効化することだが、まだ手段は判然としない。エレシュキガルが記録の断片から織り上げた謎めいた綴りによれば、シン・ワールドにあるブライトシェオルから停止でき、Eatersの墓所のレシェフの墓を通ってのみ辿り着ける。
+        我々の狙いはスピンドルの制御装置に接続し、この磁場を無効化することだが、まだ手段は判然としない。エレシュキガルが記録の断片から織り上げた謎めいた綴りによれば、シン・ワールドにあるブライトシェオルから停止でき、イーターの墓所のレシェフの墓を通ってのみ辿り着ける。
       </text>
       <choice GotoID="TombExplain2">……</choice>
     </node>
 
     <node ID="TombExplain2">
       <text>
-        奇妙で不確かだが、粗い設計図でもないよりはましだ。オモンポーチに戻り、Eatersの墓所に入れ。中では賊が刻んだ迷路を辿り、レシェフの埋葬室へ昇るのだ。
+        奇妙で不確かだが、粗い設計図でもないよりはましだ。オモンポーチに戻り、イーターの墓所に入れ。中では賊が刻んだ迷路を辿り、レシェフの埋葬室へ昇るのだ。
 
         墓所の門については、千年前にレシェフが封印した。ただし封印には綻びがある。失われた死の印を取り戻し、その印を肌に刻めば、死門がお前のために開くだろう。かつて無数の喰らう者の遺骸がそうであったように。
 
@@ -7799,7 +7799,7 @@
       <text>
         そうだ。お前の同胞団への奉仕は称賛に値する、=factionaddress:Barathrumites=。ベセスダ・スーサの蒸気深部に挑み、信号を解読し、スピンドル外輪を確保し、自称伯爵をあしらい、そして何より我らの飛地を聖堂騎士団から守った。
 
-        ベセスダから戻って以来、信号の中身を気にしていたことだろう。真実の重みから守るため、私は隠していた。今その荷を負うのは、オソと Q ガール、そして私だけだった。だが状況は変わった。時の川が我らの仕掛けと機械の歯車を回し、流れを速めている。ここから先は、荷を分かち合わねばならん。お前も知るんだ。
+        ベセスダから戻って以来、信号の中身を気にしていたことだろう。真実の重みから守るため、私は隠していた。今その荷を負うのは、オソと Qガール、そして私だけだった。だが状況は変わった。時の川が我らの仕掛けと機械の歯車を回し、流れを速めている。ここから先は、荷を分かち合わねばならん。お前も知るんだ。
       </text>
       <choice GotoID="Signal">その信号とは何だ？ どこから来て、何を語る？</choice>
     </node>
@@ -7827,7 +7827,7 @@
       <text>
         私はスピンドルに上り、呼び声に応えるつもりだ、=factionaddress:Barathrumites=。
 
-        弟子の &amp;mQ Girl&amp;y が上昇用のクライマーを設計した。飛地と現地で分割組立する計画だったが、さすがに手に余る技術だった。時間さえあれば必ずやり遂げられるのだが、聖堂騎士団が猶予を奪っていく。だから認めねばならん――パクス・クランクが必要だ。
+        弟子の &amp;mQガール&amp;y が上昇用のクライマーを設計した。飛地と現地で分割組立する計画だったが、さすがに手に余る技術だった。時間さえあれば必ずやり遂げられるのだが、聖堂騎士団が猶予を奪っていく。だから認めねばならん――パクス・クランクが必要だ。
       </text>
       <choice GotoID="PaxKlanq">パクス・クランクとは誰だ？</choice>
     </node>
@@ -7849,13 +7849,13 @@
 
         「虹」は虹の森を指している可能性が高い。クランクの同胞が集う場所だ。まずはそこから始めるといい。
       </text>
-      <choice GotoID="Accept" StartQuest="Pax Klanq, I Presume?">パクス・クランクを見つけ、Q ガールの設計図を届けよう。</choice>
+      <choice GotoID="Accept" StartQuest="Pax Klanq, I Presume?">パクス・クランクを見つけ、Qガールの設計図を届けよう。</choice>
       <choice GotoID="End">聞いたことを咀嚼する時間がほしい。</choice>
     </node>
 
     <node ID="Accept">
       <text>
-        望み通りだ、=factionaddress:Barathrumites=。まず Q ガールと話し、設計図を受け取れ。
+        望み通りだ、=factionaddress:Barathrumites=。まず Qガールと話し、設計図を受け取れ。
 
         帰還を待っている。
       </text>
@@ -7898,7 +7898,7 @@
       <choice ID="BethesdaSpara" GotoID="SparaSusa" IfHaveActiveQuest="Decoding the Signal">ベセスダ・スーサについて何か知ってるか？</choice>
       <choice ID="RumbleSpara" GotoID="GrimNod" IfHaveActiveQuest="Grave Thoughts">さっきの地鳴りを感じたか、スパラフチレ？</choice>
       <choice ID="KlanqSpara" GotoID="ShroomPal" IfHaveActiveQuest="Pax Klanq, I Presume?">パクス・クランクに会ったことは？</choice>
-      <choice ID="TombSpara" GotoID="Sparagon" IfHaveActiveQuest="Tomb of the Eaters">ブライトシェオルへ行くため、Eatersの墓所に入らなきゃならない。</choice>
+      <choice ID="TombSpara" GotoID="Sparagon" IfHaveActiveQuest="Tomb of the Eaters">ブライトシェオルへ行くため、イーターの墓所に入らなきゃならない。</choice>
       <choice ID="GolemSpara" GotoID="SparaStumped" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">クランクがここにいることをどう思う？</choice>
       <choice ID="CarbineSpara" GotoID="PraiseCarbine" IfHaveBlueprint="MasterworkCarbine">君のカービンは、扱った中でも最高の一丁だ。</choice>
       <choice ID="PistolSpara" GotoID="PraiseCarbine" IfHaveBlueprint="MasterworkChainPistol">君のピストルは、扱った中でも最高の一丁だ。</choice>
@@ -8087,9 +8087,9 @@
       </text>
       <choice GotoID="Barathrum">バラサラム。</choice>
       <choice GotoID="Otho">オトー。</choice>
-      <choice GotoID="Sparafucile">スパラフチーレ。</choice>
+      <choice GotoID="Sparafucile">スパラフチレ。</choice>
       <choice GotoID="Jacobo">ヤコボ。</choice>
-      <choice GotoID="Q Girl">Q Girl。</choice>
+      <choice GotoID="Q Girl">Qガール。</choice>
       <choice GotoID="Mafeo">マフェオ。</choice>
       <choice GotoID="Iseppa">イセッパ。</choice>
       <choice GotoID="Neek">ニーク。</choice>
@@ -8779,7 +8779,7 @@
   <conversation ID="TextPax" Replace="true">
     <node ID="Start">
       <text>クランクが君にぱふっとする。=MARKOVSENTENCE=</text>
-      <choice GotoID="End" Execute="XRL.World.QuestManagers.SpreadPax:StartQuest">[パックスの依頼を引き受ける]</choice>
+      <choice GotoID="End" Execute="XRL.World.QuestManagers.SpreadPax:StartQuest">[パクスの依頼を引き受ける]</choice>
       <choice GotoID="End">
         <text>[感染させる部位を選ぶ]</text>
         <part Name="PaxInfectLimb" />
@@ -8881,7 +8881,7 @@
       <text>
         クランク、君にぱふっとする。君はクランクを宿し、クランクのためにクランクを広める。そのあと君のクランクはしぼむ。
 
-        君にぱふっとしたら、クランクはハコガチャ（ジャロピー）を作る。
+        君にぱふっとしたら、クランクはジャロピー（ガラクタ車）を作る。
       </text>
       <choice GotoID="Quest6" Execute="XRL.World.QuestManagers.SpreadPax:StartQuest">
         <text>わかったよ。ぱふっとして。</text>
@@ -8954,7 +8954,7 @@
     </node>
     <node ID="Catalyst" Inherits="GolemComponentQuestions">
       <text>
-        純液3ドラムでスープに触媒入れて栄養巡らせる。液体の選択で血色混合変わり、クリーチャーも変化。
+        純液 3 ドラムでスープを触媒化し栄養を循環させる。
       </text>
     </node>
     <node ID="Atzmus" Inherits="GolemComponentQuestions">
@@ -8964,7 +8964,7 @@
     </node>
     <node ID="Armament" Inherits="GolemComponentQuestions">
       <text>
-        ゼータクローム武器。クリーチャーを武芸に同調させ、メタクローム拳タイプをその形で作る。
+        ゼータクローム武器。クリーチャーを武芸に同調させ、メタクロームの拳形（こぶしかた）をそのまま型取る。
       </text>
     </node>
     <node ID="Incantation" Inherits="GolemComponentQuestions">
@@ -9047,7 +9047,7 @@
   <conversation ID="Indrix" Replace="true">
     <node ID="Start" IfWearingBlueprint="Cyclopean Prism" AllowEscape="false">
       <text>
-        無礼な豚め！ その漆黒の護符を私の前で掲げるつもりか？
+        無礼な豚め！ そのアマランサスのプリズムを私の前で掲げるつもりか？
       </text>
       <choice GotoID="End">
         <text>！</text>

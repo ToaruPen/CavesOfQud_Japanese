@@ -51,6 +51,42 @@
     { "key": "Points Remaining:", "text": "残りポイント：" },
     { "key": "Option:", "text": "オプション：" }
     ,
+    { "key": "&KSet Checkpoint", "text": "&Kチェックポイントを設定" },
+    { "key": "Set Checkpoint", "text": "チェックポイントを設定" },
+    { "key": "Restore Checkpoint", "text": "チェックポイントを復元" },
+    { "key": "&KRestore Checkpoint", "text": "&Kチェックポイントを復元" },
+    { "key": "Control Mapping", "text": "操作設定" },
+    { "key": "Options", "text": "オプション" },
+    { "key": "Game Info", "text": "ゲーム情報" },
+    { "key": "Save and Quit", "text": "セーブして終了" },
+    { "key": "Quit Without Saving", "text": "セーブせずに終了" },
+    { "key": "Abandon Character", "text": "キャラクターを放棄" },
+    { "key": "If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\n Type '", "text": "セーブせずに終了すると保存されていない進行状況がすべて失われます。本当に終了してよろしいですか？\\n\\n「" },
+    { "key": "If you quit without saving, you will lose all your progress and your character will be lost. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\nType '", "text": "セーブせずに終了すると進行状況とキャラクターが完全に失われます。本当に終了してよろしいですか？\\n\\n「" },
+    {
+      "key": "If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\n Type 'QUIT' to confirm.",
+      "context": "PopupMessage.ShowPopup.Message",
+      "text": "セーブせずに終了すると保存されていない進行状況がすべて失われます。本当に終了してよろしいですか？\\n\\n「QUIT」と入力すると確定します。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\nType 'QUIT' to confirm.",
+      "context": "PopupMessage.ShowPopup.Message",
+      "text": "セーブせずに終了すると保存されていない進行状況がすべて失われます。本当に終了してよろしいですか？\\n\\n「QUIT」と入力すると確定します。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your progress and your character will be lost. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\n Type 'QUIT' to confirm.",
+      "context": "PopupMessage.ShowPopup.Message",
+      "text": "セーブせずに終了すると進行状況とキャラクターが完全に失われます。本当に終了してよろしいですか？\\n\\n「QUIT」と入力すると確定します。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your progress and your character will be lost. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\nType 'QUIT' to confirm.",
+      "context": "PopupMessage.ShowPopup.Message",
+      "text": "セーブせずに終了すると進行状況とキャラクターが完全に失われます。本当に終了してよろしいですか？\\n\\n「QUIT」と入力すると確定します。"
+    },
+    { "key": "' to confirm.", "text": "」と入力すると確定します。" },
+    { "key": "You can only set your checkpoint in settlements.", "text": "集落内でのみチェックポイントを設定できます。" },
+    { "key": "You can only restore your checkpoint outside settlements.", "text": "集落の外でのみチェックポイントを復元できます。" },
+    { "key": "Are you sure you want to restore your checkpoint?", "text": "本当にチェックポイントを復元しますか？" },
     { "key": "This Item", "text": "このアイテム" },
     { "key": "Equipped Item", "text": "装備中のアイテム" },
     { "key": "Creates:", "text": "作成物：" },
@@ -63,6 +99,26 @@
     { "key": "Cudgel (dazes on critical hit)", "text": "棍棒（クリティカル時に朦朧付与）" },
     { "key": "Short Blades (causes bleeding on critical hit)", "text": "短剣（クリティカル時に出血）" },
     { "key": "Axe (cleaves armor on critical hit)", "text": "斧（クリティカル時に装甲切断）" },
-    { "key": "Long Blades (can dismember)", "text": "長剣（切断可能）" }
+    { "key": "Long Blades (can dismember)", "text": "長剣（切断可能）" },
+    {
+      "key": "Welcome to the Caves of Qud tutorial. We'll just be scratching the surface here, learning enough of the basics to help you get your footing.\\n\\nIn Caves of Qud, you play as a mutated human or true kin.\\n\\nFor the tutorial, we're picking mutated human.",
+      "text": "『Caves of Qud』のチュートリアルへようこそ。ここではごく基本だけをなぞり、歩き出すのに必要な土台を身に付けます。\\n\\nこのゲームでは突然変異した人間か、真の人間を操作します。\\n\\nチュートリアルでは突然変異した人間を選びましょう。"
+    },
+    {
+      "key": "Character creation is a deep and sometimes long process. We included some preset builds to help you get started. After the tutorial, you can try another build, or make a character from scratch. (The recommended way! Once you get your footing.) \\n\\nFor now, pick the marsh taur.",
+      "text": "キャラクター作成は奥深く、ときには時間のかかる工程です。すぐに遊べるよう、いくつかプリセットを用意しています。チュートリアルが終わったら、別のビルドを試したり、一から作ってみましょう（慣れてきたら特におすすめです）。\\n\\n今はマーシュ・ターを選んでください。"
+    },
+    {
+      "key": "Here is a summary of your attributes and mutations, which grant your character unique abilities.",
+      "text": "ここには能力値と突然変異の概要が表示されます。どちらもキャラクター固有の力を与えてくれます。"
+    },
+    {
+      "key": "You can name your character or choose Next for a random name.",
+      "text": "ここでキャラクターの名前を入力するか、［Next］でランダムな名前を採用できます。"
+    },
+    {
+      "key": "On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.",
+      "text": "キス・ウックスの30日、あなたは沈んだ交易路の縁に穿たれた暗い縦穴を滑り降り、隊商宿へたどり着いた。そこは時間の川向こうから舞い込んだ塩と砂埃にまみれている。"
+    }
   ]
 }

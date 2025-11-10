@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <objects>
   <object Name="Creature" Inherits="PhysicalObject" Replace="true">
     <part Name="Render" DisplayName="[クリーチャー]" RenderString="@" RenderLayer="10" RenderIfDark="false" DetailColor="w" Tile="Assets_Content_Textures_Creatures_sw_farmer.bmp" />
@@ -2593,7 +2593,7 @@
   </object>
 
 <object Name="Naphtaali Tinker" Inherits="BaseNaphtaali" Replace="true">
-    <part Name="Render" DisplayName="ナフタリの修理屋" ColorString="&amp;c" Tile="Creatures/naphtaali_tinker.bmp" />
+    <part Name="Render" DisplayName="ナフタリの工匠" ColorString="&amp;c" Tile="Creatures/naphtaali_tinker.bmp" />
     <stat Name="Level" Value="9" />
     <tag Name="Role" Value="Leader" />
     <stat Name="Intelligence" Boost="1" />
@@ -5579,7 +5579,7 @@
   </object>
 
 <object Name="Mechanimist Warden" Inherits="Mechanimist Temple Paladin" Replace="true">
-    <part Name="Render" ColorString="&amp;B" DetailColor="W" RenderString="m" Tile="creatures/sw_mechanimist_temple_paladin.bmp" DisplayName="聖域の衛兵" />
+    <part Name="Render" ColorString="&amp;B" DetailColor="W" RenderString="m" Tile="creatures/sw_mechanimist_temple_paladin.bmp" DisplayName="聖域の監視官" />
     <part Name="DisplayNameColor" Color="B" />
     <stat Name="Level" Value="25" />
     <stat Name="Hitpoints" Value="140" />
@@ -5615,7 +5615,7 @@
   </object>
 
 <object Name="Stilt Warden" Inherits="Mechanimist Warden" Replace="true">
-    <part Name="Render" ColorString="&amp;W" DetailColor="B" RenderString="m" Tile="creatures/caste_9.bmp" DisplayName="守護者" />
+    <part Name="Render" ColorString="&amp;W" DetailColor="B" RenderString="m" Tile="creatures/caste_9.bmp" DisplayName="スティルトの監視官" />
     <removepart Name="DisplayNameColor" />
     <part Name="Brain" Wanders="false" />
     <stat Name="Level" Value="26" />
@@ -6070,7 +6070,7 @@
   </object>
 
 <object Name="Goatfolk Qlippoth" Inherits="Goatfolk Shaman" Replace="true">
-    <part Name="Render" DisplayName="山羊人のクリッポト" Tile="creatures/sw_goatfolk_shaman.bmp" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="山羊人のクリフォト" Tile="creatures/sw_goatfolk_shaman.bmp" ColorString="&amp;K" />
     <part Name="Description" Short="編み込まれた房飾りが闇から溢れ出て能面の顔を縁取り、サロンのひだが感じられない風に激しく揺れる。=pronouns.Possessive= 山羊めいたうごめきは視覚プリズムの境界で屈折し、灰色の夢の下敷きとして現実に透けて見える。" />
     <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Amaranthine Ashes" />
     <part Name="RandomMutations" StateKey="QlippothMutations" />
@@ -6357,7 +6357,7 @@
     <stat Name="AcidResistance" Value="20" />
     <stat Name="ElectricResistance" Value="20" />
     <inventoryobject Blueprint="Rhinox Hoof" Number="2" />
-    <part Name="Description" Short="鋼鉄のように厚いコラーゲンの外套が stamping beast の巨肩と尻を束ね、巨大な頭蓋が三つの頭を包み込んで外側を重なり合う頭頂板が海の波のように盛り上がる。各頭から伸びた剃刀ケラチンの軍刀が屋根へと向かって反り返る。" />
+    <part Name="Description" Short="弾痕だらけの鋼鉄のように厚いコラーゲンの外套が踏み鳴らす巨獣の肩と尻を締め上げ、一つの巨大な頭蓋が三つの頭を包み込み、その外側で重なり合う頭頂板が海の波のように盛り上がる。各頭から伸びる剃刀のようなケラチンの軍刀が屋根へ向けて反り返っている。" />
     <skill Name="Cudgel" />
     <skill Name="Cudgel_ChargingStrike" />
     <skill Name="Cudgel_Slam" />
@@ -7506,7 +7506,7 @@
 
 <object Name="Chrome Pyramid" Inherits="BaseRobot" Replace="true">
     <part Name="Body" Anatomy="HoverRobot" />
-    <part Name="Render" DisplayName="{{c|クロームピラミッド}}" RenderString="9" ColorString="&amp;y" DetailColor="b" Tile="Creatures/sw_pyramid4.bmp" />
+    <part Name="Render" DisplayName="{{c|クローム・ピラミッド}}" RenderString="9" ColorString="&amp;y" DetailColor="b" Tile="Creatures/sw_pyramid4.bmp" />
     <part Name="Corpse" CorpseChance="100" CorpseBlueprint="NormalityGas200" />
     <part Name="Physics" Weight="25000" />
     <stat Name="Level" Value="56" />
@@ -10985,7 +10985,7 @@
   </object>
 
 <object Name="HumanTinker" Inherits="NPC" Replace="true">
-    <part Name="Render" DisplayName="[人間のティンカー]" Tile="creatures/caste_21.bmp" ColorString="&amp;c" RenderString="h" />
+    <part Name="Render" DisplayName="[人間の工匠]" Tile="creatures/caste_21.bmp" ColorString="&amp;c" RenderString="h" />
     <part Name="ConversationScript" ConversationID="tinker" />
     <part Name="Brain" Wanders="false" Factions="Merchants-100" />
     <part Name="Description" Short="半田ごてに噛まれた痕が紅い膨れとなって =pronouns.possessive= 肌に点々と浮かぶ。灰の輪が =pronouns.possessive= 前掛けを汚し、ベストのポケットからは茎ほど細いガラス棒や導線、金属リベットが芽のように突き出している。" />
@@ -11010,7 +11010,7 @@
   </object>
 
 <object Name="HumanTinker1" Inherits="HumanTinker" Replace="true">
-    <part Name="Render" DisplayName="人間のティンカー" Tile="creatures/caste_21.bmp" ColorString="&amp;c" RenderString="h" />
+    <part Name="Render" DisplayName="人間の工匠" Tile="creatures/caste_21.bmp" ColorString="&amp;c" RenderString="h" />
     <stat Name="Level" Value="9" />
     <stat Name="Hitpoints" Value="75" />
     <part Name="GenericInventoryRestocker" Table="Village Tinker 1" />
@@ -12401,7 +12401,7 @@
     <part Name="Brain" Wanders="false" Factions="Pariahs-99" />
     <part Name="GameUnique" />
     <xtagGrammar Proper="true" />
-    <part Name="Description" Short="=pronouns.Subjective==verb:'re:afterpronoun= ファウンドレンと見紛うほど小柄だが、こわばった肩と計算高い眼差しをよく観察すれば、成体の小兵だと知れる。=pronouns.Subjective= は神経と同じくらい固く締めた二つの団子に =pronouns.possessive= 髪をまとめ、縮こまってそわつく小さな手には見習い修理屋特有の火傷と切り傷が刻まれている。" />
+    <part Name="Description" Short="=pronouns.Subjective==verb:'re:afterpronoun= ファウンドレンと見紛うほど小柄だが、こわばった肩と計算高い眼差しをよく観察すれば、成体の小兵だと知れる。=pronouns.Subjective= は神経と同じくらい固く締めた二つの団子に =pronouns.possessive= 髪をまとめ、縮こまってそわつく小さな手には見習い工匠特有の火傷と切り傷が刻まれている。" />
     <tag Name="Gender" Value="hindren female" />
     <part Name="AISelfPreservation" Threshold="80" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
@@ -12628,7 +12628,7 @@
     <stat Name="Willpower" sValue="22" />
     <stat Name="Ego" sValue="18" />
     <stat Name="Hitpoints" sValue="150" />
-    <part Name="Description" Short="粗いたてがみの下で、ウォーデン・インドリクスの唇は音もなく動き、=pronouns.subjective= が =verb:serve:afterpronoun= 復讐の神の御名に捧げる連祷を形作っているのかもしれない。その荒い毛は人に似たがたくましい胴を途切れなく覆い、腰布の帯の背後でようやく姿を消す。ヌントゥ市長と =pronouns.reflexive= 以外、インドリクスが同胞から疎まれた事情を知る者はいない。誰もウォーデンを怒らせる危険を冒してまで話題にしようとしないからだ。=pronouns.possessive= 大きく巻いた角の一本は根元からきれいに断たれており、同じ角いくつかと共に腰の低い位置に吊るした帯からぶら下がっている。自分の肢を戦利品として帯びる唯一の戦士だという証だ。" />
+    <part Name="Description" Short="粗いたてがみの下で、監視官インドリクスの唇は音もなく動き、=pronouns.subjective= が =verb:serve:afterpronoun= 復讐の神の御名に捧げる連祷を形作っているのかもしれない。その荒い毛は人に似たがたくましい胴を途切れなく覆い、腰布の帯の背後でようやく姿を消す。ヌントゥ市長と =pronouns.reflexive= 以外、インドリクスが同胞から疎まれた事情を知る者はいない。誰も監視官を怒らせる危険を冒してまで話題にしようとしないからだ。=pronouns.possessive= 大きく巻いた角の一本は根元からきれいに断たれており、同じ角いくつかと共に腰の低い位置に吊るした帯からぶら下がっている。自分の肢を戦利品として帯びる唯一の戦士だという証だ。" />
     <part Name="Render" DisplayName="インドリクス" ColorString="&amp;B" TileColor="&amp;B" DetailColor="w" Tile="Creatures/sw_warden_goatfolk.bmp" />
     <part Name="Honorifics" Primary="Warden" />
     <part Name="Titles" Primary="Goatfolk Pariah" />

@@ -2,7 +2,9 @@ English,Japanese,Short,Notes,Status
 The Six Day Stilt,六日のスティルト,スティルト,聖堂都市／初出では「六日のスティルト」と表記する,approved
 Golgotha,ゴルゴタ,,廃棄処理複合施設,approved
 Sultan,スルタン,,タイトル,review-needed
-Chrome Pyramid,クロームピラミッド,,敵クラス,review-needed
+Chrome Pyramid,クローム・ピラミッド,,敵クラス,review-needed
+Qlippoth,クリフォト,,ゴートフォークの変異個体（Qlippoth）。名称と綴りは常にこの表記で固定する,draft
+Q Girl,Qガール,Qガール,グリット・ゲートの弟子ティンカー。人名も UI もこの表記で固定,draft
 Holy City of Ezra,聖都エズラ,,都市名,draft
 Mechanimist,メカニマス教徒,メカニマス教徒,個人称（派閥は Mechanimists を参照）,draft
 Mechanimists,メカニマス教団,メカニマス教,Six Day Stilt を聖地とする宗教勢力,draft
@@ -13,21 +15,28 @@ Daughters of Exile,流配の娘たち,流配の娘たち,修道会系の小派�
 Consortium of Phyta,フィタ・コンソーシアム（植物連合）,フィタ連合,植物派閥／カタカナ優先,draft
 Issachari tribe,イッサカリ族,イッサカリ族,塩砂漠の掠奪民,draft
 Naphtaali tribe,ナフタリ族,ナフタリ族,森林圏の宗教共同体,draft
-Fellowship of Wardens,守護者同胞団,ウォーデンズ,各地集落の保安組織,draft
+Fellowship of Wardens,監視官同胞団,監視官団,各地集落の保安組織。成員の役職名は「監視官」で統一する,draft
+Tinker,工匠,工匠,バラサラム派や各集落の技術職汎称。Naphtaali ほか種族を問わず「◯◯の工匠」と訳す,draft
+Warden,監視官,監視官,Fellowship of Wardens の職名。汎称／冠称ともに「監視官◯◯」で統一する,draft
 Merchants' Guild,商人ギルド,商人ギルド,交易者ネットワーク,draft
 Water barons,水の領主,水の領主,水利支配層（実体は希）,draft
 Dromad merchants,ドロマド商団,ドロマド,キャラバン商人,draft
+Eaters,イーター,イーター,旧世界の支配者層。単複を問わずカタカナで統一,draft
 Pariahs,棄民（パリア）,パリア,社会外の追放民。ヒンドレン出身者が多い,draft
+Pax Klanq,パクス・クランク,パクス・クランク,Barathrum 派と協働する菌学ティンカー（Spread Pax 導線）,draft
 Grazing hedonists,放牧の快楽派,快楽派,食楽・酪農の享楽主義,draft
 Girsh,ギルシュ,ギルシュ,超常派閥,draft
 Glow-wights,燐光ワイト,燐光ワイト,超常派閥,draft
 Gyre wights,渦動ワイト,渦動ワイト,超常派閥,draft
 Sultan cults,スルタン教団,スルタン教団,世代史で生成される崇拝派（動的）,draft
+Sparafucile,スパラフチレ,スパラフチレ,グリット・ゲートの銃工。手話ベースの会話も同表記,draft
 Goatfolk,山羊人（ゴートフォーク）,山羊人,種族＝派閥として扱われる,draft
 Hindren of Bey Lah,ベイ・ラーのヒンドレン,ヒンドレン,半獣人の共同体,draft
+Moghra'yi,モグラヤイ,モグラヤイ,大塩砂漠の正式名称。地名は常にこの表記,draft
 Mopango,モパンゴ,モパンゴ,Eaters 墓域周辺の勢力,draft
 Svardym,スヴァーディム,スヴァーディム,パラジウム礁周辺の両生類系,draft
 Joppa,ジョッパ,ジョッパ,開始村（固定）,draft
+Jalopy,ジャロピー,ジャロピー,初出のみ「ジャロピー（ガラクタ車）」と補足,draft
 Red Rock,レッドロック（赤岩）,レッドロック,短：レッドロック／文：赤岩,draft
 Rust Wells,ラストウェルズ（錆の井戸群）,ラストウェルズ,序盤ダンジョン,draft
 Rusted Archway,ラステッド・アーチ（錆びたアーチ門）,ラステッド・アーチ,短縮推奨,draft
@@ -42,7 +51,7 @@ Yd Freehold,イド・フリーホールド,イド,別案：イド自由保有地
 the hydropon,ハイドロポン,ハイドロポン,スリンスの施設・集落,draft
 Omonporch,オモンポーチ,オモンポーチ,スピンドル麓の拠点,draft
 The Spindle,スピンドル（紡錘塔）,スピンドル,天へ伸びる古代構造体,draft
-Tomb of the Eaters,喰らう者たちの墓所,Eatersの墓所,大規模終盤エリア,draft
+Tomb of the Eaters,イーターの墓所,イーターの墓所,大規模終盤エリア,draft
 Gyl,ギル,ギル,リボディ装置のある聖所,draft
 Garden of Geth,ゲスの園,ゲス園,旧コンテンツ（資料用／非現行）,draft
 Six Day Stilt,スティルト（初出：六日のスティルト）,スティルト,固有聖地名。直訳「柱」は避ける,draft

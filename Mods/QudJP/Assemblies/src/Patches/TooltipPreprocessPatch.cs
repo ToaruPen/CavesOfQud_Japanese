@@ -64,7 +64,7 @@ namespace QudJP.Patches
                 if (!isRtf)
                 {
                     var contextKey = !string.IsNullOrEmpty(style) ? ($"ModelShark.Tooltip.{style}.{name}") : "Look.TooltipLine";
-                    text = Translator.Instance.Apply(text, contextKey);
+                    text = SafeStringTranslator.SafeTranslate(text, contextKey);
                 }
 
                 // Persist the change
@@ -114,4 +114,3 @@ namespace QudJP.Patches
         }
     }
 }
-

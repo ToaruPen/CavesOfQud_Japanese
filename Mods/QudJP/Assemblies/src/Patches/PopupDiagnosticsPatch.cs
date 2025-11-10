@@ -10,6 +10,7 @@ namespace QudJP.Patches
     /// High-fidelity diagnostics for popup buttons and bottom context to pinpoint where
     /// menu item text becomes empty. Purely observational; makes no functional changes.
     /// </summary>
+    [HarmonyPatch]
     internal static class PopupDiagnosticsPatch
     {
         private const int MaxLogs = 120;

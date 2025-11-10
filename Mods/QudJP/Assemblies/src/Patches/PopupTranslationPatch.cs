@@ -18,15 +18,8 @@ namespace QudJP.Patches
                 [HarmonyArgument(0)] ref string Text,
                 [HarmonyArgument(2)] ref string Caption)
             {
-                if (!string.IsNullOrEmpty(Text))
-                {
-                    Text = Translator.Instance.Apply(Text, "Popup.Show.Text");
-                }
-
-                if (!string.IsNullOrEmpty(Caption))
-                {
-                    Caption = Translator.Instance.Apply(Caption, "Popup.Show.Caption");
-                }
+                Text = SafeStringTranslator.SafeTranslate(Text, "Popup.Show.Text");
+                Caption = SafeStringTranslator.SafeTranslate(Caption, "Popup.Show.Caption");
             }
         }
 
@@ -38,15 +31,8 @@ namespace QudJP.Patches
                 [HarmonyArgument(0)] ref string Prompt,
                 [HarmonyArgument(4)] ref string Title)
             {
-                if (!string.IsNullOrEmpty(Prompt))
-                {
-                    Prompt = Translator.Instance.Apply(Prompt, "Popup.AskString.Prompt");
-                }
-
-                if (!string.IsNullOrEmpty(Title))
-                {
-                    Title = Translator.Instance.Apply(Title, "Popup.AskString.Title");
-                }
+                Prompt = SafeStringTranslator.SafeTranslate(Prompt, "Popup.AskString.Prompt");
+                Title = SafeStringTranslator.SafeTranslate(Title, "Popup.AskString.Title");
             }
         }
 
@@ -59,21 +45,14 @@ namespace QudJP.Patches
                 [HarmonyArgument(0)] ref string message,
                 [HarmonyArgument(5)] ref string title)
             {
-                if (!string.IsNullOrEmpty(message))
-                {
-                    message = LocalizeUIPopupMessage(message);
-                }
-
-                if (!string.IsNullOrEmpty(title))
-                {
-                    title = LocalizeUIPopupTitle(title);
-                }
+                message = LocalizeUIPopupMessage(message);
+                title = LocalizeUIPopupTitle(title);
             }
         }
 
         private static string LocalizeUIPopupMessage(string message)
         {
-            var translated = Translator.Instance.Apply(message, "PopupMessage.ShowPopup.Message");
+            var translated = SafeStringTranslator.SafeTranslate(message, "PopupMessage.ShowPopup.Message");
             if (!string.Equals(translated, message, System.StringComparison.Ordinal))
             {
                 return translated;
@@ -96,7 +75,7 @@ namespace QudJP.Patches
 
         private static string LocalizeUIPopupTitle(string title)
         {
-            var translated = Translator.Instance.Apply(title, "PopupMessage.ShowPopup.Title");
+            var translated = SafeStringTranslator.SafeTranslate(title, "PopupMessage.ShowPopup.Title");
             if (!string.Equals(translated, title, System.StringComparison.Ordinal))
             {
                 return translated;
@@ -112,4 +91,3 @@ namespace QudJP.Patches
         }
     }
 }
-

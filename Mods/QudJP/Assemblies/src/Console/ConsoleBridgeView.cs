@@ -135,7 +135,7 @@ namespace QudJP.ConsoleUI
                 text.characterSpacing = 0f;
                 text.overflowMode = TextOverflowModes.Truncate;
                 text.extraPadding = true;
-                FontManager.Instance.ApplyToText(text);
+                FontManager.Instance.ApplyToText(text, forceReplace: true);
 
                 _lines.Add(text);
                 _appliedLines.Add(string.Empty);

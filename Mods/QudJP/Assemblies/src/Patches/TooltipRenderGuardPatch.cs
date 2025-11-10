@@ -83,7 +83,7 @@ namespace QudJP.Patches
                         if (!string.IsNullOrEmpty(name) && paramMap.TryGetValue(name, out var value) && !string.IsNullOrEmpty(value))
                         {
                             var style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
-                            var translated = Translator.Instance.Apply(value, "ModelShark.Tooltip." + style + "." + name);
+                            var translated = SafeStringTranslator.SafeTranslate(value, "ModelShark.Tooltip." + style + "." + name);
                             t.text = translated;
                             UnityEngine.Debug.Log($"[QudJP] Tooltip fill {style} obj='{name}' restored from params");
                         }
@@ -105,7 +105,7 @@ namespace QudJP.Patches
                         if (!string.IsNullOrEmpty(name) && paramMap.TryGetValue(name, out var value) && !string.IsNullOrEmpty(value))
                         {
                             var style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
-                            var translated = Translator.Instance.Apply(value, "ModelShark.Tooltip." + style + "." + name);
+                            var translated = SafeStringTranslator.SafeTranslate(value, "ModelShark.Tooltip." + style + "." + name);
                             t.text = translated;
                             UnityEngine.Debug.Log($"[QudJP] Tooltip fill {style} obj='{name}' (legacy) restored from params");
                         }
@@ -144,9 +144,14 @@ namespace QudJP.Patches
                     // candidate keys to probe in order
                     foreach (var key in TooltipGuardHelper.CandidatesFromName(name))
                     {
+                        if (string.IsNullOrEmpty(key))
+                        {
+                            continue;
+                        }
+
                         if (paramMap.TryGetValue(key, out var val) && !string.IsNullOrEmpty(val))
                         {
-                            t.text = Translator.Instance.Apply(val, "ModelShark.Tooltip." + (trigger?.tooltipStyle!=null?trigger.tooltipStyle.name:"<null>") + "." + name);
+                            t.text = SafeStringTranslator.SafeTranslate(val, "ModelShark.Tooltip." + (trigger?.tooltipStyle!=null?trigger.tooltipStyle.name:"<null>") + "." + name);
                             current = t.text;
                             UnityEngine.Debug.Log($"[QudJP] Tooltip heuristic fill obj='{name}' <- '{key}'");
                             break;
@@ -186,10 +191,10 @@ namespace QudJP.Patches
                         delimiter,
                         segment =>
                         {
-                            var result = Translator.Instance.Apply(segment, "ModelShark.Tooltip." + style + "." + objName);
+                            var result = SafeStringTranslator.SafeTranslate(segment, "ModelShark.Tooltip." + style + "." + objName);
                             if (string.Equals(result, segment, System.StringComparison.Ordinal))
                             {
-                                result = Translator.Instance.Apply(segment, t.GetType().FullName);
+                                result = SafeStringTranslator.SafeTranslate(segment, t.GetType().FullName);
                             }
                             return result;
                         });
@@ -246,10 +251,10 @@ namespace QudJP.Patches
                         delimiter,
                         segment =>
                         {
-                            var result = Translator.Instance.Apply(segment, "ModelShark.Tooltip." + style + "." + objName);
+                            var result = SafeStringTranslator.SafeTranslate(segment, "ModelShark.Tooltip." + style + "." + objName);
                             if (string.Equals(result, segment, System.StringComparison.Ordinal))
                             {
-                                result = Translator.Instance.Apply(segment, t.GetType().FullName);
+                                result = SafeStringTranslator.SafeTranslate(segment, t.GetType().FullName);
                             }
                             return result;
                         });

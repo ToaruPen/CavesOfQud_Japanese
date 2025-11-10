@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
 using TMPro;
@@ -62,11 +63,33 @@ namespace QudJP.Patches
             var c = tmp.color; c.a = 1f; tmp.color = c;
             skin.Apply();
 
+            if (string.IsNullOrWhiteSpace(tmp.text))
+            {
+                tmp.text = BuildFallbackText(__instance);
+            }
+
             if (Logged < MaxLogs)
             {
                 Logged++;
                 UnityEngine.Debug.Log($"[QudJP] Menu item guarded: obj='{tmp.gameObject.name}', after='{(tmp.text?.Length>120?tmp.text.Substring(0,120)+"...":tmp.text)}'");
             }
+        }
+
+        private static string BuildFallbackText(SelectableTextMenuItem? menuItem)
+        {
+            if (menuItem?.data is QudMenuItem item && !string.IsNullOrWhiteSpace(item.text))
+            {
+                return StripMarkup(item.text);
+            }
+
+            return "<選択肢>";
+        }
+
+        private static string StripMarkup(string value)
+        {
+            var stripped = Regex.Replace(value, "\\{\\{[^|{}]+\\|", string.Empty);
+            stripped = stripped.Replace("{{", string.Empty).Replace("}}", string.Empty);
+            return stripped.Trim();
         }
     }
 }

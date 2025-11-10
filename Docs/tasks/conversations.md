@@ -16,6 +16,7 @@ Conversations.jp.xml（NPC 会話）と関連トリガー（ログ参照、Argyv
 2025-11-11（Bravo）: Pax Klanq（TextPax／Welcome～Quest6）を追加・翻訳し、Spread Pax クエスト導線とパフ交渉の会話を `Replace="true"` で同期。
 2025-11-11（Bravo）: Pax Klanq（BuildGolem／GolemComponentQuestions／GolemOtherQuestions／Barathrum(s)Study）を追加し、ゴーレム素材案内を `Replace="true"` で同期。Warden Indrix／Wild Water Merchant／SusaAlchemist／Asphodel（Arrived／Chaos／Done／Waiting）／PhinaeHoshaiah を `Replace="true"` で翻訳し、Woodsprog～Crystals までの種族・動物テンプレも一括で差し替え、`py -3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/conversations.json` を再実行。
 2025-11-11（Bravo）: Hindriarch Keh（Start／Yes. Go on.／Accept／KindrishReturnBefore～After／Kehstions／MocksFate ほか）を `Replace="true"` で追加し、Kith and Kin クエスト入口／Love and Fear 解決後の会話を日本語化。Slynth 受け入れノードも含めて出入り条件を再現し、diff を更新した結果、残タスクは Neelahind／Eskhind／Clue_* 連鎖に集約。
+2025-11-12（Bravo）: Tinker 系（Naphtaali / Human ほか）の表示名を「工匠」で統一し、監視官称号・クリフォト表記・Chrome 系中黒ルールを Creatures.jp / Conversations.jp / Books.jp / Subtypes.jp / Docs/glossary.csv / Docs/translation_process.md に反映。Rhinox 説明の英語片も訳語化し、`py -3 scripts/diff_localization.py --missing-only --base Conversations.xml` で欠落なしを確認。
 
 ## 未訳 / 対応中
 - [ ] Neelahind／Eskhind／Kith and Kin 調査ノードを `Replace="true"` で翻訳し、Distant／Direct／Ruminating／Investigation／Clue_*／KithAndKinFinale などの導線とクエスト分岐（Fate／Doomed／BetterLate 系）を一括同期する。
@@ -152,3 +153,18 @@ Conversations.jp.xml（NPC 会話）と関連トリガー（ログ参照、Argyv
 - 2025-11-12 PM: Chavvah 関連の残ノードを一括で `Replace="true"` 追加（Dreamer／Thicksalt／Tammuz／TauNoLonger／WanderingTau／TauCompanion／TauSoft）。`{{emote|…}}`、`IfTestState`、贈与フラグ（TauHeadpiece）をベース通り維持しつつ、-else/-then・Gyredream 語彙を既存訳に合わせた。
 - 2025-11-12 PM2: Santalalotze（Parasite／Dangerous／Animal／Memory／Uncertain）と Nephilim 水儀式パッチを `Replace="true"` で追加。さらに GyreWightAgolgot/Bethsaida/Shug'ruith/Rermadon/Qas/Qon の会話を日本語化し、コア台詞と固有ラインを翻訳。
 - 2025-11-12 PM2.5: `py -3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/conversations.json` を再実行し、Conversations.jp.xml の Missing が解消されたことを確認。
+
+## レビュー指摘メモ（2025-11-11 / Alpha）
+- [x] Pax Klanq の Golem 解説に対する英語版レビューを受領。以下の修正を TODO として管理する。（2025-11-13 / Alpha 対応完了）
+  - [x] **Catalyst**: 原文通り「純液 3 ドラムでスープを触媒化し栄養を循環させる」までの記述に留め、余計なゲーム仕様の補足は削除。（Conversations.jp.xml:8955-8958）
+  - [x] **Armament**: 「メタクローム拳タイプ」を「メタクロームの拳形（こぶしかた）」など具体的な表現に変更。（Conversations.jp.xml:8965-8968）
+  - [x] **固有名・用語の統一**（Conversations.jp.xml / Docs/glossary.csv 同日更新）:
+    - Pax Klanq → 「パクス・クランク」に統一。
+    - Q Girl → 「Qガール」。
+    - Moghra’yi → 「モグラヤイ」。
+    - Sparafucile → 「スパラフチレ」。
+    - Jalopy → 「ジャロピー」（初出のみ簡単な補足）。
+    - Eaters/Tomb of the Eaters → 「イーター」「イーターの墓所」。
+  - [x] **Indrix**: 「漆黒の護符」→「アマランサスのプリズム」。（Conversations.jp.xml:9050）
+  - [x] **色タグ崩れ**: `&COmonporch&y` など開閉の乱れを修正し、必要なら地名だけの表記に戻す。（Conversations.jp.xml:7258）
+- [x] 上記対応後に `py -3 scripts/diff_localization.py --missing-only` を実行し、glossary も更新。レビュー結果を再共有する。（2025-11-13 / Alpha）

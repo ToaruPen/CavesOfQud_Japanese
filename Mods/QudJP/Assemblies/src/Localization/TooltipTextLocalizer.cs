@@ -100,7 +100,7 @@ namespace QudJP.Localization
                 return text ?? string.Empty;
             }
 
-            var parts = text.Split(',');
+            var parts = text!.Split(',');
             var output = new List<string>(parts.Length);
             foreach (var raw in parts)
             {
@@ -108,7 +108,7 @@ namespace QudJP.Localization
                 var localized = ApplyFeeling(p) ?? ApplyDifficulty(p);
                 if (string.IsNullOrEmpty(localized))
                 {
-                    localized = Translator.Instance.Apply(p, "Look.SubHeader");
+                    localized = SafeStringTranslator.SafeTranslate(p, "Look.SubHeader");
                 }
                 output.Add(localized ?? p);
             }
@@ -177,7 +177,7 @@ namespace QudJP.Localization
                 return ReplaceTrimmed(line, trimmed, wrapped);
             }
 
-            var dictionaryLine = Translator.Instance.Apply(payload, "Look.TooltipLine");
+            var dictionaryLine = SafeStringTranslator.SafeTranslate(payload, "Look.TooltipLine");
             if (!string.Equals(dictionaryLine, payload, StringComparison.Ordinal))
             {
                 // If the tail is a colon + value, honor Japanese colon and localize units where applicable.
@@ -219,7 +219,7 @@ namespace QudJP.Localization
                 if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
                 {
                     var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
-                    var localizedLabel = $"{Translator.Instance.Apply(stat, "Stat.Name")} ボーナス上限";
+                    var localizedLabel = $"{SafeStringTranslator.SafeTranslate(stat, "Stat.Name")} ボーナス上限";
                     var wrapped = prefix + $"{localizedLabel}：{value}" + suffix + tail;
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
@@ -258,7 +258,7 @@ namespace QudJP.Localization
                 if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
                 {
                     var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
-                    var localizedLabel = $"{Translator.Instance.Apply(stat, "Stat.Name")} ボーナス上限";
+                    var localizedLabel = $"{SafeStringTranslator.SafeTranslate(stat, "Stat.Name")} ボーナス上限";
                     var wrapped = prefix + localizedLabel + suffix + leadWS + "：" + value;
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
@@ -281,18 +281,18 @@ namespace QudJP.Localization
                     else if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
                     {
                         var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
-                        localizedLabel = $"{Translator.Instance.Apply(stat, "Stat.Name")} ボーナス上限";
+                        localizedLabel = $"{SafeStringTranslator.SafeTranslate(stat, "Stat.Name")} ボーナス上限";
                     }
                     else
                     {
-                        var fromDict = Translator.Instance.Apply(label, "Look.TooltipLine");
+                        var fromDict = SafeStringTranslator.SafeTranslate(label, "Look.TooltipLine");
                         if (!string.Equals(fromDict, label, StringComparison.Ordinal))
                         {
                             localizedLabel = fromDict;
                         }
                         else
                         {
-                            var fromLabel = Translator.Instance.Apply(label, "Look.TooltipLabel");
+                            var fromLabel = SafeStringTranslator.SafeTranslate(label, "Look.TooltipLabel");
                             if (!string.Equals(fromLabel, label, StringComparison.Ordinal))
                             {
                                 localizedLabel = fromLabel;
@@ -316,7 +316,7 @@ namespace QudJP.Localization
             if (payload.StartsWith(ProjectilePrefix, StringComparison.Ordinal))
             {
                 var stat = payload.Substring(ProjectilePrefix.Length).TrimEnd('.');
-                var localized = $"この武器の投射体は操者の{Translator.Instance.Apply(stat, "Stat.Name")}に応じて貫通力ボーナスを得る。";
+                var localized = $"この武器の投射体は操者の{SafeStringTranslator.SafeTranslate(stat, "Stat.Name")}に応じて貫通力ボーナスを得る。";
                 var wrapped = prefix + localized + suffix + tail;
                 return ReplaceTrimmed(line, trimmed, wrapped);
             }
@@ -367,7 +367,7 @@ namespace QudJP.Localization
         private static string LocalizeValue(string label, string value)
         {
             // Dictionary substitutions for common value payloads
-            value = Translator.Instance.Apply(value, "Look.TooltipValue");
+            value = SafeStringTranslator.SafeTranslate(value, "Look.TooltipValue");
 
             // Unit normalization (be tolerant about the label and punctuation)
             if (value.IndexOf("lbs", StringComparison.OrdinalIgnoreCase) >= 0)

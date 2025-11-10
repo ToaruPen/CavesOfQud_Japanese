@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using HarmonyLib;
 using Qud.UI;
 
@@ -10,7 +12,8 @@ namespace QudJP.Patches
     internal static class SelectableTextMenuItemDebugPatch
     {
         private static int Logged;
-        private const int MaxLogs = 80;
+        private const int MaxLogs = 200;
+        private static readonly HashSet<string> LoggedKeys = new(StringComparer.Ordinal);
 
         [HarmonyPrefix]
         [HarmonyPatch(nameof(SelectableTextMenuItem.SelectChanged))]
@@ -28,6 +31,15 @@ namespace QudJP.Patches
                 var text = hasData ? item.text : "<no-data>";
                 var cmd = hasData ? item.command : "<no-data>";
                 var hk  = hasData ? item.hotkey : "<no-data>";
+
+                // Deduplicate repeated rows (Continue spam, toggled buttons, etc.) so we retain headroom
+                // for later menus like conversations.
+                var key = $"{cmd ?? "<null>"}|{hk ?? "<null>"}|{text ?? "<null>"}";
+                if (!LoggedKeys.Add(key))
+                {
+                    return;
+                }
+
                 UnityEngine.Debug.Log($"[QudJP][Diag] SelectChanged(before): hasData={hasData} text='{Short(text)}' cmd='{cmd}' hotkey='{hk}'");
                 Logged++;
             }
@@ -43,4 +55,3 @@ namespace QudJP.Patches
         }
     }
 }
-
