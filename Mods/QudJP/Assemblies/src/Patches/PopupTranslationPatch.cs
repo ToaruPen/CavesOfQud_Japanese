@@ -1,3 +1,5 @@
+using System;
+using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
 using QudJP.Localization;
@@ -52,6 +54,11 @@ namespace QudJP.Patches
 
         private static string LocalizeUIPopupMessage(string message)
         {
+            if (TryLocalizeQuitWarning(message, out var manual))
+            {
+                return manual;
+            }
+
             var translated = SafeStringTranslator.SafeTranslate(message, "PopupMessage.ShowPopup.Message");
             if (!string.Equals(translated, message, System.StringComparison.Ordinal))
             {
@@ -88,6 +95,38 @@ namespace QudJP.Patches
             }
 
             return title;
+        }
+
+        private static bool TryLocalizeQuitWarning(string message, out string translated)
+        {
+            translated = string.Empty;
+            if (string.IsNullOrEmpty(message))
+            {
+                return false;
+            }
+
+            var normalized = NormalizeMultiline(message);
+            if (normalized.IndexOf("if you quit without saving, you will lose all your unsaved progress", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                translated = "セーブせずに終了すると保存されていない進行状況がすべて失われます。本当に終了してよろしいですか？\n\n「QUIT」と入力すると確定します。";
+                return true;
+            }
+
+            if (normalized.IndexOf("if you quit without saving, you will lose all your progress and your character will be lost", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                translated = "セーブせずに終了すると進行状況とキャラクターが完全に失われます。本当に終了してよろしいですか？\n\n「QUIT」と入力すると確定します。";
+                return true;
+            }
+
+            return false;
+        }
+
+        private static string NormalizeMultiline(string value)
+        {
+            var collapsed = value.Replace("\r\n", "\n").Replace("\r", "\n");
+            collapsed = Regex.Replace(collapsed, "[ \t]+", " ");
+            collapsed = Regex.Replace(collapsed, "\n+", "\n");
+            return collapsed.Trim();
         }
     }
 }
