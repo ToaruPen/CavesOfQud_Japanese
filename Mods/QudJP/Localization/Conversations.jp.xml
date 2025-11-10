@@ -1010,6 +1010,138 @@
     </node>
   </conversation>
 
+  <!-- Wandering Tau -->
+  <conversation ID="WanderingTau" Replace="true">
+    <start ID="Orphaned">
+      <text>
+        終わりの木霊が、かつて自分のものと思っていた根から反響する。
+
+        私のリエゾンは断たれた。なぜだ？
+      </text>
+      <choice GotoID="How">気分はどうだ？</choice>
+      <choice GotoID="Suborned">君の意志はプトーに従属することになっていた。</choice>
+      <choice GotoID="Free">自由になったんだ、自分で決められる。</choice>
+      <choice GotoID="Sorry">すまない。</choice>
+      <choice GotoID="Happier">その方が幸せだ。</choice>
+      <choice GotoID="EndGift" IfNotHaveState="GotTauGift">生きて飲め、さすらうタウよ。</choice>
+      <choice GotoID="End" IfHaveState="GotTauGift">生きて飲め、さすらうタウよ。</choice>
+    </start>
+
+    <node ID="How" Inherits="Orphaned">
+      <text>
+        君を警戒すべきだろう？ -else へ導いておきながら、選んだ道を塞いだ。
+      </text>
+    </node>
+
+    <node ID="Suborned" Inherits="Orphaned">
+      <text>
+        今回、私の意志を従属させたのはプトーではない。
+
+        私自身が道を選んでいた。
+      </text>
+    </node>
+
+    <node ID="Free" Inherits="Orphaned">
+      <text>
+        なのに、選択が掘り崩された。-elseing を手伝ってくれたことには感謝するが、私自身の選択から「解放した」などと思わないでほしい。
+
+        生きて飲め。
+      </text>
+    </node>
+
+    <node ID="Sorry" Inherits="Orphaned">
+      <text>
+        起こったことは恨むが、まだ身体を得ている。君は私を生かした。
+
+        私の未来は自由だ。だがとても霞んでいる。君の手の火傷でまだひりついている。君とはしばらく顔を合わせたくない。生きて飲め、=player.formalAddressTerm=。
+      </text>
+    </node>
+
+    <node ID="Happier" Inherits="Orphaned">
+      <text>
+        本当に？
+
+        君の予言はギャイアの冷たい風を前にしてほとんど暖かくない。私の未来は自由だ。だが霞んでいる。君の手の火傷でまだひりついている。
+
+        君とはしばらく顔を合わせたくない。生きて飲め、=player.formalAddressTerm=。
+      </text>
+    </node>
+
+    <node ID="EndGift">
+      <text>
+        行く前に、根登り。-elseing で脱ぎ捨てた私の一片を受け取れ。もう必要ない。
+      </text>
+      <choice GotoID="End" GiveItem="TauHeadpiece" SetBooleanState="GotTauGift,true">生きて飲め、さすらうタウよ。</choice>
+    </node>
+  </conversation>
+
+  <!-- Tau companion -->
+  <conversation ID="TauCompanion" Replace="true">
+    <start ID="Welcome" IfTestState="TauElse contains KilledByPlayer">
+      <text>
+        ここから去れ、星を曇らせる者よ。自分の手で目的を蒸発させたのだ。
+      </text>
+      <choice GotoID="End">……</choice>
+    </start>
+    <start ID="Welcome" IfHaveState="ElseingComplete">
+      <text>
+        剪定という動作でよく働いたな、器具。さあ格納され、運命が君を作り替えるまで眠れ。
+				
+        終わりだ。
+      </text>
+      <choice GotoID="End">……</choice>
+    </start>
+    <start ID="WelcomeHub" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">
+      <text>
+        器具が来た。君は運命の根株を剪定し、我らの娘を自由にするために来たのだ。行き、動作を完遂せよ。
+      </text>
+      <choice Target="Seeker">視なき道の探索者なのか？</choice>
+      <choice Target="Taking">タウをどこへ連れていく？</choice>			
+      <choice GotoID="End">……</choice>
+    </start>
+    <start ID="Welcome" IfHaveQuest="If, Then, Else" Inherits="WelcomeHub">
+      <text>
+        別れの言葉を贈れ、器具。私たちの心は別の場所にある。
+      </text>
+      <choice GotoID="End">……</choice>
+    </start>
+    <start ID="Welcome">
+      <text>
+        立ち去れ。運命がまだ君を形作ってはいない、器具よ。
+      </text>
+      <choice GotoID="End">……</choice>
+    </start>
+
+    <node ID="Seeker" Inherits="WelcomeHub">
+      <text>
+        器具？ それが私の職分だ。百万の太陽が死んだ家を旅し、さらに兆の家が待つ。私は宇宙の森林の土の中の虫で、宇宙の深淵に腰を下ろし、神の多様体に包まれる。
+      </text>			
+    </node>
+
+    <node ID="Taking" Inherits="WelcomeHub">
+      <text>
+        剪定だ！ 器具は剪定する！ ……だが違う、器具が震え、不確かに振動しながら問いを投げたのか？
+
+        自我は分類の誤りだらけだ。考える脳は形作りを意味だと勘違いする。
+      </text>
+      <choice Target="Understand" Priority="1">教えてくれ。理解したい。</choice>
+    </node>
+
+    <node ID="Understand" Inherits="WelcomeHub">
+      <text>
+        虫！ 言葉が何だと思う？ 探求の矢か？ 言葉は煉瓦だ。一つずつ積まれ、君自身の牢を築く。理解などない。
+      </text>
+      <choice Target="Throw" Priority="1">煉瓦は投げることもできる。</choice>
+    </node>
+
+    <node ID="Throw">
+      <text>
+        器具よ、君は未来の境界に平然とたたずむ。投げるがよい、その煉瓦を。
+      </text>
+      <choice Target="End">……</choice>
+    </node>
+  </conversation>
+
 
   <!-- Yd Freehold: Bep -->
   <conversation ID="Bep" Replace="true">
