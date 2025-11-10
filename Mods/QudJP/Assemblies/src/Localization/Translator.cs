@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Threading;
 using UnityEngine;
+using QudJP.Diagnostics;
 
 namespace QudJP.Localization
 {
@@ -74,37 +75,51 @@ namespace QudJP.Localization
 
         public string Apply(string? text, string? contextId = null)
         {
-            if (text == null)
-            {
-                return text!;
-            }
-
-            if (text.Length == 0)
+            var original = text ?? string.Empty;
+            if (original.Length == 0)
             {
                 return string.Empty;
             }
 
             var snapshot = _snapshot;
-            var original = text;
             var normalized = NormalizeKey(original);
+
+            var eid = UIContext.Current;
+            var hit = false;
+            var result = original;
 
             if (TryTranslate(normalized, contextId, snapshot, out var translated))
             {
-                return translated;
+                result = translated;
+                hit = true;
             }
-
             var delimiter = DetectDelimiter(original);
             if (!string.IsNullOrEmpty(delimiter))
             {
                 var segmented = TranslateSegments(original, delimiter!, contextId, snapshot);
                 if (segmented != null)
                 {
-                    return segmented;
+                    result = segmented;
+                    hit = true;
                 }
             }
 
             var fallback = TryTranslateLabelFallback(original, contextId, snapshot);
-            return fallback ?? original;
+            if (!hit && fallback != null)
+            {
+                result = fallback;
+                hit = true;
+            }
+
+            result = string.IsNullOrEmpty(result) ? original : result;
+
+            if (JpLog.Enabled)
+            {
+                var ctx = contextId ?? "-";
+                JpLog.Info(eid, "TR", hit ? "HIT" : "MISS", $"ctx={ctx} keyLen={normalized.Length} outLen={result.Length}");
+            }
+
+            return result;
         }
 
         private static bool TryTranslate(string normalized, string? contextId, TranslationSnapshot snapshot, out string translated)
@@ -115,14 +130,16 @@ namespace QudJP.Localization
             {
                 var contextKey = contextId!;
                 if (snapshot.Contextual.TryGetValue(contextKey, out var contextMap) &&
-                    contextMap.TryGetValue(normalized, out var contextValue))
+                    contextMap.TryGetValue(normalized, out var contextValue) &&
+                    !string.IsNullOrEmpty(contextValue))
                 {
                     translated = contextValue;
                     return true;
                 }
             }
 
-            if (snapshot.Global.TryGetValue(normalized, out var value))
+            if (snapshot.Global.TryGetValue(normalized, out var value) &&
+                !string.IsNullOrEmpty(value))
             {
                 translated = value;
                 return true;

@@ -1,5 +1,6 @@
 using HarmonyLib;
 using ModelShark;
+using QudJP.Diagnostics;
 using QudJP.Localization;
 
 namespace QudJP.Patches
@@ -14,15 +15,22 @@ namespace QudJP.Patches
     {
         [HarmonyPrefix]
         [HarmonyPatch(nameof(TooltipManager.SetTextAndSize))]
-        private static void BeforeSetTextAndSize(TooltipTrigger trigger)
+        private static void BeforeSetTextAndSize(TooltipTrigger trigger, ref string __state)
         {
+            var eid = UIContext.Capture(JpLog.NewEID());
+            __state = eid;
+            UIContext.Bind(trigger, eid);
+
+            var styleName = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
+            JpLog.Info(eid, "Tooltip", "START", $"style={styleName} trigger={trigger?.name ?? "<null>"}");
+
             var fields = trigger?.parameterizedTextFields;
             if (fields == null)
             {
                 return;
             }
 
-            var style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : string.Empty;
+            var style = styleName ?? string.Empty;
 
             for (int i = 0; i < fields.Count; i++)
             {
@@ -69,7 +77,22 @@ namespace QudJP.Patches
 
                 // Persist the change
                 f.value = text;
+                JpLog.Info(eid, "Tooltip", "Param", $"{f.name ?? "<null>"} len={text?.Length ?? 0}");
             }
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPriority(Priority.Last)]
+        [HarmonyPatch(nameof(TooltipManager.SetTextAndSize))]
+        private static void AfterSetTextAndSize(TooltipTrigger trigger, string __state)
+        {
+            if (string.IsNullOrEmpty(__state))
+            {
+                return;
+            }
+
+            JpLog.Info(__state, "Tooltip", "END", $"trigger={trigger?.name ?? "<null>"}");
+            UIContext.Release(__state);
         }
 
         /// <summary>

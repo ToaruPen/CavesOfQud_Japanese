@@ -26,17 +26,17 @@
 | --- | --- | --- | --- |
 | Items | `ObjectBlueprints/Items.xml` | `Localization/ObjectBlueprints/Items.jp.xml` | 既存。カテゴリ単位で順次翻訳中。 |
 | RootObjects | `ObjectBlueprints/RootObjects.xml` | `Localization/ObjectBlueprints/RootObjects.jp.xml` | 既存。CosmeticObject などの DisplayName を上書き済み。 |
-| Creatures | `ObjectBlueprints/Creatures.xml` | *未作成*（`Localization/ObjectBlueprints/Creatures.jp.xml` を追加予定） | 未訳。 |
+| Creatures | `ObjectBlueprints/Creatures.xml` | `Localization/ObjectBlueprints/Creatures.jp.xml` | 既存。Tier／Batch 単位で挿入済み（現在 Batch28 まで訳語を投入済み、残差分は `work/creatures_missing_batch*.json` で管理）。 |
 | Data | `ObjectBlueprints/Data.xml` | `Localization/ObjectBlueprints/Data.jp.xml` | 未識別遺物ラベルと調理素材の説明を追記済み。 |
-| Foods | `ObjectBlueprints/Foods.xml` | *未作成* | 未訳。 |
-| Furniture | `ObjectBlueprints/Furniture.xml` | *未作成* | 未訳。 |
-| HiddenObjects | `ObjectBlueprints/HiddenObjects.xml` | *未作成* | 未訳。 |
-| PhysicalPhenomena | `ObjectBlueprints/PhysicalPhenomena.xml` | *未作成* | 未訳。 |
-| Staging / TutorialStaging | `ObjectBlueprints/Staging.xml` / `TutorialStaging.xml` | *未作成* | 未訳。 |
+| Foods | `ObjectBlueprints/Foods.xml` | `Localization/ObjectBlueprints/Foods.jp.xml` | 既存。保存食・調味料・トニックの DisplayName／説明を翻訳済み。 |
+| Furniture | `ObjectBlueprints/Furniture.xml` | `Localization/ObjectBlueprints/Furniture.jp.xml` | 既存。工作台・容器・扉などの名称／説明を順次上書き。 |
+| HiddenObjects | `ObjectBlueprints/HiddenObjects.xml` | `Localization/ObjectBlueprints/HiddenObjects.jp.xml` | 既存。希少オブジェクト／イベント用隠しタグを差し替え済み。 |
+| PhysicalPhenomena | `ObjectBlueprints/PhysicalPhenomena.xml` | `Localization/ObjectBlueprints/PhysicalPhenomena.jp.xml` | 既存。地形効果・天候テキストを Load="Merge" で調整中。 |
+| Staging / TutorialStaging | `ObjectBlueprints/Staging.xml` / `TutorialStaging.xml` | `Localization/ObjectBlueprints/Staging.jp.xml` / `Localization/ObjectBlueprints/TutorialStaging.jp.xml` | Staging 側は空スタブで維持し、TutorialStaging 側でチュートリアル用地形／イベント文を翻訳。 |
 | Walls | `ObjectBlueprints/Walls.xml` | `Localization/ObjectBlueprints/Walls.jp.xml` | 表示名・壁説明を追加済み（ステータスや物性タグは未対象）。 |
-| Widgets | `ObjectBlueprints/Widgets.xml` | *未作成* | 未訳。 |
-| WorldTerrain | `ObjectBlueprints/WorldTerrain.xml` | *未作成* | 未訳。 |
-| ZoneTerrain | `ObjectBlueprints/ZoneTerrain.xml` | *未作成* | 未訳。 |
+| Widgets | `ObjectBlueprints/Widgets.xml` | `Localization/ObjectBlueprints/Widgets.jp.xml` | 既存。ゾーン変換ウィジェットや UI モジュールの DisplayName を反映。 |
+| WorldTerrain | `ObjectBlueprints/WorldTerrain.xml` | `Localization/ObjectBlueprints/WorldTerrain.jp.xml` | 既存。大域地形の名称・説明を翻訳済み。 |
+| ZoneTerrain | `ObjectBlueprints/ZoneTerrain.xml` | `Localization/ObjectBlueprints/ZoneTerrain.jp.xml` | 既存。ゾーン内の植物／岩肌など共通テキストを上書き済み。 |
 
 > **LLM パイプライン:** `scripts/objectblueprint_extract.py` / `objectblueprint_insert.py` を利用する場合は、`Docs/tasks/objectblueprints_llm.md` を必ず参照して抽出→翻訳→再挿入の契約を守ること。
 
@@ -44,7 +44,7 @@
 
 | カテゴリ | ベース (`references/Base/Corpus/…`) | ローカライズ先 | 備考 |
 | --- | --- | --- | --- |
-| 長文書籍 / 詩 / ロア | `Corpus/*.txt` | `Mods/QudJP/Localization/Corpus/*.jp.txt`（フォルダーを新規作成） | まだリポジトリに日本語ファイルはないので、翻訳ごとに `.jp.txt` を追加する。`Docs/tasks/books.md` のタスクリスト参照。 |
+| 長文書籍 / 詩 / ロア | `Corpus/*.txt` | `Mods/QudJP/Localization/Corpus/*.jp.txt` | `Machinery-of-the-Universe-excerpt`／`Meteorology-Weather-Explained-excerpt`／`Thought-Forms-excerpt` の `.jp.txt` を追加済み。以降も翻訳が完了するたびに同フォルダーへ `.jp.txt` を増やし、詳細は `Docs/tasks/books.md` を参照。 |
 
 ## 4. その他
 

@@ -2,6 +2,7 @@ using System;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
+using QudJP.Diagnostics;
 using QudJP.Localization;
 using XRL.UI;
 
@@ -45,10 +46,30 @@ namespace QudJP.Patches
             [HarmonyPrefix]
             private static void Prefix(
                 [HarmonyArgument(0)] ref string message,
-                [HarmonyArgument(5)] ref string title)
+                [HarmonyArgument(5)] ref string title,
+                ref string __state)
             {
-                message = LocalizeUIPopupMessage(message);
-                title = LocalizeUIPopupTitle(title);
+                var eid = UIContext.Capture(JpLog.NewEID());
+                __state = eid;
+
+                JpLog.Info(eid, "Popup", "START", $"title='{title ?? "<null>"}' msgLen={message?.Length ?? 0}");
+                message = LocalizeUIPopupMessage(message ?? string.Empty);
+                title = LocalizeUIPopupTitle(title ?? string.Empty);
+            }
+
+            [HarmonyPostfix]
+            private static void Postfix(
+                [HarmonyArgument(0)] string message,
+                [HarmonyArgument(5)] string title,
+                string __state)
+            {
+                if (string.IsNullOrEmpty(__state))
+                {
+                    return;
+                }
+
+                JpLog.Info(__state, "Popup", "END", $"title='{title ?? "<null>"}' msgLen={message?.Length ?? 0}");
+                UIContext.Release(__state);
             }
         }
 

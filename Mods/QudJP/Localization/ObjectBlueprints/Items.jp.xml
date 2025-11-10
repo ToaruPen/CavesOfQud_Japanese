@@ -9785,7 +9785,7 @@
 
 <object Name="BaseTierBack7" Inherits="BaseTierBack" Replace="true">
     <part Name="Render" Tile="items/sw_cloak.bmp" ColorString="&amp;w" DetailColor="W" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="市場の巨獣じみたスプールから裂いた不朽のウーフラックスのシートを三重に折り、幾何学模様のタルマに縫い上げた。" />
     <part Name="Armor" AV="0" DV="3" WornOn="Back" />
     <part Name="Physics" Weight="4" />
     <tag Name="Tier" Value="7" />
@@ -9793,7 +9793,7 @@
 
 <object Name="BaseTierArm7" Inherits="BaseTierArm" Replace="true">
     <part Name="Render" Tile="Items/sw_bracelet_simple.bmp" DetailColor="b" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="異界産の金箔が星路に沿って螺旋を描いている。" />
     <part Name="Armor" AV="1" DV="3" WornOn="Arm" />
     <part Name="Physics" Weight="1" />
     <tag Name="Tier" Value="7" />
@@ -9801,7 +9801,7 @@
 
 <object Name="BaseTierFloating7" Inherits="BaseTierFloating" Replace="true">
     <part Name="Render" DetailColor="C" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="発光するスピンドルの欠片が地に墜ちた衝撃で磁化し、選ばれた番人の周りを周回する。" />
     <part Name="LightSource" Lit="true" Radius="8" />
     <tag Name="Tier" Value="7" />
   </object>
@@ -9816,15 +9816,15 @@
 
 <object Name="BaseTierBack8" Inherits="BaseTierBack" Replace="true">
     <part Name="Render" Tile="items/sw_cloak.bmp" ColorString="&amp;w" DetailColor="W" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="市場の巨獣じみたスプールから裂いた不朽のウーフラックスのシートを四重に折り、幾何学模様のタルマに縫い上げた。" />
     <part Name="Armor" AV="0" DV="4" WornOn="Back" />
     <part Name="Physics" Weight="4" />
     <tag Name="Tier" Value="8" />
   </object>
 
-<object Name="BaseTierArm8" Inherits="BaseTierBack" Replace="true">
+<object Name="BaseTierArm8" Inherits="BaseTierArm" Replace="true">
     <part Name="Render" Tile="Items/sw_bracelet_simple.bmp" DetailColor="b" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="異界産の金箔が星路に沿って螺旋を描いている。" />
     <part Name="Armor" AV="1" DV="3" WornOn="Arm" />
     <part Name="Physics" Weight="1" />
     <tag Name="Tier" Value="8" />
@@ -9832,7 +9832,7 @@
 
 <object Name="BaseTierFloating8" Inherits="BaseTierFloating" Replace="true">
     <part Name="Render" DetailColor="C" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="発光するスピンドルの欠片が地に墜ちた衝撃で磁化し、選ばれた番人の周りを周回する。" />
     <part Name="LightSource" Lit="true" Radius="8" />
     <tag Name="Tier" Value="8" />
   </object>
@@ -9899,77 +9899,77 @@
   </object>
 
 <object Name="Animal Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="湿った毛と腐肉の山が地面に盛り上がりを作っている。" />
     <part Name="Physics" Weight="40" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="肉はひどく堅い。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Small Animal Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="湿った毛と腐肉の小山が地面に小さな隆起を作っている。" />
     <part Name="Physics" Weight="10" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="肉はひどく堅い。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Humanoid Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="湿った髪と腐肉の山が足元に盛り上がっている。" />
     <part Name="Physics" Weight="80" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="肉はひどく堅い。" />
     <tag Name="DynamicObjectsTable:HumanoidCorpses" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Arthropod Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="胴体が裏返り、くしゃりと折れた脚の花束を生やしている。" />
     <part Name="Physics" Weight="30" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="外骨格を噛み砕くと、その奥から舌の上で溶ける柔らかな肉が現れる。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Crab Corpse" Inherits="Arthropod Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="甲羅付きの胴体が裏返り、くしゃりと折れた脚の花束を生やしている。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Winged Arthropod Corpse" Inherits="Arthropod Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="胴体が裏返り、くしゃりと折れた脚の花束を生やしている。薄膜の翼衣が全体を包み込んでいる。" />
     <part Name="Physics" Weight="15" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Scaled Reptile Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="砕けた鱗が平坦なモザイク模様を織りなしている。" />
     <part Name="Physics" Weight="30" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="鱗を噛み切るのは岩をかじるようだ。肉は痩せているが腹持ちがよい。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Fish Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="濡れた鱗が平坦なモザイク模様を織りなしている。" />
     <part Name="Physics" Weight="5" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="柔らかな身が小骨からするりと外れる。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Frog Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="開いた足とひび割れた脚が押し潰された胴の下へ畳み込まれている。" />
     <part Name="Physics" Weight="30" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="肉はほろりと柔らかい。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Worm Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="スポンジのような環節の身体がしぼみ、小さな剛毛が土を掻いている。" />
     <part Name="Physics" Weight="20" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="噛んでも噛んでも終わらない。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
 <object Name="Snail Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="空になった殻が螺旋に沿って割れ、乾いた粘液で染みついている。" />
     <part Name="Physics" Weight="100" />
-    <part Name="Food" Message="" />
+    <part Name="Food" Message="殻をバリバリ砕くと、口の中が熱い粘液で満たされる。" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
 
@@ -10058,9 +10058,9 @@
   </object>
 
 <object Name="Human Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="" ColorString="&amp;y" />
-    <part Name="Description" Short="" />
-    <part Name="Food" Message="" />
+    <part Name="Render" DisplayName="人間の死体" ColorString="&amp;y" />
+    <part Name="Description" Short="虐殺の力が身体の部位を組み替えた。盤上の駒や王の廷臣、身体の部位といった文脈ごとに、組み替えがいかに別の意味を持つのかを思わず考えてしまう。" />
+    <part Name="Food" Message="筋張った嫌悪の食事だ。" />
     <part Name="Physics" Weight="200" />
     <part Name="Commerce" Value="10" />
     <tag Name="NoSparkingQuest" />
@@ -10069,9 +10069,9 @@
   </object>
 
 <object Name="Charred Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" />
-    <part Name="Food" Message="" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="焦げた死体" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" />
+    <part Name="Food" Message="焦げている。" />
+    <part Name="Description" Short="炎がこの身体から光を奪い、変わりゆく土に抗うように静まり返っている。" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <tag Name="NoSparkingQuest" />
@@ -10080,9 +10080,9 @@
   </object>
 
 <object Name="Mangled Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
-    <part Name="Food" Message="" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="ずたずたの死体" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
+    <part Name="Food" Message="腐臭を放っている。" />
+    <part Name="Description" Short="虐殺の力が身体の部位を組み替えた。盤上の駒や王の廷臣、身体の部位といった文脈ごとに、組み替えがいかに別の意味を持つのかを思わず考えてしまう。" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <tag Name="NoSparkingQuest" />
@@ -10103,9 +10103,9 @@
   </object>
 
 <object Name="Fresh Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
-    <part Name="Food" Message="" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="新鮮な死体" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" />
+    <part Name="Food" Message="腐臭を放っている。" />
+    <part Name="Description" Short="血はまだ濡れている。濡れているという事実が時計の役割を果たすのだと今ようやく分かった。" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <tag Name="NoSparkingQuest" />
@@ -10114,9 +10114,9 @@
   </object>
 
 <object Name="Moldering Corpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" DisplayName="" ColorString="&amp;w" TileColor="&amp;w" DetailColor="B" />
-    <part Name="Food" Message="" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="朽ちかけの死体" ColorString="&amp;w" TileColor="&amp;w" DetailColor="B" />
+    <part Name="Food" Message="黴の味がする。" />
+    <part Name="Description" Short="ここに横たわる人型は、自分の胴体が小さなキノコの鰓から落ちた塵の避難所になるなど想像もしなかったのだろうが、想像すべきだった。" />
     <part Name="Physics" Weight="140" />
     <part Name="Commerce" Value="2" />
     <intproperty Name="Bleeds" Value="0" />
@@ -10135,9 +10135,9 @@
   </object>
 
 <object Name="Ashes" Inherits="Item" Replace="true">
-    <part Name="Render" DisplayName="" RenderString="," ColorString="&amp;y" IgnoreColorForStack="true" IgnoreTileForStack="true" />
+    <part Name="Render" DisplayName="灰" RenderString="," ColorString="&amp;y" IgnoreColorForStack="true" IgnoreTileForStack="true" />
     <part Name="Physics" Organic="true" Category="Corpses" FlameTemperature="99999" VaporTemperature="1500" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="物質が押し潰され、焼かれ、柔らかな粉になった。" />
     <tag Name="DynamicObjectsTable:Corpses" />
     <tag Name="Gender" Value="plural" />
     <part Name="RandomTileOnMove" Tiles="Items/sw_ash_1.bmp,Items/sw_ash_2.bmp,Items/sw_ash_3.bmp,Items/sw_ash_4.bmp" />
@@ -10191,10 +10191,10 @@
   </object>
 
 <object Name="SkrefCorpse" Inherits="Corpse" Replace="true">
-    <part Name="Render" RenderLayer="6" DisplayName="" ColorString="&amp;r" TileColor="&amp;r" />
+    <part Name="Render" RenderLayer="6" DisplayName="ぺしゃんこになった遺骸" ColorString="&amp;r" TileColor="&amp;r" />
     <part Name="SkrefCorpseLoot" />
-    <part Name="Food" Message="" />
-    <part Name="Description" Short="" />
+    <part Name="Food" Message="肉のパンケーキは柔らかい。" />
+    <part Name="Description" Short="虚飾に満ちた人型の押し潰された遺骸らしい。" />
     <part Name="Interesting" />
     <tag Name="NoSparkingQuest" />
     <tag Name="Gender" Value="plural" />
@@ -10405,12 +10405,12 @@
   </object>
 
 <object Name="DataDisk" Inherits="Item" Replace="true">
-    <part Name="Render" Tile="items/sw_data_disc.bmp" DetailColor="W" DisplayName="" ColorString="&amp;c" RenderString="007" RenderLayer="4" />
+    <part Name="Render" Tile="items/sw_data_disc.bmp" DetailColor="W" DisplayName="データディスク" ColorString="&amp;c" RenderString="007" RenderLayer="4" />
     <part Name="Physics" Weight="1" Category="Data Disks" />
     <part Name="Commerce" Value="100" />
     <part Name="DataDisk" />
     <part Name="NotNameable" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="金属シャッターの内側で、結晶質のディスクに微細なピットが刻まれてデータを保持している。" />
     <tag Name="EquipSound" Value="sfx_equip_material_generic_tool" />
     <tag Name="DisplayFullNameAsReward" />
     <stag Name="DataDisk" />
@@ -10434,21 +10434,21 @@
 <object Name="SoupPhial" Inherits="Phial" Replace="true">
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="proteangunk-1000" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="ガラス製の小瓶。" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="BrainBrinePhial" Inherits="Phial" Replace="true">
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="brainbrine-1000" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="ガラス製の小瓶。" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
 
 <object Name="SunSlagPhial" Inherits="Phial" Replace="true">
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="sunslag-1000" />
-    <part Name="Description" Short="" />
+    <part Name="Description" Short="ガラス製の小瓶。" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
@@ -10461,8 +10461,8 @@
     <part Name="Commerce" Value="8" />
     <stat Name="Hitpoints" Value="100" />
     <stat Name="AV" Value="6" />
-    <part Name="Render" DisplayName="" ColorString="&amp;c" DetailColor="C" RenderString="232" RenderLayer="5" Tile="Assets_Content_Textures_Items_sw_jug5.bmp" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="貯蔵タンク" ColorString="&amp;c" DetailColor="C" RenderString="232" RenderLayer="5" Tile="Assets_Content_Textures_Items_sw_jug5.bmp" />
+    <part Name="Description" Short="クロームを鋳成した筒を真鍮の取付金具で固定してある。" />
     <part Name="TinkerItem" Bits="B" />
     <part Name="Metal" />
     <tag Name="WaterContainer" Value="1" />
@@ -10477,8 +10477,8 @@
     <part Name="LeakWhenBroken" />
     <part Name="Commerce" Value="0.5" />
     <stat Name="Hitpoints" Value="2" />
-    <part Name="Render" DisplayName="" ColorString="&amp;w" DetailColor="W" RenderString="229" RenderLayer="5" Tile="Items/sw_gourd.bmp" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="ひょうたん" ColorString="&amp;w" DetailColor="W" RenderString="229" RenderLayer="5" Tile="Items/sw_gourd.bmp" />
+    <part Name="Description" Short="膠質を成形して液体用の器にした。" />
     <part Name="Springy" Factor="0.3" />
     <tag Name="WaterContainer" Value="1" />
     <tag Name="Mods" Value="CommonMods" />
@@ -10486,8 +10486,8 @@
   </object>
 
 <object Name="Entropy Cyst" Inherits="Phial" Replace="true">
-    <part Name="Render" DisplayName="" Tile="Items/sw_entropic_cyst.bmp" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="エントロピー胞" Tile="Items/sw_entropic_cyst.bmp" />
+    <part Name="Description" Short="静電の膿疱が震えながら寸法を伸び縮みさせ、生き物のようにそわそわしている。" />
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="1" InitialLiquid="warmstatic-1000" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
     <stat Name="Hitpoints" Value="1000" />
@@ -10495,11 +10495,11 @@
   </object>
 
 <object Name="Magnetic Bottle" Inherits="WaterContainer" Replace="true">
-    <part Name="Render" DisplayName="" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false" />
+    <part Name="Render" DisplayName="磁気ボトル" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false" />
     <part Name="Physics" Weight="3" Category="Artifacts" />
     <part Name="Commerce" Value="200" />
-    <part Name="Description" Short="" />
-    <part Name="RulesDescription" Text="" />
+    <part Name="Description" Short="磁性ガラスが収められた静かな強磁性液を尖塔のように歪める。" />
+    <part Name="RulesDescription" Text="電源投入中、この容器はあらゆる供給源からの中性子フラックスを安全に受けられ、ここから他の適合する容器へ安全に注げる。" />
     <part Name="LiquidVolume" StartVolume="0-1" InitialLiquid="neutronflux-1000" MaxVolume="1" ManualSeal="true" LiquidVisibleWhenSealed="true" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIPassiveEnergyCellReload" />
@@ -10525,7 +10525,7 @@
 
 <object Name="FungalInfection" Inherits="Item" Replace="true">
     <part Name="Armor" WornOn="*" DV="0" AV="0" />
-    <part Name="Render" DisplayName="" RenderString="*" RenderLayer="5" />
+    <part Name="Render" DisplayName="感染" RenderString="*" RenderLayer="5" />
     <part Name="Physics" Weight="5" Category="Fungal Infection" />
     <part Name="Commerce" Value="0" />
     <part Name="NoDamage" />
@@ -10586,8 +10586,8 @@
   </object>
 
 <object Name="Security Card" Inherits="Item" Replace="true">
-    <part Name="Render" RenderString="-" Tile="Items/sw_security_card.bmp" Occluding="false" RenderIfDark="true" />
-    <part Name="Description" Short="" />
+    <part Name="Render" DisplayName="セキュリティカード" RenderString="-" Tile="Items/sw_security_card.bmp" Occluding="false" RenderIfDark="true" />
+    <part Name="Description" Short="符号化された金属紙の短冊で、錠機構に差し込むと一部の扉を開けられる。" />
     <tag Name="DynamicObjectsTable:SecurityCards" />
     <tag Name="AdjustWeaponScore" Value="-2" />
     <tag Name="BaseObject" Value="*noinherit" />

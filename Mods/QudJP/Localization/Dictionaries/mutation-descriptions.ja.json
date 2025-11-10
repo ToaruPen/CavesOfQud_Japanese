@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "id": "mutation-descriptions",
+    "lang": "ja",
+    "version": "0.1.0"
+  },
+  "rules": {
+    "protectColorTags": true,
+    "protectHtmlEntities": true
+  },
+  "entries": [
+    {
+      "key": "mutation:Adrenal Control",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "あなたは自分の体内でアドレナリンの分泌を制御できる。\n\n20ターンのあいだアドレナリンの流れを高められる。\nそのあいだ{{C|+10}}の俊敏を得て、ほかの肉体突然変異のランクが{{C|+1}}上昇する。\nクールダウン: 200ターン"
+    },
+    {
+      "key": "mutation:Multiple Arms",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "腕がもう1組ある。\n\n近接攻撃を行うたび、追加の腕それぞれが{{rules|10%}}の確率で追加の近接攻撃を繰り出す。"
+    },
+    {
+      "key": "mutation:Photosynthetic Skin",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "たくましい緑の皮膚で日光を吸収し、そこから養分を得る。\n\n食事の代わりに日光浴して{{rules|1 day}}のあいだ特別な代謝効果を得られる: 自然回復速度が{{rules|+30%}}、俊敏が{{rules|+15}}。\n日光の下にいるとデンプンとリグニンを蓄え、調理にそれぞれ{{rules|1}}食分まで使える。\n植生と同じマスにいるあいだはDVに{{rules|+1}}の迷彩ボーナス。\n{{w|根}}、{{w|木々}}、{{w|蔦}}、{{w|コンソーシアム・オブ・ファイタ}}との評判+200。"
+    },
+    {
+      "key": "mutation:Heightened Strength",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "あなたは怪力を振るうことができる。\n\n+{{C|2}} 筋力\n近接攻撃が命中するたび{{C|15%}}の確率で敵を2～3ターン朦朧させる"
+    },
+    {
+      "key": "mutation:Heightened Quickness",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "驚異的な速度を授かっている。\n\n+{{rules|15}} 俊敏"
+    },
+    {
+      "key": "mutation:Heightened Hearing",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "不自然なほど鋭い聴覚を持つ。\n\n半径{{rules|5}}マス以内にいる生物の存在を感知する。\n周囲で感知した対象を識別できる可能性がある"
+    },
+    {
+      "key": "mutation:Electromagnetic Pulse",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "周囲の機械やアーティファクトを無力化する電磁パルスを放てる。\n\n範囲: 自身を中心とした{{rules|5x5}}\n持続時間: {{rules|6-15}}ターン\nクールダウン: 200ターン"
+    },
+    {
+      "key": "mutation:Electrical Generation",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "電荷を溜め込み、放電してダメージを与えられる。\n\n最大蓄電量: {{C|4000}}\n1ターンごとに基礎{{C|100}}チャージを獲得する\n蓄えた電荷をすべて放出し、1000ごとに1d4ダメージを与える\n放電は隣接する目標へ減衰しながら連鎖し、1000チャージごとに1体まで跳ぶ\nEMPを受けると意志力18の判定に失敗した場合に強制放電する"
+    },
+    {
+      "key": "mutation:Night Vision",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "暗闇の中でも見通せる。\n\n"
+    },
+    {
+      "key": "mutation:Regeneration",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "傷が驚異的な速さで癒える。\n\n戦闘中でも自然回復速度がフルに適用される。\n自然回復速度が{{rules|+20%}}上昇する\n{{rules|10%}}の確率でターンごとに失った四肢を再生する\n毎ターン{{rules|1%}}の確率で{{rules|軽度の肉体的デバフ}}をランダムに取り除く"
+    },
+    {
+      "key": "mutation:Phasing",
+      "context": "Chargen.Mutation.LongDescription",
+      "text": "短時間だけ自分の身体を位相させ、固体をすり抜けられる。\n\n持続時間: {{rules|7}}ターン\nクールダウン: {{rules|100}}ターン"
+    }
+  ]
+}
