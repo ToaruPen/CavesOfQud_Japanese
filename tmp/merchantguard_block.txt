@@ -1,0 +1,8 @@
+﻿  <conversation ID="MerchantGuard" Replace="true">
+    <node ID="Start">
+      <text>
+        見張っているぞ、旅人。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

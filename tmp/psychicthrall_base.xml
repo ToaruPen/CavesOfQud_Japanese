@@ -1,0 +1,10 @@
+﻿<conversation ID="PsychicThrall">
+    <node ID="Start">
+      <text>
+        {{emote|*stares blankly*}}
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

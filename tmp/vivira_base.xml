@@ -1,0 +1,115 @@
+﻿<conversation ID="Vivira">
+    <node ID="Start">
+      <text>
+        {{emote|*BEEP* *crackle*}}
+
+        By Her Light, =player.formalAddressTerm=.
+
+        An =ifplayerplural:ye would:thou wouldst= rest peaceably, =ifplayerplural:ye are:thou'rt= welcome here.
+      </text>
+      <choice GotoID="ViviQuest" IfHaveActiveQuest="The Buried Watchers" CompleteQuestStep="The Buried Watchers~Visit the Mopango Settlement in the Tomb of the Eaters">Are you Vivira? Zothom sent me.</choice>
+      <choice GotoID="ViviFriendly">You are friendlier than most turrets.</choice>
+      <choice GotoID="ViviWelcome">What is this place?</choice>
+      <choice GotoID="End">Farewell, Lightspitter.</choice>
+    </node>
+
+    <node ID="ViviQuest">
+      <text>
+        {{emote|*crackle, crackle*}}-othom? My sympathies.
+
+        =ifplayerplural:Ye are:Thou art= of course welcome here, wayfarer. Speak to Agyra an =ifplayerplural:ye need:thou needest= aught, as ey delighteth in hospitality.
+      </text>
+      <choice GotoID="ViviZothom">Why are you offering me sympathies?</choice>
+      <choice GotoID="ViviWelcome">What is "here"?</choice>
+      <choice GotoID="ViviFriendly">You're much nicer than most turrets I meet.</choice>
+      <choice GotoID="End">I see. Farewell.</choice>
+    </node>
+
+    <node ID="ViviZothom">
+      <text>
+        {{emote|*crackle-sigh*}}
+
+        I was being petty. The little time Zothom spent here felt like weeks, so conceited and aggressive was his grief. But Agyra would chide me for saying so. I have a long road to true self-realization, I realize.
+
+        But if you ask me, Zothom's road is far longer. {{emote|*BEEP*}}
+      </text>
+      <choice GotoID="ViviFriendly">You're rather civil for a turret.</choice>
+      <choice GotoID="ViviWelcome">What is this place?</choice>
+      <choice GotoID="End">Live and remain rustless, Vivira.</choice>
+    </node>
+
+    <node ID="ViviFriendly">
+      <text>
+        So I am told. I have never had the pleasure nor displeasure to meet another turret. I know only my friends here, who uplifted me by chance and cared for me by choice.
+
+        Wer't not for my shape, I wouldst be little different from other mopango.
+      </text>
+      <choice GotoID="ViviWelcome">What is "here"?</choice>
+      <choice GotoID="ViviMopango">What are mopango?</choice>
+      <choice GotoID="End">I see. Farewell.</choice>
+    </node>
+
+    <node ID="ViviWelcome">
+      <text>
+        =ifplayerplural:Ye know:Thou knowest= surely that this is the Tomb of the Eaters, but behind me lieth nestled a settlement occupied by the watchers of the tomb, a small coterie of mopango.
+
+        An =ifplayerplural:ye would:thou wouldst= know more of the settlement, =ifplayerplural:ye:thou= must ask the watcher named Agyra residing within. Ey loveth the sharing of knowledge.
+      </text>
+      <choice GotoID="ViviFriendly">You're much nicer than most turrets I meet.</choice>
+      <choice GotoID="ViviMopango">What are mopango?</choice>
+      <choice GotoID="End">I see. Farewell.</choice>
+    </node>
+
+    <node ID="ViviMopango">
+      <text>
+        Mopango are witnesses of the past and shepherds of the future. We seek peace and harmony through understanding the Kasaphescence and Her many children. We nonetheless eschew conformity, and each of us seeketh a personal credo by which we livest our lives.
+
+        But I am a poor teacher. Speak to Agyra, and =ifplayerplural:ye shall:thou shalt= gain better understanding.
+      </text>
+      <choice GotoID="ViviCredo">Do you have a personal credo?</choice>
+      <choice GotoID="End">I thank you. Farewell.</choice>
+    </node>
+
+    <node ID="ViviCredo">
+      <text>
+        I do.
+
+        "Form needeth not follow function."
+      </text>
+      <choice GotoID="ViviTaboo">What does that mean?</choice>
+      <choice GotoID="ViviWelcome">What is this place?</choice>
+      <choice GotoID="ViviFriendly">You're very thoughtful, as turrets go.</choice>
+      <choice GotoID="End">Live and remain rustless, Vivira.</choice>
+    </node>
+
+    <node ID="ViviTaboo">
+      <text>
+        {{emote|*BEEP*}}
+
+        Credos hath no inherent meaning that one may so simply define. So =ifplayerplural:ye know:thou knowest=: asking the meaning of a credo is considered impolite among mopango.
+      </text>
+      <choice GotoID="ViviSorry">I apologize.</choice>
+      <choice GotoID="ViviRude">That's ridiculous.</choice>
+    </node>
+
+    <node ID="ViviRude">
+      <text>
+        {{emote|*BEEP*}}
+        Better ridiculous than rude, which =ifplayerplural:ye plainly are:thou plainly art=.
+
+        {{emote|*crackle*}} =ifplayerplural:Speak ye:Speakest thou= to Agyra. Ey hast more patience for rudeness than I.
+      </text>
+      <choice GotoID="End">Very well.</choice>
+    </node>
+
+    <node ID="ViviSorry">
+      <text>
+        All is forgiven, =player.formalAddressTerm=. I am not wroth with =ifplayerplural:ye:thee=.
+      </text>
+      <choice GotoID="ViviFriendly">You're rather civil for a turret.</choice>
+      <choice GotoID="ViviWelcome">What is this place?</choice>
+      <choice GotoID="End">Live and remain rustless, Vivira.</choice>
+    </node>
+  </conversation>
+
+  

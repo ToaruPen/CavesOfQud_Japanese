@@ -1,0 +1,80 @@
+﻿<conversation ID="Sixshrew">
+    <node ID="Start">
+      <text>
+        Oh joy, another meat-being. Please tell me you're here to buy something.
+      </text>
+      <choice ID="Greet" GotoID="Introduction">I am =name=. You are?</choice>
+      <choice ID="Rude" GotoID="Impolite">You're being a bit rude.</choice>
+      <choice ID="Ask" GotoID="CrankyPlant">Is something the matter?</choice>
+      <choice GotoID="End">I suppose I'll be leaving, then.</choice>
+    </node>
+
+    <node ID="Introduction">
+      <text>
+        I am Sixshrew, a merchant from the Consortium of Phyta disinclined to waste xyr time on talkative strangers.
+
+        I sell things, and you can buy them. I would in fact strongly encourage you to buy them, or be on your way.
+      </text>
+      <choice GotoID="Name">Why are you called Sixshrew?</choice>
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">I'll be on my way. Live and drink.</choice>
+    </node>
+
+    <node ID="Name">
+      <text>
+        Why are you called pest?
+      </text>
+      <choice GotoID="NotPest">I'm not...</choice>
+      <choice GotoID="Pest">Because I am a pest?</choice>
+    </node>
+
+    <node ID="NotPest">
+      <text>
+        You are now.
+
+        Are you going to buy something, pest?
+      </text>
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">I'm all set. Live and drink, rude one.</choice>
+    </node>
+
+    <node ID="Pest">
+      <text>
+        Just so.
+
+        Would you like to buy something, pest?
+      </text>
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">I'm all set. Live and drink, rude one.</choice>
+    </node>
+
+    <node ID="Impolite">
+      <text>
+        You're being a bit annoying, so I suppose both of us have our burdens to bear.
+
+        Perhaps we should do some trading and move on with our lives, hmm?
+      </text>
+      <choice UseID="Greet" />
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">I'll skip to the last part. Live and drink, rude one.</choice>
+    </node>
+
+    <node ID="CrankyPlant">
+      <text>
+        Oh, I'm fine, fine.
+
+        I simply adore being assigned this stinking backwater musa grove after decades of service, unceremoniously dumped in an office next to a fleshy tinker who works day and night, making all manner of racket through the thinnest, most conductive walls ever crafted.
+
+        What is it humans say? "Living the dreen?" Yes, I am living the dreen.
+      </text>
+      <choice UseID="Greet" />
+      <choice UseID="Rude" />
+      <choice GotoID="End">I'll be on my way. Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

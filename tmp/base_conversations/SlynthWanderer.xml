@@ -1,0 +1,62 @@
+<conversation ID="SlynthWanderer">
+    <node ID="Start">
+      <text>
+        Care you to trade?~
+        I aggress not.~
+        You peaceful, =player.formalAddressTerm=?~
+        Wish trade?~
+        Good scavenge?~
+        Ah! You seem wanderer. How fare?~
+        Live and grow, =player.formalAddressTerm=.~
+        =player.FormalAddressTerm=, I greet in peace.~
+        Live and drink.~
+        Ah?~
+        Greet, =player.formalAddressTerm=.
+      </text>
+      <choice GotoID="Who" IfNotFinishedQuest="Landing Pads" IfNotHaveQuest="Landing Pads">Who are you?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Who">
+      <text>
+        I am of slynth, a people grown by hydropon.
+      </text>
+      <choice GotoID="Slynth">What are slynth?</choice>
+      <choice GotoID="Hydropon">What is a hydropon?</choice>
+      <choice ID="Iseebye" GotoID="End">I see. Live and drink.</choice>
+    </node>
+
+    <node ID="Slynth">
+      <text>
+        What see. Leg plant, glow crest.
+
+        Grow from sun-crungled hydropon and depart siblings.
+      </text>
+      <choice GotoID="Hydropon">What is a hydropon?</choice>
+      <choice UseID="Iseebye" />
+    </node>
+
+    <node ID="Hydropon">
+      <text>
+        Cradle glaze in sun-melt. Plant stuff molded to man-shape.
+
+        Within grow slynth. Only slynth, now.
+      </text>
+      <choice GotoID="Location">Where is the hydropon?</choice>
+      <choice GotoID="Slynth">What are slynth?</choice>
+      <choice UseID="Iseebye" />
+    </node>
+
+    <node ID="Location">
+      <text>
+        The cracked egg from we crawl yet rest, in the Reef.
+
+        Siblings there. One speak very well: Thah.
+      </text>
+      <choice GotoID="End" CallScript="XRL.World.Quests.LandingPadsSystem.RevealHydropon">Perhaps I shall visit. Live and drink.</choice>
+    </node>
+
+  </conversation>
+
+	
+	

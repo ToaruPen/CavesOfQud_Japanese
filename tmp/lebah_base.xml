@@ -1,0 +1,155 @@
+﻿<conversation ID="Lebah">
+    <node ID="Start">
+      <text>
+        {{emote|*The little watcher stares at you.*}}
+      </text>
+      <choice GotoID="LebahHides" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">Look, Lebah. I have recovered the repulsive device.</choice>
+      <choice GotoID="HelloLebah">Hello?</choice>
+      <choice GotoID="End">Live and drink, quiet one.</choice>
+    </node>
+
+
+    <node ID="HelloLebah">
+      <text>
+        ... aye.
+      </text>
+      <choice GotoID="LebahQuest" IfHaveQuest="Fraying Favorites" IfNotFinishedQuestStep="Fraying Favorites~Talk to Lebah">Agyra tells me you found some kind of repulsive device.</choice>
+      <choice GotoID="LebahReminder" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfNotFinishedQuestStep="Fraying Favorites~Recover the Repulsive Device">Where is the repulsive device, again?</choice>
+      <choice GotoID="Freed" IfFinishedQuest="Fraying Favorites">I have freed one of the children.</choice>
+      <choice GotoID="LebahGreet">I am =name=. What is your name?</choice>
+      <choice GotoID="LebahCredo">What is your credo?</choice>
+      <choice GotoID="End">Live and drink, quiet one.</choice>
+    </node>
+
+    <node ID="Freed">
+      <text>
+        Ah.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+      <choice GotoID="Indignant">That's all you have to say?</choice>
+    </node>
+
+    <node ID="Indignant">
+      <text>
+        Yes?
+      </text>
+      <choice GotoID="CheckinOut">I barely survived and all you can say is 'ah' and 'yes'?</choice>
+      <choice GotoID="End">Fair enough. Live and drink.</choice>
+    </node>
+
+    <node ID="CheckinOut">
+      <text>
+        {{emote|*Lebah curls into an armored ball and stops responding to your questions.*}}
+      </text>
+      <choice GotoID="LebahPoke">Lebah, do not ignore me.</choice>
+      <choice GotoID="End">Fine. Live and drink.</choice>
+    </node>
+
+    <node ID="LebahGreet">
+      <text>
+        Lebah.
+      </text>
+      <choice GotoID="LebahCredo">What is your credo?</choice>
+      <choice GotoID="End">Live and drink, Lebah.</choice>
+    </node>
+    <node ID="LebahCredo">
+      <text>
+        "An thou art swallowed by the Gyre, sing thee to the last."
+      </text>
+      <choice GotoID="LebahMeaning">What does that mean?</choice>
+      <choice GotoID="LebahGreet">What is your name?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="LebahMeaning">
+      <text>
+        The meaning is plain: An =ifplayerplural:ye are:thou'rt= swallowed by the Gyre, =ifplayerplural:ye should:thou shouldst= sing to the last.
+      </text>
+      <choice GotoID="LebahStare">I don't understand.</choice>
+      <choice GotoID="LebahStare">Can you explain further?</choice>
+      <choice GotoID="LebahStare">That was not so much an explanation as it was a rephrasing.</choice>
+      <choice GotoID="End">I... see. Live and drink.</choice>
+    </node>
+    <node ID="LebahStare">
+      <text>
+        {{emote|*Lebah stares at you wordlessly.*}}
+      </text>
+      <choice GotoID="End">I should go.</choice>
+    </node>
+    <node ID="LebahQuest">
+      <text>
+        Ah,
+
+        aye.
+
+        a most repulsive device. The mind-echoes of that communion yet haunteth me.
+      </text>
+      <choice GotoID="Repulsive">What was so bad about the device?</choice>
+      <choice GotoID="End">I will trouble you no further, then.</choice>
+    </node>
+
+    <node ID="Repulsive">
+      <text>
+        Not... the device. Repulsive as a key to a prison doth repulse. To know a key is to know of a prison.
+
+        Our watched children are bound, and lock swalloweth key. An =ifplayerplural:ye free:thou freest= one, three remaineth forever.
+
+        k-Goninon hath it now. An =ifplayerplural:ye seek:thou seekest=.
+      </text>
+      <choice GotoID="LebahHides" IfNotFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device" CompleteQuestStep="Fraying Favorites~Talk to Lebah">Oh, do you mean this thing?</choice>
+      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">I will seek to retrieve it, then.</choice>
+      <choice GotoID="OozeThat">Who or what is k-Goninon?</choice>
+    </node>
+
+    <node ID="OozeThat">
+      <text>
+        An elder ooze. My communion so disturbed me that I allowed them too close.
+
+        k-Goninon consumed the device, but I escaped.
+      </text>
+      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">I will seek to retrieve it, then.</choice>
+      <choice GotoID="WhatsGoninon">Tell me more about k-Goninon.</choice>
+    </node>
+
+    <node ID="WhatsGoninon">
+      <text>
+        I concern myself little with oozes but to stay away.
+
+        Please, no more. I tire. Talk to Agyra.
+      </text>
+      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">I thank you.</choice>
+    </node>
+
+    <node ID="LebahReminder">
+      <text>
+        k-Goninon hath it.
+
+        Ask Agyra.
+      </text>
+      <choice GotoID="Curl">Of course. k-Goninon.</choice>
+    </node>
+
+    <node ID="Curl">
+      <text>
+        {{emote|*Lebah nods to you, slowly curls into an armored ball, and speaks no further*}}
+      </text>
+      <choice GotoID="End">Live and drink, little seer.</choice>
+    </node>
+
+    <node ID="LebahHides">
+      <text>
+        {{emote|*Lebah yelps at the sight of the device, curling into an armored ball.*}}
+      </text>
+      <choice GotoID="LebahPoke">Lebah?</choice>
+      <choice GotoID="End">Maybe I'll take this somewhere else.</choice>
+    </node>
+
+    <node ID="LebahPoke">
+      <text>
+        {{emote|*you receive no reply*}}
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+  </conversation>
+
+  

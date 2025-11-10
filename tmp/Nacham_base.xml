@@ -1,0 +1,59 @@
+﻿<conversation ID="Nacham">
+    <node ID="Start" IfHaveState="ChoseNacham">
+      <text>
+        Learn well, =factionaddress:Mopango=. I would fain see =ifplayerplural:ye:thee= succeed in =ifplayerplural:your:thine= task.
+      </text>
+      <choice GotoID="End">Live and learn, Nacham.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        {{emote|*Every surface of the strange entity vibrates with the sound of a hundred dry lectures by long-dead scholars, teaching a volume of knowledge so dense and overlapping that the end result is incomprehensible.*}}
+      </text>
+      <choice GotoID="ConfirmRepairNacham" IfHaveBlueprint="Repulsive Device">I offer you this repulsive device, unique one.</choice>
+      <choice GotoID="End">Live and... do as you please.</choice>
+    </node>
+
+    <node ID="ConfirmRepairNacham">
+      <text>
+        {{emote|*Swimming in sound, Nacham stares at you and looks away simultaneously, giving no indication of understanding.*}}
+      </text>
+      <choice GotoID="RepairNacham" RemoveItem="Repulsive Device" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.ChooseNacham">Here. Take it.</choice>
+      <choice GotoID="End">I am not yet ready. I may return.</choice>
+    </node>
+
+    <node ID="RepairNacham">
+      <text>
+        {{emote|*You offer the repulsive device. As it nears the shining, dark surface of Nacham's shell, a sudden fervor seizes the device, and it twists itself free, latching onto the entity with the hooked teeth of its mouthlike appendage. Nacham reacts with a violent spasm, cable-limbs flailing as the entity staggers back.*}}
+
+        {{emote|*For a time, Nacham is still, but then it speaks, a chorus of voices finally speaking in unison:*}}
+
+        It ceases. At last it ceases.
+      </text>
+      <choice GotoID="NachamResponds">Are you all right?</choice>
+    </node>
+
+    <node ID="NachamResponds">
+      <text>
+        Yes. =ifplayerplural:Ye have:Thou hast= quelled the mania.
+
+        I can focus. I can render sensible the things I have seen and heard now, though I remember little of my time before the mania. Was I artisan? Teacher? I possessed great knowledge that this shell twisted into a prison. I thank =ifplayerplural:ye:thee= for the gift of =ifplayerplural:your:thy= untwisting.
+      </text>
+      <choice GotoID="NachamFuture">What will you do now?</choice>
+    </node>
+
+    <node ID="NachamFuture">
+      <text>
+        The mopango have cared for me whilst I could not care for myself, giving me the only name I now know. I will stay to help them. This chassis is a prison no longer, and perhaps deeper truths may yet be found within it.
+
+        To =ifplayerplural:ye:thee=, new friend, I offer a piece of this former prison that =ifplayerplural:ye may:thou mayest= find useful, along with my thanks.
+      </text>
+      <choice GotoID="End" GiveItem="Nacham's Ribbon" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">
+        Live and remain free, Nacham.
+      </choice>
+      <choice GotoID="End" GiveItem="Nacham's Ribbon" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">Live and remain free, Nacham.</choice>
+    </node>
+
+  </conversation>
+
+  

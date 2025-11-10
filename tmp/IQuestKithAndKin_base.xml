@@ -1,0 +1,14 @@
+﻿<conversation ID="IQuestKithAndKin">
+    <choice Target="AskRumor" Transient="true" IfHaveActiveQuest="Kith and Kin" IfSpeakerNotHaveProperty="AskedKithKin">
+      Have you seen or heard anything peculiar?
+    </choice>
+    <node ID="AskRumor" SetSpeakerIntProperty="AskedKithKin,1">
+      <part Name="KithAndKinRumor">
+        <text>Is that a patch of hindren fur? There's blood on it...</text>
+      </part>
+      <text Priority="-1">Sorry, I didn't see anything.</text>
+      <choice Target="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

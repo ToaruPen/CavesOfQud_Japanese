@@ -1,0 +1,74 @@
+﻿<conversation ID="Rokhas">
+
+    <node ID="Start">
+      <text>
+        Ayuh.
+      </text>
+      <choice GotoID="Greet">Greetings. I am =name=.</choice>
+      <choice GotoID="Ayuh">Ayuh.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Ayuh">
+      <text>{{emote|*nods*}}</text>
+      <choice GotoID="Greet">=name=.</choice>
+      <choice GotoID="End">*nod*</choice>
+    </node>
+
+    <node ID="Greet">
+      <text>
+        Rokhas. I ranch these here beauts.
+      </text>
+      <choice ID="RokhasRanch" GotoID="Ranch">This is your ranch?</choice>
+      <choice ID="RokhasSlugs" GotoID="Nudibranchs">Are those... giant slugs?</choice>
+      <choice ID="RokhasFreehold" GotoID="Freehold">What do you think of the Yd Freehold?</choice>
+      <choice ID="RokhasBye" GotoID="End">Live and drink, Rokhas.</choice>
+    </node>
+
+    <node ID="Ranch">
+      <text>
+        I said I ranch these here beauts.
+
+        The Freeholders en't much for letting a body lay claim to land. En't what I'da wished for, but as the Issachari say: "Should your compass lead you to the Six Day Stilt, throw it in the well."
+      </text>
+      <choice GotoID="Hometown">Are you from the desert? How did you end up here?</choice>
+      <choice UseID="RokhasSlugs" />
+      <choice UseID="RokhasFreehold" />
+      <choice UseID="RokhasBye" />
+    </node>
+
+    <node ID="Hometown">
+      <text>
+        Lived most of m'life on a desert steppe twixt the flower fields of Qud and the M'ryee's salt pans.
+
+        I ended up here when m'snapbrain cousin played tinker with one of them coiler doodads. The less said about all that, the better.
+      </text>
+      <choice UseID="RokhasSlugs" />
+      <choice UseID="RokhasFreehold" />
+      <choice UseID="RokhasBye" />
+    </node>
+
+    <node ID="Nudibranchs">
+      <text>
+        Kaleidoslugs! Beautiful slugs, they are, lovely crooners. Love em. Big ole slugs. Heh.
+      </text>
+      <choice UseID="RokhasRanch" />
+      <choice UseID="RokhasFreehold" />
+      <choice UseID="RokhasBye" />
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        Is what it is. Fine enough place. I've a trade, critters, and nowheres else to go.
+
+        I en't much for grand experiments, I just got to live. Ken?
+      </text>
+      <choice UseID="RokhasRanch" />
+      <choice UseID="RokhasSlugs" />
+      <choice UseID="RokhasBye" />
+    </node>
+
+  </conversation>
+
+
+  

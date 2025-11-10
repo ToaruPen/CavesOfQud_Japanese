@@ -1,0 +1,240 @@
+﻿  <conversation ID="Angohind" Replace="true">
+
+    <node ID="Start" IfFinishedQuest="Find Eskhind" IfNotFinishedQuest="Kith and Kin">
+      <text>
+        ケンドレン！ 少し時間をくれないか。君は=name=だろう？ この村の謎を解きに来たんだよね？
+      </text>
+      <choice IfHaveBlueprint="Sonnet" GotoID="ShowSonnet">この詩は君のものか？</choice>
+      <choice GotoID="Introductions">ああ、その通りだ。</choice>
+      <choice GotoID="How did you know?">どうしてそこまで知っている？</choice>
+      <choice GotoID="Introductions">君は誰だ？</choice>
+      <choice GotoID="End">今は忙しい。生きて飲め。</choice>
+    </node>
+
+    <node ID="ShowSonnet">
+      <text>
+        詩？ ああ！ これはシェイクスプリグ風のソネットだ。でも押韻が少し安直だし、恋の詩には興味がない。だから私の書いたものじゃない。
+
+        エスキンドにソネットを教えていたから、きっと彼女が書いたんだ。ということは……ああ、かわいそうに。
+      </text>
+      <choice GotoID="End">ありがとう。生きて飲め。</choice>
+    </node>
+
+    <node ID="How did you know?">
+      <text>
+        聞いてくれると思っていたよ！ 私は偉大な吟遊詩人ウィロウ・シェイクスプリグの作品を熱心に研究している。とりわけ大植物探偵ヘムロック・コーンズの物語が大好きなんだ。そうした物語から感覚と推理力を研ぎ澄ませてきた。いつの日か「村の本の虫アンゴヒンド」ではなく「名探偵アンゴヒンド」と呼ばれるのが一番の望みさ。
+
+        祖母は村で起きている奇妙な出来事を調べるのを禁じたけれど、探偵術の基本を君に教えるなとは言っていない！ どうだい？
+      </text>
+      <choice GotoID="Acceptance">話を聞こう。</choice>
+      <choice GotoID="End">そろそろ行くよ。生きて飲め。</choice>
+    </node>
+
+    <node ID="Introductions">
+      <text>
+        ああ、もちろん。
+
+        私はアンゴヒンド。尊敬すべき長老エセルヒンドの孫で、シェイクスプリグを研究する若き学徒、そしてベイ・ラーで一番の洒落者のヒンドレンだ。さらに幸運なことに、謎を聞き分ける耳を持った見習い探偵でもある。
+
+        祖母は村の奇妙な出来事を調べるのを禁じたけれど、探偵術のいろはを君に教えるなとは言わなかった！ どうだい？
+      </text>
+      <choice GotoID="Acceptance">話を聞こう。</choice>
+      <choice GotoID="End">結構だ。生きて飲め。</choice>
+    </node>
+
+    <node ID="Acceptance">
+      <text>
+        本当に？ 後悔はさせない、ケンドレン！ さあ、始めよう！
+
+        あらゆる謎は、証拠を見つけて読み解く力にかかっている。ヘムロック・コーンズもこう言っている。
+
+        「訴追を始める前に、告発者はまず証拠を手にせねばならない。
+        真相へ至るには、容疑を指し示す証拠だけでなく、それを支える手がかりも見つけ出し、見極めることだ」とね。
+      </text>
+      <choice GotoID="Finding evidence">証拠はどう探す？</choice>
+      <choice GotoID="Defining evidence">何が証拠になる？</choice>
+      <choice GotoID="Implicating evidence">牽連証拠って何だ？</choice>
+      <choice GotoID="Supporting evidence">補助証拠って？</choice>
+      <choice GotoID="Multiple culprits?">複数の犯人を示す証拠が出たら？</choice>
+    </node>
+
+    <node ID="Finding evidence">
+      <text>
+        証拠の探し方はコーンズ先生に全部教わった！
+
+        「地面で拾った証拠だって本物かもしれない。
+        だけど十分かどうかは運しだい。
+        容疑者とその家、その周囲をくまなく調べ、
+        噂話を語ってくれる証人も見つけ出せ。」
+
+        地面に落ちているものを調べても証拠は見つかるし、容疑者そのものを観察しておかしな点がないかを見ることもできる。誰かが妙なものを見たり聞いたりしていないか、片っ端から尋ねるんだ。証人によって語ることが違うかもしれないからね。
+      </text>
+      <choice GotoID="Supporting evidence">補助証拠については？</choice>
+      <choice GotoID="Defining evidence">何が証拠になる？</choice>
+      <choice GotoID="Multiple culprits?">複数の容疑者を指す牽連証拠が出たら？</choice>
+      <choice GotoID="End">助かったよ、アンゴヒンド。生きて飲め。</choice>
+    </node>
+
+    <node ID="Defining evidence">
+      <text>
+        証拠とは、何かがおかしくなっているというしるしのことだ。コーンズ先生は悲劇『ギムレット』第2幕で良い例を挙げている。
+
+        「さあ、屋敷中を掃き清めて{{W|trade}}の印を探せ。夜の怪しい取引を暴くんだ。
+        次は{{W|craft}}の痕跡を見て、何が作られていたのか読み解こう。近くに隠された宝を覆うためかもしれない。
+        だがもっと暗い兆し――{{W|illness}}の印を見つけたなら、必死の疫病が潜んでいるかもしれない。
+        そして最も暗い印、{{W|violence}}が応えるだろう。凄惨な仕事場にうっかり踏み込んだ者へとな。」
+      </text>
+      <choice GotoID="Finding evidence">証拠はどう探す？</choice>
+      <choice GotoID="Defining evidence">何が証拠になる？</choice>
+      <choice GotoID="Implicating evidence">牽連証拠って何だ？</choice>
+      <choice GotoID="Supporting evidence">補助証拠って？</choice>
+      <choice GotoID="Multiple culprits?">複数の犯人を示す証拠が出たら？</choice>
+    </node>
+
+    <node ID="Implicating evidence">
+      <text>
+        牽連証拠とは、その名の通り誰かを事件に関与させる証拠のことだ。誰かが人物の奇妙な行動を見たとか、その部屋でおかしな物を見つけたとか、君自身が彼らの怪しい振る舞いをその場で目撃したとか=player.reflexive=！ そういうものは全部牽連証拠になる。
+
+        たいていの場合、牽連証拠だけでは犯行を証明できない。でも補助証拠と並べて示せば、真実の種が芽吹いて正義という長い葉脈へと伸びていくんだ。
+      </text>
+      <choice GotoID="Supporting evidence">補助証拠については？</choice>
+      <choice GotoID="Finding evidence">証拠はどう探す？</choice>
+      <choice GotoID="Multiple culprits?">複数の容疑者を指す牽連証拠が出たら？</choice>
+      <choice GotoID="End">助かったよ、アンゴヒンド。生きて飲め。</choice>
+    </node>
+
+    <node ID="Supporting evidence">
+      <text>
+        補助証拠は、誰か個人に直接結び付けられない異常の兆しなら何でもいい。典型的なのは血痕だ。暴力があったと示すけれど、誰がやったかは教えてくれない。
+
+        本質的には、補助証拠は牽連証拠と組み合わせたときに最も力を発揮する。両方そろえば、容疑者を断罪する絶好の立場になれる。
+      </text>
+      <choice GotoID="Implicating evidence">牽連証拠については？</choice>
+      <choice GotoID="Finding evidence">証拠はどう探す？</choice>
+      <choice GotoID="Multiple culprits?">複数の容疑者を指す牽連証拠が出たら？</choice>
+      <choice GotoID="End">助かったよ、アンゴヒンド。生きて飲め。</choice>
+    </node>
+
+    <node ID="Multiple culprits?">
+      <text>
+        コーンズ先生もこう言っている。
+
+        「法の手がどれだけ長くても、
+        正しさを量る最良の物差しじゃない。
+        どの証拠を示すかは、
+        その結果が見えたときに選びなさい。」
+
+        要するに、判断力と直感を使うんだ、ケンドレン。
+      </text>
+      <choice GotoID="Evidence exceptions">間違った相手を告発したら？</choice>
+      <choice GotoID="Evidence is not created equal">示す証拠次第で結果が変わるってこと？</choice>
+      <choice GotoID="Gaming the system">じゃあ、望む結果になる証拠だけ出せるよね？</choice>
+      <choice GotoID="Questions">ほかにも質問がある。</choice>
+    </node>
+
+    <node ID="Evidence exceptions">
+      <text>
+        それは常に付きまとうリスクだよ、ケンドレン。
+
+        ニーラヒンドは村のみんなをよく知っている。監視官が知っている事実と食い違う補助証拠を出したら、たぶん信じてくれない。それどころか、その相手をもう一度告発させてもらえないかもしれない。気を付けて。
+
+        あまりにも見当違いの告発をすると、彼女からの信用を丸ごと失うかもしれない。
+      </text>
+      <choice GotoID="Questions">わかった。ほかの質問。</choice>
+      <choice GotoID="End">助かったよ、アンゴヒンド。生きて飲め。</choice>
+    </node>
+
+    <node ID="Gaming the system">
+      <text>
+        そこで頼りになるのは、君の良心さ。
+
+        事件の決着を自分の都合で操作するほど不道徳じゃないよね……そうだろう？
+      </text>
+      <choice GotoID="Questions">言う通りだ。ほかの質問。</choice>
+      <choice GotoID="End">そろそろ行く。生きて飲め。</choice>
+    </node>
+
+
+    <node ID="Evidence is not created equal">
+      <text>
+        その通り。君が提示する証拠は、ベイ・ラーの歴史の大広間に永遠に飾られる絵になる。私たちの運命は君の手にかかっているんだ。
+
+        ヘムロック・コーンズもこう言った。
+
+        「日々の営みが似たものを呼ぶように、謎でも似たものが呼び合う。
+        争いに満ちた絵を描けば、暴力が形となる。
+        取引や職人仕事を題材にすれば、契約が真を結ぶだろう。
+        だが疫病を暴くなら――
+        どんな蜜でも甘くはできない。」
+      </text>
+      <choice GotoID="Questions">わかった。他の質問。</choice>
+      <choice GotoID="End">助かったよ、アンゴヒンド。生きて飲め。</choice>
+    </node>
+
+    <node ID="Questions">
+      <text>
+        さあ、何でも聞いてくれ！
+      </text>
+      <choice GotoID="Finding evidence">証拠はどう探す？</choice>
+      <choice GotoID="Implicating evidence">牽連証拠って何だ？</choice>
+      <choice GotoID="Supporting evidence">補助証拠って？</choice>
+      <choice GotoID="Multiple culprits?">複数の犯人を示す証拠が出たら？</choice>
+      <choice GotoID="Evidence exceptions">間違った相手を告発したら？</choice>
+      <choice GotoID="End">以上だ。生きて飲め、ファウンドレン。</choice>
+    </node>
+
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+      <text>
+        おかえり、探偵=name=。
+
+        ここはまあ、概ね整っているよ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+      <text>
+        誇っていいぞ、探偵=name=。
+
+        正義の手は厳しくても公平だ。君はここでその手となったんだ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+      <text>
+        なんという変化だ！ ヒンドリアーク・エスクが提唱している「民主制」を調べているんだけど、悪意ある者に狙われやすい穴がいくつもあるように見える。もっと洗練できるかもしれないね。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+      <text>
+        驚いたよ！ エスキンドがヒンドリアークに？
+
+        ずっと教えていた詩の授業が、彼女に市民としての義務感を芽生えさせたんだろうね。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+      <text>
+        これが本当に私たちの生きる世界なのかい？
+
+        なんて残酷なんだ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+
+    <node ID="Start">
+      <text>
+        ベイ・ラーでは確かに何か奇妙なことが起きている。間違いない。
+
+        でも私は調査を禁じられている。助言できる別の探偵がいてくれたらなあ……。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

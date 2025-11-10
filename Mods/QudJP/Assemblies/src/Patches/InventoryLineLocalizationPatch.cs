@@ -20,33 +20,49 @@ namespace QudJP
         {
             if (!string.IsNullOrWhiteSpace(__result) || __instance?.go == null)
             {
+                if (!string.IsNullOrEmpty(__result))
+                {
+                    __result = SanitizeMarkers(__result);
+                }
                 return;
             }
 
             var fallback = __instance.go.DisplayNameOnlyDirect;
             if (!string.IsNullOrWhiteSpace(fallback))
             {
-                __result = fallback;
+                __result = SanitizeMarkers(fallback);
                 return;
             }
 
             fallback = __instance.go.DisplayNameOnly;
             if (!string.IsNullOrWhiteSpace(fallback))
             {
-                __result = fallback;
+                __result = SanitizeMarkers(fallback);
                 return;
             }
 
             fallback = __instance.go.Blueprint;
             if (!string.IsNullOrWhiteSpace(fallback))
             {
-                __result = fallback;
+                __result = SanitizeMarkers(fallback);
                 return;
             }
 
             var id = __instance.go.IDIfAssigned ?? "<none>";
             var renderName = __instance.go.Render?.DisplayName ?? "<null>";
             Debug.LogWarning($"[QudJP] Inventory display name missing for blueprint '{__instance.go.Blueprint}' (ID={id}, Render='{renderName}')");
+        }
+
+        private static string SanitizeMarkers(string value)
+        {
+            try
+            {
+                return System.Text.RegularExpressions.Regex.Replace(value, "\\s*<[A-Z]{1,3}\\d{1,3}>", string.Empty);
+            }
+            catch
+            {
+                return value;
+            }
         }
     }
 

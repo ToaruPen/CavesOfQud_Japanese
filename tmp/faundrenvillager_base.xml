@@ -1,0 +1,40 @@
+﻿<conversation ID="FaundrenVillager" Inherits="IQuestKithAndKin">
+    <node ID="Start">
+      <text>
+        Kendren! Kendren! Tell us a story of the world outside when Grand-Doe is not listening!~
+        Um. Live and drink, kendren.~
+        Is it true that all kendren kill one another for sport?~
+        Is it true that you kendren eat your dead?~
+        Is it true that there are bears covered in quills to the east?~
+        Is it true that bears live to be a thousand years old?~
+        Is it true that boars can shoot fire?~
+        Is it true that kendren can't fall in love?~
+        Is it true that kendren elders grow eyes upon their hands?~
+        Is it true that kendren pay for goods with crayons rather than water?~
+        Is it true that kendren worship rocks?~
+        Is it true that kendren spend hours looking at slabs of wood?~
+        Is it true that nine out of ten kendren cannot speak or understand language?~
+        Is it true that instead of dying, kendren are frozen in tubes?~
+        Is it true that kendren children are thrown out of the nest right after being born?~
+        Is it true that all kendren say 'quetzal' when they are happy?~
+        Is it true that kendren chefs can fry water?~
+        Is it true that kendren all live far underground?~
+        Is it true that kendren live in great bubbles?~
+        Is it true that kendren sleep in a snarcomfagus?~
+        Is there really a King of the Moon, kendren?~
+        I heard from my friend who heard it from their yma that the Grand-Doe says that hindren who leave Bey Lah grow an extra pair of arms. And the Grand-Doe says it so you know it's true.~
+        Is it true that when kendren eat mah lah soup, they explode?!~
+        Is it true that... um, oh. I forgot.~
+        Is it true that kendren don't have to ask permission to do the water ritual?~
+        Is it true that you don't have a Grand-Doe?~
+        How do kendren stay safe when you don't have a Grand-Doe to protect you?~
+        Um, kendren, does the yempuris phi really exist? Is it really coming to get us?~
+        Do you have glotrot? Do you have ironshank? Do you have funglefection? Have you ever had them? Is it gross? Can I see?~
+        Is it true that kendren sometimes die of cooking too hard?~
+        Kendren! Kendren! Take me with you! I want to see the Sixty Stilts!
+      </text>
+      <choice GotoID="End">I am busy. Live and drink, little one.</choice>
+    </node>
+  </conversation>
+
+  

@@ -1,0 +1,141 @@
+﻿<conversation ID="Shomer">
+    <node ID="Start">
+      <text>
+        Saad, welcom. Saad, from thyn heres shaken the wet and olde lif. Saad, in-to a smal vessel pouren hit. Saad, to thyn sash attachen the vessel. Saad, crossen nou thrugh the heigh gate and in-to Brightsheol.
+      </text>
+      <choice ID="ChoiceDream" GotoID="Dream" IfHaveSecret="QudSalum">Where is Brightsheol in relation to Qud... to Salum?</choice>
+      <choice ID="ChoiceDead" GotoID="Dead">Am I dead?</choice>
+      <choice ID="ChoicePlace" GotoID="Place">What is this place?</choice>
+      <choice ID="ChoiceSaad" GotoID="Saad">Why do you call me Saad?</choice>
+      <choice ID="ChoiceMission" GotoID="Mission">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Dead">
+      <text>
+        Saad, the bodi dien, but the mind romen.
+      </text>
+      <choice UseID="ChoiceDream" />
+      <choice GotoID="Place">What is this place?</choice>
+      <choice GotoID="Saad">Why do you call me Saad?</choice>
+      <choice GotoID="Mission">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Place">
+      <text>
+        Saad, stonden thu at the heigh gate to Brightsheol. Saad, thyn heres been wet with olde lif. Saad, shaken thyn hed and cross in-to neue lif.
+      </text>
+      <choice UseID="ChoiceDream" />
+      <choice GotoID="Resheph">Is Resheph here?</choice>
+      <choice GotoID="Dead">Am I dead?</choice>
+      <choice GotoID="Saad">Why do you call me Saad?</choice>
+      <choice GotoID="Mission">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Resheph">
+      <text>
+        No Saad Resheph residen her.
+      </text>
+      <choice GotoID="Dream" IfHaveSecret="QudSalum">Where is Brightsheol in relation to Qud... to Salum?</choice>
+      <choice GotoID="Dead">Am I dead?</choice>
+      <choice GotoID="Saad">Why do you call me Saad?</choice>
+      <choice GotoID="Mission">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Dream">
+      <text>
+        Alofte of Gjaus a cite twinklen. And ther the Seraph dremen. And Brightsheol is the drem.
+      </text>
+      <choice GotoID="Dead" RevealObservation="BrightsheolDream">Am I dead?</choice>
+      <choice GotoID="Place" RevealObservation="BrightsheolDream">What is this place?</choice>
+      <choice GotoID="Saad" RevealObservation="BrightsheolDream">Why do you call me Saad?</choice>
+      <choice GotoID="Mission" RevealObservation="BrightsheolDream">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End" RevealObservation="BrightsheolDream">...</choice>
+    </node>
+    <node ID="Saad">
+      <text>
+        Artow a Saad of olde Salum, and nou stonden thu at the heigh gate to Brightsheol.
+      </text>
+      <choice UseID="ChoiceDream" />
+      <choice GotoID="Qud">Salum? Is that another name for Qud?</choice>
+      <choice GotoID="Dead">Am I dead?</choice>
+      <choice GotoID="Place">What is this place?</choice>
+      <choice GotoID="Mission">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Qud">
+      <text>
+        Saad, yis.
+      </text>
+      <choice GotoID="Dead" RevealObservation="QudSalum">Am I dead?</choice>
+      <choice GotoID="Place" RevealObservation="QudSalum">What is this place?</choice>
+      <choice GotoID="Saad" RevealObservation="QudSalum">Why do you call me Saad?</choice>
+      <choice GotoID="Mission" RevealObservation="QudSalum">I've come from the Thick World with a mission: to disable the Spindle's magnetic field. Can you do this for me?</choice>
+      <choice GotoID="End" RevealObservation="QudSalum">...</choice>
+    </node>
+    <node ID="Mission">
+      <text>
+        {{emote|*The clothes shrouding Rainwater Shomer's form are still for many moments.*}}
+
+        The shomrim connen. Why oghte we?
+      </text>
+      <choice GotoID="ImSaad">Because... I am a Saad, after all.</choice>
+      <choice GotoID="ImSaad">Shomer, you impudent whelp! Saad Resheph stands before you. Do as I say.</choice>
+      <choice GotoID="Salum1" IfHaveSecret="BrightsheolDream">Something changed atop the Spindle. If Brightsheol is indeed connected to the city there, then this change may suggest it's in peril...</choice>
+      <choice GotoID="Start">Wait. I have more questions to ask.</choice>
+    </node>
+    <node ID="ImSaad">
+      <text>
+        {{emote|*The clothes shrouding Rainwater Shomer's form are still for many moments.*}}
+
+        The shomrim remainen unbilefful.
+      </text>
+      <choice UseID="ChoiceDream" />
+      <choice UseID="ChoiceDead" />
+      <choice UseID="ChoicePlace" />
+      <choice UseID="ChoiceSaad" />
+      <choice UseID="ChoiceMission" />
+      <choice GotoID="End" RevealObservation="QudSalum">...</choice>
+    </node>
+    <node ID="Salum1">
+      <text>
+        {{emote|*The clothes shrouding Rainwater Shomer's form remain still.*}}
+      </text>
+      <choice GotoID="Salum2">One year ago, someone began broadcasting a signal from atop the Spindle. I have a recording of it here...</choice>
+    </node>
+    <node ID="Salum2">
+      <text>
+        {{emote|*The clothes shrouding Rainwater Shomer's form remain still.*}}
+      </text>
+      <choice GotoID="Salum3">I ask you: disable the magnetic field so that the Spindle can be ascended and the signal investigated.</choice>
+    </node>
+    <node ID="Salum3">
+      <text>
+        {{emote|*The clothes shrouding Rainwater Shomer's form are still for many moments.*}}
+
+        Saad, the Seraph sprecen. Saad, thu asken, and the shomrim assenten. Saad, wiltou return to Salum or crossen in-to Brightsheol?
+      </text>
+      <choice GotoID="Return">If it can be done, return me to Qud. I wish to ascend the Spindle myself.</choice>
+      <choice GotoID="Cross">... I've shaken the wet life from my hair. Now I shall cross into Brightsheol.</choice>
+      <choice GotoID="End">I need time to consider.</choice>
+    </node>
+    <node ID="Return">
+      <text>
+        Saad, nou-then return.
+      </text>
+      <choice GotoID="End" CallScript="XRL.World.Parts.ThinWorld.ReturnToQud">I am ready.</choice>
+      <choice GotoID="End">I need time to reconsider.</choice>
+    </node>
+    <node ID="Cross">
+      <text>
+        Saad, nou-then crossen in-to Brightsheol.
+      </text>
+      <choice GotoID="End">
+        <text>I am ready.</text>
+        <part Name="CrossIntoBrightsheol" />
+      </choice>
+      <choice GotoID="End">I need time to reconsider.</choice>
+    </node>
+
+  </conversation>
+
+  

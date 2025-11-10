@@ -1,0 +1,68 @@
+<conversation ID="TauCompanion">
+		<start ID="Welcome" IfTestState="TauElse contains KilledByPlayer">
+			<text>
+				Begone from me, stardimmer. Your own hand has vaporized your purpose.
+			</text>
+			<choice GotoID="End">...</choice>
+		</start>
+		<start ID="Welcome" IfHaveState="ElseingComplete">
+			<text>
+				You thrived at the performance of a pruning motion, utensil. Now store yourself until Fate reshapes you.
+				
+				The end.
+			</text>
+			<choice GotoID="End">...</choice>
+		</start>
+		<start ID="WelcomeHub" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">
+			<text>
+				The utensil arrives. You, to prune the fate-rhizome and free our girl. Go now and perform the motion.
+			</text>
+			<choice Target="Seeker">You're a seeker of the Sightless Way?</choice>
+			<choice Target="Taking">Where are you taking Tau?</choice>			
+			<choice GotoID="End">...</choice>
+		</start>
+		<start ID="Welcome" IfHaveQuest="If, Then, Else" Inherits="WelcomeHub">
+			<text>
+				Give her your parting words, utensil. Our hearts are in elsewhere.
+			</text>
+			<choice GotoID="End">...</choice>
+		</start>
+		<start ID="Welcome">
+			<text>
+				Begone. Fate has not yet shaped you, utensil.
+			</text>
+			<choice GotoID="End">...</choice>
+		</start>
+
+		<node ID="Seeker" Inherits="WelcomeHub">
+			<text>
+				Utensil? That is my avocation, yes. A million sun-dead homes I've roved, a trillion more await. I'm a worm in the loam of a cosmic wood, perched on a cosmic gulf, swathed in the god-manifold.
+			</text>			
+		</node>
+
+		<node ID="Taking" Inherits="WelcomeHub">
+			<text>
+				Prune! The utensil prunes! -but no, the utensil quivers in uncertainty and vibrates out a question?
+
+				The self is riddled with category errors. The thinking brain mistakes formation for meaning.
+			</text>
+			<choice Target="Understand" Priority="1">Tell me. I wish to understand.</choice>
+		</node>
+
+		<node ID="Understand" Inherits="WelcomeHub">
+			<text>
+				Maggot! What do you think words are? Arrows of inquiry? Words are bricks. Each spoken is laid in bond and builds your prison. There is no understanding.
+			</text>
+			<choice Target="Throw" Priority="1">Bricks can be thrown, too.</choice>
+		</node>
+
+		<node ID="Throw">
+			<text>
+				You tarry on the future's boundary with abandon, utensil. Throw your brick if you dare.
+			</text>
+			<choice Target="End">...</choice>
+		</node>
+		
+	</conversation>
+
+	

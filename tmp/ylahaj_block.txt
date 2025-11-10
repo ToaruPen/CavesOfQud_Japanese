@@ -1,0 +1,84 @@
+﻿  <conversation ID="YlaHaj" Replace="true">
+    <node ID="Start" SetBooleanState="TalkedToYlaHaj,true">
+      <text>
+        旅人。壊れたガラクタを置きな。私が直してやる。
+      </text>
+      <choice ID="GreetChoice" GotoID="Greet">あなたは？</choice>
+      <choice ID="EzraChoice" GotoID="Ezra">この古い村について教えてくれ。</choice>
+      <choice ID="ZothomChoice" GotoID="Zothom">墓地のそばに野営している男は？</choice>
+      <choice ID="SixshrewChoice" GotoID="Sixshrew">この建物を共用している植物のことは？</choice>
+      <choice ID="EndChoice" GotoID="End">生きて飲め、修理工。</choice>
+    </node>
+    <node ID="Greet">
+      <text>
+        {{emote|*彼女は鋭く睨みつける。*}}
+
+        私は亡命の娘。でもユラ・ハジと呼びなさい。
+      </text>
+      <choice ID="DaughterChoice" GotoID="Daughter">亡命の娘？</choice>
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Daughter">
+      <text>
+        職能修女。世間はそう呼ぶ。私と姉妹たちを。
+
+        亡命者レベカの物語を知っている？ 彼女はレシェフの師だったが、彼は彼女を教団から破門し、領域から追放した。
+
+        彼女を知るために、私は帰属を持たない生を選んだ。姉妹の中でも私には彼女の墓のそばに常住する名誉がある。
+
+        いいか旅人、社会の輪郭は外側に立って初めて見える。境界の向こうには平穏がある。
+      </text>
+      <choice ID="RebekahChoice" GotoID="Rebekah" IfHaveSultanNoteWithTag="rebekahWasHealer" FlagSecret="true">レベカは治癒師だったんじゃ？ どうして技師の集団に？
+      </choice>
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Rebekah">
+      <text>
+        {{emote|*ユラ・ハジは口をつぐむ。*}}
+
+        『健康』の意味を狭く見積もりすぎだ。
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Ezra">
+      <text>
+        エズラは歴史の陰に寄り添い、小さなものが育つ場所にある。彫像の下の苔だ。何世紀ものあいだ君主たちは木を倒すことに執心したが、今や盟約の中で残ったのはエズラだけだ。
+
+        そこはレベカの墓があるから、私たち娘にとって聖地だ。巡礼の姿も多く見るだろう。
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Zothom">
+      <text>
+        ゾーソム。無益な無慈悲は好まないが、奴は愚か者だ。柔和に寄り添えば柔和になれるとでも？
+
+        死んだ女の肉体に救いを求める男に、私の出る幕はない。
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="EzraChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Sixshrew">
+      <text>
+        思っていない。
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+  </conversation>

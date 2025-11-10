@@ -1,0 +1,146 @@
+﻿<conversation ID="Goek" Inherits="BaseSlynthMayor">
+
+    <node ID="Start">
+      <text>
+        Live and drink, friend. rrk come to the Yd, shared together. Feel safe and free as woodsmoke.
+      </text>
+      <choice ID="GoekGreetingsChoice" GotoID="Greetings" IfTestState="TalkedToGoek">Greetings, Goek!</choice>
+      <choice ID="GoekWhoChoice" GotoID="Who">Who are you?</choice>
+      <choice ID="GoekToweringChoice" GotoID="Towering" SetBooleanState="TalkedToGoek,true">You tower over every other frog I've seen. Are you svardym?</choice>
+      <choice ID="GoekPipesChoice" GotoID="Pipes" SetBooleanState="TalkedToGoek,true">These shining pipes! What are they?</choice>
+      <choice ID="GoekFreeholdChoice" GotoID="Freehold" SetBooleanState="TalkedToGoek,true">What can you tell me about Yd?</choice>
+      <choice ID="GoekEndChoice" GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="SlynthRequest">
+      <text>rrk knows of the glow-hats! Yd-friends see glimpses at night, about the reef.</text>
+      <choice Target="SlynthRequestAccept">If you would have them, I ask that you grant them sanctuary.</choice>
+      <choice Target="SlynthRequestReject">If you would have them, I ask that you grant them sanctuary.</choice>
+    </node>
+    <node ID="SlynthRequestAccept">
+      <text>Boon-friend asks a friend-boon, and what boon is friend! rrk welcome slynth to an Yd, be safe and free as woodsmoke.</text>
+      <choice Target="End">You have my thanks, Goek.</choice>
+    </node>
+    <node ID="SlynthRequestReject">Ah! rrk would grant you this boon, rrk would. Were not for the unspoken cries of future-kin, free as woodsmoke but no more safe so longer. rrk would and cannot.</node>
+    <node ID="SlynthAbout">rrk wonder of the glow-hats. Which wind will blow.</node>
+
+    <node ID="SlynthArrived">
+      <text>
+        Greetings, =player.formalAddressTerm=! How arresting of the glow-hats arrival, much to do. rrk soothe Mak, Bep, Krka, look stores, still much slime and sweat to pool below rrk. Enjoy helpful toil!
+      </text>
+      <choice GotoID="Start">My thanks, Goek.</choice>
+    </node>
+
+    <node ID="SlynthSettled">
+      <text>
+        All is well, =name=! Trials make for overcoming, and done together.
+
+        rrk can tell the sky dark and not know. Visit and witness! Glow-hats enliven the night, safe and free. Slynth-home is Yd.
+      </text>
+      <choice GotoID="Start">My thanks again, Goek.</choice>
+    </node>
+
+    <node ID="Greetings">
+      <text>
+        {{emote|*reeeeeps joyfully*}}
+
+        Greetings, =name=! Live and drink, friend.
+      </text>
+      <choice UseID="GoekWhoChoice" />
+      <choice UseID="GoekToweringChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Who">
+      <text>
+        rrk is called by dwellers Goek. rrk is a dweller here, too, and before then, a builder of place. Goek, Geeub, Mak and Many Eyes build a new Yd in the reef, hundreds of years.
+      </text>
+      <choice UseID="GoekToweringChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Built">
+      <text>
+        rrk did before then, but rrk all build it now.
+      </text>
+      <choice UseID="GoekToweringChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Towering">
+      <text>
+        rrk is svardym like the hatchling from the egg, but wound down the chute of years in hundreds, and grown so long and warty! rrk was a hatchling once, cries to think on it!
+      </text>
+      <choice GotoID="Gyre">Aren't the svardym one of the Gyre plagues?</choice>
+      <choice UseID="GoekWhoChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Gyre">
+      <text>
+        Yes rrk was once, "plague" in the sky hundreds of years. Not so now. Longtime rrk, Geeub, Mak hide in the sponge and eat lice. When find Many Eyes, rrk and friends built the Yd. Joyful helping!
+      </text>
+      <choice GotoID="OtherPlagues">Do you know anything of the other plagues?</choice>
+      <choice UseID="GoekWhoChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="OtherPlagues">
+      <text>
+        Plagues bloom a thousand year then die back, shrink under the earth-sponge or move here and east. Vanta, girshling, rot die. rrk the hatchling once saw the Nephilim loom! rrk frightened and hid inside a sponge for thirty moons.
+      </text>
+      <choice GotoID="OtherPlagues">Do you know anything of the other plagues?</choice>
+      <choice UseID="GoekWhoChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Pipes">
+      <text>
+        Water and gas piped through the Yd to feed the plants, dwellers, and machines! Dwellers blew the glass in hues like the prism perch, to look pretty. Shared together. Joyful helping!
+      </text>
+      <choice UseID="GoekWhoChoice" />
+      <choice UseID="GoekToweringChoice" />
+      <choice UseID="GoekFreeholdChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        {{emote|*reeeeeps joyfully*}}
+
+        Yd shared together. rrk walk and feel safe and free as woodsmoke. Here, there through the corals. Under the pipes.
+
+        Great pond and reef air, eat starapple and drink, see pattern on the bright slugs.
+      </text>
+      <choice GotoID="Freehold2">...</choice>
+    </node>
+
+    <node ID="Freehold2">
+      <text>
+        rrk read the signs and descend the stairs. rrk breathe the water smoke and sit on starfish.
+
+        Visit hovels, meet friends Mak, Geeub, Bep, Krka, Une, Tilli, farmer Rokhas, and every rest!
+
+        rrk rrkself.
+      </text>
+      <choice UseID="GoekWhoChoice" />
+      <choice UseID="GoekToweringChoice" />
+      <choice UseID="GoekPipesChoice" />
+      <choice GotoID="End" SetBooleanState="TalkedToGoek,true">Live and drink.</choice>
+    </node>
+
+  </conversation>
+
+  

@@ -39,6 +39,7 @@ namespace QudJP.Localization
                 ["next"] = Highlight("次へ"),
                 ["confirm"] = Highlight("確認"),
                 ["Show Tooltip"] = Highlight("ツールチップ表示"),
+                ["Continue"] = Highlight("続ける"),
             };
         private static readonly HashSet<string> Logged = new();
 

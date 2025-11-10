@@ -1,0 +1,87 @@
+﻿<conversation ID="YlaHaj">
+    <node ID="Start" SetBooleanState="TalkedToYlaHaj,true">
+      <text>
+        Traveler. Put down your mangled trinkets and I'll repair them.
+      </text>
+      <choice ID="GreetChoice" GotoID="Greet">Who are you?</choice>
+      <choice ID="EzraChoice" GotoID="Ezra">Tell me about this ancient village.</choice>
+      <choice ID="ZothomChoice" GotoID="Zothom">Who is the man camped near the graveyard?</choice>
+      <choice ID="SixshrewChoice" GotoID="Sixshrew">What do you think of the plant you share this building with?</choice>
+      <choice ID="EndChoice" GotoID="End">Live and drink, tinker.</choice>
+    </node>
+    <node ID="Greet">
+      <text>
+        {{emote|*She gives you a hard stare.*}}
+
+        I am a Daughter of Exile, but you should call me Yla Haj.
+      </text>
+      <choice ID="DaughterChoice" GotoID="Daughter">Daughter of Exile?</choice>
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Daughter">
+      <text>
+        Tinker-nuns. The world sees fit to call us that, my sisters and me.
+
+        Do you know the story told of Rebekah the Exile? She was a teacher to Resheph, but he excommunicated her from the sultanate and banished her from the realm.
+
+        To know her, I've chosen a life of unbelonging. And among my sisters, I have the honor of permanent residence by her gravesite.
+
+        I'll tell you this, traveler: the shape of a society is visible only from the outside, and there is peace beyond a boundary.
+      </text>
+      <choice ID="RebekahChoice" GotoID="Rebekah" IfHaveSultanNoteWithTag="rebekahWasHealer" FlagSecret="true">Wasn't Rebekah a healer? Why are you an order of tinkers?
+      </choice>
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Rebekah">
+      <text>
+        {{emote|*Yla Haj pauses.*}}
+
+        You presume too narrow a meaning of "health".
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Ezra">
+      <text>
+        Ezra sits in the shadow of history, where small things grow. It's the moss beneath the statue, quite literally. For centuries monarchs concerned themselves with felling trees, and now of the Covenate only Ezra remains.
+
+        It's home to Rebekah's gravesite, so for the Daughters, it is a sacred place. You may notice more of us on pilgrimage.
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Zothom">
+      <text>
+        Zothom. I don't see utility in unkindness, but he's a fool. Were it that proximity to meekness made one meek...
+
+        I have no use for a man who seeks salvation in the body of a dead woman.
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="EzraChoice" />
+      <choice UseID="SixshrewChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Sixshrew">
+      <text>
+        I don't.
+      </text>
+      <choice UseID="GreetChoice" />
+      <choice UseID="EzraChoice" />
+      <choice UseID="ZothomChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+  </conversation>
+
+
+  

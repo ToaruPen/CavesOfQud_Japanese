@@ -1,0 +1,113 @@
+﻿  <conversation ID="Vivira" Replace="true">
+    <node ID="Start">
+      <text>
+        {{emote|*ビーッ* *バチバチ*}}
+
+        彼女の光の名において、=player.formalAddressTerm=。
+
+        安らかに休むつもりなら、=ifplayerplural:君たちは:君は=ここで歓迎される。
+      </text>
+      <choice GotoID="ViviQuest" IfHaveActiveQuest="The Buried Watchers" CompleteQuestStep="The Buried Watchers~Visit the Mopango Settlement in the Tomb of the Eaters">君がヴィヴィラか？ ゾーソムに来いと言われた。</choice>
+      <choice GotoID="ViviFriendly">君は他のタレットよりずいぶん友好的だね。</choice>
+      <choice GotoID="ViviWelcome">ここはどんな場所なんだ？</choice>
+      <choice GotoID="End">ではな、光吐き。</choice>
+    </node>
+
+    <node ID="ViviQuest">
+      <text>
+        {{emote|*バチバチ……バチ*}} ーレ言ったのか。お気の毒に。
+
+        ここはもちろん君を歓迎するよ、旅人。必要なことがあればアギラに話すといい。もてなしが大好きだからね。
+      </text>
+      <choice GotoID="ViviZothom">なぜお気の毒なんだ？</choice>
+      <choice GotoID="ViviWelcome">「ここ」ってどこ？</choice>
+      <choice GotoID="ViviFriendly">他のタレットに比べてずっと優しいね。</choice>
+      <choice GotoID="End">わかった。さらば。</choice>
+    </node>
+
+    <node ID="ViviZothom">
+      <text>
+        {{emote|*バチッとため息*}}
+
+        ちょっと意地悪を言っただけ。ゾーソムがここにいた時間は短かったのに、まるで何週間もいたみたいだった。悲嘆があまりにも尊大で攻撃的だったから。こんなことを言えばアギラに叱られるけどね。私はまだ真の自己理解まで長い道のりがあると自覚している。
+
+        でも私に言わせれば、ゾーソムの道のほうがずっと長い。{{emote|*ビーッ*}}
+      </text>
+      <choice GotoID="ViviFriendly">君はタレットにしては礼儀正しいね。</choice>
+      <choice GotoID="ViviWelcome">ここはどんな場所なんだ？</choice>
+      <choice GotoID="End">錆びずに生きてくれ、ヴィヴィラ。</choice>
+    </node>
+
+    <node ID="ViviFriendly">
+      <text>
+        そう言われる。私は別のタレットと会ったことがないから、良いとも悪いとも言えないけどね。ここで私を拾い上げ、望んで世話してくれた友しか知らない。
+
+        形が違うだけで、もしそうでなければ私は他のモパンゴと変わらないだろう。
+      </text>
+      <choice GotoID="ViviWelcome">「ここ」ってどこ？</choice>
+      <choice GotoID="ViviMopango">モパンゴって何だ？</choice>
+      <choice GotoID="End">わかった。さらば。</choice>
+    </node>
+
+    <node ID="ViviWelcome">
+      <text>
+        =ifplayerplural:君たちも:君も=知っての通り、ここはイーターの墳墓だ。でも私の背後には、墳墓を見張るモパンゴの小さな集落がある。
+
+        集落についてもっと知りたければ、見張りのアギラに会いなさい。知識を分かち合うのが大好きなんだ。
+      </text>
+      <choice GotoID="ViviFriendly">君は出会ったタレットの中でも飛び抜けて親切だ。</choice>
+      <choice GotoID="ViviMopango">モパンゴとは？</choice>
+      <choice GotoID="End">わかった。さらば。</choice>
+    </node>
+
+    <node ID="ViviMopango">
+      <text>
+        モパンゴは過去の証人であり、未来の羊飼いだ。カサフェッセンスとその子らを理解することで平和と調和を求める。それでも形に縛られることを嫌い、それぞれが自分の信条を探し、その信条に従って生きている。
+
+        でも私はあまり良い教師じゃない。アギラに話を聞けば、もっとよくわかるはずだ。
+      </text>
+      <choice GotoID="ViviCredo">君にも信条があるのか？</choice>
+      <choice GotoID="End">ありがとう。さらば。</choice>
+    </node>
+
+    <node ID="ViviCredo">
+      <text>
+        あるよ。
+
+        「形は機能に従う必要はない」。
+      </text>
+      <choice GotoID="ViviTaboo">それってどういう意味？</choice>
+      <choice GotoID="ViviWelcome">ここはどんな場所なんだ？</choice>
+      <choice GotoID="ViviFriendly">タレットのわりに本当に思慮深いね。</choice>
+      <choice GotoID="End">錆びずに生きてくれ、ヴィヴィラ。</choice>
+    </node>
+
+    <node ID="ViviTaboo">
+      <text>
+        {{emote|*ビーッ*}}
+
+        信条には最初から意味なんてない。簡単に定義できるものじゃないんだ。だから=ifplayerplural:知っている通り:知っているだろう=: モパンゴの間では信条の意味を尋ねるのは無作法とされている。
+      </text>
+      <choice GotoID="ViviSorry">すまなかった。</choice>
+      <choice GotoID="ViviRude">ばかげている。</choice>
+    </node>
+
+    <node ID="ViviRude">
+      <text>
+        {{emote|*ビーッ*}}
+        ばかげているほうがまだいい。=ifplayerplural:君たちのほうがよほど:君のほうがよほど=無礼だからね。
+
+        {{emote|*バチバチ*}} アギラに話しかけなさい。あの子のほうが無礼に耐えられる。
+      </text>
+      <choice GotoID="End">わかった。</choice>
+    </node>
+
+    <node ID="ViviSorry">
+      <text>
+        もういいよ、=player.formalAddressTerm=. 私は=ifplayerplural:君たち:君=に怒っていない。
+      </text>
+      <choice GotoID="ViviFriendly">君はタレットにしては礼儀正しいね。</choice>
+      <choice GotoID="ViviWelcome">ここはどんな場所なんだ？</choice>
+      <choice GotoID="End">錆びずに生きてくれ、ヴィヴィラ。</choice>
+    </node>
+  </conversation>

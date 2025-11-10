@@ -1,0 +1,123 @@
+﻿<conversation ID="Tikva">
+
+    <start ID="KilledTau" IfTestState="TauElse contains KilledByPlayer">
+      <text>
+        {{emote|*the sound of the chime rings querulous and faint, its light flickering.*}}
+
+        Please�c no�c
+      </text>
+      <choice GotoID="Killed2">Tau has departed.</choice>
+    </start>
+
+    <node ID="Killed2">
+      <text>
+        It ignores the monster. It ignores it. It ignores it.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+		</node>
+
+    <start ID="LostInSoft" IfHaveState="TauLostInSoft">
+      <text>
+        {{emote|*the sound of the chime rings querulous.*}}
+
+        The light shines upon you but illuminates nothing. It quails.
+      </text>
+      <choice GotoID="Lost2">Tau has departed.</choice>
+    </start>
+
+    <node ID="Lost2">
+      <text>
+        It stares into the light and wishes away the monster.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+    <start ID="KilledCompanion" IfTestState="TauCompanion contains KilledByPlayer">
+      <text>
+        Relief, relief. Relief from the void, safety from its creases.
+      </text>
+      <choice GotoID="Companion2">How do you feel about Tau's departure?</choice>
+    </start>
+
+    <node ID="Companion2">
+      <text>
+        The light shines so bright, the voidshadow folds not upon it. It exults. It relaxes. It wills this troubled feeling away.
+
+        Thank you for clearing Tau's path, =name=. This is better.
+      </text>
+      <choice GotoID="PostQuestions">You are welcome. I yet have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="ElseWelcome" IfHaveState="ElseingComplete">
+      <text>It is happy, it lies. It swells to witness Tau's choice, in pantomime of shared joy.</text>
+      <choice GotoID="Else2">How do you feel about Tau's departure?</choice>
+    </start>
+
+    <node ID="Else2">
+      <text>
+        It wills this troubled feeling away. It looks to the light with something in its eyes. It tries to blink the something away, but it cannot. The light is dim through the something in its eyes.
+
+        But the light yet shines. It will blink and it will see the light in searing glory. I thank you, I thank you, I thank you.
+      </text>
+      <choice GotoID="PostQuestions">You are welcome. I yet have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+		<start ID="Welcome">
+			<text>{{emote|*the chime rings a long, clarion tone.*}}
+      
+      You are as beautiful as imagined. You ring with a shining purpose. This chime is awed to bask in your presence.</text>
+      <choice GotoID="Name">I am =name=. Who are you?</choice>
+      <choice GotoID="Light">Your chime shines with such painful light.</choice>
+      <choice IfTestState="GyredreamKnown" GotoID="Gyredream">Were you affected by gyredream?</choice>
+      <choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">I am to carry Tau's chime to Taproot, so she can leave Chavvah.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+		</start>
+
+    <node ID="PostQuestions" Inherits="Welcome">
+      <text>Yes. It looks into the light with you.</text>
+    </node>
+
+    <node ID="Name" Inherits="Welcome">
+      <text>{{emote|*the chime rings again*}}
+      
+      It is called Tikva, low and humble. The chime rests in a web of strong love, a little piece of something greater and so much more beautiful. As are you, but a gestalt unto yourself. A world to be orbited.</text>
+    </node>
+
+    <node ID="Light" Inherits="Welcome">
+      <text>
+        It channels the breathtaking things seen and heard and known. Bathe your senses in it until they grow accustomed. You will see nothing else.
+      </text>
+    </node>
+
+    <node ID="Gyredream" Inherits="Welcome">
+      <text>
+        {{emote|*the chime rings, a querulous and tinny sound*}}
+        
+        It... can scarce find the dream in this light. It thinks of Tzedech and weeps. It was not here, last time the static was in high pitch, but it remembers the pain and fear. It is not ready to feel these, it cannot. Gaze into its light and speak not of nightmares.
+      </text>
+      <choice GotoID="Lover" Priority="99">Tzedech?</choice>
+    </node>
+
+    <node ID="TauChime" Inherits="Welcome">
+      <text>
+        {{emote|*the chime goes silent, and its voice in your mind is small and subdued*}}
+        
+        It begs. Speak not of Tau. She shone so bright, with none of the heat from my -- from Tzedech.
+        
+        To remember her departure harms it. This and gyredream are too much for it to bear.
+      </text>
+      <choice GotoID="Lover" Priority="99">'Your' Tzedech?</choice>
+    </node>
+
+    <node ID="Lover" Inherits="Welcome">
+      <text>{{emote|*the deathbell tolls.*}}
+        
+      No, it cannot, it cannot, it cannot. It misses it, it misses it, it misses it, it cannot it cannot it cannot.
+      
+      Look into the light. It burns away the sorrow, it burns away. Please, please, please.</text>
+    </node>
+	</conversation>
+
+	

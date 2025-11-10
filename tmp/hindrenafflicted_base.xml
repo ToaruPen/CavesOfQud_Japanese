@@ -1,0 +1,10 @@
+﻿<conversation ID="HindrenAfflicted">
+    <node ID="Start">
+      <text>
+        hhhhhhhhhhhhhh.
+      </text>
+      <choice GotoID="End">My condolences. Live and drink.</choice>
+    </node>
+  </conversation>
+  
+  

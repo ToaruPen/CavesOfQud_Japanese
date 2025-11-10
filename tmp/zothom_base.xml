@@ -1,0 +1,131 @@
+﻿<conversation ID="Zothom">
+    <node ID="Start">
+      <text>
+        Live and drink, wayfarer.
+
+        Cause no strife here and we will have no quarrel.
+      </text>
+      <choice GotoID="ZothomGreets">I am =name=. Who are you?</choice>
+      <choice GotoID="ZothomWarden">You speak like a Warden.</choice>
+      <choice GotoID="ZothomWhat">What are you doing here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="ZothomGreets">
+      <text>
+        I am no one of any importance.
+
+        But my name is Zothom, and some call me the Penitent.
+      </text>
+      <choice GotoID="ZothomThePenitent">Penitent?</choice>
+      <choice GotoID="ZothomWarden">You speak like a Warden.</choice>
+      <choice GotoID="ZothomWhat">What are you doing here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="ZothomWarden">
+      <text>
+        I am no Warden. My only fellowship is with my own shame.
+      </text>
+      <choice GotoID="ZothomThePenitent">Why are you ashamed?</choice>
+      <choice GotoID="ZothomGreets">My name is =name=. What is yours?</choice>
+      <choice GotoID="ZothomWhat">What are you doing here?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="ZothomWhat">
+      <text>
+        I watch over the Grave of Rebekah to atone for my deeds, and to find my credo.
+      </text>
+      <choice GotoID="ZothomKnowsRebekah">Who is Rebekah?</choice>
+      <choice GotoID="ZothomThePenitent">Your deeds?</choice>
+      <choice GotoID="ZothomCredo">Your credo?</choice>
+      <choice GotoID="ZothomWarden">Are you a Warden?</choice>
+      <choice GotoID="ZothomGreets">Who are you?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="ZothomThePenitent">
+      <text>
+        I was once a vile graverobber, the lowest of the low. Years ago I sought to plunder the Tomb of the Eaters, and set off to do so with a pair of confederates. I watched both of them die, slain by ancient artifice and entombed with the ancient dead.
+
+        I would have shared their fate, but for a coterie of mopango nesting in the catacombs. They kept me safe and fed me while I treated my wounds. It is in their honor that I seek a credo now.
+      </text>
+      <choice GotoID="ZothomLovesMopango">Mopango?</choice>
+      <choice GotoID="ZothomCredo">Credo?</choice>
+      <choice GotoID="ZothomTomb">I need to enter the Tomb of the Eaters.</choice>
+      <choice GotoID="End">Live and drink, Penitent One.</choice>
+    </node>
+    <node ID="ZothomTomb">
+      <text>
+        Is your motivation just?
+      </text>
+      <choice GotoID="ZothomJust">Yes.</choice>
+      <choice GotoID="ZothomUnjust">No.</choice>
+    </node>
+    <node ID="ZothomJust">
+      <text>
+        Only those who pay their respects to the Grave of Rebekah will know the way into the tomb.
+
+        If you make it inside, the mopango will offer you solace and knowledge, and can tell you more about the Tomb's contents.
+      </text>
+      <choice GotoID="ZothomKnowsRebekah">Who is Rebekah?</choice>
+      <choice GotoID="ZothomLovesMopango">The mopango?</choice>
+      <choice GotoID="ZothomHelp">Can't you tell me anything else?</choice>
+      <choice GotoID="End">I will. Live and drink.</choice>
+    </node>
+    <node ID="ZothomUnjust">
+      <text>
+        May you share my fate, then.
+      </text>
+      <choice GotoID="ZothomHelp">Tell me how to get in anyway.</choice>
+      <choice GotoID="End">We'll see. Live and drink.</choice>
+    </node>
+    <node ID="ZothomHelp">
+      <text>
+        No.
+      </text>
+      <choice GotoID="ZothomLovesMopango">Tell me about the mopango, then.</choice>
+      <choice GotoID="End">Fine.</choice>
+    </node>
+    <node ID="ZothomCredo">
+      <text>
+        Yes. It is a rite of passage for the mopango people: a statement that inspires contemplation, discussion, and thought. An ideal credo has no single explanation or interpretation and is meant to inspire contemplation in those who hear it. For this reason, it is considered rude among mopango to ask the meaning of a credo.
+
+        Someday I will find mine.
+      </text>
+      <choice GotoID="ZothomLovesMopango">Who are the mopango?</choice>
+      <choice GotoID="ZothomTomb">I need to enter the Tomb of the Eaters.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="ZothomLovesMopango">
+      <text>
+        Mopango are plated, digging creatures whose armor scales glow a pale white. They are contemplative, sociable, and mostly peaceful. They commune with ancient objects, which is why a coterie of their kind lives in the Tomb of the Eaters.
+
+        They are patient even with rough-hewn wanderers such as we, but it's still not best to ask one to explain eir credo.
+      </text>
+      <choice GotoID="PangoQuest">I'd like to meet these mopango.</choice>
+      <choice GotoID="ZothomCredo">Credo?</choice>
+      <choice GotoID="ZothomTomb">I need to enter the Tomb of the Eaters.</choice>
+      <choice GotoID="End">Live and drink, Penitent One.</choice>
+    </node>
+
+    <node ID="PangoQuest">
+      <text>
+        If you do find =player.reflexive= in the Tomb, the mopango settlement is nestled in the wall of the Northwest Catacombs. The entrance is guarded by a chain turret named Vivira, brightly-painted to distinguish em from eir brethren.
+
+        Resist your reflexive urge to fight or flee, as Vivira is friendly and open to parley. If you meet, tell em I sent you.
+      </text>
+      <choice GotoID="End" IfNotHaveQuest="The Buried Watchers" StartQuest="The Buried Watchers">Speak to a... turret? I suppose I will; live and drink.</choice>
+      <choice GotoID="End">Speak to a... turret? No thank you; live and drink.</choice>
+    </node>
+
+    <node ID="ZothomKnowsRebekah">
+      <text>
+        Rebekah was a physician, and an advisor to Resheph until she lost his favor. When, after years of exile, she lost her voice and her life, she was buried here, an outsider unfit to be interred with the honored dead. So she rests here.
+
+        I believe her proximity will help me find my credo.
+      </text>
+      <choice GotoID="ZothomCredo">Credo?</choice>
+      <choice GotoID="ZothomTomb">I need to enter the Tomb of the Eaters.</choice>
+      <choice GotoID="End">Live and drink, Penitent One.</choice>
+    </node>
+  </conversation>
+
+  

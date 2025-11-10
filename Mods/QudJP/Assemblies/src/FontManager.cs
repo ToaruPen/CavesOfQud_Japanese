@@ -120,6 +120,25 @@ namespace QudJP
                 return;
             }
 
+            // Avoid perturbing layout for ASCII-only labels; keep vanilla fonts/metrics.
+            var s = text.text;
+            bool needsJP = false;
+            if (!string.IsNullOrEmpty(s))
+            {
+                for (int i = 0; i < s.Length; i++)
+                {
+                    if (s[i] > 0x7F)
+                    {
+                        needsJP = true;
+                        break;
+                    }
+                }
+            }
+            if (!needsJP)
+            {
+                return;
+            }
+
             if (ShouldReplaceLegacyFont(text.font))
             {
                 text.font = legacyFont;
@@ -233,8 +252,6 @@ namespace QudJP
             {
                 return;
             }
-
-            TMP_Settings.defaultFontAsset = PrimaryFont;
 
             var fallback = TMP_Settings.fallbackFontAssets ?? new List<TMP_FontAsset>();
             fallback.RemoveAll(asset => asset == null || asset == PrimaryFont || asset == BoldFont);

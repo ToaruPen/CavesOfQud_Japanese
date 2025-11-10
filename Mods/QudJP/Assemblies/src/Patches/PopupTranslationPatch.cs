@@ -6,7 +6,7 @@ using XRL.UI;
 namespace QudJP.Patches
 {
     /// <summary>
-    /// Console 系ポップアップのテキストを Translator 経由で日本語に差し替える。
+    /// Translate console Popup and modern UI PopupMessage with dictionary + simple rules.
     /// </summary>
     internal static class PopupTranslationPatch
     {
@@ -83,7 +83,7 @@ namespace QudJP.Patches
             if (message.StartsWith(DeleteConfirmPrefix, System.StringComparison.Ordinal) && message.EndsWith("?", System.StringComparison.Ordinal))
             {
                 var name = message.Substring(DeleteConfirmPrefix.Length, message.Length - DeleteConfirmPrefix.Length - 1);
-                return $"セーブ『{name}』を削除します。よろしいですか？";
+                return $"セーブデータ『{name}』を本当に削除しますか？";
             }
 
             if (string.Equals(message, "Game Deleted!", System.StringComparison.Ordinal))
@@ -112,3 +112,4 @@ namespace QudJP.Patches
         }
     }
 }
+

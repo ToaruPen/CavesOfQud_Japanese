@@ -1,0 +1,230 @@
+﻿<conversation ID="Angohind">
+
+    <node ID="Start" IfFinishedQuest="Find Eskhind" IfNotFinishedQuest="Kith and Kin">
+      <text>
+        Kendren! A moment of your time, please. You are =name=, yes? You seek to solve a mystery here in the village, yes?
+      </text>
+      <choice IfHaveBlueprint="Sonnet" GotoID="ShowSonnet">Does this poem belong to you?</choice>
+      <choice GotoID="Introductions">I am, and yes.</choice>
+      <choice GotoID="How did you know?">How did you know all that?</choice>
+      <choice GotoID="Introductions">Who are you?</choice>
+      <choice GotoID="End">I don't have time for this. Live and drink.</choice>
+    </node>
+
+    <node ID="ShowSonnet">
+      <text>
+        Poem? Oh! This is a Shakespriggan sonnet, but I didn't write it--the rhymes are a bit facile, and love poems don't interest me.
+
+        I've been teaching Eskhind about sonnets, so she must have written this. But that means... oh, poor thing.
+      </text>
+      <choice GotoID="End">Thank you. Live and drink.</choice>
+    </node>
+
+    <node ID="How did you know?">
+      <text>
+        I hoped you would ask! I closely study the works of the great bard, Willow Shakesprig. In particular, I am most fond of the stories of the Great Plant Detective, Hemlock Cones. Through these stories, I have learned to hone my perceptions and deductive skill to a fine point. It is my dearest hope that one day I shall be known not as Angohind, village bookworm... but Angohind, Master Detective.
+
+        My grandhind has forbidden me from looking into the strange doings in the village, but she said nothing about me teaching you the ins and outs of detective work! What say you?
+      </text>
+      <choice GotoID="Acceptance">I am listening.</choice>
+      <choice GotoID="End">I should... go. Live and drink.</choice>
+    </node>
+
+    <node ID="Introductions">
+      <text>
+        Yes, yes of course.
+
+        I am Angohind: grandson of esteemed Elder Eselhind, young scholar of Shakesprig, and best dressed hindren in Bey Lah. I am also, as luck would have it, an aspirant investigator with an ear... for mystery.
+
+        My grandhind has forbidden me from looking into the strange doings in the village, but she said nothing about me teaching you the ins and outs of detective work! What say you?
+      </text>
+      <choice GotoID="Acceptance">I am listening.</choice>
+      <choice GotoID="End">No thank you. Live and drink.</choice>
+    </node>
+
+    <node ID="Acceptance">
+      <text>
+        Oh, truly? You won't regret this, kendren, I promise! So, let's get to it!
+
+        Every mystery hinges on the detection and interpretation of evidence. As Hemlock Cones said:
+
+        Ere any prosecution can commence, Accusers must obtain some evidence. The solving lies in seeing and locating Supporting clues as well as implicating.
+      </text>
+      <choice GotoID="Finding evidence">How do I find evidence?</choice>
+      <choice GotoID="Defining evidence">What makes something evidence?</choice>
+      <choice GotoID="Implicating evidence">What is implicating evidence?</choice>
+      <choice GotoID="Supporting evidence">What is supporting evidence?</choice>
+      <choice GotoID="Multiple culprits?">What if evidence indicates multiple culprits?</choice>
+    </node>
+
+    <node ID="Finding evidence">
+      <text>
+        Professor Cones taught me everything about finding evidence!
+
+        Though evidence you found upon the ground may yet be sound, If it will be sufficient is a toss-up. Examine all your suspects and their homes and all around, And find a witness who may dish the gossip.
+
+        You can find evidence by looking at things on the ground, but you can also look at your suspects to see if there's anything off about them. You can also ask around to see if anyone has seen or heard anything strange, and different witnesses may have different things to report.
+      </text>
+      <choice GotoID="Supporting evidence">What about supporting evidence?</choice>
+      <choice GotoID="Defining evidence">What makes something evidence?</choice>
+      <choice GotoID="Multiple culprits?">What if I find implicating evidence for multiple suspects?</choice>
+      <choice GotoID="End">Thank you for your help, Angohind. Live and drink.</choice>
+    </node>
+
+    <node ID="Defining evidence">
+      <text>
+        Evidence is any sign of something gone amiss. The Great Plant Detective gave some good examples in Act II of the tragedy of Gimlet:
+
+        So! Sweep the full estate for signs of {{W|trade}}, their shady night-time dealings to expose Now look for signs of {{W|craft}}, see what was made For to conceal a treasure hidden close. But darker still, if {{W|illness}} signs we find A desperate contagion may yet lurk And darkest yet, more {{W|violence}} may reply To those who stumble 'pon their grisly work.
+      </text>
+      <choice GotoID="Finding evidence">How do I find evidence?</choice>
+      <choice GotoID="Defining evidence">What makes something evidence?</choice>
+      <choice GotoID="Implicating evidence">What is implicating evidence?</choice>
+      <choice GotoID="Supporting evidence">What is supporting evidence?</choice>
+      <choice GotoID="Multiple culprits?">What if evidence indicates multiple culprits?</choice>
+    </node>
+
+    <node ID="Implicating evidence">
+      <text>
+        Implicating evidence is what it sounds like: evidence that implicates someone's involvement in a crime. For example, if someone observed strange behavior in a person, or if you found something weird in a person's room, or even if you observe them behaving strangely =player.reflexive=! That's implicating evidence.
+
+        Most of the time, a piece of implicating evidence isn't proof of a crime in and of itself, but when presented alongside supporting evidence, implicating evidence is the seed of truth from which grows the long frond of justice.
+      </text>
+      <choice GotoID="Supporting evidence">What about supporting evidence?</choice>
+      <choice GotoID="Finding evidence">How do I find evidence?</choice>
+      <choice GotoID="Multiple culprits?">What if I find implicating evidence for multiple suspects?</choice>
+      <choice GotoID="End">Thank you for your help, Angohind. Live and drink.</choice>
+    </node>
+
+    <node ID="Supporting evidence">
+      <text>
+        Supporting evidence can be any sign that something is amiss that you can't directly tie to an individual. One common example is a bloodstain, which indicates that violence was committed but doesn't tell you by whom.
+
+        At its heart, supporting evidence is most powerful when paired with implicating evidence. Once you have both, you'll be in a good position to accuse a suspect of wrongdoing.
+      </text>
+      <choice GotoID="Implicating evidence">What about implicating evidence?</choice>
+      <choice GotoID="Finding evidence">How do I find evidence?</choice>
+      <choice GotoID="Multiple culprits?">What if I find implicating evidence for multiple suspects?</choice>
+      <choice GotoID="End">Thank you for your help, Angohind. Live and drink.</choice>
+    </node>
+
+    <node ID="Multiple culprits?">
+      <text>
+        As Professor Cones said:
+
+        We know the reach of law, however long, Is not the finest judge of right and wrong. Choose not what evidence thou wilt present Ere its consequence is evident.
+
+        In short, you must use your judgment and intuition, kendren.
+      </text>
+      <choice GotoID="Evidence exceptions">What if I accuse the wrong person?</choice>
+      <choice GotoID="Evidence is not created equal">You're saying that what evidence I choose to show will affect the outcome of the case?</choice>
+      <choice GotoID="Gaming the system">Then what's to keep me from simply choosing the outcome I want?</choice>
+      <choice GotoID="Questions">I have further questions.</choice>
+    </node>
+
+    <node ID="Evidence exceptions">
+      <text>
+        That's always a risk, kendren.
+
+        Neelahind knows everyone in the village very well. If you present supporting evidence that contradicts something the Warden knows to be true about the suspect, well, she probably won't believe you. In fact, she might not let you accuse that person again, so be careful.
+
+        If you make too many bad accusations, you might lose credibility with her entirely.
+      </text>
+      <choice GotoID="Questions">I see. I have further questions.</choice>
+      <choice GotoID="End">Thank you for the help, Angohind. Live and drink.</choice>
+    </node>
+
+    <node ID="Gaming the system">
+      <text>
+        Well, your conscience, surely.
+
+        You wouldn't be so unethical as to manipulate the resolution of a crime to your own ends. W-would you?
+      </text>
+      <choice GotoID="Questions">As you say it. I have further questions.</choice>
+      <choice GotoID="End">Well, I should get going. Live and drink.</choice>
+    </node>
+
+
+    <node ID="Evidence is not created equal">
+      <text>
+        Precisely. The evidence you present paints a picture that will forever hang in the halls of Bey Lah's history. Our fate is in your hands.
+
+        Hemlock Cones once said:
+
+        As like begets like in daily life so too in mystery. Should I paint pictures full of strife thus violence comes to be. If I in craft or trade should deal then deals shall deal by troth But if I pestilence reveal-
+        no honey be enough.
+      </text>
+      <choice GotoID="Questions">I see. I have further questions.</choice>
+      <choice GotoID="End">Thank you for your help, Angohind. Live and drink.</choice>
+    </node>
+
+    <node ID="Questions">
+      <text>
+        Please, ask away!
+      </text>
+      <choice GotoID="Finding evidence">How do I find evidence?</choice>
+      <choice GotoID="Implicating evidence">What is implicating evidence?</choice>
+      <choice GotoID="Supporting evidence">What is supporting evidence?</choice>
+      <choice GotoID="Multiple culprits?">What if evidence indicates multiple culprits?</choice>
+      <choice GotoID="Evidence exceptions">What if I accuse the wrong person?</choice>
+      <choice GotoID="End">That is all. Live and drink, faundren.</choice>
+    </node>
+
+    
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+      <text>
+        Welcome back, Detective =name=.
+
+        Everything's in order here, more or less.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+      <text>
+        You should be proud, Detective =name=.
+
+        The hand of justice can be harsh, but it is fair. You have been its agent here.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+      <text>
+        So much change! I've been investigating the 'Democracy' that Hindriarch Esk has been espousing, and it strikes me as rife with vulnerabilities to malicious actors. Perhaps it can be refined.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+      <text>
+        Stunning! Eskhind as Hindriarch?
+
+        Those poetry lessons I had been giving her must have inspired in her a sense of civic duty.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+      <text>
+        Is this really the world we live in?
+
+        How cruel.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+
+    <node ID="Start">
+      <text>
+        Something strange is afoot here in Bey Lah, and no mistake.
+
+        But I am forbidden from investigating. If only there were another detective that I could advise...
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

@@ -1,0 +1,172 @@
+<conversation ID="Tammuz">
+		<start ID="NewWelcome" IfHaveState="TammuzPermission" Inherits="Choices">
+			<text>
+				{{emote|*Tammuz chimes a quiet tone.*}}				
+			</text>			
+		</start>
+
+    <start ID="KilledTau" IfTestState="TauElse contains KilledByPlayer">
+      <text>
+        {{emote|*Tammuz is nearly silent but for a soft, shaky resonance*}}
+
+        ...
+      </text>
+      <choice GotoID="Killed2">Tau is gone.</choice>
+    </start>
+
+    <node ID="Killed2">
+      <text>
+        You m-m-moon king. Madhand.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+
+      <start ID="LostInSoft" IfHaveState="TauLostInSoft">
+        <text>
+          {{emote|*the chime rings shaky and loud*}}
+
+          Wh-what is this? H-how is it meant? This outcome j-judders within and w-without us.
+        </text>
+        <choice GotoID="Lost2">Tau has departed.</choice>
+      </start>
+
+      <node ID="Lost2">
+        <text>
+          Wh-what will Tau b-be after soft? You, did, did you mean... wh-what c-could you say? Tau spins within, the g-gyre spins without.
+        </text>
+        <choice GotoID="End">Live and drink.</choice>
+      </node>
+
+    </node>
+    <start ID="KilledCompanion" IfTestState="TauCompanion contains KilledByPlayer">
+      <text>
+        {{emote|*Tammuz chimes a querulous tone*}}
+
+        O-oh. Elsefolder... th-this path you have l-laid upon Tau, it-it is best. It is good? P-please be good.
+      </text>
+      <choice GotoID="Companion2">How does Tau's departure find you?</choice>
+    </start>
+
+    <node ID="Companion2">
+      <text>
+        {{emote|*Tammuz's chime rings even quieter and more tremulous*}}
+
+        Un, un-uncertain. Tau l-leaves unfolded but the g-g-g-gyre yet s-spins. The s-spinning leaves me dizzy.
+      </text>
+      <choice GotoID="PostQuestions">I have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="ElseWelcome" IfHaveState="ElseingComplete">
+      <text>
+        {{emote|*Tammuz rings a wavering chime*}}
+
+        Y-you are here. Elseing h... hand.
+      </text>
+      <choice GotoID="Else2">How does Tau's departure find you?</choice>
+    </start>
+
+    <node ID="Else2">
+      <text>
+        {{emote|*the chime is louder this time, but just as querulous*}}
+
+        Sh-sh-she, th-this fate, it. It is a d-deep dark. Will Tau f-fold herself, I wonder?
+      </text>
+      <choice GotoID="PostQuestions">I have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+
+
+    <start ID="Welcome">
+			<text>
+				{{emote|*Tammuz chimes a broad and booming tone.*}}
+
+				You! Purpose-driven mad... madhand. You've come here, right? Then you must know power is our... the domain of being is one of power, wouldn't you say? W-Would you please agree with that?								
+			</text>
+			<choice GotoID="Welcome2">...</choice>
+		</start>
+		<node ID="Choices">
+      
+			<choice GotoID="Name">I am =name=. Who are you?</choice>
+			<choice IfTestState="GyredreamKnown" GotoID="Gyredream">Did you experience the gyredream?</choice>
+			<choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">I am to carry Tau's chime to Taproot, so she can leave Chavvah.</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+
+    <node ID="PostQuestions" Inherits="Choices">
+      <text>
+        If y-y, th-that... yes. Ask if, if asking.
+      </text>
+    </node>
+    
+		<node ID="Welcome2" Inherits="Choices">
+			<text>
+				{{emote|*Tammuz quiets, then chimes in tottering, unsure tones.*}}
+
+				You beast! You m-moon king! You... Our roars are beastial! Would you say so? 
+			</text>
+			<choice GotoID="What" Priority="1">This is all nonsense.</choice>			
+		</node>
+		<node ID="What" Inherits="Choices">
+			<text>
+				{{emote|*The chime vibrates and shrinks its sound.*}}
+
+				You- you don't understand? You... it's you. It's-
+				
+				It is as said: strange is the path to wisdom! Perhaps you will... perhaps it is you who must figure it out. Figure it all out..
+			</text>
+			<choice GotoID="Unsure" Priority="1">You sound very unsure of yourself.</choice>			
+		</node>
+		<node ID="Unsure" Inherits="Choices">
+			<text>
+				{{emote|*Tammuz makes a hollow peep.*}}				
+			</text>
+			<choice GotoID="Permission" Priority="1">Be uncertain, friend. You have my permission.</choice>			
+		</node>
+		<node ID="Permission">
+			<text>
+				{{emote|*Tammuz is silent and still.*}}
+			</text>			
+			<choice GotoID="End" SetIntState="TammuzPermission,1">I will give you a moment.</choice>
+			<choice GotoID="End" SetIntState="TammuzPermission,1">Live and drink.</choice>
+		</node>
+		<node ID="Name" Inherits="Choices">
+			<text>
+				{{emote|*Tammuz chimes a small and bright noise.*}}
+				
+				Ta- Tammuz. Who becomes. Who is Twofirm even in -then.
+			</text>
+			<choice GotoID="Twofirm" Priority="1">Twofirm?</choice>
+		</node>
+		<node ID="Twofirm" Inherits="Choices">
+			<text>
+				The t-two sephirots. -then and -else. I cannot be -else. *I* cannot, of course. But -then? It does not seem so.
+				  
+				Their chimes ring at the right frequencies, others. But not so, mine.
+			</text>
+			<choice GotoID="Twofirm" Priority="1">Twofirm?</choice>
+		</node>
+		<node ID="Gyredream" Inherits="Choices">
+			<text>
+				{{emote|*Tammuz quivers and chimes a jarring tone.*}}
+
+				O-Oh. Oh u-uh oh oh. By contrasts, a q-quake stills even the most anxious trembling...
+				
+				The world... the world becomes and unbecomes. All the nervous, volcanic energy of being. Who becomes who? Three became one, but what of them now? 
+				
+				And w-what becomes of Tau? Of me? Of y-you?
+			</text>
+		</node>				
+		<node ID="TauChime">
+			<text>
+				{{emote|*The chime knells a soft and brittle tone.*}}
+
+				B-bright, she. And sang to the spark in T-Tammuz, too. By her, and through her, one could well-night feel full and at crown's end.
+
+        She r-returns to Soft now, yes? And then to walk free as -else. See... see her there for me. G-Goodbye.
+			</text>
+			<choice GotoID="End">...</choice>
+		</node>
+	</conversation>
+
+	

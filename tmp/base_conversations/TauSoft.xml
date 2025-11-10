@@ -1,0 +1,14 @@
+<conversation ID="TauSoft">
+		<start ID="Welcome">
+			<text>
+				{{emote|*The chime is silent and still.*}}
+			</text>							
+			<choice GotoID="End" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime" CompleteQuestStep="If, Then, Else~Reunite Tau with Her Chime">
+				<text>[touch Tau's chime to softthing]</text>
+				<part Name="TakeItem" Blueprints="TauChime" Require="true" Remove="true" />
+			</choice>
+			<choice GotoID="End">...</choice>
+		</start>
+	</conversation>
+
+  

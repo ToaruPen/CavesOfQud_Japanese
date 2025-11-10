@@ -1,0 +1,45 @@
+﻿  <conversation ID="HindrenScout" Inherits="IQuestKithAndKin" Replace="true">
+
+    <node ID="Start" IfHaveState="HindrenVillageDoomed">
+      <text>
+        嫌な予感がする。~
+        脅威はまだ去っていない。覚えておきな。~
+        まだ安全じゃない。肌でわかる。~
+        こんな決着、気に入らない……。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="HindrenVillageProspers">
+      <text>
+        警戒は解かないが、国境を開いてもベイ・ラーが栄えているのは確かだ。~
+        生きて飲め。~
+        生きて飲め、ケンドレン。~
+        おや、君か。無事でいてくれ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfHindriarch="Esk">
+      <text>
+        変化は苦手だが、どんな技能も鍛えられる。~
+        生きて飲め。~
+        生きて飲め、ケンドレン。~
+        ヒンドリアーク・エスクが私たちを守ってくれるといいのだが。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        生きて飲め、ケンドレン。~
+        礼儀は尽くすつもりだよ、ケンドレン。でも私たちヒンドレンは警戒するよう育てられているんだ。~
+        ここで騒ぎを起こさないでくれ、ケンドレン。~
+        思いやりを見せてくれ、ケンドレン。私たちは見ている。~
+        どうしてまだここにいる？ 仕事を片付けておくれ。~
+        国境を自由に越えさせるなんて奇妙な気分だが、それがグランド・ドウの意志だ。~
+        ケンドレンをベイ・ラーに入れても、良いことなんてないのに……。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

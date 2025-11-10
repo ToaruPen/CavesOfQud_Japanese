@@ -1,0 +1,134 @@
+﻿
+  <conversation ID="Liihart" Replace="true">
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+      <text>
+        ................................
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageDoomed">
+      <text>
+        ....
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+      <text>
+        やあ、=name=。生きて飲め。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHindriarch="Keh">
+      <text>
+        最悪だよ。
+
+        ……でも君はそこまで悪くない。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+      <text>
+        ..................
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+      <text>
+        ……なんて無駄。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+      <text>
+        おっ！ =name=。
+
+        会えて嬉しいよ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+      <text>
+        えっと……ありがとう。
+
+        生きて飲め。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        {{emote|*リーハートはしばらく黙ってあなたを見つめる。*}}
+
+        生きて飲め。
+      </text>
+      <choice IfHaveBlueprint="Sonnet" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="ShowSonnet">この詩はあなたのもの？</choice>
+      <choice IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="StoneQuery">いくつか質問してもいい？</choice>
+      <choice GotoID="End">無口な人だ、じゃあな。</choice>
+    </node>
+
+    <node ID="StoneQuery">
+      <text>
+        .....
+      </text>
+      <choice GotoID="StonePush">質問してもいいって言ったんだ。</choice>
+      <choice GotoID="StoneSilence">話すのが嫌いなんだね。</choice>
+      <choice GotoID="End">ならいい。生きて飲め。</choice>
+    </node>
+
+    <node ID="StonePush">
+      <text>
+        {{emote|*彼女は無言でにらみつける。*}}
+      </text>
+      <choice GotoID="StonePush">答えて。</choice>
+      <choice GotoID="StoneSilence">話せるのに、話したくないだけだね。</choice>
+      <choice GotoID="End">もういい。生きて飲め。</choice>
+    </node>
+
+    <node ID="StoneSilence">
+      <text>
+        ……正しい。
+      </text>
+      <choice GotoID="GentlePush">妹の潔白を証明したいんだ。助けてくれない？</choice>
+      <choice GotoID="StonePush">やっぱり話せるんだ。ただ嫌がってるだけでしょ。</choice>
+      <choice GotoID="End">ならいい。生きて飲め。</choice>
+    </node>
+
+    <node ID="GentlePush">
+      <text>
+        エスキンドじゃない。犯人はきっとケー。
+
+        私が知っているのはそれだけ。私は自分のことだけを気にしてる。
+
+        君もそうすれば？
+      </text>
+      <choice GotoID="End">わかった。生きて飲め。</choice>
+    </node>
+
+    <node ID="ShowSonnet">
+      <text>
+        おお！ それはエスキンドが書いたやつだ。
+
+        ネーラヒンドに渡してあげて。あの人のもとへ行くはずだったんだ。
+      </text>
+      <choice GotoID="NotEsk">エスキンドじゃない？</choice>
+      <choice GotoID="End">助かった。生きて飲め。</choice>
+    </node>
+
+    <node ID="NotEsk">
+      <text>
+        ううん、それはネーラヒンドに渡して。
+
+        エスクも後で感謝するはず。
+      </text>
+      <choice GotoID="End">了解。生きて飲め。</choice>
+    </node>
+
+  </conversation>

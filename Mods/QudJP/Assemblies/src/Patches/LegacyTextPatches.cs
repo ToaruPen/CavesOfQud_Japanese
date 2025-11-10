@@ -11,6 +11,7 @@ namespace QudJP.Patches
         [HarmonyPatch("OnEnable")]
         private static void OnEnable(Text __instance)
         {
+            // 初期文字列で日本語が含まれている場合のみフォント適用（英語UIのレイアウトを保つ）
             FontManager.Instance.ApplyToLegacyText(__instance);
             var current = __instance.text;
             if (!string.IsNullOrEmpty(current))
@@ -19,9 +20,10 @@ namespace QudJP.Patches
                 if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, current))
                 {
                     __instance.text = translated;
+                    // 翻訳後に日本語が含まれる可能性があるので再適用
+                    FontManager.Instance.ApplyToLegacyText(__instance);
                 }
             }
         }
     }
 }
-

@@ -1,0 +1,10 @@
+﻿<conversation ID="1-FF">
+    <node ID="Start">
+      <text>
+        {{emote|*Out of an oculus pours a scanning cone of mosaic light. It's unclear if they regard you as an interloper, but they take no aggressive action.*}}
+      </text>
+      <choice GotoID="End">Live and... remain ever rustless.</choice>
+    </node>
+  </conversation>
+
+  

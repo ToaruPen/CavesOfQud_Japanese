@@ -1,0 +1,84 @@
+<conversation ID="Santalalotze">
+    <start ID="Welcome">
+      <text>
+        Oh wow, an animal.
+        
+        Congratulations for... not dying.
+        
+        ... wanna buy something?
+      </text>
+      <choice GotoID="Name">I am =name=. Who are you?</choice>
+      <choice GotoID="Tree">Are you part of this tree?</choice>
+      <choice GotoID="Dangerous">Why are you selling goods in such a remote and dangerous place?</choice>
+      <choice GotoID="Animal">Don't call me "an animal."</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </start>
+
+    <node ID="Name" Inherits="Welcome">
+      <text>I am Santalalotze.
+      
+      ... of ... the Consortium of Phyta. Some call me 'Sant', I think, in
+      fantasy or memory.</text>
+      <choice GotoID="Memory" Priority="99">You don't remember?</choice>
+    </node>
+
+    <node ID="Tree">
+      <text>No. Well... no, no. I don't think so.
+      
+      We're just... sharing nutrients.</text>
+      <choice GotoID="Parasite">So you're a parasite?</choice>
+      <choice GotoID="Uncertain">You don't seem sure.</choice>
+      <choice GotoID="Questions">May I change the subject?</choice>
+      <choice GotoID="End">I see. Live and drink.</choice>
+    </node>
+
+    <node ID="Questions" Inherits="Welcome">
+      <text>Would you? Yes.
+      
+      What may... can I help with?</text>
+    </node>
+
+    <node ID="Parasite">
+      <text>'Parasite' so negative. It's like... ah... economic symbiosis?
+      
+      Chavvah sustains me, and we are, I am not... them. We are in a... beneficial arrangement, you know. Yes?</text>
+      <choice GotoID="Uncertain" Priority="99">You don't seem sure about any of this.</choice>
+      <choice GotoID="Questions">I'd like to ask you about something else.</choice>
+      <choice GotoID="End">Fair enough. Live and drink.</choice>
+    </node>
+
+    <node ID="Dangerous" Inherits="Welcome">
+      <text>It is safe here.
+      
+      Business is slow, but I've... gotten attached, ahaha.</text>
+    </node>
+
+    <node ID="Animal" Inherits="Welcome">
+      <text>Buy something, and I will call you 'customer'.
+      
+      If I remember to.</text>
+      <choice GotoID="Memory" Priority="99">Are you having some memory trouble?</choice>
+    </node>
+
+    <node ID="Memory">
+      <text>It's fine. I... forget nothing important.
+      
+      Or, I don't remember. So no sense worrying. Right?</text>
+      <choice GotoID="Parasite">Perhaps being Chavvah's parasite is affecting your mind.</choice>
+      <choice GotoID="Questions">I'd like to ask you about something else.</choice>
+      <choice GotoID="End">Right.</choice>
+    </node>
+
+    <node ID="Uncertain" Inherits="Welcome">
+      <text>Well. Nothing... is like Chavvah. Nothing at all.
+
+      I once thought ... my haustorium carried only lifestuff. Now I am unsure. Am I of Twofirm, now?
+      
+      It's fine.
+    
+      Let's... change subjects.</text>
+    </node>
+
+  </conversation>
+
+  

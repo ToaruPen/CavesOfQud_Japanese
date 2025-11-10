@@ -1,0 +1,17 @@
+﻿<conversation ID="HindrenPariah">
+    <node ID="Start">
+      <text>
+        Live and drink.~
+        Live and drink, wanderer.~
+        Live and drink, kendren.~
+        Take your time. The journey will wait for you.~
+        Please don't ask me where Bey Lah is. I will not tell you.~
+        I dream of returning to Bey Lah sometimes, but I know that's not my fate.~
+        Moon and sun, traveler.~
+        Moon and sun, wisdom and will.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

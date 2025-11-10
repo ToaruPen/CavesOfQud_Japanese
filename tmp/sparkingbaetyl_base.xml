@@ -1,0 +1,10 @@
+﻿<conversation ID="SparkingBaetyl">
+    <node ID="Start">
+      <text>
+        YOU ARE OF NO INTEREST.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

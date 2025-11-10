@@ -1,0 +1,9 @@
+﻿
+  <conversation ID="AgateSeveranceStar" Replace="true">
+    <node ID="Start">
+      <text>
+        私の行く手を止めるなんて、君は相当勇敢か、ただの愚か者か……あるいは両方だね。用件は？
+      </text>
+      <choice GotoID="End">用はない。生きて飲め。</choice>
+    </node>
+  </conversation>

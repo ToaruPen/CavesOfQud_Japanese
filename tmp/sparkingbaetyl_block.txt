@@ -1,0 +1,8 @@
+﻿  <conversation ID="SparkingBaetyl" Replace="true">
+    <node ID="Start">
+      <text>
+        お前には用がない。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

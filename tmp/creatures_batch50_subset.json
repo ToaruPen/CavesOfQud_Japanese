@@ -1,0 +1,48 @@
+{
+  "generated_at": "2025-11-10T06:29:33.897280+00:00",
+  "base_file": "references/Base/ObjectBlueprints/Creatures.xml",
+  "localized_file": "Mods/QudJP/Localization/ObjectBlueprints/Creatures.jp.xml",
+  "localized_exists": true,
+  "stats": {
+    "base_object_count": 1379,
+    "localized_object_count": 1094,
+    "objects_in_payload": 0,
+    "strings_pending": 0
+  },
+  "translatable_attribute_rules": {
+    "exact": [
+      "flavor",
+      "flavor1",
+      "flavor2",
+      "flavor3",
+      "flavor4",
+      "long",
+      "short",
+      "subtitle",
+      "title",
+      "verb",
+      "verb1",
+      "verb2",
+      "verb3"
+    ],
+    "substrings": [
+      "description",
+      "displayname",
+      "name",
+      "text",
+      "message",
+      "article",
+      "tooltip",
+      "lore",
+      "story",
+      "speech",
+      "chant",
+      "gospel",
+      "hagiograph",
+      "verse",
+      "poem"
+    ]
+  },
+  "objects": [],
+  "pending_strings": []
+}

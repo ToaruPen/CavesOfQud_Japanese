@@ -1,0 +1,40 @@
+﻿
+  <conversation ID="Kesehind" Replace="true">
+    <node ID="Start" IfFinishedQuest="Kith and Kin">
+      <text>
+        どうして私に話しかける？
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        ヒンドリアークのそばでは急な動きをするな、ケンドレン。私は君を見張っている。
+      </text>
+      <choice GotoID="Who are you?">君は誰だ？</choice>
+      <choice IfHaveBlueprint="Sonnet" GotoID="ShowSonnet">この詩はあなたのもの？</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="ShowSonnet">
+      <text>
+        私が詩人に見えるか、ケンドレン？
+      </text>
+      <choice GotoID="End">そうは見えないな。生きて飲め。</choice>
+    </node>
+
+    <node ID="Who are you?">
+      <text>
+        私はケセヒンド。ヒンドリアーク・ケー――ベイ・ラーのグランド・ドウの護衛だ。
+      </text>
+      <choice GotoID="Questions">質問してもいいか？</choice>
+      <choice GotoID="End">なるほど。生きて飲め。</choice>
+    </node>
+
+    <node ID="Questions">
+      <text>
+        いけない。
+      </text>
+      <choice GotoID="End">……そうか。</choice>
+    </node>
+  </conversation>

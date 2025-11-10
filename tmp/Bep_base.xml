@@ -1,0 +1,65 @@
+﻿<conversation ID="Bep">
+    <node ID="Start">
+      <text>
+        bep see widget? Or bep see widget.
+      </text>
+      <choice ID="BepChoice" GotoID="Bep">bep?</choice>
+      <choice ID="SvardymChoice" GotoID="Svardym">Are you svardym?</choice>
+      <choice ID="TrashChoice" GotoID="Trash">So much trash! Did a goatfolk bully crash through your workshop?</choice>
+      <choice ID="FreeholdChoice" GotoID="Freehold">Tell me about the Yd Freehold.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Bep">
+      <text>
+        bep is bep. good meet!
+      </text>
+      <choice UseID="SvardymChoice" />
+      <choice UseID="TrashChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Svardym">
+      <text>
+        bep varrrdym from the egg, once.
+      </text>
+      <choice ID="GyreChoice" GotoID="Gyre">What do you know of the Gyre?</choice>
+      <choice UseID="TrashChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Gyre">
+      <text>
+        grre? bep flame and bend brass to make ring ball grre for librrry.
+      </text>
+      <choice GotoID="Start">...</choice>
+      <choice UseID="TrashChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Trash">
+      <text>
+        tink mess. flame bits for tink and onto floor! rrcuit snap, glass smatter, core fries and lekky spill.
+      </text>
+      <choice UseID="SvardymChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        bep make all and anys. bep too lounge in green-gold cubby, smoke pillow and Krka and Tilli.
+      </text>
+      <choice UseID="TrashChoice" />
+      <choice UseID="SvardymChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+  </conversation>
+
+  
+
+  

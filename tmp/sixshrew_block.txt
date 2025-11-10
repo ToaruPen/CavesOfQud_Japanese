@@ -1,0 +1,78 @@
+﻿  <conversation ID="Sixshrew" Replace="true">
+    <node ID="Start">
+      <text>
+        ああ喜びだ、また肉袋が来た。買い物に来たと言ってくれ。
+      </text>
+      <choice ID="Greet" GotoID="Introduction">私は=name=。君は？</choice>
+      <choice ID="Rude" GotoID="Impolite">少し無礼だな。</choice>
+      <choice ID="Ask" GotoID="CrankyPlant">何か問題でも？</choice>
+      <choice GotoID="End">じゃあ行くとするよ。</choice>
+    </node>
+
+    <node ID="Introduction">
+      <text>
+        私はシックスシュルー。フィタ・コンソーシアムの商人で、おしゃべりなよそ者に時間を割く気はない。
+
+        物を売る。君は買う。それでいい。できれば今すぐ買ってくれ。そうでなければ、とっとと行きな。
+      </text>
+      <choice GotoID="Name">どうしてシックスシュルーなんて名前に？</choice>
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">じゃあ行く。生きて飲め。</choice>
+    </node>
+
+    <node ID="Name">
+      <text>
+        どうして pest と呼ばれている？
+      </text>
+      <choice GotoID="NotPest">私は違う……</choice>
+      <choice GotoID="Pest">私が害虫だから？</choice>
+    </node>
+
+    <node ID="NotPest">
+      <text>
+        今は違わない。
+
+        で、何か買うのかい、害虫？
+      </text>
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">もう十分だ。生きて飲め、失礼なやつ。</choice>
+    </node>
+
+    <node ID="Pest">
+      <text>
+        そういうことだ。
+
+        で、買うのかい、害虫？
+      </text>
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">もう十分だ。生きて飲め、失礼なやつ。</choice>
+    </node>
+
+    <node ID="Impolite">
+      <text>
+        君も少し鬱陶しいから、お互い様ってことだ。
+
+        取引して、それぞれの人生に戻らないか？
+      </text>
+      <choice UseID="Greet" />
+      <choice UseID="Rude" />
+      <choice UseID="Ask" />
+      <choice GotoID="End">最後の部分だけにする。生きて飲め、失礼なやつ。</choice>
+    </node>
+
+    <node ID="CrankyPlant">
+      <text>
+        ああ、私は大丈夫、大丈夫さ。
+
+        何十年も奉仕したのちに、この臭いムサの林に配属されるのが大好きなんだ。昼夜問わず働き続ける肉の修理工と薄っぺらで伝導率抜群の壁を挟んで一つ屋根の下、音は全部こっちへ響いてくる。
+
+        人間は何て言うんだったか？ 「夢の暮らし」とか？ そう、私はまさに夢の暮らしを送っている。
+      </text>
+      <choice UseID="Greet" />
+      <choice UseID="Rude" />
+      <choice GotoID="End">もう行くよ。生きて飲め。</choice>
+    </node>
+  </conversation>

@@ -1,0 +1,10 @@
+﻿<conversation ID="MerchantGuard">
+    <node ID="Start">
+      <text>
+        I'm watching you, traveler.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

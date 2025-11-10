@@ -1,0 +1,32 @@
+﻿<conversation ID="ChavvahFrontChime">
+		<start ID="Welcome">
+			<text>
+				{{emote|*The chiming rock burns in soft light.*}}
+			</text>
+			<choice GotoID="What">
+				<text>...what are you?</text>				
+			</choice>
+			<choice GotoID="Welcome" SetBooleanState="AttunedToChavvah,true">
+        <text>[Touch the chiming rock and attune to Chavvah.]</text>
+        <part Name="ChavvahAttune" FailTarget="AlreadyAttuned" />
+      </choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</start>
+		<node ID="What">
+			<text>
+				{{emote|*The chiming rock rings a sonorous tone.*}}
+				
+				Touch the chiming rock and seek me at the keter. Will you?</text>
+			<choice Target="Mean">What does that mean?</choice>
+		</node>
+		<node ID="Mean" Inherits="Welcome">
+			<text>
+				{{emote|*The chiming rock is silent and still.*}}
+			</text>			
+		</node>
+		<node ID="AlreadyAttuned" Inherits="Welcome">
+      <text>{{emote|*You are already attuned.*}}</text>      
+    </node>
+	</conversation>
+
+	

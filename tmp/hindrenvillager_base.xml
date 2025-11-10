@@ -1,0 +1,54 @@
+﻿<conversation ID="HindrenVillager" Inherits="IQuestKithAndKin">
+    <node ID="Start" IfHaveState="HindrenVillageDoomed">
+      <text>
+        What now? Nothing like this has ever happened before.~
+        It's difficult to return to normal life after such an upheaval.~
+        Forgive me, kendren, but the sight of you makes my hands quake.~
+        Oh? Is it really over? I'm afraid.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="HindrenVillageProspers">
+      <text>
+        How Bey Lah prospers! We should have opened the village years ago.~
+        Live and drink.~
+        Live and drink, kendren.~
+        Oh, it is you. Thank you for helping the village.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHindriarch="Esk">
+      <text>
+        I will admit, Hindriarch Esk leads well.~
+        Can we really trust such a young Hindriarch?~
+        I am both afraid and hopeful for our future. But perhaps this is what we need.~
+        Oh, it is you. Thank you for helping the village.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+
+    <node ID="Start">
+      <text>
+        Ah, l-live and drink.~
+        Live and drink...~
+        Live... live and drink, kendren.~
+        Um.~
+        Please go away.~
+        W-w-w-w-what are ... what are you...~
+        Moon and sun, kendren.~
+        Live and drink. Will you be staying long?~
+        Forgiveness begged, kendren. I have work to do.~
+        Live and drink, kendren. I am very busy.~
+        You're... kendren...~
+        Please don't hurt me.~
+        Ah... uhm. I... you, ah.~
+        {{emote|*the hindren stares at you, wide-eyed*}}
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

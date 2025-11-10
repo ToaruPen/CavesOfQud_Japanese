@@ -1,0 +1,8 @@
+﻿  <conversation ID="1-FF" Replace="true">
+    <node ID="Start">
+      <text>
+        {{emote|*オキュラスからモザイク状の光の錐が吹き出し、君を走査する。侵入者と見なされているかはわからないが、攻撃する気配はない。*}}
+      </text>
+      <choice GotoID="End">生きて……錆びないままで。</choice>
+    </node>
+  </conversation>

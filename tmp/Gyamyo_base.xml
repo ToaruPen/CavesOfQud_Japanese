@@ -1,0 +1,122 @@
+﻿<conversation ID="Gyamyo">
+
+    <node ID="Start" IfHaveState="ChoseKah">
+      <text>
+        I hope =ifplayerplural:ye are:thou art= confident in =ifplayerplural:your:thy= choice, =factionaddress:Mopango=. I am happy with it, to be sure.
+
+        Kah is free. It heals my heart to see it at rest. =ifplayerplural:Ye have:Thou hast= my thanks.
+      </text>
+      <choice GotoID="End">You're welcome, Gyamyo. Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+      <text>
+        =ifplayerplural:Did ye:Didst thou= truly free one of the children? I see =ifplayerplural:ye did:thou didst=. Congratulations.
+
+        Wouldst fain see Kah free, one day. I shall have to live a while and find a way.
+      </text>
+      <choice GotoID="End">Live and drink, Gyamyo.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        =factionaddress:Mopango|capitalize=, welcome. =ifplayerplural:Ye have:Thou hast= done well to survive so long in this peculiar place.
+      </text>
+      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">I seek a use for this repulsive device.</choice>
+      <choice ID="Who" GotoID="WhoAreYou">I am =name=. Who are you?</choice>
+      <choice ID="Why" GotoID="WhyAreYouHere">Why are you here?</choice>
+      <choice ID="Credo" GotoID="YourCredo">Have you a credo?</choice>
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="WhoAreYou">
+      <text>
+        My name is Gyamyo. I am pleased to meet =ifplayerplural:ye:thee=, =name=. =ifplayerplural:Have ye:Hast thou= spoken to the other watchers? How fare they?
+
+        Well, I hope.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="WhyAreYouHere">
+      <text>
+        I have volunteered to monitor an ancient machine-creature called Kah. Perhaps =ifplayerplural:ye have:thou hast= seen it, skipping hither and yon on strange limbs.
+
+        Often I wonder if Kah knoweth aught else but fear.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="YourCredo">
+      <text>
+        I do, and I thank =ifplayerplural:ye:thee= for asking after it.
+
+        My credo is "Reconciliation without understanding is a salt poultice."
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="Meaning">What does that mean?</choice>
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="Meaning">
+      <text>
+        Oh dear.
+
+        This is the credo by which I live my life, and =ifplayerplural:ye ask:thou asketh= "what does that mean?"
+
+        I cannot summarize such a thing for =ifplayerplural:ye:thee=. It is too great, too multifaceted.
+      </text>
+      <choice GotoID="Apologize">I apologize for my rudeness.</choice>
+      <choice GotoID="End">I am leaving.</choice>
+    </node>
+
+    <node ID="Apologize">
+      <text>
+        May the future bear out =ifplayerplural:your:thy= promises.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="Device">
+      <text>
+        =ifplayerplural:Ye have:Thou hast= an object of great interest.
+
+        An =ifplayerplural:ye would:thou wouldst= allow, I'd fain commune with it.
+      </text>
+      <choice GotoID="Commune">I wouldst.</choice>
+      <choice GotoID="Deny">I wouldstn't.</choice>
+    </node>
+
+    <node ID="Deny">
+      <text>
+        Hm. I wonder at =ifplayerplural:your:thy= decision.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="Commune">
+      <text>
+        {{emote|*Gyamyo moves little during communion, but shivers and twitches from time to time. After a minute or so, ey returns the device to you.*}}
+
+        I am shaken. No doubt my journey wast shallow compared to Lebah's dive. But now, by my troth I say: Kah hath ever been a being of motion. Swift, kinetic, and elegant. No doubt 'twould be so if freed by yon device.
+      </text>
+      <choice GotoID="End">We'll see. Live and drink.</choice>
+    </node>
+
+  </conversation>
+
+  

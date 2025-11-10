@@ -29,6 +29,9 @@ namespace QudJP.Patches
                 return;
             }
 
+            // Ensure Japanese glyphs are available even if this TMP missed OnEnable.
+            QudJP.FontManager.Instance.ApplyToText(tmp);
+
             // 文字列が空のときだけガードを適用する（通常の折返しを尊重）
             if (!string.IsNullOrEmpty(tmp.text))
             {

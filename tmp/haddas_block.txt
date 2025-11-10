@@ -1,0 +1,138 @@
+﻿  <conversation ID="Haddas" Inherits="BaseSlynthMayor" Replace="true">
+
+    <node ID="Start">
+      <text>
+        エズラの村へようこそ、苗木よ。ここに座り、太陽が影に息を吹き込むのを眺めよう。
+      </text>
+      <choice ID="TreeChoice" GotoID="Tree">あなた、木だよね。</choice>
+      <choice ID="ReliefsChoice" GotoID="Reliefs">この浮き彫りはイーター時代のものだ。ここはどういう歴史がある？</choice>
+      <choice ID="WardenChoice" GotoID="Warden">エズラの監視官は誰だ？</choice>
+      <choice ID="MerchantsChoice" GotoID="Merchants">商人の場所を教えて。</choice>
+      <choice ID="WorkChoice" GotoID="Work">仕事を探している。</choice>
+      <choice ID="EndChoice" GotoID="End">生きて飲め、高い友よ。</choice>
+    </node>
+    <node ID="SlynthRequest">
+      <text>ハッ。彼らをここに植えたいのか？ ムサと一緒に塩の空へ指を揺らせと言うのか？</text>
+      <choice Target="SlynthRequestAccept">ああ。</choice>
+    </node>
+    <node ID="SlynthRequestAccept">
+      <text>スイレンの民だと？ スリンセだと？ ハッ……ハハハ！ まさかエズラに、さらに新しい思念の芽が根付くとは思わなかったが、太陽は彼らのものでもある。空も、そこから地面まで満ちる空気も。ムサ飼いの歌を聞かせ、彼らが生き延びることを祈れ。</text>
+      <choice Target="End">感謝するよ、村長。</choice>
+    </node>
+    <node ID="SlynthRequestReject">岩だらけの土に根を張れる数は限られている、小さな歩き手よ。お前の根がここにもっと絡まれば別だがな。ハッ。</node>
+    <node ID="SlynthAbout">苗木たちのことを聞かせて。</node>
+    <node ID="SlynthArrived">
+      <text>
+        良い風がスリンセをエズラへ運んだ。
+
+        ハハハ。
+
+        私は見届けよう。これらの苗木が枯れるのか、繁るのかを。
+      </text>
+      <choice GotoID="Start">ありがとう、村長。</choice>
+    </node>
+    <node ID="SlynthSettled">
+      <text>
+        苗木の様子をもう見に来たのか？
+
+        ハッ。奴らは育ち、食べ、歌い、塩の空へ好奇心たっぷりに指を揺らしている。自分の目で見るがいい。
+      </text>
+      <choice GotoID="End">改めて感謝する、村長。</choice>
+    </node>
+    <node ID="Tree">
+      <text>
+        ハッ……
+
+        ハハハ。そうとも。私は石を割り、塩の空へ指を揺らす。今日もそうだ、昨日もそうだった。
+      </text>
+      <choice ID="HaddasOldChoice" GotoID="Old">何歳なんだ？</choice>
+      <choice ID="MayorChoice" GotoID="Mayor">どうやってこの村の長になった？</choice>
+      <choice ID="HaddasQuestionsChoice" GotoID="Start">別のことを聞かせて。</choice>
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Old">
+      <text>
+        秋をいくつ数えたかは覚えているが、腐り尽くして黒くならねば年輪も正しく数えられん。根元の刻印によれば、私の種は =sultan:4= の治世に蒔かれたらしい。
+      </text>
+      <choice ID="EaterChoice" GotoID="Eater">つまり技術的には、イーターってこと？</choice>
+      <choice UseID="MayorChoice" />
+      <choice UseID="HaddasQuestionsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Eater">
+      <text>
+        ハハハ。そうかもしれんな。
+      </text>
+      <choice UseID="MayorChoice" />
+      <choice UseID="HaddasQuestionsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Mayor">
+      <text>
+        ハッ。私は長く立っていた。塩の空へ指を揺らし、苗木が芽吹いては枯れるのを見守り、お前たちが蜜蜂のように石を真っすぐ並べ、蝋の巣のように家を作るのを見ていた。石が私の周りに集まるまで立ち続け、人々は石に従ったのだ。
+      </text>
+      <choice UseID="HaddasOldChoice" />
+      <choice UseID="HaddasQuestionsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Reliefs">
+      <text>
+        エズラは木の年齢だけじゃない。石の年齢でもある。根が塩の空へ指を揺らす夢を見る前から、ここには苗木がいた。
+
+        彼らは大地を喰らい、貨を星へ吐き出し、この地は胃袋だった。
+
+        後に、星の木が死んで彼らが遺骸を根元に埋めたとき、ここは墓所になった。
+
+        いま私たちは、老いて痛む寺から電気の乳を飲み、車輪を回し、種や穀物を挽く。今の私たちは彼らなのだ。
+      </text>
+      <choice ID="StarTreeChoice" GotoID="StarTree">星の木？</choice>
+      <choice UseID="TreeChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="StarTree">
+      <text>
+        ああ、空を裂く青き母だ。食らう者たちは彼女をギャウスと呼び、目覚める者たちはスピンドルと呼ぶ。
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Warden">
+      <text>
+        1-FF という者だ。墳墓から迷い出て、九代前の娘が漆黒の箱で再調整した。
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Merchants">
+      <text>
+        北西に漆黒の箱がある。そこに植物と娘が住み、クロムの猫が小さな太陽に喉を鳴らす。
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Work">
+      <text>
+        エズラは古く、世界に刻んだ溝の中で静かに調和している。だが悔悟者ゾーソムは苗木であり、世界が力むたびに震えている。お前がその不安を分け合ってやればいい。
+
+        墓碑のあたりで彼を探せ。
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+  </conversation>

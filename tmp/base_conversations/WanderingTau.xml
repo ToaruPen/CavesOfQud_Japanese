@@ -1,0 +1,65 @@
+<conversation ID="WanderingTau">
+    <start ID="Orphaned">
+      <text>
+        The echoes of ending reverberate from the roots I once called mine.
+
+        My liaison is severed. Why?
+      </text>
+      <choice GotoID="How">How are you feeling?</choice>
+      <choice GotoID="Suborned">Your will would have been suborned to Ptoh.</choice>
+      <choice GotoID="Free">You are free to do as you please.</choice>
+      <choice GotoID="Sorry">I am sorry.</choice>
+      <choice GotoID="Happier">You will be happier this way.</choice>
+      <choice GotoID="EndGift" IfNotHaveState="GotTauGift">Live and drink, Wandering Tau.</choice>
+			<choice GotoID="End" IfHaveState="GotTauGift">Live and drink, Wandering Tau.</choice>
+    </start>
+
+    <node ID="How" Inherits="Orphaned">
+      <text>
+        I should be wary of you, yes? You have helped me to my -else, but I find my chosen path blocked.
+      </text>
+    </node>
+
+    <node ID="Suborned" Inherits="Orphaned">
+      <text>
+        It is not Ptoh that has suborned my will in this case.
+
+        I had chosen a path.
+      </text>
+    </node>
+
+    <node ID="Free" Inherits="Orphaned">
+      <text>
+        And yet, I find my choices undermined, yes? You have my thanks for your help in -elseing, but do not convince yourself that you have 'freed' me from my own choices.
+
+        Live and drink.
+      </text>
+    </node>
+
+    <node ID="Sorry" Inherits="Orphaned">
+      <text>
+        I resent what has befallen me, but I am yet embodied. You have still helped me live.
+
+        My future is free. My future is murky, and I am freshly tender from the burn of your hand. I feel I had rather not encounter you for a time. Live and drink, =player.formalAddressTerm=.
+      </text>
+    </node>
+
+    <node ID="Happier" Inherits="Orphaned">
+      <text>
+        Will I?
+
+        Your prediction warms little against the chill wind of the Gyre. My future is free. My future is murky. I am freshly tender from the burn of your hand.
+
+        I feel I had rather not encounter you for a time. Live and drink, =player.formalAddressTerm=.
+      </text>
+    </node>
+
+		<node ID="EndGift">
+			<text>
+				Before you go, rootclimber. I've shed a piece of me in the -elseing. Take it. I have no use for it now.
+			</text>
+			<choice GotoID="End" GiveItem="TauHeadpiece" SetBooleanState="GotTauGift,true">Live and drink, Wandering Tau.</choice>
+		</node>
+  </conversation>
+
+	

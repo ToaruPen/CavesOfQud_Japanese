@@ -1,0 +1,68 @@
+﻿<conversation ID="ManyEyes">
+
+    <node ID="Start" IfHaveState="Recame">
+      <text>
+        NON MOLOCH? NON MOLOCH RETURNEN FROM BRIGHTSHEOL.
+      </text>
+      <choice ID="Moloch" GotoID="Non">Non Moloch?</choice>
+      <choice ID="Brightsheol" GotoID="Non">Yes, I've returned from Brightsheol.</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="Start">
+      <text>*READOUT*</text>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="Non">
+      <text>
+        NON MOLOCH HER AT HOM. NON MOLOCH IN MAQQOM YD.
+      </text>
+      <choice GotoID="MaqqomScramble" IfNotHaveObservation="MaqqomYd">...</choice>
+      <choice GotoID="Maqqom" IfHaveSecret="MaqqomYd">Maqqom Yd? The Place outside Itself?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="MaqqomScramble">
+      <text>*READOUT*</text>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="Maqqom">
+      <text>
+        MAQQOM YD. SOUTH-CONTRE FREEN FROM SALUM.
+      </text>
+      <choice GotoID="MaqqomTell">Many Eyes, can you tell me of Maqqom Yd?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="MaqqomTell">
+      <text>
+        SOUTH-CONTRE FREEN FROM SALUM. BY TRETE WITH SAAD CALLEN MOLOCH, AND MONEIEN BI ALDERSESSE.
+
+        BY TRETE GALGALLIM BILDEN PIPE TO DRINKEN THANE SLIPSTREAM, AND FORGE TO BURNEN STEL-CRISTAL, AND CASKE TO HOLDEN GLOUINGE O FISH.
+      </text>
+      <choice GotoID="Mean">And what of the Freehold? What do you do now?</choice>
+      <choice GotoID="NonMoloch">Who is Non Moloch, from before?</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="Mean">
+      <text>
+        BY TRETE GALGALLIM SERVEN, BUT NON NOU.
+      </text>
+      <choice GotoID="MaqqomTell">I want to ask something else.</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+
+    <node ID="NonMoloch">
+      <text>
+        YOU. YOU REGNEN NON HER. NON MOLOCH IN MAQQOM YD.
+      </text>
+      <choice GotoID="End">...</choice>
+    </node>
+
+  </conversation>
+
+
+  

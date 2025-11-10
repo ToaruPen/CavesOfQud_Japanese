@@ -1,0 +1,31 @@
+<conversation ID="SlynthSettler">
+    <node ID="Start" IfNotHaveState="LandingPadsSlynthSettled">
+      <text>
+        Is okay?~
+        Ahh... nervous ... excited.~
+        Happy do not fight here.~
+        Ah ha ha... nervous!~
+        Stay here?~
+        =player.FormalAddressTerm= stay also?~
+        Strange new.~
+        Live and drink.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="Start" IfHaveState="LandingPadsSlynthSettled">
+      <text>
+        This is home.~
+        Welcome here.~
+        Good meeting.~
+        Ah... good.~
+        We chose our new home well.~
+        Happy here.~
+        Ha ha ha! Joyful!~
+        Ah =player.formalAddressTerm= visit, good.~
+        Live and drink.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

@@ -1,0 +1,50 @@
+﻿<conversation ID="Tillifergaewicz">
+
+    <node ID="Start">
+      <text>
+        {{emote|*aloud, in a high-pitched buzzing voice*}}
+
+        A customer? A customer! Enter, =player.formalAddressTerm=, browse, buy. The Consortium's finest, stocked and sold by Tillifergaewicz! Tilli will do, but what will Tilli do... for you?
+      </text>
+      <choice ID="TilliTalks" GotoID="Talking">You speak aloud. You're not telepathic?</choice>
+      <choice ID="TilliGreets" GotoID="Greeting">Greetings, Tilli. I am =name=.</choice>
+      <choice ID="TilliFreehold" GotoID="Freehold">What can you tell me about the Freehold?</choice>
+      <choice ID="TilliBye" GotoID="End">I'm fine, thank you. Live and drink.</choice>
+    </node>
+
+    <node ID="Talking">
+      <text>
+        Ugh, ever telepathy. No requirement exists that Consortium merchants be mind-speakers, as swollen with their numbers as we are. I cannot blame you for your surprise, mind, I am simply frustrated.
+
+        Over years, I shaped something akin to a voice-box, which you hear now. I "made do", as Rokhas might say. Now what may I "make do" for you?
+      </text>
+      <choice UseID="TilliGreets" />
+      <choice UseID="TilliFreehold" />
+      <choice UseID="TilliBye" />
+    </node>
+
+    <node ID="Greeting">
+      <text>
+        Greetings, =name=, and welcome! In what wares may I interest you this day?
+      </text>
+      <choice UseID="TilliTalks" />
+      <choice UseID="TilliFreehold" />
+      <choice UseID="TilliBye" />
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        Oh, I am joyous to reside here.
+
+        Yd could do, mind, with some measure of hierarchy, and more infrastructure, to attract wayfarers less adventuresome than yourself. Also, Mak absolutely must cease advising that anyone enter the clam; it is not funny and someone could die.
+
+        But... the structure of friendships here is true, and sturdy! Kindly keep this exchange between us. I was mostly kidding. Somewhat kidding.
+      </text>
+      <choice UseID="TilliGreets" />
+      <choice UseID="TilliTalks" />
+      <choice UseID="TilliBye" />
+    </node>
+
+  </conversation>
+
+  

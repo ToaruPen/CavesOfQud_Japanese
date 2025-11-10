@@ -1,0 +1,125 @@
+﻿<conversation ID="Krka">
+    <node ID="Start">
+      <text>
+        Live and =player.formalAddressTerm=!
+
+        {{emote|*self-conscious rkkk*}}
+
+        Dr... drink and =player.formalAddressTerm=!
+
+        Krka, me. Krka.
+      </text>
+      <choice ID="KrkaChoice" GotoID="Krka">Krka?</choice>
+      <choice ID="SvardymChoice" GotoID="Svardym">Are you svardym?</choice>
+      <choice ID="ApothecaryChoice" GotoID="Apothecary">Why are you dressed like an apothecary?</choice>
+      <choice ID="FreeholdChoice" GotoID="Freehold">What do you think of the Freehold?</choice>
+      <choice ID="KrkaEndChoice" GotoID="End">Live and drink, Krka.</choice>
+    </node>
+
+    <node ID="Krka">
+      <text>
+        {{emote|*gweep!*}}
+
+        Krka, me!
+      </text>
+      <choice UseID="SvardymChoice" />
+      <choice UseID="ApothecaryChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Svardym">
+      <text>
+        Vardy! Yes.
+
+        But. Gemtle? No kill.
+      </text>
+      <choice GotoID="Svardym2">Why aren't you aggressive too?</choice>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="ApothecaryChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Svardym2">
+      <text>
+        Hatchling hungry. Angry. Angry-hungry.
+
+        Kill, eat, don't eaten. Calm down evengefully.
+      </text>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="ApothecaryChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Apothecary">
+      <text>
+        {{emote|*chirp!*}}
+
+        Poth carry!
+      </text>
+      <choice GotoID="Apothecary2">Yes, apothecary. Do you know what those are?</choice>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="SvardymChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Apothecary2">
+      <text>
+        Krka poth!
+
+        {{emote|*affirmative rrk!*}}
+
+        Eel woon a-banjage. Wikky wood, orsh room, jector! All sale, wants?
+      </text>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="SvardymChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        {{emote|*several moments of softly creaking thought*}}
+
+        G-good!
+      </text>
+      <choice GotoID="Freehold2">Just... good?</choice>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="SvardymChoice" />
+      <choice UseID="ApothecaryChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Freehold2">
+      <text>
+        V-very good?
+
+        {{emote|*deflates with a long reeeeeep.*}}
+
+        Krka not very. Words.
+      </text>
+      <choice GotoID="Freehold3">It's all right. You seem to like it here.</choice>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="SvardymChoice" />
+      <choice UseID="ApothecaryChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+
+    <node ID="Freehold3">
+      <text>
+        {{emote|*krka!*}}
+
+        Yes! To like! But... never home else. So {{emote|*reep?*}}.
+      </text>
+      <choice UseID="KrkaChoice" />
+      <choice UseID="SvardymChoice" />
+      <choice UseID="ApothecaryChoice" />
+      <choice UseID="KrkaEndChoice" />
+    </node>
+  </conversation>
+
+
+  

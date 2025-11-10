@@ -1,0 +1,8 @@
+﻿  <conversation ID="HindrenAfflicted" Replace="true">
+    <node ID="Start">
+      <text>
+        はぁぁぁぁぁ……。
+      </text>
+      <choice GotoID="End">ご愁傷さま。生きて飲め。</choice>
+    </node>
+  </conversation>

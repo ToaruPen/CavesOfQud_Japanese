@@ -1,0 +1,52 @@
+﻿  <conversation ID="HindrenVillager" Inherits="IQuestKithAndKin" Replace="true">
+    <node ID="Start" IfHaveState="HindrenVillageDoomed">
+      <text>
+        今度は何だ？ こんなことは今まで一度もなかった。~
+        あれだけ荒れれば、元の暮らしに戻るのは難しい。~
+        すまない、ケンドレン。君の姿を見ると手が震える。~
+        え？ これで終わりなの？ 怖いよ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="HindrenVillageProspers">
+      <text>
+        なんて栄え方だ！ もっと昔に村を開いておけばよかった。~
+        生きて飲め。~
+        生きて飲め、ケンドレン。~
+        ああ、君か。村を助けてくれてありがとう。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfHindriarch="Esk">
+      <text>
+        認めざるを得ないね。ヒンドリアーク・エスクはうまく導いている。~
+        こんなに若いヒンドリアークを本当に信じていいのかな？~
+        未来が怖くもあり、希望もある。たぶん今こそ変化が必要なんだ。~
+        ああ、君か。村を助けてくれてありがとう。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+
+    <node ID="Start">
+      <text>
+        あ、い、生きて飲め。~
+        生きて、飲め……。~
+        い、生きて……生きて飲め、ケンドレン。~
+        えっと。~
+        どうか行ってくれ。~
+        う、う、う、う、何を……何を……~
+        月と太陽を、ケンドレン。~
+        生きて飲め。長居するのかい？~
+        ごめん、ケンドレン。やらなきゃいけない仕事がある。~
+        生きて飲め、ケンドレン。本当に忙しいんだ。~
+        君は……ケンドレン……~
+        お願い、傷つけないで。~
+        あ……その。ぼ、僕、き、君が、その……~
+        {{emote|*ヒンドレンは目を見開いて君を見つめている。*}}
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

@@ -25,6 +25,10 @@ namespace QudJP.Localization
             ["Spray fire: This item can be fired while adjacent to multiple enemies without risk of the shot going wild."] =
                 "乱射: 複数の敵に隣接していても暴発せずに射撃できる。",
             ["-25 move speed"] = "-25 移動速度",
+            ["Cudgel (dazes on critical hit)"] = "棍棒（クリティカル時に朦朧付与）",
+            ["Short Blades (causes bleeding on critical hit)"] = "短剣（クリティカル時に出血）",
+            ["Axe (cleaves armor on critical hit)"] = "斧（クリティカル時に装甲切断）",
+            ["Long Blades (can dismember)"] = "長剣（切断可能）",
         };
 
         private static readonly Dictionary<string, string> StatLineMap = new(StringComparer.Ordinal)
@@ -89,6 +93,29 @@ namespace QudJP.Localization
 
         internal static string? ApplyWoundLevel(string? token) => TranslateExactToken(token, WoundMap);
 
+        internal static string ApplySubHeader(string? text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                return text ?? string.Empty;
+            }
+
+            var parts = text.Split(',');
+            var output = new List<string>(parts.Length);
+            foreach (var raw in parts)
+            {
+                var p = raw.Trim();
+                var localized = ApplyFeeling(p) ?? ApplyDifficulty(p);
+                if (string.IsNullOrEmpty(localized))
+                {
+                    localized = Translator.Instance.Apply(p, "Look.SubHeader");
+                }
+                output.Add(localized ?? p);
+            }
+
+            return string.Join("、 ", output);
+        }
+
         private static string? TranslateExactToken(string? value, IReadOnlyDictionary<string, string> map)
         {
             if (string.IsNullOrEmpty(value))
@@ -120,18 +147,48 @@ namespace QudJP.Localization
                 tail = after;
             }
 
+            // Token-level quick replacements that appear embedded (e.g., in display names)
+            if (payload.IndexOf("(unburnt)", StringComparison.Ordinal) >= 0)
+            {
+                var replacedToken = payload.Replace("(unburnt)", "（未点火）");
+                if (!string.Equals(replacedToken, payload, StringComparison.Ordinal))
+                {
+                    var wrappedToken = prefix + replacedToken + suffix + tail;
+                    return ReplaceTrimmed(line, trimmed, wrappedToken);
+                }
+            }
+
+            // Pattern: "+1 to hit" -> "+1 命中"
+            var mToHit = Regex.Match(payload, @"^[+\-]?\s*(?<n>\d+)\s+to\s+hit\s*$", RegexOptions.IgnoreCase);
+            if (mToHit.Success)
+            {
+                var n = mToHit.Groups["n"].Value;
+                var wrapped = prefix + $"+{n} 命中" + suffix + tail;
+                return ReplaceTrimmed(line, trimmed, wrapped);
+            }
+
+            // Pattern: "On penetration, this weapon causes bleeding: X damage per round; save difficulty N."
+            var mBleed = Regex.Match(payload, @"^On\s+penetration,\s*this\s+weapon\s+causes\s+bleeding:\s*(?<d>[^;]+)\s*damage\s+per\s+round;\s*save\s+difficulty\s*(?<sd>\d+)\.?$", RegexOptions.IgnoreCase);
+            if (mBleed.Success)
+            {
+                var d = mBleed.Groups["d"].Value.Trim();
+                var sd = mBleed.Groups["sd"].Value.Trim();
+                var wrapped = prefix + $"貫通時、この武器は出血を与える：{d} ダメージ/ラウンド；セーブ難易度 {sd}" + suffix + tail;
+                return ReplaceTrimmed(line, trimmed, wrapped);
+            }
+
             var dictionaryLine = Translator.Instance.Apply(payload, "Look.TooltipLine");
             if (!string.Equals(dictionaryLine, payload, StringComparison.Ordinal))
             {
                 // If the tail is a colon + value, honor Japanese colon and localize units where applicable.
-                if (!string.IsNullOrEmpty(tail) && tail.StartsWith(":", StringComparison.Ordinal))
+                if (!string.IsNullOrEmpty(tail) && TryExtractColonTail(tail, out var leadWS2, out var valueAfterColon2))
                 {
-                    var value = tail.Substring(1).TrimStart();
+                    var value = valueAfterColon2;
                     if (string.Equals(payload, "Weight", StringComparison.Ordinal))
                     {
                         value = LocalizeValue("Weight", value);
                     }
-                    var wrappedColon = prefix + dictionaryLine + suffix + "：" + value;
+                    var wrappedColon = prefix + dictionaryLine + suffix + leadWS2 + "：" + value;
                     return ReplaceTrimmed(line, trimmed, wrappedColon);
                 }
 
@@ -166,16 +223,35 @@ namespace QudJP.Localization
                     var wrapped = prefix + $"{localizedLabel}：{value}" + suffix + tail;
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
+
+                // Already-localized label (e.g., "重量: 10 lbs.")
+                if (string.Equals(label, "重量", StringComparison.Ordinal))
+                {
+                    var wrapped = prefix + $"重量：{LocalizeValue(label, value)}" + suffix + tail;
+                    return ReplaceTrimmed(line, trimmed, wrapped);
+                }
+            }
+
+            // Orphan value tail (no label): fix colon and localize units, e.g., ": 1 lbs." -> "：1 ポンド"
+            if (payload.Length > 0 && payload[0] == ':')
+            {
+                var value = payload.Substring(1).TrimStart();
+                if (value.IndexOf("lbs.", StringComparison.Ordinal) >= 0)
+                {
+                    value = value.Replace("lbs.", "ポンド");
+                }
+                var wrapped = prefix + "：" + value + suffix + tail;
+                return ReplaceTrimmed(line, trimmed, wrapped);
             }
 
             // Case where label is inside color tag and colon/value are in the tail (e.g., "{{K|Weight}}: 1 lbs.")
-            if (!string.IsNullOrEmpty(tail) && tail.StartsWith(":", StringComparison.Ordinal))
+            if (!string.IsNullOrEmpty(tail) && TryExtractColonTail(tail, out var leadWS, out var valueAfterColon))
             {
                 var label = payload;
-                var value = tail.Substring(1).TrimStart();
+                var value = valueAfterColon;
                 if (ColonLabelMap.TryGetValue(label, out var translatedLabel2))
                 {
-                    var wrapped = prefix + translatedLabel2 + suffix + "：" + LocalizeValue(label, value);
+                    var wrapped = prefix + translatedLabel2 + suffix + leadWS + "：" + LocalizeValue(label, value);
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
 
@@ -183,7 +259,7 @@ namespace QudJP.Localization
                 {
                     var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
                     var localizedLabel = $"{Translator.Instance.Apply(stat, "Stat.Name")} ボーナス上限";
-                    var wrapped = prefix + localizedLabel + suffix + "：" + value;
+                    var wrapped = prefix + localizedLabel + suffix + leadWS + "：" + value;
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
             }
@@ -245,6 +321,16 @@ namespace QudJP.Localization
                 return ReplaceTrimmed(line, trimmed, wrapped);
             }
 
+            const string FreezingPrefix = "Freezing: When powered, this weapon deals an additional ";
+            const string FreezingSuffix = " cold damage on hit.";
+            if (payload.StartsWith(FreezingPrefix, StringComparison.Ordinal) && payload.EndsWith(FreezingSuffix, StringComparison.Ordinal))
+            {
+                var middle = payload.Substring(FreezingPrefix.Length, payload.Length - FreezingPrefix.Length - FreezingSuffix.Length).Trim();
+                var localized = $"凍結: 通電時、命中時に追加で {middle} 冷気ダメージを与える。";
+                var wrapped = prefix + localized + suffix + tail;
+                return ReplaceTrimmed(line, trimmed, wrapped);
+            }
+
             if (TryLocalizeStatLine(payload, out var statLine))
             {
                 var wrapped = prefix + statLine + suffix + tail;
@@ -280,10 +366,13 @@ namespace QudJP.Localization
 
         private static string LocalizeValue(string label, string value)
         {
-            if (string.Equals(label, "Weight", StringComparison.Ordinal) &&
-                value.EndsWith("lbs.", StringComparison.Ordinal))
+            // Dictionary substitutions for common value payloads
+            value = Translator.Instance.Apply(value, "Look.TooltipValue");
+
+            // Unit normalization (be tolerant about the label and punctuation)
+            if (value.IndexOf("lbs", StringComparison.OrdinalIgnoreCase) >= 0)
             {
-                return value.Replace("lbs.", "ポンド");
+                value = value.Replace("lbs.", "ポンド").Replace("lbs", "ポンド");
             }
 
             return value;
@@ -325,6 +414,35 @@ namespace QudJP.Localization
             prefix = value.Substring(0, pipe + 1);
             inner = value.Substring(pipe + 1, close - (pipe + 1));
             after = value.Substring(close + 2);
+            return true;
+        }
+
+        private static bool TryExtractColonTail(string tail, out string leadingWhitespace, out string value)
+        {
+            leadingWhitespace = string.Empty;
+            value = string.Empty;
+            if (string.IsNullOrEmpty(tail))
+            {
+                return false;
+            }
+
+            var colonIndex = tail.IndexOf(':');
+            if (colonIndex < 0)
+            {
+                return false;
+            }
+
+            // Only allow whitespace before ':' so we don't mis-handle other content.
+            for (int i = 0; i < colonIndex; i++)
+            {
+                if (!char.IsWhiteSpace(tail[i]))
+                {
+                    return false;
+                }
+            }
+
+            leadingWhitespace = colonIndex > 0 ? tail.Substring(0, colonIndex) : string.Empty;
+            value = colonIndex + 1 < tail.Length ? tail.Substring(colonIndex + 1).TrimStart() : string.Empty;
             return true;
         }
 

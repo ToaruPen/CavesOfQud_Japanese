@@ -1,0 +1,102 @@
+<conversation ID="Dreamer">
+
+    <start ID="KilledTau" IfTestState="TauElse contains KilledByPlayer">
+      <text>
+        {{emote|*A long chime rings. The bed of a shallow creek teems with brief life.*}}      </text>
+      <choice GotoID="Killed2">Tau has met her fate.</choice>
+    </start>
+
+    <node ID="Killed2">
+      <text>
+        {{emote|*You tumble from the jar, your sinewy body twisting against the electric emptiness in your belly, the weight of eggs. You discover a morsel and consume it soft and delicious. You will spawn here. You will eat the morsels. Your babies will eat all of the morsels.}}
+      </text>
+      <choice GotoID="Welcome">I... have more to ask you.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="LostInSoft" IfHaveState="TauLostInSoft">
+      <text>{{emote|*A long chime rings. The bed of a shallow creek teems with life and death, nature's self-consuming ouroboros.*}}</text>
+      <choice GotoID="Lost2">Tau is gone.</choice>
+    </start>
+
+    <node ID="Lost2">
+      <text>
+        {{emote|*Wielding an oversized jar in little hands, a child tips it into the running current of a softly burbling creek. Tiny creatures that had been living in the jar spill into the creek, protected from the killing current by a clump of slimy biofilm. The child peers at a little fry swimming in the jar.}}
+      </text>
+      <choice GotoID="Welcome">I... have more to ask you.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="KilledCompanion" IfTestState="TauCompanion contains KilledByPlayer">
+      <text>
+        {{emote|*A long chime rings. The bed of a shallow creek teems with life and death, nature's self-consuming ouroboros.}}
+      </text>
+      <choice GotoID="Companion2">Tau has completed the -elseing ritual.</choice>
+    </start>
+
+    <node ID="Companion2">
+      <text>
+        {{emote|*From the banks of a shallow creek, you watch a toad floating on the water, belly up. It flails, helpless against even the gentle current of the water in which you placed it seconds ago. You watch it float away, toward the rushing currents ahead.
+
+        Helpless to myriad unknowable fates, the toad disappears from view into the rapids, sent there by your hand.*}}
+      </text>
+      <choice GotoID="Welcome">I... have more to ask you.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="ElseWelcome" IfHaveState="ElseingComplete">
+      <text>{{emote|*A long chime rings. The bed of a shallow creek teems with life and death, nature's self-consuming ouroboros.*}}</text>
+      <choice GotoID="Else2">Tau has completed the -elseing ritual.</choice>
+    </start>
+
+    <node ID="Else2">
+      <text>
+        {{emote|*From the mouth of the jar in your little hands, you watch a frog leap into the water of a softly burbling creek. The gentle current sweeps the frog's little body away to an unknown fate as curious crayfish peek out from their hiding places. The jar in your hands is empty.*}}
+      </text>
+      <choice GotoID="Welcome">I... have more to ask you.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+		<start ID="Welcome">
+			<text>
+				{{emote|*the chime rings*}}
+
+				{{emote|*In your mind's eye, you see yourself touching a mirror. You tap the glass and it ripples like the surface of a placid lake.*}}
+
+			</text>
+			<choice GotoID="Silent">...</choice>
+			<choice GotoID="Name">Your name is pronounced as the pause between two words, friend. How do I know this?</choice>
+			<choice IfTestState="GyredreamKnown" GotoID="Gyredream">Tell me of gyredream.</choice>
+			<choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">I am to carry Tau's chime to Taproot, so she can leave Chavvah.</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</start>
+
+		<node ID="Silent" Inherits="Welcome">
+			<text>{{emote|*The moment stretches on into a steep asymptote, the peaks and valleys of possible outcomes speeding by in an imaginary blur. You imagine the sound of a tiny metal thread brushing across the bottom of a dusty valley, amplified a thousand times.*}}</text>
+		</node>
+
+		<node ID="Name" Inherits="Welcome">
+			<text>
+				{{emote|*the entity chimes, and you witness water lapping at the long edge of a pebble beach. Slowly, the tide brushes clean the surface of each rock, etching time's passage onto millions of tiny canvases. Somewhere, something dies.*}}
+			</text>			
+		</node>
+
+		<node ID="Gyredream">
+			<text>{{emote|*Your entire self buzzes at the sound of _'s chime, a shock from the center and radiating outward. Sensation bubbles up to the surface, a tightening of the self. It is as if cresting a great hill atop a cathedra or an oncoming witchwood overdose; the void yawns under you. Something terrible is born.*}}</text>
+      <choice GotoID="Meaning">I don't understand. What could it mean?</choice>
+      <choice GotoID="Welcome">Let... let us speak of other things.</choice>
+      <choice GotoID="End">Excuse... excuse me.</choice>
+		</node>
+
+    <node ID="Meaning">
+      <text>{{emote|*You are a little sapfly resting in the crook of a swarmshade tree. The boughs stretch in great barkish deserts before exploding into a tangle of branches. Your brethren buzz in an agitated cloud, feeling fear or excitement or hunger. Something buzzes beyond the leafy reaches of your sight, all-consuming but unclear.*}}</text>
+      <choice GotoID="Welcome">I... wish to speak of other things.</choice>
+      <choice GotoID="End">I will think on this... live and drink.</choice>
+    </node>
+
+		<node ID="TauChime" Inherits="Welcome">
+			<text>{{emote|*Just as you activate an artifact listening device that ceased to exist centuries ago, you hear the end of an emotional song. The space between relief and sorrow throbs with uncomfortable tension. You ache with it.*}}</text>
+		</node>
+	</conversation>
+
+	

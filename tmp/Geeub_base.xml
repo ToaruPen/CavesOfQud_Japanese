@@ -1,0 +1,138 @@
+﻿<conversation ID="Geeub">
+
+    <node ID="Start">
+      <text>
+        {{emote|*long, smoky croak*}}
+
+        Ah, =player.formalAddressTerm=, here at last. Sit. Smoke. Rest.
+      </text>
+      <choice ID="GeeubFamiliarChoice" GotoID="Familiar">Sorry, have we already spoken?</choice>      
+			<choice ID="FounderChoice" GotoID="Founder" IfHaveSecret="YdFreeholdSecret1">You're one of the founders of this freehold, aren't you?</choice>
+      <choice ID="GeeubWhoChoice" GotoID="Whomst" SetBooleanState="TalkedToGeeub,true">Who are you?</choice>
+      <choice ID="GeeubToweringChoice" GotoID="Towering" SetBooleanState="TalkedToGeeub,true">I can't help but notice your impressive stature, even in repose.</choice>
+      <choice ID="GeeubFreeholdChoice" GotoID="Freehold" SetBooleanState="TalkedToGeeub,true">What can you tell me about Yd?</choice>
+      <choice ID="GeeubEndChoice" GotoID="End" SetBooleanState="TalkedToGeeub,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Familiar">
+      <text>
+        Ayup. But seconds ago. As only yesterday, no? Hoh hoh hoh.
+
+        {{emote|*continued croaking laughter*}}
+      </text>
+      <choice ID="GeeubLaugh" GotoID="Laughing">*laugh*</choice>
+      <choice UseID="FounderChoice" />
+      <choice ID="GeeubQuery" GotoID="Query" SetBooleanState="TalkedToGeeub,true">Ah. Well. Let's talk about something else, then.</choice>
+      <choice GotoID="End" SetBooleanState="TalkedToGeeub,true">Oh, very funny. Live and drink.</choice>
+    </node>
+
+    <node ID="Query">
+      <text>
+        {{emote|*grrrk*}}
+        We ask, we answer.
+
+        We call, we respond.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="GeeubFamiliarChoice" />
+      <choice UseID="GeeubWhoChoice" />
+      <choice UseID="GeeubToweringChoice" />
+      <choice UseID="GeeubFreeholdChoice" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+
+    <node ID="Whomst">
+      <text>
+        Over time, Geeub. Good as any.
+
+        {{emote|*roooak*}}
+
+        Names, ehh.
+      </text>
+      <choice GotoID="Introduce">Greetings, Geeub. I am =name=.</choice>
+      <choice UseID="FounderChoice" />
+      <choice UseID="GeeubToweringChoice" />
+      <choice UseID="GeeubFreeholdChoice" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+    <node ID="Introduce">
+      <text>
+        {{emote|*croaking sigh*}}
+
+        Congratulation, condolence, which ever. Mind and name slip by another.
+      </text>
+      <choice UseID="GeeubQuery" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+    <node ID="Towering">
+      <text>
+        So large? Hoh hoh. Well. Hatchlings, so rage-dense. Size diffuses, no?
+
+        However. Mak diverges, hoh hoh. Egg-rage simmers on a greater pot. Our voice eld-feeble, close your ears to it. Hoh hoh hoh.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="GeeubWhoChoice" />
+      <choice UseID="GeeubFreeholdChoice" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        Sun we once blotted out nestles our horizon. We tend thought-seeds with algae, wrap in crysteel, bathe in arc-light. Build, live, fight.
+
+        Here as elsewhere, grow is struggle. Fun to watch, no? Hoh. Hoh.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="GeeubWhoChoice" />
+      <choice UseID="GeeubToweringChoice" />
+      <choice UseID="GeeubFreeholdChoice" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+    <node ID="Laughing">
+      <text>
+        Hoh hoh hoh hoh.
+
+        {{emote|*grrrrrk*}}
+
+        We have fun.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="GeeubWhoChoice" />
+      <choice UseID="GeeubToweringChoice" />
+      <choice UseID="GeeubFreeholdChoice" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+    <node ID="Founder">
+      <text>
+        'Founder' the query. 'Founder' is water-taking, no? To be breached and sink. How cruel the judgment.
+
+        {{emote|*rrrrroak*}}
+
+        Hoh hoh. This voice japes -- we, witness to the birth of Yd. The query, no?
+      </text>
+      <choice GotoID="Founder2">...</choice>
+    </node>
+    <node ID="Founder2" SetBooleanState="UrsineApprenticeMentioned,true">
+      <text>
+        Yes, we were present, if less active than other-bodies. But we saw, and rattle with memory-artifacts as a Consortium lockbox rattles with jewels; shards of an eon-old data disk, bits of stories and places. Kin-fleeing, louse-meals, ghastly boredom. But Fate's caprice brought us through history's footsteps. There was a machine-speaker, and her ursine apprentice with his little plant, and the Sower with a tetrad of chubby whelps, and then, at last, Many-Eyes. Our dear galgal. So many.
+      </text>
+      <choice GotoID="Founder3">...</choice>
+    </node>
+    <node ID="Founder3">
+      <text>
+        But alas. Like our sea-grape friend's lockbox, these memories are not mine to retrieve at will. They come and go, and may be warped by eld.
+      </text>
+      <choice UseID="GeeubWhoChoice" />
+      <choice UseID="GeeubToweringChoice" />
+      <choice UseID="GeeubFreeholdChoice" />
+      <choice UseID="GeeubEndChoice" />
+    </node>
+
+  </conversation>
+
+  

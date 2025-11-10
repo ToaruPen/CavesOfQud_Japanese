@@ -1,0 +1,140 @@
+﻿<conversation ID="Haddas" Inherits="BaseSlynthMayor">
+
+    <node ID="Start">
+      <text>
+        You are welcome in the village of Ezra, seedling. Sit with me and watch the sun breathe shadows over the day.
+      </text>
+      <choice ID="TreeChoice" GotoID="Tree">You're a tree.</choice>
+      <choice ID="ReliefsChoice" GotoID="Reliefs">The carved reliefs here are Eater-ancient. What is the history of this place?</choice>
+      <choice ID="WardenChoice" GotoID="Warden">Who is Ezra's warden?</choice>
+      <choice ID="MerchantsChoice" GotoID="Merchants">Point me toward your merchants.</choice>
+      <choice ID="WorkChoice" GotoID="Work">I'm looking for work.</choice>
+      <choice ID="EndChoice" GotoID="End">Live and drink, tall friend.</choice>
+    </node>
+    <node ID="SlynthRequest">
+      <text>HA. You would fain plant them here, to joggle their fingers at the salt sky alongside the musa?</text>
+      <choice Target="SlynthRequestAccept">I would.</choice>
+    </node>
+    <node ID="SlynthRequestAccept">
+      <text>Lilypad-folk, you say. The slynth, you say. HA..... HA HA HA! Yes! I never thought to see yet fresher thought-sprouts take seed here in Ezra, but our sun is theirs, and the sky below it, and the thickening air down to the ground. Bring them to hear the songs of our musa-herders, and hope that they survive.</text>
+      <choice Target="End">You have my thanks, mayor.</choice>
+    </node>
+    <node ID="SlynthRequestReject">Rocky soil fits only so many roots, little walker. Perhaps if yours were more anchored here. HA.</node>
+    <node ID="SlynthAbout">Tell me of your seedlings.</node>
+    <node ID="SlynthArrived">
+      <text>
+        It is the good wind that brought the slynth to Ezra.
+
+        HA HA HA.
+
+        I will watch as these seedlings wilt or thrive.
+      </text>
+      <choice GotoID="Start">My thanks, Mayor.</choice>
+    </node>
+    <node ID="SlynthSettled">
+      <text>
+        Returning so soon to check on our seedlings?
+
+        HA. They grow, eat, sing, and joggle their curious little fingers at the salt sky. See for yourself.
+      </text>
+      <choice GotoID="End">My thanks again, Mayor.</choice>
+    </node>
+    <node ID="Tree">
+      <text>
+        HA.......
+
+        HA HA HA. So I am. I split stone and joggle my fingers at the salt sky. So I do today, so I did yesterday.
+      </text>
+      <choice ID="HaddasOldChoice" GotoID="Old">How old are you?</choice>
+      <choice ID="MayorChoice" GotoID="Mayor">How did you become mayor of this village?</choice>
+      <choice ID="HaddasQuestionsChoice" GotoID="Start">I'd like to ask you something else.</choice>
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Old">
+      <text>
+        I tally so many autumns, but until I am black with rot, I cannot be ring-right. The etching on my undertrunk places my seed-date to the reign of =sultan:4=, so I am told.
+      </text>
+      <choice ID="EaterChoice" GotoID="Eater">Technically, that makes you an Eater, doesn't it?</choice>
+      <choice UseID="MayorChoice" />
+      <choice UseID="HaddasQuestionsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Eater">
+      <text>
+        HA HA HA. I suppose so.
+      </text>
+      <choice UseID="MayorChoice" />
+      <choice UseID="HaddasQuestionsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Mayor">
+      <text>
+        HA. I stood long enough. I joggled my fingers at the salt sky, and I watched thy seedlings sprout and wither, and I watched thou place stones in straight lines like the bees and their nests of wax. I stood until the stones were nigh by me. The people followed the stones.
+      </text>
+      <choice UseID="HaddasOldChoice" />
+      <choice UseID="HaddasQuestionsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Reliefs">
+      <text>
+        Ezra is more than tree-old. It's stone-old. Seedlings have lived here since our roots dreamed of joggling their fingers at the salt sky.
+
+        They ate earth and belched freight at the stars, and this place was their stomach.
+
+        Later, as the Star-Tree died and they buried their dead under its roots, this was their funerary place.
+
+        Now, we nurse electric milk from the old and aching temple to turn our wheels and grind our seeds and grains. Now we are they.
+      </text>
+      <choice ID="StarTreeChoice" GotoID="StarTree">Star-Tree?</choice>
+      <choice UseID="TreeChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="StarTree">
+      <text>
+        Aye, the Blue Mother who breaks the sky. Those who Eat called her Gjaus, and those who Wake call her Spindle.
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Warden">
+      <text>
+        One called 1-FF, who wandered in errancy out from the Tomb and was reprogrammed by the Daughter who lived and died in the rot-black box, nine Daughters ago.
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Merchants">
+      <text>
+        To the northwest seek the rot-black box. There a plant and Daughter live. There cats of chrome purr at tiny suns.
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="WorkChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+    <node ID="Work">
+      <text>
+        Ezra is old and has long since cut a groove into the world and resides there in stillness and harmony. But Zothom the Penitent One is a seedling, new to the world, and he quakes at all the tensing the world does. Perhaps you can share in his angst.
+
+        Go find him by the headstones for the dead.
+      </text>
+      <choice UseID="TreeChoice" />
+      <choice UseID="ReliefsChoice" />
+      <choice UseID="WardenChoice" />
+      <choice UseID="MerchantsChoice" />
+      <choice UseID="EndChoice" />
+    </node>
+  </conversation>
+
+  

@@ -1,0 +1,155 @@
+﻿  <conversation ID="Lebah" Replace="true">
+    <node ID="Start">
+      <text>
+        {{emote|*小さな見張りがこちらを見つめている。*}}
+      </text>
+      <choice GotoID="LebahHides" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">見てくれ、レバ。反発装置を回収した。</choice>
+      <choice GotoID="HelloLebah">やあ？</choice>
+      <choice GotoID="End">生きて飲め、静かな者よ。</choice>
+    </node>
+
+    <node ID="HelloLebah">
+      <text>
+        ……ああ。
+      </text>
+      <choice GotoID="LebahQuest" IfHaveQuest="Fraying Favorites" IfNotFinishedQuestStep="Fraying Favorites~Talk to Lebah">アギラから、反発装置を見つけたと聞いた。</choice>
+      <choice GotoID="LebahReminder" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfNotFinishedQuestStep="Fraying Favorites~Recover the Repulsive Device">あの反発装置はどこにあったんだっけ？</choice>
+      <choice GotoID="Freed" IfFinishedQuest="Fraying Favorites">子どものひとりを解放した。</choice>
+      <choice GotoID="LebahGreet">私は=name=。そっちは？</choice>
+      <choice GotoID="LebahCredo">信条は何だ？</choice>
+      <choice GotoID="End">生きて飲め、静かな者よ。</choice>
+    </node>
+
+    <node ID="Freed">
+      <text>
+        ああ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+      <choice GotoID="Indignant">それだけか？</choice>
+    </node>
+
+    <node ID="Indignant">
+      <text>
+        そうだが？
+      </text>
+      <choice GotoID="CheckinOut">死にかけたのに「ふうん」と「そうだ」だけか？</choice>
+      <choice GotoID="End">まあいい。生きて飲め。</choice>
+    </node>
+
+    <node ID="CheckinOut">
+      <text>
+        {{emote|*レバは装甲殻に丸まり、質問には何も答えなくなった。*}}
+      </text>
+      <choice GotoID="LebahPoke">レバ、無視するな。</choice>
+      <choice GotoID="End">わかったよ。生きて飲め。</choice>
+    </node>
+
+    <node ID="LebahGreet">
+      <text>
+        レバ。
+      </text>
+      <choice GotoID="LebahCredo">信条は何だ？</choice>
+      <choice GotoID="End">生きて飲め、レバ。</choice>
+    </node>
+
+    <node ID="LebahCredo">
+      <text>
+        「もし渦に呑まれたなら、最後まで歌え」。
+      </text>
+      <choice GotoID="LebahMeaning">どういう意味だ？</choice>
+      <choice GotoID="LebahGreet">名前を教えてくれ。</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="LebahMeaning">
+      <text>
+        意味はそのまま。=ifplayerplural:君たちが:君が=渦に呑まれたなら、=ifplayerplural:君たちは:君は=最後まで歌うべきだ。
+      </text>
+      <choice GotoID="LebahStare">よくわからない。</choice>
+      <choice GotoID="LebahStare">もっと説明してくれ。</choice>
+      <choice GotoID="LebahStare">それじゃ言い換えただけだ。</choice>
+      <choice GotoID="End">……そうか。生きて飲め。</choice>
+    </node>
+
+    <node ID="LebahStare">
+      <text>
+        {{emote|*レバは無言のまま見つめている。*}}
+      </text>
+      <choice GotoID="End">もう行く。</choice>
+    </node>
+
+    <node ID="LebahQuest">
+      <text>
+        ああ、
+
+        ああ。
+
+        とても忌まわしい装置だ。その交感の残響が今も頭にまとわりついている。
+      </text>
+      <choice GotoID="Repulsive">そんなに酷い装置だったのか？</choice>
+      <choice GotoID="End">ならこれ以上は邪魔しない。</choice>
+    </node>
+
+    <node ID="Repulsive">
+      <text>
+        装置そのものではない。鍵が牢獄を遠ざけるように忌まわしいんだ。鍵の存在は牢獄の存在でもある。
+
+        我らが見守る子どもたちは囚われており、鍵は錠とともに飲み込まれている。=ifplayerplural:君たちが:君が=ひとりを解放しても、三人は永遠に残される。
+
+        いまはk・ゴニノンが持っている。=ifplayerplural:君たちが:君が=望むなら、だ。
+      </text>
+      <choice GotoID="LebahHides" IfNotFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device" CompleteQuestStep="Fraying Favorites~Talk to Lebah">つまり、これのことか？</choice>
+      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">わかった。探し出そう。</choice>
+      <choice GotoID="OozeThat">k・ゴニノンとは誰だ？</choice>
+    </node>
+
+    <node ID="OozeThat">
+      <text>
+        老いたスライムだ。あの交感があまりに強烈で、近寄りすぎてしまった。
+
+        k・ゴニノンが装置を飲み込んだが、私は逃げ延びた。
+      </text>
+      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">わかった。取り戻してみよう。</choice>
+      <choice GotoID="WhatsGoninon">k・ゴニノンについてもっと教えてくれ。</choice>
+    </node>
+
+    <node ID="WhatsGoninon">
+      <text>
+        私はスライムには近寄らないようにしている。それだけだ。
+
+        もうやめよう。疲れた。アギラに聞いてくれ。
+      </text>
+      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">わかった。ありがとう。</choice>
+    </node>
+
+    <node ID="LebahReminder">
+      <text>
+        k・ゴニノンが持っている。
+
+        アギラに聞け。
+      </text>
+      <choice GotoID="Curl">そうだ、k・ゴニノンだったな。</choice>
+    </node>
+
+    <node ID="Curl">
+      <text>
+        {{emote|*レバはうなずき、ゆっくりと装甲球に丸まって、それ以上は何も言わない。*}}
+      </text>
+      <choice GotoID="End">生きて飲め、小さな先読み。</choice>
+    </node>
+
+    <node ID="LebahHides">
+      <text>
+        {{emote|*レバは装置を見るなり悲鳴を上げ、装甲球に丸まった。*}}
+      </text>
+      <choice GotoID="LebahPoke">レバ？</choice>
+      <choice GotoID="End">よし、これは別の場所へ持っていこう。</choice>
+    </node>
+
+    <node ID="LebahPoke">
+      <text>
+        {{emote|*応えはない。*}}
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

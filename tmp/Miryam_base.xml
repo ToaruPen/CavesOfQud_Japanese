@@ -1,0 +1,145 @@
+﻿<conversation ID="Miryam">
+    
+    <start ID="KilledTau" IfTestState="TauElse contains KilledByPlayer">
+      <text>Strange creatures can be so cruel and arbitrary, I say in greeting.</text>
+      <choice GotoID="Killed2">Tau has departed.</choice>
+    </start>
+
+    <node ID="Killed2">
+      <text>
+        {{emote|*Miryam chimes low.*}}
+
+        I cannot properly remember her with you here.
+
+        Leave, I beg you.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+		</node>
+
+		<start ID="LostInSoft" IfHaveState="TauLostInSoft">
+      <text>I see you.</text>
+      <choice GotoID="Lost2">Tau has departed.</choice>
+    </start>
+
+    <node ID="Lost2">
+      <text>
+        I do not know how to remember beloved Tau, struggling like a minnow in Soft. In a place between death and living.
+
+        Leave me, please.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+    <start ID="KilledCompanion" IfTestState="TauCompanion contains KilledByPlayer">
+      <text>
+        No parting is simple. I see you, -elser.</text>
+      <choice GotoID="Companion2">Tau has completed the -elseing ritual.</choice>
+    </start>
+
+    <node ID="Companion2">
+      <text>
+        And the sole tether she reached for severed. I mourn for the future she built for herself, now, and worry for Tau herself.
+
+        Thank you, all the same, for taking part in this. May you find your comfort.</text>
+      <choice GotoID="PostQuestions">You are welcome. I yet have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="ElseWelcome" IfHaveState="ElseingComplete">
+      <text>No parting is simple. I see you, fair -elser.</text>
+      <choice GotoID="Else2">Tau has completed the -elseing ritual.</choice>
+    </start>
+
+    <node ID="Else2">
+      <text>
+        {{emote|*Miryam tolls.*}}
+
+        And the gyre tide carries her a darkling way, perhaps never for us to see again. I will carry with me memory of her -then.
+
+        Thank you for taking part in this. May you find your comfort.
+      </text>
+      <choice GotoID="PostQuestions">You are welcome. I yet have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+    
+		<start ID="Welcome">
+			<text>
+				Oh? A traveler? I see you, then. Live... and drink.
+			</text>
+			<choice GotoID="Name">I am =name=. Who are you?</choice>
+			<choice GotoID="Black">Your chime is cracked and ribboned on inside with starless clouds. Why?</choice>
+			<choice IfTestState="GyredreamKnown" GotoID="Gyredream">Were you affected by gyredream?</choice>
+			<choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">I am to carry Tau's chime to Taproot, so she can leave Chavvah.</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</start>
+
+    <node ID="PostQuestions" Inherits="Welcome">
+      <text>Oh? Please, then, friend, ask.</text>
+    </node>
+    
+		<node ID="Name" Inherits="Welcome">
+			<text>
+				{{emote|*Miryam chimes in deep tones.*}}
+				
+				I am Miryam, friend.
+			</text>			
+		</node>
+		<node ID="Black" Inherits="Welcome">
+			<text>
+				{{emote|*Miryam chimes in long tones.*}}
+
+				It's the kriah, traveler. I am in mourning, and I chime in low tones.
+			</text>
+			<choice GotoID="Loss" Priority="1">I am sorry, Miryam. Did you lose someone close to you?</choice>
+		</node>
+		<node ID="Loss">
+			<text>
+				{{emote|*Miryam chimes in deep tones.*}}
+
+				I swim in cool and dark waters, traveler. For me, it is Shiva, the lament of seven thousand years.
+
+				I mourn the passing of all life, and all the necessity of death life must bring. For you, traveler, to come here, how many had to die? I mourn them.
+
+				Or are you the rarest one, who walks below the bright arches and claims no such cost? Even then, what losses did {{M|you}} suffer to come, traveler? What selves of yours had you to shed? Those are -else to us, and I mourn them as well.
+			</text>
+			<choice GotoID="Loss2">*continue listening*</choice>
+		</node>
+		<node ID="Loss2">
+			<text>
+				{{emote|*Miryam chimes in aching tones.*}}
+
+				...but, too, someone close. Tau. Bright tau. She is gone.				
+			</text>
+			<choice GotoID="End">...</choice>
+		</node>
+		<node ID="Gyredream">
+			<text>
+				{{emote|*Miryam chimes in woeful tones.*}}
+
+				Oh? You know of our pain. Our felt dream?
+
+				The aching, traveler. =name=, I feel the slump of a Great Dying, the spinning out of all life on Earth, and I, drowning in grief. Or... do I? Is it but a new spring flowering, the slump having landed us in a meadow, and they, the gods, who are dead?	
+		 </text>
+			<choice GotoID="Aching">*continue listening*</choice>
+		</node>
+		<node ID="Aching">
+			<text>
+				{{emote|*Miryam chimes in aching tones.*}}				
+			</text>
+			<choice GotoID="End">...</choice>
+		</node>
+		<node ID="TauChime" Inherits="Welcome">
+			<text>
+				{{emote|*Miryam chimes in melodic tones.*}}
+
+				Oh? You would finish the -elseing act?
+				
+				I am your debtor, =name=. The ritual is how we organize the anguished practice of being. Now my grieving can begin.
+				
+				Bright Tau shines always, here or there.
+			</text>
+		</node>
+	</conversation>
+
+	

@@ -1,0 +1,114 @@
+﻿<conversation ID="Dadogom">
+
+    <node ID="Start" IfHaveState="ChoseVaam">
+      <text>
+        Va'am is released. =ifplayerplural:Ye have:Thou hast= done something great, for good or ill.
+
+        I thank =ifplayerplural:ye:thee= for this new future.
+      </text>
+      <choice GotoID="End">You're welcome. Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+      <text>
+        =factionaddress:Mopango|capitalize=. =ifplayerplural:Ye did:Thou didst= rouse a child. Well done.
+      </text>
+      <choice GotoID="End">Thank you. Live and drink, Dadogom.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        Live and drink.
+      </text>
+      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">I seek a use for this repulsive device.</choice>
+      <choice ID="Who" GotoID="WhoAreYou">I am =name=. Who are you?</choice>
+      <choice ID="Why" GotoID="WhyAreYouHere">Why are you here?</choice>
+      <choice ID="Credo" GotoID="YourCredo">Have you a credo?</choice>
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="WhoAreYou">
+      <text>
+        I am Dadogom.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="WhyAreYouHere">
+      <text>
+        I watch over Va'am. It watcheth over me. Together, we watch.
+
+        =ifplayerplural:Ye should:Thou shouldst= as well, =factionaddress:Mopango=. Sit. Watch. Consider how =ifplayerplural:ye would:thou wouldst= fare under a dome of adamant carapace.
+
+        Safe, undying, alone.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="YourCredo">
+      <text>
+        "Be still and know."
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="Meaning">What does that mean?</choice>
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="Meaning">
+      <text>
+        I cannot think on =ifplayerplural:your:thy= behalf.
+      </text>
+      <choice GotoID="Apologize">I apologize for my rudeness.</choice>
+      <choice GotoID="End">Very well.</choice>
+    </node>
+
+    <node ID="Apologize">
+      <text>
+        Consider =ifplayerplural:your:thy= words ere =ifplayerplural:ye say:thou sayest= them, and =ifplayerplural:ye will:thou wilt= issue fewer apologies.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="Device">
+      <text>
+        Ah. May I?
+      </text>
+      <choice GotoID="Commune">You may.</choice>
+      <choice GotoID="Deny">You may not.</choice>
+    </node>
+
+    <node ID="Deny">
+      <text>
+        Ah, pity.
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">Live and drink, watcher.</choice>
+    </node>
+
+    <node ID="Commune">
+      <text>
+        {{emote|*Dadogom is still for a while, and you can see no expression on eir face. At last, ey returns the device.*}}
+
+        Unique. Puzzling, but clear. Painfully illuminating.
+
+        Grant this to Va'am and it shall become as 'twere once: still stalwart, but confined to a crawl no longer. At least, so I believe. Communion and certainty share no blood.
+      </text>
+      <choice GotoID="End">Perhaps we will find out. Live and drink.</choice>
+    </node>
+
+  </conversation>
+
+  

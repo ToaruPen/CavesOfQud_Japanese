@@ -210,6 +210,12 @@ namespace QudJP.Localization
 
                 _snapshot = new TranslationSnapshot(global, contextual);
                 Debug.Log($"[QudJP] Translator loaded {_snapshot.EntryCount} entries from {loaded} dictionaries (lang='{_language}').");
+                try
+                {
+                    var sample = Apply("Continue", "QudMenuItem");
+                    Debug.Log($"[QudJP][Diag] Sample translation: Continue -> '{sample}'");
+                }
+                catch { }
             }
             catch (Exception ex)
             {
@@ -219,30 +225,40 @@ namespace QudJP.Localization
 
         private TranslationFile? Deserialize(string path)
         {
+            // Robust UTF-8 parse path first (avoids any intermediate codepage surprises),
+            // then fall back to raw BOM-handling stream if needed.
             try
             {
-                using var file = File.OpenRead(path);
-                // DataContractJsonSerializer can choke on a UTF-8 BOM (EF BB BF) in some Unity runtimes.
-                // Strip it proactively if present.
-                using var ms = new MemoryStream();
-                int b1 = file.ReadByte();
-                int b2 = file.ReadByte();
-                int b3 = file.ReadByte();
-                bool hasUtf8Bom = b1 == 0xEF && b2 == 0xBB && b3 == 0xBF;
-                if (!hasUtf8Bom)
-                {
-                    if (b1 != -1) ms.WriteByte((byte)b1);
-                    if (b2 != -1) ms.WriteByte((byte)b2);
-                    if (b3 != -1) ms.WriteByte((byte)b3);
-                }
-                file.CopyTo(ms);
-                ms.Position = 0;
+                var json = File.ReadAllText(path, new System.Text.UTF8Encoding(encoderShouldEmitUTF8Identifier: false, throwOnInvalidBytes: true));
+                using var ms = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(json));
                 return _serializer.ReadObject(ms) as TranslationFile;
             }
             catch (Exception ex)
             {
-                Debug.LogWarning($"[QudJP] Failed to parse dictionary '{path}': {ex.Message}");
-                return null;
+                // Last resort - original DataContract path reading raw bytes (with BOM handling)
+                try
+                {
+                    using var file = File.OpenRead(path);
+                    using var ms = new MemoryStream();
+                    int b1 = file.ReadByte();
+                    int b2 = file.ReadByte();
+                    int b3 = file.ReadByte();
+                    bool hasUtf8Bom = b1 == 0xEF && b2 == 0xBB && b3 == 0xBF;
+                    if (!hasUtf8Bom)
+                    {
+                        if (b1 != -1) ms.WriteByte((byte)b1);
+                        if (b2 != -1) ms.WriteByte((byte)b2);
+                        if (b3 != -1) ms.WriteByte((byte)b3);
+                    }
+                    file.CopyTo(ms);
+                    ms.Position = 0;
+                    return _serializer.ReadObject(ms) as TranslationFile;
+                }
+                catch (Exception ex2)
+                {
+                    Debug.LogWarning($"[QudJP] Failed to parse dictionary '{path}': {ex.Message}; fallback: {ex2.Message}");
+                    return null;
+                }
             }
         }
 

@@ -1,0 +1,267 @@
+﻿<conversation ID="ImperialBiographer">
+    <node ID="Start" IfHaveState="PlayerEngravingsDone_ReshephDisguise">
+      <text>
+        The engraving is done, Moloch! I do hope it's to your liking. Your deeds are incised here for all time.
+
+        You may now enter the sarcophagus, Moloch. Be at peace.
+      </text>
+      <choice GotoID="End">Farewell.</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="PlayerEngravingsDone">
+      <text>
+        Now, uh... hop... hop into the sarcophagus.
+
+        Safe travels.
+      </text>
+      <choice GotoID="End">Farewell.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        .....oh... oh? Peace to all who canter in the House of the Coiled Lamb.
+      </text>
+      <choice ID="BiographerWho" GotoID="Who">Who are you?</choice>
+      <choice ID="BiographerMark" GotoID="Mark" IfHaveQuest="Tomb of the Eaters">Do you know the Mark of Death?</choice>
+      <choice ID="BiographerBrightsheol" GotoID="Brightsheol" IfHaveQuest="Tomb of the Eaters">How do I get to Brightsheol?</choice>
+      <choice ID="BiographerUnfinished" GotoID="Unfinished">Why is this tomb unfinished?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="Who">
+      <text>
+        ...oh..... I am Herododicus, lapidary, lithographer, sculptor, calciminer, and biographer to the Coiled Lamb. I will tarry here until the Godhead passes on, and then I will canonize his deeds in high relief.
+
+        I've tarried for quite some time, now.... What a prodigious reign! Bless that Coiled Lamb!
+      </text>
+      <choice ID="BiographerSultanGone" GotoID="SultanGone">The sultanate is dissolved. Resheph rules no longer.</choice>
+      <choice UseID="BiographerBrightsheol" />
+      <choice UseID="BiographerUnfinished" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="SultanGone">
+      <text>
+        .....oh.... oh.... Poor friend. The ironshank must be upsetting your digestion. The darkness must be blooming in your brain, making you slow and doltish.
+
+        The sultanate dissolved? Tidings would have reached me.... someone would have said so....
+
+        Oh... poor, doltish friend. You cantered too long outside the House of the Coiled Lamb, and now you are a dolt.
+      </text>
+      <choice UseID="BiographerWho" />
+      <choice UseID="BiographerMark" />
+      <choice UseID="BiographerBrightsheol" />
+      <choice UseID="BiographerUnfinished" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="Mark">
+      <text>
+        {{emote|Herododicus pauses.}}
+
+        I do. It's... it's... I am required to know the Mark of Death. Otherwise, I wouldn't know when the Coiled Lamb was dea... is no long... when... if he bore the Mark.
+
+        .....oh... Is this... is this a test? Do *you* know the Mark?
+      </text>
+      <choice GotoID="Mark2">It is a test. Tell me the answer now.</choice>
+      <choice GotoID="Start">I want to ask you something else.</choice>
+    </node>
+    <node ID="Mark2">
+      <text>
+        {{emote|Herododicus whirrs fearfully.}}
+
+        The Mark is =MarkOfDeath=.
+      </text>
+      <choice UseID="BiographerWho" CallScript="XRL.World.Parts.PlayerMuralController.RevealMarkOfDeath" />
+      <choice UseID="BiographerBrightsheol" CallScript="XRL.World.Parts.PlayerMuralController.RevealMarkOfDeath" />
+      <choice UseID="BiographerUnfinished" CallScript="XRL.World.Parts.PlayerMuralController.RevealMarkOfDeath" />
+      <choice GotoID="End" CallScript="XRL.World.Parts.PlayerMuralController.RevealMarkOfDeath">Live and drink.</choice>
+    </node>
+    <node ID="Brightsheol">
+      <text>
+        Oh! Brightsheol? The forever braid of life? The Garden Behind the High Gate? Why, you must rank among the crown echelon of machine and folk, and you must... well, you must...
+
+        Start to decompose. You must... You must be dead. Dead and entombed. The body remains, but the mind wanders...
+      </text>
+      <choice GotoID="OnlyWay">You must be dead? Is that truly the only way?</choice>
+      <choice GotoID="BearTheMark" IfHaveActiveQuest="Tomb of the Eaters" IfHaveState="MarkOfDeath">I bear the Mark. Entomb me.</choice>
+      <choice UseID="BiographerWho" />
+      <choice UseID="BiographerMark" />
+      <choice UseID="BiographerUnfinished" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="OnlyWay">
+      <text>
+        {{emote|Herododicus pauses.}}
+
+        Ye... yes? Is this a test? I suppose you... could we... could we have been in Brightsheol all along? Is that the answer?
+      </text>
+      <choice UseID="BiographerWho" />
+      <choice UseID="BiographerMark" />
+      <choice UseID="BiographerBrightsheol" />
+      <choice UseID="BiographerUnfinished" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    <node ID="BearTheMark">
+      <text>
+        {{emote|Herododicus worriedly looks you over.}}
+
+        Should you be.... now I... I don't rank myself among the doyen on the matter of organic life... but my understanding is that the dead do not speak.
+
+        Besides, you... aren't the Coiled Lamb... are you?
+      </text>
+      <choice GotoID="EntombMeReshephDisguise">Wrong on both counts. Resheph stands before you. Entomb me.</choice>
+      <choice GotoID="EntombMe">Resheph is gone, biographer. I am here, and I have need to travel to Brightsheol. Entomb me.</choice>
+      <choice GotoID="Start">Of course not. Let's back up.</choice>
+    </node>
+    <node ID="EntombMe">
+      <text>
+        That's not even how it works!
+
+        First, I image your head, read your self's narrative from the folds of your brain, cross-check it against the Thin World's ambient log of your life's deeds...
+
+        Then I... stylize... the story, and I engrave it on the walls. Once I'm done... then you can entomb =player.reflexive=.
+      </text>
+      <choice GotoID="DoThat">Do that then.</choice>
+      <choice GotoID="Start">Hold on. I have more to ask.</choice>
+    </node>
+    <node ID="EntombMeReshephDisguise">
+      <text>
+        {{emote|Herododicus looks you over.}}
+
+        Coi... Coiled Lamb? Is it truly you? Are you dea.... are you dead?
+
+        {{emote|Herododicus drops to their knees.}}
+
+        Oh, forgive me my insolence, Moloch!
+      </text>
+      <choice GotoID="EntombMeResheph" CallScript="XRL.World.Parts.PlayerMuralController.SetStateReshephDisguise">You are forgiven. Now entomb me.</choice>
+      <choice GotoID="Start">I've misled you, biographer. I have another question.</choice>
+    </node>
+    <node ID="EntombMeResheph">
+      <text>
+        Moloch! Allow me to explain the deification procedure, as it is clearly beneath your station to know!
+
+        First, I must image the great Moloch's head, read your self's narrative from the folds of =ifplayerplural:your:thy= Holiest Brain, cross-check it against the Thin World's ambient log of His Eminence's life's deeds...
+
+        {{emote|*Herododicus whispers*}} I'm sure your version is the better one, Moloch...
+      </text>
+      <choice GotoID="EntombMeResheph2">...</choice>
+    </node>
+    <node ID="EntombMeResheph2">
+      <text>
+        Then I... stylize... the story, and I engrave it on the walls. Once I'm finished, the sarcophagus will open, and you can lay =player.reflexive= to rest!
+      </text>
+      <choice GotoID="DoThatResheph">Do it then.</choice>
+    </node>
+    <node ID="DoThat">
+      <text>
+        Fine!
+
+        {{emote|Herododicus shines a cone of blue light at you.}}
+
+        Starting ptychoscan............
+      </text>
+      <choice GotoID="DoThat2">...</choice>
+    </node>
+    <node ID="DoThat2">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThat3">...</choice>
+    </node>
+    <node ID="DoThat3">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThat4">...</choice>
+    </node>
+    <node ID="DoThat4">
+      <text>
+        Commencing cross-check with the Thin World annals............
+      </text>
+      <choice GotoID="DoThat5">...</choice>
+    </node>
+    <node ID="DoThat5">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThat6">...</choice>
+    </node>
+    <node ID="DoThat6">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThat7">...</choice>
+    </node>
+    <node ID="DoThat7">
+      <text>
+        Cross-check complete. Your narrative is compiled. Now to engrave it.
+
+        Peace.... peace to all who canter in the House of the Coiled Lamb.
+      </text>
+      <choice GotoID="End" CallScript="XRL.World.Parts.PlayerMuralController.BeginPlayerMuralSequence">Peace, biographer.</choice>
+    </node>
+    <node ID="DoThatResheph">
+      <text>
+        As you wish, Moloch!
+
+        {{emote|Herododicus shines a cone of blue light at you.}}
+
+        Starting ptychoscan............
+      </text>
+      <choice GotoID="DoThatResheph2">...</choice>
+    </node>
+    <node ID="DoThatResheph2">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThatResheph3">...</choice>
+    </node>
+    <node ID="DoThatResheph3">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThatResheph4">...</choice>
+    </node>
+    <node ID="DoThatResheph4">
+      <text>
+        Commencing cross-check with the Thin World annals............
+      </text>
+      <choice GotoID="DoThatResheph5">...</choice>
+    </node>
+    <node ID="DoThatResheph5">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThat6Resheph">...</choice>
+    </node>
+    <node ID="DoThat6Resheph">
+      <text>
+        ...................................
+      </text>
+      <choice GotoID="DoThat7Resheph">...</choice>
+    </node>
+    <node ID="DoThat7Resheph">
+      <text>
+        Cross-check complete. Your narrative is compiled, Moloch. Now to go engrave it.
+
+        Peace.... peace to all who canter in the House of the Coiled... in Your House, Moloch.
+      </text>
+      <choice GotoID="End" CallScript="XRL.World.Parts.PlayerMuralController.BeginPlayerMuralSequence">Peace, biographer.</choice>
+    </node>
+    <node ID="Unfinished">
+      <text>
+        'Tis a saying among the stonemasons, "Never finish a job too early." By the decretum of Sagittar, old as it is, they have until the Coiled Lamb is... is decom-.. passed... decompassed.... dead, deadlike... to complete their work on the Tomb.
+
+        Bless the Coiled Lamb, peace to those who canter in his house, and let us pray the day never comes!
+      </text>
+      <choice UseID="BiographerWho" />
+      <choice UseID="BiographerMark" />
+      <choice GotoID="SultanGone">But Resheph is dead. The sultanate is dissolved.</choice>
+      <choice UseID="BiographerBrightsheol" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  
+
+  
+  

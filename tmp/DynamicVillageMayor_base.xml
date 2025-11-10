@@ -1,0 +1,30 @@
+﻿<conversation ID="DynamicVillageMayor" Inherits="BaseSlynthMayor">
+    <part Name="VillageContext" Register="All" />
+    <start ID="Welcome">
+      <text>Welcome to the village of *villageName*, =spice.commonPhrases.adventurer.!random=</text>
+    </start>
+    <node ID="SlynthRequest">Is that so? I imagine you are wondering whether =village.name= will host these slynth, to partake in =village.activity= alongside us.</node>
+    <node ID="SlynthRequestAccept">
+      <text>You have done much for =village.name=, =name=, and your request befits your stature. If these slynth will join us in =village.activity= and if they can come to cherish =village.sacred= as we do, then they are welcome here.</text>
+      <choice Target="End">You have my thanks, friend.</choice>
+    </node>
+    <node ID="SlynthRequestReject">We have not come so far from the founding of =village.name= to allow these strangers in. What if they worship =village.profane=? No, we simply cannot do such a great favor for you.</node>
+    <node ID="SlynthAbout">Do you have news of the slynth?</node>
+    <node ID="SlynthArrived">
+      <text>
+        Ah, =name=, the slynth are here, and it is a slow process for these plant-folk and the people of =village.name= to grow accustomed to one another. By the goodness of =village.sacred= may the slynth find their place here soon.
+      </text>
+      <choice GotoID="Start">My thanks, =subject.t=.</choice>
+    </node>
+    <node ID="SlynthSettled">
+      <text>
+        Praise =village.sacred=, the slynth learn our ways and we theirs. Some do not wholly accept the depravity of =village.profane=, but their ways are born of kindness, and so =village.name= will be kind in kind.
+      </text>
+      <choice GotoID="Start">My thanks again, =subject.t=.</choice>
+    </node>
+    
+    
+    
+  </conversation>
+
+	

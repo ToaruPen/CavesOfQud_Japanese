@@ -14,8 +14,12 @@ Conversations.jp.xml（NPC 会話）と関連トリガー（ログ参照、Argyv
 2025-11-11（Bravo）: Yurl（Welcome／Story／Consortium／Fungi／Asphodel／Lease）を追加・翻訳し、コンソーシアム書記の営業トークと伯爵情報を `Replace="true"` で同期。
 2025-11-11（Bravo）: Nuntu（Welcome／Village／Kyakukya／Slynth 系）を追加・翻訳し、キャクキャ村長の紹介とスリンセ受け入れ分岐を `Replace="true"` で同期。
 2025-11-11（Bravo）: Pax Klanq（TextPax／Welcome～Quest6）を追加・翻訳し、Spread Pax クエスト導線とパフ交渉の会話を `Replace="true"` で同期。
+2025-11-11（Bravo）: Pax Klanq（BuildGolem／GolemComponentQuestions／GolemOtherQuestions／Barathrum(s)Study）を追加し、ゴーレム素材案内を `Replace="true"` で同期。Warden Indrix／Wild Water Merchant／SusaAlchemist／Asphodel（Arrived／Chaos／Done／Waiting）／PhinaeHoshaiah を `Replace="true"` で翻訳し、Woodsprog～Crystals までの種族・動物テンプレも一括で差し替え、`py -3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/conversations.json` を再実行。
+2025-11-11（Bravo）: Hindriarch Keh（Start／Yes. Go on.／Accept／KindrishReturnBefore～After／Kehstions／MocksFate ほか）を `Replace="true"` で追加し、Kith and Kin クエスト入口／Love and Fear 解決後の会話を日本語化。Slynth 受け入れノードも含めて出入り条件を再現し、diff を更新した結果、残タスクは Neelahind／Eskhind／Clue_* 連鎖に集約。
 
 ## 未訳 / 対応中
+- [ ] Neelahind／Eskhind／Kith and Kin 調査ノードを `Replace="true"` で翻訳し、Distant／Direct／Ruminating／Investigation／Clue_*／KithAndKinFinale などの導線とクエスト分岐（Fate／Doomed／BetterLate 系）を一括同期する。
+- [x] Keh（Kith and Kin / Love and Fear 導線）を `Replace="true"` で翻訳し、Yes. Go on. ～ MocksFate と KindrishReturn 分岐・質問セットを再同期。
 - [x] WardenEsthers（スティルト守護者）を翻訳し、Welcome / Praise / Huh / Folks / True / Bazaar ノードを日本語化。
 - [x] MechanimistPilgrim（巡礼者汎用挨拶）を翻訳し、開始ノードを差し替え。
 - [x] MechanimistLibrarian（大聖堂司書）を翻訳し、寄贈受付とスリンセ受け入れノードを日本語化。（2025-11-10 / Bravo）
@@ -136,3 +140,10 @@ Conversations.jp.xml（NPC 会話）と関連トリガー（ログ参照、Argyv
 - MechanimistLibrarian と Tszappur を `Replace="true"` で追加し、Slynth 受け入れ分岐・図書館案内・Resheph 祠の説明や寄進応答を翻訳、`GiveReshephSecret` などの choice ID／`LibrarianGiveBook` パートを維持。
 - Stilt 商人テンプレ（bookbinder～jeweler）と gutsmonger True Kin 分岐を一括で `Replace="true"` 追加し、`=player.*=` プレースホルダ・`IfTrueKin` 条件を保持したまま売り文句と注意書きを日本語化。
 - `py -3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/conversations.json` を再実行し、対象ノードが Missing 一覧から外れたことを確認。
+- 2025-11-11: Mopango 監視者（Nacham / Dagasha / Vaam / Kah）と Rainwater Shomer（Brightsheol ゲート）を Replace=\"true\" で Mods/QudJP/Localization/Conversations.jp.xml に追加。特殊置換（=ifplayerplural:…=, =player.formalAddressTerm=, {{emote|…}} 等）を保持。py -3 scripts/diff_localization.py --missing-only --json-path Docs/backlog/conversations.json で差分確認済み。
+- 2025-11-11 PM2: Mopango 見張り（Dadogom / Gyamyo / Yona）を Replace=\"true\" で Mods/QudJP/Localization/Conversations.jp.xml に追加。Repulsive Device 交信ノード（Device / Commune / Deny）・信条・自己紹介分岐を含め、特殊置換（=ifplayerplural:…=, =name=, =factionaddress:Mopango|capitalize=, {{emote|…}}）を保持。
+- 2025-11-11 PM3: Imperial Biographer（Herododicus）一連を Replace=\"true\" で追加（Start/Who/SultanGone/Mark/Mark2/Brightsheol/OnlyWay/BearTheMark/EntombMe*/DoThat* 系含む）。語彙を既存訳に合わせて『巻かれた仔羊』『薄界』『ブライトシェオル』『レシェフ』『モロク』等を採用。
+- 2025-11-11 PM3.5: Mopango 創建者（Goek / Mak / Geeub）一連を Replace=\"true\" で追加。Slynth 受け入れ分岐、体躯・パイプ・Freehold の話題、笑い・問答のノード、創建回想（Founder1～3）を反映。diff_localization 再実行で founders 系は解消、次は Krka / Bep / Une など周辺住民とサブ話題（Freehold2 / OtherPlagues / Pipes 派生 等）を予定。
+- 2025-11-11 PM4: Yd 周辺の住人を追加: Bep / Krka / Une / Rokhas / ManyEyes / Thah（Replace=\"true\"）。Goek に OtherPlagues / Freehold2 ノードを追加して founders 残項目を解消。diff_localization 上の未訳は Tilli 系や Thah のクエスト進行ノード（Landing Pads の動的ノード群）などに集約。
+- 2025-11-11 PM4.5: 追加入力 — Krka（Apothecary2 / Freehold2 / Freehold3）、Tilli（Tillifergaewicz）、Thah の Landing Pads 動的ノード（LandingPadsCommentary / CandidatesReady / GiveStar / SlynthDecision / SlynthResolution / SlynthLeave）。diff_localization 上からこれらは解消。未訳は Chavvah 系ダイナミックと議論ツリー（DynamicVillageMayor など）に集約。
+- 2025-11-11 PM5: Chavvah/Tzedech/Tikva/Miryam/DynamicVillageMayor を追加（Replace="true"）。ChavvahPrime はクエスト導線（Chime/Work/Work2/Active/Done）に加え Gyredream/Ascent/Barathrum*・Physiology ノード、Slynth 受け入れ系を訳出。Eyn Roj 前の鳴石（ChavvahFrontChime）/ TauChime も訳。diff_localization 未訳は汎用ダイナミック一式（AskForWork 等）と Chavvah 派生の残り分岐に集約。

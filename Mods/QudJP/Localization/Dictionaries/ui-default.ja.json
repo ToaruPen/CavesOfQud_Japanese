@@ -55,6 +55,13 @@
     { "key": "Creates:", "text": "作成物：" },
     { "key": "Requires:", "text": "要件：" },
     { "key": "Strength", "text": "筋力" },
-    { "key": "Weight:", "text": "重量：" }
+    { "key": "Weight:", "text": "重量：" },
+    { "key": "unburnt", "text": "未点火" },
+    { "key": "Adds", "text": "追加" },
+    { "key": "effects to cooked meals.", "text": "の効果を料理に付与。" },
+    { "key": "Cudgel (dazes on critical hit)", "text": "棍棒（クリティカル時に朦朧付与）" },
+    { "key": "Short Blades (causes bleeding on critical hit)", "text": "短剣（クリティカル時に出血）" },
+    { "key": "Axe (cleaves armor on critical hit)", "text": "斧（クリティカル時に装甲切断）" },
+    { "key": "Long Blades (can dismember)", "text": "長剣（切断可能）" }
   ]
 }

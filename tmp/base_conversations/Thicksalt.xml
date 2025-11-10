@@ -1,0 +1,140 @@
+<conversation ID="Thicksalt">
+
+    <start ID="KilledTau" IfTestState="TauElse contains KilledByPlayer">
+      <text>
+        Shivering stillness, coldbark pricking with each thump.
+
+        It comes.
+      </text>
+      <choice GotoID="Killed2">Tau has departed.</choice>
+    </start>
+
+    <node ID="Killed2">
+      <text>
+        Can you feel the stillness? The drycrackle of space between as you thump my crystal arms.
+
+        Life flees you. Motion flees you.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+		</node>
+
+    <start ID="LostInSoft" IfHaveState="TauLostInSoft">
+      <text>
+        {{emote|*the chime rings a long and pensive tone.*}}
+
+        How something stirs, deep in Soft.
+      </text>
+      <choice GotoID="Lost2">Tau has departed.</choice>
+    </start>
+
+    <node ID="Lost2">
+      <text>
+        Soft churns Tau in beingstuff. She will -then, but perhaps not Taulike.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+    <start ID="KilledCompanion" IfTestState="TauCompanion contains KilledByPlayer">
+      <text>
+        {{emote|*through the chime you hear an echoing cacophony, muted by distance and matter.*}}
+
+        How we ring with it. Your kicksoft drowns under the beat of our selfcries.
+      </text>
+      <choice GotoID="Companion2">Tau has completed the -elseing ritual.</choice>
+    </start>
+
+    <node ID="Companion2">
+      <text>
+        {{emote|*the chime is hard to distinguish from the rising cacophony.*}}
+
+        Crungled allway. Soft reaches through the bounds of everyshape and afflicts us with fireless hotbark. It resonates through Tau's cavernous absence. Arid tearsalt dries between the Lovers.
+      </text>
+      <choice GotoID="PostQuestions">I have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <start ID="ElseWelcome" IfHaveState="ElseingComplete">
+      <text>
+        {{emote|*through the chime you hear an echoing cacophony, muted by distance and matter.*}}
+
+        How we ring with it. Your kicksoft drowns under the beat of our selfcries.
+      </text>
+      <choice GotoID="Else2">How does Tau's departure find you?</choice>
+    </start>
+
+    <node ID="Else2">
+      <text>
+        {{emote|*the chime is hard to distinguish from the rising cacophony.*}}
+
+        Crungled allway. Soft reaches through the bounds of everyshape and afflicts us with fireless hotbark. It resonates through Tau's cavernous absence. Touchloss blooms, each facet trembling for shearpull.
+      </text>
+      <choice GotoID="PostQuestions">I have questions.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+    
+		<start ID="Welcome">
+			<text>
+				Who thumps my crystal arms, and kicksofts me at windfall? I feel you here, friend.
+			</text>
+			<choice GotoID="Name">I am =name=. Who are you?</choice>
+			<choice GotoID="Feel">You... feel me?</choice>
+			<choice IfTestState="GyredreamKnown" GotoID="Gyredream">Did you experience the gyredream?</choice>
+			<choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">I am to carry Tau's chime to Taproot, so she can leave Chavvah.</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</start>
+    
+    <node ID="PostQuestions" Inherits="Welcome">
+      <text>
+        {{emote|*there is an agitation in Thicksalt's accepting chime.*}}
+        
+        Pluck the air, then, with your mouth sounds.
+      </text>
+    </node>
+    
+		<node ID="Name" Inherits="Welcome">
+			<text>
+				{{emote|*Thicksalt chimes a single, outstretched tone.*}}
+
+				The naming act is imponderable. So Tau called me Thicksalt, one brickword in a towerful poem whose everyshape I forget, but whose flushing of Soft in afterfeel I am in allway.
+			</text>
+		</node>
+		<node ID="Feel" Inherits="Welcome">
+			<text>
+				{{emote|*Thicksalt chimes in bright tones.*}}
+
+				All presence is gesture, and all gesture is felt. Bat the air with your wildlimbs, press on the hardflats of my crystal arms... I feel it.
+
+				You must feel it, too. Or are you touchlost? When Dyvvrach is touchlost, when Dyvvrach speaks the millionth word and forgets all speech is gesture, a cord flicked somewhere. Then I feel the bending rush of grass on my crystal fingers, and Dyvvrach is touchkept again.
+			</text>			
+		</node>
+		<node ID="Gyredream">
+			<text>
+				{{emote|*Thicksalt chimes in sharpened tones, then stills.*}}
+
+				You thump my crystal arms, you kicksoft me at windfall. Our feltdream did not end. I feel you here, now.
+				
+				Before, when Soft flushed so suddenly, I felt the stones of war smash against my western roots, and the kicksoft of air unthicken into stillness. In the quiet black, I felt the so-hot burning of star exhaust and thrum of roaring vessel. Then... too much was felt. Threadcount too high for my edgesense.
+			</text>
+			<choice GotoID="Gyredream2">*continue listening*</choice>
+		</node>
+		<node ID="Gyredream2">
+			<text>
+				...
+
+
+				{{emote|*Thicksalt chimes in gentle tones.*}}
+			</text>
+			<choice GotoID="Start">...</choice>
+		</node>
+		<node ID="TauChime" Inherits="Welcome">
+			<text>
+				{{emote|*Thicksalt chimes in soft and rhythmic tones.*}}
+
+				I stir now, windwept.
+				
+				Safesight at your passage, =name=. Thump my crystal arms, hardlift and backbear the chime of bright Tau. The downroot will tickle, but I am blessed in allway.
+			</text>			
+		</node>				
+	</conversation>
+
+	

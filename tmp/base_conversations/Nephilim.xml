@@ -1,0 +1,12 @@
+<conversation Name="Nephilim" Inherits="Insects">
+    <node ID="WaterRitual">
+      <choice ID="NephilimPacifyChoice">
+        <text>Will you resign your charge and swear to unvex the beings of this world?</text>
+        <part Name="WaterRitualNephilimPacify" />
+      </choice>			
+    </node>
+
+  </conversation>
+	
+		
+	

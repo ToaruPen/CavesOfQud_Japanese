@@ -1,0 +1,133 @@
+﻿
+  <conversation ID="Meyehind" Replace="true">
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+      <text>
+        ベイ・ラーはもう無いの。満足？
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageDoomed">
+      <text>
+        世界が終わろうとしている……
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+      <text>
+        生きて飲め、=name=。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHindriarch="Keh">
+      <text>
+        ベイ・ラーが変わるなんて、望みすぎだったのかな。
+
+        でもエスクがまた幸せなら、私も少しは嬉しい。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+      <text>
+        どうして私たちが君と一緒にいたいと思うのか、理解できないよ、ケンドレン。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfHindriarch="Keh">
+      <text>
+        放っておいて。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+      <text>
+        妹のために尽くしてくれてありがとう。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        用がないなら黙っていてほしい。ケンドレン、私は静かにしていたいの。
+      </text>
+      <choice IfHaveBlueprint="Sonnet" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="ShowSonnet">この詩はあなたのもの？</choice>
+      <choice IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="Meyequeries">質問してもいい？</choice>
+      <choice GotoID="End">そうか。生きて飲め。</choice>
+    </node>
+
+    <node ID="Meyequeries">
+      <text>
+        いいわよ。
+      </text>
+      <choice ID="Family" GotoID="Family">家族のことを教えて。</choice>
+      <choice ID="Brother" GotoID="Brother">ケーはエスキンドに兄がいると言っていた。</choice>
+      <choice ID="Culprit" GotoID="Culprit">キンドリシュを盗んだのは誰だと思う？</choice>
+      <choice GotoID="End">やっぱりいい。生きて飲め。</choice>
+    </node>
+
+    <node ID="Brother">
+      <text>
+        ……そう。あの人がね。
+      </text>
+      <choice GotoID="Demand">どこにいる？ 何があったのか教えて。</choice>
+      <choice GotoID="Correct">でも、いないんだよね？ 妹だけ。</choice>
+    </node>
+
+    <node ID="Culprit">
+      <text>
+        自分の人生を左右する問題について、ほとんど知らないまま推測するのは好きじゃないわ。
+
+        濡れ衣でも構わないから誰かを糾弾してほしいなら、リーハートにでも聞きなさい。
+      </text>
+      <choice UseID="Family" />
+      <choice UseID="Brother" />
+      <choice GotoID="End">今はそれだけ。生きて飲め。</choice>
+    </node>
+
+    <node ID="Correct">
+      <text>
+        {{emote|*メイエヒンドの肩の力が少し抜ける。*}}
+
+        そう。その通り、ケンドレン。
+
+        それに、事件そのものとは関係ない。冷たい伝統と、それを維持しようとする冷たい心だけの話。
+      </text>
+      <choice UseID="Family" />
+      <choice UseID="Culprit" />
+      <choice GotoID="End">今はそれだけ。生きて飲め。</choice>
+    </node>
+
+    <node ID="Demand">
+      <text>
+        {{emote|*メイエヒンドは数秒だけ鋭い視線を突き付け、そのまま顔も体もあなたからそむける。*}}
+      </text>
+      <choice GotoID="End">……。</choice>
+    </node>
+
+    <node ID="Family">
+      <text>
+        語るほどのことはないよ。私たちはただの追放者。無害な逸脱行為が罪だとされ、周縁に追いやられた。
+
+        呼び戻されたと思ったら、グランド・ドウがさらに罰するためだったなんて滑稽だわ。
+      </text>
+      <choice UseID="Family" />
+      <choice UseID="Culprit" />
+      <choice GotoID="End">今はそれだけ。生きて飲め。</choice>
+    </node>
+
+    <node ID="ShowSonnet">
+      <text>
+        ふむ！ いいえ、それはエスキンドが書いたもの。でも燃やしたと思ってた。
+
+        誰かに返すなら、彼女に返してあげて。
+      </text>
+      <choice GotoID="End">助かった。生きて飲め。</choice>
+    </node>
+
+  </conversation>

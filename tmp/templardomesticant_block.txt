@@ -1,0 +1,11 @@
+﻿  <conversation ID="TemplarDomesticant" Replace="true">
+    <node ID="Start">
+      <text>
+        うまくできましたか、新父さま？~
+        新父さま！ 見て！~
+        誇りに思ってくれますか、新父さま？~
+        新父さま！
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

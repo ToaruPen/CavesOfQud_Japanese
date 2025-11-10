@@ -1,0 +1,10 @@
+﻿<conversation ID="TauChime">
+		<start ID="Welcome">
+			<text>
+				{{emote|*The chime is silent and still.*}}
+			</text>			
+			<choice GotoID="End">...</choice>
+		</start>
+	</conversation>
+
+	

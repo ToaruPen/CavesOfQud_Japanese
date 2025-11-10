@@ -5,17 +5,19 @@ using HarmonyLib;
 using QudJP.Localization;
 using TMPro;
 using UnityEngine;
-using XRL.UI;
+using Qud.UI;
 
 namespace QudJP.Patches
 {
     /// <summary>
-    /// TextMeshPro の SetText 呼び出しを横取りし、辞書で置換する。
+    /// Intercepts TextMeshPro text assignments and applies JP translation + token normalization.
     /// </summary>
     [HarmonyPatch(typeof(TMP_Text))]
     internal static class TextMeshTranslationPatch
     {
         private static int EmptySetTextLogs;
+
+        // Some TMP objects get their text cleared and rely on UITextSkin fallback text.
         private static readonly HashSet<string> FallbackTargets = new(StringComparer.OrdinalIgnoreCase)
         {
             "Header",
@@ -30,6 +32,10 @@ namespace QudJP.Patches
         private static void TranslateTextProperty(TMP_Text __instance, ref string value)
         {
             TranslateString(__instance, ref value);
+            if (!string.IsNullOrEmpty(value))
+            {
+                value = ReplaceEmbeddedTokens(value);
+            }
         }
 
         [HarmonyPrefix]
@@ -60,6 +66,10 @@ namespace QudJP.Patches
 
             var contextId = __instance?.GetType().FullName;
             sourceText = Translator.Instance.Apply(sourceText, contextId);
+            if (!string.IsNullOrEmpty(sourceText))
+            {
+                sourceText = ReplaceEmbeddedTokens(sourceText);
+            }
         }
 
         [HarmonyPrefix]
@@ -73,44 +83,29 @@ namespace QudJP.Patches
             {
                 return;
             }
+
             switch (sourceText)
             {
                 case null:
                     return;
+
                 case StringBuilder sb:
                     if (sb.Length == 0)
                     {
                         return;
                     }
-
                     var translated = Translator.Instance.Apply(sb.ToString(), __instance?.GetType().FullName);
-                    if (!string.Equals(sb.ToString(), translated, System.StringComparison.Ordinal))
+                    translated = ReplaceEmbeddedTokens(translated);
+                    if (!string.Equals(sb.ToString(), translated, StringComparison.Ordinal))
                     {
                         sb.Clear();
                         sb.Append(translated);
                     }
                     break;
-                case char[] chars:
-                    if (chars.Length == 0)
-                    {
-                        return;
-                    }
 
-                    var original = new string(chars);
-                    var result = Translator.Instance.Apply(original, __instance?.GetType().FullName);
-                    if (!string.Equals(original, result, System.StringComparison.Ordinal))
-                    {
-                        var copyLength = Mathf.Min(chars.Length, result.Length);
-                        result.CopyTo(0, chars, 0, copyLength);
-                        if (copyLength < chars.Length)
-                        {
-                            for (var i = copyLength; i < chars.Length; i++)
-                            {
-                                chars[i] = '\0';
-                            }
-                        }
-                    }
-                    break;
+                case char[] chars:
+                    // 安全性のため char[] ルートの翻訳は無効化（部分コピーで文字化けを誘発するため）。
+                    return;
             }
         }
 
@@ -127,13 +122,53 @@ namespace QudJP.Patches
                 return;
             }
 
-            var skin = instance.GetComponent<UITextSkin>();
-            if (skin == null || string.IsNullOrEmpty(skin.text))
+            // Avoid hard reference to UITextSkin to keep compile simple across game versions.
+            string skinText = null;
+            foreach (var comp in instance.GetComponents<UnityEngine.Component>())
+            {
+                if (comp == null) continue;
+                var t = comp.GetType();
+                if (!string.Equals(t.Name, "UITextSkin", StringComparison.Ordinal)) continue;
+                var prop = t.GetProperty("text");
+                skinText = prop?.GetValue(comp) as string;
+                break;
+            }
+            if (string.IsNullOrEmpty(skinText))
             {
                 return;
             }
 
-            text = Translator.Instance.Apply(skin.text, instance.GetType().FullName);
+            text = Translator.Instance.Apply(skinText, instance.GetType().FullName);
+        }
+
+        internal static string ReplaceEmbeddedTokens(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return value;
+            }
+
+            // Simple embedded token replacements used widely across UI lines.
+            if (value.IndexOf("(unburnt)", StringComparison.Ordinal) >= 0)
+            {
+                // Normalize common inline state markers
+                value = value.Replace("(unburnt)", "・未点火・");
+            }
+
+            // Affix and difficulty tokens that appear inline in DisplayName lines
+            value = System.Text.RegularExpressions.Regex.Replace(
+                value,
+                "\\bfreezing\\b",
+                "凍結",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+            value = System.Text.RegularExpressions.Regex.Replace(
+                value,
+                "\\bVery\\s+Low\\b",
+                "非常に低い",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+            return value;
         }
     }
 }

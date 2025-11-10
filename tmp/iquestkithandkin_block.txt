@@ -1,0 +1,12 @@
+﻿  <conversation ID="IQuestKithAndKin" Replace="true">
+    <choice Target="AskRumor" Transient="true" IfHaveActiveQuest="Kith and Kin" IfSpeakerNotHaveProperty="AskedKithKin">
+      何か変わったものを見たり聞いたりしなかった？
+    </choice>
+    <node ID="AskRumor" SetSpeakerIntProperty="AskedKithKin,1">
+      <part Name="KithAndKinRumor">
+        <text>それはヒンドレンの毛皮の切れ端？ 血が付いている……。</text>
+      </part>
+      <text Priority="-1">悪いけど、何も見ていない。</text>
+      <choice Target="End">生きて飲め。</choice>
+    </node>
+  </conversation>

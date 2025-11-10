@@ -1,0 +1,197 @@
+﻿<conversation ID="ChavvahPrime" Inherits="BaseSlynthMayor">
+		<start ID="Welcome" Inherits="WelcomeNoPhysiology">
+		</start>
+		<node ID="WelcomeNoPhysiology">
+			<text>
+				We share the bright and now, traveler =name=.
+			</text>
+			<choice GotoID="Chavvah">What is this place?</choice>
+			<choice GotoID="Name">Who are you?</choice>
+			<choice GotoID="Chime" IfTestState="AttunedToChavvah" IfNotHaveQuest="If, Then, Else" IfNotFinishedQuest="If, Then, Else">The entity I spoke with at Eyn Roj mentioned a chiming rock...</choice>
+			<choice GotoID="ActiveQuest" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">Explain once more what I must do with Tau's chime.</choice>
+			<choice GotoID="DoneQuest" IfHaveActiveQuest="If, Then, Else" IfFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">I've reunited Tau with her chime.</choice>
+			<choice GotoID="DoneQuest" IfHaveActiveQuest="If, Then, Else" IfFinishedQuestStep="If, Then, Else~Go to the Bottom of Taproot" IfTestState="TauLostInSoft">I've destroyed the chime, Dyvvrach.</choice>
+			<choice GotoID="BarathrumChavvahDone" IfHaveQuest="The Golem" IfFinishedQuest="If, Then, Else" IfTestState="GyredreamKnown">I have completed the ritual of -elseing. Will you power Barathrum's starclimb, as you said?</choice>
+			<choice GotoID="Barathrum" IfHaveQuest="The Golem">I come in the name of need. Barathrum asks the strength of your psyche to power our starclimb.</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+		<node ID="Chavvah" Inherits="Welcome">
+			<text>This keter roams above my trunk at Eyn Roj, traveler =name=, and across the Stair I dream. You found me, this keter where I chime in dozens.</text>
+		</node>
+		<node ID="Chime" Inherits="Welcome">
+			<text>
+				Ah, I am in need, and so I turned my chimes trunkward to tune. You struck the chime and now you are here. Are you a waterhand, and free?
+			</text>
+			<choice GotoID="Work" Priority="1">What do you need?</choice>
+			<choice Target="Barathrum" Load="Remove" />
+		</node>
+		<node ID="Work" Inherits="Welcome">
+			<text>
+				My chimeling Tau leaves Chavvah, leaves me. It is her choice.
+
+				Her transit-psyche manifests at the bottom of Taproot, where we cannot consciously go. To finish the ritual of -elseing, to let Tau become -else, I need a traveler such as you, =name=.
+			</text>
+			<choice GotoID="Work2" Priority="1">What must I do?</choice>
+			<choice GotoID="Tau" Priority="1">Who is Tau?</choice>
+			<choice Target="Chime" Load="Remove" />
+			<choice Target="Barathrum" Load="Remove" />
+		</node>
+		<node ID="Work2">
+			<text>
+				Take Tau's chime, silent and still. Carry it to the bottom of Taproot, deep under my trunk, where she will make the chime her transit-body and walk away forever. Finish the ritual of -elseing.
+
+				At the bottom of Taproot, Tau manifests. She tells us, too, that another waits for her there.
+			</text>
+			<choice GotoID="Accept" StartQuest="If, Then, Else" GiveItem="CrystalKey">I will do as you ask.</choice>
+			<choice GotoID="Welcome">I have more to ask, first.</choice>
+		</node>
+		<node ID="ActiveQuest" Inherits="Welcome">
+			<text>
+				Take Tau's chime, silent and still. Carry it to the bottom of Taproot, deep under my trunk, where she will make the chime her transit-body and walk away forever. Finish the ritual of -elseing.
+
+				At the bottom of Taproot, Tau manifests. She tells us, too, that another waits for her there.
+			</text>
+		</node>
+		<node ID="DoneQuest">
+			<text>
+				So you have, and what proceeds, proceeds.
+
+				I felt your coming here, =name=, in Gyredream. I've felt this moment. I feel it now.
+
+				The ritual of -elseing is complete, waterhand. You are done, and with our thanks.
+			</text>
+			<choice GotoID="End" CompleteQuestStep="If, Then, Else~Return to the Keter" FinishQuest="If, Then, Else">
+				<text>Live and drink.</text>
+				<part Name="IfThenElseAchievement" />
+			</choice>
+		</node>
+		<node ID="Accept">
+			<text>
+				Thank you, traveler =name=.
+			</text>
+			<choice GotoID="Welcome">...</choice>
+		</node>
+		<node ID="Tau" Inherits="Welcome">
+			<text>
+				My chimeling, burning bright, all starlight and right angles in her heart. She leaves Chavvah; it is her choice. I..
+			</text>
+			<choice GotoID="Work2" Priority="1">What must I do?</choice>
+			<choice Target="Chime" Load="Remove" />
+			<choice Target="Barathrum" Load="Remove" />
+		</node>
+		<node ID="Name" Inherits="Welcome">
+			<text>
+				A sophist of the Self spilled ink and called me, long ago, the Tree of Life. To me, I am the many Selves pinched up my taproot from the permeating Soft.
+
+				I am Chavvah, and I am dyvvrach.
+			</text>
+			<choice GotoID="ManySelves" Priority="99">Many selves? What does this mean?</choice>
+		</node>
+		<node ID="ManySelves">
+			<text>
+				As Chavvah I am many. As dyvvrach I am one. I am one and many. One-selves have called me tree city, the sentient place. You may think of the Selves this way, sprouted in keter from Twofirm.
+			</text>
+			<choice GotoID="Physiology" Priority="99">Twofirm?</choice>
+		</node>
+		<node ID="Physiology" SetSpeakerIntProperty="PhysiologyExplained,1">
+			<text>
+				Deep under earth and permeating our roots is Soft, our feeling substance. Ground pressure pushes it up the taproot to our trunk, where it condenses into Twofirm: the biformal phase that contains the two sefirots, -then and -else.
+			</text>
+			<choice GotoID="Physiology2">*continue listening*</choice>
+		</node>
+		<node ID="Physiology2" Inherits="WelcomeNoPhysiology">
+			<text>
+				This is the genesis my distinct Self, an awareness that contains both -then, what I will become, and -else, what I will not. Twofirm flows up my sapwood to the keter, where -then manifests as an entity and I chime: I speak and hear the world.
+			</text>
+		</node>
+		<node ID="BarathrumChavvahDone">
+			<text>
+				{{emote|*Dyvvrach chimes*}}
+			</text>
+			<choice Target="BarathrumChavvahDone2">...</choice>
+		</node>
+		<node ID="BarathrumChavvahDone2">
+			<text>
+				You have completed the ritual of -elseing. You have set bright Tau free.
+
+				Yes, =name=. I will turn my chimes Spindleward to tune, then vibrate at our verve frequency. I will power your starclimb.
+
+				Be vested to tell whoever you must that Chavvah has made this commitment.
+			</text>
+			<choice Target="End">Thank you, Dyvvrach. Live and drink.</choice>
+		</node>
+		<node ID="Barathrum">
+			<text>
+				I start at this but Tikva settles me. I remember now: from a cub I've known Barathrum to be weak in telling but bold in asking. A starclimb? You mean, an ascent to the long chiming rock?
+			</text>
+			<choice GotoID="Ascent">Barathrum intends to ascend the Spindle to discover the source of the Signal, yes. He needs a power source for the climber, one shielded from electromagnetic disturbance.</choice>
+		</node>
+		<node ID="Ascent">
+			<text>
+				oh. This. Was this felt in gyredream? Your coming to keter? I ask, do not answer.
+			</text>
+			<choice GotoID="Gyredream" SetBooleanState="GyredreamKnown,true">What is gyredream?</choice>
+		</node>
+		<node ID="Gyredream">
+			<text>
+				A future shock. My chimeling _ is vision-gifted, a lichen who clings to shorerock on the straits of Tomorrow. Just a short time ago a sea wave crested and broke beneath her, and she saw in its recession all the bright and violent channel paths.
+
+				We all felt it. A recoming, and the gyre in final tension. I felt...
+			</text>
+			<choice GotoID="GyredreamMore">*continue listening*</choice>
+		</node>
+		<node ID="GyredreamMore" Inherits="Welcome">
+			<text>
+				It was too much for my chimeling Tau. She gasped for air and her chime stilled. She leaves us now, to become -else. It is her choice.
+			</text>
+			<choice GotoID="WillYouHelp" IfNotFinishedQuest="If, Then, Else" Priority="99">I am sorry. But will you help Barathrum do as he asks?</choice>
+			<choice GotoID="WillYouHelp_ChavvahFinished" IfFinishedQuest="If, Then, Else" Priority="99">I am sorry. But will you help Barathrum do as he asks?</choice>
+		</node>
+		<node ID="WillYouHelp">
+			<text>
+				{{emote|*Dyvvrach chimes*}}
+			</text>
+			<choice GotoID="WillYouHelp2">...</choice>
+		</node>
+		<node ID="WillYouHelp2">
+			<text>
+				I will power his starclimb. If you take Tau's chime to taproot, for her to walk away. If you finish the ritual of -elseing.
+			</text>
+			<choice GotoID="Work" IfNotHaveQuest="If, Then, Else">The ritual of -elseing?</choice>
+			<choice GotoID="Welcome">I see.</choice>
+		</node>
+		<node ID="WillYouHelp_ChavvahFinished">
+			<text>
+				{{emote|*Dyvvrach chimes*}}
+			</text>
+			<choice GotoID="BarathrumChavvahDone2">...</choice>
+		</node>
+
+
+    <node ID="SlynthRequest">Again I must be calmed, but the startling gives way to a curiosity. You speak of the glowfolk, belimbed and free. You asking that they join us, like our Sant?</node>
+    <node ID="SlynthRequestAccept">
+      <text>We find no precedent for this, yet is there space upon our crystal arms and an openness within us. It is agreed: if these slynth will be of us, we will have them here.</text>
+      <choice Target="End">
+		  <text>You all have my thanks.</text>
+		  <part Name="AddSlynthCandidate" Sanctuary="the roaming keter of Chavvah" />
+	  </choice>
+    </node>
+    <node ID="SlynthRequestReject">I startle, and the roiling is felt before the calm. I cannot find a consensus for the housing of these beings, =name=. I am sorry.</node>
+    <node ID="SlynthAbout">We await the decision of the glowfolk. Our imaginations run with the possibilities.</node>
+    <node ID="SlynthArrived">
+      <text>
+        How this keter rustles! The slynth are among us and we adapt, our impressions a melange of excitement, apprehension, and wonder.
+        
+        Though I have no single sentiment to express, we nonetheless approach -then with our new companions.
+      </text>
+      <choice Target="Start">My thanks, dyvvrach.</choice>
+    </node>
+    <node ID="SlynthSettled">
+      <text>
+        You are well-found, =name=. Though several have chosen their -else, the first of the slynth have joined to us like our Sant, mobile and apart but shared and together. This is a strange -then, but what branches may spill forth from it? I anticipate the witnessing.
+      </text>
+      <choice Target="Start">Live and drink together, Chavvah.</choice>
+    </node>
+	</conversation>
+
+	

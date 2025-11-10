@@ -1,0 +1,58 @@
+﻿<conversation ID="Vaam">
+    <node ID="Start" IfHaveState="ChoseVaam">
+      <text>
+        Stay safe.
+      </text>
+      <choice GotoID="End">Live and remain stalwart, Va'am.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        {{emote|*The hardened shell-thing traces a path around you slowly, its strange brush-feet scrabbling at the floor, a pace unaffected by your presence and movement. Behind the hissing of those feet on the ground is the strains of a faint voice, someone speaking from inside a distant cave. Audible, but not understandable.*}}
+      </text>
+      <choice GotoID="ConfirmRepairVaam" IfHaveBlueprint="Repulsive Device">I offer you this repulsive device, unique one.</choice>
+      <choice GotoID="End">Live and... do as you please.</choice>
+    </node>
+
+    <node ID="ConfirmRepairVaam">
+      <text>
+        {{emote|*Vaam seems oblivious to your words, but does slow its patrol as it nears you.*}}
+      </text>
+      <choice GotoID="RepairVaam" RemoveItem="Repulsive Device" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.ChooseVaam">Here. Take it.</choice>
+      <choice GotoID="End">I am not yet ready. I may return.</choice>
+    </node>
+
+    <node ID="RepairVaam">
+      <text>
+        {{emote|*You offer the repulsive device. As it nears the shining, dark surface of Va'am's thick carapace, a sudden fervor seizes the device, and it twists itself free, latching onto the entity with the hooked teeth of its mouthlike appendage. Va'am shudders with such violence that its plates rattle against one another, and the light behind its faceplate dims.*}}
+
+        {{emote|*For a time, it is still, its eye dark. Then a quiet but clear voice vibrates through the armored body:*}}
+
+        Ah.
+      </text>
+      <choice GotoID="VaamResponds">Are you all right?</choice>
+    </node>
+
+    <node ID="VaamResponds">
+      <text>
+        Yes. I thank =ifplayerplural:ye:thee=.
+
+        =ifplayerplural:Ye have:Thou hast= freed me from a deep stupor. Once I was a protector, before being sentenced to protect nothing and no one.
+
+        I remember little of that time.
+      </text>
+      <choice GotoID="VaamFuture">What will you do now?</choice>
+    </node>
+
+    <node ID="VaamFuture">
+      <text>
+        I have yet to find my purpose. I can think and speak, and so this shell is nearly comfortable.
+
+        One piece, however, doth yet chafe me. =ifplayerplural:Would ye:Wouldst thou= take it? Perhaps =ifplayerplural:ye can:thou canst= grant it some use.
+      </text>
+      <choice GotoID="End" GiveItem="Vaam's Lens" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">Live and remain free, Va'am.</choice>
+      <choice GotoID="End" GiveItem="Vaam's Lens" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">Live and remain free, Va'am.</choice>
+    </node>
+  </conversation>
+
+  

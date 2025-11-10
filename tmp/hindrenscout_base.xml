@@ -1,0 +1,47 @@
+﻿<conversation ID="HindrenScout" Inherits="IQuestKithAndKin">
+
+    <node ID="Start" IfHaveState="HindrenVillageDoomed">
+      <text>
+        I've a bad feeling about all this.~
+        The threat is not over. Mark my words.~
+        We're not safe yet. I can feel it.~
+        This resolution is not to my liking...
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="HindrenVillageProspers">
+      <text>
+        I remain wary, but there is no question that Bey Lah thrives, even with open borders.~
+        Live and drink.~
+        Live and drink, kendren.~
+        Oh, it is you. Stay safe.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHindriarch="Esk">
+      <text>
+        I am uncomfortable with change, but it is a skill to train like any other.~
+        Live and drink.~
+        Live and drink, kendren.~
+        I hope Hindriarch Esk can keep us safe.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        Live and drink, kendren.~
+        I will do my best to be civil with you, kendren, but we hindren are bred into wariness.~
+        Cause no trouble here, kendren.~
+        Be kind, kendren. We are watching you.~
+        Why do you remain here? Please, finish your business.~
+        It feels strange to allow you to cross our borders unimpeded, but Grand-Doe wills it.~
+        No good can come of allowing kendren into Bey Lah...
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

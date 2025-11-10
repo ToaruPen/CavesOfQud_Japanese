@@ -1,0 +1,144 @@
+<conversation ID="TauNoLonger">
+    <start ID="Orphaned" IfTestState="TauCompanion contains KilledByPlayer">
+      <text>
+        You have severed the hand outstretched to me. Why?
+
+        What have you done? What am I to do?
+      </text>
+      <choice GotoID="Suborned">Your will would have been suborned to Ptoh.</choice>
+      <choice GotoID="Uncaring">That's not my problem.</choice>
+      <choice GotoID="Sorry">I am sorry.</choice>
+      <choice GotoID="Happier">You will be happier this way.</choice>
+    </start>
+    
+		<start ID="Welcome">
+			<text>
+        {{emote|*Tau's crystal body yet rings softly from her separation from Taproot.*}}
+
+        Again I perceive.
+
+        Thank you, rootclimber. Chavvah's rewards are great and you are deserving of them.
+      </text>
+      <choice GotoID="How">How are you feeling?</choice>
+      <choice GotoID="Liaison">It seems that someone is waiting for you.</choice>
+      <choice GotoID="Ptoh">You would suborn your will to Ptoh?</choice>
+			<choice GotoID="EndGift" IfNotHaveState="ElseingComplete">Live and drink.</choice>
+			<choice GotoID="End" IfHaveState="ElseingComplete">Live and drink.</choice>
+		</start>
+
+    <node ID="Suborned" Inherits="Orphaned">
+      <text>
+        {{M|You}} suborn my will! You allow me to start upon this path and block it. Yes?
+
+        Now I am truly adrift.
+      </text>
+    </node>
+
+    <node ID="Uncaring" Inherits="Orphaned">
+      <text>Ah.
+
+        Well. You have my thanks for your help in -elseing, but by blocking my path you create fresh problems. Yes?
+
+        I do not wish to know you.
+
+        Live and drink.</text>
+    </node>
+
+    <node ID="Sorry" Inherits="Orphaned">
+      <text>
+        I resent what has befallen me, but I am yet embodied. You have still helped me live, yes?
+
+        I forgive you, but I don't wish to know you. Live and drink.
+      </text>
+    </node>
+
+    <node ID="Happier" Inherits="Orphaned">
+      <text>
+        Perhaps. My future is hazy. My future twists in the chill wind of the Gyre. I can have no faith in your vision. You understand this, yes?
+
+        I do not wish to know you.
+
+        Live and drink.</text>
+    </node>
+
+    <node ID="How" Inherits="Welcome">
+      <text>
+        Present. Alone, afraid, but anticipating my return to the embrace of a collective.
+      </text>
+    </node>
+
+    <node ID="Liaison" Inherits="Welcome">
+      <text>
+        More than someone. My liaison is the extended, outstretched hands of a greater mind-haven than I have otherwise known. I might not have had the courage to -else without knowing that a collective awaited me.
+
+        My future is hazy, my future is bright.</text>
+    </node>
+
+    <node ID="Ptoh">
+      <text>
+        Speaking creatures seem very engrossed in this 'will' idea, but few agree what it is. Your mind is under influence from other thinkbeings the moment you observe them, yes? You 'learn' by imitating, your values and beliefs are adopted from observation. Yes?
+
+        I have made a choice to offer my consciousness to a new paradigm, but this choice seems distinct from your conception of 'will'. We speak past one another.</text>
+      <choice GotoID="Hunt">The Seekers of the Sightless Way hunt espers.</choice>
+      <choice IfHaveState="ElseingComplete" GotoID="Favor">May the Fates favor you, Tau-no-Longer.</choice>
+			<choice IfNotHaveState="ElseingComplete" GotoID="FavorGift">May the Fates favor you, Tau-no-Longer.</choice>
+      <choice IfHaveState="ElseingComplete" GotoID="Leave">I leave you to your fate, then.</choice>
+			<choice IfNotHaveState="ElseingComplete" GotoID="LeaveGift">I leave you to your fate, then.</choice>
+    </node>
+
+    <node ID="Hunt" Inherits="Ptoh">
+      <text>
+        Oh, yes? I see. Well.
+
+        Do you... not hunt? Or align with hunters? You reek of predation yourself. You kill, yes?
+
+        I recall no promise to become a grazing hedonist. If I am called to hunt I will hunt.
+      </text>
+    </node>
+
+    <node ID="Favor">
+      <text>I wish the same for you, =name=. Live and drink.</text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+		<node ID="FavorGift">
+			<text>
+				I wish the same for you, =name=.
+				
+				Before you go, take this, a piece of my bodystuff, as thanks for completing the -elseing.
+				
+				Then live and drink.
+      </text>
+			<choice GotoID="End" SetIntState="ElseingComplete,1" GiveItem="TauHeadpiece">Live and drink.</choice>
+		</node>
+
+    <node ID="Leave">
+      <text>
+        As I you to yours, =name=. Live and drink.</text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+		<node ID="LeaveGift">
+			<text>
+				As I you to yours, =name=. 
+				
+				But before you go, take this, a piece of my bodystuff, as thanks for completing the -elseing.
+				
+				Then live and drink.
+			</text>
+			<choice GotoID="End" SetIntState="ElseingComplete,1" GiveItem="TauHeadpiece">Live and drink.</choice>
+		</node>
+
+		<node ID="EndGift">
+			<text>
+				Before you go, take this, a piece of my bodystuff, as thanks for completing the -elseing.
+
+				Then live and drink, =name=.
+			</text>
+			<choice GotoID="End" SetIntState="ElseingComplete,1" GiveItem="TauHeadpiece">Live and drink.</choice>
+		</node>
+
+	</conversation>
+		
+
+  

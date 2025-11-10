@@ -1,0 +1,129 @@
+﻿  <conversation ID="Zothom" Replace="true">
+    <node ID="Start">
+      <text>
+        生きて飲め、旅人。
+
+        ここで騒ぎを起こすな。そうすれば争う理由はない。
+      </text>
+      <choice GotoID="ZothomGreets">私は=name=。あなたは？</choice>
+      <choice GotoID="ZothomWarden">監視官の口ぶりだ。</choice>
+      <choice GotoID="ZothomWhat">ここで何をしている？</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+    <node ID="ZothomGreets">
+      <text>
+        私は取るに足らない者だ。
+
+        だが名はゾーソム。悔悟者と呼ぶ者もいる。
+      </text>
+      <choice GotoID="ZothomThePenitent">悔悟者？</choice>
+      <choice GotoID="ZothomWarden">監視官のように聞こえる。</choice>
+      <choice GotoID="ZothomWhat">ここで何をしている？</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+    <node ID="ZothomWarden">
+      <text>
+        監視官ではない。私に付き合ってくれるのは、自分の恥だけだ。
+      </text>
+      <choice GotoID="ZothomThePenitent">なぜ恥じている？</choice>
+      <choice GotoID="ZothomGreets">私は=name=。君は？</choice>
+      <choice GotoID="ZothomWhat">ここで何をしている？</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+    <node ID="ZothomWhat">
+      <text>
+        レベカの墓を見守り、自分の所業を償い、信条を見つけるためだ。
+      </text>
+      <choice GotoID="ZothomKnowsRebekah">レベカとは誰だ？</choice>
+      <choice GotoID="ZothomThePenitent">お前の所業？</choice>
+      <choice GotoID="ZothomCredo">信条？</choice>
+      <choice GotoID="ZothomWarden">監視官なのか？</choice>
+      <choice GotoID="ZothomGreets">君は誰だ？</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+    <node ID="ZothomThePenitent">
+      <text>
+        かつて私は最低の墓荒らしだった。何年も前、イーターの墳墓を荒らそうとして仲間二人と向かった。二人は古代の仕掛けに殺され、古い死者とともに葬られた。
+
+        私も同じ運命を辿るはずだったが、地下墓地に巣を作っていたモパンゴの一団に救われた。彼らは私を守り、傷が癒えるまで食べ物を分けてくれた。その恩に報いるために信条を求めている。
+      </text>
+      <choice GotoID="ZothomLovesMopango">モパンゴ？</choice>
+      <choice GotoID="ZothomCredo">信条？</choice>
+      <choice GotoID="ZothomTomb">イーターの墳墓に入りたい。</choice>
+      <choice GotoID="End">生きて飲め、悔悟者。</choice>
+    </node>
+    <node ID="ZothomTomb">
+      <text>
+        その目的は正しいか？
+      </text>
+      <choice GotoID="ZothomJust">ああ。</choice>
+      <choice GotoID="ZothomUnjust">いや。</choice>
+    </node>
+    <node ID="ZothomJust">
+      <text>
+        レベカの墓に敬意を払った者だけが、墳墓への道を知る。
+
+        中へ入れたなら、モパンゴが慰めと知恵を授けてくれる。墳墓の中身についても教えてくれるだろう。
+      </text>
+      <choice GotoID="ZothomKnowsRebekah">レベカとは？</choice>
+      <choice GotoID="ZothomLovesMopango">モパンゴ？</choice>
+      <choice GotoID="ZothomHelp">ほかに手がかりは？</choice>
+      <choice GotoID="End">そうしよう。生きて飲め。</choice>
+    </node>
+    <node ID="ZothomUnjust">
+      <text>
+        ならば私と同じ運命を辿るがいい。
+      </text>
+      <choice GotoID="ZothomHelp">それでも入り方を教えろ。</choice>
+      <choice GotoID="End">見ていよう。生きて飲め。</choice>
+    </node>
+    <node ID="ZothomHelp">
+      <text>
+        断る。
+      </text>
+      <choice GotoID="ZothomLovesMopango">ならモパンゴの話を聞かせてくれ。</choice>
+      <choice GotoID="End">わかった。</choice>
+    </node>
+    <node ID="ZothomCredo">
+      <text>
+        ああ。モパンゴにとっての通過儀礼だ。聞き手に思索と議論を促す言葉。理想的な信条には正解がなく、聞いた者が考え続けることになる。だからモパンゴの間では、信条の意味を説明しろと迫るのは失礼とされている。
+
+        いつか私も自分の信条を見つける。
+      </text>
+      <choice GotoID="ZothomLovesMopango">モパンゴとは誰だ？</choice>
+      <choice GotoID="ZothomTomb">イーターの墳墓に入りたい。</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+    <node ID="ZothomLovesMopango">
+      <text>
+        モパンゴは白く淡く光る装甲鱗を持つ穿孔者だ。思索深く、社交的で、おおむね平和的だ。古代の遺物と対話するので、彼らの一団がイーターの墳墓に住み着いている。
+
+        私たちのような荒削りな放浪者にも辛抱強いが、それでも信条の意味を説明しろと迫るのは礼を欠く。
+      </text>
+      <choice GotoID="PangoQuest">そのモパンゴに会ってみたい。</choice>
+      <choice GotoID="ZothomCredo">信条？</choice>
+      <choice GotoID="ZothomTomb">イーターの墳墓に入りたい。</choice>
+      <choice GotoID="End">生きて飲め、悔悟者。</choice>
+    </node>
+
+    <node ID="PangoQuest">
+      <text>
+        墳墓で=player.reflexive=が迷ったなら、モパンゴの集落は北西カタコンベの壁に築かれている。入口はヴィヴィラというチェーンタレットが守っていて、仲間と見分けられるよう鮮やかに塗られている。
+
+        反射的に戦ったり逃げたりしたくなるだろうが、ヴィヴィラは友好的で話が通じる。出会ったら、私の紹介で来たと伝えてくれ。
+      </text>
+      <choice GotoID="End" IfNotHaveQuest="The Buried Watchers" StartQuest="The Buried Watchers">タレットに話しかける……？ わかった、行こう。生きて飲め。</choice>
+      <choice GotoID="End">タレットに話しかける……？ いや遠慮しておく。生きて飲め。</choice>
+    </node>
+
+    <node ID="ZothomKnowsRebekah">
+      <text>
+        レベカは医師であり、レシェフの助言者でもあったが、やがて彼の寵を失った。長い亡命ののち、彼女は声も命も失い、ここに埋められた。名誉ある死者と同じ墓に入る資格がない外の者として、だ。だからここで眠っている。
+
+        彼女の近くにいれば、信条を見つけられると信じている。
+      </text>
+      <choice GotoID="ZothomCredo">信条？</choice>
+      <choice GotoID="ZothomTomb">イーターの墳墓に入りたい。</choice>
+      <choice GotoID="End">生きて飲め、悔悟者。</choice>
+    </node>
+  </conversation>

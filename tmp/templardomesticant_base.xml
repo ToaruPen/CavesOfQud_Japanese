@@ -1,0 +1,17 @@
+﻿<conversation ID="TemplarDomesticant">
+    <node ID="Start">
+      <text>
+        Did I do well, Newfather?~
+        Newfather! Look!~
+        Are you proud, Newfather?~
+        Newfather!
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  
+
+  
+
+  

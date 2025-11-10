@@ -12,7 +12,7 @@ namespace QudJP.Patches
     internal static class TooltipDiagnosticsPatch
     {
         private static int Logged;
-        private const int MaxLogs = 40;
+        private const int MaxLogs = 300;
 
         [HarmonyPostfix]
         [HarmonyPatch(nameof(TooltipManager.SetTextAndSize))]
@@ -65,4 +65,3 @@ namespace QudJP.Patches
         }
     }
 }
-

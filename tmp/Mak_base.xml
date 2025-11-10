@@ -1,0 +1,109 @@
+﻿<conversation ID="Mak">
+    <node ID="Start">
+      <text>
+        What indignity have you come to heap upon the mound, whelp? Out with it.
+      </text>
+      <choice ID="FounderChoice" GotoID="Founder" IfHaveSecret="YdFreeholdSecret1">You're one of the founders of this freehold, aren't you?</choice>
+      <choice ID="WhoChoice" GotoID="Who">Who are you?</choice>
+      <choice ID="StatureChoice" GotoID="Stature">I've never seen a frog of your stature.</choice>
+      <choice ID="FreeholdChoice" GotoID="Freehold">What can you tell me about the Freehold?</choice>
+      <choice ID="PondChoice" GotoID="Pond">This pond is peaceful.</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Croak">
+      <text>
+        {{emote|*crrrk*}}
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="WhoChoice" />
+      <choice UseID="StatureChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="PondChoice" />
+      <choice UseGotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Founder">
+      <text>
+        What of it? Scurry on and leave me to brood.
+      </text>
+      <choice GotoID="Founder2">This seems a joyful place. Why are you angry?</choice>
+      <choice GotoID="Start">I've something else to ask</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Founder2" SetBooleanState="MakHatesResheph,true">
+      <text>
+        Why? A lifetime of vexation. Born to a cacophony of static ringing the ears raw. Thousands of my kinfolk cut down by that porphyric wasp fools called Lamb. A millenium of hot stinking sun and disgusting brine lice for supper.
+
+        Misery obtains on this pond, whelp. By Chavvah if you start beaming like a sunray and yodeling at the Beetle Moon, I'll eat you where you stand.
+      </text>
+      <choice GotoID="Start" SetBooleanState="MakAngryResheph,true">...I've more to ask.</choice>
+      <choice GotoID="End" SetBooleanState="MakAngryResheph,true">Live and drink.</choice>
+    </node>
+
+    <node ID="Who">
+      <text>
+        Who am I? Mak. That's all you get. I'll not waste the honey of my mouth on idle inquiries.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="StatureChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="PondChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Stature">
+      <text>
+        ...
+
+        And? Is that the whole of your fool statement?
+      </text>
+      <choice GotoID="Stature2">Yes.</choice>
+      <choice GotoID="Croak">I'll ask something else.</choice>
+    </node>
+
+    <node ID="Stature2">
+      <text>
+        Trust what you hear of the svardym, whelp. The sky blackens at our accession and we are like to eat you.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="WhoChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice UseID="PondChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Freehold">
+      <text>
+        Have the adiyy chewed the hue from your eyes? See for yourself. Free folk make a gathering here and their racket rings through the reef. One can hardly steep in his greens without being mewled to by a salt-stung baby.
+      </text>
+      <choice UseID="FounderChoice" />
+      <choice UseID="WhoChoice" />
+      <choice UseID="StatureChoice" />
+      <choice UseID="PondChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Pond">
+      <text>
+        It was once.
+      </text>
+      <choice GotoID="Pond2">What happened?</choice>
+      <choice UseID="FounderChoice" />
+      <choice UseID="WhoChoice" />
+      <choice UseID="StatureChoice" />
+      <choice UseID="FreeholdChoice" />
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="Pond2">
+      <text>
+        Whelp, affix your eyes to that clam right yonder. Go step inside and find your answers.
+      </text>
+      <choice GotoID="End">...</choice>
+    </node>
+
+  </conversation>
+
+  

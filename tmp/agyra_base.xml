@@ -1,0 +1,277 @@
+﻿<conversation ID="Agyra" Inherits="BaseSlynthMayor">
+
+    <node ID="Start" IfHaveState="ChoseNacham">
+      <text>
+        =ifplayerplural:Ye have:Thou hast= changed the world, =factionaddress:Mopango=. These strange beings have been confined for thousands of years, and =ifplayerplural:ye have:thou hast= given one a voice.
+
+        If Nacham is as wise as Doyoba believes, we stand to learn much very soon. Perhaps our coterie will spread the knowledge we gain, and we become a step closer to the Kasaphescence.
+
+        =ifplayerplural:Ye are:Thou'rt= welcome to visit and stay here whenever =ifplayerplural:ye will:thou wilt=.
+      </text>
+      <choice GotoID="End">Thank you, Agyra. Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="ChoseDagasha">
+      <text>
+        =ifplayerplural:Ye have:Thou hast= changed the world, =factionaddress:Mopango=. These strange beings have been confined for thousands of years, and =ifplayerplural:ye have:thou hast= given one a voice.
+
+        I cannot help but hold some fear toward Dagasha. However, an it means us no harm I am open to allying with it. No doubt the future of this coterie hath changed, mayhap for the better.
+
+        =ifplayerplural:Ye are:Thou'rt= welcome to visit and stay here whenever =ifplayerplural:ye will:thou wilt=.
+      </text>
+      <choice GotoID="End">Thank you, Agyra. Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="ChoseVaam">
+      <text>
+        =ifplayerplural:Ye have:Thou hast= changed the world, =factionaddress:Mopango=. These strange beings have been confined for thousands of years, and =ifplayerplural:ye have:thou hast= given one a voice.
+
+        That said, I am uncertain what changes to expect. Dost the ancient Va'am yet have the capacity to defend, or protect? Can we gift it with a better means for transportation? I'll speak to Dadogom of this, and time shall reveal all.
+
+        =ifplayerplural:Ye are:Thou'rt= welcome to visit and stay here whenever =ifplayerplural:ye will:thou wilt=.
+      </text>
+      <choice GotoID="End">Thank you, Agyra. Live and drink.</choice>
+    </node>
+
+    <node ID="Start" IfHaveState="ChoseNacham">
+      <text>
+        =ifplayerplural:Ye have:Thou hast= changed the world, =factionaddress:Mopango=. These strange beings have been confined for thousands of years, and =ifplayerplural:ye have:thou hast= given one a voice.
+
+        I find myself amused at Kah's 'rest', for it appeareth as active as ever--far more so than I, ever. But running free and running unwillingly are certainly not the same. Perhaps, in time, it can learn a deeper rest from us.
+
+        =ifplayerplural:Ye are:Thou'rt= welcome to visit and stay here whenever =ifplayerplural:ye will:thou wilt=.
+      </text>
+      <choice GotoID="End">Thank you, Agyra. Live and drink.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        Greetings, =player.formalAddressTerm=. =ifplayerplural:Ye are:Thou art= welcome here.
+
+        An =ifplayerplural:ye have:thou hast= any questions, I would fain answer them.
+      </text>
+      <choice GotoID="Agoninon" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah">What can you tell me of k-Goninon?</choice>
+      <choice GotoID="AgyraDevice" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">I have recovered a repulsive device.</choice>
+      <choice GotoID="AgyraGreet">Greetings. I am =name=. Who are you?</choice>
+      <choice GotoID="AgyraLeader">Are you in charge here?</choice>
+      <choice GotoID="AgyraWelcome">This settlement is... cozy.</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="AgyraMopango">Tell me about your people.</choice>
+      <choice GotoID="End">Live and drink, plated one.</choice>
+    </node>
+    <node ID="SlynthRequest">
+      <text>=ifplayerplural:Would ye:Wouldst thou= press these slynth into the fissures of historic stone where we reside, that they may observe what we do?</text>
+      <choice Target="SlynthRequestAccept">I would.</choice>
+    </node>
+    <node ID="SlynthRequestAccept">
+      <text>If these slynth wish to become mopango and =ifplayerplural:ye speak:thou speakest= for them, then we shall accept them. Let them gaze into the schematics that wrote history beside us if they so choose.</text>
+      <choice Target="End">
+        <part Name="AddSlynthCandidate" Sanctuary="the mopango hideout" />
+        <text>You have my thanks, Agyra.</text>
+      </choice>
+    </node>
+    <node ID="SlynthRequestReject">
+      Please understand that we mean no slight to =ifplayerplural:you:thee= in saying so, but what =ifplayerplural:ye ask:thou asketh= of us is too heavy a weight for =ifplayerplural:your names:thy name= to bear.
+      
+      Perhaps this will change, come deed and time.
+    </node>
+    <node ID="SlynthAbout">
+      How =ifplayerplural:fare ye:farest thou=, then, and what word of the slynth?
+      
+      We shine with curiosity to hear it.
+    </node>
+
+    <node ID="SlynthArrived">
+      <text>
+        The Kasaphescence shine upon =ifplayerplural:ye:thee=, =name=.
+
+        Although the welcome of these slynth be not entirely without incident, I am yet hopeful that their curiosity and dedication to tasks will serve them well among us.
+      </text>
+      <choice GotoID="Start">My thanks, Agyra.</choice>
+    </node>
+
+    <node ID="SlynthSettled">
+      <text>
+        These lilypad folk fascinate by their similarities and differences to us alike--we have much to explore, as individuals and together.
+
+        The experiences and beings =ifplayerplural:ye herald:thou heraldest= overwhelm this humble pilgrim, =name=. May =ifplayerplural:ye:thou= bathe ever in Her light.
+      </text>
+      <choice GotoID="Start">My thanks again, Agyra.</choice>
+    </node>
+
+    <node ID="AgyraDevice">
+      <text>
+        Oh, so =ifplayerplural:ye have:thou hast=, and what a sight. Please forgive my distance, but I am loath to touch it.
+
+        It appeareth of similar make to the children, and I believe its jaw seeketh them. Lebah claimeth that the device grants freedom, and I wonder what that freedom will look like. Perhaps =ifplayerplural:ye should:thou shouldst= speak to the watchers of the children for further insight.
+      </text>
+      <choice GotoID="End">Understood. Live and drink, Agyra.</choice>
+    </node>
+
+    <node ID="Agoninon">
+      <text>
+        =ifplayerplural:Seek-ye:Seekest-thou= the repulsive device, then?
+
+        k-Goninon, ancient and venerated gelatinous cupola, doth patrol the catacombs. Arrived centuries ere we discovered this place, k-Goninon hath hardened and eateth not through the floor, and yet it eateth prodigiously. Safe from the conservators, as k-Goninon long ago consumed the Mark of Death itself.
+
+        Please be careful. k-Goninon hath devoured watchers and wouldst devour =ifplayerplural:ye:thee= as well.
+      </text>
+      <choice GotoID="End">I will be careful. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraGreet">
+      <text>
+        I am Agyra, a watcher of the tomb.
+      </text>
+      <choice GotoID="AgyraGender">May I call you man, woman, or something else?</choice>
+      <choice GotoID="AgyraLeader">Are you in charge here?</choice>
+      <choice GotoID="AgyraWelcome">It's a cozy home you have here.</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="AgyraMopango">Tell me about your people.</choice>
+      <choice GotoID="End">Live and drink, Agyra.</choice>
+    </node>
+
+    <node ID="AgyraWelcome">
+      <text>
+        I hope it is not overly crowded for =ifplayerplural:ye:thee=. We mopango are most comfortable in close quarters, but I acknowledge that not all creatures adore the close embrace of the depths as we do.
+
+        Regardless, =ifplayerplural:ye are:thou'rt= welcome to stay and sup, and ask of me any questions =ifplayerplural:ye may:thou mayest= have.
+      </text>
+      <choice GotoID="AgyraGreet">I am =name=. Who are you?</choice>
+      <choice GotoID="AgyraLeader">Are you in charge here?</choice>
+      <choice GotoID="AgyraWelcome">This settlement is... cozy.</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="AgyraMopango">Tell me about your people.</choice>
+      <choice GotoID="End">Thank you. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraLeader">
+      <text>
+        No one leadeth us. We mopango hold little regard for hierarchy, and our shared decisions are made through discussion, quiet consideration, and consensus.
+
+        Shouldst be otherwise?
+      </text>
+      <choice GotoID="AgyraAssent">I suppose not.</choice>
+      <choice GotoID="AgyraWelcome">It's a cozy home you have here.</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="AgyraMopango">Tell me about your people.</choice>
+      <choice GotoID="End">Live and drink, Agyra.</choice>
+    </node>
+
+    <node ID="AgyraAssent">
+      <text>
+        {{emote|*Agyra smiles at you, glowing softly.*}}
+      </text>
+      <choice GotoID="AgyraWelcome">It's a cozy home you have here.</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="AgyraMopango">Tell me about your people.</choice>
+      <choice GotoID="End">I should take my leave. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraMopango">
+      <text>
+        We are mopango: witnesses of the past and shepherds of the future. The Sacred Light of the Kasaphescence shineth within us, and we commune with relics of antiquity to maintain our humility and grow our wisdom.
+
+        We believe that one day, with enough knowledge, anyone who seeketh the Light shalt find it within emself. In the meantime, we work to become better and brighter as each one of us findeth a personal credo by which to live.
+      </text>
+      <choice GotoID="AgyraGender">Emself?</choice>
+      <choice GotoID="AgyraCredo">Credo?</choice>
+      <choice GotoID="AgyraDialect">Why do you speak so strangely?</choice>
+      <choice GotoID="AgyraWheels">Why do some of you have wheels?</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraGender">
+      <text>
+        Aye. Ey, em, eir, eirs, emself. Thusly do we call ourselves and one another.
+
+        Sex is personal and mattereth not to a bare acquaintence. Gender is a societal relic in which we see no current utility.
+      </text>
+      <choice GotoID="AgyraQuestions">I see. I have further questions.</choice>
+      <choice GotoID="End">Oh. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraTomb">
+      <text>
+        The Tomb of the Eaters consisteth of twelve strata, or ten, once =ifplayerplural:ye account:thou accounteth= for transitional levels: the Folk Catacombs (in which =ifplayerplural:ye currently stand:thou currently standeth=), the Crematory and Columbarium, the Two Crypts, and the Six Tombs of Qud's Sultans above.
+
+        An =ifplayerplural:ye seek:thou seekest= fortune here, gird =ifplayerplural:thyselves:thyself= for disappointment. The tomb playeth host to objects wondrous and profane alike, but little of what surface-dwellers considereth treasure.
+      </text>
+      <choice GotoID="WondrousAndProfane" IfNotHaveQuest="Fraying Favorites">'Wondrous and profane?' Now I'm curious.</choice>
+      <choice GotoID="AgyraQuestions">I see. I have further questions.</choice>
+      <choice GotoID="End">I thank you. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraCredo">
+      <text>
+        Aye. One's own credo shouldst inspire reflection and thought, with no clear-cut meaning but meaning nonetheless. Some of our coterie yet seeketh theirs, but an experienced watcher no doubt hath one. Any mopango who hath a credo wilt share it with =ifplayerplural:ye:thee=, an =ifplayerplural:ye request:thou requesteth= it.
+
+        My credo is: "Malice alone staineth the sanctity of questioning."
+      </text>
+      <choice GotoID="AgyraTaboo">What does that mean?</choice>
+      <choice GotoID="AgyraQuestions">I have further questions.</choice>
+      <choice GotoID="End">I will ponder this. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraTaboo">
+      <text>
+        I cannot simply explain my credo to =ifplayerplural:ye:thee=. A credo informeth and confoundeth at once, and must be reflected upon by the listener.
+
+        =ifplayerplural:Ye are:Thou art= inexperienced in our ways, so please bear my words in the kind spirit they are meant: to ask a mopango to explain eir credo is to commit one of our few taboo acts. Be advised.
+      </text>
+      <choice GotoID="AgyraQuestions">Hmm. I have further questions.</choice>
+      <choice GotoID="End">Thank you. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraDialect">
+      <text>
+        Why do we speak strangely? Why =ifplayerplural:do ye:dost thou= speak strangely?
+
+        Is not all speech strange?
+      </text>
+      <choice GotoID="AgyraQuestions">Hmm. I have further questions.</choice>
+      <choice GotoID="End">I see. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraWheels">
+      <text>
+        Maladies of the bone are not uncommon in our people. We build devices to assist friends who wouldst otherwise struggle to walk.
+      </text>
+      <choice GotoID="AgyraQuestions">Ah. I have further questions.</choice>
+      <choice GotoID="End">I see. Live and drink.</choice>
+    </node>
+
+    <node ID="AgyraQuestions">
+      <text>
+        Answering =ifplayerplural:your:thy= questions giveth me satisfaction. Asketh an =ifplayerplural:ye will:thou wilt=.
+      </text>
+      <choice GotoID="AgyraGreet">May I have your name?</choice>
+      <choice GotoID="AgyraLeader">Are you in charge here?</choice>
+      <choice GotoID="AgyraWelcome">Isn't this settlement a bit cramped?</choice>
+      <choice GotoID="AgyraTomb">What do you know about the Tomb?</choice>
+      <choice GotoID="AgyraMopango">May I know more about the mopango?</choice>
+      <choice GotoID="End">Never mind. Live and drink.</choice>
+    </node>
+
+    <node ID="WondrousAndProfane">
+      <text>
+        I admire =ifplayerplural:your:thy= curiosity and hope =ifplayerplural:your:thy= prudence informeth it.
+
+        I have an example at hand. Mere days ago, one of our coterie named Lebah happened upon a repulsive device. Ey was so shaken after attempting communion with the object that ey hath spent less time away from eir nook than ever.
+      </text>
+      <choice GotoID="AskLebah">Where may I find Lebah? I wish to know more.</choice>
+      <choice GotoID="AgyraQuestions">I see. May I ask about something else?</choice>
+    </node>
+
+    <node ID="AskLebah">
+      <text>
+        Our little sanctuary here hath a fissure in its inner walls. Find that gap and =ifplayerplural:ye will:thou wilt= find Lebah.
+
+        Please be gentle. Ey hath ever been the most insightful reader among us, but beareth the weight of an anxious mind.
+      </text>
+      <choice GotoID="End" StartQuest="Fraying Favorites">I will. Live and drink.</choice>
+    </node>
+  </conversation>
+
+  

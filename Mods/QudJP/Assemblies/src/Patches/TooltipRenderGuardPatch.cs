@@ -23,7 +23,8 @@ namespace QudJP.Patches
                 return;
             }
 
-            // Build a quick lookup for parameterized values by field name to restore empties
+            // Build a quick lookup for parameterized values by field name to restore empties.
+            // Add a few aliases for styles that rename fields (e.g., ConText -> SubHeader).
             var paramMap = new System.Collections.Generic.Dictionary<string, string>(System.StringComparer.OrdinalIgnoreCase);
             if (trigger?.parameterizedTextFields != null)
             {
@@ -31,7 +32,30 @@ namespace QudJP.Patches
                 {
                     if (f != null && !string.IsNullOrEmpty(f.name))
                     {
-                        paramMap[f.name] = f.value ?? string.Empty;
+                        var key = f.name;
+                        var val = f.value ?? string.Empty;
+                        paramMap[key] = val;
+
+                        // Known aliases seen across tooltip styles
+                        if (string.Equals(key, "ConText", System.StringComparison.OrdinalIgnoreCase))
+                        {
+                            paramMap["SubHeader"] = val;
+                        }
+                        else if (string.Equals(key, "ConText2", System.StringComparison.OrdinalIgnoreCase))
+                        {
+                            paramMap["SubHeader2"] = val;
+                        }
+                        // Handle styles that drop numeric suffix on object names
+                        if (key.EndsWith("2", System.StringComparison.Ordinal))
+                        {
+                            var without = key.Substring(0, key.Length - 1);
+                            if (!paramMap.ContainsKey(without)) paramMap[without] = val;
+                        }
+                        else
+                        {
+                            var with2 = key + "2";
+                            if (!paramMap.ContainsKey(with2)) paramMap[with2] = val;
+                        }
                     }
                 }
             }
@@ -40,6 +64,7 @@ namespace QudJP.Patches
             {
                 var t = field?.Text;
                 if (t == null) continue;
+                FontManager.Instance.ApplyToText(t);
                 t.extraPadding = true;
                 t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
                 t.overflowMode = TextOverflowModes.Overflow;
@@ -89,6 +114,7 @@ namespace QudJP.Patches
             foreach (var t in tmpAll)
             {
                 if (t == null) continue;
+                FontManager.Instance.ApplyToText(t);
                 t.extraPadding = true;
                 t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
                 t.overflowMode = TextOverflowModes.Overflow;
@@ -96,19 +122,82 @@ namespace QudJP.Patches
 
                 var current = t.text;
                 var name = t.gameObject != null ? t.gameObject.name : string.Empty;
+                var rt = t.rectTransform; var rect = rt != null ? rt.rect : new UnityEngine.Rect();
+                if (!string.IsNullOrEmpty(current) && (rect.width < 1f || rect.height < 1f))
+                {
+                    UnityEngine.Debug.Log($"[QudJP][Diag] Tooltip tiny rect style='{(trigger?.tooltipStyle!=null?trigger.tooltipStyle.name:"<null>")}' obj='{name}' len={current.Length} rect={rect.width:F1}x{rect.height:F1} colorA={t.color.a:F2}");
+                }
 
-                // If SubHeader is blank, hide it to prevent a large empty row.
-                if (string.IsNullOrWhiteSpace(current) && string.Equals(name, "SubHeader", System.StringComparison.Ordinal))
+                // Secondary restore: in some styles the active TMP under the tooltip is not in Tooltip.TMPFields.
+                if (string.IsNullOrWhiteSpace(current) && !string.IsNullOrEmpty(name))
+                {
+                    // candidate keys to probe in order
+                    foreach (var key in TooltipGuardHelper.CandidatesFromName(name))
+                    {
+                        if (paramMap.TryGetValue(key, out var val) && !string.IsNullOrEmpty(val))
+                        {
+                            t.text = Translator.Instance.Apply(val, "ModelShark.Tooltip." + (trigger?.tooltipStyle!=null?trigger.tooltipStyle.name:"<null>") + "." + name);
+                            current = t.text;
+                            UnityEngine.Debug.Log($"[QudJP] Tooltip heuristic fill obj='{name}' <- '{key}'");
+                            break;
+                        }
+                    }
+                }
+
+                // If SubHeader/ConText is blank, hide it to prevent a large empty row.
+                if (string.IsNullOrWhiteSpace(current) &&
+                    (string.Equals(name, "SubHeader", System.StringComparison.Ordinal) ||
+                     string.Equals(name, "ConText", System.StringComparison.Ordinal)))
                 {
                     t.gameObject.SetActive(false);
                     continue;
                 }
 
-                if (string.IsNullOrEmpty(current) || current.Contains(delimiter)) continue;
-                var translated = Translator.Instance.Apply(current, t.GetType().FullName);
-                if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, current))
+                if (!string.IsNullOrEmpty(current) && !current.Contains(delimiter))
                 {
-                    t.text = translated;
+                    // Try contextual translation with style+object name, then fallback to type, both with trim-aware compare
+                    string style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
+                    string objName = t.gameObject != null ? t.gameObject.name : string.Empty;
+
+                    string leading = string.Empty, trailing = string.Empty;
+                    string toTranslate = current;
+                    int l = 0, r = current.Length - 1;
+                    while (l <= r && char.IsWhiteSpace(current[l])) l++;
+                    while (r >= l && char.IsWhiteSpace(current[r])) r--;
+                    if (l > 0) leading = current.Substring(0, l);
+                    if (r < current.Length - 1) trailing = current.Substring(r + 1);
+                    if (l > 0 || r < current.Length - 1)
+                    {
+                        toTranslate = current.Substring(l, r - l + 1);
+                    }
+
+                    var translated = Translator.Instance.Apply(toTranslate, "ModelShark.Tooltip." + style + "." + objName);
+                    if (string.Equals(translated, toTranslate))
+                    {
+                        translated = Translator.Instance.Apply(toTranslate, t.GetType().FullName);
+                    }
+
+                    if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, toTranslate))
+                    {
+                        t.text = leading + translated + trailing;
+                        current = t.text;
+                        UnityEngine.Debug.Log($"[QudJP] Tooltip static translated style='{style}' obj='{objName}' -> '{translated}'");
+                    }
+
+                    // Strip stray debug markers like <AD1>, <CD24>
+                    current = System.Text.RegularExpressions.Regex.Replace(current, "\\s*<[A-Z]{1,3}\\d{1,3}>", string.Empty);
+
+                    // Apply line-wise tooltip localization patterns for remaining English fragments
+                    var normalized = QudJP.Localization.TooltipTextLocalizer.ApplyLongDescription(current);
+                    if (!string.Equals(normalized, current, System.StringComparison.Ordinal))
+                    {
+                        t.text = normalized;
+                        current = normalized;
+                    }
+                }
+                else
+                {
+                    continue;
                 }
             }
 
@@ -118,12 +207,85 @@ namespace QudJP.Patches
                 if (t == null) continue;
                 FontManager.Instance.ApplyToLegacyText(t);
                 var current = t.text;
-                if (string.IsNullOrEmpty(current) || current.Contains(delimiter)) continue;
-                var translated = Translator.Instance.Apply(current, t.GetType().FullName);
-                if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, current))
+                if (!string.IsNullOrEmpty(current) && !current.Contains(delimiter))
                 {
-                    t.text = translated;
+                    string style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
+                    string objName = t.gameObject != null ? t.gameObject.name : string.Empty;
+
+                    string leading = string.Empty, trailing = string.Empty;
+                    string toTranslate = current;
+                    int l = 0, r = current.Length - 1;
+                    while (l <= r && char.IsWhiteSpace(current[l])) l++;
+                    while (r >= l && char.IsWhiteSpace(current[r])) r--;
+                    if (l > 0) leading = current.Substring(0, l);
+                    if (r < current.Length - 1) trailing = current.Substring(r + 1);
+                    if (l > 0 || r < current.Length - 1)
+                    {
+                        toTranslate = current.Substring(l, r - l + 1);
+                    }
+
+                    var translated = Translator.Instance.Apply(toTranslate, "ModelShark.Tooltip." + style + "." + objName);
+                    if (string.Equals(translated, toTranslate))
+                    {
+                        translated = Translator.Instance.Apply(toTranslate, t.GetType().FullName);
+                    }
+
+                    if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, toTranslate))
+                    {
+                        t.text = leading + translated + trailing;
+                        current = t.text;
+                    }
+
+                    current = System.Text.RegularExpressions.Regex.Replace(current, "\\s*<[A-Z]{1,3}\\d{1,3}>", string.Empty);
+
+                    var normalized = QudJP.Localization.TooltipTextLocalizer.ApplyLongDescription(current);
+                    if (!string.Equals(normalized, current, System.StringComparison.Ordinal))
+                    {
+                        t.text = normalized;
+                    }
                 }
+            }
+        }
+    }
+}
+
+namespace QudJP.Patches
+{
+    internal static class TooltipGuardHelper
+    {
+        internal static System.Collections.Generic.IEnumerable<string> CandidatesFromName(string name)
+        {
+            // 1) exact
+            yield return name;
+
+            // 2) simple numeric alias
+            if (name.EndsWith("2", System.StringComparison.Ordinal))
+            {
+                yield return name.Substring(0, name.Length - 1);
+            }
+            else
+            {
+                yield return name + "2";
+            }
+
+            // 3) known alias: SubHeader <-> ConText
+            if (string.Equals(name, "SubHeader", System.StringComparison.OrdinalIgnoreCase))
+                yield return "ConText";
+            if (string.Equals(name, "SubHeader2", System.StringComparison.OrdinalIgnoreCase))
+                yield return "ConText2";
+
+            // 4) normalize variants like LongDescriptionLeft/Right/NameR/DescL -> DisplayName/LongDescription (+2 for right)
+            var lower = name.ToLowerInvariant();
+            bool isRight = lower.Contains("right") || lower.EndsWith("r") || lower.EndsWith("2");
+            string baseField = null;
+            if (lower.Contains("display") || lower.Contains("name") || lower.Contains("title")) baseField = "DisplayName";
+            else if (lower.Contains("desc") || lower.Contains("descr")) baseField = "LongDescription";
+            else if (lower.Contains("wound")) baseField = "WoundLevel";
+            else if (lower.Contains("context") || lower.Contains("subheader") || lower.Contains("subtitle")) baseField = "ConText";
+
+            if (baseField != null)
+            {
+                yield return baseField + (isRight ? "2" : string.Empty);
             }
         }
     }

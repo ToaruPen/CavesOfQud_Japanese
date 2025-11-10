@@ -1,0 +1,185 @@
+﻿
+  <conversation ID="Lulihart" Inherits="BaseSlynthMayor" Replace="true">
+
+    <node ID="Start" IfHaveActiveQuest="Petals on the Wind">
+      <text>
+        花原では気を付けてね。
+
+        地図にベイ・ラーが記されていても、すぐに迷ってしまう。道に迷った旅人はラーの餌になるんだ。
+      </text>
+      <choice GotoID="End">注意するよ、ありがとう。</choice>
+    </node>
+
+    <node ID="Start" IfNotHaveQuest="Petals on the Wind" IfNotFinishedQuest="Find Eskhind">
+      <text>
+        ちょっと待って、=player.formalAddressTerm=。仕事を探しているの？
+      </text>
+      <choice GotoID="Job seeker">探している。</choice>
+      <choice GotoID="Refuse">いや、用事はない。</choice>
+    </node>
+
+    <node ID="SlynthRequest">
+      <text>
+        どうしてわざわざ私に言うのか不思議だね。私は町長でも市民でもなく、ただの流浪人で、家なき者たちが私の「民」なんだ。
+
+        ……ああ、なるほど。スリンセのために風に囁いてほしいんだろう？
+      </text>
+    </node>
+    <node ID="SlynthRequestAccept">
+      <text>新しく自我を得たばかりなのに、中間もなく追放者になるなんて妙な運命だけど、彼らが望み、君が保証するならそれで十分。スリンセに伝えて。旅を選ぶなら、風が背を押してくれるって。</text>
+      <choice Target="End">
+        <part Name="AddSlynthCandidate" Sanctuary="pariah caravans" Plural="true" />
+        <text>助かったよ、ルリハート。</text>
+      </choice>
+    </node>
+    <node ID="SlynthRequestReject">
+      <text>
+        そんなに簡単じゃないんだよ、=name=。流浪人には階級がなくてね。いくら囁いても、君の名が微風以上を起こせなければ、誰もスリンセの背に風を送らない。パリアたちに顔を売ってから、もう一度おいで。
+      </text>
+    </node>
+    <node ID="SlynthAbout">
+      <text>まだ漂う船のために着陸地点を集めているのかい、=name=?</text>
+      <choice Target="Start">ああ、その通りだ。</choice>
+    </node>
+
+    <node ID="SlynthArrived">
+      <text>
+        新しい声が、奇妙で美しい調子で塩風に乗って届いたよ。
+
+        太陽や刃や渇き、弾丸、光で沈黙させられる者もいるだろうけど、もう独りきりで倒れることはない。
+      </text>
+      <choice GotoID="Start">礼を言うよ、ルリハート。</choice>
+    </node>
+
+    <node ID="SlynthSettled">
+      <text>
+        生きて飲め、=name=。
+
+        君のスリンセを見かけたかい？ 情報では、彼らは概ねうまく他の旅人とやっているそうだ。君みたいに、時々私のテントに寄って一緒に煙草をやるんだ。
+
+        まるで最初からこの暮らしのために生まれてきたみたいだよ。
+      </text>
+      <choice GotoID="Start">改めてありがとう、ルリハート。</choice>
+    </node>
+
+    <start ID="Refuse" Priority="-1">
+      <text>
+        そうか。じゃあここで休んで私と少し話していきなよ。心配ごとはまた明日考える。
+
+        でも、気が変わったら必ず戻ってきてくれよ？
+      </text>
+      <choice GotoID="End">そうするかも。生きて飲め。</choice>
+    </start>
+
+    <node ID="Job seeker">
+      <text>
+        いいね。腰を下ろして、皮を噛みながら話そう。知っていることを教えるよ。
+
+        先祖の故郷、ベイ・ラーが大変なことになっていると聞いた。彼らは生まれて初めて国境を開き、特にケンドレン――つまり君みたいな外の者――を雇いたがっているらしい。様子を見に行ってくれるかい？
+      </text>
+      <choice GotoID="Who">君は誰だ？</choice>
+      <choice GotoID="How">どうしてそんなことを？</choice>
+      <choice GotoID="Why">なぜそこまで気にする？</choice>
+      <choice GotoID="Why Not">自分で行かないのはなぜ？</choice>
+      <choice GotoID="Very Well">わかった。頼みどおりベイ・ラーへ行こう。</choice>
+      <choice GotoID="Refuse">遠慮しよう。好みじゃない。</choice>
+    </node>
+
+    <node ID="Who">
+      <text>
+        私の名はルリハート。ヒンドレンの血が流れているけど、親の三人のうち二人はケンドレンだったから血は薄く、潮風にさらされて育った。
+
+        薄くて塩辛い血さ。ふふ。
+      </text>
+      <choice GotoID="Very Well">わかった。頼みどおりベイ・ラーへ行こう。</choice>
+      <choice GotoID="How">どうしてベイ・ラーのことがわかる？</choice>
+      <choice GotoID="Why">何がそこまで君を動かす？</choice>
+      <choice GotoID="Why Not">自分で行きなよ。</choice>
+      <choice GotoID="Refuse">遠慮する。好みじゃない。</choice>
+    </node>
+
+    <node ID="How">
+      <text>
+        私の水を斥候たちに渡して、遠くからベイ・ラーを見張ってもらっているんだ。まだ無事かどうか確かめるために。
+
+        私自身は故郷の近くに寄ったこともないけれど、隠された村がどこにあるかは正確に知っている。向こうの依頼を聞いてみる、と約束してくれるなら教えるよ。
+      </text>
+      <choice GotoID="Very Well">わかった。頼みどおりベイ・ラーへ行こう。</choice>
+      <choice GotoID="Who">ところで君は誰？</choice>
+      <choice GotoID="Why">なぜそんなに気にする？</choice>
+      <choice GotoID="Why Not">自分で行かないのは？</choice>
+      <choice GotoID="Refuse">遠慮する。</choice>
+    </node>
+
+    <node ID="Why">
+      <text>
+        私みたいに薄い血でも、シカ族の草原には縁がある。ヒンドレンは認めないかもしれないけど、あの人たちは私の家族だよ。
+      </text>
+      <choice GotoID="Very Well">わかった。ベイ・ラーへ行こう。</choice>
+      <choice GotoID="Who">君は誰なんだ？</choice>
+      <choice GotoID="How">どうやって情報を得てる？</choice>
+      <choice GotoID="Why Not">なぜ自分で行かない？</choice>
+      <choice GotoID="Refuse">遠慮する。</choice>
+    </node>
+
+    <node ID="Why Not">
+      <text>
+        私はベイ・ラーに歓迎されないんだ。
+
+        血が純粋じゃないし、草原で生まれたわけでもない。そんな私の名前は、正統なヒンドレンの口にとって塩のように苦い。
+
+        彼らは間違っているけど、間違っているのは家族なんだ。クドが変わっていくのに、彼らは停滞している。それが心配でね。
+      </text>
+      <choice GotoID="Very Well">わかった。ベイ・ラーへ行こう。</choice>
+      <choice GotoID="Who">君は誰だ？</choice>
+      <choice GotoID="How">どうやってそんなことを？</choice>
+      <choice GotoID="Why">なぜそこまで気にする？</choice>
+      <choice GotoID="Refuse">遠慮する。</choice>
+    </node>
+
+    <node ID="Very Well">
+      <text>
+        ありがとう、=player.formalAddressTerm=。少なくとも一人のケンドレンが私の一族を助けてくれるとわかるだけで、肩の荷が下りる。彼らは新しい運命の入口に立っている。生きているうちにその目で見たいんだ。
+
+        ベイ・ラーの場所を教えるから、これをかじっていくといいよ。旅の糧になる。
+      </text>
+      <choice GotoID="End" StartQuest="Petals on the Wind" GiveItem="Yondercane">感謝する、ルリハート。生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+      <text>
+        ベイ・ラーは結局、元のままなんだってね。もう少し変化があると思ってたけど、何千年もの伝統はそう簡単に折れない。
+
+        それでも、あの頑固な家族を助けてくれてありがとう。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+      <text>
+        ベイ・ラー史上最年少のヒンドリアークが誕生して、監視官はクェッツァル会議に参加したいとか。君は本当に奇跡を起こしたよ、ケンドレン。
+
+        この先どうなるか、今から楽しみだ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+      <text>
+        いつか炎は消えるものだけど、民の物語の温もりはまだ私を進ませてくれる。
+
+        ベイ・ラーはクドとの交わりに耐えられなかったけど、ヒンドレンは生きている。私たちの遺産が完全に失われることはない。
+
+        キンドリシュはどうなったんだろうね。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        さあ、一緒に煙草をやろう、友よ。腰を下ろして。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+  </conversation>

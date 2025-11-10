@@ -1,0 +1,61 @@
+﻿<conversation ID="Dagasha">
+    <node ID="Start" IfHaveState="ChoseDagasha">
+      <text>
+        Take care, =factionaddress:Mopango=. Let not complacency end =ifplayerplural:ye:thee=, and I shall anticipate further news of =ifplayerplural:your:thy= exploits.
+      </text>
+      <choice GotoID="End">Live and lead, Dagasha.</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        {{emote|*The jagged, serpentine entity stares you down, twitching with feigned half-strikes in your direction as if goading an aggressive response from you. Though it has no mouth, it is not silent: piercing the air is a strange, external tinnitus, the whine of an ancient viewscreen.*}}
+      </text>
+      <choice GotoID="ConfirmRepairDagasha" IfHaveBlueprint="Repulsive Device">I offer you this repulsive device, unique one.</choice>
+      <choice GotoID="End">Live and... do as you please.</choice>
+    </node>
+
+    <node ID="ConfirmRepairDagasha">
+      <text>
+        {{emote|*Dagasha tilts its head, staring you down. It twitches, but makes no move to strike as you approach.*}}
+      </text>
+      <choice GotoID="RepairDagasha" RemoveItem="Repulsive Device" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.ChooseDagasha">Here. Take it.</choice>
+      <choice GotoID="End">I am not yet ready. I may return.</choice>
+    </node>
+
+    <node ID="RepairDagasha">
+      <text>
+        {{emote|*You offer the repulsive device. As it nears the shining, dark surface of Dagasha's serpentine body, a sudden fervor seizes the device, and it twists itself free, latching onto the entity with the hooked teeth of its mouthlike appendage. Dagasha rears back at once, its serpentine body twisting into thorny knots.*}}
+
+        {{emote|*For a time, it is still. Then it uncoils, slowly, and whispers:*}}
+
+        I... am mine. Once again I am mine.
+      </text>
+      <choice GotoID="DagashaResponds">Are you all right?</choice>
+    </node>
+
+    <node ID="DagashaResponds">
+      <text>
+        Though I be a pale shadow of the self I once was, yes. My condition and outlook are both substantially improved.
+
+        I recall few details of my life before. I was influential, one whose words stirred hearts to action. For so long I had no means to speak, trapped in my own moods. =ifplayerplural:Ye have:Thou hast= freed me from a dire fate.
+      </text>
+      <choice GotoID="DagashaFuture">What will you do now?</choice>
+    </node>
+
+    <node ID="DagashaFuture">
+      <text>
+        I know not. Perhaps I can lead again. These creatures that looked after me, named me, kept me safe. The mopango.
+
+        They are kind, but weak. Perhaps I can teach them. Spur them to be greater.
+
+        But for =ifplayerplural:ye:thee=, I must even our score. Take this piece of my chassis. Wear it with confidence. Command in my name.
+      </text>
+      <choice GotoID="End" GiveItem="Dagasha's Spur" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">
+        Live and remain free, Dagasha.
+      </choice>
+      <choice GotoID="End" GiveItem="Dagasha's Spur" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">Live and remain free, Dagasha.</choice>
+    </node>
+
+  </conversation>
+
+  

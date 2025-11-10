@@ -1,0 +1,8 @@
+﻿  <conversation ID="PsychicThrall" Replace="true">
+    <node ID="Start">
+      <text>
+        {{emote|*虚ろな目で見つめている。*}}
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

@@ -1,0 +1,64 @@
+﻿
+  <conversation ID="Isahind" Replace="true">
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+      <text>
+        今は話したくないんだ。ごめんね。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageDoomed">
+      <text>
+        ベイ・ラーには、なんとも険しい時代が訪れたね。
+
+        でも、いつものように乗り越えられると信じてる。取引するかい？
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageProspers">
+      <text>
+        我が友よ！ 村を助けてくれて本当にありがとう！
+
+        おかげで商売も潤ったよ。よかったら新しい品を見ていって。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+      <text>
+        新しいヒンドリアークが立っただけじゃなく、民主制になるかもしれないって！ わくわくするね。
+
+        ベイ・ラー史に新しい章が刻まれるよ、ケンドレン。取引はどうだい？
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+      <text>
+        すごいね！ たとえ一時的だとしても、ベイ・ラー史上最年少のヒンドリアークだよ。
+
+        記念にお土産でもどう？
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+
+    <node ID="Start">
+      <text>
+        おや！ 実物のケンドレンがうちの村に！ 生きて飲め、愛らしい友よ！
+
+        もしよかったら、ささやかな地元の品を買っていかないかい？
+      </text>
+      <choice IfHaveBlueprint="Sonnet" GotoID="ShowSonnet">この詩はあなたのもの？</choice>
+      <choice GotoID="End">必要な物は足りてる。生きて飲め。</choice>
+    </node>
+
+    <node ID="ShowSonnet">
+      <text>
+        いいや、私のじゃない。でも素敵な詩だね！
+      </text>
+      <choice GotoID="End">そうか。生きて飲め。</choice>
+    </node>
+
+  </conversation>

@@ -1,0 +1,18 @@
+<conversation ID="GyreWightBethsaida">
+		<node ID="Start">
+			<text>
+				O! O! A new life obtains? You musn't shudder at old Death!~
+				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
+				A plague is what burns the core out and lets the berries grow.~
+				O Nephilim! Come for our star bath??~
+				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
+				O Life, O Change! Embrace us, entangle us...~
+				Do you wish for a gleaming bath, and fractal veins that pump the continuity of life?~
+				You've a twin across the boundary of the future, where new life blooms in rot. Are you with them?~
+				Would you kill your double? Would you let it kill you?~
+				It is to witness the scalpel parting tissue. The beauty of division and resection.
+			</text>
+			<choice GotoID="End">Live and drink.</choice>
+		</node>
+	</conversation>
+	

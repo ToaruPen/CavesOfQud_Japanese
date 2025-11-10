@@ -1,0 +1,16 @@
+﻿  <conversation ID="BananaRancher" Replace="true">
+    <node ID="Start">
+      <text>
+        食べて栄えて、=player.formalAddressTerm=.~
+        命は甘いだろう？ もっと甘くできるかな？~
+        私の収穫のように甘い日々でありますように、=player.formalAddressTerm=.~
+        一緒に歌って働かない、=player.formalAddressTerm=?~
+        へい、オーウェイ、スピンドルの頂から地べたまで、道は遠いよ……~
+        へい、オーウェイ、バナナの木、房を数えろ、いーち、にーい、さーん……~
+        へい、オーウェイ、こうして一日過ごすのさ、古代の遺跡の中で働きながら……~
+        へい、オーウェイ、野生で自由に、生きよう。ダッカも素早いアディイも怖がるな……~
+        毎日バナナを食べれば頭が冴える、でも食べすぎるとお腹を壊すよ！
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

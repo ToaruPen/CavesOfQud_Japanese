@@ -1,0 +1,18 @@
+﻿  <conversation ID="MopangoStranger" Replace="true">
+    <node ID="Start">
+      <text>
+        あ。ん？~
+        =ifplayerplural:君たちは:君は=準備ができている。~
+        =ifplayerplural:君たちは:君は=そうするだろう。~
+        安らぎを、=player.formalAddressTerm=.~
+        彼女の光によって。~
+        彼女の光が君を照らすように。~
+        =ifplayerplural:何か用が？:何か用があるか？=~
+        彼女の前では謙虚に歩もう。~
+        =ifplayerplural:やってくれるか:やってくれるかい=、=player.formalAddressTerm=?~
+        彼女の光が=ifplayerplural:君たちの:君の=歩みを導きますように、=player.formalAddressTerm=.~
+        彼女の光のもとで生きて飲め。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

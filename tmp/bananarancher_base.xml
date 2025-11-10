@@ -1,0 +1,20 @@
+﻿<conversation ID="BananaRancher">
+    <node ID="Start">
+      <text>
+        Eat and thrive, =player.formalAddressTerm=.~
+        Is life not sweet? Could it be sweeter?~
+        May our lives be as sweet as my harvest, =player.formalAddressTerm=.~
+        Will you sing and work with me, =player.formalAddressTerm=?~
+        Hey, oh-way, it's a long way down, from the reaches of the Spindle to the humble ground...~
+        Hey, oh-way, banana tree, count the bunches, one-two-three...~
+        Hey, oh-way, how I spend my days, working in the ruins of the ancient place...~
+        Hey, oh-way, live wild and free, fear not the dacca or the quick adiyys...~
+        Eat bananas every day to keep your mind quick, but don't eat too many or you might get sick!
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  
+
+  

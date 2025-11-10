@@ -1,0 +1,15 @@
+﻿  <conversation ID="HindrenPariah" Replace="true">
+    <node ID="Start">
+      <text>
+        生きて飲め。~
+        生きて飲め、旅人よ。~
+        生きて飲め、ケンドレン。~
+        時間ならたっぷりあるさ。旅は君を待ってくれる。~
+        ベイ・ラーがどこか聞かないで。教えられないんだ。~
+        ベイ・ラーに帰る夢を見ることもあるけれど、それが私の運命じゃないとわかっている。~
+        月と太陽を、旅人よ。~
+        月と太陽、叡智と意志を。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>

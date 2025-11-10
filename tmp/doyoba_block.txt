@@ -1,0 +1,113 @@
+﻿  <conversation ID="Doyoba" Replace="true">
+
+    <node ID="Start" IfHaveState="ChoseNacham">
+      <text>
+        とても胸が高鳴っている。
+
+        ナハムを解き放ってくれて感謝する、=factionaddress:Mopango=。ここにあの子がいることは、互いに大きな実りをもたらすだろう。
+      </text>
+      <choice GotoID="End">どういたしまして。生きて飲め。</choice>
+    </node>
+
+    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+      <text>
+        =factionaddress:Mopango|capitalize=、=ifplayerplural:君たちが:君が=子どものひとりを解放したと聞いた！ すぐにでも話してみたいが、今はナハムを観察して、この出来事が影響していないか確かめねばならない。=ifplayerplural:君たちも:君も=ここで見ていっていいぞ。
+      </text>
+      <choice GotoID="End">生きて飲め、ドヨバ。</choice>
+    </node>
+
+
+    <node ID="Start">
+      <text>
+        ようこそ、=factionaddress:Mopango=。生きて飲め。=ifplayerplural:休む場所が必要か:休む場所が必要かい=? 食事は？ =ifplayerplural:取引でも:取引でも=するか？
+      </text>
+      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">この反発装置の使い道を探している。</choice>
+      <choice ID="Who" GotoID="WhoAreYou">私は=name=。君は？</choice>
+      <choice ID="Why" GotoID="WhyAreYouHere">なぜここに？</choice>
+      <choice ID="Credo" GotoID="YourCredo">信条はある？</choice>
+      <choice GotoID="End">生きて飲め、見張りよ。</choice>
+    </node>
+
+    <node ID="WhoAreYou">
+      <text>
+        私はドヨバ。墳墓の子らを見守る者だ。特にひとりの子をな。もっとも「子ども」とは人が作った呼び名にすぎない。彼らのほうが私たちより遥かに古いのだから。子らというのは、つまりそういう存在だ。
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">生きて飲め、見張りよ。</choice>
+    </node>
+
+    <node ID="WhyAreYouHere">
+      <text>
+        私たちモパンゴは過去を見守っている。ひとりひとりが異なる側面を担う。私の任はナハム。見てはいても理解できず、語ってはいても意味を為さない存在だ。情報がナハムを通り抜けるとき、水が篩を通るように混ざり合い、誰にも解けなくなる。
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">生きて飲め、見張りよ。</choice>
+    </node>
+
+    <node ID="YourCredo">
+      <text>
+        ああ、ある。
+
+        「停滞した水には苦痛が芽吹く」。
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="Meaning">どういう意味だ？</choice>
+      <choice GotoID="End">生きて飲め、見張りよ。</choice>
+    </node>
+
+    <node ID="Meaning">
+      <text>
+        ……？
+
+        =ifplayerplural:君たちは:君は=私の信条の意味まで尋ねるのか。では=ifplayerplural:君たちの:君の=食事も噛んでやろうか？
+      </text>
+      <choice GotoID="Apologize">無礼を働いた。すまない。</choice>
+      <choice GotoID="End">もう行く。</choice>
+    </node>
+
+    <node ID="Apologize">
+      <text>
+        いや、いや。=ifplayerplural:君たちは:君は=私たちの習わしを知らないのだし、少し言いすぎた。謝るよ。怒ってなどいない。
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">生きて飲め、見張りよ。</choice>
+    </node>
+
+    <node ID="Device">
+      <text>
+        彼女の光にかけて、なんておぞましい。触っても？
+      </text>
+      <choice GotoID="Commune">いいだろう。</choice>
+      <choice GotoID="Deny">だめだ。</choice>
+    </node>
+
+    <node ID="Deny">
+      <text>
+        そうか。
+
+        なら=ifplayerplural:君たちに:君に=伝えられる洞察はないな。
+      </text>
+      <choice UseID="Who" />
+      <choice UseID="Why" />
+      <choice UseID="Credo" />
+      <choice GotoID="End">生きて飲め、見張りよ。</choice>
+    </node>
+
+    <node ID="Commune">
+      <text>
+        {{emote|*ドヨバは装置と交感すると顔をしかめ、最後にはそれを押し返してくる。*}}
+
+        彼女の光よ、なんと不快な。うねり、捻じれ、ナハムの過去を映す閃きの断片へと私を導いた。しかし意味のあるものはほとんど拾えない。かつて創り、革新した存在――その欠片が装置の作用でもとに戻る日は来るのか。虚を追い払えば、自分の一部を失うことになるのか？
+      </text>
+      <choice GotoID="End">いずれわかるだろう。生きて飲め。</choice>
+    </node>
+
+  </conversation>
