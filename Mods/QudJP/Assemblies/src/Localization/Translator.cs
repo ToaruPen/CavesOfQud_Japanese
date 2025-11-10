@@ -93,6 +93,16 @@ namespace QudJP.Localization
                 return translated;
             }
 
+            var delimiter = DetectDelimiter(original);
+            if (!string.IsNullOrEmpty(delimiter))
+            {
+                var segmented = TranslateSegments(original, delimiter!, contextId, snapshot);
+                if (segmented != null)
+                {
+                    return segmented;
+                }
+            }
+
             var fallback = TryTranslateLabelFallback(original, contextId, snapshot);
             return fallback ?? original;
         }
@@ -337,6 +347,51 @@ namespace QudJP.Localization
             }
 
             return value.Replace("\r\n", "\n").Replace("\r", "\n");
+        }
+
+        private static string? DetectDelimiter(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return null;
+            }
+
+            if (value.IndexOf('%') >= 0)
+            {
+                return "%";
+            }
+
+            return null;
+        }
+
+        private static string? TranslateSegments(string original, string delimiter, string? contextId, TranslationSnapshot snapshot)
+        {
+            var parts = original.Split(new[] { delimiter }, StringSplitOptions.None);
+            var changed = false;
+            for (int i = 0; i < parts.Length; i++)
+            {
+                var normalized = NormalizeKey(parts[i]);
+                if (TryTranslate(normalized, contextId, snapshot, out var translated))
+                {
+                    parts[i] = translated;
+                    changed = true;
+                    continue;
+                }
+
+                var trimmed = normalized.Trim();
+                if (trimmed.Length > 0 && TryTranslate(trimmed, contextId, snapshot, out translated))
+                {
+                    parts[i] = translated;
+                    changed = true;
+                }
+            }
+
+            if (!changed)
+            {
+                return null;
+            }
+
+            return string.Join(delimiter, parts);
         }
 
         [DataContract]

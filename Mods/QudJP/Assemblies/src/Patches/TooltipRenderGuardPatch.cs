@@ -1,6 +1,7 @@
 using HarmonyLib;
 using ModelShark;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 using QudJP.Localization;
 
@@ -18,7 +19,7 @@ namespace QudJP.Patches
         private static void AfterSetTextAndSize(TooltipTrigger trigger)
         {
             var tooltip = trigger?.Tooltip;
-            if (tooltip?.TMPFields == null)
+            if (tooltip == null)
             {
                 return;
             }
@@ -60,26 +61,32 @@ namespace QudJP.Patches
                 }
             }
 
-            foreach (var field in tooltip.TMPFields)
+            var processedTmps = new System.Collections.Generic.HashSet<TMP_Text>();
+            if (tooltip.TMPFields != null)
             {
-                var t = field?.Text;
-                if (t == null) continue;
-                FontManager.Instance.ApplyToText(t);
-                t.extraPadding = true;
-                t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
-                t.overflowMode = TextOverflowModes.Overflow;
-                var c = t.color; c.a = 1f; t.color = c;
-
-                // Final guard: if text is empty, try to restore from parameterized value
-                if (string.IsNullOrWhiteSpace(t.text))
+                foreach (var field in tooltip.TMPFields)
                 {
-                    var name = t.gameObject != null ? t.gameObject.name : null;
-                    if (!string.IsNullOrEmpty(name) && paramMap.TryGetValue(name, out var value) && !string.IsNullOrEmpty(value))
+                    var t = field?.Text;
+                    if (t == null) continue;
+                    processedTmps.Add(t);
+                    FontManager.Instance.ApplyToText(t);
+                    t.extraPadding = true;
+                    t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
+                    t.overflowMode = TextOverflowModes.Overflow;
+                    var c = t.color; c.a = 1f; t.color = c;
+                    EnsureRectSize(t);
+
+                    // Final guard: if text is empty, try to restore from parameterized value
+                    if (string.IsNullOrWhiteSpace(t.text))
                     {
-                        var style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
-                        var translated = Translator.Instance.Apply(value, "ModelShark.Tooltip." + style + "." + name);
-                        t.text = translated;
-                        UnityEngine.Debug.Log($"[QudJP] Tooltip fill {style} obj='{name}' restored from params");
+                        var name = t.gameObject != null ? t.gameObject.name : null;
+                        if (!string.IsNullOrEmpty(name) && paramMap.TryGetValue(name, out var value) && !string.IsNullOrEmpty(value))
+                        {
+                            var style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
+                            var translated = Translator.Instance.Apply(value, "ModelShark.Tooltip." + style + "." + name);
+                            t.text = translated;
+                            UnityEngine.Debug.Log($"[QudJP] Tooltip fill {style} obj='{name}' restored from params");
+                        }
                     }
                 }
             }
@@ -110,22 +117,25 @@ namespace QudJP.Patches
             // that are not parameterized (do not contain the delimiter, usually "%").
             var delimiter = Tooltip.Delimiter ?? TooltipManager.Instance?.textFieldDelimiter ?? "%";
 
-            var tmpAll = tooltip.GameObject.GetComponentsInChildren<TextMeshProUGUI>(includeInactive: true);
+            var tmpAll = tooltip.GameObject.GetComponentsInChildren<TMP_Text>(includeInactive: true);
             foreach (var t in tmpAll)
             {
-                if (t == null) continue;
+                if (t == null || processedTmps.Contains(t)) continue;
                 FontManager.Instance.ApplyToText(t);
                 t.extraPadding = true;
                 t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
                 t.overflowMode = TextOverflowModes.Overflow;
                 var c = t.color; c.a = 1f; t.color = c;
+                EnsureRectSize(t);
 
                 var current = t.text;
                 var name = t.gameObject != null ? t.gameObject.name : string.Empty;
                 var rt = t.rectTransform; var rect = rt != null ? rt.rect : new UnityEngine.Rect();
-                if (!string.IsNullOrEmpty(current) && (rect.width < 1f || rect.height < 1f))
+                if (!string.IsNullOrEmpty(current) && rt != null && (rect.width < 1f || rect.height < 1f))
                 {
-                    UnityEngine.Debug.Log($"[QudJP][Diag] Tooltip tiny rect style='{(trigger?.tooltipStyle!=null?trigger.tooltipStyle.name:"<null>")}' obj='{name}' len={current.Length} rect={rect.width:F1}x{rect.height:F1} colorA={t.color.a:F2}");
+                    EnsureRectSize(t);
+                    var newRect = rt.rect;
+                    UnityEngine.Debug.Log($"[QudJP][Diag] Tooltip tiny rect style='{(trigger?.tooltipStyle!=null?trigger.tooltipStyle.name:"<null>")}' obj='{name}' len={current.Length} rect={rect.width:F1}x{rect.height:F1} -> {newRect.width:F1}x{newRect.height:F1}");
                 }
 
                 // Secondary restore: in some styles the active TMP under the tooltip is not in Tooltip.TMPFields.
@@ -153,7 +163,7 @@ namespace QudJP.Patches
                     continue;
                 }
 
-                if (!string.IsNullOrEmpty(current) && !current.Contains(delimiter))
+                if (!string.IsNullOrEmpty(current))
                 {
                     // Try contextual translation with style+object name, then fallback to type, both with trim-aware compare
                     string style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
@@ -171,11 +181,18 @@ namespace QudJP.Patches
                         toTranslate = current.Substring(l, r - l + 1);
                     }
 
-                    var translated = Translator.Instance.Apply(toTranslate, "ModelShark.Tooltip." + style + "." + objName);
-                    if (string.Equals(translated, toTranslate))
-                    {
-                        translated = Translator.Instance.Apply(toTranslate, t.GetType().FullName);
-                    }
+                    var translated = TranslateWithDelimiter(
+                        toTranslate,
+                        delimiter,
+                        segment =>
+                        {
+                            var result = Translator.Instance.Apply(segment, "ModelShark.Tooltip." + style + "." + objName);
+                            if (string.Equals(result, segment, System.StringComparison.Ordinal))
+                            {
+                                result = Translator.Instance.Apply(segment, t.GetType().FullName);
+                            }
+                            return result;
+                        });
 
                     if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, toTranslate))
                     {
@@ -207,7 +224,7 @@ namespace QudJP.Patches
                 if (t == null) continue;
                 FontManager.Instance.ApplyToLegacyText(t);
                 var current = t.text;
-                if (!string.IsNullOrEmpty(current) && !current.Contains(delimiter))
+                if (!string.IsNullOrEmpty(current))
                 {
                     string style = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
                     string objName = t.gameObject != null ? t.gameObject.name : string.Empty;
@@ -224,11 +241,18 @@ namespace QudJP.Patches
                         toTranslate = current.Substring(l, r - l + 1);
                     }
 
-                    var translated = Translator.Instance.Apply(toTranslate, "ModelShark.Tooltip." + style + "." + objName);
-                    if (string.Equals(translated, toTranslate))
-                    {
-                        translated = Translator.Instance.Apply(toTranslate, t.GetType().FullName);
-                    }
+                    var translated = TranslateWithDelimiter(
+                        toTranslate,
+                        delimiter,
+                        segment =>
+                        {
+                            var result = Translator.Instance.Apply(segment, "ModelShark.Tooltip." + style + "." + objName);
+                            if (string.Equals(result, segment, System.StringComparison.Ordinal))
+                            {
+                                result = Translator.Instance.Apply(segment, t.GetType().FullName);
+                            }
+                            return result;
+                        });
 
                     if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, toTranslate))
                     {
@@ -245,6 +269,55 @@ namespace QudJP.Patches
                     }
                 }
             }
+        }
+
+        private static void EnsureRectSize(TMP_Text t)
+        {
+            if (t == null)
+            {
+                return;
+            }
+
+            var rt = t.rectTransform;
+            if (rt == null)
+            {
+                return;
+            }
+
+            var rect = rt.rect;
+            if (rect.width >= 1f && rect.height >= 1f)
+            {
+                return;
+            }
+
+            var preferred = t.GetPreferredValues(Mathf.Max(8f, rect.width), Mathf.Max(8f, rect.height));
+            var width = Mathf.Max(preferred.x, 64f);
+            var height = Mathf.Max(preferred.y, 16f);
+            rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
+            rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+            LayoutRebuilder.MarkLayoutForRebuild(rt);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
+        }
+
+        private static string TranslateWithDelimiter(string value, string delimiter, System.Func<string, string> translator)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return value;
+            }
+
+            if (string.IsNullOrEmpty(delimiter) || value.IndexOf(delimiter, System.StringComparison.Ordinal) < 0)
+            {
+                return translator(value);
+            }
+
+            var parts = value.Split(new[] { delimiter }, System.StringSplitOptions.None);
+            for (int i = 0; i < parts.Length; i++)
+            {
+                parts[i] = translator(parts[i]);
+            }
+
+            return string.Join(delimiter, parts);
         }
     }
 }

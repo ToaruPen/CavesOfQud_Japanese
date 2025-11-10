@@ -1034,7 +1034,7 @@
     <part Name="ConfuseOnEat" Strength="1d8" Duration="5d3" Level="1" BuildupTimeout="15" />
     <part Name="GeometricHealOnEat" Amount="12-14" Ratio="-50" Duration="3" />
     <part Name="Description" Short="木目の狭間に地衣が貼りつき、香辛料の匂いと共に微かな光沢を放つ。" />
-    <part Name="RulesDescription" Text="Heals and confuses when eaten." />
+    <part Name="RulesDescription" Text="食べると回復し、混乱させる。" />
     <xtagGrammar adjunctNoun="portion" massNoun="true" />
     <stag Name="Medical" />
   </object>

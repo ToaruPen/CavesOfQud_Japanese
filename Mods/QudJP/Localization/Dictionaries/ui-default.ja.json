@@ -21,6 +21,7 @@
     { "key": "Penetration", "text": "貫通力" },
     { "key": "Hit Bonus", "text": "命中ボーナス" },
     { "key": "Continue", "text": "続ける" },
+    { "key": "Are you sure you want to quit?", "text": "本当に終了しますか？" },
     { "key": "Yes", "text": "はい" },
     { "key": "No", "text": "いいえ" },
     { "key": "Cancel", "text": "キャンセル" },

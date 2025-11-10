@@ -1142,6 +1142,238 @@
     </node>
   </conversation>
 
+  <!-- Tau Soft -->
+  <conversation ID="TauSoft" Replace="true">
+    <start ID="Welcome">
+      <text>
+        {{emote|*鈴は静まり、動かない。*}}
+      </text>							
+      <choice GotoID="End" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime" CompleteQuestStep="If, Then, Else~Reunite Tau with Her Chime">
+        <text>[タウの鈴を柔(ソフト)へ触れさせる]</text>
+        <part Name="TakeItem" Blueprints="TauChime" Require="true" Remove="true" />
+      </choice>
+      <choice GotoID="End">……</choice>
+    </start>
+  </conversation>
+
+  <!-- Santalalotze -->
+  <conversation ID="Santalalotze" Replace="true">
+    <start ID="Welcome">
+      <text>
+        わあ、お客……動物だ。
+        
+        死ななかったんだね。おめでとう。
+        
+        ……何か買う？
+      </text>
+      <choice GotoID="Name">私は =name=。君は？</choice>
+      <choice GotoID="Tree">この木の一部なのか？</choice>
+      <choice GotoID="Dangerous">こんな辺鄙で危険な場所でなぜ商売を？</choice>
+      <choice GotoID="Animal">「動物」って呼ぶな。</choice>
+      <choice GotoID="End">生きて飲め。</choice>
+    </start>
+
+    <node ID="Name" Inherits="Welcome">
+      <text>
+        私はサンタラロッツェ。
+      
+        ……コンソーシアム・オブ・ファイタ所属。サン、って呼ぶ人も……夢か、記憶か、そんな感じ。
+      </text>
+      <choice GotoID="Memory" Priority="99">覚えてないのか？</choice>
+    </node>
+
+    <node ID="Tree">
+      <text>
+        いや。えっと……違う、違うと思う。
+      
+        ただ栄養を……共有してるだけ。
+      </text>
+      <choice GotoID="Parasite">じゃあ寄生してる？</choice>
+      <choice GotoID="Uncertain">自信なさそうだ。</choice>
+      <choice GotoID="Questions">話題を変えても？</choice>
+      <choice GotoID="End">わかった。生きて飲め。</choice>
+    </node>
+
+    <node ID="Questions" Inherits="Welcome">
+      <text>
+        変えてくれる？ そうだと助かる。
+      
+        何を……手伝える？
+      </text>
+    </node>
+
+    <node ID="Parasite">
+      <text>
+        「寄生」って響きが悪い。なんというか……経済的共生？
+      
+        チャヴァが私を保ってくれて、でも私は……彼らじゃない。互恵的な取引、そういうの。わかる？
+      </text>
+      <choice GotoID="Uncertain" Priority="99">本当にそう思ってる？</choice>
+      <choice GotoID="Questions">別のことを聞きたい。</choice>
+      <choice GotoID="End">なるほど。生きて飲め。</choice>
+    </node>
+
+    <node ID="Dangerous" Inherits="Welcome">
+      <text>
+        ここは安全だよ。
+      
+        商売は遅いけど……愛着が湧いちゃって。あはは。
+      </text>
+    </node>
+
+    <node ID="Animal" Inherits="Welcome">
+      <text>
+        何か買ってくれたら「お客さん」って呼ぶ。
+      
+        覚えていられたらね。
+      </text>
+      <choice GotoID="Memory" Priority="99">記憶に問題でも？</choice>
+    </node>
+
+    <node ID="Memory">
+      <text>
+        大丈夫。だいじょうぶ……大事なことは忘れない……
+      
+        あ、どれが大事だったっけ？ 忘れたなら心配しても無駄だよね？
+      </text>
+      <choice GotoID="Parasite">チャヴァに寄生してるせいで頭に影響が？</choice>
+      <choice GotoID="Questions">別のことを聞きたい。</choice>
+      <choice GotoID="End">だよね。</choice>
+    </node>
+
+    <node ID="Uncertain" Inherits="Welcome">
+      <text>
+        うん……チャヴァみたいなものは、他にはない。
+
+        昔はね……私の吸器は命の物質だけを運ぶと思ってた。今はわからない。私も二堅(ツーファーム)の一部なのかな？
+      
+        大丈夫。
+    
+        ……話題を変えよう。
+      </text>
+    </node>
+
+  </conversation>
+
+  <!-- Nephilim water ritual hook -->
+  <conversation Name="Nephilim" Inherits="Insects" Replace="true">
+    <node ID="WaterRitual">
+      <choice ID="NephilimPacifyChoice">
+        <text>任を解き、この世界の存在を乱さぬと誓えるか？</text>
+        <part Name="WaterRitualNephilimPacify" />
+      </choice>			
+    </node>
+  </conversation>
+
+  <!-- Gyre wights -->
+  <conversation ID="GyreWightAgolgot" Replace="true">
+    <node ID="Start">
+      <text>
+        おお！ おお！ 新たな命を得るか？ 古い死を恐れて震えるな！~
+        隠者がテラフィムに問い、死の瞳を見ても、慌てるのは愚か者だけ！ あるのは変化で、終わりではない。~
+        疫病こそが芯を焼き、果実を実らせる。~
+        おおネフィリムよ！ 星の沐浴に来たか？？~
+        口いっぱいに塩を、放射の闇で曇った死んだ目を、そして友だちになるカエルがほしい。~
+        おお生命よ、おお変化よ！ 抱きしめ、絡み合ってくれ……~
+        管の乳を舐め取って、泡で舌が弾ける音を聞けるんだ！~
+        ギルシュ・アゴルゴト！ 爪には赤い塵、腺には燃える泡がふくらむ！ 今、未来を指さす。~
+        世界は煮込み、滴定される。
+        おお、内で駆け巡る変化の昂揚！ 心臓の一押しごとに浸透し、一息ごとに新しい命を吸い込む。~
+        一緒に煮立ち、泡立とう。自分を越えてしまおう！
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="GyreWightBethsaida" Replace="true">
+    <node ID="Start">
+      <text>
+        おお！ おお！ 新たな命を得るか？ 古い死を恐れて震えるな！~
+        隠者がテラフィムに問い、死の瞳を見ても、慌てるのは愚か者だけ！ あるのは変化で、終わりではない。~
+        疫病こそが芯を焼き、果実を実らせる。~
+        おおネフィリムよ！ 星の沐浴に来たか？？~
+        口いっぱいに塩を、放射の闇で曇った死んだ目を、そして友だちになるカエルがほしい。~
+        おお生命よ、おお変化よ！ 抱きしめ、絡み合ってくれ……~
+        輝く沐浴と、生命を保ち続けるフラクタルの静脈が欲しいか？~
+        未来の境界を越えたところに君の双子がいて、腐敗の中で新しい命が芽吹いている。君はそちら側か？~
+        自分の分身を殺すか？ それに自分を殺させるか？~
+        メスが組織を割く光景を目撃せよ。分割と切除の美しさだ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="GyreWightShug'ruith" Replace="true">
+    <node ID="Start">
+      <text>
+        おお！ おお！ 新たな命を得るか？ 古い死を恐れて震えるな！~
+        隠者がテラフィムに問い、死の瞳を見ても、慌てるのは愚か者だけ！ あるのは変化で、終わりではない。~
+        疫病こそが芯を焼き、果実を実らせる。~
+        おおネフィリムよ！ 星の沐浴に来たか？？~
+        口いっぱいに塩を、放射の闇で曇った死んだ目を、そして友だちになるカエルがほしい。~
+        おお生命よ、おお変化よ！ 抱きしめ、絡み合ってくれ……~
+        野生の蟻のようにクロムに溝を穿ち、肉と殻の断面を見よ！~
+        下層の隙間に潜り、燃えるギャイアよりも汗を流し、別の地平へ目を覗かせる夢を見る。~
+        十三年の土。十七年の土。千年の土！
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="GyreWightRermadon" Replace="true">
+    <node ID="Start">
+      <text>
+        おお！ おお！ 新たな命を得るか？ 古い死を恐れて震えるな！~
+        隠者がテラフィムに問い、死の瞳を見ても、慌てるのは愚か者だけ！ あるのは変化で、終わりではない。~
+        疫病こそが芯を焼き、果実を実らせる。~
+        おおネフィリムよ！ 星の沐浴に来たか？？~
+        口いっぱいに塩を、放射の闇で曇った死んだ目を、そして友だちになるカエルがほしい。~
+        おお生命よ、おお変化よ！ 抱きしめ、絡み合ってくれ……~
+        魚頭が電気の湖を触媒する。確かに我らは化石となって地を積むが、なんと見事な祭壇になるだろう！~
+        命の電気の焼けつき！ ぴりぴりと皮が弾け、赤く、生のまま、美しく輝く。~
+        空気に食われる。命による死。おおレルマドン！~
+        燃える気体の中のダニが、未来には緑に見えるのだ。
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="GyreWightQas" Replace="true">
+    <node ID="Start">
+      <text>
+        おお！ おお！ 新たな命を得るか？ 古い死を恐れて震えるな！~
+        隠者がテラフィムに問い、死の瞳を見ても、慌てるのは愚か者だけ！ あるのは変化で、終わりではない。~
+        疫病こそが芯を焼き、果実を実らせる。~
+        おおネフィリムよ！ 星の沐浴に来たか？？~
+        口いっぱいに塩を、放射の闇で曇った死んだ目を、そして友だちになるカエルがほしい。~
+        おお生命よ、おお変化よ！ 抱きしめ、絡み合ってくれ……~
+        鐘の音が直角に輪を描き、完璧な骨から湿った肉を震わせて剥がす！ 私は骨になるために作られた。~
+        月は彼らの婚礼の光！ そして全世界がネフィリムのギルシュの娘たちのためのものに！~
+        手を伸ばして心臓に触れろ。我らの結びつきは距離を越える！~
+        押し広げろ、新世界の壁を、カスよ。中心になるためだ！
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="GyreWightQon" Replace="true">
+    <node ID="Start">
+      <text>
+        おお！ おお！ 新たな命を得るか？ 古い死を恐れて震えるな！~
+        隠者がテラフィムに問い、死の瞳を見ても、慌てるのは愚か者だけ！ あるのは変化で、終わりではない。~
+        疫病こそが芯を焼き、果実を実らせる。~
+        おおネフィリムよ！ 星の沐浴に来たか？？~
+        口いっぱいに塩を、放射の闇で曇った死んだ目を、そして友だちになるカエルがほしい。~
+        おお生命よ、おお変化よ！ 抱きしめ、絡み合ってくれ……~
+        プリムローズとウィッチウッドが感覚の境界を煮立たせ、死の悦びへ変える！~
+        地に縛られた心は翔べない。空に浮かぶ心は限りない。~
+        開け。偉大な夢を受け取れ。ギルシュの歌を聞け。~
+        君にもできる。誰もがなれる！ ネフィリムを見よ！
+      </text>
+      <choice GotoID="End">生きて飲め。</choice>
+    </node>
+  </conversation>
+
 
   <!-- Yd Freehold: Bep -->
   <conversation ID="Bep" Replace="true">

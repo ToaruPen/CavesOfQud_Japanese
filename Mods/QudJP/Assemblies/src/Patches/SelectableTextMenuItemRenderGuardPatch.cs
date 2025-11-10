@@ -1,6 +1,8 @@
 using HarmonyLib;
 using Qud.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace QudJP.Patches
 {
@@ -35,6 +37,16 @@ namespace QudJP.Patches
             // 文字列が空のときだけガードを適用する（通常の折返しを尊重）
             if (!string.IsNullOrEmpty(tmp.text))
             {
+                var rt = tmp.rectTransform;
+                if (rt != null && (rt.rect.width < 1f || rt.rect.height < 1f))
+                {
+                    var preferred = tmp.GetPreferredValues(Mathf.Max(8f, rt.rect.width), Mathf.Max(8f, rt.rect.height));
+                    rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(preferred.x, 48f));
+                    rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, Mathf.Max(preferred.y, 16f));
+                    LayoutRebuilder.MarkLayoutForRebuild(rt);
+                    LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
+                }
+
                 if (Logged < MaxLogs)
                 {
                     Logged++;
