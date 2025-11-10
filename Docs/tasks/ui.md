@@ -5,7 +5,7 @@ python3 scripts/diff_localization.py --missing-only の出力で UI ファイル
 
 ## 未訳 / 対応中
 - [ ] Options.jp.xml: Legacy UI と Misc Prompts のプレースホルダーを最終レビューする。
-- [ ] EmbarkModules.jp.xml: Mutations / Cybernetics の個別エントリ（説明）を今後の ObjectBlueprints タスクにリンクする。
+- [x] EmbarkModules.jp.xml: Load="Replace" で UI 全体を再適用し、Mutations / Cybernetics の参照テキストも最新ベースに揃えた。
 - [x] Genotypes.jp.xml / Subtypes.jp.xml: キャラ作成画面のジェノタイプ + カースト／天職の名称・説明を日本語化し、DisplayName とステータス訳を付与する。
 - [ ] Manual.jp.xml: クイックスタート／能力値／耐性・温度／スキル／突然変異／アーティファクト／トニック／武器と防具／戦闘／セーヴィングスロー／アクションコストを追加済み。残るトピックも同じ方針で翻訳する。
 

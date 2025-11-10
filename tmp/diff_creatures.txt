@@ -1,0 +1,14 @@
+﻿Status          BaseFile                        Object
+------------------------------------------------------
+object-missing  ObjectBlueprints/Creatures.xml  Tammuz
+object-missing  ObjectBlueprints/Creatures.xml  Santalalotze
+object-missing  ObjectBlueprints/Creatures.xml  BaseTau
+object-missing  ObjectBlueprints/Creatures.xml  Prism Point
+object-missing  ObjectBlueprints/Creatures.xml  TauNoLonger
+object-missing  ObjectBlueprints/Creatures.xml  TauWanderer
+object-missing  ObjectBlueprints/Creatures.xml  AoygNoLonger
+object-missing  ObjectBlueprints/Creatures.xml  0lam
+object-missing  ObjectBlueprints/Creatures.xml  AgateSeveranceStar
+object-missing  ObjectBlueprints/Creatures.xml  SapientBear
+
+object-missing  :   10

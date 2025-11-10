@@ -1,0 +1,110 @@
+﻿*** Begin Patch
+*** Update File: Mods/QudJP/Assemblies/src/Localization/TooltipTextLocalizer.cs
+@@
+-using System.Collections.Generic;
++using System.Collections.Generic;
++using System.Text.RegularExpressions;
+@@
+         private static string LocalizeLine(string line)
+         {
+             var trimmed = line.Trim();
+@@
+-            // Case where label is inside color tag and colon/value are in the tail (e.g., "{{K|Weight}}: 1 lbs.")
++            // Case where label is inside color tag and colon/value are in the tail (e.g., "{{K|Weight}}: 1 lbs.")
+             if (!string.IsNullOrEmpty(tail) && tail.StartsWith(":", StringComparison.Ordinal))
+             {
+                 var label = payload;
+                 var value = tail.Substring(1).TrimStart();
+                 if (ColonLabelMap.TryGetValue(label, out var translatedLabel2))
+                 {
+                     var wrapped = prefix + translatedLabel2 + suffix + "：" + LocalizeValue(label, value);
+                     return ReplaceTrimmed(line, trimmed, wrapped);
+                 }
+@@
+                 }
+             }
+
+            // Case where label is inside color tag and a numeric/percent tail follows without a colon
+            // Example: "{{y|Critical hit chance}} 15%"
+            if (!string.IsNullOrEmpty(tail) && !tail.StartsWith(":", StringComparison.Ordinal))
+            {
+                var tailTrim = tail.TrimStart();
+                if (LooksLikeValueTail(tailTrim))
+                {
+                    var label = payload;
+                    string localizedLabel = label;
+
+                    if (ColonLabelMap.TryGetValue(label, out var mapped))
+                    {
+                        localizedLabel = mapped;
+                    }
+                    else if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
+                    {
+                        var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
+                        localizedLabel = $"{Translator.Instance.Apply(stat, "Stat.Name")} ボーナス上限";
+                    }
+                    else
+                    {
+                        var fromDict = Translator.Instance.Apply(label, "Look.TooltipLine");
+                        if (!string.Equals(fromDict, label, StringComparison.Ordinal))
+                        {
+                            localizedLabel = fromDict;
+                        }
+                        else
+                        {
+                            var fromLabel = Translator.Instance.Apply(label, "Look.TooltipLabel");
+                            if (!string.Equals(fromLabel, label, StringComparison.Ordinal))
+                            {
+                                localizedLabel = fromLabel;
+                            }
+                        }
+                    }
+
+                    // Localize units inside the tail if applicable (e.g., lbs.) while preserving original spacing
+                    var localizedTail = tail;
+                    if (string.Equals(label, "Weight", StringComparison.Ordinal) && localizedTail.IndexOf("lbs.", StringComparison.Ordinal) >= 0)
+                    {
+                        localizedTail = localizedTail.Replace("lbs.", "ポンド");
+                    }
+
+                    var wrapped = prefix + localizedLabel + suffix + localizedTail;
+                    return ReplaceTrimmed(line, trimmed, wrapped);
+                }
+            }
+@@
+         }
+@@
+         private static string ReplaceTrimmed(string original, string trimmed, string replacement)
+         {
+@@
+         }
+ 
+         private static bool TryExtractOuterColorTag(string value, out string prefix, out string inner, out string after)
+         {
+@@
+             return true;
+         }
+
+        private static bool LooksLikeValueTail(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+            {
+                return false;
+            }
+
+            // Starts with +/-, digit, or open parenthesis followed soon by a digit; often ends with units or %
+            if (s.Length > 0)
+            {
+                var c = s[0];
+                if (char.IsDigit(c) || c == '+' || c == '-' || c == '(')
+                {
+                    return true;
+                }
+            }
+
+            // Fallback regex: number somewhere at the start and optional percent/unit
+            return Regex.IsMatch(s, "^\\s*[+\\-]?(?:\\d|\\d+\\.\\d+).*");
+        }
+     }
+ }
+*** End Patch

@@ -1,0 +1,136 @@
+﻿    <node ID="Start">
+      <text>Klanq puff at you. =MARKOVSENTENCE=</text>
+      <choice GotoID="End" Execute="XRL.World.QuestManagers.SpreadPax:StartQuest">[begin pax quest]</choice>
+      <choice GotoID="End">
+        <text>[pick a limb to infect]</text>
+        <part Name="PaxInfectLimb" />
+      </choice>
+      <choice GotoID="End">...</choice>
+    </node>
+  </conversation>
+
+  <!-- Pax Klanq -->
+  <conversation ID="PaxKlanq">
+    <start ID="Welcome">
+      <text>
+        Klanq puff at you?
+      </text>
+			<choice Target="Die" IfTestState="KlanqDied">Didn't you die?</choice>
+			<choice Target="BarathrumStudy" IfHaveQuest="The Golem">Aren't you supposed to be helping Barathrum in his study?</choice>
+		  <choice ID="ChoiceWhat" GotoID="What">Excuse me?</choice>
+      <choice ID="ChoicePlace" GotoID="Place">Why are you the color of coral? And why did the brick road outside only appear after I ate the Eater's fleshcap?</choice>
+      <choice ID="ChoicePresume" GotoID="Presume" IfHaveQuest="Pax Klanq, I Presume?" IfNotFinishedQuestStep="Pax Klanq, I Presume?~Convince Pax Klanq to Construct the Climber">I'm here to collect a debt for the Barathrumites.</choice>
+      <choice GotoID="End">
+        <text>Fine. Puff away.</text>
+        <part Name="PaxInfectLimb" IfQuestActive="true" />
+      </choice>
+      <choice GotoID="End">No, thanks. Live and drink.</choice>
+    </start>
+
+		<node ID="Die" Inherits="Welcome">
+			<text>
+				Klanq distribute! Cannot kill Klanq in a way that matters.
+			</text>			
+		</node>
+
+		<node ID="BarathrumStudy" Inherits="Welcome">
+			<text>
+				Klanq distribute! Here, there.
+			</text>
+		</node>
+
+		<node ID="What">
+      <text>
+        Klanq puff at you.
+      </text>
+      <choice UseID="ChoicePlace" />
+      <choice UseID="ChoicePresume" />
+      <choice GotoID="End">Live and drink, mushroom.</choice>
+    </node>
+
+    <node ID="Place">
+      <text>
+        Klanq want no visitors, so Klanq relocate workshop. Half dimension away. Tasties alter viewing plane.
+      </text>
+      <choice UseID="ChoicePresume" />
+      <choice GotoID="End">Live and drink, mushroom.</choice>
+    </node>
+
+    <node ID="Presume">
+      <text>
+        Prickles? Klanq miss prickles.
+      </text>
+      <choice ID="ChoicePrickles" GotoID="Light">Why do you owe... "prickles"... a debt?</choice>
+      <choice ID="ChoiceQuest" Target="Quest">Well, you can repay the debt now. Barathrum wants you to build something. A climber. He says only you can do it.</choice>
+    </node>
+
+    <node ID="Light">
+      <text>
+        Klanq puff on prickles during lecture on light refraction. Prickles angry.
+      </text>
+      <choice Inherits="ChoiceQuest" />
+    </node>
+
+    <node ID="Quest">
+      <text>
+        Klanq care little for debt.
+      </text>
+      <choice GotoID="Quest2">But you owe Barathrum. He needs your help.</choice>
+    </node>
+
+    <node ID="Quest2">
+      <text>
+        Klanq puff on debt.
+      </text>
+      <choice GotoID="Quest3">Is there anything I can do change your mind?</choice>
+    </node>
+
+    <node ID="Quest3">
+      <text>
+        Klanq think...
+      </text>
+      <choice GotoID="Quest4">...</choice>
+    </node>
+
+    <node ID="Quest4">
+      <text>
+        Klanq got it! Klanq puff on you.
+      </text>
+      <choice GotoID="Quest5">Excuse me?</choice>
+      <choice GotoID="End">Puff on yourself, mushroom. I'm leaving.</choice>
+    </node>
+
+    <node ID="Quest5">
+      <text>
+        Klanq puff on you. You host Klanq. You spread Klanq for Klanq. Then your Klanq shrivels away.
+
+        Klanq puff on you, then Klanq build jalopy.
+      </text>
+      <choice GotoID="Quest6" Execute="XRL.World.QuestManagers.SpreadPax:StartQuest">
+        <text>Fine. Puff away.</text>
+        <part Name="PaxInfectLimb" />
+      </choice>
+      <choice Target="End">Puff off. Bye.</choice>
+    </node>
+
+    <node ID="Quest6" AllowEscape="false"> <!-- Start spread pax quest here instead -->
+      <text>Klanq puff on you! Klanq build jalopy.</text>
+      <choice Target="End">
+        <text>Ugh.</text>
+        <part Name="TakeItem" Require="false" Blueprints="ClimberBlueprints" />
+        <part Name="QuestHandler" Action="Step" QuestID="Pax Klanq, I Presume?" StepID="Convince Pax Klanq to Construct the Climber" />
+      </choice>
+    </node>
+	 	  
+
+  </conversation>
+
+	<conversation ID="PaxKlanq2">
+
+		<start ID="Welcome">
+			<text>
+				Klanq puff on you...
+				
+				
+				..later. Now, Klanq pause puff for prickles favor.
+			</text>			

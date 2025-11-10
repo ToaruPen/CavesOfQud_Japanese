@@ -11,6 +11,16 @@ namespace QudJP
         private static void OnEnable(TextMeshProUGUI __instance)
         {
             FontManager.Instance.ApplyToText(__instance);
+            // Translate default serialized labels present on prefabs.
+            var current = __instance.text;
+            if (!string.IsNullOrEmpty(current))
+            {
+                var translated = Localization.Translator.Instance.Apply(current, __instance.GetType().FullName);
+                if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, current))
+                {
+                    __instance.text = translated;
+                }
+            }
         }
     }
 
@@ -22,6 +32,15 @@ namespace QudJP
         private static void OnEnable(TextMeshPro __instance)
         {
             FontManager.Instance.ApplyToText(__instance);
+            var current = __instance.text;
+            if (!string.IsNullOrEmpty(current))
+            {
+                var translated = Localization.Translator.Instance.Apply(current, __instance.GetType().FullName);
+                if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, current))
+                {
+                    __instance.text = translated;
+                }
+            }
         }
     }
 

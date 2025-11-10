@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations Load="Merge">
+  <conversation ID="BaseConversation">
+    <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980" Replace="true">
+      <text>お前の渇きは私の渇き、私の水はお前のものだ。</text>
+      <text IfHavePart="SociallyRepugnant" Priority="1">
+        唾を交換するか？~
+        さっさと始めよう。~
+        {{emote|*舌なめずりをする。*}}~
+        渇きは私のもの、水はお前のもの。~
+        渇き。水。飲むんだ。~
+        ちゅうちゅうタイムだ。~
+        ????~
+        私の水は渇き、お前の水はお前のもの。
+      </text>
+      <part Name="WaterRitualBegin" />
+    </choice>
+
+    <node ID="WaterRitual" Replace="true">
+      <text>生きて飲め、=subject.waterRitualLiquid=-=player.siblingTerm=。</text>
+      <part Name="WaterRitual" />
+      <choice ID="ShareGossipChoice">
+        <text>興味をそそる噂話がある。</text>
+        <part Name="WaterRitualSellSecret" Gossip="true" />
+      </choice>
+      <choice ID="ShareSecretListenerChoice">
+        <text>分かち合いたい秘密がある。</text>
+        <part Name="WaterRitualSellSecret" />
+      </choice>
+      <choice ID="ShareSecretSpeakerChoice">
+        <text>秘密を打ち明けてくれ、=subject.waterRitualLiquid=-=pronouns.siblingTerm=。</text>
+        <part Name="WaterRitualBuySecret" />
+      </choice>
+      <choice ID="TinkeringRecipeChoice">
+        <text>=recipe= の作り方を教えてくれるか？</text>
+        <part Name="WaterRitualTinkeringRecipe" />
+      </choice>
+      <choice ID="LearnSkillChoice">
+        <text>お前の流儀を教えてくれるか？</text>
+        <part Name="WaterRitualLearnSkill" />
+      </choice>
+      <choice ID="FungusColonizeChoice">
+        <text>私は菌類の友だ。私を植民させてくれ。</text>
+        <part Name="WaterRitualFungusColonize" />
+      </choice>
+      <choice ID="HermitOathChoice">
+        <text>=hermit=、もう二度と邪魔しないと誓う。</text>
+        <part Name="WaterRitualHermitOath" />
+      </choice>
+      <choice ID="BuyValuedItemChoice">
+        <text>その =object.nameSingle= を譲ってくれないか？</text>
+        <part Name="WaterRitualBuyItem" Source="Valued" />
+      </choice>
+      <choice ID="BuyFactionItemChoice">
+        <text>その =object.nameSingle= を譲ってくれないか？</text>
+        <part Name="WaterRitualBuyItem" Source="Faction" />
+      </choice>
+      <choice ID="SkillPointChoice">
+        <text>もう一度、子どものように考える術を教えてくれ。</text>
+        <part Name="WaterRitualSkillPoint" />
+      </choice>
+      <choice ID="GainMutationChoice">
+        <text>お前の流儀を教えてくれるか？</text>
+        <part Name="WaterRitualGainMutation" />
+      </choice>
+      <choice ID="RandomMentalMutationChoice">
+        <text>集合意識の秘訣を教えてくれ。</text>
+        <part Name="WaterRitualRandomMutation" Category="Mental">
+          =subject.T= があなたの手を取り、あなたは目を閉じる。暗い茂みの中で =player.reflexive= を見いだし、絡み合う幽根をまたぎながら =subject.T= に導かれて進む。やがて林間の空き地につまずき込み、そこにはほかの者たちがいる。=subject.t= がそうしたように、あなたも彼らの手を取る。
+
+          瞬きか永劫かの後、あなたは =mutation.name= を知ったまま目を覚ます。
+        </part>
+      </choice>
+      <choice ID="CookingRecipeChoice">
+        <text>お前たちの好物の料理を教えてくれないか？</text>
+        <part Name="WaterRitualCookingRecipe" />
+      </choice>
+      <choice ID="ChefRecipeChoice">
+        <text>お前の得意料理のひとつを教えてくれ。</text>
+        <part Name="WaterRitualCookingRecipe" Chef="true" />
+      </choice>
+      <choice ID="JoinPartyChoice">
+        <text>=subject.waterRitualLiquid=-=pronouns.siblingTerm=、共に来てくれないか。</text>
+        <part Name="WaterRitualJoinParty" />
+      </choice>
+      <choice ID="EndChoice" Target="Start" Ordinal="1000">
+        <text>生きて飲め、=subject.waterRitualLiquid=-=pronouns.siblingTerm=。</text>
+        <part Name="Tag">{{g|[水儀式を終える]}}</part>
+      </choice>
+    </node>
+
+    <choice ID="Trade" Ordinal="990" Replace="true">
+      <text>取引しよう。</text>
+      <part Name="Trade" />
+    </choice>
+  </conversation>
+
+  <conversation ID="BaseSlynthMayor">
+    <node ID="SlynthRequestAccept" Replace="true">
+      <text>
+        よろしい、彼らを迎え入れよう。知らせてくれて感謝する。
+      </text>
+      <choice Target="End">
+        <part Name="AddSlynthCandidate" />
+        <text>感謝する、友よ。</text>
+      </choice>
+      <choice Target="Start">別のことを聞きたい。</choice>
+    </node>
+
+    <node ID="SlynthRequestReject" Replace="true">
+      <text>
+        すまないが、今はこの町に彼らの席がない。ほかの避難先を探してやってくれ。
+      </text>
+      <choice Target="Start">分かった。</choice>
+    </node>
+
+    <node ID="SlynthRequest" Replace="true">
+      <text>
+        彼らをここへ導くつもりなのだな？
+      </text>
+      <choice Target="SlynthRequestAccept" IfReputationAtLeast="Loved">そうだ。</choice>
+      <choice Target="SlynthRequestReject" IfNotReputationAtLeast="Loved">受け入れてくれるなら、そうしたい。</choice>
+    </node>
+
+    <node ID="SlynthAbout" Replace="true">
+      <text>
+        スリンセについて知りたいのだな？
+      </text>
+      <choice Target="Start">彼らはまだ行き先を決めていない。</choice>
+    </node>
+
+    <node ID="SlynthArrived" Replace="true">
+      <text>
+        スリンセは無事に到着した。まだ落ち着かぬ者もいるが、少しずつ新しい暮らしに根を下ろしている。
+      </text>
+      <choice Target="Start">感謝する。</choice>
+    </node>
+
+    <node ID="SlynthSettled" Replace="true">
+      <text>
+        彼らはもうこの場所の一員だ。馴染めなかった者は道を求めて旅立ったが、多くはここで暮らしを築いている。
+      </text>
+      <choice Target="Start">重ねて礼を言う。</choice>
+    </node>
+
+    <choice Target="SlynthRequest" Priority="10" IfAllowEscape="true" IfNotHaveState="SlynthSettlementFaction" IfHaveQuest="Landing Pads" IfNotSlynthCandidate="Mayor" IfSpeakerHaveTagOrProperty="Mayor" Replace="true">
+      <text>旅の途上で、新たな住まいを探すスリンセに出会った。ここで受け入れてもらえないか？</text>
+    </choice>
+    <choice Target="SlynthAbout" Priority="10" IfAllowEscape="true" IfNotHaveState="SlynthSettlementFaction" IfSlynthCandidate="Mayor" Replace="true">
+      <text>スリンセの件だ。</text>
+    </choice>
+    <choice Target="SlynthArrived" Priority="10" IfAllowEscape="true" IfSlynthChosen="Mayor" IfHaveState="LandingPadsSlynthArrived" IfNotHaveState="LandingPadsSlynthSettled" Replace="true">
+      <text>スリンセが到着したようだ。様子はどうだ？</text>
+    </choice>
+    <choice Target="SlynthSettled" Priority="10" IfAllowEscape="true" IfSlynthChosen="Mayor" IfHaveState="LandingPadsSlynthSettled" Replace="true">
+      <text>一週間が過ぎた。彼らはもう落ち着いただろうか？</text>
+    </choice>
+  </conversation>
+
+  <conversation ID="Argyve">
+    <start ID="MumblingWelcome" IfNotHaveQuest="Fetch Argyve a Knickknack" Replace="true">
+      <text>
+        {{emote|*ぶつぶつ*}} …質量閾値を越えている。たぶん懸架器付きの神経節テレプロジェクタなら……
+      </text>
+      <choice Target="MumblingWelcome2">...</choice>
+    </start>
+
+    <node ID="MumblingWelcome2" Replace="true">
+      <text>
+        おっと、そこにいたのか。無視していたから気づかなかった。
+      </text>
+      <choice Target="MumblingWelcome3">...</choice>
+    </node>
+
+    <node ID="MumblingWelcome3" Replace="true">
+      <text>
+        {{emote|*ぶつぶつ*}} …熱カプセルの廃熱か？それとも太陽滓の p 密度まで遠心抽出すれば……
+      </text>
+      <choice Target="Knickknack">...</choice>
+    </node>
+
+    <node ID="Knickknack" Replace="true">
+      <text>
+        {{emote|*ぶつぶつ*}} …クランク定数からの予期せぬ偏差だ。
+
+        {{emote|*Argyve が咳き込む。*}}
+
+        邪魔をしに来たのか？お前は水狂いか？フーンドレン目の巡礼か？アーコノートか？ =player.reflexive= を役に立たせて、どこかの洞窟からガラクタを拾ってこい。「報酬」をやるかもしれん。
+      </text>
+      <choice Target="Cave">洞窟はどこにある？</choice>
+      <choice Target="End">興味はない。</choice>
+    </node>
+
+    <node ID="Cave" Replace="true">
+      <text>
+        洞窟ならそこら中にあるだろ、この間抜け！湿原の表土を掬うか、東のラストウェルへ行くか、砂漠をうろつくか、好きにしろ…
+      </text>
+      <choice Target="End" StartQuest="Fetch Argyve a Knickknack">ガラクタを持って戻る。</choice>
+      <choice Target="End">興味はない。</choice>
+    </node>
+
+    <start ID="StartHasFetch1" IfHaveActiveQuest="Fetch Argyve a Knickknack" Replace="true">
+      <text>
+        光を遮るな！何の用だ？
+      </text>
+      <choice Target="GiveKnickknack" CompleteQuestStep="Fetch Argyve a Knickknack~Return to Argyve">
+        <text>ほら、ガラクタだ。</text>
+        <part Name="GiveArtifact" />
+      </choice>
+      <choice Target="End">何でもない。ガラクタを探してくる。</choice>
+    </start>
+
+    <start ID="GiveKnickknack" IfFinishedQuest="Fetch Argyve a Knickknack" IfNotHaveQuest="Fetch Argyve Another Knickknack" Replace="true">
+      <text>
+        ふむ、ふむ。案外役に立つのか？なら、もう一つ拾ってこい！
+      </text>
+      <choice GotoID="End" StartQuest="Fetch Argyve Another Knickknack">仕方ないな。</choice>
+    </start>
+
+    <start ID="StartHasFetch2" IfHaveActiveQuest="Fetch Argyve Another Knickknack" Replace="true">
+      <text>
+        ふむ、ふむ。案外役に立つのか？なら、もう一つ拾ってこい！
+      </text>
+      <choice Target="Impressive" CompleteQuestStep="Fetch Argyve Another Knickknack~Return to Argyve">
+        <text>ほら、ガラクタだ。</text>
+        <part Name="GiveArtifact" />
+      </choice>
+      <choice Target="End">仕方ないな。</choice>
+    </start>
+
+    <node ID="Impressive" Replace="true">
+      <text>
+        {{emote|*Argyve が口笛を吹く。*}}
+
+        見事じゃないか！お前なら私の工房を嗅ぎ回ってスクラップをやり取りするくらいはできそうだ。ちょうど弟子がもう一人ほしかったところだ。スクレフが腸をぶちまけた件は実に不運だったがな。そこに腰を下ろせ。
+      </text>
+      <choice Target="Weirdwire">...</choice>
+    </node>
+
+    <node ID="Weirdwire" Replace="true">
+      <text>
+        {{emote|*Argyve が両眉を跳ね上げる。*}}
+
+        よし、話のナットにボルトを噛ませよう！私は今、発見の瀬戸際にいる。ウィアードワイヤ導管の組み上げも終盤でな、完成しさえすれば、このジョッパから Yd フリーホールドに至るまで誰とでも即時通信ができるようになる。だが仕上げるにはワイヤがいる。できるだけたくさん――最低でも二百フィートだ。ラストウェルを漁れば拾えるはずだ。
+      </text>
+      <choice GotoID="End" StartQuest="Weirdwire Conduit... Eureka!">ワイヤを集めてこよう。</choice>
+      <choice GotoID="End">興味はない。</choice>
+    </node>
+
+    <start ID="TheWire" IfHaveActiveQuest="Weirdwire Conduit... Eureka!" Replace="true">
+      <text>
+        ワイヤだ！さっさと渡せ！
+      </text>
+      <choice GotoID="GiveWire" IfFinishedQuestStep="Weirdwire Conduit... Eureka!~Find 200 Feet of Wire">
+        <text>ほら、ワイヤだ。</text>
+        <part Name="HaveItem" Blueprints="Wire Strand" Amount="200" Require="true" />
+      </choice>
+      <choice GotoID="End">まだ足りない。</choice>
+    </start>
+
+    <node ID="GiveWire" Replace="true">
+      <text>
+        {{emote|*Argyve が歓声を上げる。*}}
+
+        いいぞ、いいぞ！なんて美しいワイヤだ！ ……おっと、忘れるところだった。古いリコイラーをお前用に修理しておいた。ジョッパへひとっ飛びしたくなったら使え。さて、ワイヤを取り付けるから少し待っていろ……。
+      </text>
+      <choice Target="End" CompleteQuestStep="Weirdwire Conduit... Eureka!~Return to Argyve">
+        <text>また来る。</text>
+        <part Name="ReceiveItem" Blueprints="Joppa Recoiler" Identify="*" />
+        <part Name="TakeItem" Blueprints="Wire Strand" Amount="200" />
+      </choice>
+    </node>
+
+    <start ID="ConduitWorking" IfFinishedQuest="Weirdwire Conduit... Eureka!" IfNotHaveQuest="A Canticle for Barathrum" Replace="true">
+      <text>
+        動いた！天才だ！天才！静電に雑音が――聞こえる！聞こえる！……なんだこれは？これは一体？待て……。
+      </text>
+      <choice Target="Signal1">...</choice>
+    </start>
+
+    <node ID="Signal1" Replace="true">
+      <text>
+        繰り返している……。
+      </text>
+      <choice Target="Signal2">...</choice>
+    </node>
+
+    <node ID="Signal2" Replace="true">
+      <text>
+        {{emote|*Argyve が数分間ぶつぶつ呟き続ける。*}}
+      </text>
+      <choice Target="Signal3">...</choice>
+    </node>
+
+    <node ID="Signal3" Replace="true">
+      <text>
+        弟子よ！ここへ来い！妙なことが起きている。導管が信号を拾っている、何か繰り返しの伝達だ。しかし私には解読できん。クリプトグルの卵もないし――いや、その必要はない！お前に大役を頼みたい、弟子よ。受けるか？
+      </text>
+      <choice Target="Canticle1">内容を教えてくれ。</choice>
+    </node>
+
+    <node ID="Canticle1" Replace="true">
+      <text>
+        ……よし。旧き賢者バラスラムを探せ。現存するティンカーの中で最年長にして最も慧眼の持ち主だ。北東、ジャングルに絡まれたクードの廃墟にあるグリットゲートのアーチの下で、弟子たち――バラスラマイトたち――と暮らしている。奴ならこの信号の意味を見抜ける。
+      </text>
+      <choice Target="WhoBarathrumites">そのバラスラマイトとは？</choice>
+      <choice Target="CanticleAccept1">十分だ。向かおう。</choice>
+    </node>
+
+    <node ID="WhoBarathrumites" Replace="true">
+      <text ID="BarathrumiteDescription">
+        バラスラムの信奉者たちだ。大半は彼のようなウルシーブ――棘だらけの白子熊で、陽光まみれの地表より蝋燭一丁の洞穴を好む連中だ。千年前、バラスラムは一族と共にホムス・デルタを越えてクードの錆びた中心部へ渡った。工房に籠り、時の遺物からクロームの殻をはぎ取り続けている。奴に解けぬ信号なら、誰にも解けまい。
+      </text>
+      <choice Target="CanticleAccept1" IfNotHaveQuest="A Canticle for Barathrum">その任務、引き受けよう。</choice>
+      <choice Target="End" IfNotHaveQuest="A Canticle for Barathrum">少し考えさせてくれ。</choice>
+      <choice Target="End" IfHaveQuest="A Canticle for Barathrum">さらばだ、Argyve。</choice>
+    </node>
+
+    <node ID="CanticleAccept1" Replace="true">
+      <text>
+        素晴らしい！完璧だ！信号をディスクに記録しよう。命を懸けて守るのだぞ。
+
+        ドロイドスクランブラーも組んでやろう。グリットゲートへ向かう道には、バラスラマイトが配置したウェイドロイドの一団が巡回している。スクランブラーさえあれば気にせず通れる。そこに立っていろ。
+      </text>
+      <choice Target="CanticleAccept2">...</choice>
+    </node>
+
+    <node ID="CanticleAccept2" Replace="true">
+      <text>
+        {{emote|*Argyve が数分間ぶつぶつ呟き続ける。*}}
+      </text>
+      <choice Target="CanticleAccept3">...</choice>
+    </node>
+
+    <node ID="CanticleAccept3" Replace="true">
+      <text>
+        さあ、受け取れ。さあ行け！私の命令を遂げるまで生き延びるのだ。さあ、さっさと！
+      </text>
+      <choice GotoID="End" StartQuest="A Canticle for Barathrum">
+        <text>さらばだ、Argyve。</text>
+        <part Name="ReceiveItem" Blueprints="Droid Scrambler,Argyve's Data Disk" Identify="All" />
+      </choice>
+    </node>
+
+    <start ID="StartFinishedCanticle" IfFinishedQuest="A Canticle for Barathrum" Replace="true">
+      <text>
+        {{emote|*Argyve が短く頷き、片眉を跳ね上げる。*}}
+
+        弟子よ。
+
+        {{emote|*Argyve は作業へ戻る。*}}
+      </text>
+      <choice Target="Golgotha" IfHaveActiveQuest="More Than a Willing Spirit">バラスラマイトは、加入前にゴルゴタと呼ばれる洞へ潜れと言う。</choice>
+      <choice Target="RankUp" IfFinishedQuest="Decoding the Signal">Argyve、俺はもう見習いじゃない。今の俺は =factionaddress:Barathrumites= だ。</choice>
+      <choice Target="AskAfter" IfFinishedQuest="More Than a Willing Spirit">何か必要なものは？</choice>
+      <choice Target="End">さらばだ、Argyve。</choice>
+    </start>
+
+    <start ID="StartCanticleActive" IfHaveQuest="A Canticle for Barathrum" Replace="true">
+      <text>
+        弟子よ！何だ？
+      </text>
+      <choice Target="WhoBarathrumites">バラスラマイトについてもう一度。</choice>
+      <choice Target="End">生きて飲め。</choice>
+    </start>
+
+    <node ID="Golgotha" Inherits="StartFinishedCanticle" Replace="true">
+      <text>
+        そうか。オソなら言いそうだ。ふむ。
+
+        {{emote|*Argyve が不自然なほど長く沈黙する。*}}
+
+        よろしい。
+
+        {{emote|*さらに長く、気まずい沈黙が続く。*}}
+
+        幸運を祈る！
+      </text>
+    </node>
+
+    <node ID="RankUp" Inherits="StartFinishedCanticle" Replace="true">
+      <text>
+        そうか？だがここでは =factionaddress:Barathrumites= ではない！
+
+        グリットゲートはジョッパではない、鼻高々の半田釘め。この家では今も見習いだ。
+
+        それで何の用だ？手短に言え！
+      </text>
+    </node>
+
+    <node ID="AskAfter" Inherits="StartFinishedCanticle" Replace="true">
+      <text>
+        何だ？
+
+        ……だめだ、私は没頭している。好奇心はバラスラマイトの誰かにぶつけてこい。
+      </text>
+    </node>
+  </conversation>
+</conversations>

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using XRL.UI;
@@ -8,36 +8,38 @@ namespace QudJP.Localization
 {
     internal static class MenuOptionLegendLocalizer
     {
+        private static string Highlight(string text) => $"{{{{y|{text}}}}}";
+
         private static readonly Dictionary<string, string> CommandFallback = new()
         {
-            ["NavigationXYAxis"] = "移動",
-            ["UI:Navigate"] = "移動",
-            ["UI:Navigate/up"] = "上へ移動",
-            ["UI:Navigate/down"] = "下へ移動",
-            ["UI:Navigate/left"] = "左へ移動",
-            ["UI:Navigate/right"] = "右へ移動",
-            ["Accept"] = "決定",
-            ["Cancel"] = "戻る",
-            ["Page Left"] = "前のページ",
-            ["Page Right"] = "次のページ",
-            ["UI:CategoryLeft"] = "前のカテゴリ",
-            ["UI:CategoryRight"] = "次のカテゴリ",
+            ["NavigationXYAxis"] = Highlight("移動"),
+            ["UI:Navigate"] = Highlight("移動"),
+            ["UI:Navigate/up"] = Highlight("上へ移動"),
+            ["UI:Navigate/down"] = Highlight("下へ移動"),
+            ["UI:Navigate/left"] = Highlight("左へ移動"),
+            ["UI:Navigate/right"] = Highlight("右へ移動"),
+            ["Accept"] = Highlight("決定"),
+            ["Cancel"] = Highlight("キャンセル"),
+            ["Page Left"] = Highlight("前のページ"),
+            ["Page Right"] = Highlight("次のページ"),
+            ["UI:CategoryLeft"] = Highlight("前のカテゴリ"),
+            ["UI:CategoryRight"] = Highlight("次のカテゴリ"),
         };
 
         private static readonly Dictionary<string, string> LiteralFallback =
             new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
             {
-                ["navigate"] = "移動",
-                ["select"] = "決定",
-                ["quit"] = "終了",
-                ["exit"] = "終了",
-                ["back"] = "戻る",
-                ["previous"] = "前へ",
-                ["prev"] = "前へ",
-                ["next"] = "次へ",
-                ["confirm"] = "決定",
+                ["navigate"] = Highlight("移動"),
+                ["select"] = Highlight("決定"),
+                ["quit"] = Highlight("終了"),
+                ["exit"] = Highlight("終了"),
+                ["back"] = Highlight("戻る"),
+                ["previous"] = Highlight("前へ"),
+                ["prev"] = Highlight("前へ"),
+                ["next"] = Highlight("次へ"),
+                ["confirm"] = Highlight("確認"),
+                ["Show Tooltip"] = Highlight("ツールチップ表示"),
             };
-
         private static readonly HashSet<string> Logged = new();
 
         internal static bool TryApply(MenuOption? option)
@@ -113,3 +115,4 @@ namespace QudJP.Localization
         }
     }
 }
+

@@ -1,0 +1,15 @@
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\bin\Debug\net9.0\TempPopupInspect.exe
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\bin\Debug\net9.0\TempPopupInspect.deps.json
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\bin\Debug\net9.0\TempPopupInspect.runtimeconfig.json
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\bin\Debug\net9.0\TempPopupInspect.dll
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\bin\Debug\net9.0\TempPopupInspect.pdb
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.AssemblyInfoInputs.cache
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.AssemblyInfo.cs
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.csproj.CoreCompileInputs.cache
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.sourcelink.json
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.dll
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\refint\TempPopupInspect.dll
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.pdb
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\TempPopupInspect.genruntimeconfig.cache
+C:\Users\takut\OneDrive\ドキュメント\GitHub\CavesOfQud_Japanese\TempPopupInspect\obj\Debug\net9.0\ref\TempPopupInspect.dll

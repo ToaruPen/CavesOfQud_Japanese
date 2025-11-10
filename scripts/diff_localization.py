@@ -23,6 +23,19 @@ def get_localized_path(base_path: Path, localization_path: Path, base_file: Path
 
 INVALID_XML_REF = re.compile(r"&#(x[0-9a-fA-F]+|\d+);")
 INVALID_XML_CHAR = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+TRANSLATABLE_ATTRS = {
+    "displayname",
+    "short",
+    "long",
+    "description",
+    "text",
+    "string",
+    "message",
+    "label",
+    "tooltip",
+    "singular",
+    "plural",
+}
 
 
 def sanitize_xml(text: str) -> str:
@@ -45,24 +58,65 @@ def collect_object_names(path: Path) -> List[str]:
         print(f"[WARN] Failed to parse XML '{path}': {exc}", file=sys.stderr)
         return []
 
+    cache: Dict[int, bool] = {}
+
+    def has_translatable_text(elem: ET.Element) -> bool:
+        key = id(elem)
+        cached = cache.get(key)
+        if cached is not None:
+            return cached
+
+        for attr_name, attr_value in elem.attrib.items():
+            if attr_name.lower() in TRANSLATABLE_ATTRS and attr_value.strip():
+                cache[key] = True
+                return True
+
+        if (elem.text or "").strip():
+            cache[key] = True
+            return True
+
+        for child in list(elem):
+            if has_translatable_text(child):
+                cache[key] = True
+                return True
+
+        cache[key] = False
+        return False
+
     names: List[str] = []
     for elem in root.iter():
-        name = elem.attrib.get("Name")
+        name = elem.attrib.get("Name") or elem.attrib.get("ID") or elem.attrib.get("Id")
         if name:
+            if not has_translatable_text(elem):
+                continue
             names.append(name)
     return names
 
 
-def build_report(base_path: Path, localization_path: Path) -> List[Dict[str, str]]:
+def build_report(base_path: Path, localization_path: Path, base_filters: List[str] | None = None) -> List[Dict[str, str]]:
     report: List[Dict[str, str]] = []
+    filters = [flt.lower() for flt in base_filters] if base_filters else []
+
     for base_file in sorted(base_path.rglob("*")):
         if not base_file.is_file():
             continue
         if base_file.suffix.lower() not in {".xml", ".txt"}:
             continue
 
-        localized = get_localized_path(base_path, localization_path, base_file)
         relative_base = base_file.relative_to(base_path).as_posix()
+        if filters:
+            relative_lower = relative_base.lower()
+            filename_lower = base_file.name.lower()
+
+            def matches(filter_value: str) -> bool:
+                if "/" in filter_value or "\\" in filter_value:
+                    return filter_value in relative_lower
+                return filename_lower == filter_value
+
+            if not any(matches(filter_value) for filter_value in filters):
+                continue
+
+        localized = get_localized_path(base_path, localization_path, base_file)
         relative_localized = localized.relative_to(localization_path).as_posix()
 
         if not localized.exists():
@@ -148,6 +202,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Path to Mods/QudJP/Localization (default: %(default)s)",
     )
     parser.add_argument(
+        "--base",
+        action="append",
+        dest="base_filters",
+        help="Only inspect base files whose names (or relative paths) match the given values. Can be repeated.",
+    )
+    parser.add_argument(
         "--missing-only",
         action="store_true",
         help="Display only entries where Status != ok.",
@@ -172,7 +232,7 @@ def main() -> None:
     if not localization_path.exists():
         parser.error(f"Localization path not found: {localization_path}")
 
-    report = build_report(base_path, localization_path)
+    report = build_report(base_path, localization_path, args.base_filters)
     filtered = [entry for entry in report if entry["Status"] != "ok"] if args.missing_only else report
 
     print_table(filtered)

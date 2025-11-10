@@ -1,0 +1,4886 @@
+[
+  {
+    "BaseFile": "Books.xml",
+    "Localized": "Books.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Commands.xml",
+    "Localized": "Commands.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BuildGolem",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BuildGolem",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TakeLiquid",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GolemThreeDays",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "IsGolemReady",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GolemComponentQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Soup",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Body",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Catalyst",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Atzmus",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Armament",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Incantation",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hamsa",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mound",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GolemOtherQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Equip",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Damage",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BarathrumsStudy",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PariahA",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PariahB",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pariah2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Raising1",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Raising2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Raising3a",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Raising3b",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "River",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HasPrism",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Wild Water Merchant",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mamon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SusaAlchemist",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Liquids",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhyYours",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NeedThisLand",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ByeAsphodel",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Yours",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Council",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Loved",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Viceroy",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AsphodelArrived",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AsphodelChaos",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AsphodelDone",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AsphodelWaiting",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PhinaeHoshaiah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Woodsprog",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Oboroqoru",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AppleFarmersDaughter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Animals",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Humanoids",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "JoppaFarmer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WatervineFarmers",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Apes",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Robots",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Insects",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "InsectNest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Crabs",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Oozes",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Reptiles",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Frogs",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tortoises",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Fish",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Spiders",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Birds",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WaterBirds",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clams",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Worms",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Star",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Plants",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SapientPlants",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SapientFungi",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Antelopes",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Goats",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Goatfolk",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NewlySentientBeings",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Crystals",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Keh",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Yes. Go on.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "No.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KindrishReturnBefore",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KindrishReturnAfter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "I have not.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dead",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Accused",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Proof",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Kehstions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Eskxile",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Kesehind you",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neel before me",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "No brother",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ShowSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MocksFate",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Distant",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Direct",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ruminating",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dead",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Warden Neelahind?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Friends with Eskhind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hindriarch is lying?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Why not?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Anyone can lie.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Where?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Eskhind is dead.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "No. I'm sorry.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "No. The Hindriarch lied to you.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "No, this was for fun.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KindrishReturn",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "No. Eskhind claims to be wrongfully accused.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "You're the Warden. You tell me.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "We will investigate and find the truth.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Fate",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind is giddy",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinCircumstance",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinCircumstance",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinMotive",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinMotive",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinExclusion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_BloodyPatchOfFur",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_SawATrader",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_SoreThroats",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_LeatherGoneMissing",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_WornBracer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_SplinteredWeaponHaft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_TalkingLateAtNight",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_YuckwheatChaff",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_YuckwheatStench",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_SoundOfToolsAtNight",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_BloodyWatervine",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_BulgingWaterskin",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_GreatSaltbackPrint",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_PoolOfPutrescence",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_ForeignLeatherworkingTools",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_HeardFighting",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_HeardLoudSplashing",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_CopperNugget",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_SeveredTongue",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Clue_LeatherScraps",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinAccusation",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinFinale",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskProsperousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskProsperousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskMixedLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskMixedNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskTumultuousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskTumultuousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KendrenProsperousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KendrenProsperousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KendrenMixedLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KendrenMixedNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KendrenTumultuousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KendrenTumultuousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KeseProsperousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KeseProsperousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KeseMixedLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KeseMixedNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KeseTumultuousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KeseTumultuousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KehProsperousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KehProsperousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KehMixedLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KehMixedNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KehTumultuousLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KehTumultuousNoLove",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetOffer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetDelivered",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NeelaLovesEsk",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Investigation",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Questioning Neelahind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind on Keh",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind on Eskhind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind on Kesehind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind on kendren",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KindrishReturnAfter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Doomed",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BetterLate",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LateSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhyNow",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Eskhind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskhindAcceptSlynthStart",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskhindAcceptSlynthStart2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskhindAcceptSlynthStart3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hindriarch Keh sent me.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Give back what you stole.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "You stole Kindrish.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "What are you saying?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "You claim innocence?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "I suspected this.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "You think Keh stole the treasure?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Why should I believe you?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lies.",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Eskhind is rude",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "What should I do?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskHappyEnd",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Neelahind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Brother",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Keh believes",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetPrompt",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetNo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetBurn",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetIntentions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetGiven",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SonnetDelivery",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StayLong",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MessageReceived",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Insult",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EmptyApology",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KindrishReturn",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EskHindriarch",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meyehind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meyequeries",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Family",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Brother",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Culprit",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Brother",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Culprit",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Correct",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Demand",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Family",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ShowSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Liihart",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StoneQuery",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StonePush",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StoneSilence",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GentlePush",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ShowSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NotEsk",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Isahind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ShowSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Kesehind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ShowSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Who are you?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgateSeveranceStar",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lulihart",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AddSlynthCandidate",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Refuse",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Job seeker",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "How",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Why Not",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Very Well",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Angohind",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ShowSonnet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "How did you know?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Introductions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Acceptance",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Finding evidence",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Defining evidence",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Implicating evidence",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Supporting evidence",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Multiple culprits?",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Evidence exceptions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gaming the system",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Evidence is not created equal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HindrenPariah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HindrenAfflicted",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "IQuestKithAndKin",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AskRumor",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KithAndKinRumor",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HindrenScout",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HindrenVillager",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FaundrenVillager",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SparkingBaetyl",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MerchantGuard",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PsychicThrall",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TemplarDomesticant",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "1-FF",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "YlaHaj",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GreetChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EzraChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SixshrewChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Greet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DaughterChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Daughter",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RebekahChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Rebekah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ezra",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Zothom",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Sixshrew",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Zothom",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomGreets",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomWarden",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomWhat",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomThePenitent",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomTomb",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomJust",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomUnjust",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomHelp",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomLovesMopango",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PangoQuest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ZothomKnowsRebekah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Haddas",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TreeChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ReliefsChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WardenChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MerchantsChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WorkChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tree",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HaddasOldChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MayorChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HaddasQuestionsChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EaterChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Eater",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mayor",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Reliefs",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StarTreeChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StarTree",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Merchants",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Sixshrew",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Greet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Rude",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ask",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Introduction",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NotPest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Impolite",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "CrankyPlant",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BananaRancher",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MopangoStranger",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Vivira",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviQuest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviZothom",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviFriendly",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviMopango",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviTaboo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviRude",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ViviSorry",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Agyra",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraDevice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Agoninon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraGreet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraLeader",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraAssent",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraMopango",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraGender",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraTomb",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraTaboo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraDialect",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraWheels",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AgyraQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WondrousAndProfane",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AskLebah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lebah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HelloLebah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freed",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Indignant",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "CheckinOut",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahGreet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahMeaning",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahStare",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahQuest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Repulsive",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "OozeThat",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhatsGoninon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahReminder",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Curl",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahHides",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LebahPoke",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Doyoba",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Credo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhoAreYou",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhyAreYouHere",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "YourCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meaning",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Apologize",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Device",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Deny",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Commune",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dadogom",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Credo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhoAreYou",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhyAreYouHere",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "YourCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meaning",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Apologize",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Device",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Deny",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Commune",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyamyo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Credo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhoAreYou",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhyAreYouHere",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "YourCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meaning",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Apologize",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Device",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Deny",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Commune",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Yona",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Credo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhoAreYou",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhyAreYouHere",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "YourCredo",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meaning",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Apologize",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Device",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Deny",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Commune",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Nacham",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ConfirmRepairNacham",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RepairNacham",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NachamResponds",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NachamFuture",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dagasha",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ConfirmRepairDagasha",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RepairDagasha",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DagashaResponds",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DagashaFuture",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Vaam",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ConfirmRepairVaam",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RepairVaam",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "VaamResponds",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "VaamFuture",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Kah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ConfirmRepairKah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RepairKah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KahResponds",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KahFuture",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Shomer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChoiceDream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChoiceDead",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChoiceSaad",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChoiceMission",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dead",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Saad",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mission",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ImSaad",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Salum1",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Salum2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Salum3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Return",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Cross",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ImperialBiographer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BiographerWho",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BiographerMark",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BiographerBrightsheol",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BiographerUnfinished",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BiographerSultanGone",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SultanGone",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mark",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mark2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Brightsheol",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "OnlyWay",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BearTheMark",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EntombMe",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EntombMeReshephDisguise",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EntombMeResheph",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EntombMeResheph2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat4",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat5",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat6",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat7",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThatResheph",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThatResheph2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThatResheph3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThatResheph4",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThatResheph5",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat6Resheph",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoThat7Resheph",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Unfinished",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Goek",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GoekGreetingsChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GoekWhoChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GoekToweringChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GoekPipesChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GoekFreeholdChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GoekEndChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Built",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Towering",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "OtherPlagues",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pipes",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mak",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FounderChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WhoChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "StatureChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FreeholdChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PondChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Croak",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Founder",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Founder2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Stature",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Stature2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pond",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pond2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Geeub",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubFamiliarChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FounderChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubWhoChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubToweringChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubFreeholdChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubEndChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Familiar",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubLaugh",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GeeubQuery",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Query",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Whomst",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Towering",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Laughing",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Founder",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Founder2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Founder3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Krka",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KrkaChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SvardymChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ApothecaryChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FreeholdChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KrkaEndChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Krka",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Svardym",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Svardym2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Apothecary2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Bep",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BepChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SvardymChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TrashChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FreeholdChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Bep",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Svardym",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Trash",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Une",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneWho",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneYd",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneParts",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneHurdy",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneDying",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneGlow",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneListen",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "UneBye",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Cybernetics",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Source",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Whomst",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Whomst2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Snub",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gurdy",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dying",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dying2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dying3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Glowing",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Shield",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ignore",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Sorry",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pushing",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Listen",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tillifergaewicz",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TilliTalks",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TilliGreets",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TilliFreehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TilliBye",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Talking",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Greeting",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Rokhas",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ayuh",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Greet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RokhasRanch",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RokhasSlugs",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RokhasFreehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "RokhasBye",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ranch",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hometown",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Nudibranchs",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Freehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ManyEyes",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Moloch",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Brightsheol",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Non",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MaqqomScramble",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Maqqom",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MaqqomTell",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mean",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NonMoloch",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Thah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Greet",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Slynth",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "How",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Bye",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GreetThah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SlynthWhat",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "HowAreThings",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Resentment",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Helping",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Helping2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Helping3",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Helping4",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LandingPadsCommentary",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mechanimists",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ezra",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mopango",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Pariahs",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "YdFreehold",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hindren",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Chavvah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ThahDynamicCommentary",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dynamic",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "CandidatesReady",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChoiceGetStar",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GiveStar",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SlynthDecision",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SlynthResolution",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SlynthLeave",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Slynth",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SlynthSettler",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "SlynthWanderer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Iseebye",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Slynth",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hydropon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Location",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DynamicVillageMayor",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AskForWork",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DirectToWork",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "MoreToAsk",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Goodbye",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AskName",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChavvahPrime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WelcomeNoPhysiology",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Chavvah",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Chime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Work2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ActiveQuest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "DoneQuest",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ManySelves",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Physiology",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Physiology2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BarathrumChavvahDone",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "BarathrumChavvahDone2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ascent",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyredreamMore",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WillYouHelp",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WillYouHelp2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WillYouHelp_ChavvahFinished",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Miryam",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Killed2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LostInSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lost2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Companion2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ElseWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Else2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PostQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Black",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Loss",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Loss2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Aching",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ChavvahFrontChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Mean",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "AlreadyAttuned",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tzedech",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Killed2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LostInSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lost2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Companion2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ElseWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Else2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Declaration",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PostQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Deny",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "What2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Cyst",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Upset",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lover",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lovers",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Cycle",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tikva",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Killed2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LostInSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lost2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Companion2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ElseWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Else2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PostQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lover",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dreamer",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Killed2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LostInSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lost2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Companion2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ElseWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Else2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Silent",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Meaning",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Thicksalt",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Killed2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LostInSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lost2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Companion2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ElseWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Else2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PostQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Feel",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tammuz",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NewWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Killed2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LostInSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Lost2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "KilledCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Companion2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "ElseWelcome",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Else2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Choices",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "PostQuestions",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Welcome2",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Unsure",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Permission",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Twofirm",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Gyredream",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauChime",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauNoLonger",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Orphaned",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Suborned",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Uncaring",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Sorry",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Happier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "How",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Liaison",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Ptoh",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Hunt",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Favor",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "FavorGift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Leave",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "LeaveGift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EndGift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WanderingTau",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Orphaned",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "How",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Suborned",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Free",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Sorry",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Happier",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "EndGift",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauCompanion",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "WelcomeHub",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Seeker",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Taking",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Throw",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "TauSoft",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Santalalotze",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Tree",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Parasite",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Dangerous",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Animal",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Memory",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "Uncertain",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "NephilimPacifyChoice",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreWightAgolgot",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreWightBethsaida",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreWightShug'ruith",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreWightRermadon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreWightQas",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Conversations.xml",
+    "Localized": "Conversations.jp.xml",
+    "ObjectName": "GyreWightQon",
+    "Status": "object-missing"
+  },
+  {
+    "BaseFile": "Corpus/Machinery-of-the-Universe-excerpt.txt",
+    "Localized": "Corpus/Machinery-of-the-Universe-excerpt.jp.txt",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Corpus/Meteorology-Weather-Explained-excerpt.txt",
+    "Localized": "Corpus/Meteorology-Weather-Explained-excerpt.jp.txt",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Corpus/Thought-Forms-excerpt.txt",
+    "Localized": "Corpus/Thought-Forms-excerpt.jp.txt",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "EmbarkModules.xml",
+    "Localized": "EmbarkModules.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Manual.xml",
+    "Localized": "Manual.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Mutations.xml",
+    "Localized": "Mutations.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Creatures.xml",
+    "Localized": "ObjectBlueprints/Creatures.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Data.xml",
+    "Localized": "ObjectBlueprints/Data.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Foods.xml",
+    "Localized": "ObjectBlueprints/Foods.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Furniture.xml",
+    "Localized": "ObjectBlueprints/Furniture.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/HiddenObjects.xml",
+    "Localized": "ObjectBlueprints/HiddenObjects.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Items.xml",
+    "Localized": "ObjectBlueprints/Items.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/PhysicalPhenomena.xml",
+    "Localized": "ObjectBlueprints/PhysicalPhenomena.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/RootObjects.xml",
+    "Localized": "ObjectBlueprints/RootObjects.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Staging.xml",
+    "Localized": "ObjectBlueprints/Staging.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/TutorialStaging.xml",
+    "Localized": "ObjectBlueprints/TutorialStaging.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Walls.xml",
+    "Localized": "ObjectBlueprints/Walls.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/Widgets.xml",
+    "Localized": "ObjectBlueprints/Widgets.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/WorldTerrain.xml",
+    "Localized": "ObjectBlueprints/WorldTerrain.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "ObjectBlueprints/ZoneTerrain.xml",
+    "Localized": "ObjectBlueprints/ZoneTerrain.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  },
+  {
+    "BaseFile": "Options.xml",
+    "Localized": "Options.jp.xml",
+    "ObjectName": null,
+    "Status": "ok"
+  }
+]

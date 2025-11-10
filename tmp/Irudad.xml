@@ -1,0 +1,180 @@
+﻿<conversation ID="Irudad" Inherits="BaseSlynthMayor">
+		<node ID="Start" IfFinishedQuest="What's Eating the Watervine?" Inherits="Welcome">
+			<text>
+				-mm. Mmm? =player.FormalAddressTerm=.~
+				{{emote|*Elder Irudad smiles.*}}~
+				{{emote|*Elder Irudad smiles.*}}
+
+				Come in- come sit 'neath the cool shade, 'cross a pillow there.~
+				{{emote|*Elder Irudad smiles.*}}
+
+				Live and drink, =name=. Come, sit with me.
+			</text>
+		</node>
+		<start ID="Welcome">
+			<text>
+				-mm. Mmm? =player.FormalAddressTerm=?
+
+				{{emote|*Elder Irudad smiles.*}}
+
+				Live and drink. Come in- come sit 'neath the cool shade, 'cross a pillow there. And welcome to Joppa.
+
+				You may drink of our freshwater, too, and quench your thirst.
+			</text>
+			<choice Target="FinishedRedrock" IfHaveActiveQuest="What's Eating the Watervine?" IfFinishedQuestStep="What's Eating the Watervine?~Travel to Red Rock" IfHaveItemDescendsFrom="Girshling Corpse">I'm back from Red Rock with the corpse of a pale spiderling. Elder, would you examine it?</choice>
+			<choice Target="Joppa">What is this place, Joppa?</choice>
+			<choice Target="Wares">Do you sell wares here?</choice>
+			<choice Target="Work" IfNotHaveQuest="What's Eating the Watervine?">I'm looking for work.</choice>
+			<choice Target="WorkAfter" IfHaveQuest="What's Eating the Watervine?">I'm looking for work.</choice>
+			<choice Target="GyreReminder" IfFinishedQuest="What's Eating the Watervine?">Can you tell me about the Gyre and the Girsh nephilim again?</choice>
+      <choice Target="Stiltbound" IfHaveQuest="O Glorious Shekhinah!">What can you tell me about the Six Day Stilt?</choice>
+      <choice Target="Barathrumites" IfHaveQuest="A Canticle for Barathrum">Argyve wants me to meet the Barathrumites.</choice>
+			<choice GotoID="End">Live and drink.</choice>
+		</start>
+		<node ID="Joppa" Inherits="Start">
+			<text>
+				-this? The oasis-hamlet. 'Neath the shelf of the world. A million breaths of salt the wind heaves over the Great Salt Desert Moghra'yi. And to the east, the rotting jungles of Qud.
+
+				Here in the crack between the two, watervine can grow, and we grow it. mmm, =player.formalAddressTerm=.
+			</text>
+			<choice Target="Qud" Priority="1">Can you tell me about Qud?</choice>
+		</node>
+		<node ID="Qud" Inherits="Start">
+			<text>
+				-mm, there? Land slopes up and is toothed in chrome steeples, ageless things. Looming over the old-earth tunnels, pillowed in rotting jungle and fungus groves. And broken against the mounts of the north, they are, in the shadow of the Spindle...
+
+				There are people, friends, communities. And friends-to-noone, too. History is thick as the high salt sun, =player.formalAddressTerm=, and where the past is ground up like matz meal, a mix of life sets in.
+
+				-mm, adventurous ones set off for their own splinter of artifact. To both Fates, life and death...
+			</text>
+		</node>
+		<node ID="Wares" Inherits="Start">
+			<text>
+				-here? Speak to my daughter through the east door, for herbs. And sitting Tam in the southeast has all manner of trinket, against his chests o' drawers.
+			</text>
+		</node>
+		<node ID="Work" Inherits="Start">
+			<text>
+				-mm, work? The farmers are plagued by cave vermin. You might speak to Mehmet o' there, by the southern watervine patch.
+
+				And Argyve, too, =player.formalAddressTerm=. The tinker. Always looking for trinkets to wire between, heh. Go through his hut of sheet metal, to the southwest.
+			</text>
+		</node>
+		<node ID="WorkAfter" Inherits="Start">
+			<text>
+				-mm, work? Try Argyve, =player.formalAddressTerm=. The tinker. Always looking for trinkets to wire between, heh. Go through his hut of sheet metal, to the southwest.
+			</text>
+		</node>
+    <node ID="Stiltbound" Inherits="Start">
+      <text>-ahh, mm, such spectacle. The statues within, a revelation to the eyes. Chandlers enough to drain your skins dry 'twixt Shallows and Beetle Moon.</text>
+    </node>
+    <node ID="Barathrumites" Inherits="Start">
+      <text>-mm, Barathrumites. Strange draft o'those bearfolk. They, mm, hah. They care not overly for outsiders. I hope Argyve sold you not a better welcome than you'll have.</text>
+    </node>
+		<node ID="FinishedRedrock">
+			<text>
+				-this? Oh? Oh...
+
+				{{emote|*Elder Irudad pauses for several minutes.*}}
+
+				Warted leg? mm. Foul smell of sour gum? mmm. Moon and sun....
+
+				A girshling? This is a girshling.
+			</text>
+			<choice Target="Girshling">What's a girshling?</choice>
+		</node>
+		<node ID="Girshling">
+			<text>
+				Creature of plague, =player.formalAddressTerm=. mmm. This one...
+
+				{{emote|*Elder Irudad pauses.*}}
+
+				This one covered in slick and muscled out the bilge hose of sleeping Agolgot, in the cave under the Cloaca...
+
+				-mm, but here? Girshling this far west? There must be hundreds for one to reach... mm, does the Gyre widen again??
+			</text>
+			<choice Target="Gyre">Gyre?</choice>
+			<choice Target="GyreWight" IfHaveState="RedrockGyreWightTalked">I talked to a strange figure next to the girshling.</choice>
+			<choice Target="GyreWight" IfHaveState="RedrockGyreWightSeen" IfNotHaveState="RedrockGyreWightTalked">There was a strange figure shadowing the creature...</choice>
+			<choice Target="Defanged">I noticed the creature has had its fangs removed.</choice>
+		</node>
+		<node ID="Gyre">
+			<text>
+				{{emote|*Elder Irudad pauses.*}}
+
+				-mm, plagues. Of our great grandsires many-times-over. Salt, darkness, svardym-frog... Girshling.
+			</text>
+			<choice Target="Agolgot2">...</choice>
+		</node>
+		<node ID="Agolgot2">
+			<text>
+				{{emote|*Elder Irudad pauses.*}}
+
+				-mm, =player.formalAddressTerm=. Do not like to sour the air with a harsh word! But this tiding bites my liver like acid. mm, must ask Nima for an elixir of yuckwheat...
+			</text>
+			<choice Target="GyreWight" IfHaveState="RedrockGyreWightTalked">I talked to a strange figure next to the girshling.</choice>
+			<choice Target="GyreWight" IfHaveState="RedrockGyreWightSeen" IfNotHaveState="RedrockGyreWightTalked">There was a strange figure shadowing the creature...</choice>
+			<choice Target="Defanged">I noticed the creature has had its fangs removed.</choice>
+			<choice Target="Apology">I am sorry to cause pain, Elder.</choice>
+		</node>
+		<node ID="GyreWight">
+			<text>-mm, oh? In dyed robes, flashing gestures of hand? And ranting about pipe milk? A gyre wight, must be. They about worship the Girsh nephilim as gods.</text>
+			<choice Target="Nephilim">Girsh nephilim?</choice>
+		</node>
+		<node ID="Nephilim" Inherits="Agolgot2">
+			<text>
+				{{emote|*Elder Irudad pauses.*}}
+
+				-mm, nephilim. Seventh plague. Girsh titans born on the Moon Stair, and quickened to life to eat our young. Sultan Resheph drove them back a chiliad ago, away to slumber. mm, do they rouse?
+			</text>
+		</node>
+		<node ID="Defanged">
+			<text>-mm, oh? A gyre wight, must be. They bind the teeth right up to their own gums, to make a show for the Girsh nephilim.</text>
+			<choice Target="Nephilim">Girsh nephilim?</choice>
+		</node>
+		<node ID="Apology">
+			<text>
+				-mm? No, =player.formalAddressTerm=! Your finding is rich in value to us. We are poor farmers, and sharpen our vinereapers is all we can do. But others? Perhaps more.
+
+				Take these prickly-boons as thanks. mm, I will not soon forget this, =name=. Leave me now to muse, kindly...
+			</text>
+			<choice Target="End">
+				<text>Live and drink.</text>
+				<part Name="QuestHandler" QuestID="What's Eating the Watervine?" Action="Complete" />
+				<part Name="ReceiveItem" Blueprints="UbernostrumTonic,Fixit Spray,SalveTonic,SalveTonic,SalveTonic" Identify="UbernostrumTonic,SalveTonic" />
+			</choice>
+		</node>
+		<node ID="GyreReminder" Inherits="Start">
+			<text>
+				-mm, yes? Plagues, a chiliad old. Seven such: girshlings, darkness. mm, svardym-frog...
+
+				Ah, nephilim, too, =player.formalAddressTerm=. Girsh titans who eat the young of kith and kin. Sultan Resheph drove them under the earth, but do they stir??
+			</text>
+		</node>
+
+		<!-- Quest: Landing Pads -->
+		<node ID="SlynthRequest">-mm, oh? You're wondering if they might come to Joppa, then?</node>
+		<node ID="SlynthRequestAccept">
+			<text>mm, I am for you, =name=. Any friend of yours is too a friend of Joppa, and if those friends desire shelter I wouldn't dare turn them away. I only hope these lilypad-folk have the patience for a farmer's life. -mm, not as exciting here as it was in the Palladium Reef.</text>
+			<choice Target="End">You have my thanks, Elder.</choice>
+		</node>
+		<node ID="SlynthRequestReject">-mm, blessings upon your generous heart, =name=. I mean no slight to these slynth, but it is too great a favor you ask of the people of Joppa.</node>
+		<node ID="SlynthAbout">Have you spoken to the slynth, =name=? I am curious to hear what destination they choose.</node>
+		<node ID="SlynthArrived">
+			<text>
+				-mm, your luminous friends are settling in quite well.
+
+				There is yet a pall of ennui among some, but such is the case for any party of brave migrants. Ah, they will find their ground or their path, all in time. Some farmers show some small discomfort but that will pass in time.
+			</text>
+			<choice Target="Start">My thanks, Elder.</choice>
+		</node>
+		<node ID="SlynthSettled">
+			<text>
+				-mm, ah, =name=. Come see how the slynth have become a part of Joppa!
+
+				Some cared not for the slow pace of our lives and struck out on their own, and with their thews and wits I have no doubt they will live to find purpose. mm, others are welcome to grow and flourish here in our marshes.
+			</text>
+			<choice Target="Start">My thanks again, Elder.</choice>
+		</node>
+
+	</conversation

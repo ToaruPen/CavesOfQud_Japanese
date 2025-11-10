@@ -82,6 +82,10 @@ namespace QudJP
                 text.font = PrimaryFont;
                 text.fontSharedMaterial = PrimaryFont.material;
             }
+            else
+            {
+                EnsureFallbackChain(text.font);
+            }
 
             text.extraPadding = true;
             text.wordWrappingRatios = Mathf.Clamp(text.wordWrappingRatios, 0.35f, 1f);
@@ -241,6 +245,25 @@ namespace QudJP
             }
 
             TMP_Settings.fallbackFontAssets = fallback;
+        }
+
+        private void EnsureFallbackChain(TMP_FontAsset? font)
+        {
+            if (font == null || PrimaryFont == null)
+            {
+                return;
+            }
+
+            var fallback = font.fallbackFontAssetTable ??= new List<TMP_FontAsset>();
+            if (font != PrimaryFont && !fallback.Contains(PrimaryFont))
+            {
+                fallback.Insert(0, PrimaryFont);
+            }
+
+            if (BoldFont != null && BoldFont != PrimaryFont && !fallback.Contains(BoldFont))
+            {
+                fallback.Add(BoldFont);
+            }
         }
 
         private bool ShouldReplaceFont(TMP_FontAsset? font)

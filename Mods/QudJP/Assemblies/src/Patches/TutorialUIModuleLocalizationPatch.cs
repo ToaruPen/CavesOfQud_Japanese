@@ -21,6 +21,8 @@ namespace QudJP.Patches
             }
         }
 
+        private const string ColoredBullet = "{{c|\u00F9}}";
+
         private static readonly Dictionary<string, TextPair> GameModeText = new()
         {
             ["Tutorial"] = new("チュートリアル", "Caves of Qud の基本を学びます。"),
@@ -28,14 +30,14 @@ namespace QudJP.Patches
             ["Roleplay"] = new("ロールプレイ", "集落でチェックポイントが有効になります。"),
             ["Wander"] = new(
                 "放浪",
-                "{{c|&#249;}} 多くのクリーチャーがあなたに中立で始まります。\n" +
-                "{{c|&#249;}} 敵を倒しても経験値は得られません。\n" +
-                "{{c|&#249;}} 発見や水儀を行うとより多くの経験値を得ます。\n" +
-                "{{c|&#249;}} 集落でチェックポイントが有効になります。"),
+                ColoredBullet + "多くのクリーチャーがあなたに中立で始まります。\n" +
+                ColoredBullet + "敵を倒しても経験値は得られません。\n" +
+                ColoredBullet + "発見や水儀を行うとより多くの経験値を得ます。\n" +
+                ColoredBullet + "集落でチェックポイントが有効になります。"),
             ["Daily"] = new(
                 "デイリー",
-                "{{c|&#249;}} 固定のキャラクターと世界シードで一度だけ挑戦できます。\n" +
-                "{{c|&#249;}} 現在は {{W|{year}}} 年の {{W|{day_of_year}}} 日目です。")
+                ColoredBullet + "固定のキャラクターと世界シードで一度だけ挑戦できます。\n" +
+                ColoredBullet + "現在は {{W|{year}}} 年の {{W|{day_of_year}}} 日目です。")
         };
 
         private static readonly Dictionary<string, TextPair> ChartypeText = new()

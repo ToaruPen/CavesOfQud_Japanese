@@ -124,6 +124,27 @@ def extract_color_tags(value: str) -> List[Dict[str, str]]:
     return tags
 
 
+def build_pending_entry(attr_entry: AttributeEntry, inherits: Optional[str], base_index: int) -> Dict[str, object]:
+    part_name = attr_entry.part_name
+    return {
+        "id": attr_entry.attr_id,
+        "object": attr_entry.object_name,
+        "inherits": inherits,
+        "part": part_name or None,
+        "attribute": attr_entry.name,
+        "source": attr_entry.value,
+        "type": classify_string(part_name, attr_entry.name),
+        "color_tags": extract_color_tags(attr_entry.value),
+        "contains_newline": "\n" in attr_entry.value,
+        "contains_markup": "&" in attr_entry.value or "&#" in attr_entry.value,
+        "order": {
+            "object_index": base_index,
+            "part_index": attr_entry.part_index,
+            "attribute": attr_entry.name,
+        },
+    }
+
+
 @dataclass
 class AttributeEntry:
     name: str
@@ -152,25 +173,41 @@ def collect_object_names(root) -> Dict[str, int]:
     return names
 
 
-def format_attributes(attrib: Dict[str, str]) -> List[Dict[str, str]]:
-    ordered_keys = sorted(
-        attrib.keys(),
-        key=lambda key: (0 if key == "Name" else 1, key),
-    )
-    return [{"name": key, "value": attrib[key]} for key in ordered_keys]
-
-
 def extract_object_data(obj, base_index: int) -> Tuple[Dict[str, object], List[Dict[str, object]]]:
     object_name = obj.attrib.get("Name")
     inherits = obj.attrib.get("Inherits")
+    pending_strings: List[Dict[str, object]] = []
+
+    object_attributes: List[Dict[str, object]] = []
+    ordered_object_keys = sorted(key for key in obj.attrib.keys() if key != "Name")
+    for attr_name in ordered_object_keys:
+        attr_value = obj.attrib[attr_name]
+        attr_entry = AttributeEntry(
+            name=attr_name,
+            value=attr_value,
+            translate=should_translate_attribute(attr_name),
+            part_index=-1,
+            object_name=object_name,
+            part_name="",
+        )
+        if attr_entry.translate:
+            pending_strings.append(build_pending_entry(attr_entry, inherits, base_index))
+            object_attributes.append(
+                {
+                    "id": attr_entry.attr_id,
+                    "name": attr_entry.name,
+                    "value": attr_entry.value,
+                    "translate": True,
+                }
+            )
+
     object_entry = {
         "name": object_name,
         "base_index": base_index,
         "inherits": inherits,
-        "attributes": format_attributes({k: v for k, v in obj.attrib.items() if k != "Name"}),
+        "attributes": object_attributes,
         "parts": [],
     }
-    pending_strings: List[Dict[str, object]] = []
 
     for part_index, part in enumerate(obj.findall("./part")):
         part_name = part.attrib.get("Name", "")
@@ -190,26 +227,7 @@ def extract_object_data(obj, base_index: int) -> Tuple[Dict[str, object], List[D
             )
             if attr_entry.translate and attr_name != "Name":
                 has_translate_attr = True
-                color_tags = extract_color_tags(attr_value)
-                pending_strings.append(
-                    {
-                        "id": attr_entry.attr_id,
-                        "object": object_name,
-                        "inherits": inherits,
-                        "part": part_name,
-                        "attribute": attr_name,
-                        "source": attr_value,
-                        "type": classify_string(part_name, attr_name),
-                        "color_tags": color_tags,
-                        "contains_newline": "\n" in attr_value,
-                        "contains_markup": "&" in attr_value or "&#" in attr_value,
-                        "order": {
-                            "object_index": base_index,
-                            "part_index": part_index,
-                            "attribute": attr_name,
-                        },
-                    }
-                )
+                pending_strings.append(build_pending_entry(attr_entry, inherits, base_index))
             attr_entries.append(attr_entry)
 
         if has_translate_attr:
@@ -225,6 +243,7 @@ def extract_object_data(obj, base_index: int) -> Tuple[Dict[str, object], List[D
                             "translate": entry.translate and entry.name != "Name",
                         }
                         for entry in attr_entries
+                        if entry.translate and entry.name != "Name"
                     ],
                 }
             )

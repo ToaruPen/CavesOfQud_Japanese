@@ -8,10 +8,27 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from copy import deepcopy
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
+import re
+import xml.etree.ElementTree as ET
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+INVALID_XML_REF = re.compile(r"&#(x[0-9a-fA-F]+|\d+);")
+INVALID_XML_CHAR = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+
+
+def sanitize_xml(text: str) -> str:
+    def replace_ref(match: re.Match[str]) -> str:
+        value = match.group(1)
+        codepoint = int(value[1:], 16) if value.startswith("x") else int(value)
+        if codepoint in (0x9, 0xA, 0xD) or codepoint >= 0x20:
+            return match.group(0)
+        return ""
+
+    text = INVALID_XML_REF.sub(replace_ref, text)
+    return INVALID_XML_CHAR.sub("", text)
 
 
 def load_json(path: Path) -> dict:
@@ -58,50 +75,99 @@ def normalize_translation(value: str) -> str:
     return value.replace("&#10;", "\n")
 
 
-def escape_attribute(value: str) -> str:
-    escaped = normalize_translation(value)
-    escaped = escaped.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
-    escaped = escaped.replace("\n", "&#10;")
-    return escaped
+def resolve_repo_path(path_str: str) -> Path:
+    path = Path(path_str)
+    if not path.is_absolute():
+        path = (REPO_ROOT / path).resolve()
+    return path
 
 
-def format_attributes(pairs: List[Tuple[str, str]]) -> str:
-    return " ".join(f'{key}="{escape_attribute(value)}"' for key, value in pairs)
+def load_base_objects(base_path: Path) -> Dict[str, ET.Element]:
+    if not base_path.exists():
+        raise SystemExit(f"Base file not found: {base_path}")
+    text = base_path.read_text(encoding="utf-8-sig")
+    sanitized = sanitize_xml(text)
+    root = ET.fromstring(sanitized)
+    objects: Dict[str, ET.Element] = {}
+    for elem in root.findall("./object"):
+        name = elem.attrib.get("Name")
+        if not name or name in objects:
+            continue
+        objects[name] = elem
+    return objects
 
 
-def build_object_snippet(object_entry: dict, translations: Dict[str, str]) -> List[str]:
-    name = object_entry["name"]
+def indent_element(elem: ET.Element, level: int = 0, space: str = "  ") -> None:
+    children = list(elem)
+    if not children:
+        return
+    indent_text = "\n" + space * (level + 1)
+    for child in children:
+        child.tail = indent_text
+        indent_element(child, level + 1, space)
+    children[-1].tail = "\n" + space * level
+
+
+def serialize_object_element(element: ET.Element) -> str:
+    wrapper = ET.Element("root")
+    wrapper.append(deepcopy(element))
+    try:
+        ET.indent(wrapper, space="  ", level=0)  # type: ignore[attr-defined]
+    except AttributeError:
+        indent_element(wrapper, level=0)
+    xml = ET.tostring(wrapper, encoding="unicode")
+    start = xml.find(">") + 1
+    end = xml.rfind("</root>")
+    return xml[start:end].strip()
+
+
+def apply_translations_to_object(element: ET.Element, object_entry: dict, translations: Dict[str, str]) -> None:
+    parts = element.findall("./part")
+    parts_count = len(parts)
+
+    for part_entry in object_entry.get("parts", []):
+        part_index = part_entry.get("index")
+        if part_index is None or part_index >= parts_count:
+            raise SystemExit(
+                f"Object '{object_entry.get('name')}' part index {part_index} is out of range "
+                f"(found {parts_count} parts in base file)."
+            )
+        target_part = parts[part_index]
+        for attr in part_entry.get("attributes", []):
+            if not attr.get("translate"):
+                continue
+            attr_id = attr.get("id")
+            attr_name = attr.get("name")
+            if not attr_id or not attr_name:
+                raise SystemExit(f"Malformed attribute entry on object '{object_entry.get('name')}'.")
+            if attr_id not in translations:
+                raise SystemExit(f"Missing translation for id '{attr_id}' (object '{object_entry.get('name')}'.)")
+            if attr_name not in target_part.attrib:
+                print(
+                    f"[WARN] Skipping attribute '{attr_name}' on part '{target_part.attrib.get('Name')}' "
+                    f"for object '{object_entry.get('name')}' because it does not exist in the base definition.",
+                    file=sys.stderr,
+                )
+                continue
+            target_part.set(attr_name, normalize_translation(translations[attr_id]))
+
+
+def build_object_element(
+    object_entry: dict, translations: Dict[str, str], base_objects: Dict[str, ET.Element]
+) -> ET.Element:
+    name = object_entry.get("name")
     if not name:
         raise SystemExit("Object entry is missing 'name'.")
-
-    attributes = [("Name", name)]
-    for attr in object_entry.get("attributes", []):
-        attributes.append((attr["name"], attr["value"]))
-    attributes.append(("Replace", "true"))
-
-    object_lines = [f"  <object {format_attributes(attributes)}>"]
-
-    parts = object_entry.get("parts", [])
-    if not parts:
-        raise SystemExit(f"Object '{name}' has no parts with translatable attributes.")
-
-    for part in parts:
-        part_pairs: List[Tuple[str, str]] = []
-        for attr in part.get("attributes", []):
-            attr_name = attr["name"]
-            if attr_name == "Replace":
-                continue
-            value = attr["value"]
-            if attr.get("translate"):
-                attr_id = attr["id"]
-                if attr_id not in translations:
-                    raise SystemExit(f"Missing translation for id '{attr_id}' (object '{name}').")
-                value = translations[attr_id]
-            part_pairs.append((attr_name, value))
-        object_lines.append(f"    <part {format_attributes(part_pairs)} />")
-
-    object_lines.append("  </object>")
-    return object_lines
+    base_element = base_objects.get(name)
+    if base_element is None:
+        raise SystemExit(
+            f"Object '{name}' was not found in the base file; "
+            "rerun the extractor to refresh the payload."
+        )
+    element = deepcopy(base_element)
+    element.set("Replace", "true")
+    apply_translations_to_object(element, object_entry, translations)
+    return element
 
 
 def ensure_target_available(target: Path, object_names: List[str]) -> str:
@@ -128,13 +194,6 @@ def insert_snippet(target: Path, snippet: str, current_text: str, dry_run: bool)
     else:
         target.write_text(new_content, encoding="utf-8")
         print(f"Inserted {snippet.count('<object')} objects into {target}")
-
-
-def resolve_repo_path(path_str: str) -> Path:
-    path = Path(path_str)
-    if not path.is_absolute():
-        path = (REPO_ROOT / path).resolve()
-    return path
 
 
 def parse_args() -> argparse.Namespace:
@@ -185,7 +244,6 @@ def main() -> None:
     pending_strings = payload.get("pending_strings", []) or []
     expected_ids = {entry["id"] for entry in pending_strings if isinstance(entry, dict) and "id" in entry}
     if not expected_ids:
-        # Fall back to scanning the object entries if pending_strings is absent.
         for obj in payload.get("objects", []):
             for part in obj.get("parts", []):
                 for attr in part.get("attributes", []):
@@ -198,6 +256,16 @@ def main() -> None:
     if extra:
         print(f"[WARN] {len(extra)} translations do not match any pending string (e.g., {next(iter(extra))}).", file=sys.stderr)
 
+    localized_path = payload.get("localized_file")
+    base_file_in_payload = payload.get("base_file")
+    if not localized_path:
+        raise SystemExit("Payload is missing 'localized_file'. Use --target to specify the destination manually.")
+    if not base_file_in_payload:
+        raise SystemExit("Payload is missing 'base_file'. Please regenerate the payload with the latest extractor.")
+
+    base_path = resolve_repo_path(base_file_in_payload)
+    base_objects = load_base_objects(base_path)
+
     sorted_objects = sorted(objects, key=lambda obj: obj.get("base_index", 0))
     snippet_lines: List[str] = []
     for obj in sorted_objects:
@@ -206,24 +274,16 @@ def main() -> None:
                 f"Object '{obj.get('name')}' is marked as already localized; "
                 "rerun the extractor without --include-present to avoid duplicates."
             )
-        snippet_lines.extend(build_object_snippet(obj, translation_map))
-        snippet_lines.append("")  # blank line between objects
+        element = build_object_element(obj, translation_map, base_objects)
+        snippet_lines.append(serialize_object_element(element))
 
-    snippet = "\n".join(line for line in snippet_lines if line is not None).rstrip()
+    snippet = "\n\n".join(snippet_lines).rstrip()
 
-    if args.target:
-        target_path = args.target.expanduser().resolve()
-    else:
-        localized = payload.get("localized_file")
-        if not localized:
-            raise SystemExit("Payload is missing 'localized_file'. Use --target to specify the destination manually.")
-        target_path = resolve_repo_path(localized)
-
+    target_path = args.target.expanduser().resolve() if args.target else resolve_repo_path(localized_path)
     if not target_path.exists():
         raise SystemExit(f"Target XML file not found: {target_path}")
 
     current_text = ensure_target_available(target_path, [obj["name"] for obj in sorted_objects])
-
     insert_snippet(target_path, snippet, current_text, args.dry_run)
 
 

@@ -27,13 +27,13 @@
 | Items | `ObjectBlueprints/Items.xml` | `Localization/ObjectBlueprints/Items.jp.xml` | 既存。カテゴリ単位で順次翻訳中。 |
 | RootObjects | `ObjectBlueprints/RootObjects.xml` | `Localization/ObjectBlueprints/RootObjects.jp.xml` | 既存。CosmeticObject などの DisplayName を上書き済み。 |
 | Creatures | `ObjectBlueprints/Creatures.xml` | *未作成*（`Localization/ObjectBlueprints/Creatures.jp.xml` を追加予定） | 未訳。 |
-| Data | `ObjectBlueprints/Data.xml` | *未作成* | 未訳。 |
+| Data | `ObjectBlueprints/Data.xml` | `Localization/ObjectBlueprints/Data.jp.xml` | 未識別遺物ラベルと調理素材の説明を追記済み。 |
 | Foods | `ObjectBlueprints/Foods.xml` | *未作成* | 未訳。 |
 | Furniture | `ObjectBlueprints/Furniture.xml` | *未作成* | 未訳。 |
 | HiddenObjects | `ObjectBlueprints/HiddenObjects.xml` | *未作成* | 未訳。 |
 | PhysicalPhenomena | `ObjectBlueprints/PhysicalPhenomena.xml` | *未作成* | 未訳。 |
 | Staging / TutorialStaging | `ObjectBlueprints/Staging.xml` / `TutorialStaging.xml` | *未作成* | 未訳。 |
-| Walls | `ObjectBlueprints/Walls.xml` | *未作成* | 未訳。 |
+| Walls | `ObjectBlueprints/Walls.xml` | `Localization/ObjectBlueprints/Walls.jp.xml` | 表示名・壁説明を追加済み（ステータスや物性タグは未対象）。 |
 | Widgets | `ObjectBlueprints/Widgets.xml` | *未作成* | 未訳。 |
 | WorldTerrain | `ObjectBlueprints/WorldTerrain.xml` | *未作成* | 未訳。 |
 | ZoneTerrain | `ObjectBlueprints/ZoneTerrain.xml` | *未作成* | 未訳。 |

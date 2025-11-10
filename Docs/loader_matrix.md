@@ -38,6 +38,8 @@
 - 対象: `Genotypes`, `Subtypes`, `Mutations`, `EmbarkModules`, `Options`, `Manual`, `ManualPatch`.
 - `Docs/translation_process.md:11-19` にある通り、要素単位で `Load="Replace"` を指定しないと `Player.log` に `Unused attribute "Replace"` が出る。
 - 現在の jp ファイルはまだ `Load="Replace"` を持っていないため、差し替えツールを整備してリライトしたい。
+- Harmony で `ModManager.ForEachFile` をフックし、`Mods/QudJP/Localization/*.jp.xml` を `XmlDataHelper.Parse("*.xml", includeMods:true)` に差し挟む。実装: `Mods/QudJP/Assemblies/src/Patches/ModManagerLocalizationFilePatch.cs` ＋ `LocalizationAssetResolver.TryInjectOverride`。
+- 併せて `XmlDataHelper.AssertExtraAttributes` をパッチ (`XmlDataHelperLegacyAttributePatch`) し、QudJP の `.jp.xml` では `Load` / `Replace` 属性を自動で既読扱いにして Player.log の `Unused attribute` 警告を抑制する。ロジックは `LocalizationAssetResolver.IgnoreLegacyAttributes`。
 
 ### ObjectBlueprints / Conversations
 - `Player.log:158-181` の並びを見ると `Mutations.xml` → `object blueprints` → `Conversations.xml` の順で読み込まれており、`Replace="true"` を付けた `Objects` / `Conversations` でも警告は出ていない。
@@ -75,3 +77,7 @@
 - `Docs/tasks/objectblueprints_llm.md` … LLM パイプライン仕様。  
 - `Docs/tasks/books.md` … Corpus TXT の未訳タスク。
 
+### Console / TMP Bridge
+| category | base data | localization asset | loader / source | merge / replace | 備考 |
+| --- | --- | --- | --- | --- | --- |
+| Classic Console | Runtime ConsoleLib.Console.TextConsole -> ScreenBuffer | (Harmony) ConsoleBridge | Prefix intercept on TextConsole.DrawBuffer (ConsoleBridgePatch) | n/a (runtime render only) | Mods/QudJP/Assemblies/src/Console/* で ScreenBuffer→TMP に変換。Classic UI (!GameManager.ModernUI) のときだけ 80x25 行を <color> つき文字列に落とし、ConsoleBridgeView が差分描画する。 |

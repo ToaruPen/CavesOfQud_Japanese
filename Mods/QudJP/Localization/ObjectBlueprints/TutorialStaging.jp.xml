@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects Load="Merge">
+  <object Name="TerrainJoppaTutorial" Inherits="TerrainSaltmarsh" Replace="true">
+    <tag Name="NoBiomes" Value="1" />
+    <tag Name="NoRivers" Value="1" />
+  </object>
+
+  <object Name="TutorialDagger" Inherits="Dagger" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialTorch" Inherits="Torch" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialChest1" Inherits="Chest" Replace="true">
+    <inventoryobject Blueprint="TutorialTorch" />
+    <inventoryobject Blueprint="TutorialDagger" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialSnapjaw" Inherits="Snapjaw Scavenger" Replace="true">
+    <part Name="TutorialSnapjaw" />
+    <intproperty Name="StartNotHibernatingChanceIn100" Value="100" />
+    <part Name="Corpse" CorpseChance="0" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialBear" Inherits="Bear" Replace="true">
+    <part Name="TutorialBear" />
+    <part Name="Corpse" CorpseChance="0" />
+    <intproperty Name="StartNotHibernatingChanceIn100" Value="0" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialLeatherArmor" Inherits="Leather Armor" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialChemCell" Inherits="Chem Cell" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialBattleAxe" Inherits="Battle Axe2" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialAphorisms" Inherits="AphorismsAboutBirds" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialMarkovBook" Inherits="StandaloneMarkovBook" Replace="true">
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialFusionPumpingStation" Inherits="Fusion Pumping Station" Replace="true">
+    <part Name="LiquidVolume" InitialLiquid="water-800,salt-200" />
+    <tag Name="BaseModChance" Value="-999" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialHalfFullWaterskin" Inherits="HalfFullWaterskin" Replace="true">
+    <tag Name="Tutorial" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="ShaleWithPiping" Inherits="Shale" Replace="true">
+    <part Name="ModPiping" />
+    <tag Name="Breakable" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+  <object Name="TutorialClockworkBeetlePariah" Inherits="ClockworkBeetle" Replace="true">
+    <part Name="Render" DisplayName="機械仕掛けの甲虫とその民に疎まれた者" />
+    <part Name="Brain" Factions="Pariahs-100" Wanders="false" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <inventoryobject Blueprint="Witchwood Bark" Number="3" />
+    <inventoryobject Blueprint="Vinewafer Sheaf" Number="4" />
+    <tag Name="Tutorial" />
+  </object>
+</objects>

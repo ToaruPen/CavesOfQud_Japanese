@@ -1,12 +1,13 @@
-using HarmonyLib;
+﻿using HarmonyLib;
+using QudJP.ConsoleUI;
+using QudJP.Localization;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace QudJP
 {
     /// <summary>
-    /// Harmony の初期化と共通サービスのブートストラップを担当。
-    /// モジュールイニシャライザでゲーム起動時に自動実行する。
+    /// Harmony パッチと翻訳／フォント／コンソール橋渡しをまとめて初期化するモジュールエントリポイント。
     /// </summary>
     public static class QudJPMod
     {
@@ -31,8 +32,12 @@ namespace QudJP
             _harmony = new Harmony("jp.toarupen.qudjp");
             _harmony.PatchAll();
 
+            Translator.Instance.Initialize();
             FontManager.Instance.TryLoadFonts();
-            Debug.Log("[QudJP] Harmony パッチとフォント初期化を実行しました。");
+            ConsoleBridge.Instance.Initialize();
+            Debug.Log("[QudJP] Harmony 郢昜ｻ｣繝｣郢昶・竊堤ｹ晁ｼ斐°郢晢ｽｳ郢昜ｺ･繝ｻ隴帶ｺｷ蝟ｧ郢ｧ雋橸ｽｮ貅ｯ・｡蠕鯉ｼ邵ｺ・ｾ邵ｺ蜉ｱ笳・ｸｲ繝ｻ");
         }
     }
 }
+
+
