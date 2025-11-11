@@ -16,6 +16,6 @@
 3. 問題があればスクリーンショット + ログ抜粋を Issue または Docs/test_report.md へ記録。
 
 ## Pass 条件
-- 致命的な UIT 閉塞 (文字化けで進行不可) がゼロ。
+- 致命的な UI 閉塞 (文字化けで進行不可) がゼロ。
 - Player.log に MissingGlyph / Harmony Exception が残っていない。
 - 翻訳済みセクションで英語文が混在しない。
