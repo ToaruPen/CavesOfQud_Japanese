@@ -13,7 +13,7 @@
 ## テストフロー
 1. テスト前に `build_log.txt` と `Player.log` をクリア。
 2. シナリオを実行し、表示崩れ・誤訳・抜け文字を確認。
-3. 問題があればスクリーンショット + ログ抜粋を Issue または Docs/test_report.md へ記録。
+3. 問題があればスクリーンショット + ログ抜粋を Issue または該当カテゴリのタスクボード（例: `Docs/tasks/ui.md`・`Docs/tasks/conversations.md`）へ記録。
 
 ## Pass 条件
 - 致命的な UIT 閉塞 (文字化けで進行不可) がゼロ。
