@@ -65,6 +65,17 @@ namespace QudJP.Patches
                 }
             }
 
+            var styleName = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : string.Empty;
+
+            if (!string.IsNullOrEmpty(styleName) &&
+                styleName.IndexOf("Dual", System.StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                CopyIfMissing(paramMap, "DisplayName", "DisplayName2");
+                CopyIfMissing(paramMap, "ConText", "ConText2");
+                CopyIfMissing(paramMap, "LongDescription", "LongDescription2");
+                CopyIfMissing(paramMap, "WoundLevel", "WoundLevel2");
+            }
+
             var processedTmps = new System.Collections.Generic.HashSet<TMP_Text>();
             if (tooltip.TMPFields != null)
             {
@@ -80,16 +91,7 @@ namespace QudJP.Patches
                     var c = t.color; c.a = 1f; t.color = c;
                     EnsureRectSize(t);
 
-                    if (!string.IsNullOrEmpty(t.text) && t.text.IndexOf('%') >= 0)
-                    {
-                        var restored = RestorePlaceholders(t.text, paramMap);
-                        if (!string.Equals(restored, t.text, System.StringComparison.Ordinal))
-                        {
-                            t.text = restored;
-                            t.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
-                            UnityEngine.Debug.Log($"[QudJP] Tooltip placeholder restored on '{t.gameObject?.name ?? "<null>"}'");
-                        }
-                    }
+                    TryRestorePlaceholders(t, paramMap);
 
                     // Final guard: if text is empty, try to restore from parameterized value
                     if (string.IsNullOrWhiteSpace(t.text))
@@ -144,6 +146,8 @@ namespace QudJP.Patches
                 EnsureRectSize(t);
 
                 var current = t.text;
+                TryRestorePlaceholders(t, paramMap);
+                current = t.text;
                 var name = t.gameObject != null ? t.gameObject.name : string.Empty;
                 var rt = t.rectTransform; var rect = rt != null ? rt.rect : new UnityEngine.Rect();
                 if (!string.IsNullOrEmpty(current) && rt != null && (rect.width < 1f || rect.height < 1f))
@@ -179,7 +183,7 @@ namespace QudJP.Patches
                     (string.Equals(name, "SubHeader", System.StringComparison.Ordinal) ||
                      string.Equals(name, "ConText", System.StringComparison.Ordinal)))
                 {
-                    t.gameObject.SetActive(false);
+                    t.text = string.Empty;
                     continue;
                 }
 
@@ -369,6 +373,48 @@ namespace QudJP.Patches
             }
 
             return string.Join(delimiter, parts);
+        }
+
+        private static bool TryRestorePlaceholders(
+            TMP_Text text,
+            System.Collections.Generic.Dictionary<string, string> values)
+        {
+            if (text == null || string.IsNullOrEmpty(text.text) || text.text.IndexOf('%') < 0)
+            {
+                return false;
+            }
+
+            var restored = RestorePlaceholders(text.text, values);
+            if (!string.Equals(restored, text.text, System.StringComparison.Ordinal))
+            {
+                text.text = restored;
+                text.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
+                UnityEngine.Debug.Log($"[QudJP] Tooltip placeholder restored on '{text.gameObject?.name ?? "<null>"}'");
+                return true;
+            }
+
+            return false;
+        }
+
+        private static void CopyIfMissing(
+            System.Collections.Generic.Dictionary<string, string> map,
+            string source,
+            string target)
+        {
+            if (map == null)
+            {
+                return;
+            }
+
+            if (map.ContainsKey(target))
+            {
+                return;
+            }
+
+            if (map.TryGetValue(source, out var value) && !string.IsNullOrEmpty(value))
+            {
+                map[target] = value;
+            }
         }
     }
 }

@@ -147,15 +147,36 @@ namespace QudJP.Patches
 
         private static bool LooksLikeRtf(string s)
         {
-            if (string.IsNullOrEmpty(s)) return false;
-            // Heuristics: RTF sequences commonly include braces and backslash commands.
-            // Qud's RTF utility typically emits lots of '\\' and tokens like '\\par', '\\b', etc.
-            if (s.Length > 0 && s[0] == '{') return true;
-            if (s.IndexOf("\\par", System.StringComparison.Ordinal) >= 0) return true;
-            if (s.IndexOf("\\b", System.StringComparison.Ordinal) >= 0) return true;
-            if (s.IndexOf("\\i", System.StringComparison.Ordinal) >= 0) return true;
-            if (s.IndexOf("\\cf", System.StringComparison.Ordinal) >= 0) return true;
-            if (s.IndexOf("{\\", System.StringComparison.Ordinal) >= 0) return true;
+            if (string.IsNullOrEmpty(s))
+            {
+                return false;
+            }
+
+            // Quick exit: Unity rich text uses '<' extensively but rarely '{'.
+            if (s.IndexOf('<') >= 0 && s.IndexOf('{') < 0)
+            {
+                return false;
+            }
+
+            // Genuine RTF almost always starts with "{\rtf"
+            if (s.StartsWith("{\\rtf", System.StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+
+            // Require both braces and backslash control words to avoid matching simple "{...}" strings.
+            if (s.IndexOf('{') >= 0 && s.IndexOf('}') > s.IndexOf('{') && s.IndexOf('\\') >= 0)
+            {
+                // Look for common RTF control words to reduce false positives.
+                if (s.IndexOf("\\fonttbl", System.StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    s.IndexOf("\\colortbl", System.StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    s.IndexOf("\\stylesheet", System.StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    s.IndexOf("\\pard", System.StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    return true;
+                }
+            }
+
             return false;
         }
 
