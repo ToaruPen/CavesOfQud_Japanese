@@ -2,6 +2,7 @@ using System;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
+using QudJP.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -114,7 +115,7 @@ namespace QudJP.Patches
         {
             if (menuItem?.data is QudMenuItem item && !string.IsNullOrWhiteSpace(item.text))
             {
-                return HighlightHotkey(StripMarkup(item.text));
+                return HighlightHotkey(StripMarkup(item.text), item);
             }
 
             return "<Missing>";
@@ -127,7 +128,7 @@ namespace QudJP.Patches
             return stripped.Trim();
         }
 
-        private static string HighlightHotkey(string value)
+        private static string HighlightHotkey(string value, QudMenuItem? source)
         {
             if (string.IsNullOrEmpty(value))
             {
@@ -150,21 +151,26 @@ namespace QudJP.Patches
                     return value;
                 }
 
-                var idx = value.IndexOf(firstToken, System.StringComparison.Ordinal);
+                var idx = value.IndexOf(firstToken, StringComparison.Ordinal);
                 if (idx < 0)
                 {
                     return value;
                 }
 
+                var resolvedLabel = MenuHotkeyHelper.GetPrimaryLabel(source?.command, source?.hotkey);
+                var replacement = string.IsNullOrWhiteSpace(resolvedLabel) ? firstToken : resolvedLabel!;
+
                 return value.Substring(0, idx) +
-                    $"<color=#CFC041FF>[{firstToken}]</color>" +
+                    $"<color=#CFC041FF>[{replacement}]</color>" +
                     value.Substring(idx + firstToken.Length);
             }
 
             var hotkey = match.Groups[1].Value;
             var spacing = match.Groups[2].Value;
             var rest = match.Groups[3].Value;
-            return $"<color=#CFC041FF>{hotkey}</color>{spacing}{rest}";
+            var finalLabel = MenuHotkeyHelper.GetPrimaryLabel(source?.command, source?.hotkey);
+            var emphasized = string.IsNullOrWhiteSpace(finalLabel) ? hotkey : $"[{finalLabel!.Trim()}]";
+            return $"<color=#CFC041FF>{emphasized}</color>{spacing}{rest}";
         }
 
         private static string Short(string? value)

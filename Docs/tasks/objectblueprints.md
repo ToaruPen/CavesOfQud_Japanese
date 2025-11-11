@@ -1,37 +1,29 @@
 # ObjectBlueprints / タスクボード
 
-ObjectBlueprints 配下の翻訳状況を管理します。`references/Base/ObjectBlueprints/*.xml` をベースに、`Mods/QudJP/Localization/ObjectBlueprints/*.jp.xml` を `Load="Merge"` 形式で作成してください。
+ObjectBlueprints 系 XML の翻訳タスクを管理します。`references/Base/ObjectBlueprints/*.xml` をベースに、`Mods/QudJP/Localization/ObjectBlueprints/*.jp.xml` を **Load="Merge"** で差し込む想定です。
 
-## 進行サマリ
-- [x] `ObjectBlueprints/Items.jp.xml` … Batch15～18 を `work/items_missing_batch*.json`／`_translated_batch*.json` で管理しながら完了。Batch15 では EatenAccomplishment 系と Exile／Joppa／Caver／Skref 由来の書籍群を追加し、Batch16 で Frivolous Lives／Across Moghra'yi I～III／Dark Calculus／Canticles III／Mimic & Madpole／Entropy→Hierarchy／Crime and Punishment など長文カテゴリを投入。Batch17 は Blood and Fear／The Artless Beauty／Fauns of the Meadow／Murmurs' Prayer／In Maqqom Yd／Eta and the Earthling／Council at Gamma Rock／Modulo Moon Stair／Golem Operating Manual／*advertisement*／History of Joppa I・II を処理し、Batch18 で glowcrust・fickle gill・mumble mouth・waxflab・Klanq's Security Card・Trollking Key・BarathrumKey・CrystalKey・Grit Gate Grid Key ほか Token／Clue／DataDisk 系 38 件を訳出。
-- [x] 2025-11-12: Items.jp.xml のカタカナ製品名（Laser Rifle / Force Modulator など英語複合語由来）の DisplayName を自動スクリプトで再解析し、スペース相当位置に中黒 `・` を挿入して統一。既存テンプレート（{{C|...}} 等）内に入った `・` は必要に応じてテンプレ外へ移動し、レーザー／バイオニック系など 90+ 件を一括修正。
-- [x] 2025-11-12 PM: diff_missing に残っていた BaseTierBack/Arm/Floating Tier7-8、汎用コープス（Animal/Humanoid/Arthropod/Fish ほか）と DataDisk / Soup・BrainBrine・SunSlag Phial / StorageTank / Gourd / Entropy Cyst / Magnetic Bottle / Fungal Infection / Security Card を訳出し、`py -3 scripts/diff_localization.py --missing-only` で 0 件を確認。
-- [x] `ObjectBlueprints/RootObjects.jp.xml` … CosmeticObject の DisplayName を `[オブジェクト]` に差し替え。
-- [ ] `ObjectBlueprints/ObjectBlueprints/*.jp.xml` … `references/Base/ObjectBlueprints/ObjectBlueprints/` 以下のメタ定義はすべて `file-missing`。
+## 進行状況
+- [x] `ObjectBlueprints/Items.jp.xml`：Batch15～18 を `work/items_missing_batch*.json`／`_translated_batch*.json` から反映し、EatenAccomplishment～Grit Gate Grid Key までの DisplayName / Description を日本語化。
+- [x] 2025-11-12 AM：Items の複合語（Laser Rifle / Force Modulator など）の中黒位置を調整し、{{C|…}} テンプレの波ダッシュを正規化。
+- [x] 2025-11-12 PM：`py -3 scripts/diff_localization.py --missing-only` で BaseTierBack/Arm/Floating Tier7-8／各種 Templates (Animal/Humanoid/Arthropod/Fish)／DataDisk／Soup／BrainBrine／SunSlag Phial／StorageTank／Gourd／Entropy Cyst／Magnetic Bottle／Fungal Infection／Security Card の欠落を解消したことを確認。
+- [x] `ObjectBlueprints/RootObjects.jp.xml`：CosmeticObject 系の DisplayName を `[Object]` → `[オブジェクト]` に置換。
+- [x] `ObjectBlueprints/ObjectBlueprints/*.jp.xml`：ベース側に該当ディレクトリが存在しないため対象外（diff_missing = 0 を確認済み）。
 
-## 未訳 / 対応中
-- [進行中 / Delta] `ObjectBlueprints/Creatures.xml` … Batch1 で Base prototypes（Creature / Animal / BaseBear / BaseUrchin / BaseMiner / Turret Tinker / BaseBaboon / BaseGoat / BaseFarmer / BaseGyreWight / BaseIssachari / BaseMopango / Mopango Corpse / BaseSwine / Templar / MutatedPlant / MutatedFungus / BaseNest / NaturalWeapon / NaturalMissileWeapon）を抽出＆挿入し `Creatures.jp.xml` を新規作成。Batch2 以降で NaturalFist～Bite の自然武器派生と Apple Farmer / Baboon / Bat 系列、Bear / Pig / Boar / Cannibal / Cave Spider / Ray Cat / Croc / Dog、Chromeling / Electrofuge / GiantAmoeba / Giant Beetle / Giant Centipede / Giant Dragonfly / Glowcrow / Glowfish / Glowpad / Goat / Horned Chameleon、Horned Chameleon Corpse / Irritable Tortoise / Jilted Lover / Pig Farmer / Prickler / Qudzu / Salamander / Scorpiock / Scrap-clad Hermit / Seed-Spitting Vine & Seed Slingshot / Watervine Farmer / Young Ivory / Snapjaw 亜種、Snapjaw 系派生（Scavenger～Hero）＋ Aloe Porta / Beetlebum / Bloated Leech / Clockwork Beetle / Issachari Raider & Rifler / Two-Headed Boar / Guard Dog / Chute Crab、Eyeless Crab / Feral Lah / Giant Centipede Nest / Glowmoth / Hide-Sheathed Hermit / Honey Skunk / Knollworm / Leech / Mechanimist Pilgrim 系列、Mechanimist rummager / Miner Mk I / Sightless Way 見習い / Plated Knollworm / Salthopper / Seedsprout Worm / Segmented Mirthworm / Scrapbot 系列 / Slugsnout 系列、Waydroid / Sprouting Orb / Templar Squire / Thirst Thistle / Trash Monk / Worm of the Earth / Girshling 系（通常～穿孔＋牙アイテム）、Zigzag Fangs・ヒンドレン／ファウンドレン／ウッドスプロッグ／ナフターリ／Godhed などを順次投入。Batch12 では Agolfly / Girshfly / Agolmaggot / Aloe Volta / Albino Ape / Arconaut / Barkbiter / Chitinous Puma / Dawnglider / Disciple of the Sightless Way、Batch13 では Drillbot / Equimax / Fire Ant / Fire Snout / Fork-Horned Gnu / Gelatinous Wedge / Ghost Perch / Giant Beetle Nest / Girshworm / Gyre Wight of Agolgot / Herding Dog、Batch14 では Ice Frog / Infiltrator / Plated Chromeling / Prism Perch / Quillipede / Rifle Turret Tinker / Rustacean / Sawhander / Sewage Eel / Spark Tick / Two-Headed Slugsnout / Worker Ant を追加。Batch15 では Voider / Yonderbrush / Goatfolk 主系（Hornblower / Sower / Yurtwarden / Shaman / Thrall、死体バリエーション、Sower's Seed）と Snapjaw Troglodyte 系（Feeder / Spearfiend、および噛み付きパーツ）を 20 体追加。Batch16 では poison-tipped spear / Snapjaw Trapper & Howler / Aloe Pyra / Asphodelyte（Reclamation 友軍免除タグ）/ Black・Blue・Brown Jel ＋各 pseudopod / Chaingun Turret Tinker / Cloneling（メス含む）/ Cragmensch 系（Fist / Brainer / Boulderer / Luminary）/ Dervish of the Sightless Way を追加し、Batch17 では Drowsing Urchin / Electric Snail 系（武器＋死体）/ Eyeless King Crab 系 / Fire Ant Queen / Gelatinous Frustum / Green Goo＋仮足 / Gyre Wight of Bethsaida & Shug'ruith / Holographic Ivory / Humor（仮足含む）/ Hyrkhound（噛み付き）/ Ixlthyxl / Juice Sap、Batch18 では Livid Creeper＋棘 / Low-Light Laser Turret Tinker / Luminous Hoarshroom / Lurking Beth / Mercurial / Miner Mk II / Mysterious Gunslinger / Plastronoid（武器含む）/ Psyberneticist / Spitting Slug / Traipsing Mortar（Fabricate ステータス・Launch Assembly 含む）/ Twinning Lamprey（噛み付き）/ BaseBreather 系、Batch19 では Flame/Sleet/Tart/Null/Gall/Dream/Still/Maze 各ビアード（DisplayName＋死体＋属性違いの説明文）と Troll / Troll Foal / Troll King 系を追加、Batch20 では ヨトゥン / フィヨルン＝コセフ / ハッガバ（専用武器を含む）と Addling Urchin / Adiyy（噛み付き）/ Agolzvuv（棘脚）/ Aloe Fugues / Baetyl & Sparking Baetyl（状態名含む）/ Banana Rancher / Bloated Pearlfrog（死体・食感）/ Boosterbot（武器・ツメ）、Batch21 では Cyclopean Gibbon ＆ 死体 / Diplomacy Droid / Gelatinous Prism / Gyrohumor（仮足）/ 抱卵パフ各色 / Juicing Cannibal（拳）/ Laser Turret Tinker / Ickslug（VibroTeeth）/ Irritable Palm（葉）/ Lagroot / Mimic、Batch22 では Mimic Corpse / Molting Basilisk 系（殻＋噛みつき＋VibroTeeth）/ Normality Bot（ポイントディフェンス）/ Point-Defense Laser（TrackingDataProcessor）/ Phase Spider / Pulsed Field Magnet / Quartz Baboon 系 / Red Death Dacca（手含む）/ Rimewyk（噛みつき）/ Slumberling（鉤爪）/ Snailmother ＆ 死体を追加。Batch24 では Snailmother 卵セット / Urchin Belcher / Waveform Worm / White Esh / Mechanimist 教団ロール（Zealot～Warden）と Stilt Warden を追加し、教団 NPC 群の呼称と色タグを整列。Batch25 では テンプラー騎士階梯（Knight / Banner / Gunner / Commander / Wraith）＋ファイラクテリー従士 / 新父、ジャイア・ワイト新派生（Rermadon / Qas / Qon）、骨ワーム / コンザーヴァー / ライトロック / Crypt Ferret / Caravan Guard などを訳出。Batch26 では 深きスランバーリング / フルクリート投石機（レバー含む）/ ゼラチンのクーポラ / 墓荒らし / ゴートフォークのクリフォト / アマランスマ灰 / 飽食する成長体＋苔兜 / グレーター・ヴォイダー（死体）/ 上級旋舞者 / ホログラフィック・ベス / ジャンクダラー / ライフサップ / マッドポール / マイナー Mk III ほかを追加。Batch27 では Ogre Ape 系（拳・死体）/ Panhumor / Purple Jell / Turret Tinker（可変・ロケット）/ Rhinox（蹄・死体・食味）/ Slynth Wanderer / Strip Fly＋機械の鉗 / Trash Abbot / Urn Porter セット / Vantabud / Elder Breathbeard 系を追加。Batch28 では Elder Sleet/Tart/Null/Gall/Dream/Still/Maze Beard（DisplayName＋死体）と Mopango Charioteer / Pilgrim / Tombdweller / Watcher、Blast Cannon Tinker を挿入。残りは Tier（Gyre 系 / Issachari 系 / Dawn glider 派生 など）単位で抽出→翻訳→挿入を継続する。
-
-## 未訳ファイル
-- [ ] `ObjectBlueprints/Creatures.jp.xml` … 上記の通り Tier1 から Batch13 までを反映済み。Tier1 の残りモンスターと Tier2 以降が `object-missing`。Batchごとに `work/creatures_missing_batch*.json` / `_translated_*` を管理し、完了したら本リストと `Docs/translation_status.md` を更新する。
-- [ ] `ObjectBlueprints/Data.jp.xml`
-- [ ] `ObjectBlueprints/Foods.jp.xml`
-- [ ] `ObjectBlueprints/Furniture.jp.xml`
-- [ ] `ObjectBlueprints/HiddenObjects.jp.xml`
-- [ ] `ObjectBlueprints/PhysicalPhenomena.jp.xml`
-- [ ] `ObjectBlueprints/Staging.jp.xml`
+## カテゴリ別チェック
+- [x] `ObjectBlueprints/PhysicalPhenomena.jp.xml`（2025-11-12 diff_missing = 0）
+- [x] `ObjectBlueprints/Staging.jp.xml`（2025-11-12 diff_missing = 0）
 - [x] `ObjectBlueprints/TutorialStaging.jp.xml`
-- [ ] `ObjectBlueprints/Walls.jp.xml`
-- [ ] `ObjectBlueprints/Widgets.jp.xml`
-- [ ] `ObjectBlueprints/WorldTerrain.jp.xml`
-- [ ] `ObjectBlueprints/ZoneTerrain.jp.xml`
+- [x] `ObjectBlueprints/Walls.jp.xml`（2025-11-12 diff_missing = 0）
+- [x] `ObjectBlueprints/Widgets.jp.xml`（2025-11-12 diff_missing = 0）
+- [x] `ObjectBlueprints/WorldTerrain.jp.xml`（2025-11-12 diff_missing = 0）
+- [x] `ObjectBlueprints/ZoneTerrain.jp.xml`（2025-11-12 diff_missing = 0）
 
-同じ並びで `ObjectBlueprints/ObjectBlueprints/*.xml` もすべて未作成なので、上記と並行して対応する。
+ベースに存在しない `ObjectBlueprints/ObjectBlueprints/*.xml` は diff 対象外のため、新規作成は不要。
 
-## 進め方メモ
-1. `python3 scripts/diff_localization.py --missing-only` で `file-missing` / `object-missing` を洗い出す。`Docs/backlog/latest.json` にも同じ情報を保存しておく。
-2. 1 ファイルずつ `references/Base/ObjectBlueprints/<ファイル名>.xml` をコピーし、DisplayName / Description / BehaviorDescription など文字列のみを翻訳。数値・タグ構造は変更しない。
-3. `Load="Merge" Replace="true"` 方針を維持し、`<object Name>` はベースと全く同じにする。
-4. 翻訳後はこのタスクボードと `Docs/translation_status.md` を更新し、`python3 scripts/check_encoding.py --fail-on-issues` でモジバケを検知。
-5. 必要に応じて `Docs/glossary.csv` に用語を追記し、UI 表示は `Docs/test_plan.md` のシナリオで検証する。
-6. **汎用ステータスや操作コマンド（例：AV / DV / HP / Wait など）は原文の英語表記を維持し、説明文やフレーバーのみ日本語化する。**
+## 手順メモ
+1. `python3 scripts/diff_localization.py --missing-only` で `file-missing` / `object-missing` を洗い出し、`Docs/backlog/latest.json` に保存。
+2. `references/Base/ObjectBlueprints/<ファイル名>.xml` を参照し、必要な `<object>` の DisplayName / Description / BehaviorDescription をコピーして翻訳。ラベルやタグは変更しない。
+3. `Load="Merge"` + `Replace="true"` を維持しつつ、`<object Name>` はベースと同じ ID を使用する。
+4. 作業後は `Docs/translation_status.md` を更新し、`python3 scripts/check_encoding.py --fail-on-issues` でエンコーディングを確認。
+5. 用語の揺れは `Docs/glossary.csv` で統一し、UI 影響がある場合は `Docs/test_plan.md` のシナリオで確認。
+6. **派生ステータス（例: FAV / DV / HP / Wait）等は調整後に必ずゲーム内で再確認し、必要に応じて Framework 側パッチのみを更新する。**

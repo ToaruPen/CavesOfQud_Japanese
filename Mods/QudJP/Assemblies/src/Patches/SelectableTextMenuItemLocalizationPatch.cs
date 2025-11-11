@@ -25,7 +25,7 @@ namespace QudJP.Patches
             UIContext.Bind(__instance, eid);
             JpLog.Info(eid, "Menu", "SelectChanged/IN", $"cmd={item.command ?? "<null>"} len={item.text?.Length ?? 0}");
 
-            var translated = MenuItemTextLocalizer.Apply(item.text, BuildContext(item));
+            var translated = MenuItemTextLocalizer.Apply(item.text, item.command, item.hotkey);
             if (string.Equals(translated, item.text, StringComparison.Ordinal))
             {
                 JpLog.Info(eid, "Menu", "SelectChanged/OUT", "unchanged");
@@ -40,19 +40,5 @@ namespace QudJP.Patches
             UIContext.Release(eid);
         }
 
-        private static string BuildContext(in QudMenuItem item)
-        {
-            if (!string.IsNullOrWhiteSpace(item.command))
-            {
-                return item.command!;
-            }
-
-            if (!string.IsNullOrWhiteSpace(item.hotkey))
-            {
-                return item.hotkey!;
-            }
-
-            return "Label";
-        }
     }
 }

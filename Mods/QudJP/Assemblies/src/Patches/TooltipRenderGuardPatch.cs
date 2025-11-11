@@ -1,3 +1,4 @@
+using System;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using ModelShark;
@@ -330,9 +331,19 @@ namespace QudJP.Patches
                 match =>
                 {
                     var key = match.Groups["name"].Value;
-                    if (!string.IsNullOrEmpty(key) && values.TryGetValue(key, out var value) && !string.IsNullOrEmpty(value))
+                    if (string.IsNullOrEmpty(key))
                     {
-                        return value;
+                        return match.Value;
+                    }
+
+                    foreach (var candidate in TooltipGuardHelper.CandidatesFromName(key))
+                    {
+                        if (!string.IsNullOrEmpty(candidate) &&
+                            values.TryGetValue(candidate, out var value) &&
+                            !string.IsNullOrWhiteSpace(value))
+                        {
+                            return value;
+                        }
                     }
 
                     return match.Value;

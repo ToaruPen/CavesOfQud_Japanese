@@ -15,7 +15,7 @@
 | Genotypes | *ゲーム側 XML（XmlDataHelper 管理）* | `Genotypes.jp.xml` | キャラ作成ジェノタイプの名前と説明。XmlDataHelper が `Replace="true"` を解釈しないので、要素側に `Load="Replace"` を設定し構造を完全一致させる。 |
 | Subtypes | *同上* | `Subtypes.jp.xml` | カースト / 天職の説明。ルールは Genotypes と同じ。 |
 | Mutations | `Mutations.xml` | `Mutations.jp.xml` | 突然変異カテゴリ。XmlDataHelper 対応ファイルなので `<category>` などを `Load="Replace"` にして要素構造をコピーする。 |
-| Manual | `Manual.xml` | `Manual.jp.xml` | ゲーム内マニュアルの XML 側スタブ。実際の本文は Harmony 用の `Docs/manual/ManualPatch.jp.manual`（別配布ソース）を参照。 |
+| Manual | `Manual.xml` | `Manual.jp.xml` | ゲーム内マニュアルの XML 側スタブ。実際の本文は Harmony 用の `Mods/QudJP/Docs/manual/ManualPatch.jp.manual`（別配布ソース）を参照。 |
 
 ## 2. ObjectBlueprints
 
@@ -49,7 +49,7 @@
 ## 4. その他
 
 - **Commands 以外のログメッセージ** … 多くは `Commands.xml` で扱うが、Harmony 側で生成するログについては C# プロジェクト (`Mods/QudJP/Assemblies`) にも翻訳文字列が存在する。対象コードを編集する場合は C# 側のリソースも確認すること。
-- **Harmony / ManualPatch** … `Docs/manual/ManualPatch.jp.manual`（Harmony パッチ経由）に実体があり、`Localization/Manual.jp.xml` には空スタブを残す。XML 側に本文を戻すと重複登録になるため注意。
+- **Harmony / ManualPatch** … `Mods/QudJP/Docs/manual/ManualPatch.jp.manual`（Harmony パッチ経由）に実体があり、`Localization/Manual.jp.xml` には空スタブを残す。XML 側に本文を戻すと重複登録になるため注意。
 - **実機同期** … すべての翻訳ファイルは `Mods/QudJP` がソース。`python3 scripts/sync_mod.py` で `%USERPROFILE%\AppData\LocalLow\Freehold Games\CavesOfQud\Mods\QudJP` へミラーするまでゲーム側には反映されない。
 
 ## 5. 参照リンク

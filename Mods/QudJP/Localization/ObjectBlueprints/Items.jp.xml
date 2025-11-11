@@ -60,7 +60,7 @@
   <object Name="NavigationSystem" Inherits="BaseCyberneticsEquipment_1point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="透き通る半月ガラス上に地勢と社会データが投影され、下地には大地を覆い尽くす生命の描写が重ねられている。" />
-    <part Name="Render" DisplayName="{{Y|ナビゲーション・システム}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|ナビゲーションシステム}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="MultiNavigationBonus" ShowInShortDescription="false" Bonuses="Survival_RuinsSurvival:30:CompassBraceletApplied,*:10:CompassBraceletApplied" ChargeUse="0" NameForStatus="NavigationModule" />
     <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="1" BehaviorDescription="廃墟で迷子になる確率を30%軽減する。&#10;その他の地形では迷子になる確率を10%軽減する。&#10;これらの効果はコンパスブレスレットとは重複しない。" />
     <part Name="ItemElements" Elements="travel::2" />
@@ -159,7 +159,7 @@
     <part Name="ItemElements" Elements="might::3" />
   </object>
   <object Name="CarbideFist" Inherits="BaseCudgel" Replace="true">
-    <part Name="Render" DisplayName="{{Y|カーバイドナ・ックル}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;b" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|カーバイドナックル}}" Tile="Items/sw_carbidehand.bmp" ColorString="&amp;b" DetailColor="r" />
     <part Name="MeleeWeapon" MaxStrengthBonus="999" BaseDamage="2d3" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="0" />
     <part Name="Description" Short="拳そのものをカーバイド合金の塊に置き換えた先行モデル。" />
@@ -287,7 +287,7 @@
   <object Name="GroundingShunts" Inherits="BaseCyberneticsEquipment_2point" Replace="true">
     <part Name="Physics" Weight="1" />
     <part Name="Description" Short="導電性のシャントが電撃を体外へ逃し、感電を防止する。" />
-    <part Name="Render" DisplayName="{{Y|グラウンディン・グシャント}}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|グラウンディングシャント}}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+12 電撃耐性" />
     <part Name="CyberneticsStatModifier" Stats="ElectricResistance:50" />
     <part Name="ItemElements" Elements="circuitry::3" />
@@ -310,14 +310,14 @@
   <object Name="BionicHands" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="5" />
     <part Name="Description" Short="滑らかな金属の義手。精密作業と握力が共に向上する。" />
-    <part Name="Render" DisplayName="{{Y|バイオニッ・クハンド}}" Tile="Items/sw_bionichands.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|バイオニックハンド}}" Tile="Items/sw_bionichands.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Hands" Cost="3" BehaviorDescription="+2 STR&#10;+2 DEX" />
     <part Name="CyberneticsStatModifier" Stats="Agility:2" />
   </object>
   <object Name="BionicArm" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="8" />
     <part Name="Description" Short="骨格・筋肉・腱をすべて人工パーツに置換したバイオニックアーム。" />
-    <part Name="Render" DisplayName="{{Y|バイオニック・アーム}}" Tile="Items/sw_bionicarm.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|バイオニックアーム}}" Tile="Items/sw_bionicarm.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Arm" Cost="3" BehaviorDescription="+3 STR" />
     <part Name="CyberneticsStatModifier" Stats="Strength:2" />
   </object>
@@ -338,14 +338,14 @@
   </object>
   <object Name="DopamineSynth" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Description" Short="脳内でドーパミンを合成・投与するための精製器。" />
-    <part Name="Render" DisplayName="{{Y|ドーパミンシン・セサイザー}}" Tile="Items/sw_dopamine.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|ドーパミンシンセサイザー}}" Tile="Items/sw_dopamine.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="気力回復速度 +25%" />
     <part Name="CyberneticsStatModifier" Stats="Willpower:2" />
   </object>
   <object Name="BionicHeart" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="2" />
     <part Name="Description" Short="発振器と人工弁を備えた合成心臓。血流を絶え間なく送り出す。" />
-    <part Name="Render" DisplayName="{{Y|バイオニッ・クハート}}" Tile="Items/sw_bionicheart.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|バイオニックハート}}" Tile="Items/sw_bionicheart.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="+3 CON" />
     <part Name="CyberneticsStatModifier" Stats="Toughness:2" />
     <part Name="CyberneticsEffectSuppressor" Effects="CardiacArrest" />
@@ -429,7 +429,7 @@
   <object Name="BionicLiver" Inherits="BaseCyberneticsEquipment_3point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="毒素を瞬時に分解する人工肝臓。" />
-    <part Name="Render" DisplayName="{{Y|バイオニッ・クリバー}}" Tile="Items/sw_cyberliver.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|バイオニックリバー}}" Tile="Items/sw_cyberliver.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="毒・病気に対するセーヴに +4。" />
     <part Name="CyberneticsBionicLiver" />
   </object>
@@ -505,7 +505,7 @@
   <object Name="GunRack" Inherits="BaseCyberneticsEquipment_4point" Replace="true">
     <part Name="Physics" Weight="20" />
     <part Name="Description" Short="背部に展開式ガンラックを搭載し、武器の持ち替えを瞬時に行う。" />
-    <part Name="Render" DisplayName="{{Y|ガン・ラック}}" Tile="Items/sw_gunrack.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Render" DisplayName="{{Y|ガンラック}}" Tile="Items/sw_gunrack.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Back" Cost="6" BehaviorDescription="メイン装備を即座に切り替えられる。リロード時間 -25%" />
     <part Name="CyberneticsGunRack" />
     <part Name="Metal" />
@@ -557,7 +557,7 @@
     <tag Name="CyberneticsOneOnly" />
   </object>
   <object Name="ForceKnife" Inherits="BaseDagger" Replace="true">
-    <part Name="Render" DisplayName="{{Y|フォース・ナイフ}}" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp" />
+    <part Name="Render" DisplayName="{{Y|フォースナイフ}}" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp" />
     <part Name="Physics" Weight="0" Category="Thrown Weapons" />
     <part Name="Description" Short="腕に折り畳み式の力場ナイフを格納する。" />
     <part Name="MeleeWeapon" BaseDamage="1d8" />
@@ -587,7 +587,7 @@
   <object Name="MicromanipulatorArray" Inherits="BaseCyberneticsEquipment_5point" Replace="true">
     <part Name="Physics" Weight="2" />
     <part Name="Description" Short="指先に配した微細マニピュレーター群。極小の工作を手早く行える。" />
-    <part Name="Render" DisplayName="{{Y|マイクロマニピュレータ・ーアレイ}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|マイクロマニピュレーターアレイ}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Hands" Cost="5" BehaviorDescription="解体・組立の時間 -50%&#10;ティンカー判定 +3" />
     <part Name="CyberneticsMicromanipulatorArray" />
     <part Name="ItemElements" Elements="scholarship::5" />
@@ -639,7 +639,7 @@
   <object Name="SocialCoprocessor" Inherits="BaseCyberneticsEquipment_8point" Replace="true">
     <part Name="Physics" Weight="0" />
     <part Name="Description" Short="社交的な判断を補助する協調プロセッサ。水儀や交渉の最適解を提示する。" />
-    <part Name="Render" DisplayName="{{Y|ソーシャ・ルコプロセッサ}}" Tile="Items/sw_social_coprocessor.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="Render" DisplayName="{{Y|ソーシャルコプロセッサ}}" Tile="Items/sw_social_coprocessor.bmp" TileColor="&amp;r" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="+3 意志&#10;水儀と取引価格に +10% のボーナス" />
     <part Name="CyberneticsSocialCoprocessor" />
     <tag Name="CyberneticsDestroyOnRemoval" />
@@ -813,7 +813,7 @@
     <stag Name="Energy" />
   </object>
   <object Name="Chem Cell" Inherits="Energy Cell" Replace="true">
-    <part Name="Render" DisplayName="{{c|ケム・セル}}" ColorString="&amp;c" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" />
+    <part Name="Render" DisplayName="{{c|ケムセル}}" ColorString="&amp;c" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" />
     <part Name="EnergyCell" Charge="10000" MaxCharge="10000" />
     <part Name="Description" Short="小さな樽の中で液体塩がイオンを陰極へ送り込み、火花へと変換する。" />
     <part Name="Metal" />
@@ -1225,7 +1225,7 @@
     <tag Name="ChooseToPreserve" />
   </object>
   <object Name="HulkHoneyTonic" Inherits="Tonic" Replace="true">
-    <part Name="Render" DisplayName="{{G|ハルク・ハニー}} インジェクター" />
+    <part Name="Render" DisplayName="{{G|ハルクハニー}} インジェクター" />
     <part Name="HulkHoney_Tonic_Applicator" />
     <part Name="AITonicUse" />
     <part Name="RulesDescription" Text="持続：41-50ラウンド　筋力 +6（真系：+9）／レベルごとに一時HP +2（真系：+3）／移動速度 -25。痛みを感じない。恐怖に免疫。毎ラウンド最大HPの1%のダメージを受ける（このダメージでHPは1未満にならない）。" AltForGenotype="True Kin" GenotypeAlt="持続：41-50ラウンド　筋力 +9／レベルごとに一時HP +3／移動速度 -25。痛みを感じない。恐怖に免疫。毎ラウンド最大HPの1%のダメージを受ける（このダメージでHPは1未満にならない）。" />
@@ -1431,7 +1431,7 @@
     <tag Name="DynamicObjectsTable:Trinkets" />
   </object>
   <object Name="Spiral Borer" Inherits="Tool" Replace="true">
-    <part Name="Render" DisplayName="スパイラル・ボーラー" Tile="Items/sw_spiral_borer.bmp" RenderString="004" ColorString="&amp;C" DetailColor="w" />
+    <part Name="Render" DisplayName="スパイラルボーラー" Tile="Items/sw_spiral_borer.bmp" RenderString="004" ColorString="&amp;C" DetailColor="w" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="コアメタルを詰めた背負い鞄が肩を重く引き、側面には地中へ向かうドリルのピクトグラムがステンシルで描かれている。" />
     <part Name="Physics" Weight="40" Category="Tools" />
@@ -1443,7 +1443,7 @@
     <part Name="TinkerItem" Bits="0034" CanDisassemble="true" CanBuild="true" />
   </object>
   <object Name="Tattoo Gun" Inherits="Tool" Replace="true">
-    <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|タトゥー・ガン}}" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c" />
+    <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|タトゥーガン}}" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="ニードルと回転モーターでインクを皮膚の下へジェット噴射する。" />
     <part Name="Physics" Weight="1" Category="Tools" />
@@ -1530,7 +1530,7 @@
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Grit Gate Recoiler" Inherits="BaseRecoiler" Replace="true">
-    <part Name="Render" DisplayName="{{c|グリッ・トゲー・ト}}リコイラー" DetailColor="C" />
+    <part Name="Render" DisplayName="{{c|グリットゲート}}リコイラー" DetailColor="C" />
     <part Name="Teleporter" DestinationZone="JoppaWorld.22.14.1.0.13" DestinationX="37" DestinationY="23" />
     <part Name="TinkerItem" CanBuild="false" />
     <part Name="Commerce" Value="35" />
@@ -1572,7 +1572,7 @@
     <tag Name="Tier" Value="5" />
   </object>
   <object Name="Yd Freehold Recoiler" Inherits="BaseRecoiler" Replace="true">
-    <part Name="Render" DisplayName="{{W|イ・ド}}リコ・イラー" />
+    <part Name="Render" DisplayName="{{W|イド}}リコイラー" />
     <part Name="Teleporter" DestinationZone="JoppaWorld.67.17.1.1.10" DestinationX="37" DestinationY="23" />
     <part Name="TinkerItem" CanBuild="false" />
     <part Name="Commerce" Value="100" />
@@ -1609,7 +1609,7 @@
   </object>
   <object Name="Spraybottle" Inherits="Item" Replace="true">
     <part Name="Examiner" Complexity="2" Alternate="UnknownBottle" />
-    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="スプレ・ーボトル" ColorString="&amp;C" DetailColor="c" RenderString="012" RenderLayer="5" />
+    <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="スプレーボトル" ColorString="&amp;C" DetailColor="c" RenderString="012" RenderLayer="5" />
     <part Name="Physics" Category="Applicators" />
     <part Name="Description" Short="あるティンカーがサイフォン管と加圧ノズルを組み合わせ、注ぎたくない液体を噴霧する道具を作った。" />
     <part Name="Commerce" Value="20" />
@@ -2242,7 +2242,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Walking Stick" Inherits="BaseCudgel" Replace="true">
-    <part Name="Render" DisplayName="ステ・ッキ" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" />
+    <part Name="Render" DisplayName="ステッキ" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" />
     <part Name="Physics" Weight="4" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="12" />
@@ -2522,7 +2522,7 @@
     <part Name="Physics" Weight="25" UsesTwoSlots="true" />
   </object>
   <object Name="Stun Rod" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{c|スタン}}・ロッド" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|スタン}}ロッド" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="50" />
@@ -2558,7 +2558,7 @@
     <tag Name="NoSparkingQuest" />
   </object>
   <object Name="Syphon Baton" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{syphon|サイフォ・ン}}バトン" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="{{syphon|サイフォン}}バトン" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="150" />
     <part Name="Description" Short="輪磁石が筒状のメイス頭を形作り、打撃した対象から電子の汁を吸い上げて柄のソケットに挿したバッテリーへ送る。" />
@@ -2774,7 +2774,7 @@
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Gaslight Dagger" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{gaslight|ガスライト・クリス}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g" />
+    <part Name="Render" DisplayName="{{gaslight|ガスライトクリス}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades" />
     <part Name="ThrownWeapon" Penetration="0" Damage="1d4" Attributes="ShortBlades" />
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4" />
@@ -2796,7 +2796,7 @@
     <tag Name="WeaponIgnoreStrength" />
   </object>
   <object Name="Gaslight Sword" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{gaslight|ガスライト・フリッサ}}" Tile="Items/sw_longblade_9.bmp" ColorString="&amp;W" DetailColor="g" />
+    <part Name="Render" DisplayName="{{gaslight|ガスライトフリッサ}}" Tile="Items/sw_longblade_9.bmp" ColorString="&amp;W" DetailColor="g" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d6" Skill="LongBlades" />
     <part Name="Examiner" Alternate="UnknownSword" Complexity="4" />
     <part Name="Commerce" Value="120" />
@@ -2816,7 +2816,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact" />
   </object>
   <object Name="Gaslight Chisel" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{gaslight|ガスライ・トノミ}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K" />
+    <part Name="Render" DisplayName="{{gaslight|ガスライトノミ}}" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades" />
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4" />
     <part Name="Commerce" Value="120" />
@@ -3055,7 +3055,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Stun Whip" Inherits="MeleeWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{c|スタンウ・ィップ}}" Tile="Items/sw_whip_1.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|スタンウィップ}}" Tile="Items/sw_whip_1.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" BaseDamage="1" Skill="Chain" />
     <part Name="Commerce" Value="50" />
@@ -3310,7 +3310,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Vibro Blade" Inherits="BaseLongBlade" Replace="true">
-    <part Name="Render" DisplayName="{{c|ヴィブロ・ブレード}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|ヴィブロブレード}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d10" Skill="LongBlades" />
     <part Name="Commerce" Value="300" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
@@ -3424,7 +3424,7 @@
     <tag Name="TurretStockExclusive" />
   </object>
   <object Name="Desert Rifle" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" DisplayName="イサッカリラ・イフル" Tile="Items/sw_rifle.bmp" />
+    <part Name="Render" DisplayName="イサッカリライフル" Tile="Items/sw_rifle.bmp" />
     <part Name="Physics" Weight="15" UsesTwoSlots="true" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="7" />
@@ -3453,7 +3453,7 @@
     <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_automaticGun_reload" />
   </object>
   <object Name="Sniper Rifle" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" Tile="items/sw_sniper_rifle.bmp" DisplayName="スナイパー・ライフル" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Render" Tile="items/sw_sniper_rifle.bmp" DisplayName="スナイパーライフル" ColorString="&amp;y" DetailColor="K" />
     <part Name="Physics" UsesTwoSlots="true" Weight="12" />
     <part Name="Commerce" Value="250" />
     <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
@@ -3482,7 +3482,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Laser Rifle" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザー}}・ライフル" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp" />
+    <part Name="Render" DisplayName="{{C|レーザー}}ライフル" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp" />
     <part Name="Physics" Weight="9" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
     <part Name="Commerce" Value="750" />
@@ -3501,7 +3501,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Chain Laser" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="チェーン{{C|・レーザー}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp" />
+    <part Name="Render" DisplayName="チェーン{{C|レーザー}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp" />
     <part Name="Physics" Weight="40" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;B" ShotsPerAction="3" AmmoPerAction="3" ShotsPerAnimation="1" WeaponAccuracy="5" />
     <part Name="Commerce" Value="1000" />
@@ -3578,7 +3578,7 @@
     <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_scopedMasterworkCarbine_fire" />
   </object>
   <object Name="ProjectileLaserRifle" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザー・ビーム}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{C|レーザービーム}}" ColorString="&amp;C" />
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d12" Attributes="Light Laser" ColorString="&amp;C" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
@@ -3587,13 +3587,13 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="ProjectileEigenrifle" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{B|ドッ・トベクトル}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|ドットベクトル}}" ColorString="&amp;B" />
     <part Name="Projectile" BasePenetration="7" BaseDamage="1d12" Attributes="Disintegrate" ColorString="&amp;B" PenetrateCreatures="true" PassByVerb="hum" />
     <xtagProjectileVFX Effect="MissileWeaponsEffects/eigen_laser" StartColor="b" EndColor="B" Tessellation="50" Width="8" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="ProjectileFreezeRay" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|エネルギー・ビーム}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{C|エネルギービーム}}" ColorString="&amp;B" />
     <part Name="Projectile" BaseDamage="1d4" Attributes="Cold NonPenetrating" ColorString="&amp;B" PassByVerb="crackle" />
     <part Name="TemperatureOnHit" Amount="-190" Max="false" OnWielderHit="true" />
     <part Name="TemperatureOnEntering" Amount="-190" Max="false" OnWielderHit="true" />
@@ -3619,14 +3619,14 @@
     <tag Name="Role" Value="Uncommon" />
   </object>
   <object Name="ProjectileHookRay" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{R|エネルギー・ビーム}}" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|エネルギービーム}}" ColorString="&amp;R" />
     <part Name="Projectile" BaseDamage="0" Quiet="true" Attributes="NonPenetrating" ColorString="&amp;R" PassByVerb="hum" />
     <part Name="HookOnMissileHit" />
     <part Name="TreatAsSolid" RealityDistortionBased="true" Hits="false" Message="=subject.T=は常態の圧で=verb:collapse=。" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_hypertractor_hit" />
   </object>
   <object Name="Light Rail" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="{{W|ライト}}・レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp" />
+    <part Name="Render" DisplayName="{{W|ライト}}レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp" />
     <part Name="Description" Short="丹念に彫り込んだ木製ケーシングが六条の並列導体と滑走する光子アーマチュアを包み込み、銃床の木目は焦げついて黒く炭化している。" />
     <part Name="Physics" Weight="16" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
@@ -3645,14 +3645,14 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileLightrail" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|ロング・フォトン}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|ロングフォトン}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="9" BaseDamage="1d12" Attributes="Light Laser" ColorString="&amp;W" PassByVerb="hum" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Spaser Rifle" Inherits="BaseRifle" Replace="true">
-    <part Name="Render" DisplayName="{{spaser|スパーザー}}・ライフル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="items/sw_techrifle_4.bmp" />
+    <part Name="Render" DisplayName="{{spaser|スパーザー}}ライフル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="items/sw_techrifle_4.bmp" />
     <part Name="Description" Short="色相の蒸気をまとったクリスティールが金と水の機構を繭のように包み、光を波長から波短へと締め上げる。砲身の稜線ではプラズモン滓が過熱したスラッジ生命のように泡立つ。" />
     <part Name="Physics" Weight="16" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
@@ -3677,7 +3677,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Phase Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="フェーズ・キャノン" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" Tile="Items/sw_techrifle_5.bmp" />
+    <part Name="Render" DisplayName="フェーズキャノン" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" Tile="Items/sw_techrifle_5.bmp" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;M" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
     <intproperty Name="IntegratedWeaponHostShots" Value="20" />
@@ -3696,7 +3696,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectilePhaseCannon" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{M|エナジー・ボルト}}" ColorString="&amp;M" />
+    <part Name="Render" DisplayName="{{M|エナジーボルト}}" ColorString="&amp;M" />
     <part Name="Projectile" BasePenetration="12" BaseDamage="4d12" Attributes="Disintegrate" ColorString="&amp;M" PassByVerb="streak" />
     <part Name="OmniphaseProjectile" />
     <part Name="TreatAsSolid" RealityDistortionBased="true" RequiresPhaseMatch="false" Message="=subject.T=は常態の圧で=verb:collapse=。" />
@@ -3719,7 +3719,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Grenade Launcher" Inherits="BaseMagazineHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="グレネード・ランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_1.bmp" />
+    <part Name="Render" DisplayName="グレネードランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_1.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="15" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="ë" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" />
     <part Name="Commerce" Value="490" />
@@ -3733,7 +3733,7 @@
     <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_grenadeLauncher_reload" />
   </object>
   <object Name="Missile Launcher" Inherits="BaseMagazineHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="ミサイル・ランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_2.bmp" />
+    <part Name="Render" DisplayName="ミサイルランチャー" ColorString="&amp;c" DetailColor="y" Tile="items/sw_techcannon_2.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="25" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="m" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="10" />
     <part Name="Commerce" Value="490" />
@@ -3893,7 +3893,7 @@
     <stag Name="Normality" />
   </object>
   <object Name="Arc Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{c|アー・クキャノン}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Tile="Items/sw_techcannon_3.bmp" />
+    <part Name="Render" DisplayName="{{c|アークキャノン}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Tile="Items/sw_techcannon_3.bmp" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="e" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
     <part Name="Commerce" Value="300" />
@@ -3914,7 +3914,7 @@
     <part Name="Projectile" BasePenetration="11" BaseDamage="1d6" Attributes="Electric" ColorString="&amp;W" PassByVerb="leap" />
   </object>
   <object Name="Linear Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="リニアキ・ャノン" ColorString="&amp;y" DetailColor="c" Tile="Items/sw_techcannon_6.bmp" />
+    <part Name="Render" DisplayName="リニアキャノン" ColorString="&amp;y" DetailColor="c" Tile="Items/sw_techcannon_6.bmp" />
     <part Name="Description" Short="バロックで凧のような金属塊が軸に沿って配置され、旋盤のごとく内側から次元を削ぎ落としていく。彩色したフラーレンの巨大な銃床とグリップがその重みを支える。" />
     <part Name="Physics" Weight="40" UsesTwoSlots="true" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;y" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
@@ -3937,7 +3937,7 @@
     <part Name="Projectile" BasePenetration="0" BaseDamage="2d12" Attributes="Vorpal" ColorString="&amp;B" PassByVerb="dart" />
   </object>
   <object Name="Blast Cannon" Inherits="BaseHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{R|ブラスト}}・キャノン" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp" />
+    <part Name="Render" DisplayName="{{R|ブラスト}}キャノン" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="70" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12" />
     <part Name="Commerce" Value="2000" />
@@ -3962,7 +3962,7 @@
     <xtagGrammar massNoun="true" />
   </object>
   <object Name="Swarm Rack" Inherits="BaseMagazineHeavyWeapon" Replace="true">
-    <part Name="Render" DisplayName="{{m|スウォー・ムラック}}" ColorString="&amp;m" DetailColor="c" Tile="Items/sw_techcannon_5.bmp" />
+    <part Name="Render" DisplayName="{{m|スウォームラック}}" ColorString="&amp;m" DetailColor="c" Tile="Items/sw_techcannon_5.bmp" />
     <part Name="Physics" UsesTwoSlots="true" Weight="300" />
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="10" AmmoPerAction="10" ShotsPerAnimation="10" WeaponAccuracy="25" />
     <part Name="Commerce" Value="3200" />
@@ -3988,7 +3988,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.5;;bodyColor::#b1c9c3;;stripeColor::#d74200" />
   </object>
   <object Name="Short Bow" Inherits="BaseBow" Replace="true">
-    <part Name="Render" DisplayName="ショート・ボウ" DetailColor="W" />
+    <part Name="Render" DisplayName="ショートボウ" DetailColor="W" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="Commerce" Value="15" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="11" />
@@ -4001,7 +4001,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Compound Bow" Inherits="BaseBow" Replace="true">
-    <part Name="Render" DisplayName="コンパウンド・ボウ" ColorString="&amp;y" DetailColor="w" Tile="Items/sw_bow_2.bmp" />
+    <part Name="Render" DisplayName="コンパウンドボウ" ColorString="&amp;y" DetailColor="w" Tile="Items/sw_bow_2.bmp" />
     <part Name="Physics" UsesTwoSlots="true" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" ProjectilePenetrationStat="Strength" />
@@ -4014,7 +4014,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Dart Gun" Inherits="BaseBow" Replace="true">
-    <part Name="Render" Tile="items/sw_dart_gun.bmp" ColorString="&amp;g" TileColor="&amp;w" DetailColor="g" DisplayName="ダート・ガン" />
+    <part Name="Render" Tile="items/sw_dart_gun.bmp" ColorString="&amp;g" TileColor="&amp;w" DetailColor="g" DisplayName="ダートガン" />
     <part Name="MissileWeapon" Skill="Pistol" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" />
     <part Name="MagazineAmmoLoader" ProjectileObject="" AmmoPart="AmmoDart" MaxAmmo="1" />
     <part Name="Commerce" Value="150" />
@@ -4047,7 +4047,7 @@
     <tag Name="TinkerCategory" Value="rifles" />
   </object>
   <object Name="ProjectileElectrobow" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|エネルギー・ボルト}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|エネルギーボルト}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="6" BaseDamage="1d6" ColorString="&amp;W" PassByVerb="streak" />
     <part Name="NoDamage" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_bow_hit" />
@@ -4098,7 +4098,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#FFFFFF;;trailColor::#808080" />
   </object>
   <object Name="Boomrose Arrow" Inherits="BaseArrow" Replace="true">
-    <part Name="Render" DisplayName="{{R|ブームローズ}}・アロー" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|ブームローズ}}アロー" ColorString="&amp;R" />
     <part Name="AmmoArrow" ProjectileObject="ProjectileExplosiveArrow" />
     <part Name="Description" Short="膨れた矢じりに赤と橙が渦巻き、点火まであと一ノッチ。" />
     <part Name="MissileStatusColor" Color="R" />
@@ -4106,7 +4106,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_explosiveArrow_hit" />
   </object>
   <object Name="ProjectileExplosiveArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{R|ブームローズ}}・アロー" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|ブームローズ}}アロー" ColorString="&amp;R" />
     <part Name="Projectile" StrengthPenetration="1" BaseDamage="1d2" ColorString="&amp;R" />
     <part Name="HEGrenade" Force="1200" Damage="1d6" />
     <tag Name="ProjectileHitSound" Value="Sounds/Missile/Hits/sfx_missile_explosiveArrow_hit" />
@@ -4115,7 +4115,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#d74200;;trailColor::#808080" />
   </object>
   <object Name="Carbide Arrow" Inherits="BaseArrow" Replace="true">
-    <part Name="Render" DisplayName="{{b|カーバイド}}・アロー" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="{{b|カーバイド}}アロー" ColorString="&amp;b" />
     <part Name="AmmoArrow" ProjectileObject="ProjectileCarbideArrow" />
     <part Name="Description" Short="鳥の羽根で羽根飾りをした細いシャフトに、カーバイドの穂先を冠している。" />
     <part Name="MissileStatusColor" Color="b" />
@@ -4124,7 +4124,7 @@
     <tag Name="TurretStockWeight" Value="3" />
   </object>
   <object Name="ProjectileCarbideArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{b|カーバイド}}・アロー" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="{{b|カーバイド}}アロー" ColorString="&amp;b" />
     <part Name="Projectile" StrengthPenetration="4" BaseDamage="1d4+1" ColorString="&amp;b" />
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow" />
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#0048bd;;trailColor::#808080" />
@@ -4152,7 +4152,7 @@
     <part Name="Commerce" Value="0.4" />
   </object>
   <object Name="ProjectileFulleriteArrow" Inherits="BaseArrowProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{K|フラーレン}}・アロー" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="{{K|フラーレン}}アロー" ColorString="&amp;K" />
     <part Name="Projectile" StrengthPenetration="6" BaseDamage="1d4+3" ColorString="&amp;K" />
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow" />
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#155352;;trailColor::#808080" />
@@ -4201,7 +4201,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#b154cf;;trailColor::#808080" />
   </object>
   <object Name="Grappling Gun" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="グラップリング・ガン" ColorString="&amp;y" TileColor="&amp;c" DetailColor="y" Tile="items/sw_grappling_gun.bmp" />
+    <part Name="Render" DisplayName="グラップリングガン" ColorString="&amp;y" TileColor="&amp;c" DetailColor="y" Tile="items/sw_grappling_gun.bmp" />
     <part Name="Description" Short="テンションスプリングが撃針を押し出してガス銃身を爆ぜさせ、ケーブル付きのグラップネルを射出する。続いてウィンチがそれを巻き戻す。" />
     <part Name="Physics" Weight="5" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="GG" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" MaxRange="8" />
@@ -4225,7 +4225,7 @@
     <part Name="Projectile" BasePenetration="8" BaseDamage="1d2" Attributes="Piercing" ColorString="&amp;y" PassByVerb="hurtle" />
   </object>
   <object Name="Laser Pistol" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザー}}・ピストル" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w" />
+    <part Name="Render" DisplayName="{{C|レーザー}}ピストル" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
     <part Name="Commerce" Value="400" />
     <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectileLaserPistol" />
@@ -4245,7 +4245,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileLaserPistol" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|レーザー・ビーム}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{C|レーザービーム}}" ColorString="&amp;C" />
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;C" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
@@ -4273,13 +4273,13 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileEigenpistol" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{B|ドッ・トベクトル}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|ドットベクトル}}" ColorString="&amp;B" />
     <part Name="Projectile" BasePenetration="7" BaseDamage="1d10" Attributes="Disintegrate" ColorString="&amp;B" PenetrateCreatures="true" PassByVerb="hum" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
     <xtagProjectileVFX Effect="MissileWeaponsEffects/eigen_laser" StartColor="b" EndColor="B" Tessellation="30" Width="5" />
   </object>
   <object Name="Arc Winder" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="アーク・ワインダー" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="アークワインダー" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W" />
     <part Name="Description" Short="螺旋クランクがクロムのケースに収まった回路を閉じ、二つの接触端から電荷を吐き出す。黄色く輝く先端を煙がくるりと舞う。" />
     <part Name="Physics" Weight="4" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
@@ -4297,13 +4297,13 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="ProjectileElectroPistol" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|イオ・ンパケット}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|イオンパケット}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="0" BaseDamage="0" Attributes="Electric" ColorString="&amp;W" PassByVerb="fly" />
     <part Name="DischargeOnHit" DamageRange="0" Voltage="0" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Nullray Pistol" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{K|ヌルレイ・ピストル}}" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" Tile="Items/sw_techpistol_5.bmp" />
+    <part Name="Render" DisplayName="{{K|ヌルレイピストル}}" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" Tile="Items/sw_techpistol_5.bmp" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;K " ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
     <part Name="Commerce" Value="1200" />
     <part Name="EnergyAmmoLoader" ChargeUse="5000" ProjectileObject="ProjectileNullray" />
@@ -4327,7 +4327,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#0f3b3a;;beamColor1::#0f3b3a;;beamColor2::#0f3b3a" />
   </object>
   <object Name="Hand Rail" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{W|ハンド}}・レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp" />
+    <part Name="Render" DisplayName="{{W|ハンド}}レール" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp" />
     <part Name="Description" Short="丹念に彫り込んだ木製ケーシングが六条の並列導体と滑走する光子アーマチュアを包み、銃床の木目は焦げついて黒く炭化している。" />
     <part Name="Physics" Weight="8" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
@@ -4346,14 +4346,14 @@
     <stag Name="Historical" />
   </object>
   <object Name="ProjectileHandrail" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{W|ロング・フォトン}}" ColorString="&amp;W" />
+    <part Name="Render" DisplayName="{{W|ロングフォトン}}" ColorString="&amp;W" />
     <part Name="Projectile" BasePenetration="9" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;W" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を飲み込む！" />
     <tag Name="Light" />
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
   </object>
   <object Name="Di-Thermo Beam" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{R|ディサーモ}}・ビーム" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C" />
+    <part Name="Render" DisplayName="{{R|ディサーモ}}ビーム" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C" />
     <part Name="Description" Short="冷却管と不凍管が対称構造で砲身に固定されている。親指でレバーを弾けば機構が回転し、その向きを入れ替えられる。" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="f" AnimationDelay="15" ShotsPerAction="2" AmmoPerAction="1" ShotsPerAnimation="2" WeaponAccuracy="4" />
     <part Name="Physics" Weight="6" />
@@ -4376,14 +4376,14 @@
     <stag Name="Heat" />
   </object>
   <object Name="ProjectileDiThermoBeamHeat" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{R|ヒート・ビーム}}" ColorString="&amp;R" />
+    <part Name="Render" DisplayName="{{R|ヒートビーム}}" ColorString="&amp;R" />
     <part Name="Projectile" BaseDamage="1d12+2" Attributes="Fire NonPenetrating" RenderChar="f" ColorString="&amp;R" PassByVerb="streak" />
     <part Name="TemperatureOnHit" Amount="50-75" Max="false" OnWielderHit="true" />
     <part Name="TemperatureOnEntering" Amount="100-150" Max="false" OnWielderHit="true" />
     <tag Name="ImpactSound" Value="Sounds/Damage/sfx_damage_elemental_heat" />
   </object>
   <object Name="ProjectileDiThermoBeamCold" Inherits="TemporaryProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{C|コールド・ビーム}}" ColorString="&amp;C" />
+    <part Name="Render" DisplayName="{{C|コールドビーム}}" ColorString="&amp;C" />
     <part Name="Projectile" BaseDamage="1d8+2" Attributes="Cold NonPenetrating" RenderChar="FR" ColorString="&amp;C" PassByVerb="streak" />
     <part Name="TemperatureOnHit" Amount="1d8-22" Max="false" OnWielderHit="true" />
     <part Name="TemperatureOnEntering" Amount="1d16-44" Max="false" OnWielderHit="true" />
@@ -4406,7 +4406,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Semi-Automatic Pistol" Inherits="BaseMagazinePistol" Replace="true">
-    <part Name="Render" DisplayName="セミオートマチック・ピストル" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K" />
+    <part Name="Render" DisplayName="セミオートマチックピストル" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K" />
     <part Name="Physics" Weight="3" />
     <part Name="Commerce" Value="100" />
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12" RangeIncrement="6" />
@@ -4420,7 +4420,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Chain Pistol" Inherits="BaseMagazinePistol" Replace="true">
-    <part Name="Render" DisplayName="チェーン・ピストル" Tile="Items/sw_chain_pistol.bmp" />
+    <part Name="Render" DisplayName="チェーンピストル" Tile="Items/sw_chain_pistol.bmp" />
     <part Name="Physics" Weight="7" />
     <part Name="Commerce" Value="150" />
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="4" AmmoPerAction="4" ShotsPerAnimation="1" WeaponAccuracy="16" RangeIncrement="6" />
@@ -4436,7 +4436,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Blood-Gradient Hand Vacuum" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="ブラッドグラデーション・ハンド・バキューム" Tile="Items/sw_hand_vacuum.bmp" ColorString="&amp;r" TileColor="&amp;K" DetailColor="r" />
+    <part Name="Render" DisplayName="ブラッドグラデーションハンドバキューム" Tile="Items/sw_hand_vacuum.bmp" ColorString="&amp;r" TileColor="&amp;K" DetailColor="r" />
     <part Name="Physics" Weight="6" />
     <part Name="Commerce" Value="666" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;r" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="6" />
@@ -4457,7 +4457,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Spaser Pistol" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{spaser|スパーザ・ー}}ピストル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp" />
+    <part Name="Render" DisplayName="{{spaser|スパーザー}}ピストル" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp" />
     <part Name="Description" Short="色相の蒸気をまとったクリスティールが金と水の機構を包み込み、光を波長から波短へと締め上げる。砲身の稜線ではプラズモン滓が過熱したスラッジ生命のように泡立つ。" />
     <part Name="Physics" Weight="8" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="8" />
@@ -4477,7 +4477,7 @@
     <stag Name="Historical" />
   </object>
   <object Name="Space Inverter" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="スペース・インバーター" ColorString="&amp;m" Tile="Items/sw_techpistol_8.bmp" TileColor="&amp;y" DetailColor="M" />
+    <part Name="Render" DisplayName="スペースインバーター" ColorString="&amp;m" Tile="Items/sw_techpistol_8.bmp" TileColor="&amp;y" DetailColor="M" />
     <part Name="Description" Short="銃口の背後で、ガラスに封じられた不安定な時空の後光が星幽のテザーを取り巻く。トリガー機構がテザーを切り、異常空間を表の世界へと吸い出す。" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;m*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
     <part Name="Physics" Weight="4" />
@@ -4498,7 +4498,7 @@
     <stag Name="Travel" />
   </object>
   <object Name="High-Voltage Arc Winder" Inherits="Arc Winder" Replace="true">
-    <part Name="Render" DisplayName="{{W|ハイボルテージ}}ア・ーク・ワインダー" ColorString="&amp;Y" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{W|ハイボルテージ}}アークワインダー" ColorString="&amp;Y" DetailColor="Y" />
     <part Name="Description" Short="螺旋クランクがクロムケースに収まった回路を閉じ、莫大な電荷を二つの接触端から吐き出す。白熱の輝きのまわりを煙が螺旋に舞う。" />
     <part Name="Commerce" Value="1250" />
     <part Name="ElectricalDischargeLoader" ChargeUse="425" />
@@ -4509,7 +4509,7 @@
     <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_highVoltageArcWinder_fire" />
   </object>
   <object Name="Psychal Fleshgun" Inherits="BasePistol" Replace="true">
-    <part Name="Render" DisplayName="{{psychalflesh|サイカルフ・レッシュガン}}" ColorString="&amp;m" TileColor="&amp;r" Tile="Items/sw_fleshgun.bmp" DetailColor="m" />
+    <part Name="Render" DisplayName="{{psychalflesh|サイカルフレッシュガン}}" ColorString="&amp;m" TileColor="&amp;r" Tile="Items/sw_fleshgun.bmp" DetailColor="m" />
     <part Name="Description" Short="生の肉を握り拳ほどの塊に伸ばして拳銃の形を模し、圧力が脈打つ静脈を皮下に押しつける。リブ状の金属管から血の髄が拍子刻みで吐き出され、ときおり拍に合わぬ瞬間には見えざるエネルギーがサイキック・レイに沿って器官の泥に流れ込み、ぬるぬるとした煩わしさを生む。" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;mì" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" AnimationDelay="16" WeaponAccuracy="3" />
     <part Name="AIStopShootingImmuneTargets" />
@@ -4532,7 +4532,7 @@
     <tag Name="DynamicObjectsTable:Guns" />
   </object>
   <object Name="Longreach Grappling Gun" Inherits="Grappling Gun" Replace="true">
-    <part Name="Render" DisplayName="ロングリーチ・グラップリング・ガン" ColorString="&amp;Y" TileColor="&amp;c" DetailColor="Y" Tile="items/sw_grappling_gun.bmp" />
+    <part Name="Render" DisplayName="ロングリーチ・グラップリングガン" ColorString="&amp;Y" TileColor="&amp;c" DetailColor="Y" Tile="items/sw_grappling_gun.bmp" />
     <part Name="Description" Short="テンションスプリングが撃針を押し出してガス銃身を爆ぜさせ、長いケーブルのグラップネルを正確な距離まで射出する。続いてウィンチがそれを巻き戻す。" />
     <part Name="Physics" Weight="4" />
     <part Name="MissileWeapon" AmmoChar="GG" MaxRange="120" />
@@ -4553,7 +4553,7 @@
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
   <object Name="Shotgun Shell" Inherits="Projectile" Replace="true">
-    <part Name="Render" DisplayName="ショットガ・ンシェル" ColorString="&amp;W" DetailColor="w" Tile="items/sw_shotgun_shell.bmp" />
+    <part Name="Render" DisplayName="ショットガンシェル" ColorString="&amp;W" DetailColor="w" Tile="items/sw_shotgun_shell.bmp" />
     <part Name="AmmoShotgunShell" ProjectileObject="ProjectileShotgunShell" />
     <part Name="Physics" Category="Ammo" />
     <part Name="Description" Short="一掴みのペレットを厚手のワックス紙とプラスチックの薬莢に封じてある。" />
@@ -4562,7 +4562,7 @@
     <tag Name="DynamicObjectsTable:Ammo" />
   </object>
   <object Name="Pump Shotgun" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" DisplayName="ポンプ・ショットガン" Tile="items/sw_shotgun_2.bmp" ColorString="&amp;K" DetailColor="w" />
+    <part Name="Render" DisplayName="ポンプショットガン" Tile="items/sw_shotgun_2.bmp" ColorString="&amp;K" DetailColor="w" />
     <part Name="Physics" Weight="12" UsesTwoSlots="true" />
     <part Name="Commerce" Value="50" />
     <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="1" ShotsPerAnimation="8" WeaponAccuracy="45" RangeIncrement="6" />
@@ -4578,7 +4578,7 @@
     <stag Name="Contemporary" />
   </object>
   <object Name="Combat Shotgun" Inherits="BaseMagazineRifle" Replace="true">
-    <part Name="Render" DisplayName="コンバット・ショットガン" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;K" TileColor="&amp;w" DetailColor="K" />
+    <part Name="Render" DisplayName="コンバットショットガン" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;K" TileColor="&amp;w" DetailColor="K" />
     <part Name="Physics" UsesTwoSlots="true" Weight="16" />
     <part Name="Commerce" Value="100" />
     <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="1" ShotsPerAnimation="8" WeaponAccuracy="35" RangeIncrement="6" />
@@ -5568,7 +5568,7 @@
     <tag Name="NoModPhaseHarmonic" />
   </object>
   <object Name="HandENuke" Inherits="Grenade" Replace="true">
-    <part Name="Render" DisplayName="{{m|ハンディ・ニューク}}" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;m" />
+    <part Name="Render" DisplayName="{{m|ハンディニューク}}" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;m" />
     <part Name="HEGrenade" Force="10000000" />
     <part Name="Commerce" Value="10000" />
     <part Name="TinkerItem" Bits="008" />
@@ -5892,7 +5892,7 @@
   </object>
   <object Name="Wool Kilt" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="0" DV="1" WornOn="Body" />
-    <part Name="Render" DisplayName="{{tartan|ウール・キルト}}" Tile="Items/sw_kilt.bmp" RenderString="]" ColorString="&amp;g" DetailColor="R" />
+    <part Name="Render" DisplayName="{{tartan|ウールキルト}}" Tile="Items/sw_kilt.bmp" RenderString="]" ColorString="&amp;g" DetailColor="R" />
     <part Name="Commerce" Value="1" />
     <part Name="Description" Short="ウールの綱を斜めのタータン柄に織り込み、濃い赤や緑、鉄灰、セーブルで艶を放つ。" />
     <part Name="Physics" Weight="3" Organic="true" />
@@ -6015,7 +6015,7 @@
   </object>
   <object Name="Ring Mail" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="3" DV="-2" WornOn="Body" />
-    <part Name="Render" DisplayName="リング・メイル" RenderString="]" Tile="Items/sw_armor2.bmp" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Render" DisplayName="リングメイル" RenderString="]" Tile="Items/sw_armor2.bmp" ColorString="&amp;y" DetailColor="Y" />
     <part Name="Commerce" Value="20" />
     <part Name="Description" Short="革のシャツに鋼の輪を縫い付けて肩まで覆っている。" />
     <part Name="Physics" Weight="15" Organic="true" />
@@ -6026,7 +6026,7 @@
   </object>
   <object Name="Chain Mail" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="3" DV="-1" WornOn="Body" />
-    <part Name="Render" DisplayName="チェイン・メイル" RenderString="]" Tile="Items/sw_chainmail.bmp" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Render" DisplayName="チェインメイル" RenderString="]" Tile="Items/sw_chainmail.bmp" ColorString="&amp;y" DetailColor="Y" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="ごみの海の鋼の心臓から掘り出した輪を連ね、きらめく網に仕立てた。" />
     <part Name="Physics" Weight="35" />
@@ -6058,7 +6058,7 @@
   </object>
   <object Name="Elastyne Skin Suit" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="1" DV="3" WornOn="Body" />
-    <part Name="Render" DisplayName="{{K|エラスティン}}・スキン・スーツ" RenderString="]" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_skinsuit.bmp" />
+    <part Name="Render" DisplayName="{{K|エラスティン}}スキンスーツ" RenderString="]" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_skinsuit.bmp" />
     <part Name="Commerce" Value="70" />
     <part Name="Description" Short="伸縮する紡績布を忍び歩き用のボディスーツに裁った。" />
     <part Name="Physics" Weight="5" Conductivity="0" />
@@ -6078,7 +6078,7 @@
   </object>
   <object Name="Carbide Plate Armor" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="5" DV="-5" WornOn="Body" />
-    <part Name="Render" DisplayName="{{b|カーバイド}}・プレート・アーマー" ColorString="&amp;b" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="B" />
+    <part Name="Render" DisplayName="{{b|カーバイド}}プレートアーマー" ColorString="&amp;b" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="B" />
     <part Name="Commerce" Value="190" />
     <part Name="Description" Short="鈍い藍色の折り畳み金属を胸肩の曲面に合わせて打ち出し、詰め物入りの山羊革下着に縫い付けた。" />
     <part Name="Physics" Weight="45" />
@@ -6106,7 +6106,7 @@
   </object>
   <object Name="Rubber Suit" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="2" DV="1" Elec="30" WornOn="Body" />
-    <part Name="Render" DisplayName="{{w|ラバース・ーツ}}" ColorString="&amp;w" DetailColor="W" Tile="Items/sw_flexisuit.bmp" />
+    <part Name="Render" DisplayName="{{w|ラバースーツ}}" ColorString="&amp;w" DetailColor="W" Tile="Items/sw_flexisuit.bmp" />
     <part Name="Commerce" Value="90" />
     <part Name="Description" Short="硫化樹液の滑りやすく伸びるスーツが眩い光を跳ね返し、産後すぐの羊膜嚢のような光沢を放つ。" />
     <part Name="Physics" Weight="8" Conductivity="0" Organic="true" />
@@ -6138,7 +6138,7 @@
   </object>
   <object Name="Recycling Suit" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="3" DV="0" WornOn="Body" />
-    <part Name="Render" DisplayName="{{B|リサイクルス・ーツ}}" ColorString="&amp;B" RenderString="]" DetailColor="b" Tile="Items/sw_recycling_suit.bmp" />
+    <part Name="Render" DisplayName="{{B|リサイクルスーツ}}" ColorString="&amp;B" RenderString="]" DetailColor="b" Tile="Items/sw_recycling_suit.bmp" />
     <part Name="Commerce" Value="95" />
     <part Name="Examiner" Complexity="4" />
     <part Name="LiquidVolume" MaxVolume="8" StartVolume="1-8" InitialLiquid="water-1000" />
@@ -6165,7 +6165,7 @@
   </object>
   <object Name="Fullerite Plate Mail" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="6" DV="-6" WornOn="Body" />
-    <part Name="Render" DisplayName="{{K|フラーレン}}プ・レート・メイル" ColorString="&amp;K" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="y" />
+    <part Name="Render" DisplayName="{{K|フラーレン}}プレートメイル" ColorString="&amp;K" RenderString="]" Tile="Items/sw_plate_mail.bmp" DetailColor="y" />
     <part Name="Commerce" Value="345" />
     <part Name="Description" Short="隕石黒の超高密度金属を過熱して叩き、肩と胸の形に合わせた。" />
     <part Name="Physics" Weight="160" />
@@ -6174,7 +6174,7 @@
   </object>
   <object Name="Fullerite Flake Armor" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="4" DV="-3" Heat="12" Cold="12" Elec="3" Acid="3" WornOn="Body" />
-    <part Name="Render" DisplayName="{{K|フラーレン}}フ・レークア・ーマー" Tile="Items/sw_flake_armor.bmp" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" RenderString="]" />
+    <part Name="Render" DisplayName="{{K|フラーレン}}フレークアーマー" Tile="Items/sw_flake_armor.bmp" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" RenderString="]" />
     <part Name="Commerce" Value="320" />
     <part Name="Description" Short="重い金属塊から削り取った薄片を熱で融着し、獣革らしきものに貼り付けた。" />
     <part Name="Physics" Weight="90" />
@@ -6194,7 +6194,7 @@
   </object>
   <object Name="Nanoweave Vest" Inherits="BaseArmor" Replace="true">
     <part Name="Armor" AV="4" DV="2" WornOn="Body" />
-    <part Name="Render" DisplayName="ナノウィーブ・ベスト" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_flexisuit.bmp" />
+    <part Name="Render" DisplayName="ナノウィーブベスト" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_flexisuit.bmp" />
     <part Name="Commerce" Value="795" />
     <part Name="Description" Short="多層の繊維は色鮮やかで、他の布にはない優しい手触りを持つ。分子の緯糸を収縮する経糸に通し、フラクタル織機で織り上げた。" />
     <part Name="Physics" Weight="10" />
@@ -6202,7 +6202,7 @@
     <tag Name="Tier" Value="6" />
   </object>
   <object Name="Thermo Cask" Inherits="BaseArmor" Replace="true">
-    <part Name="Render" DisplayName="{{thermo|サーモ}}カ・スク" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]" />
+    <part Name="Render" DisplayName="{{thermo|サーモ}}カスク" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]" />
     <part Name="Description" Short="テトラガラスの冷媒管と不凍液管が樽型鎧のコンプレッサーを這い、凝縮器と蒸発器のコイルが断熱の灌木の上にそびえる古木のように肩から広がる。" />
     <part Name="Armor" AV="4" DV="-4" Heat="25" Cold="25" WornOn="Body" />
     <part Name="Physics" Weight="40" />
@@ -6222,7 +6222,7 @@
   </object>
   <object Name="Gas Tumbler" Inherits="Armor" Replace="true">
     <part Name="Armor" AV="0" DV="0" WornOn="Back" />
-    <part Name="Render" DisplayName="ガス・タンブラー" RenderString="]" Tile="items/sw_gas_tumbler.bmp" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" />
+    <part Name="Render" DisplayName="ガスタンブラー" RenderString="]" Tile="items/sw_gas_tumbler.bmp" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" />
     <part Name="Description" Short="染色したクリスティールのカニスターを背面ラックに取り付け、バルブがフラックス加圧器から飛び出し、ホースの枝分かれで複数の入力流を受けられる。" />
     <part Name="Commerce" Value="1000" />
     <part Name="Physics" Weight="20" />
@@ -6266,7 +6266,7 @@
     <stag Name="Cold" />
   </object>
   <object Name="Enigma Cone" Inherits="BaseArmor" Replace="true">
-    <part Name="Render" DisplayName="{{B|エニグマ}}・コーン" ColorString="&amp;B" DetailColor="W" RenderString="]" Tile="Items/sw_enigma_cone_mail.bmp" />
+    <part Name="Render" DisplayName="{{B|エニグマ}}コーン" ColorString="&amp;B" DetailColor="W" RenderString="]" Tile="Items/sw_enigma_cone_mail.bmp" />
     <part Name="Description" Short="石灰質の殻を削ってフープドレスに仕立て、渦巻きは目に心地よい幾何を刻んでは不意に不協和な眩暈へと反転する。" />
     <part Name="Armor" AV="4" DV="-4" />
     <part Name="Physics" Weight="28" Organic="true" />
@@ -6308,7 +6308,7 @@
   </object>
   <object Name="Albino Monkey Braid" Inherits="Armor" Replace="true">
     <part Name="Armor" AV="0" DV="1" WornOn="Back" />
-    <part Name="Render" DisplayName="{{Y|アルビノ}}・モンキー・ブレイド" RenderString="]" ColorString="&amp;Y" Tile="Items/sw_braid.bmp" DetailColor="y" />
+    <part Name="Render" DisplayName="{{Y|アルビノ}}モンキーブレイド" RenderString="]" ColorString="&amp;Y" Tile="Items/sw_braid.bmp" DetailColor="y" />
     <part Name="Commerce" Value="12" />
     <part Name="Description" Short="聖なるキツネザルの背から刈った毛を預言者の辮髪に編み上げた。" />
     <part Name="Physics" Weight="1" Organic="true" />
@@ -6375,7 +6375,7 @@
   </object>
   <object Name="Nylon Bodypack" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" WornOn="Back" AV="0" CarryBonus="20" />
-    <part Name="Render" DisplayName="ナイロン・ボディパック" ColorString="&amp;w" Tile="Items/sw_backpack.bmp" DetailColor="W" />
+    <part Name="Render" DisplayName="ナイロンボディパック" ColorString="&amp;w" Tile="Items/sw_backpack.bmp" DetailColor="W" />
     <part Name="Commerce" Value="75" />
     <part Name="Physics" Weight="10" />
     <part Name="Springy" Factor="0.8" />
@@ -6432,7 +6432,7 @@
   </object>
   <object Name="Molly Netting" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" WornOn="Back" AV="0" DV="1" CarryBonus="16" />
-    <part Name="Render" DisplayName="モーリー・ネッティング" ColorString="&amp;g" Tile="Items/sw_molly_netting.bmp" DetailColor="y" />
+    <part Name="Render" DisplayName="モーリーネッティング" ColorString="&amp;g" Tile="Items/sw_molly_netting.bmp" DetailColor="y" />
     <part Name="Commerce" Value="75" />
     <part Name="Physics" Weight="2" />
     <part Name="Springy" Factor="0.7" />
@@ -6442,7 +6442,7 @@
   </object>
   <object Name="Ironweave Cloak" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" AV="1" DV="0" WornOn="Back" />
-    <part Name="Render" DisplayName="アイアンウィーブ・クローク" RenderString="]" Tile="items/sw_cloak.bmp" ColorString="&amp;y" DetailColor="y" />
+    <part Name="Render" DisplayName="アイアンウィーブクローク" RenderString="]" Tile="items/sw_cloak.bmp" ColorString="&amp;y" DetailColor="y" />
     <part Name="Commerce" Value="200" />
     <part Name="Description" Short="銀色の流れる布は布の軽さで動き、静止や圧迫で硬化する。縫い目には薄い錆が顔を出し始めた。" />
     <part Name="Physics" Weight="6" />
@@ -6460,7 +6460,7 @@
   </object>
   <object Name="Gyrocopter Backpack" Inherits="Armor" Replace="true">
     <part Name="Armor" AV="0" DV="0" WornOn="Back" />
-    <part Name="Render" DisplayName="{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|ジャイロコプター}}・バックパック" RenderString="]" Tile="items/sw_gyrocopter_backpack.bmp" ColorString="&amp;B" TileColor="&amp;B" DetailColor="C" />
+    <part Name="Render" DisplayName="{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|ジャイロコプター}}バックパック" RenderString="]" Tile="items/sw_gyrocopter_backpack.bmp" ColorString="&amp;B" TileColor="&amp;B" DetailColor="C" />
     <part Name="Commerce" Value="800" />
     <part Name="Physics" Weight="10" />
     <part Name="Description" Short="関節つきのブレードが展開して気流スクリューを形作り、下に据えたエアスラスターが吹き上げる。起動すると装備者は飛行する。" />
@@ -6592,7 +6592,7 @@
   </object>
   <object Name="Palladium Mesh Tabard" Inherits="BaseCloak" Replace="true">
     <part Name="Armor" AV="1" DV="1" MA="1" />
-    <part Name="Render" DisplayName="{{palladium mesh|パラジウムメ・ッシュ}}・タバード" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="{{palladium mesh|パラジウムメッシュ}}タバード" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W" />
     <part Name="Commerce" Value="925" />
     <part Name="Description" Short="電極がウーフラックス織りの格子で輝き、流行で広げた袖が金とシアンの紋章回路を晒す。" />
     <part Name="Physics" Weight="9" />
@@ -6611,7 +6611,7 @@
     <tag Name="Tier" Value="7" />
   </object>
   <object Name="Gigantic Chassis Plate" Inherits="BaseCloak" Replace="true">
-    <part Name="Render" DisplayName="{{c|シャーシプ・レート}}" ColorString="&amp;c" RenderString="]" DetailColor="C" Tile="Items/sw_chassis_plate.bmp" />
+    <part Name="Render" DisplayName="{{c|シャーシプレート}}" ColorString="&amp;c" RenderString="]" DetailColor="C" Tile="Items/sw_chassis_plate.bmp" />
     <part Name="Description" Short="焼いて圧延した巨大なクロムの板を掘削車から外し、星帆のようにその怪物的な使い手を影で包む。" />
     <part Name="Armor" AV="6" DV="-2" Cold="20" Heat="20" />
     <part Name="Physics" Weight="300" />
@@ -6946,7 +6946,7 @@
   </object>
 
 <object Name="Zetachrome Apex" Inherits="BaseHelmet" Replace="true">
-    <part Name="Render" DisplayName="{{zetachrome|ゼータクローム}}アペ・ックス" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_helm_hightier2.bmp" RenderString="]" />
+    <part Name="Render" DisplayName="{{zetachrome|ゼータクローム}}アペックス" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_helm_hightier2.bmp" RenderString="]" />
     <part Name="Description" Short="クォーク＝グルーオン・プラズマは宇宙初期の虚無峰で急冷されて消えたが、六次元時空の皺に捕らわれた滴だけは残った。それらは何十億年も滑空し、やがてそれを発見した者たちが抽出と冷却の機械を築き、恒星炉で再加熱した。" />
     <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Head" />
     <part Name="Commerce" Value="1500" />
@@ -6976,7 +6976,7 @@
 
 <object Name="Psychodyne Helmet" Inherits="BaseHelmet" Replace="true">
     <part Name="Armor" AV="2" DV="1" />
-    <part Name="Render" DisplayName="サイコダインヘ・ルメット" Tile="Items/sw_psychodyne_helmet.bmp" RenderString="]" ColorString="&amp;b" DetailColor="B" />
+    <part Name="Render" DisplayName="サイコダインヘルメット" Tile="Items/sw_psychodyne_helmet.bmp" RenderString="]" ColorString="&amp;b" DetailColor="B" />
     <part Name="Commerce" Value="2140" />
     <part Name="Description" Short="テトラキセノンガラスが外殻に当たる光をブルーシフトさせ、内側では電磁石が星貝の組織を励起して完璧な精神音響を作り出す。" />
     <part Name="Physics" Weight="12" />
@@ -7124,7 +7124,7 @@
 
 <object Name="Gas Mask" Inherits="BaseMask" Replace="true">
     <part Name="Armor" AV="0" DV="0" WornOn="Face" />
-    <part Name="Render" DisplayName="ガス・マスク" RenderString="]" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_gas_mask.bmp" />
+    <part Name="Render" DisplayName="ガスマスク" RenderString="]" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_gas_mask.bmp" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="耐久性のあるプラスチック製マスクに簡易フィルターを組み込み、毒性のガスから身を守る。" />
     <part Name="Physics" Weight="6" Conductivity="0" />
@@ -7266,7 +7266,7 @@
 
 <object Name="Dazzle Cheek" Inherits="BaseMask" Replace="true">
     <part Name="Armor" AV="0" DV="1" />
-    <part Name="Render" DisplayName="ダズル・チーク" RenderString="]" Tile="Items/sw_dazzle_cheek.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m" />
+    <part Name="Render" DisplayName="ダズルチーク" RenderString="]" Tile="Items/sw_dazzle_cheek.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m" />
     <part Name="Commerce" Value="999" />
     <part Name="Description" Short="幾何学が仮面の結晶ダイオードを泳ぎ、入眠幻覚の調べでほほ笑む表情を刻む。" />
     <part Name="Physics" Weight="1" />
@@ -7326,7 +7326,7 @@
   </object>
 
 <object Name="Compass Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="コンパスブ・レスレット" Tile="Items/sw_cuff.bmp" ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" />
+    <part Name="Render" DisplayName="コンパスブレスレット" Tile="Items/sw_cuff.bmp" ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" />
     <part Name="Description" Short="磁化した針を閉じ込めたガラスレンズを革製のリストバンドに収めている。" />
     <part Name="Physics" Weight="1" Organic="true" />
     <part Name="Commerce" Value="25" />
@@ -7341,7 +7341,7 @@
   </object>
 
 <object Name="Wrist Fan" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="リストフ・ァン" RenderString="]" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="リストファン" RenderString="]" ColorString="&amp;c" DetailColor="y" />
     <part Name="Commerce" Value="20" />
     <part Name="Description" Short="小型の翼型ブレードが円形の盤面で回転し、穏やかな風を送り出す。" />
     <part Name="PartsGas" Radius="1" Chance="25" ChargeUse="1" UsesChargePerTurn="true" WorksOnWearer="true" WorksOnHolder="true" IsPowerLoadSensitive="true" NameForStatus="RotaryMotor" />
@@ -7379,7 +7379,7 @@
   </object>
 
 <object Name="Bio-Scanning Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{bio|バイオスキャン}}ブ・レスレット" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g" />
+    <part Name="Render" DisplayName="{{bio|バイオスキャン}}ブレスレット" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="近くの動物が放つ熱と音のシグネチャから拾った生命信号の電位を、絶えず小さな変化図として描き換えている。" />
     <part Name="Physics" Weight="1" />
@@ -7394,7 +7394,7 @@
   </object>
 
 <object Name="Structural Scanning Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{structural|構造}} {{Y-y-y-K-K-y-y-Y sequence|スキャン}}・ブレスレット" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{structural|構造}} {{Y-y-y-K-K-y-y-Y sequence|スキャン}}ブレスレット" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="y" />
     <part Name="Commerce" Value="20" />
     <part Name="Description" Short="手首マウント上でこだまのような三次元モデルが踊り、周囲の単純な無生物に潜む構造欠陥を暴き出す。" />
     <part Name="Physics" Weight="1" />
@@ -7410,7 +7410,7 @@
   </object>
 
 <object Name="Hologram Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{hologram|ホログラム}}ブ・レスレット" RenderString="]" ColorString="&amp;B" DetailColor="b" />
+    <part Name="Render" DisplayName="{{hologram|ホログラム}}ブレスレット" RenderString="]" ColorString="&amp;B" DetailColor="b" />
     <part Name="Commerce" Value="125" />
     <part Name="Description" Short="バングルの留め金にまばゆいコバルトのボタンが付いている。&#10;「=name= 本人だと思うか？ ああ、本物さ。」" />
     <part Name="Physics" Weight="1" />
@@ -7426,7 +7426,7 @@
   </object>
 
 <object Name="Force Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="フォース・ブレスレット" Tile="Items/sw_bracelet_tech.bmp" RenderString="]" ColorString="&amp;C" DetailColor="c" />
+    <part Name="Render" DisplayName="フォースブレスレット" Tile="Items/sw_bracelet_tech.bmp" RenderString="]" ColorString="&amp;C" DetailColor="c" />
     <part Name="Commerce" Value="125" />
     <part Name="Description" Short="装飾のないクロームのリストカフに小さな六角スイッチが据えられている。" />
     <part Name="Physics" Weight="1" />
@@ -7458,7 +7458,7 @@
   </object>
 
 <object Name="Precinct Navigator" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="プリシンクト・ナビゲーター" RenderString="]" Tile="Items/sw_cuff_tech.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="プリシンクトナビゲーター" RenderString="]" Tile="Items/sw_cuff_tech.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" />
     <part Name="Description" Short="ガラスの弦月に格子と赤い点が描かれ、かつて秩序立っていたクロムの街路を示す長方形は、時空を突き破った節くれだつ根のように裂けている。" />
     <part Name="Physics" Weight="1" />
     <part Name="Commerce" Value="40" />
@@ -7476,7 +7476,7 @@
 
 <object Name="Homoelectric Wrist Warmer" Inherits="BaseBracelet" Replace="true">
     <part Name="Armor" Cold="8" />
-    <part Name="Render" DisplayName="ホメオエレクトリッ・クリスト・ウォーマー" Tile="Items/sw_cuff.bmp" ColorString="&amp;y" DetailColor="R" RenderString="]" />
+    <part Name="Render" DisplayName="ホメオエレクトリックリストウォーマー" Tile="Items/sw_cuff.bmp" ColorString="&amp;y" DetailColor="R" RenderString="]" />
     <part Name="Commerce" Value="50" />
     <part Name="Description" Short="編み込んだスリーブが接触静電気で自らを温める。" />
     <part Name="Physics" Weight="1" Organic="true" />
@@ -7486,7 +7486,7 @@
   </object>
 
 <object Name="Slip Ring" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="スリップ・リング" RenderString="]" Tile="Items/sw_slip_ring.bmp" ColorString="&amp;g" DetailColor="y" />
+    <part Name="Render" DisplayName="スリップリング" RenderString="]" Tile="Items/sw_slip_ring.bmp" ColorString="&amp;g" DetailColor="y" />
     <part Name="Commerce" Value="100" />
     <part Name="Description" Short="金属製の環体全体に六角配列の孔が空き、ぬらりとした潤滑質がその表面を覆っている。潤滑剤を補充するための押し込み式キャップが付いている。" />
     <part Name="Physics" Weight="1" />
@@ -7501,7 +7501,7 @@
   </object>
 
 <object Name="Displacer Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{displacer|ディスプレーサ・ー}}ブレスレット" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B" />
+    <part Name="Render" DisplayName="{{displacer|ディスプレーサー}}ブレスレット" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B" />
     <part Name="Commerce" Value="90" />
     <part Name="Description" Short="光沢ある金属トーラスの内側には、揺らぎのヒエログリフが刻まれている。" />
     <part Name="Physics" Weight="1" />
@@ -7519,7 +7519,7 @@
   </object>
 
 <object Name="Ontological Anchor" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{K|オントロジカル・アンカー}}" RenderString="]" ColorString="&amp;K" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{K|オントロジカルアンカー}}" RenderString="]" ColorString="&amp;K" DetailColor="Y" />
     <part Name="Commerce" Value="50" />
     <part Name="Description" Short="冥府の金属に菱形十二面体ハニカムの二次元射影を刻み、局所のレイラインへパチリと係留できるようにしてある。" />
     <part Name="Physics" Weight="1" />
@@ -7537,7 +7537,7 @@
   </object>
 
 <object Name="Tri-Hologram Bracelet" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="トライ{{hologram|ホログラム}}・ブレスレット" Tile="Items/sw_tri_bracelet.bmp" RenderString="]" ColorString="&amp;B" DetailColor="b" />
+    <part Name="Render" DisplayName="トライ{{hologram|ホログラム}}ブレスレット" Tile="Items/sw_tri_bracelet.bmp" RenderString="]" ColorString="&amp;B" DetailColor="b" />
     <part Name="Description" Short="桟がバングルの留め金を三本の帯に分け、コバルトのボタンが四本目を召喚する。" />
     <part Name="Physics" Weight="1" />
     <part Name="Commerce" Value="1500" />
@@ -7553,7 +7553,7 @@
   </object>
 
 <object Name="Transkinetic Cuffs" Inherits="BaseUtilityBracelet" Replace="true">
-    <part Name="Render" DisplayName="{{transkinetic|トランスキネティ・ック}}カフ" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R" />
+    <part Name="Render" DisplayName="{{transkinetic|トランスキネティック}}カフ" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R" />
     <part Name="Description" Short="金属の手首部でダイヤルが規則正しくカチリと鳴り、プラスティファーの袖を走る管路に水銀の銀が流れ込む。" />
     <part Name="Physics" Weight="6" />
     <part Name="Commerce" Value="2100" />
@@ -7759,7 +7759,7 @@
   </object>
 
 <object Name="Precision Nanon Fingers" Inherits="BaseGlove" Replace="true">
-    <part Name="Render" DisplayName="精密{{Y|ナノン}}・フィンガー" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" Tile="Items/sw_nanon_fingers.bmp" RenderString="]" />
+    <part Name="Render" DisplayName="精密{{Y|ナノン}}フィンガー" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" Tile="Items/sw_nanon_fingers.bmp" RenderString="]" />
     <part Name="Description" Short="フラーレン製の指延長器が宮廷のつけ爪のように広がり、膜に埋め込んだ微小サーボが用途に応じて太さを伸縮させる。" />
     <part Name="RulesDescription" Text="装備中、武器の発生率ベースの特殊効果が 3 倍の確率で発動する（クリティカルヒットの基礎確率を含む）。" />
     <part Name="Armor" AV="1" DV="1" WornOn="Hands" />
@@ -7795,7 +7795,7 @@
 
 <object Name="Leyline Puppeteers" Inherits="BaseGlove" Replace="true">
     <part Name="Armor" AV="2" DV="2" />
-    <part Name="Render" DisplayName="{{psymeridian|レイライ・ンパペティア}}" RenderLayer="5" Tile="Items/sw_puppeteers.bmp" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m" />
+    <part Name="Render" DisplayName="{{psymeridian|レイラインパペティア}}" RenderLayer="5" Tile="Items/sw_puppeteers.bmp" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m" />
     <part Name="Physics" FlameTemperature="1000" VaporTemperature="8000" Weight="10" />
     <part Name="Commerce" Value="1750" />
     <part Name="Description" Short="静電乾燥した掌に溝を刻み、レイライン幾何の不可能な文様を描く。交差する放射で指が折り曲がり、潜在力を紡ぎ出す。" />
@@ -7957,7 +7957,7 @@
 
 <object Name="Grease Boots" Inherits="BaseBoot" Replace="true">
     <part Name="Armor" AV="2" DV="-3" WornOn="Feet" />
-    <part Name="Render" DisplayName="グリースド・スチー・ルブーツ" RenderString="]" ColorString="&amp;Y" DetailColor="K" Tile="Items/sw_metal_boots.bmp" />
+    <part Name="Render" DisplayName="グリースドスチールブーツ" RenderString="]" ColorString="&amp;Y" DetailColor="K" Tile="Items/sw_metal_boots.bmp" />
     <part Name="Commerce" Value="100" />
     <part Name="Description" Short="こじ開け痕の残る鋼の帯をひだ状の猪革ブーツへ鋲留めし、底にはEatersの墓所の油圧プレスから拭い取った滑走蝋を塗り込めてある。" />
     <part Name="Physics" Weight="12" />
@@ -8003,7 +8003,7 @@
 
 <object Name="Step Sowers" Inherits="BaseBoot" Replace="true">
     <part Name="Armor" AV="1" DV="-1" WornOn="Feet" />
-    <part Name="Render" DisplayName="ステッ・プソウ{{g|ァ}}ー" RenderString="]" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_cobblers.bmp" />
+    <part Name="Render" DisplayName="ステップソウ{{g|ァ}}ー" RenderString="]" ColorString="&amp;g" TileColor="&amp;y" DetailColor="g" Tile="Items/sw_cobblers.bmp" />
     <part Name="Description" Short="足首を革ストラップと金箔のバックルで締め、砕いた植物片が靴底を汚す。" />
     <part Name="Physics" Weight="5" />
     <part Name="Commerce" Value="250" />
@@ -8244,7 +8244,7 @@
   </object>
 
 <object Name="Point-Defense Drone" Inherits="BaseFloat" Replace="true">
-    <part Name="Render" DisplayName="ポイントディフェンス・ドローン" ColorString="&amp;c" DetailColor="R" RenderString="*" Tile="items/sw_point_defense_drone.bmp" />
+    <part Name="Render" DisplayName="ポイントディフェンスドローン" ColorString="&amp;c" DetailColor="R" RenderString="*" Tile="items/sw_point_defense_drone.bmp" />
     <part Name="Description" Short="分岐した機体枠に瞼を収めた機械の眼で、睫毛のようなアンテナで縁取られている。瞳孔から突き出た微小な銃身が震え、内側の瞼が連動して飛来する投射体を探り、レーザー光で撃ち落とす。" />
     <part Name="Armor" AV="0" DV="0" WornOn="Floating Nearby" />
     <part Name="Commerce" Value="800" />
@@ -8266,7 +8266,7 @@
   </object>
 
 <object Name="ProjectilePointDefenseLaser" Inherits="TemporaryEnergyProjectile" Replace="true">
-    <part Name="Render" DisplayName="{{B|レーザー・ビーム}}" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|レーザービーム}}" ColorString="&amp;B" />
     <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;B" PassByVerb="streak" />
     <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="闇が=subject.t=を呑み込む！" />
     <tag Name="Light" />
@@ -8276,7 +8276,7 @@
 
 <object Name="Chiral Rings" Inherits="BaseFloat" Replace="true">
     <part Name="Armor" AV="1" DV="2" />
-    <part Name="Render" DisplayName="{{chiral|カイラル}}・リング" RenderString="*" RenderLayer="5" Tile="Items/sw_chiral_rings.bmp" ColorString="&amp;m" TileColor="&amp;y" DetailColor="m" />
+    <part Name="Render" DisplayName="{{chiral|カイラル}}リング" RenderString="*" RenderLayer="5" Tile="Items/sw_chiral_rings.bmp" ColorString="&amp;m" TileColor="&amp;y" DetailColor="m" />
     <part Name="Physics" FlameTemperature="1000" VaporTemperature="8000" Weight="10" />
     <part Name="Commerce" Value="1250" />
     <part Name="Description" Short="極低温のクリスティールを平たく延ばした巨大な輪が、装着者を天体と相関させて天の赤道・赤緯・子午線の役割を果たす。縁はナノン旋盤で削られ、軌道を漂う残骸を切り裂く。" />

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
@@ -46,6 +47,8 @@ namespace QudJP.Patches
             [HarmonyPrefix]
             private static void Prefix(
                 [HarmonyArgument(0)] ref string message,
+                [HarmonyArgument(1)] List<QudMenuItem>? buttons,
+                [HarmonyArgument(3)] List<QudMenuItem>? items,
                 [HarmonyArgument(5)] ref string title,
                 ref string __state)
             {
@@ -55,6 +58,9 @@ namespace QudJP.Patches
                 JpLog.Info(eid, "Popup", "START", $"title='{title ?? "<null>"}' msgLen={message?.Length ?? 0}");
                 message = LocalizeUIPopupMessage(message ?? string.Empty);
                 title = LocalizeUIPopupTitle(title ?? string.Empty);
+
+                NormalizeHotkeys(buttons);
+                NormalizeHotkeys(items);
             }
 
             [HarmonyPostfix]
@@ -70,6 +76,27 @@ namespace QudJP.Patches
 
                 JpLog.Info(__state, "Popup", "END", $"title='{title ?? "<null>"}' msgLen={message?.Length ?? 0}");
                 UIContext.Release(__state);
+            }
+        }
+
+        private static void NormalizeHotkeys(List<QudMenuItem>? entries)
+        {
+            if (entries == null || entries.Count == 0)
+            {
+                return;
+            }
+
+            for (int i = 0; i < entries.Count; i++)
+            {
+                var entry = entries[i];
+                var normalized = MenuItemTextLocalizer.Apply(entry.text, entry.command, entry.hotkey);
+                if (string.Equals(normalized, entry.text, StringComparison.Ordinal))
+                {
+                    continue;
+                }
+
+                entry.text = normalized;
+                entries[i] = entry;
             }
         }
 

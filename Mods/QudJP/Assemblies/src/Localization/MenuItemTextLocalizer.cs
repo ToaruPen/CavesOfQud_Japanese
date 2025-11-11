@@ -12,29 +12,27 @@ namespace QudJP.Localization
             "\\{\\{(?<color>[^|{}]+)\\|(?<body>.*?)\\}\\}",
             RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
-        internal static string Apply(string? text, string? contextSuffix)
+        internal static string Apply(string? text, string? command, string? hotkey)
         {
             if (string.IsNullOrEmpty(text))
             {
                 return text ?? string.Empty;
             }
 
-            var context = string.IsNullOrWhiteSpace(contextSuffix)
+            var suffix = BuildContextSuffix(command, hotkey);
+            var context = string.IsNullOrWhiteSpace(suffix)
                 ? "QudMenuItem"
-                : $"QudMenuItem.{contextSuffix}";
+                : $"QudMenuItem.{suffix}";
 
             var replaced = ColorTagRegex.Replace(
                 text,
                 match =>
                 {
                     var body = match.Groups["body"].Value;
-                    if (!ShouldTranslate(body))
-                    {
-                        return match.Value;
-                    }
-
-                    var localized = SafeStringTranslator.SafeTranslate(body, context);
-                    localized = NormalizeHotkeyIfNeeded(match.Groups["color"].Value, localized);
+                    var localized = ShouldTranslate(body)
+                        ? SafeStringTranslator.SafeTranslate(body, context)
+                        : body;
+                    localized = NormalizeHotkeyIfNeeded(command, hotkey, match.Groups["color"].Value, localized);
                     if (string.IsNullOrEmpty(localized) ||
                         string.Equals(localized, body, StringComparison.Ordinal))
                     {
@@ -75,28 +73,54 @@ namespace QudJP.Localization
             return true;
         }
 
-        private static string NormalizeHotkeyIfNeeded(string? colorTag, string? value)
+        private static string NormalizeHotkeyIfNeeded(string? command, string? hotkey, string? colorTag, string? value)
         {
-            if (string.IsNullOrEmpty(value))
+            if (!string.Equals(colorTag, "W", StringComparison.OrdinalIgnoreCase))
             {
                 return value ?? string.Empty;
             }
 
-            if (!string.Equals(colorTag, "W", StringComparison.OrdinalIgnoreCase))
+            var baseValue = value ?? string.Empty;
+            var trimmed = baseValue.Trim();
+            if (trimmed.Length == 0)
             {
-                return value;
+                return baseValue;
             }
 
-            var trimmed = value.Trim();
-            if (trimmed.Length == 0 ||
-                trimmed.StartsWith("[", StringComparison.Ordinal) ||
-                trimmed.IndexOf(' ') >= 0 ||
-                trimmed.Length > 16)
+            var label = MenuHotkeyHelper.GetPrimaryLabel(command, hotkey);
+            if (!string.IsNullOrWhiteSpace(label))
             {
-                return value;
+                var normalized = $"[{label!.Trim()}]";
+                return string.Equals(baseValue, trimmed, StringComparison.Ordinal)
+                    ? normalized
+                    : baseValue.Replace(trimmed, normalized);
             }
 
-            return value.Replace(trimmed, $"[{trimmed}]");
+            if (trimmed.StartsWith("[", StringComparison.Ordinal) &&
+                trimmed.EndsWith("]", StringComparison.Ordinal))
+            {
+                return baseValue;
+            }
+
+            var fallback = $"[{trimmed}]";
+            return string.Equals(baseValue, trimmed, StringComparison.Ordinal)
+                ? fallback
+                : baseValue.Replace(trimmed, fallback);
+        }
+
+        private static string BuildContextSuffix(string? command, string? hotkey)
+        {
+            if (!string.IsNullOrWhiteSpace(command))
+            {
+                return command!;
+            }
+
+            if (!string.IsNullOrWhiteSpace(hotkey))
+            {
+                return hotkey!;
+            }
+
+            return "Label";
         }
 
     }

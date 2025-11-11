@@ -24,6 +24,14 @@ namespace QudJP.Patches
             var styleName = trigger?.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
             JpLog.Info(eid, "Tooltip", "START", $"style={styleName} trigger={trigger?.name ?? "<null>"}");
 
+            var source = TooltipSourceContext.Describe(trigger);
+            if (!string.IsNullOrEmpty(source))
+            {
+                JpLog.Info(eid, "Tooltip", "SOURCE", source!);
+            }
+
+            TooltipSourceContext.TryGetSubjects(trigger, out var primarySubject, out var compareSubject);
+
             var fields = trigger?.parameterizedTextFields;
             if (fields == null)
             {
@@ -63,9 +71,24 @@ namespace QudJP.Patches
                 {
                     text = TooltipTextLocalizer.ApplySubHeader(text);
                 }
+                else if (!isRtf && string.Equals(name, "ConText2", System.StringComparison.Ordinal))
+                {
+                    text = TooltipTextLocalizer.ApplySubHeader(text);
+                }
                 else if (!isRtf && string.Equals(name, "WoundLevel", System.StringComparison.Ordinal))
                 {
                     text = TooltipTextLocalizer.ApplyWoundLevel(text) ?? text;
+                }
+
+                if (string.IsNullOrWhiteSpace(text) && IsSubHeaderField(name))
+                {
+                    var subject = IsSecondaryField(name) ? compareSubject : primarySubject;
+                    var fallback = TooltipSubHeaderBuilder.Build(subject);
+                    if (!string.IsNullOrWhiteSpace(fallback))
+                    {
+                        text = fallback!;
+                        JpLog.Info(eid, "Tooltip", "SubHeader/FILL", $"field={name} value='{fallback}'");
+                    }
                 }
 
                 // Dictionary pass for simple one-liners (DisplayName etc.)
@@ -134,6 +157,29 @@ namespace QudJP.Patches
             if (s.IndexOf("\\cf", System.StringComparison.Ordinal) >= 0) return true;
             if (s.IndexOf("{\\", System.StringComparison.Ordinal) >= 0) return true;
             return false;
+        }
+
+        private static bool IsSubHeaderField(string? name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
+
+            return string.Equals(name, "ConText", System.StringComparison.Ordinal) ||
+                string.Equals(name, "ConText2", System.StringComparison.Ordinal) ||
+                string.Equals(name, "SubHeader", System.StringComparison.Ordinal) ||
+                string.Equals(name, "SubHeader2", System.StringComparison.Ordinal);
+        }
+
+        private static bool IsSecondaryField(string? name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return false;
+            }
+
+            return name.EndsWith("2", System.StringComparison.Ordinal);
         }
     }
 }
