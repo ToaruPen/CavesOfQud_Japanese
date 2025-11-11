@@ -87,11 +87,14 @@ namespace QudJP.Localization
             return string.Join("\n", segments);
         }
 
-        internal static string? ApplyFeeling(string? token) => TranslateExactToken(token, FeelingMap);
+        internal static string? ApplyFeeling(string? token) =>
+            TranslateExactTokenWithContext(token, FeelingMap, "XRL.UI.Look.GenerateTooltipInformation.FeelingText");
 
-        internal static string? ApplyDifficulty(string? token) => TranslateExactToken(token, DifficultyMap);
+        internal static string? ApplyDifficulty(string? token) =>
+            TranslateExactTokenWithContext(token, DifficultyMap, "XRL.UI.Look.GenerateTooltipInformation.DifficultyText");
 
-        internal static string? ApplyWoundLevel(string? token) => TranslateExactToken(token, WoundMap);
+        internal static string? ApplyWoundLevel(string? token) =>
+            TranslateExactTokenWithContext(token, WoundMap, "XRL.UI.Look.GenerateTooltipInformation.WoundLevel");
 
         internal static string ApplySubHeader(string? text)
         {
@@ -124,6 +127,26 @@ namespace QudJP.Localization
             }
 
             return map.TryGetValue(value!, out var localized) ? localized : value;
+        }
+
+        private static string? TranslateExactTokenWithContext(
+            string? value,
+            IReadOnlyDictionary<string, string> fallback,
+            string contextId)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return value;
+            }
+
+            var translated = Translator.Instance.Apply(value!, contextId);
+            if (!string.IsNullOrEmpty(translated) &&
+                !string.Equals(translated, value, StringComparison.Ordinal))
+            {
+                return translated;
+            }
+
+            return TranslateExactToken(value, fallback);
         }
 
         private static string LocalizeLine(string line)
@@ -209,7 +232,7 @@ namespace QudJP.Localization
                 var label = payload.Substring(0, colonIndex);
                 var value = payload.Substring(colonIndex + 1).TrimStart();
 
-                if (ColonLabelMap.TryGetValue(label, out var translatedLabel))
+                if (TryTranslateColonLabel(label, out var translatedLabel))
                 {
                     var localizedValue = LocalizeValue(label, value);
                     var wrapped = prefix + $"{translatedLabel}：{localizedValue}" + suffix + tail;
@@ -249,7 +272,7 @@ namespace QudJP.Localization
             {
                 var label = payload;
                 var value = valueAfterColon;
-                if (ColonLabelMap.TryGetValue(label, out var translatedLabel2))
+                if (TryTranslateColonLabel(label, out var translatedLabel2))
                 {
                     var wrapped = prefix + translatedLabel2 + suffix + leadWS + "：" + LocalizeValue(label, value);
                     return ReplaceTrimmed(line, trimmed, wrapped);
@@ -274,7 +297,7 @@ namespace QudJP.Localization
                     var label = payload;
                     string localizedLabel = label;
 
-                    if (ColonLabelMap.TryGetValue(label, out var mapped))
+                    if (TryTranslateColonLabel(label, out var mapped))
                     {
                         localizedLabel = mapped;
                     }
@@ -387,6 +410,25 @@ namespace QudJP.Localization
             }
 
             return original.Substring(0, index) + replacement + original.Substring(index + trimmed.Length);
+        }
+
+        private static bool TryTranslateColonLabel(string label, out string localized)
+        {
+            var translated = Translator.Instance.Apply(label, "XRL.UI.Look.GenerateTooltipInformation.ColonLabel");
+            if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, label, StringComparison.Ordinal))
+            {
+                localized = translated;
+                return true;
+            }
+
+            if (ColonLabelMap.TryGetValue(label, out var mapped))
+            {
+                localized = mapped;
+                return true;
+            }
+
+            localized = label;
+            return false;
         }
 
         private static bool TryExtractOuterColorTag(string value, out string prefix, out string inner, out string after)

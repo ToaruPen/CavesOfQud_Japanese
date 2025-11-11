@@ -125,6 +125,7 @@ namespace QudJP.Patches
                 }
             }
 
+            TooltipBodyTextCache.MergeInto(snapshot, trigger);
             TooltipParamMapCache.Remember(eid, snapshot);
         }
 

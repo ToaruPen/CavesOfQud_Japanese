@@ -68,6 +68,7 @@ namespace QudJP.Patches
             var paramMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             if (trigger?.parameterizedTextFields == null)
             {
+                TooltipBodyTextCache.MergeInto(paramMap, trigger);
                 return paramMap;
             }
 
@@ -118,6 +119,7 @@ namespace QudJP.Patches
                 }
             }
 
+            TooltipBodyTextCache.MergeInto(paramMap, trigger);
             return paramMap;
         }
 
@@ -151,7 +153,7 @@ namespace QudJP.Patches
 
                     if (string.IsNullOrWhiteSpace(t.text))
                     {
-                        var name = t.gameObject != null ? t.gameObject.name : null;
+                        var name = t.gameObject != null ? t.gameObject.name ?? string.Empty : string.Empty;
                         if (!string.IsNullOrEmpty(name) && paramMap.TryGetValue(name, out var value) && !string.IsNullOrEmpty(value))
                         {
                             var style = !string.IsNullOrEmpty(styleName) ? styleName : "<null>";
@@ -165,10 +167,12 @@ namespace QudJP.Patches
 
             var delimiter = Tooltip.Delimiter ?? TooltipManager.Instance?.textFieldDelimiter ?? "%";
 
-            var tmpAll = tooltip.GameObject.GetComponentsInChildren<TMP_Text>(includeInactive: true);
-            foreach (var t in tmpAll)
+            foreach (var t in EnumerateSupplementalTmpTexts(tooltip, processedTmps))
             {
-                if (t == null || processedTmps.Contains(t)) continue;
+                if (t == null)
+                {
+                    continue;
+                }
                 FontManager.Instance.ApplyToText(t);
                 t.extraPadding = true;
                 t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
@@ -321,6 +325,75 @@ namespace QudJP.Patches
                 }
             }
         }
+        private static IEnumerable<TMP_Text> EnumerateSupplementalTmpTexts(
+            Tooltip tooltip,
+            HashSet<TMP_Text> processed)
+        {
+            if (tooltip == null)
+            {
+                yield break;
+            }
+
+            foreach (var root in EnumerateTooltipRoots(tooltip))
+            {
+                TMP_Text[] tmps;
+                try
+                {
+                    tmps = root.GetComponentsInChildren<TMP_Text>(includeInactive: true);
+                }
+                catch
+                {
+                    continue;
+                }
+
+                foreach (var text in tmps)
+                {
+                    if (text == null)
+                    {
+                        continue;
+                    }
+
+                    if (processed != null && !processed.Add(text))
+                    {
+                        continue;
+                    }
+
+                    yield return text;
+                }
+            }
+        }
+
+        private static IEnumerable<GameObject> EnumerateTooltipRoots(Tooltip tooltip)
+        {
+            if (tooltip == null)
+            {
+                yield break;
+            }
+
+            var seen = new HashSet<GameObject>();
+
+            var root = tooltip.GameObject;
+            if (root != null && seen.Add(root))
+            {
+                yield return root;
+            }
+
+            List<SectionField>? sections = tooltip.SectionFields;
+            if (sections == null)
+            {
+                yield break;
+            }
+
+            foreach (var section in sections)
+            {
+                var go = section?.GameObject;
+                if (go != null && seen.Add(go))
+                {
+                    yield return go;
+                }
+            }
+        }
+
         private static void EnsureRectSize(TMP_Text t)
         {
             if (t == null)
@@ -347,6 +420,14 @@ namespace QudJP.Patches
             rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
             LayoutRebuilder.MarkLayoutForRebuild(rt);
             LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
+            try
+            {
+                t.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
+            }
+            catch
+            {
+                // Ignore TMP internals throwing during shutdown.
+            }
         }
 
         private static string TranslateWithDelimiter(string value, string delimiter, System.Func<string, string> translator)
@@ -421,7 +502,7 @@ namespace QudJP.Patches
             // 4) normalize variants like LongDescriptionLeft/Right/NameR/DescL -> DisplayName/LongDescription (+2 for right)
             var lower = name.ToLowerInvariant();
             bool isRight = lower.Contains("right") || lower.EndsWith("r") || lower.EndsWith("2");
-            string baseField = null;
+            string? baseField = null;
             if (lower.Contains("display") || lower.Contains("name") || lower.Contains("title")) baseField = "DisplayName";
             else if (lower.Contains("desc") || lower.Contains("descr")) baseField = "LongDescription";
             else if (lower.Contains("wound")) baseField = "WoundLevel";

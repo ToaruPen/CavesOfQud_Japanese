@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using HarmonyLib;
+using QudJP.Diagnostics;
 using QudJP.Localization;
 using TMPro;
 using UnityEngine;
@@ -28,17 +29,6 @@ namespace QudJP.Patches
             "quote",
             "attribution",
         };
-
-        [HarmonyPrefix]
-        [HarmonyPatch("text", MethodType.Setter)]
-        private static void TranslateTextProperty(TMP_Text __instance, ref string value)
-        {
-            TranslateString(__instance, ref value);
-            if (!string.IsNullOrEmpty(value))
-            {
-                value = ReplaceEmbeddedTokens(value);
-            }
-        }
 
         [HarmonyPrefix]
         [HarmonyPatch(nameof(TMP_Text.SetText), typeof(string))]
@@ -71,7 +61,13 @@ namespace QudJP.Patches
                 return;
             }
 
-            var contextId = __instance?.GetType().FullName;
+            var contextId = ContextHints.Resolve(__instance) ?? __instance?.GetType().FullName ?? typeof(TMP_Text).FullName;
+            var eid = UIContext.Resolve(__instance);
+            if (TranslationContextGuards.ShouldSkipTranslation(contextId, eid, sourceText))
+            {
+                return;
+            }
+
             sourceText = Translator.Instance.Apply(sourceText, contextId);
             if (!string.IsNullOrEmpty(sourceText))
             {
@@ -101,9 +97,17 @@ namespace QudJP.Patches
                     {
                         return;
                     }
-                    var translated = Translator.Instance.Apply(sb.ToString(), __instance?.GetType().FullName);
+                    var contextId = ContextHints.Resolve(__instance) ?? __instance?.GetType().FullName ?? typeof(TMP_Text).FullName;
+                    var eid = UIContext.Resolve(__instance);
+                    var original = sb.ToString();
+                    if (TranslationContextGuards.ShouldSkipTranslation(contextId, eid, original))
+                    {
+                        return;
+                    }
+
+                    var translated = Translator.Instance.Apply(original, contextId);
                     translated = ReplaceEmbeddedTokens(translated);
-                    if (!string.Equals(sb.ToString(), translated, StringComparison.Ordinal))
+                    if (!string.Equals(original, translated, StringComparison.Ordinal))
                     {
                         sb.Clear();
                         sb.Append(translated);
@@ -177,7 +181,8 @@ namespace QudJP.Patches
                 return;
             }
 
-            text = Translator.Instance.Apply(skinText, instance.GetType().FullName);
+            var contextId = ContextHints.Resolve(instance) ?? instance.GetType().FullName;
+            text = Translator.Instance.Apply(skinText, contextId);
         }
 
         internal static string ReplaceEmbeddedTokens(string value)

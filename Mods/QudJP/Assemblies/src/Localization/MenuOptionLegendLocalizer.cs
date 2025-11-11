@@ -40,6 +40,14 @@ namespace QudJP.Localization
                 ["confirm"] = Highlight("確認"),
                 ["Show Tooltip"] = Highlight("ツールチップ表示"),
                 ["Continue"] = Highlight("続ける"),
+                ["Collapse All"] = Highlight("すべて畳む"),
+                ["Expand All"] = Highlight("すべて展開"),
+                ["Toggle Option"] = Highlight("オプション切替"),
+                ["Toggle Visibility"] = Highlight("表示切替"),
+                ["Toggle Visibilty"] = Highlight("表示切替"),
+                ["help"] = Highlight("ヘルプ"),
+                ["remove keybind"] = Highlight("割り当て削除"),
+                ["restore defaults"] = Highlight("既定に戻す"),
             };
         private static readonly HashSet<string> Logged = new();
 

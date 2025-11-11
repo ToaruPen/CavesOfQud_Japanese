@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using HarmonyLib;
+using QudJP.Diagnostics;
 using QudJP.Localization;
+using TMPro;
 using XRL.UI;
 
 namespace QudJP.Patches
@@ -17,7 +19,7 @@ namespace QudJP.Patches
 
         [HarmonyPrefix]
         [HarmonyPatch(nameof(UITextSkin.SetText), typeof(string))]
-        private static void TranslateUITextSkin(ref string text)
+        private static void TranslateUITextSkin(UITextSkin __instance, ref string text)
         {
             if (string.IsNullOrEmpty(text))
             {
@@ -25,7 +27,17 @@ namespace QudJP.Patches
                 return;
             }
 
-            text = Translator.Instance.Apply(text, "UITextSkin.SetText");
+            var tmp = __instance != null ? __instance.GetComponent<TMP_Text>() : null;
+            var contextId = tmp != null
+                ? (ContextHints.Resolve(tmp) ?? $"TMP.{tmp.gameObject?.name ?? "Field"}")
+                : "UITextSkin.SetText";
+            var eid = UIContext.Resolve(tmp);
+            if (TranslationContextGuards.ShouldSkipTranslation(contextId, eid, text))
+            {
+                return;
+            }
+
+            text = Translator.Instance.Apply(text, contextId);
         }
 
         private static void LogEmptyUITextSkin()

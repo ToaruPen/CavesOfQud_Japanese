@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Text.RegularExpressions;
 using System.Threading;
 using UnityEngine;
 using QudJP.Diagnostics;
+using ConsoleColorUtility = ConsoleLib.Console.ColorUtility;
 
 namespace QudJP.Localization
 {
@@ -29,6 +31,9 @@ namespace QudJP.Localization
         private Timer? _reloadTimer;
         private bool _initialized;
         private string _language = "ja";
+        private static readonly Regex DisplayNameDigitsRegex = new Regex("\\d+", RegexOptions.Compiled);
+        private static readonly Regex UnityRichTextTagRegex =
+            new Regex("</?color[^>]*>|</?size[^>]*>|<sprite[^>]*>", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         private string DictionariesDirectory =>
             Path.Combine(ModPathResolver.ResolveModPath(), "Localization", "Dictionaries");
@@ -122,15 +127,42 @@ namespace QudJP.Localization
             return result;
         }
 
-        private static bool TryTranslate(string normalized, string? contextId, TranslationSnapshot snapshot, out string translated)
+        private static bool TryTranslate(
+            string normalized,
+            string? contextId,
+            TranslationSnapshot snapshot,
+            out string translated)
         {
-            translated = default!;
-
-            if (!string.IsNullOrEmpty(contextId))
+            if (TryLookup(snapshot, contextId, normalized, out translated))
             {
-                var contextKey = contextId!;
+                return true;
+            }
+
+            if (IsDisplayNameContext(contextId))
+            {
+                var variant = NormalizeDisplayNameKey(normalized);
+                if (!string.IsNullOrEmpty(variant) &&
+                    !string.Equals(variant, normalized, StringComparison.Ordinal) &&
+                    TryLookup(snapshot, contextId, variant, out translated))
+                {
+                    return true;
+                }
+            }
+
+            translated = default!;
+            return false;
+        }
+
+        private static bool TryLookup(
+            TranslationSnapshot snapshot,
+            string? contextId,
+            string key,
+            out string translated)
+        {
+            if (contextId is string contextKey && contextKey.Length > 0)
+            {
                 if (snapshot.Contextual.TryGetValue(contextKey, out var contextMap) &&
-                    contextMap.TryGetValue(normalized, out var contextValue) &&
+                    contextMap.TryGetValue(key, out var contextValue) &&
                     !string.IsNullOrEmpty(contextValue))
                 {
                     translated = contextValue;
@@ -138,14 +170,38 @@ namespace QudJP.Localization
                 }
             }
 
-            if (snapshot.Global.TryGetValue(normalized, out var value) &&
+            if (snapshot.Global.TryGetValue(key, out var value) &&
                 !string.IsNullOrEmpty(value))
             {
                 translated = value;
                 return true;
             }
 
+            translated = default!;
             return false;
+        }
+
+        private static bool IsDisplayNameContext(string? contextId)
+        {
+            if (string.IsNullOrEmpty(contextId))
+            {
+                return false;
+            }
+
+            return contextId.IndexOf("displayname", StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        private static string NormalizeDisplayNameKey(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return string.Empty;
+            }
+
+            var stripped = ConsoleColorUtility.StripFormatting(value) ?? value ?? string.Empty;
+            stripped = UnityRichTextTagRegex.Replace(stripped, string.Empty);
+            stripped = Regex.Replace(stripped, "\\s+", " ").Trim();
+            return DisplayNameDigitsRegex.Replace(stripped, "#");
         }
 
         private static string? TryTranslateLabelFallback(string original, string? contextId, TranslationSnapshot snapshot)

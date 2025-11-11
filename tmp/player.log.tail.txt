@@ -1,0 +1,400 @@
+﻿[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(384.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=13 sample='%WoundLevel%\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel keyLen=13 outLen=13
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 sample='<color=#FFFFFFFF>辟｡蛯ｷ </color>\n'
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] (suppressed further repeats)
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=15 outLen=15
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=15 sample='%DisplayName2%\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=15 outLen=15
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] (suppressed further repeats)
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=11 sample='%ConText2%\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=11 outLen=11
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=19 sample='%LongDescription2%\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=19 outLen=19
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TR][MISS][EID:445340fb] ctx=TMPro.TextMeshProUGUI keyLen=252 outLen=252
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=14 sample='%WoundLevel2%\n'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel keyLen=14 outLen=14
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 sample='<color=#FFFFFFFF>辟｡蛯ｷ </color>\n'
+[QudJP] Tooltip param DualPolatLooker DisplayName='<color=#B1C9C3FF>豌ｴ遲・[</color><color=#77BFCFFF>32</color><color=#B1C9C3FF> drams of </color><color=#0096FFFF>fresh water</color><color=#B1C9C3FF>] </co...'
+[QudJP] Tooltip param DualPolatLooker ConText='豌ｴ螳ｹ蝎ｨ'
+[QudJP] Tooltip param DualPolatLooker LongDescription='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#155352FF>驥埼㍼・・ 繝昴Φ繝・</color>'
+[QudJP] Tooltip param DualPolatLooker WoundLevel='<color=#FFFFFFFF>辟｡蛯ｷ </color>'
+[QudJP] Tooltip param DualPolatLooker DisplayName2='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>'
+[QudJP] Tooltip param DualPolatLooker ConText2='蜈画ｺ・
+[QudJP] Tooltip param DualPolatLooker LongDescription2='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#77BFCFFF>繧ｵ繝悶い繝ｼ繝謾ｻ謦・紫・・5%</color><color=#B1C...'
+[QudJP] Tooltip param DualPolatLooker WoundLevel2='<color=#FFFFFFFF>辟｡蛯ｷ </color>'
+[QudJP] Tooltip chunk DualPolatLooker obj='DisplayName' text='<color=#B1C9C3FF>豌ｴ遲・[</color><color=#77BFCFFF>32</color><color=#B1C9C3FF> drams of </color><color=#0096FFFF>fresh water</color><color=#B1C9C3FF>] </co...'
+[QudJP] Tooltip chunk DualPolatLooker obj='SubHeader' text='豌ｴ螳ｹ蝎ｨ
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='LongDescription' text='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#155352FF>驥埼㍼・・ 繝昴Φ繝・</color>
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='WoundLevel' text='<color=#FFFFFFFF>辟｡蛯ｷ </color>
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='DisplayName' text='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='SubHeader' text='蜈画ｺ・
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='LongDescription' text='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#77BFCFFF>繧ｵ繝悶い繝ｼ繝謾ｻ謦・紫・・5%</color><color=#B1C...'
+[QudJP] Tooltip chunk DualPolatLooker obj='WoundLevel' text='<color=#FFFFFFFF>辟｡蛯ｷ </color>
+'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.Text (TMP) keyLen=6 outLen=6
+[JP][TR][MISS][EID:445340fb] ctx=Look.TooltipLine keyLen=6 outLen=6
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.Text (TMP) (1) keyLen=8 outLen=8
+[JP][TR][MISS][EID:445340fb] ctx=Look.TooltipLine keyLen=8 outLen=8
+[QudJP] Tooltip param DualPolatLooker DisplayName='<color=#B1C9C3FF>豌ｴ遲・[</color><color=#77BFCFFF>32</color><color=#B1C9C3FF> drams of </color><color=#0096FFFF>fresh water</color><color=#B1C9C3FF>] </co...'
+[QudJP] Tooltip param DualPolatLooker ConText='豌ｴ螳ｹ蝎ｨ'
+[QudJP] Tooltip param DualPolatLooker LongDescription='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#155352FF>驥埼㍼・・ 繝昴Φ繝・</color>'
+[QudJP] Tooltip param DualPolatLooker WoundLevel='<color=#FFFFFFFF>辟｡蛯ｷ </color>'
+[QudJP] Tooltip param DualPolatLooker DisplayName2='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>'
+[QudJP] Tooltip param DualPolatLooker ConText2='蜈画ｺ・
+[QudJP] Tooltip param DualPolatLooker LongDescription2='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#77BFCFFF>繧ｵ繝悶い繝ｼ繝謾ｻ謦・紫・・5%</color><color=#B1C...'
+[QudJP] Tooltip param DualPolatLooker WoundLevel2='<color=#FFFFFFFF>辟｡蛯ｷ </color>'
+[QudJP] Tooltip chunk DualPolatLooker obj='DisplayName' text='<color=#B1C9C3FF>豌ｴ遲・[</color><color=#77BFCFFF>32</color><color=#B1C9C3FF> drams of </color><color=#0096FFFF>fresh water</color><color=#B1C9C3FF>] </co...'
+[QudJP] Tooltip chunk DualPolatLooker obj='SubHeader' text='豌ｴ螳ｹ蝎ｨ
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='LongDescription' text='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#155352FF>驥埼㍼・・ 繝昴Φ繝・</color>
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='WoundLevel' text='<color=#FFFFFFFF>辟｡蛯ｷ </color>
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='DisplayName' text='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='SubHeader' text='蜈画ｺ・
+'
+[QudJP] Tooltip chunk DualPolatLooker obj='LongDescription' text='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・
+</color><color=#B1C9C3FF>
+</color><color=#B1C9C3FF></color><color=#77BFCFFF>繧ｵ繝悶い繝ｼ繝謾ｻ謦・紫・・5%</color><color=#B1C...'
+[QudJP] Tooltip chunk DualPolatLooker obj='WoundLevel' text='<color=#FFFFFFFF>辟｡蛯ｷ </color>
+'
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.Text (TMP) keyLen=6 outLen=6
+[JP][TR][MISS][EID:445340fb] ctx=Look.TooltipLine keyLen=6 outLen=6
+[JP][TR][MISS][EID:445340fb] ctx=ModelShark.Tooltip.DualPolatLooker.Text (TMP) (1) keyLen=8 outLen=8
+[JP][TR][MISS][EID:445340fb] ctx=Look.TooltipLine keyLen=8 outLen=8
+[JP][Tooltip][END][EID:445340fb] trigger=DualLookerTooltipTrigger
+[JP][Tooltip][END][EID:445340fb] trigger=DualLookerTooltipTrigger
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=14 sample='%DisplayName%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=14 outLen=14
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=155 sample='<color=#B1C9C3FF>豌ｴ遲・[</color><color=#77BFCFFF>32</color><color=#...'
+[JP][TR][MISS][EID:--------] ctx=TMPro.TextMeshProUGUI keyLen=155 outLen=155
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=155 sample='<color=#B1C9C3FF>豌ｴ遲・[</color><color=#77BFCFFF>32</color><color=#...'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=155 outLen=155
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=155 rendered=(281.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=155 rendered=(281.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=10 sample='%ConText%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=10 outLen=10
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=4 sample='豌ｴ螳ｹ蝎ｨ\n'
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=4 sample='豌ｴ螳ｹ蝎ｨ\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=4 outLen=4
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=4 rendered=(48.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=4 rendered=(48.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=18 sample='%LongDescription%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=18 outLen=18
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:--------] ctx=TMPro.TextMeshProUGUI keyLen=143 outLen=143
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 sample='<color=#B1C9C3FF>繧｢繝ｫ繝溘・豌ｴ蟾ｮ縺励ｒ繧ｪ繝ｪ繝ｼ繝冶牡縺ｮ蟶・〒蛹・∩縲∵ｰｴ謖√■繧定憶縺上＠縺ｦ縺ゅｋ縲・\n</color><color=...'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=143 outLen=143
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(480.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=143 rendered=(480.0,66.4) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=13 sample='%WoundLevel%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel keyLen=13 outLen=13
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 sample='<color=#FFFFFFFF>辟｡蛯ｷ </color>\n'
+[JP][TR][MISS][EID:--------] ctx=TMPro.TextMeshProUGUI keyLen=15 outLen=15
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=15 sample='%DisplayName2%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=15 outLen=15
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 sample='<color=#B1C9C3FF>縺溘＞縺ｾ縺､ 繝ｻ譛ｪ轤ｹ轣ｫ繝ｻ </color>\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName keyLen=37 outLen=37
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.DisplayName obj=DisplayName len=37 rendered=(153.6,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=11 sample='%ConText2%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=11 outLen=11
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 sample='蜈画ｺ申n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader keyLen=3 outLen=3
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.SubHeader obj=SubHeader len=3 rendered=(32.0,23.2) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=19 sample='%LongDescription2%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=19 outLen=19
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:--------] (suppressed further repeats)
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 sample='<color=#B1C9C3FF>蝪ｩ譟ｱ縺ｮ闌弱↓豐ｹ譟薙∩縺ｮ蟶・ｒ蟾ｻ縺堺ｻ倥￠縺溽ｰ｡邏縺ｪ辣ｧ譏主勣蜈ｷ縲・\n</color><color=#B1C9C...'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription keyLen=252 outLen=252
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/OUT][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.LongDescription obj=LongDescription len=252 rendered=(384.0,109.7) font=SourceCodePro-Regular SDF wrap=Normal ovf=Truncate
+[JP][TMP][set_text/IN][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=14 sample='%WoundLevel2%\n'
+[JP][TR][MISS][EID:--------] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel keyLen=14 outLen=14
+[JP][TMP][placeholder/RESTORE][EID:c0b56c94] ctx=ModelShark.Tooltip.DualPolatLooker.WoundLevel obj=WoundLevel len=29 sample='<color=#FFFFFFFF>辟｡蛯ｷ </color>\n'
+Stopping...
+INFO - Platform - Shutdown Starting
+STEAM - Shutting down.
+RunSegment: System.Threading.ThreadAbortException: Thread was being aborted.
+  at System.Threading.ThreadInterruptedException..ctor () [0x00000] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at (wrapper managed-to-native) System.Threading.Monitor.Monitor_wait(object,int)
+  at System.Threading.Monitor.ObjWait (System.Boolean exitContext, System.Int32 millisecondsTimeout, System.Object obj) [0x0002f] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout, System.Boolean exitContext) [0x0000e] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout) [0x00000] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.ManualResetEventSlim.Wait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x00100] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.Tasks.Task.SpinThenBlockingWait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x0002d] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.Tasks.Task.InternalWait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x00069] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.Tasks.Task`1[TResult].GetResultCore (System.Boolean waitCompletionNotification) [0x00008] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at System.Threading.Tasks.Task`1[TResult].get_Result () [0x0000f] in <13c0c460649d4ce49f991e2c222fa635>:0 
+  at XRL.UI.Screens.Show (XRL.World.GameObject GO) [0x00066] in <50395a8c985845ddb63e142aa55cea37>:0 
+  at XRL.Core.XRLCore.PlayerTurn () [0x03ae9] in <50395a8c985845ddb63e142aa55cea37>:0 
+  at XRL.Core.ActionManager.RunSegment () [0x01ec9] in <50395a8c985845ddb63e142aa55cea37>:0 
+Core thread shut down...
+INFO - Platform - Shutdown Complete
+Stopping...
+INFO - Platform - Shutdown Starting
+INFO - Platform - Shutdown Complete
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.

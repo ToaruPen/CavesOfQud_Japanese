@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
+using XRL.UI;
 
 namespace QudJP.Patches
 {
@@ -108,6 +109,8 @@ namespace QudJP.Patches
                 return;
             }
 
+            EnsureBodyTextAliases(map);
+
             var snapshot = new Dictionary<string, string>(map, StringComparer.OrdinalIgnoreCase);
 
             lock (Gate)
@@ -161,6 +164,58 @@ namespace QudJP.Patches
             }
         }
 
+        public static bool IsLocalizedValue(string? contextId, string? eid, string? value)
+        {
+            if (string.IsNullOrEmpty(contextId) || string.IsNullOrEmpty(value))
+            {
+                return false;
+            }
+
+            var map = Resolve(eid);
+            if (map == null || map.Count == 0)
+            {
+                return false;
+            }
+
+            var field = ExtractFieldName(contextId!);
+            if (string.IsNullOrEmpty(field))
+            {
+                return false;
+            }
+
+            foreach (var alias in TooltipGuardHelper.CandidatesFromName(field))
+            {
+                if (string.IsNullOrEmpty(alias))
+                {
+                    continue;
+                }
+
+                if (map.TryGetValue(alias, out var stored) &&
+                    string.Equals(stored, value, StringComparison.Ordinal))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private static string ExtractFieldName(string contextId)
+        {
+            if (string.IsNullOrEmpty(contextId))
+            {
+                return string.Empty;
+            }
+
+            var index = contextId.LastIndexOf('.');
+            if (index < 0 || index >= contextId.Length - 1)
+            {
+                return contextId;
+            }
+
+            return contextId.Substring(index + 1);
+        }
+
         private static void TrimExcess()
         {
             while (Order.Count > MaxEntries)
@@ -175,6 +230,27 @@ namespace QudJP.Patches
                 OrderLookup.Remove(node.Value);
                 MapsByEid.Remove(node.Value);
             }
+        }
+
+        private static void EnsureBodyTextAliases(Dictionary<string, string> map)
+        {
+            CopyLongDescriptionAsRtf(map, "LongDescription", "BodyText");
+            CopyLongDescriptionAsRtf(map, "LongDescription2", "BodyText2");
+        }
+
+        private static void CopyLongDescriptionAsRtf(Dictionary<string, string> map, string source, string target)
+        {
+            if (!map.TryGetValue(source, out var value) || string.IsNullOrEmpty(value))
+            {
+                return;
+            }
+
+            if (map.TryGetValue(target, out var existing) && !string.IsNullOrWhiteSpace(existing))
+            {
+                return;
+            }
+
+            map[target] = Sidebar.FormatToRTF(value);
         }
     }
 }

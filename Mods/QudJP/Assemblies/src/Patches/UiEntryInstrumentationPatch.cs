@@ -167,6 +167,7 @@ namespace QudJP.Patches
                 var kind = payload?.category == true ? "Category" : "Item";
                 var label = payload?.category == true ? (payload.categoryName ?? "<null>") : (payload?.displayName ?? payload?.go?.DisplayName ?? "<null>");
                 var weight = payload?.category == true ? payload.categoryWeight : payload?.go?.Weight;
+                InventoryParamMapCache.Remember(eid, payload);
 
                 JpLog.Info(
                     eid,

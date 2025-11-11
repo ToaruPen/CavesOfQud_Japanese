@@ -1,4 +1,4 @@
-# Caves of Qud Japanese Localization
+﻿# Caves of Qud Japanese Localization
 
 「Caves of Qud」を日本語で快適に遊ぶための総合ローカライズ Mod です。  
 会話・書籍・UI テキストを段階的に翻訳しつつ、Harmony ベースの補助 DLL と CJK 対応フォントを同梱して、ゲーム全体で文字化けなく表示できる環境を整えます。
@@ -62,3 +62,7 @@ PR には以下を添付してもらえるとレビューがスムーズです�
 3. `python3 scripts/diff_localization.py --missing-only` の結果（Missing の有無）や `Docs/translation_status.md` の更新。
 
 フォントライセンス等の注意点は `Docs` フォルダをご参照ください。
+
+## ILSpy 参照用アーカイブ
+- ゲーム本体を ILSpy で展開した参照用コードは、リポジトリ直下ではなく 1 つ上の階層にある `..\CavesOfQud_Japanese.ilspy.zip` と、同じ階層に展開済みの `..\CavesOfQud_Japanese.ilspy_extracted` に保管しています。
+- 翻訳作業中は `..\CavesOfQud_Japanese.ilspy_extracted` を参照用として残し、作業完了後に zip を更新してください（どちらも Git 管理対象外）。

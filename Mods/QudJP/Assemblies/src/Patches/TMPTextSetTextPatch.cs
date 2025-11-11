@@ -32,9 +32,17 @@ namespace QudJP.Patches
                 "set_text/IN",
                 $"ctx={context} obj={objName} len={original.Length} sample='{sample.Replace("\n", "\\n")}'");
 
-            var translated = Translator.Instance.Apply(original, context);
-            var normalized = TokenNormalizer.TryNormalize(translated);
-            var output = string.IsNullOrEmpty(normalized) ? translated : normalized;
+            string output;
+            if (TranslationContextGuards.ShouldSkipTranslation(context, resolvedEid, original))
+            {
+                output = original;
+            }
+            else
+            {
+                var translated = Translator.Instance.Apply(original, context);
+                var normalized = TokenNormalizer.TryNormalize(translated);
+                output = string.IsNullOrEmpty(normalized) ? translated : normalized;
+            }
 
             if (TooltipParamMapCache.TryRestorePlaceholders(ref output, resolvedEid))
             {

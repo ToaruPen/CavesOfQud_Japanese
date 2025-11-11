@@ -1,5 +1,6 @@
 using HarmonyLib;
 using Qud.UI;
+using QudJP.Localization;
 using TMPro;
 using UnityEngine;
 using XRL.UI;
@@ -31,9 +32,10 @@ namespace QudJP.Patches
             {
                 if (__instance.categoryWeightText != null)
                 {
-                    var text = Options.ShowNumberOfItems
-                        ? $"|{lineData.categoryAmount} 個|{FormatPounds(lineData.categoryWeight)}|"
-                        : $"|{FormatPounds(lineData.categoryWeight)}|";
+                    var text = InventoryLabelLocalizer.FormatCategoryWeight(
+                        lineData.categoryAmount,
+                        lineData.categoryWeight,
+                        Options.ShowNumberOfItems);
 
                     __instance.categoryWeightText.SetText(text);
                     LogWeight(__instance.categoryWeightText, "category", text, lineData.categoryName ?? "<null>");
@@ -46,13 +48,12 @@ namespace QudJP.Patches
             var go = lineData.go;
             if (go != null && __instance.itemWeightText != null)
             {
-                var text = $"[{FormatPounds(go.Weight)}]";
+                var text = InventoryLabelLocalizer.FormatItemWeight(go.Weight);
                 __instance.itemWeightText.SetText(text);
                 LogWeight(__instance.itemWeightText, "item", text, go.Blueprint ?? go.DebugName ?? "<null>");
             }
         }
 
-        private static string FormatPounds(int value) => $"{value} ポンド";
 
         private static void LogWeight(UITextSkin skin, string kind, string text, string context)
         {
@@ -78,3 +79,5 @@ namespace QudJP.Patches
         }
     }
 }
+
+
