@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using HarmonyLib;
 using ModelShark;
 using TMPro;
@@ -14,6 +15,8 @@ namespace QudJP.Patches
     [HarmonyPatch(typeof(TooltipManager))]
     internal static class TooltipRenderGuardPatch
     {
+        private static readonly Regex PlaceholderRegex = new("%(?<name>[A-Za-z0-9]+)%", RegexOptions.Compiled);
+
         [HarmonyPostfix]
         [HarmonyPatch(nameof(TooltipManager.SetTextAndSize))]
         private static void AfterSetTextAndSize(TooltipTrigger trigger)
@@ -75,6 +78,17 @@ namespace QudJP.Patches
                     t.overflowMode = TextOverflowModes.Overflow;
                     var c = t.color; c.a = 1f; t.color = c;
                     EnsureRectSize(t);
+
+                    if (!string.IsNullOrEmpty(t.text) && t.text.IndexOf('%') >= 0)
+                    {
+                        var restored = RestorePlaceholders(t.text, paramMap);
+                        if (!string.Equals(restored, t.text, System.StringComparison.Ordinal))
+                        {
+                            t.text = restored;
+                            t.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
+                            UnityEngine.Debug.Log($"[QudJP] Tooltip placeholder restored on '{t.gameObject?.name ?? "<null>"}'");
+                        }
+                    }
 
                     // Final guard: if text is empty, try to restore from parameterized value
                     if (string.IsNullOrWhiteSpace(t.text))
@@ -302,6 +316,27 @@ namespace QudJP.Patches
             rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
             LayoutRebuilder.MarkLayoutForRebuild(rt);
             LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
+        }
+
+        private static string RestorePlaceholders(string text, System.Collections.Generic.Dictionary<string, string> values)
+        {
+            if (string.IsNullOrEmpty(text) || values == null || values.Count == 0)
+            {
+                return text;
+            }
+
+            return PlaceholderRegex.Replace(
+                text,
+                match =>
+                {
+                    var key = match.Groups["name"].Value;
+                    if (!string.IsNullOrEmpty(key) && values.TryGetValue(key, out var value) && !string.IsNullOrEmpty(value))
+                    {
+                        return value;
+                    }
+
+                    return match.Value;
+                });
         }
 
         private static string TranslateWithDelimiter(string value, string delimiter, System.Func<string, string> translator)
