@@ -88,7 +88,12 @@ def main() -> None:
     parser = build_parser()
     args = parser.parse_args()
 
-    paths = [Path(p).expanduser() for p in (args.paths or DEFAULT_PATHS)]
+    def normalize_scan_root(raw: Path | str) -> Path:
+        path = Path(raw)
+        repo_path = (REPO_ROOT / path).expanduser()
+        return repo_path.resolve()
+
+    paths = [normalize_scan_root(p) for p in (args.paths or DEFAULT_PATHS)]
     extensions = args.extensions or DEFAULT_EXTENSIONS
     ignore: Set[Path] = {resolve_ignore(p).resolve() for p in DEFAULT_IGNORES}
     if args.ignore:
