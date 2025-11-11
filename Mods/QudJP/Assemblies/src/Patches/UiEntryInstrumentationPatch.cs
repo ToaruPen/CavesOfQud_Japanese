@@ -1,8 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
 using HarmonyLib;
 using ModelShark;
 using Qud.UI;
 using QudJP.Diagnostics;
 using TMPro;
+using UnityEngine;
 using XRL.UI;
 using XRL.UI.Framework;
 
@@ -32,6 +36,23 @@ namespace QudJP.Patches
                 BindUITextSkin(__instance?.Message, eid, "TMP.PopupMessage.Body");
                 BindUITextSkin(__instance?.Title, eid, "TMP.PopupMessage.Title");
                 BindInputField(__instance?.inputBox, eid, "TMP.PopupMessage.Input");
+                BindPopupTexts(__instance, eid);
+
+                var popupMap = new Dictionary<string, string>(System.StringComparer.OrdinalIgnoreCase);
+                if (!string.IsNullOrEmpty(message))
+                {
+                    popupMap["BodyText"] = message;
+                }
+
+                if (!string.IsNullOrEmpty(title))
+                {
+                    popupMap["Title"] = title;
+                }
+
+                if (popupMap.Count > 0)
+                {
+                    TooltipParamMapCache.Remember(eid, popupMap);
+                }
 
                 var buttonCount = __instance?.controller?.menuData?.Count ?? 0;
                 var itemCount = __instance?.controller?.bottomContextOptions?.Count ?? 0;
@@ -67,7 +88,11 @@ namespace QudJP.Patches
                 var paramCount = trigger.parameterizedTextFields?.Count ?? 0;
                 var fieldCount = trigger.Tooltip?.TMPFields?.Count ?? 0;
 
-                BindTooltipFields(trigger, eid, styleName);
+                foreach (var tooltip in TooltipTraversal.EnumerateAll(trigger))
+                {
+                    var tooltipStyle = TooltipTraversal.ResolveStyleName(tooltip) ?? styleName;
+                    BindTooltipCluster(tooltip, eid, tooltipStyle);
+                }
 
                 JpLog.Info(
                     eid,
@@ -178,13 +203,17 @@ namespace QudJP.Patches
             UIContext.Release(token);
         }
 
-        private static void BindTooltipFields(TooltipTrigger trigger, string eid, string styleName)
+        private static void BindTooltipCluster(Tooltip tooltip, string eid, string styleName)
         {
-            var tooltip = trigger?.Tooltip;
-            var fields = tooltip?.TMPFields;
-            if (fields == null)
+            if (tooltip == null)
             {
                 return;
+            }
+
+            var fields = tooltip.TMPFields;
+            if (fields == null)
+            {
+                goto ScanChildren;
             }
 
             foreach (var field in fields)
@@ -199,7 +228,28 @@ namespace QudJP.Patches
                 var contextId = $"ModelShark.Tooltip.{styleName}.{fieldName}";
                 BindTMPText(text, eid, contextId);
             }
+
+        ScanChildren:
+            var root = tooltip.GameObject;
+            if (root == null)
+            {
+                return;
+            }
+
+            var tmps = root.GetComponentsInChildren<TMP_Text>(includeInactive: true);
+            foreach (var text in tmps)
+            {
+                if (text == null)
+                {
+                    continue;
+                }
+
+                var fieldName = text.gameObject?.name ?? "Field";
+                var contextId = $"ModelShark.Tooltip.{styleName}.{fieldName}";
+                BindTMPText(text, eid, contextId);
+            }
         }
+
 
         private static void BindUITextSkin(UITextSkin? skin, string eid, string contextId)
         {
@@ -220,6 +270,33 @@ namespace QudJP.Patches
             }
 
             BindTMPText(field.textComponent, eid, contextId);
+        }
+
+        private static void BindPopupTexts(PopupMessage? popup, string eid)
+        {
+            if (popup == null)
+            {
+                return;
+            }
+
+            var root = popup.gameObject;
+            if (root == null)
+            {
+                return;
+            }
+
+            var tmps = root.GetComponentsInChildren<TMP_Text>(includeInactive: true);
+            foreach (var text in tmps)
+            {
+                if (text == null)
+                {
+                    continue;
+                }
+
+                var fieldName = text.gameObject?.name ?? "Field";
+                var contextId = $"TMP.PopupMessage.{fieldName}";
+                BindTMPText(text, eid, contextId);
+            }
         }
 
         private static void BindTMPText(TMP_Text? text, string eid, string contextId)

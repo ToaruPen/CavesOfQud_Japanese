@@ -1,6 +1,7 @@
 using HarmonyLib;
 using ModelShark;
 using Qud.UI;
+using QudJP;
 using QudJP.Diagnostics;
 using QudJP.Localization;
 using TMPro;
@@ -15,22 +16,37 @@ namespace QudJP.Patches
         [HarmonyPatch("set_text")]
         private static void BeforeSetText(TMP_Text __instance, ref string value, ref string __state)
         {
-            var eid = UIContext.Resolve(__instance) ?? UIContext.Capture();
+            FontManager.Instance.ApplyToText(__instance);
+            var resolvedEid = UIContext.Resolve(__instance);
+            var eid = resolvedEid ?? UIContext.Capture();
             __state = eid;
 
             var original = value ?? string.Empty;
             var sample = original.Length > 64 ? original.Substring(0, 64) + "..." : original;
             var context = BuildContext(__instance);
+            var objName = __instance?.gameObject?.name ?? __instance?.GetType().Name ?? "TMP_Text";
 
             JpLog.Info(
                 eid,
                 "TMP",
                 "set_text/IN",
-                $"ctx={context} obj={__instance.gameObject?.name ?? __instance.GetType().Name} len={original.Length} sample='{sample.Replace("\n", "\\n")}'");
+                $"ctx={context} obj={objName} len={original.Length} sample='{sample.Replace("\n", "\\n")}'");
 
             var translated = Translator.Instance.Apply(original, context);
             var normalized = TokenNormalizer.TryNormalize(translated);
-            value = string.IsNullOrEmpty(normalized) ? translated : normalized;
+            var output = string.IsNullOrEmpty(normalized) ? translated : normalized;
+
+            if (TooltipParamMapCache.TryRestorePlaceholders(ref output, resolvedEid))
+            {
+                var restoredSample = output.Length > 64 ? output.Substring(0, 64) + "..." : output;
+                JpLog.Info(
+                    eid,
+                    "TMP",
+                    "placeholder/RESTORE",
+                    $"ctx={context} obj={objName} len={output.Length} sample='{restoredSample.Replace("\n", "\\n")}'");
+            }
+
+            value = output;
         }
 
         [HarmonyPostfix]

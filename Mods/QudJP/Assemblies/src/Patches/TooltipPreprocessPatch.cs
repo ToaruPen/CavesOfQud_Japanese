@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using HarmonyLib;
 using ModelShark;
 using QudJP.Diagnostics;
@@ -39,6 +40,7 @@ namespace QudJP.Patches
             }
 
             var style = styleName ?? string.Empty;
+            var snapshot = new Dictionary<string, string>(System.StringComparer.OrdinalIgnoreCase);
 
             for (int i = 0; i < fields.Count; i++)
             {
@@ -101,7 +103,29 @@ namespace QudJP.Patches
                 // Persist the change
                 f.value = text;
                 JpLog.Info(eid, "Tooltip", "Param", $"{f.name ?? "<null>"} len={text?.Length ?? 0}");
+
+                if (!string.IsNullOrEmpty(name))
+                {
+                    snapshot[name] = text ?? string.Empty;
+                }
+
+                if (!string.IsNullOrEmpty(text))
+                {
+                    foreach (var alias in TooltipGuardHelper.CandidatesFromName(name))
+                    {
+                        if (string.IsNullOrEmpty(alias) ||
+                            string.Equals(alias, name, System.StringComparison.OrdinalIgnoreCase) ||
+                            snapshot.ContainsKey(alias))
+                        {
+                            continue;
+                        }
+
+                        snapshot[alias] = text;
+                    }
+                }
             }
+
+            TooltipParamMapCache.Remember(eid, snapshot);
         }
 
         [HarmonyPostfix]
