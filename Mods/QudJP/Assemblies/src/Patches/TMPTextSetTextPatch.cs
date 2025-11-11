@@ -1,7 +1,10 @@
 using HarmonyLib;
+using ModelShark;
+using Qud.UI;
 using QudJP.Diagnostics;
 using QudJP.Localization;
 using TMPro;
+using UnityEngine;
 
 namespace QudJP.Patches
 {
@@ -17,9 +20,14 @@ namespace QudJP.Patches
 
             var original = value ?? string.Empty;
             var sample = original.Length > 64 ? original.Substring(0, 64) + "..." : original;
-            JpLog.Info(eid, "TMP", "set_text/IN", $"obj={__instance.gameObject?.name ?? __instance.GetType().Name} len={original.Length} sample='{sample.Replace("\n", "\\n")}'");
-
             var context = BuildContext(__instance);
+
+            JpLog.Info(
+                eid,
+                "TMP",
+                "set_text/IN",
+                $"ctx={context} obj={__instance.gameObject?.name ?? __instance.GetType().Name} len={original.Length} sample='{sample.Replace("\n", "\\n")}'");
+
             var translated = Translator.Instance.Apply(original, context);
             var normalized = TokenNormalizer.TryNormalize(translated);
             value = string.IsNullOrEmpty(normalized) ? translated : normalized;
@@ -30,13 +38,14 @@ namespace QudJP.Patches
         private static void AfterSetText(TMP_Text __instance, string __state)
         {
             var eid = __state ?? UIContext.Resolve(__instance) ?? UIContext.Capture();
+            var context = BuildContext(__instance);
             var rendered = __instance.GetRenderedValues(true);
             var outText = __instance.text ?? string.Empty;
             JpLog.Info(
                 eid,
                 "TMP",
                 "set_text/OUT",
-                $"obj={__instance.gameObject?.name ?? __instance.GetType().Name} len={outText.Length} rendered=({rendered.x:F1},{rendered.y:F1}) font={__instance.font?.name ?? "<null>"} wrap={__instance.textWrappingMode} ovf={__instance.overflowMode}");
+                $"ctx={context} obj={__instance.gameObject?.name ?? __instance.GetType().Name} len={outText.Length} rendered=({rendered.x:F1},{rendered.y:F1}) font={__instance.font?.name ?? "<null>"} wrap={__instance.textWrappingMode} ovf={__instance.overflowMode}");
 
             if (string.IsNullOrEmpty(outText))
             {
@@ -49,19 +58,52 @@ namespace QudJP.Patches
 
         private static string BuildContext(TMP_Text? instance)
         {
-            var name = instance?.gameObject?.name;
+            var hinted = ContextHints.Resolve(instance);
+            if (!string.IsNullOrEmpty(hinted))
+            {
+                return hinted!;
+            }
+
+            if (instance == null)
+            {
+                return "TMP_Text";
+            }
+
+            string BuildFromGameObject(string prefix)
+            {
+                var goName = instance.gameObject?.name ?? "Field";
+                return $"{prefix}.{goName}";
+            }
+
+            var style = instance.GetComponentInParent<TooltipStyle>();
+            if (style != null)
+            {
+                return $"ModelShark.Tooltip.{style.name ?? "Style"}.{instance.gameObject?.name ?? "Field"}";
+            }
+
+            if (instance.GetComponentInParent<PopupMessage>() != null)
+            {
+                return BuildFromGameObject("TMP.PopupMessage");
+            }
+
+            if (instance.GetComponentInParent<SelectableTextMenuItem>() != null)
+            {
+                return BuildFromGameObject("TMP.SelectableTextMenuItem");
+            }
+
+            if (instance.GetComponentInParent<InventoryLine>() != null)
+            {
+                return BuildFromGameObject("TMP.InventoryLine");
+            }
+
+            var name = instance.gameObject?.name;
             if (!string.IsNullOrEmpty(name))
             {
                 return $"TMP.{name}";
             }
 
-            var type = instance?.GetType().FullName;
-            if (!string.IsNullOrEmpty(type))
-            {
-                return type!;
-            }
-
-            return "TMP_Text";
+            var type = instance.GetType().FullName;
+            return string.IsNullOrEmpty(type) ? "TMP_Text" : type!;
         }
     }
 }
