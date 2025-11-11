@@ -19,3 +19,7 @@
 - 致命的な UIT 閉塞 (文字化けで進行不可) がゼロ。
 - Player.log に MissingGlyph / Harmony Exception が残っていない。
 - 翻訳済みセクションで英語文が混在しない。
+
+## 自動テスト
+- Python 製ユーティリティの検査は `pytest` で実行する。
+- リポジトリルートで `pytest` を実行すると `scripts/tests` 配下のテストが走る。
