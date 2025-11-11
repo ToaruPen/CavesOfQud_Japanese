@@ -1,3 +1,4 @@
+using System;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
@@ -136,7 +137,28 @@ namespace QudJP.Patches
             var match = HotkeyRegex.Match(value);
             if (!match.Success)
             {
-                return value;
+                var trimmed = value.TrimStart();
+                if (string.IsNullOrEmpty(trimmed))
+                {
+                    return value;
+                }
+
+                var firstTokenEnd = trimmed.IndexOf(' ');
+                var firstToken = firstTokenEnd > 0 ? trimmed.Substring(0, firstTokenEnd) : trimmed;
+                if (firstToken.Length > 16)
+                {
+                    return value;
+                }
+
+                var idx = value.IndexOf(firstToken, System.StringComparison.Ordinal);
+                if (idx < 0)
+                {
+                    return value;
+                }
+
+                return value.Substring(0, idx) +
+                    $"<color=#CFC041FF>[{firstToken}]</color>" +
+                    value.Substring(idx + firstToken.Length);
             }
 
             var hotkey = match.Groups[1].Value;

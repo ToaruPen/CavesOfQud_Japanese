@@ -34,6 +34,7 @@ namespace QudJP.Localization
                     }
 
                     var localized = SafeStringTranslator.SafeTranslate(body, context);
+                    localized = NormalizeHotkeyIfNeeded(match.Groups["color"].Value, localized);
                     if (string.IsNullOrEmpty(localized) ||
                         string.Equals(localized, body, StringComparison.Ordinal))
                     {
@@ -73,5 +74,30 @@ namespace QudJP.Localization
 
             return true;
         }
+
+        private static string NormalizeHotkeyIfNeeded(string? colorTag, string? value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return value ?? string.Empty;
+            }
+
+            if (!string.Equals(colorTag, "W", StringComparison.OrdinalIgnoreCase))
+            {
+                return value;
+            }
+
+            var trimmed = value.Trim();
+            if (trimmed.Length == 0 ||
+                trimmed.StartsWith("[", StringComparison.Ordinal) ||
+                trimmed.IndexOf(' ') >= 0 ||
+                trimmed.Length > 16)
+            {
+                return value;
+            }
+
+            return value.Replace(trimmed, $"[{trimmed}]");
+        }
+
     }
 }
