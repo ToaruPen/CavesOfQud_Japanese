@@ -2396,9 +2396,9 @@
 
 
   <object Name="Clockthing_QGirl" Inherits="Clockthing" Replace="true">
-    <part Name="Render" DisplayName="{{M|Q Girl}} {{Y|pendulum}} を使用したバラサラム時計" ColorString="&amp;c" />
+    <part Name="Render" DisplayName="{{M|Qガール}} {{Y|pendulum}} を使用したバラサラム時計" ColorString="&amp;c" />
     <part Name="Physics" Weight="18" Takeable="true" />
-    <part Name="Description" Short="Q Girl は、このバラサラム時計の古い発振器をスイング振り子に置き換えました。現在では、タイムが観測者から不正行為を行っていた 1 日あたり数時間は、わずか数分に短縮されます。" />
+    <part Name="Description" Short="Qガールは、このバラサラム時計の古い発振器をスイング振り子に置き換えました。現在では、タイムが観測者から不正行為を行っていた 1 日あたり数時間は、わずか数分に短縮されます。" />
     <part Name="HydraulicPowerTransmission" ChargeRate="1000" IsConsumer="true" DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true" ChanceBreakOnMove="0" ChanceBreakConnectedOnMove="0" />
     <part Name="ElectricalPowerTransmission" ChargeRate="1000" IsConsumer="true" ChanceBreakOnMove="0" ChanceBreakConnectedOnMove="0" />
     <part Name="LiquidVolume" MaxVolume="32" StartVolume="32" InitialLiquid="water-1000" Sealed="true" ShowSeal="false" />

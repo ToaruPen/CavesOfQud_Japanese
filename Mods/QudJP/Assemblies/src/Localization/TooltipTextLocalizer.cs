@@ -70,6 +70,11 @@ namespace QudJP.Localization
             ["{{W|Lightly Damaged}}"] = "{{W|小破}}",
         };
 
+        private static readonly Regex WeightUnitRegex = new(@"\blbs?\.?(?!\w)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        private static readonly Regex WeightUnitJapaneseRegex = new(@"ポンド\.?", RegexOptions.Compiled);
+        private static readonly Regex TriggeredLineRegex = new(@"^When\s+(?<state>activated|powered|unpowered),\s*(?<body>.+)$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        private static readonly Regex SimpleStatAdjustmentRegex = new(@"^(?<sign>[+\-])?\s*(?<value>\d+)(?<percent>%?)\s+(?<stat>[A-Za-z ]+?)\s*$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
         internal static string ApplyLongDescription(string? text)
         {
             if (string.IsNullOrEmpty(text))
@@ -226,6 +231,12 @@ namespace QudJP.Localization
                 return ReplaceTrimmed(line, trimmed, wrapped);
             }
 
+            if (TryLocalizeTriggeredLine(payload, out var triggeredLine))
+            {
+                var wrapped = prefix + triggeredLine + suffix + tail;
+                return ReplaceTrimmed(line, trimmed, wrapped);
+            }
+
             var colonIndex = payload.IndexOf(':');
             if (colonIndex > 0)
             {
@@ -242,30 +253,34 @@ namespace QudJP.Localization
                 if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
                 {
                     var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
-                    var localizedLabel = $"{SafeStringTranslator.SafeTranslate(stat, "Stat.Name")} ボーナス上限";
+                    var localizedLabel = $"{TranslateStatName(stat)} ボーナス上限";
                     var wrapped = prefix + $"{localizedLabel}：{value}" + suffix + tail;
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
 
-                // Already-localized label (e.g., "重量: 10 lbs.")
-                if (string.Equals(label, "重量", StringComparison.Ordinal))
-                {
-                    var wrapped = prefix + $"重量：{LocalizeValue(label, value)}" + suffix + tail;
-                    return ReplaceTrimmed(line, trimmed, wrapped);
-                }
-            }
-
-            // Orphan value tail (no label): fix colon and localize units, e.g., ": 1 lbs." -> "：1 ポンド"
-            if (payload.Length > 0 && payload[0] == ':')
+            // Already-localized label (e.g., "重量: 10 lbs.")
+            if (string.Equals(label, "重量", StringComparison.Ordinal))
             {
-                var value = payload.Substring(1).TrimStart();
-                if (value.IndexOf("lbs.", StringComparison.Ordinal) >= 0)
-                {
-                    value = value.Replace("lbs.", "ポンド");
-                }
-                var wrapped = prefix + "：" + value + suffix + tail;
+                var wrapped = prefix + $"重量：{LocalizeValue(label, value)}" + suffix + tail;
                 return ReplaceTrimmed(line, trimmed, wrapped);
             }
+        }
+
+        if (TrySplitInlineLabelAndValue(payload, out var inlineLabel, out var inlineValue) &&
+            TryBuildLabelValueLine(inlineLabel, inlineValue, out var localizedInline))
+        {
+            var wrapped = prefix + localizedInline + suffix + tail;
+            return ReplaceTrimmed(line, trimmed, wrapped);
+        }
+
+        // Orphan value tail (no label): fix colon and localize units, e.g., ": 1 lbs." -> "：1 lbs."
+        if (payload.Length > 0 && payload[0] == ':')
+        {
+            var value = payload.Substring(1).TrimStart();
+            value = NormalizeWeightUnits(value);
+            var wrapped = prefix + "：" + value + suffix + tail;
+            return ReplaceTrimmed(line, trimmed, wrapped);
+        }
 
             // Case where label is inside color tag and colon/value are in the tail (e.g., "{{K|Weight}}: 1 lbs.")
             if (!string.IsNullOrEmpty(tail) && TryExtractColonTail(tail, out var leadWS, out var valueAfterColon))
@@ -281,8 +296,19 @@ namespace QudJP.Localization
                 if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
                 {
                     var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
-                    var localizedLabel = $"{SafeStringTranslator.SafeTranslate(stat, "Stat.Name")} ボーナス上限";
+                    var localizedLabel = $"{TranslateStatName(stat)} ボーナス上限";
                     var wrapped = prefix + localizedLabel + suffix + leadWS + "：" + value;
+                    return ReplaceTrimmed(line, trimmed, wrapped);
+                }
+            }
+
+            if (!string.IsNullOrEmpty(tail))
+            {
+                var trimmedTail = tail.TrimStart();
+                if (LooksLikeValueTail(trimmedTail) &&
+                    TryBuildLabelValueLine(payload, trimmedTail, out var localizedFromTail))
+                {
+                    var wrapped = prefix + localizedFromTail + suffix;
                     return ReplaceTrimmed(line, trimmed, wrapped);
                 }
             }
@@ -325,9 +351,9 @@ namespace QudJP.Localization
 
                     // Localize units inside the tail if applicable (e.g., lbs.) while preserving original spacing
                     var localizedTail = tail;
-                    if (string.Equals(label, "Weight", StringComparison.Ordinal) && localizedTail.IndexOf("lbs.", StringComparison.Ordinal) >= 0)
+                    if (string.Equals(label, "Weight", StringComparison.Ordinal))
                     {
-                        localizedTail = localizedTail.Replace("lbs.", "ポンド");
+                        localizedTail = NormalizeWeightUnits(localizedTail);
                     }
 
                     var wrapped = prefix + localizedLabel + suffix + localizedTail;
@@ -387,18 +413,211 @@ namespace QudJP.Localization
             return false;
         }
 
+        private static bool TryBuildLabelValueLine(string label, string value, out string localized)
+        {
+            localized = string.Empty;
+            if (string.IsNullOrEmpty(label) || string.IsNullOrEmpty(value))
+            {
+                return false;
+            }
+
+            if (TryTranslateColonLabel(label, out var localizedLabel))
+            {
+                localized = $"{localizedLabel}：{LocalizeValue(label, value)}";
+                return true;
+            }
+
+            if (label.EndsWith(" Bonus Cap", StringComparison.Ordinal))
+            {
+                var stat = label.Substring(0, label.Length - " Bonus Cap".Length).Trim();
+                var normalizedLabel = $"{TranslateStatName(stat)} ボーナス上限";
+                localized = $"{normalizedLabel}：{value}";
+                return true;
+            }
+
+            var fallback = SafeStringTranslator.SafeTranslate(label, "Look.TooltipLabel");
+            if (!string.IsNullOrEmpty(fallback) && !string.Equals(fallback, label, StringComparison.Ordinal))
+            {
+                localized = $"{fallback}：{LocalizeValue(label, value)}";
+                return true;
+            }
+
+            return false;
+        }
+
+        private static bool TrySplitInlineLabelAndValue(string payload, out string label, out string value)
+        {
+            label = string.Empty;
+            value = string.Empty;
+            if (string.IsNullOrEmpty(payload))
+            {
+                return false;
+            }
+
+            for (int i = 0; i < payload.Length - 1; i++)
+            {
+                if (!char.IsWhiteSpace(payload[i]))
+                {
+                    continue;
+                }
+
+                var j = i + 1;
+                while (j < payload.Length && char.IsWhiteSpace(payload[j]))
+                {
+                    j++;
+                }
+
+                if (j >= payload.Length)
+                {
+                    break;
+                }
+
+                var candidateValue = payload.Substring(j);
+                if (!LooksLikeValueTail(candidateValue))
+                {
+                    continue;
+                }
+
+                var candidateLabel = payload.Substring(0, i).TrimEnd();
+                if (candidateLabel.Length == 0)
+                {
+                    continue;
+                }
+
+                label = candidateLabel;
+                value = candidateValue.TrimStart();
+                return true;
+            }
+
+            return false;
+        }
+
         private static string LocalizeValue(string label, string value)
         {
             // Dictionary substitutions for common value payloads
             value = SafeStringTranslator.SafeTranslate(value, "Look.TooltipValue");
 
-            // Unit normalization (be tolerant about the label and punctuation)
-            if (value.IndexOf("lbs", StringComparison.OrdinalIgnoreCase) >= 0)
-            {
-                value = value.Replace("lbs.", "ポンド").Replace("lbs", "ポンド");
-            }
+            value = NormalizeWeightUnits(value);
 
             return value;
+        }
+
+        private static string NormalizeWeightUnits(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return value;
+            }
+
+            var normalized = WeightUnitRegex.Replace(value, "lbs.");
+            normalized = WeightUnitJapaneseRegex.Replace(normalized, "lbs.");
+            normalized = normalized.Replace("lbs..", "lbs.");
+            return normalized;
+        }
+
+        private static bool TryLocalizeTriggeredLine(string payload, out string localized)
+        {
+            localized = string.Empty;
+            var match = TriggeredLineRegex.Match(payload);
+            if (!match.Success)
+            {
+                return false;
+            }
+
+            var state = match.Groups["state"].Value.ToLowerInvariant();
+            var prefix = state switch
+            {
+                "activated" => "起動時",
+                "powered" => "通電時",
+                "unpowered" => "非通電時",
+                _ => null,
+            };
+
+            if (prefix == null)
+            {
+                return false;
+            }
+
+            var body = match.Groups["body"].Value.Trim();
+            var statusSuffix = ExtractStatusSuffix(ref body);
+
+            if (TryLocalizeStatAdjustmentBody(body, out var localizedBody))
+            {
+                localized = $"{prefix}：{localizedBody}{statusSuffix}";
+                return true;
+            }
+
+            var fallback = SafeStringTranslator.SafeTranslate(body, "Look.TooltipTriggeredBody");
+            if (string.IsNullOrEmpty(fallback))
+            {
+                fallback = body;
+            }
+
+            localized = $"{prefix}：{fallback}{statusSuffix}";
+            return true;
+        }
+
+        private static string ExtractStatusSuffix(ref string body)
+        {
+            var match = Regex.Match(body, @"\((?<state>unpowered|powered)\)\.?\s*$", RegexOptions.IgnoreCase);
+            if (match.Success)
+            {
+                body = body.Substring(0, match.Index).TrimEnd().TrimEnd('.');
+                var key = match.Groups["state"].Value.ToLowerInvariant();
+                return key switch
+                {
+                    "unpowered" => "（非通電時）",
+                    "powered" => "（通電時）",
+                    _ => string.Empty,
+                };
+            }
+
+            return string.Empty;
+        }
+
+        private static bool TryLocalizeStatAdjustmentBody(string body, out string localized)
+        {
+            localized = string.Empty;
+            var match = SimpleStatAdjustmentRegex.Match(body);
+            if (!match.Success)
+            {
+                return false;
+            }
+
+            var stat = match.Groups["stat"].Value.Trim();
+            var localizedStat = TranslateStatName(stat);
+            var sign = match.Groups["sign"].Value;
+            var value = match.Groups["value"].Value;
+            var percent = match.Groups["percent"].Value;
+            var magnitude = $"{sign}{value}{percent}".Trim();
+            if (magnitude.Length == 0)
+            {
+                magnitude = value;
+            }
+
+            localized = $"{localizedStat} {magnitude}";
+            return true;
+        }
+
+        private static string TranslateStatName(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                return string.Empty;
+            }
+
+            if (StatLineMap.TryGetValue(name, out var mapped))
+            {
+                return mapped;
+            }
+
+            var translated = SafeStringTranslator.SafeTranslate(name, "Stat.Name");
+            if (!string.IsNullOrEmpty(translated) && !string.Equals(translated, name, StringComparison.Ordinal))
+            {
+                return translated;
+            }
+
+            return name;
         }
 
         private static string ReplaceTrimmed(string original, string trimmed, string replacement)

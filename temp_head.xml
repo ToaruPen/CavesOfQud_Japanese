@@ -301,15 +301,15 @@
 
     <node ID="Canticle1" Replace="true">
       <text>
-        ……よし。旧き賢者バラスラムを探せ。現存するティンカーの中で最年長にして最も慧眼の持ち主だ。北東、ジャングルに絡まれたクードの廃墟にあるグリットゲートのアーチの下で、弟子たち――バラスラマイトたち――と暮らしている。奴ならこの信号の意味を見抜ける。
+        ……よし。旧き賢者バラサラムを探せ。現存するティンカーの中で最年長にして最も慧眼の持ち主だ。北東、ジャングルに絡まれたクードの廃墟にあるグリットゲートのアーチの下で、弟子たち――バラサラム派の者たち――と暮らしている。奴ならこの信号の意味を見抜ける。
       </text>
-      <choice Target="WhoBarathrumites">そのバラスラマイトとは？</choice>
+      <choice Target="WhoBarathrumites">そのバラサラム派とは？</choice>
       <choice Target="CanticleAccept1">十分だ。向かおう。</choice>
     </node>
 
     <node ID="WhoBarathrumites" Replace="true">
       <text ID="BarathrumiteDescription">
-        バラスラムの信奉者たちだ。大半は彼のようなウルシーブ――棘だらけの白子熊で、陽光まみれの地表より蝋燭一丁の洞穴を好む連中だ。千年前、バラスラムは一族と共にホムス・デルタを越えてクードの錆びた中心部へ渡った。工房に籠り、時の遺物からクロームの殻をはぎ取り続けている。奴に解けぬ信号なら、誰にも解けまい。
+        バラサラムの信奉者たちだ。大半は彼のようなウルシーブ――棘だらけの白子熊で、陽光まみれの地表より蝋燭一丁の洞穴を好む連中だ。千年前、バラサラムは一族と共にホムス・デルタを越えてクードの錆びた中心部へ渡った。工房に籠り、時の遺物からクロームの殻をはぎ取り続けている。奴に解けぬ信号なら、誰にも解けまい。
       </text>
       <choice Target="CanticleAccept1" IfNotHaveQuest="A Canticle for Barathrum">その任務、引き受けよう。</choice>
       <choice Target="End" IfNotHaveQuest="A Canticle for Barathrum">少し考えさせてくれ。</choice>
@@ -320,7 +320,7 @@
       <text>
         素晴らしい！完璧だ！信号をディスクに記録しよう。命を懸けて守るのだぞ。
 
-        ドロイドスクランブラーも組んでやろう。グリットゲートへ向かう道には、バラスラマイトが配置したウェイドロイドの一団が巡回している。スクランブラーさえあれば気にせず通れる。そこに立っていろ。
+        ドロイドスクランブラーも組んでやろう。グリットゲートへ向かう道には、バラサラム派が配置したウェイドロイドの一団が巡回している。スクランブラーさえあれば気にせず通れる。そこに立っていろ。
       </text>
       <choice Target="CanticleAccept2">...</choice>
     </node>
@@ -350,7 +350,7 @@
 
         {{emote|*Argyve は作業へ戻る。*}}
       </text>
-      <choice Target="Golgotha" IfHaveActiveQuest="More Than a Willing Spirit">バラスラマイトは、加入前にゴルゴタと呼ばれる洞へ潜れと言う。</choice>
+      <choice Target="Golgotha" IfHaveActiveQuest="More Than a Willing Spirit">バラサラム派は、加入前にゴルゴタと呼ばれる洞へ潜れと言う。</choice>
       <choice Target="RankUp" IfFinishedQuest="Decoding the Signal">Argyve、俺はもう見習いじゃない。今の俺は =factionaddress:Barathrumites= だ。</choice>
       <choice Target="AskAfter" IfFinishedQuest="More Than a Willing Spirit">何か必要なものは？</choice>
       <choice Target="End">さらばだ、Argyve。</choice>
@@ -360,7 +360,7 @@
       <text>
         弟子よ！何だ？
       </text>
-      <choice Target="WhoBarathrumites">バラスラマイトについてもう一度。</choice>
+      <choice Target="WhoBarathrumites">バラサラム派についてもう一度。</choice>
       <choice Target="End">生きて飲め。</choice>
     </start>
 
@@ -392,7 +392,7 @@
       <text>
         何だ？
 
-        ……だめだ、私は没頭している。好奇心はバラスラマイトの誰かにぶつけてこい。
+        ……だめだ、私は没頭している。好奇心はバラサラム派の誰かにぶつけてこい。
       </text>
     </node>
   </conversation>

@@ -1,4 +1,5 @@
 using System.Text;
+using ConsoleLib.Console;
 using HarmonyLib;
 using QudJP.Localization;
 using XRL.UI;
@@ -19,7 +20,7 @@ namespace QudJP.Patches
                 _logged = true;
                 UnityEngine.Debug.Log("[QudJP] LookTooltipLocalizationPatch active");
             }
-            __result.DisplayName = Translator.Instance.Apply(__result.DisplayName, "Look.DisplayName");
+            __result.DisplayName = TooltipDisplayNameLocalizer.Localize(__result.DisplayName);
             __result.LongDescription = TooltipTextLocalizer.ApplyLongDescription(__result.LongDescription);
             __result.FeelingText = TooltipTextLocalizer.ApplyFeeling(__result.FeelingText);
             __result.DifficultyText = TooltipTextLocalizer.ApplyDifficulty(__result.DifficultyText);
@@ -61,7 +62,8 @@ namespace QudJP.Patches
             }
 
             var localized = Translator.Instance.Apply(body, BodyContextId);
-            __result = string.IsNullOrEmpty(localized) ? body : localized;
+            var final = string.IsNullOrEmpty(localized) ? body : localized;
+            __result = Markup.Transform(final);
             return false;
         }
     }

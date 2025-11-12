@@ -57,6 +57,11 @@ namespace QudJP.Localization
             }
 
             var text = value!;
+            if (ContainsUnityRichText(text))
+            {
+                return true;
+            }
+
             if (text.IndexOf('<') >= 0 && text.IndexOf('{') < 0)
             {
                 return false;
@@ -76,6 +81,25 @@ namespace QudJP.Localization
                 {
                     return true;
                 }
+            }
+
+            return false;
+        }
+
+        private static bool ContainsUnityRichText(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                return false;
+            }
+
+            if (text.IndexOf("<color", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                text.IndexOf("</color>", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                text.IndexOf("<size", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                text.IndexOf("<sprite", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                text.IndexOf("<material", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return true;
             }
 
             return false;

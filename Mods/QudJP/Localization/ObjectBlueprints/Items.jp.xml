@@ -1558,7 +1558,7 @@
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Bethesda Susa Recoiler" Inherits="BaseRecoiler" Replace="true">
-    <part Name="Render" DisplayName="{{C|ベセスダス・ーサ}}・リコイラー" />
+    <part Name="Render" DisplayName="{{C|ベセスダ・スーサ}}・リコイラー" />
     <part Name="Teleporter" DestinationZone="JoppaWorld.25.3.1.1.10" DestinationX="38" DestinationY="19" />
     <part Name="TinkerItem" CanBuild="false" />
     <part Name="Commerce" Value="55" />
@@ -10827,11 +10827,11 @@
   </object>
 
 <object Name="Argyve's Data Disk Encoded" Inherits="Argyve's Data Disk" Replace="true">
-    <part Name="Render" DisplayName="{{Y|刻印入りデータディスク}} [{{m|Q Girl}} の手順が符録されている]" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{Y|刻印入りデータディスク}} [{{m|Qガール}} の手順が符録されている]" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5" />
   </object>
 
 <object Name="ClimberBlueprints" Inherits="Argyve's Data Disk" Replace="true">
-    <part Name="Render" DisplayName="{{Y|{{m|Q Girl}} のクライマー設計図}}" ColorString="&amp;Y" RenderString="004" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{Y|{{m|Qガール}} のクライマー設計図}}" ColorString="&amp;Y" RenderString="004" RenderLayer="5" />
   </object>
 
 <object Name="Decrypted Signal Data Disk" Inherits="Argyve's Data Disk" Replace="true">

@@ -1300,7 +1300,7 @@
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
   <object Name="Barathrum Hologram" Inherits="BaseTriumHologram" Replace="true">
-    <part Name="Render" DisplayName="ホログラムのバラースルム" />
+    <part Name="Render" DisplayName="ホログラムのバラサラム（老）" />
   </object>
   <object Name="Archon Hologram" Inherits="BaseTriumHologram" Replace="true">
     <part Name="Render" DisplayName="ホログラムのアーコン" />

@@ -7303,7 +7303,7 @@
   </object>
 
 <object Name="Sultan Croc" Inherits="Croc" Replace="true">
-    <part Name="Render" DisplayName="サルタン・クロック" RenderString="R" Tile="Creatures/sw_sultan_croc.bmp" />
+    <part Name="Render" DisplayName="スルタン・クロコダイル" RenderString="R" Tile="Creatures/sw_sultan_croc.bmp" />
     <part Name="Description" Short="骨質の堆積がひび割れた甲板と稜線の鋳型を満たし、=pronouns.possessive= 巨大な身を四人ぶんの長さにわたって装甲する。=pronouns.Subjective= は自らの巨重で身を扁平にし、フルクリートのつるはしほどの歯が =pronouns.possessive= 岩のような口を並ぶ。" />
     <part Name="Brain" Wanders="false" />
     <part Name="Corpse" CorpseChance="20" CorpseBlueprint="Sultan Croc Corpse" />
@@ -7332,7 +7332,7 @@
 
 <object Name="Sultan Croc Corpse" Inherits="Scaled Reptile Corpse" Replace="true">
     <part Name="Butcherable" OnSuccess="Raw Croc Meat" />
-    <part Name="Render" DisplayName="サルタン{{g|クロック}}の死体" />
+    <part Name="Render" DisplayName="スルタン{{g|クロコダイル}}の死体" />
     <part Name="Physics" Weight="600" />
     <part Name="Commerce" Value="20" />
     <tag Name="Tier" Value="7" />
@@ -11920,7 +11920,7 @@
   </object>
 
 <object Name="Q Girl" Inherits="Barathrumite" Replace="true">
-    <part Name="Render" DisplayName="Q Girl" ColorString="&amp;m" TileColor="&amp;Y" RenderString="b" Tile="Creatures/sw_bearman1.bmp" DetailColor="m" />
+    <part Name="Render" DisplayName="Qガール" ColorString="&amp;m" TileColor="&amp;Y" RenderString="b" Tile="Creatures/sw_bearman1.bmp" DetailColor="m" />
     <part Name="Brain" Wanders="false" />
     <part Name="ConversationScript" ConversationID="Q Girl" />
     <part Name="FactionRank" Ranks="Barathrumites::meyvn" />
