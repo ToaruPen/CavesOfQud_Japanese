@@ -32,7 +32,11 @@ namespace QudJP
             AccessTools.Field(typeof(TMP_FontAsset), "m_FontWeightTable");
 
         private readonly List<UnityEngine.Object> _loadedAssets = new();
+        private readonly List<TMP_FontAsset> _symbolFallbacks = new();
         private bool _loaded;
+        private TMP_FontAsset? _previousDefaultFont;
+        private TMP_SpriteAsset? _attachedSpriteAsset;
+        private TMP_SpriteAsset? _previousSpriteAsset;
 
         public TMP_FontAsset? PrimaryFont { get; private set; }
         public TMP_FontAsset? BoldFont { get; private set; }
@@ -77,21 +81,14 @@ namespace QudJP
                 return;
             }
 
-            if (forceReplace)
+            var needsReplace = forceReplace || text.font == null || text.font == _previousDefaultFont || !ReferenceEquals(text.font, PrimaryFont);
+            if (needsReplace)
             {
                 text.font = PrimaryFont;
                 text.fontSharedMaterial = PrimaryFont.material;
             }
-            else
-            {
-                if (text.font == null)
-                {
-                    text.font = PrimaryFont;
-                    text.fontSharedMaterial = PrimaryFont.material;
-                }
 
-                EnsureFallbackChain(text.font);
-            }
+            EnsureFallbackChain(text.font);
 
             text.extraPadding = true;
             text.wordWrappingRatios = Mathf.Clamp(text.wordWrappingRatios, 0.35f, 1f);
@@ -155,10 +152,20 @@ namespace QudJP
 
         public void Dispose()
         {
-            TMP_Settings.defaultFontAsset = null;
+            TMP_Settings.defaultFontAsset = _previousDefaultFont;
             var fallback = TMP_Settings.fallbackFontAssets;
             fallback?.RemoveAll(asset => asset != null && (asset == PrimaryFont || asset == BoldFont));
             TMP_Settings.fallbackFontAssets = fallback;
+
+            if (_attachedSpriteAsset != null && TMP_Settings.defaultSpriteAsset == _attachedSpriteAsset)
+            {
+                TMP_Settings.defaultSpriteAsset = _previousSpriteAsset;
+            }
+
+            _symbolFallbacks.Clear();
+            _previousDefaultFont = null;
+            _attachedSpriteAsset = null;
+            _previousSpriteAsset = null;
 
             foreach (var asset in _loadedAssets)
             {
@@ -259,12 +266,19 @@ namespace QudJP
                 return;
             }
 
+            CaptureSymbolFallback(TMP_Settings.defaultFontAsset);
+
             var fallback = TMP_Settings.fallbackFontAssets ?? new List<TMP_FontAsset>();
-            fallback.RemoveAll(asset => asset == null || asset == PrimaryFont || asset == BoldFont);
-            fallback.Insert(0, PrimaryFont);
-            if (BoldFont != null && BoldFont != PrimaryFont)
+            fallback.RemoveAll(asset => asset == null);
+            InsertFallbackFont(fallback, PrimaryFont, preferFront: true);
+            if (BoldFont != null)
             {
-                fallback.Insert(1, BoldFont);
+                InsertFallbackFont(fallback, BoldFont, preferFront: false);
+            }
+
+            foreach (var symbol in _symbolFallbacks)
+            {
+                InsertFallbackFont(fallback, symbol, preferFront: false);
             }
 
             TMP_Settings.fallbackFontAssets = fallback;
@@ -275,10 +289,16 @@ namespace QudJP
             }
             else
             {
+                if (_previousDefaultFont == null && TMP_Settings.defaultFontAsset != PrimaryFont)
+                {
+                    _previousDefaultFont = TMP_Settings.defaultFontAsset;
+                }
+
                 EnsureFallbackChain(TMP_Settings.defaultFontAsset);
             }
 
             EnsureFallbackOnAllFontAssets();
+            RegisterSpriteAssets();
         }
 
         private void EnsureFallbackChain(TMP_FontAsset? font)
@@ -289,14 +309,15 @@ namespace QudJP
             }
 
             var fallback = font.fallbackFontAssetTable ??= new List<TMP_FontAsset>();
-            if (font != PrimaryFont && !fallback.Contains(PrimaryFont))
+            InsertFallbackFont(fallback, PrimaryFont, preferFront: true, owner: font);
+            if (BoldFont != null)
             {
-                fallback.Insert(0, PrimaryFont);
+                InsertFallbackFont(fallback, BoldFont, preferFront: false, owner: font);
             }
 
-            if (BoldFont != null && BoldFont != PrimaryFont && !fallback.Contains(BoldFont))
+            foreach (var symbol in _symbolFallbacks)
             {
-                fallback.Add(BoldFont);
+                InsertFallbackFont(fallback, symbol, preferFront: false, owner: font);
             }
         }
 
@@ -312,6 +333,155 @@ namespace QudJP
             {
                 EnsureFallbackChain(asset);
             }
+        }
+
+        private void CaptureSymbolFallback(TMP_FontAsset? candidate)
+        {
+            _symbolFallbacks.Clear();
+            if (candidate == null || candidate == PrimaryFont || candidate == BoldFont)
+            {
+                return;
+            }
+
+            _symbolFallbacks.Add(candidate);
+        }
+
+        private static void InsertFallbackFont(List<TMP_FontAsset> list, TMP_FontAsset? font, bool preferFront, TMP_FontAsset? owner = null)
+        {
+            if (font == null)
+            {
+                return;
+            }
+
+            if (owner != null && ReferenceEquals(owner, font))
+            {
+                return;
+            }
+
+            list.RemoveAll(asset => asset == null || ReferenceEquals(asset, font));
+            if (preferFront)
+            {
+                list.Insert(0, font);
+            }
+            else
+            {
+                list.Add(font);
+            }
+        }
+
+        private void RegisterSpriteAssets()
+        {
+            var spriteAsset = ResolveSpriteAsset();
+            if (spriteAsset == null)
+            {
+                Debug.LogWarning("[QudJP] TMP sprite asset が見つからないため、<sprite> を描画できない場合があります。");
+                return;
+            }
+
+            if (_attachedSpriteAsset != spriteAsset)
+            {
+                if (_previousSpriteAsset == null)
+                {
+                    _previousSpriteAsset = TMP_Settings.defaultSpriteAsset;
+                }
+
+                TMP_Settings.defaultSpriteAsset = spriteAsset;
+                _attachedSpriteAsset = spriteAsset;
+            }
+
+            EnsureSpriteFallbacks(spriteAsset);
+        }
+
+        private void EnsureSpriteFallbacks(TMP_SpriteAsset spriteAsset)
+        {
+            var assets = Resources.FindObjectsOfTypeAll<TMP_SpriteAsset>();
+            foreach (var candidate in assets)
+            {
+                if (candidate == null || candidate == spriteAsset)
+                {
+                    continue;
+                }
+
+                var fallback = candidate.fallbackSpriteAssets ??= new List<TMP_SpriteAsset>();
+                if (!fallback.Contains(spriteAsset))
+                {
+                    fallback.Insert(0, spriteAsset);
+                }
+            }
+        }
+
+
+        private TMP_SpriteAsset? ResolveSpriteAsset()
+        {
+            if (IsValidSpriteAsset(TMP_Settings.defaultSpriteAsset))
+            {
+                return TMP_Settings.defaultSpriteAsset;
+            }
+
+            TMP_SpriteAsset? preferred = null;
+            var assets = Resources.FindObjectsOfTypeAll<TMP_SpriteAsset>();
+            foreach (var asset in assets)
+            {
+                if (!IsValidSpriteAsset(asset))
+                {
+                    continue;
+                }
+
+                if (LooksLikeQudSpriteAsset(asset))
+                {
+                    return asset;
+                }
+
+                if (preferred == null || CountSpriteCharacters(asset) > CountSpriteCharacters(preferred))
+                {
+                    preferred = asset;
+                }
+            }
+
+            return preferred;
+        }
+
+        private static bool IsValidSpriteAsset(TMP_SpriteAsset? asset) =>
+            asset != null &&
+            asset.spriteCharacterTable != null &&
+            asset.spriteCharacterTable.Count > 0;
+
+        private static int CountSpriteCharacters(TMP_SpriteAsset? asset) =>
+            asset?.spriteCharacterTable?.Count ?? 0;
+
+        private static bool LooksLikeQudSpriteAsset(TMP_SpriteAsset asset)
+        {
+            if (!IsValidSpriteAsset(asset))
+            {
+                return false;
+            }
+
+            var name = asset.name ?? string.Empty;
+            if (name.IndexOf("Qud", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                name.IndexOf("Icon", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                name.IndexOf("Stat", StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return true;
+            }
+
+            foreach (var sprite in asset.spriteCharacterTable)
+            {
+                var spriteName = sprite?.name;
+                if (string.IsNullOrEmpty(spriteName))
+                {
+                    continue;
+                }
+
+                if (spriteName.Equals("AV", StringComparison.OrdinalIgnoreCase) ||
+                    spriteName.Equals("DV", StringComparison.OrdinalIgnoreCase) ||
+                    spriteName.IndexOf("Wound", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    spriteName.IndexOf("Stat", StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private static bool ShouldReplaceLegacyFont(Font? font)

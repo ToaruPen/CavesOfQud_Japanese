@@ -14,58 +14,62 @@ namespace QudJP.Localization
                 return string.Empty;
             }
 
-            var prefix = ExtractLeadingIconBlock(value!, out var remainder);
-            var localized = Translator.Instance.Apply(remainder, "Look.DisplayName");
-            var baseText = string.IsNullOrEmpty(localized) ? remainder : localized;
-
-            if (string.IsNullOrEmpty(prefix))
-            {
-                return baseText;
-            }
-
-            return prefix + baseText;
-        }
-
-        private static string ExtractLeadingIconBlock(string value, out string remainder)
-        {
-            var sb = new StringBuilder(value.Length);
+            var text = value!;
+            var builder = new StringBuilder(text.Length + 16);
+            var buffer = new StringBuilder(text.Length);
             int index = 0;
-            int lastIconEnd = 0;
 
-            while (index < value.Length - 3 && value[index] == '{' && value[index + 1] == '{')
+            while (index < text.Length)
             {
-                var close = value.IndexOf("}}", index + 2, StringComparison.Ordinal);
+                var open = text.IndexOf("{{", index, StringComparison.Ordinal);
+                if (open < 0)
+                {
+                    buffer.Append(text, index, text.Length - index);
+                    break;
+                }
+
+                if (open > index)
+                {
+                    buffer.Append(text, index, open - index);
+                }
+
+                var close = text.IndexOf("}}", open + 2, StringComparison.Ordinal);
                 if (close < 0)
                 {
+                    buffer.Append(text, open, text.Length - open);
                     break;
                 }
 
-                var segment = value.Substring(index, close - index + 2);
-                if (!ContainsStatGlyph(segment))
+                FlushBuffer(builder, buffer);
+
+                var tag = text.Substring(open, close - open + 2);
+                if (ContainsStatGlyph(tag))
                 {
-                    break;
+                    builder.Append(tag);
+                }
+                else
+                {
+                    buffer.Append(tag);
                 }
 
-                sb.Append(segment);
                 index = close + 2;
-                lastIconEnd = index;
-
-                while (index < value.Length && char.IsWhiteSpace(value[index]))
-                {
-                    sb.Append(value[index]);
-                    index++;
-                    lastIconEnd = index;
-                }
             }
 
-            if (lastIconEnd == 0)
+            FlushBuffer(builder, buffer);
+            return builder.ToString();
+        }
+
+        private static void FlushBuffer(StringBuilder builder, StringBuilder buffer)
+        {
+            if (buffer.Length == 0)
             {
-                remainder = value;
-                return string.Empty;
+                return;
             }
 
-            remainder = value.Substring(lastIconEnd);
-            return sb.ToString();
+            var chunk = buffer.ToString();
+            buffer.Clear();
+            var localized = Translator.Instance.Apply(chunk, "Look.DisplayName");
+            builder.Append(string.IsNullOrEmpty(localized) ? chunk : localized);
         }
 
         private static bool ContainsStatGlyph(string value)

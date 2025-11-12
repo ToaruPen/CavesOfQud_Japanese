@@ -9,26 +9,43 @@ namespace QudJP.Patches
     internal static class TooltipTriggerSetTextPatch
     {
         [HarmonyPrefix]
-        [HarmonyPatch(nameof(TooltipTrigger.SetText))]
-        private static void BeforeSetText(TooltipTrigger __instance, string parameterName, ref string text)
+        [HarmonyPatch(nameof(TooltipTrigger.SetText), new[] { typeof(string), typeof(string) })]
+        private static void BeforeSetTextWithField(TooltipTrigger __instance, string parameterName, ref string text) =>
+            ProcessText(__instance, parameterName, ref text);
+
+        [HarmonyPrefix]
+        [HarmonyPatch(nameof(TooltipTrigger.SetText), new[] { typeof(string) })]
+        private static void BeforeSetTextBodyOnly(TooltipTrigger __instance, ref string text) =>
+            ProcessText(__instance, null, ref text);
+
+        [HarmonyPostfix]
+        [HarmonyPatch(nameof(TooltipTrigger.SetText), new[] { typeof(string), typeof(string) })]
+        private static void AfterSetText(TooltipTrigger __instance, string parameterName, string text) =>
+            EnsureParameterizedField(__instance, parameterName, text);
+
+        private static void ProcessText(TooltipTrigger trigger, string? parameterName, ref string text)
         {
-            var styleName = ResolveStyleName(__instance);
-            var processed = TooltipFieldLocalizer.Process(styleName, parameterName, text);
+            if (trigger == null || string.IsNullOrEmpty(text))
+            {
+                return;
+            }
+
+            var styleName = ResolveStyleName(trigger);
+            var partition = TooltipIconPartitioner.Partition(text);
+            var localized = TooltipFieldLocalizer.Process(styleName, parameterName, partition.Label);
+            var processed = partition.HasIcons
+                ? string.Concat(partition.Prefix, localized, partition.Suffix)
+                : localized;
 
             if (TooltipFieldLocalizer.IsSubHeaderField(parameterName) && string.IsNullOrWhiteSpace(processed))
             {
-                TooltipSourceContext.TryGetSubjects(__instance, out var primary, out var compare);
+                TooltipSourceContext.TryGetSubjects(trigger, out var primary, out var compare);
                 var subject = TooltipFieldLocalizer.TargetsSecondarySubject(parameterName) ? compare : primary;
                 processed = TooltipSubHeaderBuilder.Build(subject) ?? string.Empty;
             }
 
             text = string.IsNullOrWhiteSpace(processed) ? string.Empty : processed!;
         }
-
-        [HarmonyPostfix]
-        [HarmonyPatch(nameof(TooltipTrigger.SetText))]
-        private static void AfterSetText(TooltipTrigger __instance, string parameterName, string text) =>
-            EnsureParameterizedField(__instance, parameterName, text);
 
         private static void EnsureParameterizedField(TooltipTrigger trigger, string parameterName, string value)
         {

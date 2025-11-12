@@ -1,71 +1,68 @@
-﻿# Caves of Qud Japanese Localization
+# Caves of Qud Japanese Localization
 
-「Caves of Qud」を日本語で快適に遊ぶための総合ローカライズ Mod です。  
-会話・書籍・UI テキストを段階的に翻訳しつつ、Harmony ベースの補助 DLL と CJK 対応フォントを同梱して、ゲーム全体で文字化けなく表示できる環境を整えます。
+日本語で Caves of Qud を遊ぶための総合ローカライズ Mod です。ゲーム内 UI / テキストのほぼ全域を Harmony + TextMeshPro でパッチし、安定した表示と翻訳プロセスを提供します。
 
 ## リポジトリ構成
-- `Mods/QudJP` – 実際に配布する Mod フォルダー。manifest / Harmony DLL / Fonts / Localization / Mod 向け README を含みます。
-- `Mods/QudJP/Assemblies` – Harmony プロジェクト (`QudJP.sln`). フォント管理や UI パッチなど C# 実装はこちらに配置。
-- `Docs/` – フォント生成・翻訳手順・ログ監視・テスト計画などのドキュメント。
-- `scripts/` – Python ベースのユーティリティ（バニラデータ抽出 / 差分レポート / コーディングガード / Mod 同期など）。
-- `references/Base/` – ゲームから抽出した元データ（git ignore 済）。翻訳との差分確認に利用。
-
-## 翻訳フック指針
-- `TMP_Text.set_text` / `TMP_Text.SetText` など TextMeshPro へのグローバルパッチは禁止し、Popup.ShowBlock / PopupMessage.ShowPopup / Look.GenerateTooltipContent / TooltipTrigger.SetText といった Transform / RTF / Clip 直前の入口で翻訳・サニタイズを完了させる。
-
-## 開発フロー（概要）
-1. **ベースデータ更新**  
-   ```bash
-   # Windows
-   python scripts/extract_base.py --game-path "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
-
-   # macOS / Linux
-   python3 scripts/extract_base.py --game-path "$HOME/Library/Application Support/Steam/steamapps/common/Caves of Qud"
-   ```
-   これで最新の Conversations / Books / ObjectBlueprints などが `references/Base` に取得される。macOS 版は Steam 配下の `Caves of Qud.app` 直上のフォルダを `--game-path` に指定する。
-
-2. **フォント生成**  
-   `Docs/font_pipeline.md` に沿って Noto Sans CJK などをサブセット化し、`Mods/QudJP/Fonts` に `*-Subset.otf` を配置。  
-   Harmony 側の `FontManager` が起動時に OTF から TMP Font Asset を動的生成し、TextMeshPro / uGUI 双方へ適用します。
-
-3. **Harmony ビルド**  
-   ```powershell
-   dotnet build Mods/QudJP/Assemblies/QudJP.sln `
-     /p:GameDir="C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
-   ```
-   で `QudJP.dll` を再生成します。ビルド成果物は `Mods/QudJP/Assemblies` に出力され、Mod 側からそのまま参照されます。
-
-4. **翻訳ファイル編集**  
-   `Mods/QudJP/Localization/*.jp.xml` を `Load="Merge"` 形式で追加。`Docs/translation_process.md` と `Docs/translation_status.md` を更新して進捗を管理します。  
-   編集対象ファイルと担当カテゴリの一覧は `Docs/localization_targets.md` を参照してください。  
-   カバレッジ状況は `python3 scripts/diff_localization.py --missing-only` でファイル / `<object Name>` 単位の欠落を一覧化できます（`--json-path` でレポート保存も可）。
-
-5. **動作確認**  
-   `python3 scripts/sync_mod.py` で `Mods/QudJP` を実機の Mods ディレクトリへミラーしてから、ゲーム内の Mod Manager で `Caves of Qud 日本語化` を有効化。文字化けや Missing Glyph がないか `Player.log` を監視します（`Docs/log_watching.md` 参照）。
-
-## 主要スクリプト
-| スクリプト | 用途 |
+| パス | 説明 |
 | --- | --- |
-| `scripts/extract_base.py --game-path <path>` | ゲームから最新のバニラ XML/TXT を抽出し `references/Base` を更新する |
-| `scripts/diff_localization.py [--missing-only] [--json-path report.json]` | 翻訳ファイル有無＋ `<object Name>` 単位の欠落をレポート。JSON も出力可能 |
-| `scripts/check_encoding.py [--fail-on-issues]` | Docs / Mods を走査し、繧/縺 等のモジバケ候補を検出する |
-| `scripts/sync_mod.py [--dry-run] [--exclude-fonts]` | `Mods/QudJP` を実際の Mods ディレクトリへミラーする |
+| `Mods/QudJP` | Mod 本体（manifest, Harmony DLL, Fonts, Localization XML, ワークショップ用 README など）。 |
+| `Mods/QudJP/Assemblies` | Harmony プロジェクト (`QudJP.sln`)。フォント管理・UI パッチ・翻訳フックの C# 実装が入る。 |
+| `Docs/` | フォント/翻訳パイプライン、テスト計画、ログ監視などの技術資料。すべて UTF-8 (BOM 無し) で保存する。 |
+| `Docs/pipelines` | UI サブシステムごとの処理契約（Tooltip / Inventory / WorldGen...）。`pipelines.csv` で ContextID と Hook を一元管理。 |
+| `Docs/font_pipeline.md` | サブセットフォント作成手順と FontManager の仕様。 |
+| `Docs/translation_process.md` | 辞書更新・差分確認・レビューの手順。 |
+| `scripts/` | Python ベースの補助ツール（ベースデータ抽出、翻訳差分、エンコーディング検証、Mod ディレクトリ同期など）。 |
+| `references/Base` | ゲームから抽出した原文 XML/TXT（`.gitignore` 対象）。必要に応じて `scripts/extract_base.py` で更新する。 |
+
+## フォントとアイコン
+- `Docs/font_pipeline.md` の手順で Noto Sans CJK JP をサブセット化し、`Mods/QudJP/Fonts` に `*-Subset.otf` を配置する。
+- `FontManager` が起動時にフォントを `TMP_FontAsset.CreateFontAsset` から生成し、`TMP_Settings` の default/fallback を更新する。`UITextSkin` / `TMP_InputField` / `UnityEngine.UI.Text` の Harmony パッチで一括適用。
+- `<sprite>` アイコンは `RegisterSpriteAssets` で Qud の Sprite Asset を自動検出し、`TMP_Settings.defaultSpriteAsset` および各 SpriteAsset の `fallbackSpriteAssets` に挿入する。
+
+## ビルド
+```powershell
+dotnet build Mods/QudJP/Assemblies/QudJP.sln `
+  -c Release `
+  /p:GameDir="C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
+```
+ビルド成果物 `QudJP.dll` は `Mods/QudJP/Assemblies/bin/Release` に出力される。`scripts/sync_mod.py` を使うと Mod ディレクトリへ自動コピーできる。
+
+## 翻訳ワークフロー
+1. **ベース更新**  
+   ```powershell
+   python scripts/extract_base.py --game-path "C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud"
+   ```
+   で最新の Conversations / Books / ObjectBlueprints を `references/Base` に展開。
+2. **翻訳編集**  
+   `Mods/QudJP/Localization/*.jp.xml` を編集し、必要なら `Docs/translation_process.md` のガイドに従って Glossary / Status を更新。
+3. **差分確認**  
+   ```powershell
+   python scripts/diff_localization.py --missing-only
+   ```
+   で未翻訳エントリをチェックし、`Docs/translation_status.md` に反映。
+4. **Mod 同期 & 動作確認**  
+   ```powershell
+   python scripts/sync_mod.py
+   ```
+   で `Mods/QudJP` をゲームの Mod ディレクトリへコピーし、`Player.log` を監視しながら実機確認。
+
+## スクリプト一覧
+| コマンド | 用途 |
+| --- | --- |
+| `scripts/extract_base.py --game-path <path>` | ゲームから最新の XML/TXT を抽出し `references/Base` を更新。 |
+| `scripts/diff_localization.py [--missing-only] [--json-path report.json]` | `<object Name>` 単位で翻訳の欠落・変更をレポート。 |
+| `scripts/check_encoding.py [--fail-on-issues]` | Docs / Mods の文字コードを検査し、UTF-8 以外や制御文字を検出。 |
+| `scripts/sync_mod.py [--dry-run] [--exclude-fonts]` | 作業リポジトリとゲーム側 Mod ディレクトリを同期。 |
 
 ## ドキュメント
-- `Docs/font_pipeline.md` – Noto 系フォントのサブセット化と TMP Font Asset のランタイム生成方法。
-- `Docs/translation_process.md` – 抽出～レビュー～リリース前チェックまでの翻訳フロー。
-- `Docs/translation_status.md` – ファイルごとの進捗表。テンプレ追加済みのカテゴリから優先的に翻訳を進められます。
-- `Docs/test_plan.md` / `Docs/log_watching.md` – QA / ログ監視手順。
+- `Docs/pipelines/*.md` はサブシステムごとの Hook 契約・ContextID・テスト観点をまとめたもの。`pipelines.csv` と併せて常に最新化する。
+- `Docs/test_plan.md` は QA 観点、`Docs/log_watching.md` は `Player.log` の監視手順を記載。
+- すべてのドキュメントで UTF-8 (BOM 無し) を強制し、PR では `scripts/check_encoding.py` の結果を貼る。
 
-## 貢献方法
-Issues / Discussions / Pull Request を歓迎します。  
-PR には以下を添付してもらえるとレビューがスムーズです。
-1. 変更した翻訳ファイルやスクリプト。
-2. 必要に応じてスクリーンショットと `Player.log`.
-3. `python3 scripts/diff_localization.py --missing-only` の結果（Missing の有無）や `Docs/translation_status.md` の更新。
+## コントリビューション指針
+1. 変更対象のパイプライン文書を更新し、ContextID / Hook ポイント / 既知の制約を明記する。
+2. 必要なら `scripts/check_encoding.py` と `python scripts/diff_localization.py --missing-only` の結果を添付し、再現手順を共有する。
+3. フォント周りの変更や `<sprite>` / PUA を扱う場合は `Docs/font_pipeline.md` も必ず更新する。
+4. `Player.log` の抜粋（Missing glyph や RichText 警告）を添えて、動作確認済みであることを示す。
 
-フォントライセンス等の注意点は `Docs` フォルダをご参照ください。
-
-## ILSpy 参照用アーカイブ
-- ゲーム本体を ILSpy で展開した参照用コードは、リポジトリ直下ではなく 1 つ上の階層にある `..\CavesOfQud_Japanese.ilspy.zip` と、同じ階層に展開済みの `..\CavesOfQud_Japanese.ilspy_extracted` に保管しています。
-- 翻訳作業中は `..\CavesOfQud_Japanese.ilspy_extracted` を参照用として残し、作業完了後に zip を更新してください（どちらも Git 管理対象外）。
+Issues / Discussions / Pull Request はいつでも歓迎です。何か不明点があれば遠慮なく相談してください。

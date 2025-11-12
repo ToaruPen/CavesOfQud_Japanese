@@ -44,9 +44,15 @@ namespace QudJP.Localization
             }
 
             var contextId = BuildContext(styleName, parameterName);
-            normalized = SafeStringTranslator.SafeTranslate(normalized, contextId);
-            normalized = TooltipRichTextSanitizer.Sanitize(normalized);
-            return string.IsNullOrEmpty(normalized) ? string.Empty : normalized;
+            var translated = TooltipTokenizedTranslator.Translate(normalized, contextId);
+            translated = TooltipRichTextSanitizer.Sanitize(translated);
+
+            if (string.IsNullOrWhiteSpace(translated))
+            {
+                return source;
+            }
+
+            return translated;
         }
 
         public static bool LooksLikeRtf(string? value)
@@ -57,16 +63,6 @@ namespace QudJP.Localization
             }
 
             var text = value!;
-            if (ContainsUnityRichText(text))
-            {
-                return true;
-            }
-
-            if (text.IndexOf('<') >= 0 && text.IndexOf('{') < 0)
-            {
-                return false;
-            }
-
             if (text.StartsWith("{\\rtf", StringComparison.OrdinalIgnoreCase))
             {
                 return true;
@@ -86,24 +82,6 @@ namespace QudJP.Localization
             return false;
         }
 
-        private static bool ContainsUnityRichText(string text)
-        {
-            if (string.IsNullOrEmpty(text))
-            {
-                return false;
-            }
-
-            if (text.IndexOf("<color", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                text.IndexOf("</color>", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                text.IndexOf("<size", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                text.IndexOf("<sprite", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                text.IndexOf("<material", StringComparison.OrdinalIgnoreCase) >= 0)
-            {
-                return true;
-            }
-
-            return false;
-        }
 
         public static bool IsSubHeaderField(string? name)
         {

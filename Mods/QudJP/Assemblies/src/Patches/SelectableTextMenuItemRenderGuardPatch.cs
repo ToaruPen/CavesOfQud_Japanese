@@ -36,7 +36,7 @@ namespace QudJP.Patches
             }
 
             // Ensure JP glyphs even when the component missed OnEnable.
-            QudJP.FontManager.Instance.ApplyToText(tmp);
+            QudJP.FontManager.Instance.ApplyToText(tmp, forceReplace: true);
 
             if (!string.IsNullOrEmpty(tmp.text))
             {

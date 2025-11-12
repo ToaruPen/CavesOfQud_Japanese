@@ -25,7 +25,7 @@ namespace QudJP
                 return;
             }
 
-            FontManager.Instance.ApplyToText(tmp, forceReplace: false);
+            FontManager.Instance.ApplyToText(tmp, forceReplace: true);
             ConfigureWrapping(tmp);
             EnsureRectSize(tmp);
         }
