@@ -13,11 +13,6 @@ namespace QudJP.Patches
 
             var context = contextId!;
 
-            if (context.StartsWith("ModelShark.Tooltip.", StringComparison.OrdinalIgnoreCase))
-            {
-                return TooltipParamMapCache.IsLocalizedValue(context, eid, value);
-            }
-
             if (context.StartsWith("TMP.InventoryLine.", StringComparison.OrdinalIgnoreCase))
             {
                 return InventoryParamMapCache.IsLocalizedValue(context, eid, value);

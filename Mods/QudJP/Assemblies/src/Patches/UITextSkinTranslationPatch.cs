@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using HarmonyLib;
@@ -32,6 +33,14 @@ namespace QudJP.Patches
                 ? (ContextHints.Resolve(tmp) ?? $"TMP.{tmp.gameObject?.name ?? "Field"}")
                 : "UITextSkin.SetText";
             var eid = UIContext.Resolve(tmp);
+            if (!string.IsNullOrEmpty(contextId))
+            {
+                if (contextId.StartsWith("ModelShark.Tooltip.", StringComparison.OrdinalIgnoreCase) ||
+                    contextId.StartsWith("TMP.PopupMessage.", StringComparison.OrdinalIgnoreCase))
+                {
+                    return;
+                }
+            }
             if (TranslationContextGuards.ShouldSkipTranslation(contextId, eid, text))
             {
                 return;

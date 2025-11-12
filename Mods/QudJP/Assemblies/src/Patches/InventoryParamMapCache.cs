@@ -18,14 +18,14 @@ namespace QudJP.Patches
             new(StringComparer.OrdinalIgnoreCase);
         private static readonly LinkedList<string> Order = new();
 
-        public static void Remember(string? eid, InventoryLineData? data)
+        public static void Remember(string? eid, InventoryLineData? data, InventoryLine? line)
         {
-            if (string.IsNullOrEmpty(eid) || data == null)
+            if (string.IsNullOrEmpty(eid) || data == null || line == null)
             {
                 return;
             }
 
-            var snapshot = BuildSnapshot(data);
+            var snapshot = BuildSnapshot(data, line);
             if (snapshot.Count == 0)
             {
                 return;
@@ -46,6 +46,18 @@ namespace QudJP.Patches
                 return false;
             }
 
+            var field = ExtractFieldName(contextId!);
+            if (string.IsNullOrEmpty(field))
+            {
+                return false;
+            }
+
+            if (string.Equals(field, "Hotkey", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(field, "CategoryExpand", StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+
             Dictionary<string, string>? snapshot = null;
             lock (Gate)
             {
@@ -64,12 +76,6 @@ namespace QudJP.Patches
                 return false;
             }
 
-            var field = ExtractFieldName(contextId!);
-            if (string.IsNullOrEmpty(field))
-            {
-                return false;
-            }
-
             if (snapshot.TryGetValue(field, out var stored) &&
                 string.Equals(stored, value, StringComparison.Ordinal))
             {
@@ -79,7 +85,7 @@ namespace QudJP.Patches
             return false;
         }
 
-        private static Dictionary<string, string> BuildSnapshot(InventoryLineData data)
+        private static Dictionary<string, string> BuildSnapshot(InventoryLineData data, InventoryLine line)
         {
             var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
@@ -87,26 +93,30 @@ namespace QudJP.Patches
             {
                 if (!string.IsNullOrEmpty(data.categoryName))
                 {
-                    map["CategoryLabel"] = data.categoryName!;
+                    map["CategoryLabel"] = FormatForSkin(data.categoryName, line.categoryLabel);
                 }
+
+                var expander = data.categoryExpanded ? "[-]" : "[+]";
+                map["CategoryExpand"] = FormatForSkin(expander, line.categoryExpandLabel);
 
                 var weightText = InventoryLabelLocalizer.FormatCategoryWeight(
                     data.categoryAmount,
                     data.categoryWeight,
                     Options.ShowNumberOfItems);
-                map["CategoryWeight"] = weightText;
+                map["CategoryWeight"] = FormatForSkin(weightText, line.categoryWeightText);
             }
             else
             {
                 var label = data.displayName ?? data.go?.DisplayName;
                 if (!string.IsNullOrEmpty(label))
                 {
-                    map["Description"] = label!;
+                    map["Description"] = FormatForSkin(label, line.text);
                 }
 
                 if (data.go != null)
                 {
-                    map["ItemWeight"] = InventoryLabelLocalizer.FormatItemWeight(data.go.Weight);
+                    var weight = InventoryLabelLocalizer.FormatItemWeight(data.go.Weight);
+                    map["ItemWeight"] = FormatForSkin(weight, line.itemWeightText);
                 }
 
             }
@@ -141,6 +151,23 @@ namespace QudJP.Patches
                     Maps.Remove(node.Value);
                 }
             }
+        }
+
+        private static string FormatForSkin(string? value, UITextSkin? skin)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return string.Empty;
+            }
+
+            if (skin == null)
+            {
+                return global::Extensions.ToRTFCached(value);
+            }
+
+            var wrap = skin.useBlockWrap ? skin.blockWrap : -1;
+            var strip = skin.StripFormatting;
+            return global::Extensions.ToRTFCached(value, wrap, strip);
         }
     }
 }

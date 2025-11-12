@@ -2,6 +2,7 @@
 
 ゲーム内の全 UI で日本語を破綻なく表示するために、CJK フォントをサブセット化し、TextMeshPro／uGUI 両対応のフォントを動的に生成する手順をまとめる。
 
+> **Contract (2025.11)** FontManager/UITextSkin apply fonts before TMP_Text so we no longer patch TMP_Text.SetText globally.
 ## ゴール
 - SIL OFL ライセンスの日本語フォントを最小限のグリフでサブセット化し、Mod 配布サイズを抑える。
 - `Mods/QudJP/Fonts` にサブセット化した OTF を配置し、Harmony から `TMP_FontAsset.CreateFontAsset` でランタイム生成する。

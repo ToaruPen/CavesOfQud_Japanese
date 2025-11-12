@@ -2,6 +2,7 @@
 
 > **逕ｻ髱｢ / 驛ｨ菴・** 繧､繝ｳ繝吶Φ繝医Μ・玖｣・ｙ邂｡逅・ 
 > **蜃ｺ蜉・** Console・・InventoryScreen`・・/ Unity・・InventoryAndEquipmentStatusScreen`・・
+> **Contract (2025.11)** DisplayName/InventoryLine で翻訳を確定させ、UITextSkin/TMP_Text の Prefix では再翻訳しない。Transform/RTF/Clip 直前の経路だけをフック対象とする。
 ## 讎りｦ・
 - **繧ｯ繝ｩ繧ｷ繝・け UI**・・Options.ModernUI=false` 縺ｾ縺溘・ `ModernCharacterSheet=false`・峨〒縺ｯ `XRL.UI.InventoryScreen` 縺・`ScreenBuffer` 荳翫↓繧ｫ繝・ざ繝ｪ荳隕ｧ繝ｻ繧｢繧､繝・Β陦後・驥埼㍼繧呈緒逕ｻ縺吶ｋ縲・- **Modern UI** 縺ｧ縺ｯ `Qud.UI.InventoryAndEquipmentStatusScreen` 縺・StatusScreens 蜀・・繧ｿ繝悶→縺励※陦ｨ遉ｺ縺輔ｌ縲～InventoryLine` / `EquipmentLine` 縺ｮ `UITextSkin` 繧堤ｵ檎罰縺励※ TextMeshPro 縺ｫ繝ｪ繝・メ繝・く繧ｹ繝医ｒ豬√＠霎ｼ繧縲・- 蜿梧婿縺ｨ繧・`GameObject.DisplayName`・・arkup 繧貞性繧・峨ｒ蝓ｺ遉弱↓縺励※縺翫ｊ縲∫ｿｻ險ｳ縺ｯ DisplayName / 繧ｫ繝・ざ繝ｪ蜷・/ UI 繝ｩ繝吶Ν縺ｫ謖ｿ蜈･縺吶ｋ縲・
 ## 荳ｻ縺ｪ繧ｯ繝ｩ繧ｹ / 繝｡繧ｽ繝・ラ
@@ -57,3 +58,7 @@
 - `Qud.UI.InventoryLine.CategoryWeightText`（および `.WeightOnly`）/ `Qud.UI.InventoryLine.ItemWeightLabel` はカテゴリ行・アイテム行の重量バッジ用 ContextID。`{items}` と `{weight}` のトークンを保持する。
 
 - HookGuard: `InventoryParamMapCache` + `TranslationContextGuards` で `InventoryLine.setData` から取得した `categoryName` / `displayName` / `weight` を EID ごとにキャッシュし、uiQueue 側の `TMP_Text` / `UITextSkin` では一致確認後に Translator をスキップして DisplayName 2 度目の翻訳と Player.log の `MISS` 警告を抑制する。
+
+## HookGuard / ParamMap
+- Modern UI ??? `UiEntryInstrumentationPatch` ?? `InventoryLine` ? `UITextSkin` ? `UIContext` EID ??A `InventoryParamMapCache` ?? DisplayName/CategoryWeight/ItemWeight ? `ToRTFCached` ??????????????
+- `TMP_Text.set_text` Prefix ???v???[?X?_?[?? (`TooltipParamMapCache` ?????) ?????? `TranslationContextGuards` ?? `TMP.InventoryLine.*` ?? Skip ????????uiQueue ??????? Hotkey/CategoryExpand ? `MISS` ???????

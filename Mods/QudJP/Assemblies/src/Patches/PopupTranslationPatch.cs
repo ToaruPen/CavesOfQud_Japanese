@@ -14,16 +14,16 @@ namespace QudJP.Patches
     /// </summary>
     internal static class PopupTranslationPatch
     {
-        [HarmonyPatch(typeof(Popup), nameof(Popup.Show))]
-        private static class PopupShowPatch
+        [HarmonyPatch(typeof(Popup), nameof(Popup.ShowBlock))]
+        private static class PopupShowBlockPatch
         {
             [HarmonyPrefix]
             private static void Prefix(
-                [HarmonyArgument(0)] ref string Text,
-                [HarmonyArgument(2)] ref string Caption)
+                [HarmonyArgument(0)] ref string Message,
+                [HarmonyArgument(1)] ref string Title)
             {
-                Text = SafeStringTranslator.SafeTranslate(Text, "Popup.Show.Text");
-                Caption = SafeStringTranslator.SafeTranslate(Caption, "Popup.Show.Caption");
+                Message = SafeStringTranslator.SafeTranslate(Message, "XRL.UI.Popup.ShowBlock.Message");
+                Title = SafeStringTranslator.SafeTranslate(Title, "XRL.UI.Popup.ShowBlock.Title");
             }
         }
 
@@ -107,10 +107,10 @@ namespace QudJP.Patches
                 return manual;
             }
 
-            var translated = SafeStringTranslator.SafeTranslate(message, "PopupMessage.ShowPopup.Message");
-            if (!string.Equals(translated, message, System.StringComparison.Ordinal))
-            {
-                return translated;
+                var translated = SafeStringTranslator.SafeTranslate(message, "Qud.UI.PopupMessage.ShowPopup.Message");
+                if (!string.Equals(translated, message, System.StringComparison.Ordinal))
+                {
+                    return translated;
             }
 
             const string DeleteConfirmPrefix = "Are you sure you want to delete the save game for ";
@@ -130,7 +130,7 @@ namespace QudJP.Patches
 
         private static string LocalizeUIPopupTitle(string title)
         {
-            var translated = SafeStringTranslator.SafeTranslate(title, "PopupMessage.ShowPopup.Title");
+            var translated = SafeStringTranslator.SafeTranslate(title, "Qud.UI.PopupMessage.ShowPopup.Title");
             if (!string.Equals(translated, title, System.StringComparison.Ordinal))
             {
                 return translated;

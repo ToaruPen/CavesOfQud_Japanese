@@ -38,22 +38,6 @@ namespace QudJP.Patches
                 BindInputField(__instance?.inputBox, eid, "TMP.PopupMessage.Input");
                 BindPopupTexts(__instance, eid);
 
-                var popupMap = new Dictionary<string, string>(System.StringComparer.OrdinalIgnoreCase);
-                if (!string.IsNullOrEmpty(message))
-                {
-                    popupMap["BodyText"] = message;
-                }
-
-                if (!string.IsNullOrEmpty(title))
-                {
-                    popupMap["Title"] = title;
-                }
-
-                if (popupMap.Count > 0)
-                {
-                    TooltipParamMapCache.Remember(eid, popupMap);
-                }
-
                 var buttonCount = __instance?.controller?.menuData?.Count ?? 0;
                 var itemCount = __instance?.controller?.bottomContextOptions?.Count ?? 0;
                 JpLog.Info(
@@ -167,7 +151,7 @@ namespace QudJP.Patches
                 var kind = payload?.category == true ? "Category" : "Item";
                 var label = payload?.category == true ? (payload.categoryName ?? "<null>") : (payload?.displayName ?? payload?.go?.DisplayName ?? "<null>");
                 var weight = payload?.category == true ? payload.categoryWeight : payload?.go?.Weight;
-                InventoryParamMapCache.Remember(eid, payload);
+                InventoryParamMapCache.Remember(eid, payload, __instance);
 
                 JpLog.Info(
                     eid,

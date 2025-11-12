@@ -10,6 +10,9 @@
 - `scripts/` – Python ベースのユーティリティ（バニラデータ抽出 / 差分レポート / コーディングガード / Mod 同期など）。
 - `references/Base/` – ゲームから抽出した元データ（git ignore 済）。翻訳との差分確認に利用。
 
+## 翻訳フック指針
+- `TMP_Text.set_text` / `TMP_Text.SetText` など TextMeshPro へのグローバルパッチは禁止し、Popup.ShowBlock / PopupMessage.ShowPopup / Look.GenerateTooltipContent / TooltipTrigger.SetText といった Transform / RTF / Clip 直前の入口で翻訳・サニタイズを完了させる。
+
 ## 開発フロー（概要）
 1. **ベースデータ更新**  
    ```bash

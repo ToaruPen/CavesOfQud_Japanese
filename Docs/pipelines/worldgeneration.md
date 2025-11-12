@@ -8,6 +8,7 @@
 
 ---
 
+> **Contract (2025.11)** Translate at WorldCreationProgress / Popup entry points and deliver final text to TMP without extra hooks.
 ## 1. 全体像
 - キャラクター作成完了後、`QudGameBootModule` が `WorldCreationProgress.Begin(totalSteps)` を呼びつつ、モダン UI 用に `WorldGenerationScreen.ShowWorldGenerationScreen(209)`（例）を await する。
 - 進捗メッセージは **常に `WorldCreationProgress.NextStep/StepProgress` を経由**しており、その中で `WorldGenerationScreen.AddMessage` / `WorldGenerationScreen.IncrementProgress` も呼ばれる。よって翻訳は `WorldCreationProgress` 側へ集中させるのが最小。

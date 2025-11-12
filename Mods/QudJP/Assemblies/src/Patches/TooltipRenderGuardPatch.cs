@@ -60,7 +60,6 @@ namespace QudJP.Patches
                 ProcessTooltipInstance(tooltip, trigger, styleName, paramMap);
             }
 
-            TooltipParamMapCache.Remember(UIContext.Resolve(trigger), paramMap);
         }
 
         private static Dictionary<string, string> BuildParameterMap(TooltipTrigger trigger)
@@ -68,7 +67,6 @@ namespace QudJP.Patches
             var paramMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             if (trigger?.parameterizedTextFields == null)
             {
-                TooltipBodyTextCache.MergeInto(paramMap, trigger);
                 return paramMap;
             }
 
@@ -118,8 +116,6 @@ namespace QudJP.Patches
                     }
                 }
             }
-
-            TooltipBodyTextCache.MergeInto(paramMap, trigger);
             return paramMap;
         }
 
@@ -142,14 +138,12 @@ namespace QudJP.Patches
                     var t = field?.Text;
                     if (t == null) continue;
                     processedTmps.Add(t);
-                    FontManager.Instance.ApplyToText(t);
+                    FontManager.Instance.ApplyToText(t, forceReplace: true);
                     t.extraPadding = true;
                     t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
                     t.overflowMode = TextOverflowModes.Overflow;
                     var c = t.color; c.a = 1f; t.color = c;
                     EnsureRectSize(t);
-
-                    TooltipPlaceholderRestorer.TryRestoreText(t, paramMap);
 
                     if (string.IsNullOrWhiteSpace(t.text))
                     {
@@ -173,7 +167,7 @@ namespace QudJP.Patches
                 {
                     continue;
                 }
-                FontManager.Instance.ApplyToText(t);
+                FontManager.Instance.ApplyToText(t, forceReplace: true);
                 t.extraPadding = true;
                 t.textWrappingMode = TextWrappingModes.PreserveWhitespace;
                 t.overflowMode = TextOverflowModes.Overflow;
@@ -181,8 +175,6 @@ namespace QudJP.Patches
                 EnsureRectSize(t);
 
                 var current = t.text;
-                TooltipPlaceholderRestorer.TryRestoreText(t, paramMap);
-                current = t.text;
                 var name = t.gameObject != null ? t.gameObject.name : string.Empty;
                 var rt = t.rectTransform; var rect = rt != null ? rt.rect : new UnityEngine.Rect();
                 if (!string.IsNullOrEmpty(current) && rt != null && (rect.width < 1f || rect.height < 1f))

@@ -6,6 +6,7 @@ Docs/pipelines/*.md と pipelines.csv を基盤に、Harmony フックをどこ�
 
 ## 0. ゴール / 成功基準
 - 各パイプラインで **生産 → 整形 → 描画** のどこにフックを置くかを明示し、Transform / RTF / Clip の直前で翻訳を確定。
+- TextMeshPro (`TMP_Text.set_text`, `TMP_Text.SetText`) へのグローバルフックは禁止し、入口（Popup.ShowBlock / PopupMessage.ShowPopup / Look.GenerateTooltipContent / TooltipTrigger.SetText など）で最終文字列を用意する。
 - ContextID 規約に沿って辞書キーを決め、`Translator` + `JpLog` でヒット/Miss を常時観測。
 - Popup / Tooltip / Log / Journal / Inventory など主要 UI が破綻していないことを QA とゴールデンスナップショットで確認。
 
