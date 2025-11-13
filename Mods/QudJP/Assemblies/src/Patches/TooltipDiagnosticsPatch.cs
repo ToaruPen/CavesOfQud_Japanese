@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using HarmonyLib;
 using ModelShark;
 using TMPro;
@@ -13,12 +15,15 @@ namespace QudJP.Patches
     {
         private static int Logged;
         private const int MaxLogs = 300;
+        private static readonly HashSet<int> FontReports = new();
+        private const string VanillaFontToken = "SourceCodePro";
 
         [HarmonyPostfix]
+        [HarmonyPriority(Priority.High)]
         [HarmonyPatch(nameof(TooltipManager.SetTextAndSize))]
         private static void AfterSetTextAndSize(TooltipTrigger trigger)
         {
-            if (trigger == null || Logged >= MaxLogs)
+            if (trigger == null)
             {
                 return;
             }
@@ -29,10 +34,17 @@ namespace QudJP.Patches
                 return;
             }
 
+            var style = trigger.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
+            WatchFonts(tooltip, style);
+
+            if (Logged >= MaxLogs)
+            {
+                return;
+            }
+
             try
             {
                 Logged++;
-                var style = trigger.tooltipStyle != null ? trigger.tooltipStyle.name : "<null>";
                 string BuildPreview(string s)
                 {
                     if (string.IsNullOrEmpty(s)) return "<empty>";
@@ -62,6 +74,46 @@ namespace QudJP.Patches
                 }
             }
             catch { }
+        }
+
+        private static void WatchFonts(Tooltip tooltip, string style)
+        {
+            if (tooltip == null)
+            {
+                return;
+            }
+
+            var root = tooltip.GameObject;
+            if (root == null)
+            {
+                return;
+            }
+
+            var tmps = root.GetComponentsInChildren<TMP_Text>(includeInactive: true);
+            foreach (var text in tmps)
+            {
+                if (text == null)
+                {
+                    continue;
+                }
+
+                var fontName = text.font != null ? text.font.name : string.Empty;
+                if (string.IsNullOrEmpty(fontName) ||
+                    fontName.IndexOf(VanillaFontToken, StringComparison.OrdinalIgnoreCase) < 0)
+                {
+                    continue;
+                }
+
+                var id = text.GetInstanceID();
+                if (!FontReports.Add(id))
+                {
+                    continue;
+                }
+
+                var fieldName = text.gameObject != null ? text.gameObject.name : "<null>";
+                var len = text.text?.Length ?? 0;
+                Debug.LogWarning($"[QudJP][FontWatch] Tooltip style={style} obj='{fieldName}' stuck on font='{fontName}' len={len}");
+            }
         }
     }
 }

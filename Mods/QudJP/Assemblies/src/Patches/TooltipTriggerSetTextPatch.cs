@@ -1,3 +1,4 @@
+using System.Reflection;
 using HarmonyLib;
 using ModelShark;
 using QudJP.Diagnostics;
@@ -13,17 +14,12 @@ namespace QudJP.Patches
         private static void BeforeSetTextWithField(TooltipTrigger __instance, string parameterName, ref string text) =>
             ProcessText(__instance, parameterName, ref text);
 
-        [HarmonyPrefix]
-        [HarmonyPatch(nameof(TooltipTrigger.SetText), new[] { typeof(string) })]
-        private static void BeforeSetTextBodyOnly(TooltipTrigger __instance, ref string text) =>
-            ProcessText(__instance, null, ref text);
-
         [HarmonyPostfix]
         [HarmonyPatch(nameof(TooltipTrigger.SetText), new[] { typeof(string), typeof(string) })]
         private static void AfterSetText(TooltipTrigger __instance, string parameterName, string text) =>
             EnsureParameterizedField(__instance, parameterName, text);
 
-        private static void ProcessText(TooltipTrigger trigger, string? parameterName, ref string text)
+        internal static void ProcessText(TooltipTrigger trigger, string? parameterName, ref string text)
         {
             if (trigger == null || string.IsNullOrEmpty(text))
             {
@@ -47,7 +43,7 @@ namespace QudJP.Patches
             text = string.IsNullOrWhiteSpace(processed) ? string.Empty : processed!;
         }
 
-        private static void EnsureParameterizedField(TooltipTrigger trigger, string parameterName, string value)
+        internal static void EnsureParameterizedField(TooltipTrigger trigger, string parameterName, string value)
         {
             if (trigger == null || string.IsNullOrEmpty(parameterName))
             {
@@ -93,7 +89,7 @@ namespace QudJP.Patches
             });
         }
 
-        private static string? ResolveStyleName(TooltipTrigger trigger)
+        internal static string? ResolveStyleName(TooltipTrigger trigger)
         {
             if (trigger == null)
             {
@@ -107,6 +103,27 @@ namespace QudJP.Patches
             }
 
             return trigger.tooltipStyle != null ? trigger.tooltipStyle.name : null;
+        }
+    }
+
+    /// <summary>
+    /// Body-only overloads existed in earlier ModelShark versions. Patch them opportunistically without crashing builds that lack them.
+    /// </summary>
+    [HarmonyPatch]
+    internal static class TooltipTriggerSetTextBodyOnlyPatch
+    {
+        private static readonly MethodInfo? Target =
+            AccessTools.Method(typeof(TooltipTrigger), "SetText", new[] { typeof(string) });
+
+        internal static bool Prepare() => Target != null;
+
+        [HarmonyTargetMethod]
+        internal static MethodBase? TargetMethod() => Target;
+
+        [HarmonyPrefix]
+        private static void BeforeSetTextBodyOnly(TooltipTrigger __instance, ref string text)
+        {
+            TooltipTriggerSetTextPatch.ProcessText(__instance, null, ref text);
         }
     }
 }

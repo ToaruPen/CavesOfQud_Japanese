@@ -22,6 +22,11 @@
     { "key": "Hit Bonus", "text": "命中ボーナス" },
     { "key": "Continue", "text": "続ける" },
     { "key": "Are you sure you want to quit?", "text": "本当に終了しますか？" },
+    {
+      "key": "Are you sure you want to quit?",
+      "context": "Qud.UI.PopupMessage.ShowPopup.Message",
+      "text": "本当に終了しますか？"
+    },
     { "key": "Yes", "text": "はい" },
     { "key": "No", "text": "いいえ" },
     { "key": "Cancel", "text": "キャンセル" },
@@ -123,6 +128,26 @@
     {
       "key": "On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.",
       "text": "キス・ウックスの30日、あなたは沈んだ交易路の縁に穿たれた暗い縦穴を滑り降り、隊商宿へたどり着いた。そこは時間の川向こうから舞い込んだ塩と砂埃にまみれている。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\n Type 'QUIT' to confirm.",
+      "context": "Qud.UI.PopupMessage.ShowPopup.Message",
+      "text": "保存せずに終了すると保存していない進捗をすべて失います。本当に終了してしまってよろしいですか？\\n\\n「QUIT」と入力すると確認します。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\nType 'QUIT' to confirm.",
+      "context": "Qud.UI.PopupMessage.ShowPopup.Message",
+      "text": "保存せずに終了すると保存していない進捗をすべて失います。本当に終了してしまってよろしいですか？\\n\\n「QUIT」と入力すると確認します。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your progress and your character will be lost. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\n Type 'QUIT' to confirm.",
+      "context": "Qud.UI.PopupMessage.ShowPopup.Message",
+      "text": "保存せずに終了すると進捗とキャラクターがすべて消えてしまいます。本当に終了してしまってよろしいですか？\\n\\n「QUIT」と入力すると確認します。"
+    },
+    {
+      "key": "If you quit without saving, you will lose all your progress and your character will be lost. Are you sure you want to QUIT and LOSE YOUR PROGRESS?\\n\\nType 'QUIT' to confirm.",
+      "context": "Qud.UI.PopupMessage.ShowPopup.Message",
+      "text": "保存せずに終了すると進捗とキャラクターがすべて消えてしまいます。本当に終了してしまってよろしいですか？\\n\\n「QUIT」と入力すると確認します。"
     }
   ]
 }
