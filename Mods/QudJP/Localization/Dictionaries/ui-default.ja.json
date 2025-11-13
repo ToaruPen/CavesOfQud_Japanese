@@ -29,6 +29,16 @@
     },
     { "key": "Yes", "text": "はい" },
     { "key": "No", "text": "いいえ" },
+    {
+      "key": "Yes",
+      "context": "QudMenuItem.Yes",
+      "text": "はい"
+    },
+    {
+      "key": "No",
+      "context": "QudMenuItem.No",
+      "text": "いいえ"
+    },
     { "key": "Cancel", "text": "キャンセル" },
     { "key": "Accept", "text": "決定" },
     { "key": "Delete Game", "text": "セーブ削除" },
