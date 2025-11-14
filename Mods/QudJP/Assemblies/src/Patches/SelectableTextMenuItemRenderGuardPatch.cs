@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
+using System.Collections.Generic;
+using System.Reflection;
 using HarmonyLib;
 using Qud.UI;
 using QudJP.Localization;
@@ -29,6 +31,15 @@ namespace QudJP.Patches
             AccessTools.FieldRefAccess<UITextSkin, string>("formattedText");
         private static readonly AccessTools.FieldRef<UITextSkin, string?> LastTextRef =
             AccessTools.FieldRefAccess<UITextSkin, string>("lasttext");
+        private static readonly Dictionary<Type, FieldInfo?> MenuBottomContextFieldCache = new();
+        private static readonly Dictionary<Type, FieldInfo?> BottomContextOptionsFieldCache = new();
+
+        [HarmonyPrefix]
+        [HarmonyPatch(nameof(SelectableTextMenuItem.SelectChanged))]
+        private static void BeforeSelectChanged(SelectableTextMenuItem __instance)
+        {
+            TryEnsureMenuItemData(__instance);
+        }
 
         [HarmonyPostfix]
         [HarmonyPatch(nameof(SelectableTextMenuItem.SelectChanged))]
@@ -297,6 +308,66 @@ namespace QudJP.Patches
             }
 
             return value.Length > 120 ? value.Substring(0, 120) + "..." : value;
+        }
+
+        private static bool TryEnsureMenuItemData(SelectableTextMenuItem? menuItem)
+        {
+            if (menuItem == null)
+            {
+                return false;
+            }
+
+            if (menuItem.data is QudMenuItem existing && !string.IsNullOrEmpty(existing.text))
+            {
+                return true;
+            }
+
+            var controller = menuItem.controller;
+            if (controller == null)
+            {
+                return false;
+            }
+
+            var bottomContext = GetMenuBottomContext(controller);
+            var options = GetBottomContextOptions(controller);
+            if (bottomContext?.buttons != null &&
+                options != null &&
+                bottomContext.buttons.Count > 0 &&
+                options.Count > 0)
+            {
+                var index = bottomContext.buttons.IndexOf(menuItem);
+                if (index >= 0 && index < options.Count)
+                {
+                    menuItem.data = options[index];
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private static QudMenuBottomContext? GetMenuBottomContext(QudBaseMenuController controller)
+        {
+            var type = controller.GetType();
+            if (!MenuBottomContextFieldCache.TryGetValue(type, out var field))
+            {
+                field = AccessTools.Field(type, "menuBottomContext");
+                MenuBottomContextFieldCache[type] = field;
+            }
+
+            return field?.GetValue(controller) as QudMenuBottomContext;
+        }
+
+        private static List<QudMenuItem>? GetBottomContextOptions(QudBaseMenuController controller)
+        {
+            var type = controller.GetType();
+            if (!BottomContextOptionsFieldCache.TryGetValue(type, out var field))
+            {
+                field = AccessTools.Field(type, "bottomContextOptions");
+                BottomContextOptionsFieldCache[type] = field;
+            }
+
+            return field?.GetValue(controller) as List<QudMenuItem>;
         }
 
         private sealed class PendingMarker
