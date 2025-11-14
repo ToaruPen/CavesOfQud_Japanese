@@ -38,6 +38,16 @@ namespace QudJP.Localization
         private string DictionariesDirectory =>
             Path.Combine(ModPathResolver.ResolveModPath(), "Localization", "Dictionaries");
 
+        private static readonly HashSet<string> LooseWhitespaceContexts = new(StringComparer.Ordinal)
+        {
+            "Qud.UI.PopupMessage.ShowPopup.Message",
+            "PopupMessage.ShowPopup.Message",
+        };
+
+        private const string ParagraphSentinel = "\u0001";
+        private static readonly Regex MultiWhitespaceRegex = new("[ \t]+", RegexOptions.Compiled);
+        private static readonly Regex ParagraphGapRegex = new("\n[ \t]+\n", RegexOptions.Compiled);
+
         public void Initialize()
         {
             if (_initialized)
@@ -121,7 +131,14 @@ namespace QudJP.Localization
             if (JpLog.Enabled)
             {
                 var ctx = contextId ?? "-";
-                JpLog.Info(eid, "TR", hit ? "HIT" : "MISS", $"ctx={ctx} keyLen={normalized.Length} outLen={result.Length}");
+                var sample = !hit && ShouldCaptureMissSample(contextId)
+                    ? $" sample='{BuildSample(original)}'"
+                    : string.Empty;
+                JpLog.Info(
+                    eid,
+                    "TR",
+                    hit ? "HIT" : "MISS",
+                    $"ctx={ctx} keyLen={normalized.Length} outLen={result.Length}{sample}");
             }
 
             return result;
@@ -136,6 +153,16 @@ namespace QudJP.Localization
             if (TryLookup(snapshot, contextId, normalized, out translated))
             {
                 return true;
+            }
+
+            if (RequiresLooseWhitespace(contextId))
+            {
+                var loosened = NormalizeLooseKey(normalized);
+                if (!string.Equals(loosened, normalized, StringComparison.Ordinal) &&
+                    TryLookup(snapshot, contextId, loosened, out translated))
+                {
+                    return true;
+                }
             }
 
             if (IsDisplayNameContext(contextId))
@@ -188,7 +215,7 @@ namespace QudJP.Localization
                 return false;
             }
 
-            return contextId.IndexOf("displayname", StringComparison.OrdinalIgnoreCase) >= 0;
+            return contextId!.IndexOf("displayname", StringComparison.OrdinalIgnoreCase) >= 0;
         }
 
         private static string NormalizeDisplayNameKey(string value)
@@ -260,6 +287,12 @@ namespace QudJP.Localization
                     }
 
                     loaded++;
+                    var fileName = Path.GetFileName(file);
+                    var fileEntries = 0;
+                    var fileGlobal = 0;
+                    var fileContextual = 0;
+                    var fileDuplicates = 0;
+
                     foreach (var entry in document.Entries)
                     {
                         var keyRaw = entry?.Key;
@@ -269,9 +302,17 @@ namespace QudJP.Localization
                             continue;
                         }
 
+                        fileEntries++;
                         var key = NormalizeKey(keyRaw!);
                         var value = valueRaw!;
-                        var contextHint = entry?.Context;
+                        var contextHint = string.IsNullOrWhiteSpace(entry?.Context)
+                            ? null
+                            : entry!.Context!.Trim();
+
+                        if (contextHint != null && RequiresLooseWhitespace(contextHint))
+                        {
+                            key = NormalizeLooseKey(key);
+                        }
 
                         if (!string.IsNullOrEmpty(contextHint))
                         {
@@ -282,13 +323,29 @@ namespace QudJP.Localization
                                 contextual[contextKey] = map;
                             }
 
+                            if (map.ContainsKey(key))
+                            {
+                                fileDuplicates++;
+                            }
+
                             map[key] = value;
+                            fileContextual++;
                         }
                         else
                         {
+                            if (global.ContainsKey(key))
+                            {
+                                fileDuplicates++;
+                            }
+
                             global[key] = value;
+                            fileGlobal++;
                         }
                     }
+
+                    var logMessage = $"Loaded '{fileName}' ({lang}) entries={fileEntries} global={fileGlobal} contextual={fileContextual} duplicates={fileDuplicates}";
+                    Debug.Log($"[QudJP] {logMessage}");
+                    QudJP.Diagnostics.JpLog.Info(UIContext.Current, "Dict", "FILE", logMessage);
                 }
 
                 _snapshot = new TranslationSnapshot(global, contextual);
@@ -465,6 +522,84 @@ namespace QudJP.Localization
             }
 
             return string.Join(delimiter, parts);
+        }
+
+        private static bool RequiresLooseWhitespace(string? contextId)
+        {
+            if (string.IsNullOrEmpty(contextId))
+            {
+                return false;
+            }
+
+            return LooseWhitespaceContexts.Contains(contextId!);
+        }
+
+        private static string NormalizeLooseKey(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return string.Empty;
+            }
+
+            var text = value.Replace("\r\n", "\n").Replace("\r", "\n").Replace('\u00A0', ' ');
+            text = ParagraphGapRegex.Replace(text, "\n\n");
+
+            while (text.IndexOf("\n\n\n", StringComparison.Ordinal) >= 0)
+            {
+                text = text.Replace("\n\n\n", "\n\n");
+            }
+
+            var hasParagraphs = text.IndexOf("\n\n", StringComparison.Ordinal) >= 0;
+            if (hasParagraphs)
+            {
+                text = text.Replace("\n\n", ParagraphSentinel);
+            }
+
+            text = text.Replace("\n", " ");
+            text = MultiWhitespaceRegex.Replace(text, " ");
+
+            if (hasParagraphs)
+            {
+                text = text.Replace(ParagraphSentinel, "\n\n");
+            }
+
+            return text.Trim();
+        }
+
+        private static bool ShouldCaptureMissSample(string? contextId)
+        {
+            if (string.IsNullOrEmpty(contextId))
+            {
+                return false;
+            }
+
+            var ctx = contextId!;
+            if (ctx.StartsWith("QudMenuItem", StringComparison.Ordinal))
+            {
+                return true;
+            }
+
+            return ctx.IndexOf("PopupMessage", StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        private static string BuildSample(string? value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return "<empty>";
+            }
+
+            var normalized = value!
+                .Replace("\r\n", "\n")
+                .Replace("\r", "\n")
+                .Replace("\n", "\\n");
+
+            if (normalized.Length > 80)
+            {
+                normalized = normalized.Substring(0, 80) + "...";
+            }
+
+            return normalized;
         }
 
         [DataContract]

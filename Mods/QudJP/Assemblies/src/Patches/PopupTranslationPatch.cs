@@ -5,6 +5,7 @@ using HarmonyLib;
 using Qud.UI;
 using QudJP.Diagnostics;
 using QudJP.Localization;
+using UnityEngine;
 using XRL.UI;
 
 namespace QudJP.Patches
@@ -14,6 +15,9 @@ namespace QudJP.Patches
     /// </summary>
     internal static class PopupTranslationPatch
     {
+        private const int MaxEmptyPopupStackLogs = 24;
+        private static readonly HashSet<string> EmptyPopupStacks = new();
+
         [HarmonyPatch(typeof(Popup), nameof(Popup.ShowBlock))]
         private static class PopupShowBlockPatch
         {
@@ -47,15 +51,31 @@ namespace QudJP.Patches
             [HarmonyPrefix]
             private static void Prefix(
                 [HarmonyArgument(0)] ref string message,
-                [HarmonyArgument(1)] List<QudMenuItem>? buttons,
-                [HarmonyArgument(3)] List<QudMenuItem>? items,
+                [HarmonyArgument(1)] ref List<QudMenuItem>? buttons,
+                [HarmonyArgument(3)] ref List<QudMenuItem>? items,
                 [HarmonyArgument(5)] ref string title,
                 ref string __state)
             {
+                var clonedButtons = CloneMenuItems(buttons);
+                var clonedItems = CloneMenuItems(items);
+                if (clonedItems == null && clonedButtons != null)
+                {
+                    // Ensure SelectableTextMenuItem has data even when callers only supply bottom-context buttons.
+                    clonedItems = CloneMenuItems(clonedButtons);
+                }
+
+                buttons = clonedButtons;
+                items = clonedItems;
+
                 var eid = UIContext.Capture(JpLog.NewEID());
                 __state = eid;
 
                 JpLog.Info(eid, "Popup", "START", $"title='{title ?? "<null>"}' msgLen={message?.Length ?? 0}");
+                if (string.IsNullOrEmpty(message))
+                {
+                    LogEmptyPopupStack(title);
+                }
+
                 message = LocalizeUIPopupMessage(message ?? string.Empty);
                 title = LocalizeUIPopupTitle(title ?? string.Empty);
 
@@ -154,13 +174,15 @@ namespace QudJP.Patches
             }
 
             var normalized = NormalizeMultiline(message);
-            if (normalized.IndexOf("if you quit without saving, you will lose all your unsaved progress", StringComparison.OrdinalIgnoreCase) >= 0)
+            var normalizedFlat = normalized.Replace("\n", " " );
+
+            if (normalizedFlat.IndexOf("if you quit without saving, you will lose all your unsaved progress", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 translated = "セーブせずに終了すると保存されていない進行状況がすべて失われます。本当に終了してよろしいですか？\n\n「QUIT」と入力すると確定します。";
                 return true;
             }
 
-            if (normalized.IndexOf("if you quit without saving, you will lose all your progress and your character will be lost", StringComparison.OrdinalIgnoreCase) >= 0)
+            if (normalizedFlat.IndexOf("if you quit without saving, you will lose all your progress and your character will be lost", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 translated = "セーブせずに終了すると進行状況とキャラクターが完全に失われます。本当に終了してよろしいですか？\n\n「QUIT」と入力すると確定します。";
                 return true;
@@ -168,13 +190,54 @@ namespace QudJP.Patches
 
             return false;
         }
-
         private static string NormalizeMultiline(string value)
         {
             var collapsed = value.Replace("\r\n", "\n").Replace("\r", "\n");
             collapsed = Regex.Replace(collapsed, "[ \t]+", " ");
             collapsed = Regex.Replace(collapsed, "\n+", "\n");
             return collapsed.Trim();
+        }
+
+        private static void LogEmptyPopupStack(string? title)
+        {
+            var stack = Environment.StackTrace;
+            if (string.IsNullOrEmpty(stack))
+            {
+                return;
+            }
+
+            if (EmptyPopupStacks.Count >= MaxEmptyPopupStackLogs)
+            {
+                return;
+            }
+
+            if (!EmptyPopupStacks.Add(stack))
+            {
+                return;
+            }
+
+            Debug.LogWarning($"[QudJP] PopupMessage.ShowPopup received empty message (title='{title ?? "<null>"}'). Stack: {stack}");
+        }
+
+        private static List<QudMenuItem>? CloneMenuItems(List<QudMenuItem>? source)
+        {
+            if (source == null)
+            {
+                return null;
+            }
+
+            if (source.Count == 0)
+            {
+                return new List<QudMenuItem>(0);
+            }
+
+            var clone = new List<QudMenuItem>(source.Count);
+            foreach (var entry in source)
+            {
+                clone.Add(entry);
+            }
+
+            return clone;
         }
     }
 }

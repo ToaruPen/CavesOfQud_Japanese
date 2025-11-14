@@ -48,7 +48,14 @@ namespace QudJP.Localization
             }
 
             var fallback = SafeStringTranslator.SafeTranslate(text, context);
-            return string.IsNullOrEmpty(fallback) ? (text ?? string.Empty) : fallback;
+            if (!string.IsNullOrEmpty(fallback) &&
+                !string.Equals(fallback, text, StringComparison.Ordinal))
+            {
+                return fallback;
+            }
+
+            var shared = SafeStringTranslator.SafeTranslate(text, "QudMenuItem");
+            return string.IsNullOrEmpty(shared) ? (text ?? string.Empty) : shared;
         }
 
         private static bool ShouldTranslate(string body)

@@ -35,7 +35,7 @@ namespace QudJP
             Translator.Instance.Initialize();
             FontManager.Instance.TryLoadFonts();
             ConsoleBridge.Instance.Initialize();
-            Debug.Log("[QudJP] Harmony 郢昜ｻ｣繝｣郢昶・竊堤ｹ晁ｼ斐°郢晢ｽｳ郢昜ｺ･繝ｻ隴帶ｺｷ蝟ｧ郢ｧ雋橸ｽｮ貅ｯ・｡蠕鯉ｼ邵ｺ・ｾ邵ｺ蜉ｱ笳・ｸｲ繝ｻ");
+            Debug.Log("[QudJP] Harmony パッチと周辺サービスの初期化が完了しました。");
         }
     }
 }

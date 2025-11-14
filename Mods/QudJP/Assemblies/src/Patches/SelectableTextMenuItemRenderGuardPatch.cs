@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Qud.UI;
@@ -6,6 +8,7 @@ using QudJP.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using XRL.UI;
 
 namespace QudJP.Patches
 {
@@ -18,6 +21,14 @@ namespace QudJP.Patches
     {
         private static int Logged;
         private const int MaxLogs = 24;
+        private static int LoggedCharCounts;
+        private const int MaxCharCountLogs = 80;
+        private static readonly WaitForEndOfFrame WaitFrame = new();
+        private static readonly ConditionalWeakTable<SelectableTextMenuItem, PendingMarker> PendingRebuilds = new();
+        private static readonly AccessTools.FieldRef<UITextSkin, string?> FormattedTextRef =
+            AccessTools.FieldRefAccess<UITextSkin, string>("formattedText");
+        private static readonly AccessTools.FieldRef<UITextSkin, string?> LastTextRef =
+            AccessTools.FieldRefAccess<UITextSkin, string>("lasttext");
 
         [HarmonyPostfix]
         [HarmonyPatch(nameof(SelectableTextMenuItem.SelectChanged))]
@@ -35,44 +46,148 @@ namespace QudJP.Patches
                 return;
             }
 
-            // Ensure JP glyphs even when the component missed OnEnable.
-            QudJP.FontManager.Instance.ApplyToText(tmp, forceReplace: true);
+            PrepareTextComponent(tmp);
 
-            if (!string.IsNullOrEmpty(tmp.text))
+            if (TryBuildMesh(__instance, skin, tmp, phase: "immediate"))
             {
-                FixCollapsedBounds(tmp);
-
-                tmp.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
-                var charCount = tmp.textInfo != null ? tmp.textInfo.characterCount : 0;
-                if (charCount == 0)
-                {
-                    RecoverWithFallback(__instance, tmp);
-                    return;
-                }
-
-                if (Logged < MaxLogs)
-                {
-                    Logged++;
-                    UnityEngine.Debug.Log($"[QudJP] Menu item ok: obj='{tmp.gameObject.name}', text='{Short(tmp.text)}'");
-                }
                 return;
             }
 
-            // If text actually disappeared, disable block wrap and rebuild with a stripped fallback.
-            skin.useBlockWrap = false;
+            if (!ScheduleDeferredRebuild(__instance))
+            {
+                RecoverWithFallback(__instance, tmp);
+            }
+        }
+
+        private static bool ScheduleDeferredRebuild(SelectableTextMenuItem menu)
+        {
+            if (menu == null || !menu.isActiveAndEnabled)
+            {
+                return false;
+            }
+
+            lock (PendingRebuilds)
+            {
+                if (PendingRebuilds.TryGetValue(menu, out _))
+                {
+                    return true;
+                }
+
+                PendingRebuilds.Add(menu, new PendingMarker());
+            }
+
+            menu.StartCoroutine(DeferredRebuild(menu));
+            return true;
+        }
+
+        private static IEnumerator DeferredRebuild(SelectableTextMenuItem menu)
+        {
+            yield return null;
+            yield return WaitFrame;
+
+            lock (PendingRebuilds)
+            {
+                PendingRebuilds.Remove(menu);
+            }
+
+            var skin = menu?.item;
+            var tmp = skin?.GetComponent<TMP_Text>();
+            if (tmp == null)
+            {
+                yield break;
+            }
+
+            PrepareTextComponent(tmp);
+            ForceSkinRefresh(skin);
+
+            if (TryBuildMesh(menu, skin, tmp, phase: "deferred"))
+            {
+                yield break;
+            }
+
+            RecoverWithFallback(menu, tmp);
+        }
+
+        private static void PrepareTextComponent(TMP_Text tmp)
+        {
+            QudJP.FontManager.Instance.ApplyToText(tmp, forceReplace: true);
             tmp.textWrappingMode = TextWrappingModes.PreserveWhitespace;
             tmp.overflowMode = TextOverflowModes.Overflow;
             var c = tmp.color; c.a = 1f; tmp.color = c;
-            skin.Apply();
+        }
 
-            tmp.text = BuildFallbackText(__instance);
+        private static bool TryBuildMesh(SelectableTextMenuItem menuItem, UITextSkin? skin, TMP_Text tmp, string phase)
+        {
+            FixCollapsedBounds(tmp);
+            Canvas.ForceUpdateCanvases();
+
             tmp.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
-
-            if (Logged < MaxLogs)
+            var count = tmp.textInfo?.characterCount ?? 0;
+            LogCharCount(tmp, count, phase, tmp.canvasRenderer?.cull ?? false);
+            if (count > 0)
             {
-                Logged++;
-                UnityEngine.Debug.Log($"[QudJP] Menu item guarded: obj='{tmp.gameObject.name}', after='{Short(tmp.text)}'");
+                LogSuccess(tmp);
+                return true;
             }
+
+            if (ForceSkinRefresh(skin))
+            {
+                FixCollapsedBounds(tmp);
+                Canvas.ForceUpdateCanvases();
+                tmp.ForceMeshUpdate(ignoreActiveState: true, forceTextReparsing: true);
+                count = tmp.textInfo?.characterCount ?? 0;
+                LogCharCount(tmp, count, $"{phase}/skin", tmp.canvasRenderer?.cull ?? false);
+                if (count > 0)
+                {
+                    LogSuccess(tmp);
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private static bool ForceSkinRefresh(UITextSkin? skin)
+        {
+            if (skin == null)
+            {
+                return false;
+            }
+
+            try
+            {
+                FormattedTextRef(skin) = null;
+                LastTextRef(skin) = null;
+            }
+            catch
+            {
+                // In case internal layout changed between versions; fall through to Apply.
+            }
+
+            skin.Apply();
+            return true;
+        }
+
+        private static void LogCharCount(TMP_Text tmp, int count, string phase, bool culled)
+        {
+            if (LoggedCharCounts >= MaxCharCountLogs)
+            {
+                return;
+            }
+
+            LoggedCharCounts++;
+            UnityEngine.Debug.Log($"[QudJP][Diag] Menu item mesh ({phase}): obj='{tmp.gameObject.name}', charCount={count}, culled={culled}, text='{Short(tmp.text)}'");
+        }
+
+        private static void LogSuccess(TMP_Text tmp)
+        {
+            if (Logged >= MaxLogs)
+            {
+                return;
+            }
+
+            Logged++;
+            UnityEngine.Debug.Log($"[QudJP] Menu item ok: obj='{tmp.gameObject.name}', text='{Short(tmp.text)}'");
         }
 
         private static void FixCollapsedBounds(TMP_Text tmp)
@@ -83,20 +198,21 @@ namespace QudJP.Patches
                 return;
             }
 
-            if (rt.rect.width >= 1f && rt.rect.height >= 1f)
+            var rect = rt.rect;
+            if (rect.width < 1f || rect.height < 1f)
             {
-                return;
+                var preferred = tmp.GetPreferredValues(Mathf.Max(8f, rect.width), Mathf.Max(8f, rect.height));
+                rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(preferred.x, 48f));
+                rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, Mathf.Max(preferred.y, 16f));
             }
 
-            var preferred = tmp.GetPreferredValues(Mathf.Max(8f, rt.rect.width), Mathf.Max(8f, rt.rect.height));
-            rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Mathf.Max(preferred.x, 48f));
-            rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, Mathf.Max(preferred.y, 16f));
             LayoutRebuilder.MarkLayoutForRebuild(rt);
             LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
         }
 
         private static void RecoverWithFallback(SelectableTextMenuItem? menuItem, TMP_Text tmp)
         {
+            PrepareTextComponent(tmp);
             tmp.textWrappingMode = TextWrappingModes.PreserveWhitespace;
             tmp.overflowMode = TextOverflowModes.Overflow;
             tmp.text = BuildFallbackText(menuItem);
@@ -181,6 +297,10 @@ namespace QudJP.Patches
             }
 
             return value.Length > 120 ? value.Substring(0, 120) + "..." : value;
+        }
+
+        private sealed class PendingMarker
+        {
         }
     }
 }

@@ -1,4 +1,4 @@
-# Local copies of game data (generated via scripts/extract_base.ps1)
+﻿# Local copies of game data (generated via scripts/extract_base.ps1)
 references/Base/
 
 # Logs / build outputs
@@ -24,3 +24,6 @@ Mods/QudJP/Assemblies/obj/
 work/
 build/
 \n.ilspy/\n.ilspy.zip\n
+
+# Generated decompile dumps / scratch workspace
+tmp/

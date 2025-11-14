@@ -63,13 +63,19 @@ py -3 scripts/watch_player_log.py --log-path "$env:USERPROFILE\AppData\LocalLow\
 3. 同じ EID で `[JP][TR]`（Translator HIT/MISS）と `[JP][TMP] set_text/IN|OUT` が続くかを見る。流れが切れている場合は UIContext のバインド漏れや別オブジェクトで発火している可能性が高い。
 4. `TR` が MISS のままなら辞書追加、`TMP` の OUT で `len=0` や `overflow` が出ていればレイアウト側のガードを疑う。
 
-### 2025-11-12: Tooltip SOURCE ログ
-- `TooltipPreprocessPatch` で `[JP][Tooltip][SOURCE] ...` が必ず 1 行出るようになった。  
-  例: `[JP][Tooltip][SOURCE][EID:1ab23c4d] owner=InventoryLine host='InventoryLine(Clone)' kind=Item inv='銃士のブーツ' go='銃士のブーツ'[Boots_Musketeer]#12345`
-- `owner` … ツールチップを開いた `BaseLineWithTooltip` の型（InventoryLine / SelectableTextMenuItem など）。
-- `inv` … InventoryLineData の `displayName` または `categoryName`。`kind=Category` の場合はヘッダー行、`kind=Item` の場合は実アイテム。
-- `go=` / `compare=` … `GameObject` の DisplayName / Blueprint / ID をまとめたダンプ。空欄ツールチップを見つけたら、この情報で「どのアイテムか」を即座に逆引きできる。
-- `Player.log` で `SOURCE` を検索すると EID を起点に `[Param]` や `[Tooltip][END]` と紐付けやすい。
+### 2025-11-12: Tooltip ログの読み方
+- `BaseLineTooltipContextPatch` と `TooltipSourceContext.Record` の連携で、ツールチップ起動時に `[JP][Tooltip][SOURCE] ...` が必ず 1 行出ます。  
+  例: `[JP][Tooltip][SOURCE][EID:1ab23c4d] owner=InventoryLine host='#3 InventoryScrollerLine' kind=Item inv='銃士のブーツ' go='銃士のブーツ'[Boots_Musketeer]#12345`
+  - `owner` … `BaseLineWithTooltip` の派生型（InventoryLine / SelectableTextMenuItem など）。
+  - `inv` … InventoryLineData の `displayName` または `categoryName`。`kind=Category` の場合はヘッダー行、`kind=Item` は実アイテム。
+  - `go=` / `compare=` … `GameObject` の DisplayName / Blueprint / ID をまとめたダンプ。空欄ツールチップを見付けたら、この情報で一発逆引きできます。
+- `UiEntryInstrumentationPatch.TooltipInstrumentation` が `TooltipManager.SetTextAndSize` をフックし、`[JP][Tooltip][HOOK|START|Param|END]` を出力します。  
+  例: `[JP][Tooltip][HOOK][EID:5438598c] style=DualPolatLooker trigger=DualLookerTooltipTrigger params=8 tmpFields=8`
+  - `Param` 行では `DisplayName` や `LongDescription` ごとに文字数が出るので、翻訳差し替え後の欠落を即確認できます。
+  - `END` 行が出ない場合は Tooltip が破棄される前に例外が起きている可能性が高いです。
+- `[QudJP] Tooltip chunk ...` というログは `TooltipDiagnosticsPatch` の出力で、TMP_Text のオブジェクト名と最終文字列を確認できます。`Missing glyph` やフォント未適用が疑われる際に参照してください。
+  
+`Player.log` で `SOURCE` や `Param` を検索すると EID を軸に Hook→Param→END の流れを追跡できます。
 
 ### 便利なコマンド例
 ```powershell
